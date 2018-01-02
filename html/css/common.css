@@ -479,7 +479,9 @@ label.check {
 }
 .scroll-box {
 	overflow: auto;
+	width:100%;
 	height:260px;
+	box-sizing:border-box;
 }
 .scroll-wrap .track {
 	width:12px;
