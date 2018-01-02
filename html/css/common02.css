@@ -556,3 +556,92 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 	.gnb-wrap {display:none;}
 	.container {padding-left:0;}
 }
+
+/* 모바일 */
+@media only screen and (max-width: 800px) {
+	/* 폼 */
+	select {
+		height:30px;
+		vertical-align:top;
+		border:1px solid #e5e5e5;
+	}
+	input[type=text] {
+		height:30px;
+		line-height:30px;
+		box-sizing:border-box;
+		border:1px solid #e5e5e5;
+		padding:0 10px;
+	}
+
+	.title-wrap {
+		padding:10px 15px;
+	}
+	.title-wrap .title {
+		font-size:18px;
+		font-weight:bold;
+	}
+
+	.seach-box {
+		position:relative;
+		margin:0 15px;
+		border:1px solid #eee;
+		background-color:#fafafa;
+		padding:10px;
+	}
+	.seach-box select {width:75px;}
+	.seach-box .text-box {
+		position:absolute;
+		left:90px; right:10px; top:10px;
+		padding-right:30px;
+	}
+	.seach-box .text-box input[type=text] {width:100%;}
+	.seach-box .text-box .btn-search {
+		position:absolute;
+		right:0; top:0;
+		width:30px;
+		height:30px;
+		box-sizing:border-box;
+		background:#9da4ac url(../img/mobile/btn/btn_search.png) no-repeat 50% 50%;
+		font-size:0;
+		line-height:0;
+		text-indent:-9999px;
+	}
+
+
+	/* 게시판 */
+	.board-list1 {}
+	.board-list1 .board-head {display:none;}
+	.board-list1 .board-item {
+		position:relative;
+		padding:15px;
+	}
+	.board-list1 .board-item .number {
+		font-size:12px;
+	}
+	.board-list1 .board-item .add-like {
+		overflow:hidden;
+		position:absolute;
+		right:15px; top:15px;
+	}
+	.board-list1 .board-item .add-like .add {
+		float:left;
+	}
+	.board-list1 .board-item .add-like .like {
+		float:left;
+		margin-left:10px;
+		padding-left:15px;
+		background:url(../img/mobile/ico/ico_like.png) no-repeat 0 50%;
+		background-size:12px 12px;
+	}
+	.board-list1 .board-item .title {
+		font-size:15px;
+	}
+	.board-list1 .board-item .date-writer {}
+	.board-list1 .board-item .date-writer .date {}
+	.board-list1 .board-item .date-writer .like {}
+	.board-list1 .board-item {}
+	.board-list1 .board-item {}
+	.board-list1 .board-item {}
+	.board-list1 {}
+	.board-list1 {}
+}
