@@ -595,10 +595,8 @@ label.check {
 
 /* 연차 */
 .annual-wrap {
-	/* overflow: hidden; */
 	width: 100%;
 	margin-top:33px;
-	/* padding-left:70px; */
 	text-align: center;
 	box-sizing: border-box;
 }
@@ -616,7 +614,6 @@ label.check {
 	font-weight: 700;
 	text-align: center;
 	box-sizing: border-box;
-
 }
 .annual-wrap div.remainder {color: #ff5349}
 .annual-wrap div p {
@@ -711,7 +708,6 @@ label.check {
     height: 10px;
     margin-top: -5px;
     background-color: #f0f0f0;
-
 }
 
 .footer {
