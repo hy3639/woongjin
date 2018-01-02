@@ -670,10 +670,10 @@ label.check {
 
 
 /* 방명록 */
-.scroll-wrap.guest {margin-top:40px;}
+.scroll-wrap.guest {margin-top:38px;}
 .guest-list {}
 .guest-list li {
-	margin-top: 30px;
+	margin-top: 32px;
 }
 .guest-list li:first-child {margin-top:0;}
 .guest-list .img-area {
