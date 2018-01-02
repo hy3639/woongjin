@@ -434,7 +434,9 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 }
 .scroll-box {
 	overflow: auto;
+	width:100% important;
 	height:260px;
+	box-sizing:border-box;
 }
 .scroll-wrap .track {
 	width:12px;
