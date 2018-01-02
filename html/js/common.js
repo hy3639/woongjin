@@ -34,10 +34,18 @@ $(window).resize(function(){
 function resizeMid(){
 	var winW = $(window).width();
 
-	// width 1100 = wid1100
-	if(winW <= 1100){
-		$('.wrapper').attr('class', 'wrapper win1100');
-	}else{
+	// width 1100 이상
+	if(winW > 1100){
 		$('.wrapper').attr('class', 'wrapper');
+	}
+
+	// width 1100 이하
+	if(winW < 1100){
+		$('.wrapper').attr('class', 'wrapper win1100');
+	}
+
+	// 모바일 전용
+	if(winW < 800){
+		$('.wrapper').attr('class', 'wrapper mobile');
 	}
 }
