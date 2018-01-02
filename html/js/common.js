@@ -20,6 +20,25 @@ $(document).ready(function(){
 			$(this).closest('.tab-wrap-click').find('.tab-cont').removeClass('on').eq(idx).addClass('on');
 		});
 	});
+
+	/* 체크박스 */
+	$('input[type=checkbox].styled1').each(function(){
+		$(this).parents('label').addClass('check-radio');
+		$(this).wrap('<span class="checkbox">');
+		if(this.checked){
+			$(this).parents('.checkbox').addClass('checked');
+		}
+		if(this.disabled){
+			$(this).parents('.checkbox').addClass('disabled');
+		}
+	});
+	$('input[type=checkbox].styled1').change(function(){
+		if(this.checked){
+			$(this).parents('.checkbox').addClass('checked');
+		}else{
+			$(this).parents('.checkbox').removeClass('checked');
+		}
+	});
 });
 
 $(window).load(function(){

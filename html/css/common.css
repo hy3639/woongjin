@@ -73,6 +73,51 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 .tab-content .tab-cont {display:none;}
 .tab-content .tab-cont.on {display:block;}
 
+/* 체크박스*/
+label.check {
+	display:inline-block;
+	color:#666;
+	font-size:12px;
+	line-height:18px;
+}
+.checkbox{
+	display:inline-block;
+	position:relative;
+	width:18px;
+	height:18px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+	vertical-align:top;
+}
+
+
+.checkbox.checked {
+	position:relative;
+}
+.checkbox.checked:before {
+	content: '';
+	display: block;
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:12px;
+	height:10px;
+	margin:-5px -6px;
+	background:url(../img/ico/ico_check.png) left bottom no-repeat;
+}
+
+.checkbox input[type=checkbox].styled1{
+	position:absolute;
+	left:0;top:0;
+	width:18px;
+	height:18px;
+	opacity:0;
+}
+.checkbox.disabled{background-color:#e3e3e3;}
+
+
+
 .wrapper {}
 .header {
 	position:fixed;
@@ -499,6 +544,174 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 	margin-top:2px;
 	color:#bbb;
 	font-size:12px;
+}
+
+/* 할일 */
+.scroll-box.todo {height:235px; margin-bottom:5px;}
+.todo-list {}
+.todo-list li {
+	padding-top:44px;
+}
+.todo-list li:first-child {padding-top:0;}
+.todo-list li p {
+	position: relative;
+	padding-left:95px;
+	margin-top:6px;
+}
+.todo-list li p:first-child {margin-top:0;}
+.todo-list li p.date {
+	margin-bottom:20px;
+	padding-left: 0;
+	color: #bbb;
+	font-size: 12px;
+}
+.todo-list li p.me span {color:#ff5349;}
+.todo-list li p span {
+	position: absolute;
+	left:0; top:0;
+	display: inline-block;
+	width: 95px;
+	padding-left: 23px;
+	box-sizing: border-box;
+}
+.todo-list li p span:before {
+	content:'';
+	position:absolute;
+	left:0; top:50%;
+	width:12px;
+	height:10px;
+	margin-top:-5px;
+	background:url(../img/ico/ico_check.png) left top no-repeat;
+	box-sizing:border-box;
+}
+.todo-list li p.team.complete,
+.todo-list li p.team.complete span {
+	color:#bbb;
+	text-decoration: line-through;
+}
+.todo-list li p.team.complete span:before {
+	background-position: left bottom;
+}
+
+/* 연차 */
+.annual-wrap {
+	/* overflow: hidden; */
+	width: 100%;
+	margin-top:33px;
+	/* padding-left:70px; */
+	text-align: center;
+	box-sizing: border-box;
+}
+.annual-wrap .unit {
+	display: inline-block;
+	padding: 0 30px;
+}
+.annual-wrap .unit img {vertical-align: middle;}
+.annual-wrap div {
+	display: inline-block;
+	position:relative;
+	padding-top:20px;
+	color: #333;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	box-sizing: border-box;
+
+}
+.annual-wrap div.remainder {color: #ff5349}
+.annual-wrap div p {
+	position:absolute;
+	width: 100%;
+	left:50%;
+	top:0;
+	-webkit-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	color:#999;
+	font-size:12px;
+}
+
+.annual-cont {
+	width: 100%;
+	height:140px;
+	margin-top:35px;
+	border:1px solid #eee;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding:0 30px;
+}
+.annual-cont .tit {
+	position:absolute;
+	left:0;
+	top:0;
+	font-size: 15px;
+	color:#333;
+	font-weight: 700;
+	line-height: 17px;
+}
+.annual-cont .scroll-wrap {position:relative;}
+.annual-cont .scroll-box {
+	height: 80px;
+	padding-left:80px;
+}
+.annual-cont .scroll-box .annual-list span {
+	position:absolute;
+	left:0;
+	top:0;
+	display: inline-block;
+	width: 72px;
+	color:#ff5349;
+}
+.annual-cont .scroll-box .annual-list li {
+	position:relative;
+	padding-left:74px;
+	margin-top: 6px;
+	font-size: 12px;
+}
+.annual-cont .scroll-box .annual-list li:first-child {margin-top: 0;}
+
+
+/* 방명록 */
+.scroll-wrap.guest {margin-top:38px;}
+.guest-list {}
+.guest-list li {
+	margin-top: 32px;
+}
+.guest-list li:first-child {margin-top:0;}
+.guest-list .img-area {
+	overflow: hidden;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+}
+.guest-list .img-area img {width: 100%;}
+.guest-list .txt-area {
+	padding-left: 45px;
+}
+.guest-list .txt-area .tit {
+	color: #333;
+}
+.guest-list .txt-area .info {
+	color:#999;
+	font-size: 12px;
+}
+.guest-list .txt-area .info .name {
+	position: relative;
+	padding-left:10px;
+	margin-left:10px;
+}
+.guest-list .txt-area .info .name:before {
+	content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 10px;
+    margin-top: -5px;
+    background-color: #f0f0f0;
+
 }
 
 .footer {
