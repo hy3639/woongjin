@@ -4,16 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
 <title>웅진</title>
-<link rel="stylesheet" type="text/css" href="../css/common02.css">
-<!--
-<link rel="stylesheet" media="screen and  (min-width: 1101px) and (max-width: 800px)" href="test.css" />
--->
+<link rel="stylesheet" type="text/css" href="../css/common.css">
 
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/common.js"></script>
 <!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<script src="respond.src.js"></script>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
 <![endif]-->
 </head>
 
@@ -70,13 +67,13 @@
 							<option>20개씩</option>
 						</select>
 						<div class="btn-list">
-							<button type="button" class="btn btn1"></button>
+							<button type="button" class="btn btn1 on"></button>
 							<button type="button" class="btn btn2"></button>
 							<button type="button" class="btn btn3"></button>
 							<button type="button" class="btn btn4"></button>
 						</div>
 						<div class="right-menu">
-							<button type="buttton" class="btn btn1">목록만 보기</button>
+							<button type="buttton" class="btn btn1 on">목록만 보기</button>
 							<button type="buttton" class="btn btn2">좌우 보기</button>
 							<button type="buttton" class="btn btn3">상하 보기</button>
 						</div>
@@ -85,24 +82,25 @@
 
 				<div class="board-list1">
 					<div class="board-head">
-						<p style="width:%;">번호</p>
-						<p style="width:%;">첨부</p>
-						<p style="width:%;">제목</p>
-						<p style="width:%;">게시자</p>
-						<p style="width:%;">등록일</p>
-						<p style="width:%;">조회수</p>
-						<p style="width:%;">좋아요</p>
+						<p class="on" style="width:8%;"><span class="ico-soting">번호</span></p>
+						<p style="width:8%;"><span class="ico-soting">첨부</span></p>
+						<p style="width:43%;"><span class="ico-soting">제목</span></p>
+						<p style="width:10%;"><span class="ico-soting">게시자</span></p>
+						<p style="width:11%;"><span class="ico-soting">등록일</span></p>
+						<p style="width:10%;"><span class="ico-soting">조회수</span></p>
+						<p style="width:10%;"><span class="ico-soting">좋아요</span></p>
 					</div>
-					<div class="board-item">
+					<div class="board-item indi">
 						<div class="number">필독</div>
 						<div class="add-like">
 							<p class="add"><span class="ico-add">첨부파일</span></p>
 							<p class="like">200</p>
 						</div>
-						<div class="title">서비스 오픈 안내</div>
+						<div class="title"><a href="#">서비스 오픈 안내</a></div>
 						<div class="date-writer">
 							<p class="date">2017.12.24</p>
 							<p class="writer">관리자</p>
+							<p class="len">5</p>
 						</div>
 					</div>
 					<div class="board-item">
@@ -111,10 +109,11 @@
 							<p class="add"></p>
 							<p class="like">200</p>
 						</div>
-						<div class="title">웅진 원팩 그룹웨어 소개자료입니다.</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
 						<div class="date-writer">
 							<p class="date">2017.12.24</p>
 							<p class="writer">관리자</p>
+							<p class="len">5</p>
 						</div>
 					</div>
 					<div class="board-item">
@@ -123,10 +122,102 @@
 							<p class="add"></p>
 							<p class="like">200</p>
 						</div>
-						<div class="title">랜섬웨어로부터 PC를 보호하는 방법…정기적인 백업</div>
+						<div class="title"><a href="#">랜섬웨어로부터 PC를 보호하는 방법…정기적인 백업 보호하는 방법…정기적인 백업 보호하는 방법…정기적인 백업 보호하는 방법…정기적인 백업<span class="reply">(9)</span></a></div>
 						<div class="date-writer">
 							<p class="date">2017.12.24</p>
 							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
+						</div>
+					</div>
+					<div class="board-item">
+						<div class="number">220</div>
+						<div class="add-like">
+							<p class="add"></p>
+							<p class="like">200</p>
+						</div>
+						<div class="title"><a href="#">웅진 원팩 그룹웨어 소개자료입니다.<span class="reply">(3)</span></a></div>
+						<div class="date-writer">
+							<p class="date">2017.12.24</p>
+							<p class="writer">관리자</p>
+							<p class="len">5</p>
 						</div>
 					</div>
 				</div>
