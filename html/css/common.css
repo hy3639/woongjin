@@ -153,6 +153,9 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 .container {
 	padding:71px 0 50px 221px;
 }
+.gnb-utill {display:block !important;}
+.temp-gnb {display: none;}
+.btn-gnb {display: none;}
 
 .content {
 	overflow:hidden;
@@ -954,7 +957,7 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 
 /* 1050 이하 */
 @media only screen and (max-width: 1050px) {
-	
+
 }
 
 /* 1100 이하 */
@@ -969,27 +972,13 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		padding-left:50px;
 		padding-right:50px;
 	}
-}
 
-/* 모바일 */
-@media only screen and (max-width: 800px) {
-	.header {
-		height:45px;
-	}
-	.header .logo {
-		left:10px; top:2px;
-		width:165px;
-	}
-	.header .logo a {
-		height:40px;
-		background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
-		background-size:165px 40px;
-	}
-
+	.temp-gnb {display: block;}
 	.header .btn-gnb {
+		display: block;
 		position:absolute;
 		right:0; top:0; bottom:0;
-		width:44px;
+		width:70px;
 		border-left:1px solid #e5e5e5;
 		background:url(../img/mobile/btn/btn_gnb.png) no-repeat 50% 50%;
 		background-size:13px 9px;
@@ -1002,9 +991,9 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		right:44px; bottom:0;
 	}
 	.header .btn-search {
-		right:45px;
-		width:45px;
-		height:45px;
+		right:70px;
+		width:70px;
+		height:70px;
 		background-image:url(../img/mobile/btn/btn_search02.png);
 		background-size:13px 13px;
 	}
@@ -1058,6 +1047,32 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 	}
 	.temp-gnb .bottom img {width:320px;}
 	.temp-gnb {}
+}
+
+/* 모바일 */
+@media only screen and (max-width: 800px) {
+	.header {
+		height:45px;
+	}
+	.header .logo {
+		left:10px; top:2px;
+		width:165px;
+	}
+	.header .logo a {
+		height:40px;
+		background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
+		background-size:165px 40px;
+	}
+	.header .btn-search {
+		right:45px;
+		width:45px;
+		height:45px;
+	}
+	.header .btn-gnb {
+		width:45px;
+	}
+
+
 
 	.container {padding:46px 0 50px;}
 	/* 폼 */
