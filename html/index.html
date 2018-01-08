@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--
+<link rel="stylesheet" media="screen and  (min-width: 1101px) and (max-width: 800px)" href="test.css" />
+-->
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery-ui.11.12.1.js"></script>
+<script src="js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="respond.src.js"></script>
+<![endif]-->
+
+<script>
+$(function(){
+	$('#sortable').sortable();
+	$('#sortable').disableSelection();
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="logo">
+			<a href="#">웅진원팩그룹웨어</a>
+		</h1>
+		<button type="button" class="btn-gnb">메뉴열기</button>
+		<button type="button" class="btn-search">검색</button>
+		<div class="gnb-utill">
+			<button type="button" class="btn-close"></button>
+			<div class="utill">
+				<div class="user-box">
+					<div class="user">
+						<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+						<p class="name">김웅진 부장</p>
+					</div>
+				</div>
+				<a href="#" class="btn-n">N</a>
+			</div>
+			<!-- gnb -->
+			<div class="gnb-wrap">
+				<img src="img/temp/@gnb.gif" alt="">
+
+				<div class="temp-gnb">
+					<div class="top">
+						<div class="left"><img src="img/mobile/temp/@temp01.png" alt=""></div>
+						<div class="right"><img src="img/mobile/temp/@temp02.png" alt=""></div>
+					</div>
+					<div class="bottom"><img src="img/mobile/temp/@temp03.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container main">
+		<div id="sortable" class="content">
+			<!-- 메일 -->
+			<div class="cont ui-state-default">
+				<div class="cont-inner tab-wrap-over">
+					<div class="title-area">
+						<ul class="tab-list">
+							<li class="item on"><span class="text" title="선택됨">수신메일</span></li>
+							<li class="item"><span class="text">발신메일</span></li>
+							<li class="item"><span class="text">안읽은메일</span></li>
+						</ul>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+					<div class="tab-content">
+						<!-- 수신메일 -->
+						<div class="tab-cont on">
+							<ul class="mail-list">
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[전자결재] - 결재 요청 드립니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.06</em>
+											<em class="name">이화영</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[발송실패 안내] 20151102@woongjin.kr으로 메일이 전송 실패하였습니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.01</em>
+											<em class="name">홍길동</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[전자결재] - 참조자 38명 테스트 결재가 요청되었습니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.06</em>
+											<em class="name">이화영</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">자료 첨부합니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.01</em>
+											<em class="name">홍길동</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+							</ul>
+						</div>
+						<!-- 발신메일 -->
+						<div class="tab-cont">
+							<ul class="mail-list">
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[발송실패 안내] 20151102@woongjin.kr으로 메일이 전송 실패하였습니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.01</em>
+											<em class="name">홍길동</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[전자결재] - 결재 요청 드립니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.06</em>
+											<em class="name">이화영</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">자료 첨부합니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.01</em>
+											<em class="name">홍길동</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[전자결재] - 참조자 38명 테스트 결재가 요청되었습니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.06</em>
+											<em class="name">이화영</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+							</ul>
+						</div>
+						<!-- 안읽은메일 -->
+						<div class="tab-cont">
+							<ul class="mail-list">
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[전자결재] - 참조자 38명 테스트 결재가 요청되었습니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.06</em>
+											<em class="name">이화영</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">자료 첨부합니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.01</em>
+											<em class="name">홍길동</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[전자결재] - 결재 요청 드립니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.06</em>
+											<em class="name">이화영</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+								<li class="item">
+									<a href="#" class="link">
+										<span class="title">[발송실패 안내] 20151102@woongjin.kr으로 메일이 전송 실패하였습니다.</span>
+										<span class="date-name">
+											<em class="date">2017.12.01</em>
+											<em class="name">홍길동</em>
+										</span>
+									</a>
+									<button type="button" class="btn-del">삭제</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 일정 -->
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>TODAY</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div >
+					<div class="schedule">
+						<div class="today">
+							<p class="ears">2017.12</p>
+							<p class="date">
+								<span class="number">12</span>
+								<span class="text">Tuesday</span>
+							</p>
+						</div>
+						<ul class="btn-list">
+							<li class="item">
+								<a href="#" class="inner">
+									<span class="text">
+										일정
+										<em class="len">6</em>
+									</span>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#" class="inner">
+									<span class="text">
+										할일
+										<em class="len">6</em>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>내가기안한문서</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+					<div class="slider-box">
+						<div class="slider1">
+							<ul class="bxslider">
+								<li class="item">
+									<a href="#" class="inner">
+										<span class="state">진행</span>
+										<span class="text">거래처 구매물품 지불 승인<br>요청드립니다.</span>
+										<span class="date bottom">17.12.15</span>
+									</a>
+								</li>
+								<li class="item complete">
+									<a href="#" class="inner">
+										<span class="state">완료</span>
+										<span class="text">주간업무보고 -디자인팀</span>
+										<span class="date bottom">17.12.14</span>
+									</a>
+								</li>
+								<li class="item">
+									<a href="#" class="inner">
+										<span class="state">진행</span>
+										<span class="text">거래처 구매물품 지불 승인<br>요청드립니다.</span>
+										<span class="date bottom">17.12.15</span>
+									</a>
+								</li>
+								<li class="item">
+									<a href="#" class="inner">
+										<span class="state">진행</span>
+										<span class="text">거래처 구매물품 지불 승인<br>요청드립니다.</span>
+										<span class="date bottom">17.12.15</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>설문조사</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+					<div class="slider-box">
+						<div class="slider1">
+							<ul class="bxslider">
+								<li class="item">
+									<div class="inner">
+										<span class="date">17.11.01 ~ 17.12.15</span>
+										<span class="text">클라우드브로커 웅진 페이스북<br>추가메뉴 설문조사</span>
+										<span class="join">참여율 <em class="per">40%</em></span>
+										<a href="#" class="btn-join">설문 참여하기</a>
+									</div>
+								</li>
+								<li class="item">
+									<div class="inner">
+										<span class="date">17.11.01 ~ 17.12.15</span>
+										<span class="text">웅진 ONEPACK 그룹웨어<br>사용성 설문조사</span>
+										<span class="join">참여율 <em class="per">80%</em></span>
+										<a href="#" class="btn-join">설문 참여하기</a>
+									</div>
+								</li>
+								<li class="item">
+									<div class="inner">
+										<span class="date">17.11.01 ~ 17.12.15</span>
+										<span class="text">클라우드브로커 웅진 페이스북<br>추가메뉴 설문조사</span>
+										<span class="join">참여율 <em class="per">50%</em></span>
+										<a href="#" class="btn-join">설문 참여하기</a>
+									</div>
+								</li>
+								<li class="item">
+									<div class="inner">
+										<span class="date">17.11.01 ~ 17.12.15</span>
+										<span class="text">웅진 ONEPACK 그룹웨어<br>사용성 설문조사</span>
+										<span class="join">참여율 <em class="per">60%</em></span>
+										<a href="#" class="btn-join">설문 참여하기</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>일정 (2017.12.12)</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+
+					<div class="scroll-wrap">
+						<div class="scroll-box">
+							<ul class="schedule-list">
+								<li class="item">
+									<p class="time">하루종일</p>
+									<p class="sub">홍길동 차장 휴무</p>
+								</li>
+								<li class="item red">
+									<p class="time">09:30 ~ 10:30</p>
+									<p class="sub">고객사 미팅(잠실)</p>
+									<p class="text">참석자 : 이화영 부장, 홍길동 차장</p>
+								</li>
+								<li class="item">
+									<p class="time">13:00 ~ 15:00</p>
+									<p class="sub">디자인팀 신입 면접</p>
+								</li>
+								<li class="item">
+									<p class="time">16:30 ~ 17:30</p>
+									<p class="sub">내부 시안 리뷰</p>
+								</li>
+								<li class="item">
+									<p class="time">16:30 ~ 17:30</p>
+									<p class="sub">내부 시안 리뷰</p>
+								</li>
+								<li class="item">
+									<p class="time">16:30 ~ 17:30</p>
+									<p class="sub">내부 시안 리뷰</p>
+								</li>
+								<li class="item">
+									<p class="time">16:30 ~ 17:30</p>
+									<p class="sub">내부 시안 리뷰</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>할일</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+
+					<div class="scroll-wrap">
+						<div class="scroll-box todo">
+							<ul class="todo-list">
+								<li>
+									<p class="date">2017.12.12</p>
+									<p class="me"><span>내 할 일</span> 웅진 원팩 그룹웨어 시안</p>
+									<p class="team complete"><span>디자인팀</span> 아이콘 작업(14개)</p>
+								</li>
+								<li>
+									<p class="date">2017.12.13</p>
+									<p class="me"><span>내 할 일</span> 다이어그램 고도화</p>
+									<p class="team complete">
+										<span>지원팀</span>
+										고객사 미팅<br>
+										지원준비
+									</p>
+								</li>
+								<li>
+									<p class="date">2017.12.14</p>
+									<p class="me"><span>내 할 일</span> 다이어그램 고도화</p>
+									<p class="team complete">
+										<span>지원팀</span>고객사 미팅
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<label class="check"><input type="checkbox" class="styled1"> 완료포함</label>
+				</div>
+			</div>
+
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>연차 현황</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+
+					<div class="annual-wrap">
+						<div class="total">
+							<p>총일수</p>15
+						</div>
+						<div class="unit"><img src="img/img/img_minus.png" alt="-"></div>
+						<div class="use">
+							<p>사용일수</p>9.5
+						</div>
+						<div class="unit"><img src="img/img/img_equal.png" alt="="></div>
+						<div class="remainder">
+							<p>남은일수</p>4.5
+						</div>
+					</div>
+					<div class="annual-cont">
+						<div class="scroll-wrap">
+							<p class="tit">연차내역<br>차감</p>
+							<div class="scroll-box">
+								<ul class="annual-list">
+									<li><span>연차 0.5일</span> 10.20(오후)</li>
+									<li><span>연차 1일</span> 10.18(종일)</li>
+									<li><span>연차 2일</span> 10.12(종일) ~ 10.13(종일)</li>
+									<li><span>연차 1일</span> 10.10(종일)</li>
+									<li><span>연차 0.5일</span> 10.09(오후)</li>
+									<li><span>연차 1일</span> 10.07(종일)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont ui-state-default">
+				<div class="cont-inner">
+					<div class="title-area">
+						<p>최근 방명록</p>
+						<a href="#" class="btn-more">더보기</a>
+					</div>
+
+					<div class="scroll-wrap guest">
+						<div class="scroll-box">
+							<ul class="guest-list">
+								<li>
+									<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+									<div class="txt-area">
+										<p class="tit">오늘 하루도 화이팅~</p>
+										<p class="info">
+											<span class="date">2017.12.07</span>
+											<span class="name">이화영</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+									<div class="txt-area">
+										<p class="tit">아자~ 아자~ 아자~ 아자</p>
+										<p class="info">
+											<span class="date">2017.12.06</span>
+											<span class="name">홍길동</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+									<div class="txt-area">
+										<p class="tit">오늘 하루도 화이팅~ 두번 화이팅~</p>
+										<p class="info">
+											<span class="date">2017.12.01</span>
+											<span class="name">이화영</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+									<div class="txt-area">
+										<p class="tit">오늘 하루도 우리모두 화이팅합시다!</p>
+										<p class="info">
+											<span class="date">2017.11.30</span>
+											<span class="name">이화영</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="utill">
+			<a href="#">포틀릿설정</a>
+			<a href="#">스킨설정</a>
+			<a href="#">레이아웃설정</a>
+		</div>
+		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	</div>
+</div>
+
+
+<script src="js/jquery.bxslider.min.js"></script><!-- 슬라이더 -->
+<script src="js/enscroll-0.6.1.min.js"></script><!-- 스크롤바 디자인 -->
+<script>
+$(window).load(function(){
+	$('.schedule .date').each(function(){
+		var numW =  $(this).find('.number').outerWidth();
+		$(this).find('.text').css({'left':numW + 5});
+	});
+
+	// 슬라이더
+	$('.slider1').each(function(){
+		var sliderW = $(this).outerWidth();
+		var itemW = (sliderW/3) * 2;
+		slider = $(this).find('.bxslider').bxSlider({
+			pager: false,
+			autoControls:true,
+			minSlides: 2,
+			maxSlides: 2,
+			moveSlides: 1,
+			slideWidth: itemW,
+			pause:7000, // 슬라이드 속도
+			speed:500,
+			//infiniteLoop:false,
+		});
+
+		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+	});
+
+	// 슬라이더 버튼
+	$(document).on('click', '.btn-slide button', function(){
+		if($(this).hasClass('btn-prev')){
+			$(this).closest('.cont').find('.bx-prev').trigger('click');
+		}else{
+			$(this).closest('.cont').find('.bx-next').trigger('click');
+		}
+	});
+
+	// 스크롤바 디자인
+	$('.scroll-box').enscroll({
+		verticalTrackClass: 'track',
+		verticalHandleClass: 'handle',
+		minScrollbarLength: 28
+	});
+	$('.enscroll-track').each(function(){
+		$(this).parent('div').css({'right':'0'});
+	});
+});
+</script>
+</body>
+</html>

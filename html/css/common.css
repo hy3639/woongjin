@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img{border:0 none;}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes: none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{border-radius:0;vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#fff;direction:ltr;-webkit-text-size-adjust:none}
+body,th,td,input,select,textarea,button{font-size:13px;line-height:1.5;font-family:'Nanum Gothic','나눔 고딕',dotum,'돋움',sans-serif;color:#666;letter-spacing:-1px}
+a{color:#222;text-decoration:none}
+a:hover{text-decoration:none}
+a:active{background-color:transparent}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {display:block;}
+
+@font-face {
+	font-family:'Nanum Gothic';
+	font-style:normal;
+	font-weight:400;
+	src:url(font/NanumGothic.eot);
+	src:local(※),
+	url(font/NanumGothic.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumGothic.woff) format('woff'),
+	url(font/NanumGothic.ttf) format('truetype');
+}
+@font-face {
+	font-family:'Nanum Gothic';
+	font-style:normal;
+	font-weight:700;
+	src:url(font/NanumGothicBold.eot);
+	src:local(※),
+	url(font/NanumGothicBold.eot?#iefix) format('embedded-opentype'),
+	url(font/NanumGothicBold.woff) format('woff'),
+	url(font/NanumGothicBold.ttf) format('truetype');
+}
+
+
+/* ============================================================================================
+	전체 해상도 공통
+============================================================================================ */
+.header {
+	position:fixed;
+	left:0; right:0; top:0;
+	z-index:50;
+	height:70px;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.header .logo {
+	position:absolute;
+	left:0;top:0;
+	width:260px;
+}
+.header .logo a {
+	display:block;
+	height:70px;
+	background:url(../img/layout/site_logo.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .utill {
+	position:absolute;
+	right:0; top:0;
+}
+.header .utill:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.header .utill .user-box {
+	float:left;
+	position:relative;
+}
+.header .utill .user-box:before {
+	content:'';
+	position:absolute;
+	right:30px; top:50%;
+	width:11px;
+	height:7px;
+	margin-top:-3px;
+	background:url(../img/ico/ico_arr_down01.png) no-repeat 0 0;
+}
+.header .utill .user-box .user {
+	padding:15px 55px 15px 30px;
+	cursor:pointer;
+}
+.header .utill .user-box .user:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.header .utill .user-box .img-area {
+	overflow:hidden;
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	font-size:0;
+	line-height:0;
+}
+.header .utill .user-box .name {
+	float:left;
+	margin-left:10px;
+	line-height:40px;
+}
+.header .utill .btn-n {
+	float:left;
+	width:70px;
+	height:70px;
+	margin-left:70px;
+	border-left:1px solid #e5e5e5;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-search {
+	position:absolute;
+	right:70px; top:0;
+	width:70px;
+	height:70px;
+	border-left:1px solid #e5e5e5;
+	background-image:url(../img/btn/btn_search.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .utill .btn-n {
+	background-image:url(../img/btn/btn_n.png);
+}
+
+.header .gnb-wrap {
+	overflow:hidden;
+	overflow-y:auto;
+	position:fixed;
+	left:0; top:71px; bottom:50px;
+	width:219px;
+	border-right:1px solid #e5e5e5;
+	background-color:#fafafa;
+}
+.header .gnb-wrap .scroll-box {
+	height:100%;
+}
+
+.container {
+	padding:71px 0 50px 221px;
+}
+.gnb-utill {display:block !important;}
+.temp-gnb {display: none;}
+.btn-gnb {display: none;}
+
+.footer {
+	overflow:hidden;
+	position:fixed;
+	left:0; right:0; bottom:0;
+	z-index:5;
+	height:48px;
+	padding:0 35px 0 20px;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.footer .utill {
+	overflow:hidden;
+	float:left;
+}
+.footer .utill a {
+	float:left;
+	position:relative;
+	padding:0 14px 0 15px;
+	color:#b0b0b0;
+	font-size:11px;
+	line-height:48px;
+}
+.footer .utill a:before {
+	content:'';
+	position:absolute;
+	left:0; top:50%;
+	width:1px;
+	height:10px;
+	margin-top:-5px;
+	background-color:#f3f3f3;
+}
+.footer .copyright {
+	float:right;
+	color:#b0b0b0;
+	font-size:11px;
+	line-height:48px;
+}
+
+/* ============================================================================================
+	800 이상
+============================================================================================ */
+@media only screen and (min-width: 800px) {
+	/*
+		레이아웃
+	*/
+	.wrapper {}
+	.container {padding:114px 50px 50px 271px;}
+	.content {margin-top:35px;}
+
+	/*
+		폼요소
+	*/
+	label {vertical-align:top;}
+	/* 체크박스/라디오박스 */
+	input[type=checkbox].styled1,
+	input[type=radio].styled1 {
+		width:18px;
+		height:18px;
+		box-sizing:border-box;
+	}
+	.checkWrap,
+	.radioWrap {
+		display:inline-block;
+		position:relative;
+		width:18px;
+		height:18px;
+		box-sizing:border-box;
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+	.checkWrap {background-image:url(../img/ico/form_checked.gif);}
+	.radioWrap {background-image:url(../img/ico/form_radio.gif);}
+	.checkWrap.checked,
+	.radioWrap.checked {background-position:0 -18px;}
+	.checkWrap input[type=checkbox].styled1,
+	.radioWrap input[type=radio].styled1 {
+		position:absolute;
+		left:0; top:0;
+		opacity:0;
+	}
+
+	/* 셀렉트 박스 */
+	select.styled1 {
+		height:35px;
+		line-height:35px;
+	}
+}
+
+
+/* ============================================================================================
+	1050 이하
+============================================================================================ */
+@media only screen and (max-width: 1050px) {
+
+}
+
+/* ============================================================================================
+	1100 이하
+============================================================================================ */
+@media only screen and (max-width: 1099px) {
+	.header .utill {}
+	.header .utill .user-box,
+	.header .utill .btn-n {display:none;}
+	.header .utill {}
+	.header .utill {}
+	.gnb-wrap {display:none;}
+	.container {
+		padding-left:50px;
+		padding-right:50px;
+	}
+
+	.temp-gnb {display: block;}
+	.header .btn-gnb {
+		display: block;
+		position:absolute;
+		right:0; top:0; bottom:0;
+		width:70px;
+		border-left:1px solid #e5e5e5;
+		background:url(../img/mobile/btn/btn_gnb.png) no-repeat 50% 50%;
+		background-size:13px 9px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+
+	.header .utill {
+		right:44px; bottom:0;
+	}
+	.header .btn-search {
+		right:70px;
+		width:70px;
+		height:70px;
+		background-image:url(../img/mobile/btn/btn_search02.png);
+		background-size:13px 13px;
+	}
+
+	.gnb-utill {
+		display:none;
+		position:fixed;
+		right:-100%; top:0;
+		z-index:100;
+		width:100%;
+		height:100%;
+		background-color:#fff;
+	}
+	.gnb-utill .btn-close {
+		position:absolute;
+		right:0; top:0;
+		width:50px;
+		height:50px;
+		z-index:5;
+	}
+	.header .gnb-wrap {
+		display:block;
+		position:absolute;
+		top:0;bottom:0;
+		width:100%;
+		border:0;
+		background-color:#fafafa;
+	}
+	.gnb-wrap >img {display:none;}
+	.temp-gnb {}
+	.temp-gnb .top {
+		overflow:hidden;
+		border-bottom:1px solid #f5f5f5;
+		background-color:#fff;
+	}
+	.temp-gnb .top img {width:100%;}
+	.temp-gnb .top .left {
+		float:left;
+		width:137px;
+		height:47px;
+	}
+	.temp-gnb .top .right {
+		float:right;
+		width:105px;
+		height:47px;
+	}
+	.temp-gnb .bottom {
+		width:100%;
+		background:url(../img/mobile/temp/@temp04.png) repeat-x 0 0;
+		background-size:2px 572px;
+	}
+	.temp-gnb .bottom img {width:320px;}
+}
+
+
+/* ============================================================================================
+	모바일
+============================================================================================ */
+@media only screen and (max-width: 800px) {
+	.header {
+		height:45px;
+	}
+	.header .logo {
+		left:10px; top:2px;
+		width:165px;
+	}
+	.header .logo a {
+		height:40px;
+		background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
+		background-size:165px 40px;
+	}
+	.header .btn-search {
+		right:45px;
+		width:45px;
+		height:45px;
+	}
+	.header .btn-gnb {
+		width:45px;
+	}
+
+
+
+	.container {padding:46px 0 50px;}
+}
