@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	//resizeMid();
-
 	// 탭 (오버) : class="tab-wrap-over"
 	$('.tab-wrap-over').each(function(){
 		$(this).find('.tab-list .item').mouseenter(function(){
@@ -77,39 +75,14 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-	resizeMid();
+	
 });
 
 $(window).resize(function(){
-	resizeMid();
+	
 });
 
 // 화면 리사이징
 function resizeMid(){
-	var winW = $(window).width();
-
-	// width 1100 이상
-	if(winW > 1100){
-		$('.wrapper').attr('class', 'wrapper');
-	}
-
-	// width 1100 이하
-	if(winW < 1100){
-		$('.wrapper').attr('class', 'wrapper winM');
-	}
-
-	// 모바일 전용
-	if(winW < 800){
-		$('.wrapper').attr('class', 'wrapper mobile');
-
-		// 탭 (모든 탭 클릭으로)
-		$('.tab-wrap-over').each(function(){
-			$(this).find('.tab-list .item').click(function(){
-				$(this).closest('.tab-list').find('.item').removeClass('on');
-				$(this).addClass('on');
-				var idx = $(this).index();
-				$(this).closest('.tab-wrap-over').find('.tab-cont').removeClass('on').eq(idx).addClass('on');
-			});
-		});
-	}
+	
 }

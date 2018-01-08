@@ -20,7 +20,7 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper media">
 	<div class="header">
 		<h1 class="logo">
 			<a href="#">웅진원팩그룹웨어</a>
@@ -62,7 +62,7 @@
 	<div class="container main">
 		<div class="content">
 			<!-- 상단 고정영역 -->
-			<div class="fixed-top-box">
+			<div class="fixed-top-box len3">
 				<div class="cont">
 					<div class="slider2">
 						<ul class="bxslider">
@@ -73,7 +73,92 @@
 						</ul>
 					</div>
 				</div>
+
+				<div class="cont">
+					<div class="cont-inner">
+						<div class="title-area">
+							<p>최근게시글</p>
+						</div>
+						<ul class="mail-list board">
+							<li class="item">
+								<a href="#" class="link">
+									<span class="title"><em class="label">NOTICE</em>소리마치 그룹웨어 데모 진행</span>
+									<span class="date-name">
+										<em class="date">2017.12.06</em>
+										<em class="name">이화영</em>
+									</span>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">
+									<span class="title"><em class="label">NOTICE</em>소리마치 그룹웨어 데모 진행소리마치 그룹웨어 데모 진행소리마치 그룹웨어 데모 진행소리마치 그룹웨어 데모 진행</span>
+									<span class="date-name">
+										<em class="date">2017.12.01</em>
+										<em class="name">홍길동</em>
+									</span>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">
+									<span class="title"><em class="label">NOTICE</em>소리마치 그룹웨어 데모 진행</span>
+									<span class="date-name">
+										<em class="date">2017.12.06</em>
+										<em class="name">이화영</em>
+									</span>
+								</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">
+									<span class="title"><em class="label">NOTICE</em>소리마치 그룹웨어 데모 진행</span>
+									<span class="date-name">
+										<em class="date">2017.12.01</em>
+										<em class="name">홍길동</em>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="cont">
+					<div class="cont-inner">
+						<div class="title-area">
+							<p>연차 현황</p>
+							<a href="#" class="btn-more">더보기</a>
+						</div>
+
+						<div class="annual-wrap">
+							<div class="total">
+								<p>총일수</p>15
+							</div>
+							<div class="unit"><img src="img/img/img_minus.png" alt="-"></div>
+							<div class="use">
+								<p>사용일수</p>9.5
+							</div>
+							<div class="unit"><img src="img/img/img_equal.png" alt="="></div>
+							<div class="remainder">
+								<p>남은일수</p>4.5
+							</div>
+						</div>
+						<div class="annual-cont">
+							<div class="scroll-wrap">
+								<p class="tit">연차내역 차감</p>
+								<div class="scroll-box">
+									<ul class="annual-list">
+										<li><span>연차 0.5일</span> 10.20(오후)</li>
+										<li><span>연차 1일</span> 10.18(종일)</li>
+										<li><span>연차 2일</span> 10.12(종일) ~ 10.13(종일)</li>
+										<li><span>연차 1일</span> 10.10(종일)</li>
+										<li><span>연차 0.5일</span> 10.09(오후)</li>
+										<li><span>연차 1일</span> 10.07(종일)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
 			<!-- 드래그앤 드랍 영역 -->
 			<div id="sortable">
 				<!-- 메일 -->
@@ -437,44 +522,7 @@
 					</div>
 				</div>
 
-				<div class="cont ui-state-default">
-					<div class="cont-inner">
-						<div class="title-area">
-							<p>연차 현황</p>
-							<a href="#" class="btn-more">더보기</a>
-						</div>
-
-						<div class="annual-wrap">
-							<div class="total">
-								<p>총일수</p>15
-							</div>
-							<div class="unit"><img src="img/img/img_minus.png" alt="-"></div>
-							<div class="use">
-								<p>사용일수</p>9.5
-							</div>
-							<div class="unit"><img src="img/img/img_equal.png" alt="="></div>
-							<div class="remainder">
-								<p>남은일수</p>4.5
-							</div>
-						</div>
-						<div class="annual-cont">
-							<div class="scroll-wrap">
-								<p class="tit">연차내역<br>차감</p>
-								<div class="scroll-box">
-									<ul class="annual-list">
-										<li><span>연차 0.5일</span> 10.20(오후)</li>
-										<li><span>연차 1일</span> 10.18(종일)</li>
-										<li><span>연차 2일</span> 10.12(종일) ~ 10.13(종일)</li>
-										<li><span>연차 1일</span> 10.10(종일)</li>
-										<li><span>연차 0.5일</span> 10.09(오후)</li>
-										<li><span>연차 1일</span> 10.07(종일)</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				<!-- 방명록 -->
 				<div class="cont ui-state-default">
 					<div class="cont-inner">
 						<div class="title-area">
@@ -530,8 +578,44 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
+				<div class="cont ui-state-default">
+					<div class="cont-inner">
+						<div class="title-area">
+							<p>내가기안한문서</p>
+							<a href="#" class="btn-more">더보기</a>
+						</div>
+						<div class="slider-box type2">
+							<div class="slider3">
+								<ul class="bxslider">
+									<li class="item">
+										<div href="#" class="inner">
+											<div class="img-area"><img src="img/temp/round01.png" alt=""></div>
+											<div class="text">웅진<br>홈페이지</div>
+											<a href="#" class="btn-link">바로가기</a>
+										</div>
+									</li>
+									<li class="item">
+										<div href="#" class="inner">
+											<div class="img-area"><img src="img/temp/round02.png" alt=""></div>
+											<div class="text">중소기업<br>센터</div>
+											<a href="#" class="btn-link">바로가기</a>
+										</div>
+									</li>
+									<li class="item">
+										<div href="#" class="inner">
+											<div class="img-area"><img src="img/temp/round03.png" alt=""></div>
+											<div class="text">페이스북</div>
+											<a href="#" class="btn-link">바로가기</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
@@ -541,10 +625,19 @@
 </div>
 
 
+<div class="temp-btn-area">
+	<button type="button" class="btn">반응형</button>
+	<button type="button" class="btn1">1단</button>
+	<button type="button" class="btn1">2단</button>
+	<button type="button" class="btn1">3단</button>
+</div>
+
 <script src="js/jquery.bxslider.min.js"></script><!-- 슬라이더 -->
 <script src="js/enscroll-0.6.1.min.js"></script><!-- 스크롤바 디자인 -->
 <script>
 $(window).load(function(){
+	resizeBox();// 상단 박스 넓이
+
 	// 컨텐츠 박스 드래그앤드랍
 	$('#sortable').sortable();
 	$('#sortable').disableSelection();
@@ -593,6 +686,23 @@ $(window).load(function(){
 		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
 	});
 
+	$('.slider3').each(function(){
+		var sliderW = $(this).outerWidth();
+		var itemW = sliderW/3;
+		slider = $(this).find('.bxslider').bxSlider({
+			pager: false,
+			autoControls:true,
+			minSlides: 3,
+			maxSlides: 3,
+			moveSlides: 1,
+			slideWidth: itemW,
+			//infiniteLoop:false,
+			pause:7000, // 슬라이드 속도
+			speed:500
+		});
+		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+	});
+
 	// 스크롤바 디자인
 	$('.scroll-box').enscroll({
 		verticalTrackClass: 'track',
@@ -603,6 +713,25 @@ $(window).load(function(){
 		$(this).parent('div').css({'right':'0'});
 	});
 });
+
+$(window).resize(function(){
+	resizeBox();
+});
+
+function resizeBox(){
+	$('.fixed-top-box').each(function(){
+		var boxW = $(this).outerWidth();
+		$(this).find('.cont').css({'width':boxW/3});
+	});
+
+	var winW = $(window).width();
+	if(winW > 1279){
+		var boxW = $('.content').outerWidth();
+		$('.media .content .cont').css({'width':boxW/3});
+	}else{
+		$('.media .content .cont').removeAttr('style');
+	}
+}
 </script>
 </body>
 </html>
