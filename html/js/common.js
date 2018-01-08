@@ -53,21 +53,15 @@ $(document).ready(function(){
 		});
 	});
 	/* 셀렉트박스 */
-
-	/* 버튼 */
-	// 안읽은 게시물 보기
-	$('.btn-catch').click(function(){
-		$(this).toggleClass('on');
-	});
-
-	// 게시판 레이아웃
-	$('.top-menu .menu-list .btn-list .btn').click(function(){
-		$(this).closest('.btn-list').find('.btn').removeClass('on');
-		$(this).addClass('on');
-	});
-	$('.top-menu .menu-list .right-menu .btn').click(function(){
-		$(this).closest('.right-menu').find('.btn').removeClass('on');
-		$(this).addClass('on');
+	$('select.styled1').each(function(){
+		var val = $(this).val();
+		var wid = $(this).outerWidth();
+		$(this).wrap('<span class="selectWrap">');
+		$(this).closest('.selectWrap').css({'width':wid}).prepend('<span class="selTitle">'+val+'</span>');
+		$(this).change(function(){
+			var cVal = $(this).val();
+			$(this).closest('.selectWrap').find('.selTitle').html(cVal);
+		});
 	});
 
 	// gnb 임시 버튼
