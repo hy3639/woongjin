@@ -828,7 +828,8 @@ $(window).load(function(){
 		$('.web .gnb-wrap').css({'background-color':'#fafafa'});
 	});
 	// 모바일
-	$(document).on('click', '.mobile .gnb-item .gnb-title', function(){
+	$(document).on('click', '.mobile .gnb-item .gnb-title', function(e){
+		e.preventDefault();
 		if($(this).closest('.gnb-item').hasClass('on')){
 			$(this).closest('.gnb-item').removeClass('on').find('.depth1').slideUp(200);
 		}else{
