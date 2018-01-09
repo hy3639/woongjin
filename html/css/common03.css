@@ -33,28 +33,38 @@
 .gnb-wrap .link-home,
 .gnb-wrap .gnb-list .gnb-item .gnb-title {
 	display:block;
+	position:relative;
 	padding:16px 25px 16px 64px;
 	box-sizing:border-box;
-	background-repeat:no-repeat;
-	background-position:35px 16px;
 	color:#000;
 	font-size:14;
 	line-height:18px;
 }
-.gnb-wrap .link-home.ico01 {background-image:url(../img/ico/gnb_ico01.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../img/ico/gnb_ico02.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../img/ico/gnb_ico03.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../img/ico/gnb_ico04.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../img/ico/gnb_ico05.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../img/ico/gnb_ico06.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../img/ico/gnb_ico07.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../img/ico/gnb_ico08.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../img/ico/gnb_ico09.png);}
-.gnb-wrap .gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../img/ico/gnb_ico10.png);}
+.gnb-wrap .link-home:before,
+.gnb-wrap .gnb-list .gnb-item .gnb-title:before {
+	content:'';
+	position:absolute;
+	left:35px; top:16px;
+	width:16px;
+	height:18px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.gnb-wrap .link-home.ico01:before {background-image:url(../img/ico/gnb_ico01.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico02:before {background-image:url(../img/ico/gnb_ico02.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico03:before {background-image:url(../img/ico/gnb_ico03.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico04:before {background-image:url(../img/ico/gnb_ico04.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico05:before {background-image:url(../img/ico/gnb_ico05.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico06:before {background-image:url(../img/ico/gnb_ico06.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico07:before {background-image:url(../img/ico/gnb_ico07.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico08:before {background-image:url(../img/ico/gnb_ico08.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico09:before {background-image:url(../img/ico/gnb_ico09.png);}
+.gnb-wrap .gnb-list .gnb-item .gnb-title.ico10:before {background-image:url(../img/ico/gnb_ico10.png);}
 .gnb-wrap .gnb-list .gnb-item:hover .gnb-title {
 	background-color:#ff5c53;
 	color:#fff;
 }
+.gnb-wrap .gnb-list .gnb-item:hover .gnb-title:before {background-position:0 -18px;}
 .gnb-wrap .gnb-list .gnb-item:hover .depth1 {display:block;}
 
 .gnb-wrap .depth1 {

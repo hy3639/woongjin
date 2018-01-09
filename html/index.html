@@ -315,13 +315,14 @@
 				<div class="cont ui-state-default">
 					<div class="cont-inner tab-wrap-over">
 						<div class="title-area">
-							<ul class="tab-list">
-								<li class="item on"><span class="text" title="선택됨">수신메일</span></li>
-								<li class="item"><span class="text">발신메일</span></li>
-								<li class="item"><span class="text">안읽은메일</span></li>
-							</ul>
+							<p>메일</p>
 							<a href="#" class="btn-more">더보기</a>
 						</div>
+						<ul class="tab-list">
+							<li class="item on"><span class="text" title="선택됨">수신</span></li>
+							<li class="item"><span class="text">발신</span></li>
+							<li class="item"><span class="text">안읽음</span></li>
+						</ul>
 						<div class="tab-content">
 							<!-- 수신메일 -->
 							<div class="tab-cont on">
@@ -641,6 +642,11 @@
 							<a href="#" class="btn-more">더보기</a>
 						</div>
 
+						<div class="write-box">
+							<input type="text" placeholder="오늘 할 일을 빠르게 입력하세요.">
+							<button type="button" class="btn-write">등록</button>
+						</div>
+
 						<div class="scroll-wrap">
 							<div class="scroll-box todo">
 								<ul class="todo-list">
@@ -780,6 +786,10 @@
 	<button type="button" class="btn1">1단</button>
 	<button type="button" class="btn2">2단</button>
 	<button type="button" class="btn3">3단</button>
+</div>
+
+<div class="layer-popup">
+	<img src="img/temp/@layer.jpg" alt="">
 </div>
 
 <script src="js/jquery.bxslider.min.js"></script><!-- 슬라이더 -->
@@ -931,6 +941,19 @@ $(window).load(function(){
 		resizeBox();
 		//slider1.destroySlider();
 		//slider1.reloadSlider();
+	});
+
+
+
+	// 임시 레이어팝업
+	$('.btn-setting').click(function(){
+		$('.wrapper').append('<div class="dimmed"></div>');
+		$('.dimmed').fadeIn();
+		$('.layer-popup').show();
+	});
+	$(document).on('click', '.dimmed',function(){
+		$('.dimmed').remove();
+		$('.layer-popup').hide();
 	});
 });
 

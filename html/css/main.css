@@ -6,12 +6,15 @@
 }
 .tab-list .item {
 	float:left;
+	margin-top:23px;
 }
 .tab-list .item .text {
 	display:block;
 	position:relative;
-	padding:0 14px 0 15px;
+	padding:0 10px 0 11px;
 	color:#bbb;
+	font-size:16px;
+	font-weight:700;
 	cursor:pointer;
 }
 .tab-list .item.on .text {color:#000;}
@@ -31,6 +34,31 @@
 .tab-content .tab-cont {display:none;}
 .tab-content .tab-cont.on {display:block;}
 
+/* 입력박스 */
+.write-box {
+	position:relative;
+	margin-top:30px;
+	padding-right:52px;
+}
+.write-box input[type=text] {
+	width:100%;
+	height:32px;
+	padding:0 15px;
+	border:1px solid #eee;
+	border-right:0;
+	line-height:32px;
+}
+.write-box .btn-write {
+	display:inline-block;
+	position:absolute;
+	right:0; top:0; bottom:0;
+	width:52px;
+	background-color:#ff5349;
+	box-sizing:border-box;
+	color:#fff;
+	font-weight:700;
+	text-align:center;
+}
 
 .container.main {
 	padding:71px 0 50px 220px;
@@ -83,7 +111,7 @@
 .content .cont .mail-list {padding-top:4px;}
 .content .cont .mail-list .item {
 	position:relative;
-	margin-top:28px;
+	margin-top:18px;
 	padding-right:50px;
 }
 .content .cont .mail-list .item span {display:block;}
@@ -410,7 +438,7 @@
 /* 스크롤바 디자인 */
 .scroll-wrap {
 	position:relative;
-	margin-top:30px;
+	margin:17px 0;
 }
 .scroll-box {
 	overflow: auto;
@@ -481,7 +509,10 @@
 }
 
 /* 할일 */
-.scroll-box.todo {height:235px; margin-bottom:5px;}
+.scroll-box.todo {
+	height:160px;
+	margin-bottom:5px;
+}
 .todo-list {}
 .todo-list li {
 	padding-top:44px;
@@ -657,7 +688,6 @@
 /* 1280 이상 */
 @media only screen and (min-width: 1279px) {
 	.media .content .cont {width:33%;}
-	.tab-list .item .text {padding:0 10px 0 11px;}
 }
 
 /* 모바일 */
@@ -686,8 +716,6 @@
 .stage1 .content .ui-sortable .cont {width:100%;}
 .stage2 .content .ui-sortable .cont {width:50%;}
 .stage3 .content .ui-sortable .cont {width:33%;}
-.stage3 .tab-list .item .text {padding:0 10px 0 11px;}
-.stage3 .tab-list .item:first-child .text {padding-left:0;}
 .stage3.wrapper {min-width:1250px;}
 
 
@@ -706,4 +734,27 @@
 	width:50px;
 	height:30px;
 	color:#fff;
+}
+
+
+
+
+
+/* 임시 레이어 팝업 */
+.dimmed {
+	display:none;
+	position:fixed;
+	left:0; right:0; top:0; bottom:0;
+	z-index:120;
+	background-color:rgba(0,0,0,.5);
+
+}
+.layer-popup {
+	display:none;
+	position:fixed;
+	left:50%; top:50%;
+	z-index:150;
+	margin:-328px 0 0 -425px;
+	font-size:0;
+	line-height:0;
 }
