@@ -313,6 +313,8 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		left:0; right:0; top:0;
 		z-index:50;
 		height:45px;
+		border-bottom:1px solid #e5e5e5;
+		background-color:#fff;
 	}
 	.header .logo {
 		left:10px; top:2px;
@@ -361,13 +363,14 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		GNB
 	*/
 	.gnb-utill {
-		overflow-y:auto;
+		display:none;
 		position:fixed;
-		left:0; right:0; top:0; bottom:0;
+		right:-100%; top:0; bottom:0;
+		width:100%;
 		background-color:#fafafa;
 	}
 	.gnb-utill .utill {
-		position:fixed;
+		position:absolute;
 		left:0; right:0; top:0;
 		background-color:#fff;
 		border-bottom:1px solid #f5f5f5;
@@ -462,8 +465,10 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 	}
 
 	.gnb-wrap {
+		overflow-y:auto;
 		display:block;
-		padding-top:98px;
+		position:absolute;
+		left:0; right:0; top:98px; bottom:0;
 	}
 	.gnb-wrap .home .link-home,
 	.gnb-list .gnb-item .gnb-title {
@@ -538,11 +543,10 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		padding:5px 0;
 		font-size:12px;
 	}
-	.gnb-list .depth1-list {}
-	.gnb-list {}
-	.gnb-list {}
-	.gnb-wrap {}
-	.gnb-wrap {}
+
+
+
+	.temp-btn-area {display:none;}
 
 
 
