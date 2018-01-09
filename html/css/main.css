@@ -523,8 +523,7 @@
 /* 연차 */
 .annual-wrap {
 	/* overflow: hidden; */
-	width: 100%;
-	margin-top:33px;
+	margin:33px -15px 0;
 	/* padding-left:70px; */
 	text-align: center;
 	box-sizing: border-box;
@@ -639,8 +638,8 @@
 
 /* 1050 이하 */
 /*@media only screen and (max-width: 1050px) {*/
-@media only screen and (max-width: 900px) {
-	
+@media only screen and (max-width: 990px) {
+	.content .cont-inner {padding:25px 10px 0;}
 }
 
 /* 1100 이하 */
@@ -672,6 +671,9 @@
 
 
 
+.stage1 .content .ui-sortable .cont {width:100%;}
+.stage2 .content .ui-sortable .cont {width:50%;}
+.stage3 .content .ui-sortable .cont {width:33%;}
 
 
 

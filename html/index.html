@@ -20,7 +20,7 @@
 </head>
 
 <body>
-<div class="wrapper media">
+<div class="wrapper stage1"><!-- media stage1 stage2 stage3 -->
 	<div class="header">
 		<h1 class="logo">
 			<a href="#">웅진원팩그룹웨어</a>
@@ -628,8 +628,8 @@
 <div class="temp-btn-area">
 	<button type="button" class="btn">반응형</button>
 	<button type="button" class="btn1">1단</button>
-	<button type="button" class="btn1">2단</button>
-	<button type="button" class="btn1">3단</button>
+	<button type="button" class="btn2">2단</button>
+	<button type="button" class="btn3">3단</button>
 </div>
 
 <script src="js/jquery.bxslider.min.js"></script><!-- 슬라이더 -->
@@ -712,6 +712,22 @@ $(window).load(function(){
 	$('.enscroll-track').each(function(){
 		$(this).parent('div').css({'right':'0'});
 	});
+
+	// 단수 결정 버튼
+	$('.temp-btn-area button').click(function(){
+		if($(this).hasClass('btn')){
+			$('.wrapper').attr('class', 'wrapper media');
+		}
+		if($(this).hasClass('btn1')){
+			$('.wrapper').attr('class', 'wrapper stage1');
+		}
+		if($(this).hasClass('btn2')){
+			$('.wrapper').attr('class', 'wrapper stage2');
+		}
+		if($(this).hasClass('btn3')){
+			$('.wrapper').attr('class', 'wrapper stage3');
+		}
+	});
 });
 
 $(window).resize(function(){
@@ -727,10 +743,14 @@ function resizeBox(){
 	var winW = $(window).width();
 	if(winW > 1279){
 		var boxW = $('.content').outerWidth();
-		$('.media .content .cont').css({'width':boxW/3});
+		$('.media .content .ui-sortable .cont').css({'width':boxW/3});
 	}else{
-		$('.media .content .cont').removeAttr('style');
+		$('.media .content .ui-sortable .cont').removeAttr('style');
 	}
+
+	$('.stage3 .content .ui-sortable .cont').each(function(){
+		$(this).css({'width':boxW/3});
+	});
 }
 </script>
 </body>
