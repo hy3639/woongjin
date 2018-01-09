@@ -170,18 +170,6 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 }
 
 /* ============================================================================================
-	1100 이하
-============================================================================================ */
-@media only screen and (max-width: 1099px) {
-	.container {
-		padding-left:50px;
-		padding-right:50px;
-	}
-	.gnb-wrap {display:none;}
-}
-
-
-/* ============================================================================================
 	웹
 ============================================================================================ */
 @media only screen and (min-width: 800px) {
@@ -359,6 +347,179 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		line-height:0;
 	}
 
+
+
+	.temp-btn-area {display:none;}
+
+
+
+	.container {padding:46px 0 50px;}
+}
+
+/* ============================================================================================
+	1100 이상
+============================================================================================ */
+@media only screen and (min-width: 1100px) {
+	/* gnb */
+	.gnb-wrap {
+		position:fixed;
+		left:0; top:71px;bottom:0;
+		width:220px;
+		padding-top:25px;
+		box-sizing:border-box;
+		border-right:1px solid #e5e5e5;
+		background-color:#fafafa;
+	}
+	.gnb-wrap .home {
+		position:relative;
+	}
+	.gnb-wrap .home .btn-setting {
+		display:block;
+		position:absolute;
+		right:25px; top:50%;
+		width:24px;
+		height:24px;
+		margin-top:-12px;
+		box-sizing:border-box;
+		background:url(../img/btn/btn_setting.gif) no-repeat 0 0;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.gnb-wrap .link-home,
+	.gnb-wrap .gnb-list .gnb-item .gnb-title {
+		display:block;
+		padding:16px 25px 16px 64px;
+		box-sizing:border-box;
+		background-repeat:no-repeat;
+		background-position:35px 16px;
+		color:#000;
+		font-size:14;
+		line-height:18px;
+	}
+	.gnb-wrap .link-home.ico01 {background-image:url(../img/ico/gnb_ico01.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../img/ico/gnb_ico02.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../img/ico/gnb_ico03.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../img/ico/gnb_ico04.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../img/ico/gnb_ico05.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../img/ico/gnb_ico06.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../img/ico/gnb_ico07.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../img/ico/gnb_ico08.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../img/ico/gnb_ico09.png);}
+	.gnb-wrap .gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../img/ico/gnb_ico10.png);}
+	.gnb-wrap .gnb-list .gnb-item:hover .gnb-title {
+		background-color:#ff5c53;
+		color:#fff;
+	}
+	.gnb-wrap .gnb-list .gnb-item:hover .depth1 {display:block;}
+
+	.gnb-wrap .depth1 {
+		display:none;
+		position:fixed;
+		left:220px; top:71px; bottom:0;
+		width:220px;
+		padding-top:12px;
+		box-sizing:border-box;
+		border-right:1px solid #e5e5e5;
+		background-color:#fafafa;
+	}
+	.gnb-wrap .depth1 .depth1-title {
+		position:relative;
+		height:68px;
+		box-sizing:border-box;
+	}
+	.gnb-wrap .depth1 .depth1-title .text {
+		position:absolute;
+		left:35px; right:30px; top:50%;
+		margin-top:-12px;
+		color:#000;
+		font-size:18px;
+		font-weight:700;
+		line-height:24px;
+	}
+	.gnb-wrap .depth1 .depth1-list {
+		position:absolute;
+		left:0; right:0; top:80px; bottom:0;
+		padding:10px 0;
+		box-sizing:border-box;
+		border-top:1px solid #eaeaea;
+	}
+	.gnb-wrap .depth1 .depth1-list .depth1-item {}
+	.gnb-wrap .depth1 .depth1-list .depth1-item .d-title {
+		display:block;
+		padding:16px 30px 16px 35px;
+		color:#333;
+		font-size:14px;
+		line-height:18px;
+	}
+	/* 하위 리스트가 있을경우 */
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title {
+		position:relative;
+		padding-right:50px;
+	}
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title:before,
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title:after {
+		content:'';
+		position:absolute;
+		background-color:#9da4ac;
+	}
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title:before{
+		right:35px; top:50%;
+		width:9px;
+		height:1px;
+	}
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title:after {
+		right:39px; top:50%;
+		width:1px;
+		height:9px;
+		margin-top:-4px;
+	}
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList.on .d-title {color:#ff5c53;}
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList.on .d-title:before {background-color:#ff5c53;}
+	.gnb-wrap .depth1 .depth1-list .depth1-item.inList.on .d-title:after {display:none;}
+	.gnb-wrap .depth1 .depth2-list {
+		display:none;
+		padding:10px 0;
+		border-top:1px solid #e5e5e5;
+		border-bottom:1px solid #e5e5e5;
+		background-color:#f5f5f5;
+	}
+	.gnb-wrap .depth1 .depth2-list .depth2-item {}
+	.gnb-wrap .depth1 .depth2-list .depth2-item a {
+		display:block;
+		padding:8px 30px 8px 35px;
+		color:#333;
+		line-height:16px;
+	}
+	.gnb-wrap .depth1 .depth2-list .depth2-item a:hover {text-decoration:underline;}
+}
+/* ============================================================================================
+	1100 이하
+============================================================================================ */
+@media only screen and (max-width: 1099px) {
+	.container {
+		padding-left:50px;
+		padding-right:50px;
+	}
+	.gnb-wrap {display:none;}
+	
+	.header .btn-search {right:70px;}
+	.btn-gnb {
+		display:block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 70px;
+		height: 70px;
+		border-left: 1px solid #e5e5e5;
+		background-image: url(../img/mobile/btn/btn_gnb.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		font-size: 0;
+		text-indent: -9999px;
+		line-height: 0;
+	}
+
 	/*
 		GNB
 	*/
@@ -367,6 +528,8 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		position:fixed;
 		right:-100%; top:0; bottom:0;
 		width:100%;
+		max-width:450px;
+		border-left:1px solid #e5e5e5;
 		background-color:#fafafa;
 	}
 	.gnb-utill .utill {
@@ -376,11 +539,14 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		border-bottom:1px solid #f5f5f5;
 	}
 	.gnb-utill .utill .user-box {
+		float:inherit;
 		position:relative;
 		height:48px;
 		border-bottom:1px solid #f5f5f5;
 	}
+	.header .utill .user-box:before {display:none;}
 	.gnb-utill .utill .user-box .btn-close {
+		display:block;
 		position:absolute;
 		right:10px; top:50%;
 		width:32px;
@@ -399,6 +565,7 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		height:48px;
 		padding:0 42px 0 56px;
 		line-height:48px;
+		white-space:nowrap;
 	}
 	.gnb-utill .utill .user-box .user:before {
 		content:'';
@@ -425,7 +592,9 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 	.gnb-utill .utill .naver-list {
 		overflow:hidden;
 		padding:0 20px;
+		border-left:0;
 	}
+	.header .utill .naver-list {float:inherit;}
 	.gnb-utill .utill .naver-list .link {
 		float:left;
 		position:relative;
@@ -543,12 +712,4 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 		padding:5px 0;
 		font-size:12px;
 	}
-
-
-
-	.temp-btn-area {display:none;}
-
-
-
-	.container {padding:46px 0 50px;}
 }
