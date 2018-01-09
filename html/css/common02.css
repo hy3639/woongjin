@@ -1,0 +1,65 @@
+/*
+	max-width: 800px (800 이하)
+*/
+
+/* ===========================================================================
+	해더
+=========================================================================== */
+.header {
+		position:fixed;
+		left:0; right:0; top:0;
+		z-index:50;
+		height:45px;
+		border-bottom:1px solid #e5e5e5;
+		background-color:#fff;
+	}
+	.header .logo {
+		left:10px; top:2px;
+		width:165px;
+	}
+	.header .logo a {
+		display:block;
+		height:40px;
+		background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
+		background-size:165px 40px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.header .btn-search {
+		position:absolute;
+		top:0; right:45px;
+		width:45px;
+		height:45px;
+		border-left:1px solid #e5e5e5;
+		background-image:url(../img/mobile/btn/btn_search02.png);
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		background-size:13px 13px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+	.header .btn-gnb {
+		display:block;
+		position:absolute;
+		right:0; top:0;
+		width:45px;
+		height:45px;
+		border-left:1px solid #e5e5e5;
+		background-image:url(../img/mobile/btn/btn_gnb.png);
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		background-size:13px 9px;
+		font-size:0;
+		text-indent:-9999px;
+		line-height:0;
+	}
+
+
+
+	.temp-btn-area {display:none;}
+
+
+
+	.container {padding:46px 0 50px;}

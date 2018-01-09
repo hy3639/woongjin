@@ -62,7 +62,7 @@ $(document).ready(function(){
 		});
 	});
 
-	// gnb 임시 버튼
+	// gnb 버튼
 	$('.btn-gnb').click(function(){
 		$('.gnb-utill').show();
 		$('.gnb-utill').animate({right:0}, 300);
@@ -73,16 +73,3 @@ $(document).ready(function(){
 		});
 	});
 });
-
-$(window).load(function(){
-	
-});
-
-$(window).resize(function(){
-	
-});
-
-// 화면 리사이징
-function resizeMid(){
-	
-}
