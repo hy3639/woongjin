@@ -7,13 +7,6 @@
 =========================================================================== */
 .wrapper {}
 
-/* 서브 공통 타이틀 영역 */
-.title-wrap {padding:43px 50px 34px;}
-.title-wrap .title {
-	color:#000;
-	font-size:25px;
-}
-
 /* ===========================================================================
 	폼요소
 =========================================================================== */
@@ -260,3 +253,36 @@ select.styled1 {
 }
 .btn-gnb {display: none;}
 .gnb-utill .utill .user-box .btn-close {display:none;}
+
+/* ===========================================================================
+	컨텐츠
+=========================================================================== */
+/* 서브 공통 타이틀 영역 */
+.title-wrap {padding:43px 50px 34px;}
+.title-wrap .title {
+	color:#000;
+	font-size:25px;
+}
+
+/* 게시판 상단 소팅 영역 */
+.sorting-area {
+	position:relative;
+	margin:0 50px;
+	padding:15px 0;
+}
+.sorting-area:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.sorting-area .left-box {
+	position:absolute;
+	left:0; top:0; bottom:0;
+	padding:15px 0;
+}
+.sorting-area .left-box .all-len {
+	padding-top:17px;
+	font-size:15px;
+}
+.sorting-area .left-box .all-len .len {font-weight:700;}
+.sorting-area .right-box {float:right;}

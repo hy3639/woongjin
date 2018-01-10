@@ -6,8 +6,7 @@
 	레이아웃
 =========================================================================== */
 .container {
-	padding-left:50px;
-	padding-right:50px;
+	padding:71px 0 50px;
 }
 .gnb-wrap {display:none;}
 

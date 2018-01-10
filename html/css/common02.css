@@ -3,63 +3,137 @@
 */
 
 /* ===========================================================================
+	레이아웃
+=========================================================================== */
+.container {padding:46px 0 0;}
+.content {margin:-25px 0 0;}
+
+/* ===========================================================================
 	해더
 =========================================================================== */
 .header {
-		position:fixed;
-		left:0; right:0; top:0;
-		z-index:100;
-		height:45px;
-		border-bottom:1px solid #e5e5e5;
-		background-color:#fff;
-	}
-	.header .logo {
-		left:10px; top:2px;
-		width:165px;
-	}
-	.header .logo a {
-		display:block;
-		height:40px;
-		background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
-		background-size:165px 40px;
-		font-size:0;
-		text-indent:-9999px;
-		line-height:0;
-	}
-	.header .btn-search {
-		position:absolute;
-		top:0; right:45px;
-		width:45px;
-		height:45px;
-		border-left:1px solid #e5e5e5;
-		background-image:url(../img/mobile/btn/btn_search02.png);
-		background-repeat:no-repeat;
-		background-position:50% 50%;
-		background-size:13px 13px;
-		font-size:0;
-		text-indent:-9999px;
-		line-height:0;
-	}
-	.header .btn-gnb {
-		display:block;
-		position:absolute;
-		right:0; top:0;
-		width:45px;
-		height:45px;
-		border-left:1px solid #e5e5e5;
-		background-image:url(../img/mobile/btn/btn_gnb.png);
-		background-repeat:no-repeat;
-		background-position:50% 50%;
-		background-size:13px 9px;
-		font-size:0;
-		text-indent:-9999px;
-		line-height:0;
-	}
+	position:fixed;
+	left:0; right:0; top:0;
+	z-index:100;
+	height:45px;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.header .logo {
+	left:10px; top:2px;
+	width:165px;
+}
+.header .logo a {
+	display:block;
+	height:40px;
+	background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
+	background-size:165px 40px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-search {
+	position:absolute;
+	top:0; right:45px;
+	width:45px;
+	height:45px;
+	border-left:1px solid #e5e5e5;
+	background-image:url(../img/mobile/btn/btn_search02.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:13px 13px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .btn-gnb {
+	display:block;
+	position:absolute;
+	right:0; top:0;
+	width:45px;
+	height:45px;
+	border-left:1px solid #e5e5e5;
+	background-image:url(../img/mobile/btn/btn_gnb.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:13px 9px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
 
+/* ===========================================================================
+	버튼
+=========================================================================== */
+/*
+	아이콘
+*/
+/* 공통 */
+.btn-icon-text {display:inline-block;}
+.btn-icon-text .text {
+	display:block;
+	position:relative;
+	height:32px;
+	padding:0 10px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	font-size:12px;
+	line-height:30px;
+	cursor:pointer;
+}
+.btn-icon-text .text:before {
+	content:'';
+	position:absolute;
+	top:50%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+/* 01 */
+.btn-icon-text.icon01 .text {padding-left:28px;}
+.btn-icon-text.icon01 .text:before {
+	left:10px;
+	width:12px;
+	height:9px;
+	margin-top:-5px;
+	background-image:url(../img/mobile/btn/btn_ico01.png);
+	background-size:12px 19px;
+}
+.btn-icon-text.icon01.on .text {
+	border-color:#888;
+	color:#333;
+}
+.btn-icon-text.icon01.on .text:before {background-position:0 -10px;}
 
+/* ===========================================================================
+	컨텐츠
+=========================================================================== */
+/* 서브 공통 타이틀 영역 */
+.title-wrap {padding:20px 20px 18px;}
+.title-wrap .title {
+	color:#000;
+	font-size:16px;
+}
 
-	.temp-btn-area {display:none;}
-
-
-
-	.container {padding:46px 0 50px;}
+/* 게시판 상단 소팅 영역 */
+.sorting-area {
+	position:relative;
+	margin:0 20px;
+	padding:10px 0;
+	border-bottom:1px solid #eee;
+}
+.sorting-area:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.sorting-area .left-box {
+	position:absolute;
+	left:20px; top:0; bottom:0;
+	padding:10px 0;
+}
+.sorting-area .left-box .all-len {
+	font-size:12px;
+	line-height:32px;
+}
+.sorting-area .right-box {float:right;}
