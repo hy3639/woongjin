@@ -5,7 +5,7 @@
 @charset "utf-8";
 
 /* reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0;outline:0;}
 fieldset,img{border:0 none;}
 dl,ul,ol,menu,li{list-style:none}
 blockquote, q{quotes: none}
@@ -47,7 +47,7 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 
 
 .container {
-	padding:71px 0 50px 221px;
+	padding:71px 0 50px 220px;
 }
 
 .footer {
@@ -71,3 +71,8 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	font-size:11px;
 	line-height:48px;
 }
+
+/* 스킨컬러 적용 */
+.fColor {color:#ff5349 !important;}
+.bgColor {background-color:#ff5349 !important;}
+.bdColor {border-color:#ff5349 !important;}
