@@ -130,6 +130,11 @@ $(document).ready(function(){
 	$('.btn-icon-text.icon01').click(function(){
 		$(this).toggleClass('on');
 	});
+	// 게시판 리스트 레이아웃 설정
+	$('.align-btns button').click(function(){
+		$(this).closest('.align-btns').find('button').removeClass('on');
+		$(this).addClass('on');
+	});
 
 	/* ===================================================================================
 		탭

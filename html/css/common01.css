@@ -85,8 +85,11 @@ select.styled1 {
 	right:15px; top:13px;
 	width:11px;
 	height:7px;
-	background:url(../img/ico/ico_arr_down01.png) no-repeat 0 0;
+	background-image:url(../img/ico/ico_arr_down01.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
 }
+.selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
 
 /* ===========================================================================
 	버튼
@@ -356,7 +359,8 @@ select.styled1 {
 	padding:15px 0;
 	border-bottom:1px solid #eee;
 }
-.sorting-area:after {
+.sorting-area:after,
+.sorting-area .left-box:after {
 	content:'';
 	display:block;
 	clear:both;
@@ -366,9 +370,56 @@ select.styled1 {
 	left:0; top:0; bottom:0;
 	padding:15px 0;
 }
+.sorting-area .left-box .selectWrap {
+	float:left;
+}
+.sorting-area .left-box .align-btns {
+	overflow:hidden;
+	float:left;
+	margin-left:10px;
+}
+.sorting-area .left-box .align-btns button {
+	float:left;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.sorting-area .left-box .align-btns button:first-child {border-right:0;}
+.sorting-area .left-box .align-btns button .icon {
+	display:block;
+	width:33px;
+	height:33px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	line-height:0;
+	opacity:.3;
+}
+.sorting-area .left-box .align-btns .btn-align1 .icon {background-image:url(../img/btn/btn_layout01.png);}
+.sorting-area .left-box .align-btns .btn-align2 .icon {background-image:url(../img/btn/btn_layout02.png);}
+.sorting-area .left-box .align-btns button:hover {background-color:#fafafa;}
+.sorting-area .left-box .align-btns button:hover .icon {opacity:.6;}
+.sorting-area .left-box .align-btns button.on {background-color:#fff;}
+.sorting-area .left-box .align-btns button.on .icon {opacity:1;}
 .sorting-area .left-box .all-len {
 	padding-top:17px;
 	font-size:15px;
 }
 .sorting-area .left-box .all-len .len {font-weight:700;}
 .sorting-area .right-box {float:right;}
+.sorting-area .right-box .layout-btns {
+	overflow:hidden;
+}
+.sorting-area .right-box .layout-btns button {
+	float:left;
+}
+.sorting-area .right-box .layout-btns button .text {
+	display:inline-block;
+	padding:0 10px 0 20px;
+	color:#999;
+	font-size:12px;
+	line-height:35px;
+}
+.sorting-area .right-box .layout-btns button .text {}
+.sorting-area .right-box .layout-btns {}
+.sorting-area .right-box .layout-btns {}
+.sorting-area .right-box .layout-btns {}
