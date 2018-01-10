@@ -255,6 +255,91 @@ select.styled1 {
 .gnb-utill .utill .user-box .btn-close {display:none;}
 
 /* ===========================================================================
+	테이블
+=========================================================================== */
+.board-list {border-top:1px solid #eee;}
+.board-list table {
+	width: 100%;
+	border-bottom:1px solid #eee;
+}
+.board-list table caption {display: none;}
+.board-list table tbody tr:hover {background-color: #fafafa;}
+.board-list table thead th {
+	height:54px;
+	font-size:14px;
+	color:#333;
+	font-weight: 700;
+}
+.board-list table thead th.title {padding-left:70px;}
+.board-list table thead th.order button {
+	position:relative;
+	color:#333;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.board-list table thead th.order button span {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+  right: -15px;
+  top: 50%;
+	margin-top:-3px;
+}
+.board-list table thead th.order button.up {color: #ff5349;}
+.board-list table thead th.order button.up span {
+	/* border-bottom: 5px solid #ff5349; */
+}
+.board-list table thead th.order button.down span {
+	border-top: 5px solid #9da4ac;
+}
+.board-list table thead th.order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
+.board-list table tbody td {
+	padding:18px 0;
+	color:#666;
+	font-size:13px;
+	text-align:center;
+	line-height:22px;
+	border-top:1px solid #eee;
+}
+.board-list table tbody td.subject {padding:0;}
+.board-list table tbody td.subject a {
+	display:block;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	padding:18px 30px 18px 20px;
+	color: #333;
+	text-align: left;
+	box-sizing: border-box;
+}
+.board-list table tbody td.subject a span {vertical-align: middle;}
+.board-list table tbody td.subject a .tit {
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.board-list table tbody td.subject a .reply {position:absolute;}
+.board-list table tbody .important td.subject a{font-weight: 700;}
+.board-list table tbody td.subject a:hover {text-decoration: underline;}
+.board-list table .checkWrap,
+.board-list table img {vertical-align:middle;}
+.board-list table td .icon-important {
+	display:inline-block;
+	width:44px;height:24px;
+	font-size:12px;
+	text-align:center;
+	background-color:#fff;
+	box-sizing:border-box;
+}
+
+/* ===========================================================================
 	컨텐츠
 =========================================================================== */
 /* 서브 공통 타이틀 영역 */
