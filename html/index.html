@@ -798,6 +798,15 @@
 $(window).load(function(){
 	resizeBox();// 상단 박스 넓이
 
+	/* gnb */
+	/* 원뎁스 메뉴 오버시 gnb 배경색상 변경 */
+	$(document).on('mouseenter', '.web .gnb-wrap .gnb-list .gnb-item', function(){
+		$('.web .gnb-menu-box').css({'background-color':'#fff'});
+	});
+	$(document).on('mouseleave', '.web .gnb-wrap .gnb-list .gnb-item', function(){
+		$('.web .gnb-menu-box').css({'background-color':'#fafafa'});
+	});
+
 	/* 컨텐츠 박스 드래그앤드랍 */
 	$('#sortable').sortable();
 	$('#sortable').disableSelection();

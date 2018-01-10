@@ -7,7 +7,7 @@
 =========================================================================== */
 .gnb-wrap {
 	position:fixed;
-	left:0; top:71px;bottom:0;
+	left:0; top:71px;bottom:50px;
 	width:220px;
 	padding-top:25px;
 	box-sizing:border-box;
@@ -70,7 +70,7 @@
 .gnb-wrap .depth1 {
 	display:none;
 	position:fixed;
-	left:220px; top:71px; bottom:0;
+	left:220px; top:71px; bottom:50px;
 	width:220px;
 	padding-top:12px;
 	box-sizing:border-box;
@@ -146,3 +146,52 @@
 	line-height:16px;
 }
 .gnb-wrap .depth1 .depth2-list .depth2-item a:hover {text-decoration:underline;}
+
+/* 서브 gnb */
+.btn-gnb-toggle {
+	position:absolute;
+	left:0; top:50px;
+	z-index:5;
+	height:50px;
+	width:100%;
+	margin-top:-50px;
+	outline:0;
+}
+.btn-gnb-toggle .text {
+	display:block;
+	position:relative;
+	background-color:#fff;
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+	text-align:center;
+	line-height:50px;
+}
+.btn-gnb-toggle .text:before {
+	content:'';
+	position:absolute;
+	left:0; top:50px;
+	width:220px;
+	height:22px;
+	background-image:url(../img/btn/btn_gnb_tog01.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.btn-gnb-toggle.on .text:before {background-image:url(../img/btn/btn_gnb_tog02.png);}
+
+.gnb-menu-box {
+	display:none;
+	position:absolute;
+	left:0; top:-100%;
+	z-index:5;
+	width:100%;
+	height:100%;
+	padding-top:25px;
+	box-sizing:border-box;
+	background-color:#fff;
+}
+
+.gnb-wrap .sub-gnb .depth1 {
+	display:block;
+	left:0; top:120px;
+}

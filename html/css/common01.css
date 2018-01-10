@@ -6,8 +6,13 @@
 	레이아웃
 =========================================================================== */
 .wrapper {}
-.container {padding:114px 50px 50px 271px;}
-.content {margin-top:35px;}
+
+/* 서브 공통 타이틀 영역 */
+.title-wrap {padding:43px 50px 34px;}
+.title-wrap .title {
+	color:#000;
+	font-size:25px;
+}
 
 /* ===========================================================================
 	폼요소
@@ -90,6 +95,46 @@ select.styled1 {
 	background:url(../img/ico/ico_arr_down01.png) no-repeat 0 0;
 }
 
+/* ===========================================================================
+	버튼
+=========================================================================== */
+/*
+	아이콘
+*/
+/* 공통 */
+.btn-icon-text {display:inline-block;}
+.btn-icon-text .text {
+	display:block;
+	position:relative;
+	height:35px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	line-height:33px;
+	cursor:pointer;
+}
+.btn-icon-text .text:before {
+	content:'';
+	position:absolute;
+	top:50%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+/* 01 */
+.btn-icon-text.icon01 .text {padding-left:34px;}
+.btn-icon-text.icon01 .text:before {
+	left:14px;
+	width:12px;
+	height:9px;
+	margin-top:-5px;
+	background-image:url(../img/btn/btn_ico01.png);
+}
+.btn-icon-text.icon01.on .text {
+	border-color:#888;
+	color:#333;
+}
+.btn-icon-text.icon01.on .text:before {background-position:0 -9px;}
 
 /* ===========================================================================
 	해더 영역
@@ -105,7 +150,10 @@ select.styled1 {
 .header .logo {
 	position:absolute;
 	left:0;top:0;
+	z-index:5;
 	width:260px;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#fff;
 }
 .header .logo a {
 	display:block;
