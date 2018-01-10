@@ -62,6 +62,10 @@ $(document).ready(function(){
 		});
 	});
 
+	/* ==========================================================================
+		GNB
+	========================================================================== */
+	resizeGnb();// GNB
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
 		$('.gnb-utill').show();
@@ -72,4 +76,67 @@ $(document).ready(function(){
 			$('.gnb-utill').hide();
 		});
 	});
+
+	// 하위 리스크 있을경우 버튼생성
+	$('.depth2-list').each(function(){
+		$(this).closest('.depth1-item').addClass('inList');
+	});
+	// 하위 리스트 있을경우 링크 막음
+	$('.inList .d-title').click(function(e){
+		e.preventDefault();
+		if($(this).closest('.depth1-item').hasClass('on')){
+			$(this).closest('.depth1-item').removeClass('on').find('.depth2-list').slideUp(100);
+		}else{
+			$('.depth1-item').removeClass('on').find('.depth2-list').slideUp(100);
+			$(this).closest('.depth1-item').addClass('on').find('.depth2-list').slideDown(200);
+		}
+	});
+
+	// 원뎁스 스크롤
+	$('.web .gnb-wrap').enscroll({
+		verticalTrackClass: 'track',
+		verticalHandleClass: 'handle',
+		minScrollbarLength: 28
+	});
+	// 투뎁스 스크롤
+	$('.web .gnb-wrap .depth1-list').enscroll({
+		verticalTrackClass: 'track',
+		verticalHandleClass: 'handle',
+		minScrollbarLength: 28
+	});
+
+	/* 원뎁스 메뉴 오버시 gnb 배경색상 변경 */
+	$(document).on('mouseenter', '.web .gnb-wrap .gnb-list .gnb-item', function(){
+		$('.web .gnb-wrap').css({'background-color':'#fff'});
+	});
+	$(document).on('mouseleave', '.web .gnb-wrap .gnb-list .gnb-item', function(){
+		$('.web .gnb-wrap').css({'background-color':'#fafafa'});
+	});
+	// 모바일
+	$(document).on('click', '.mobile .gnb-item .gnb-title', function(e){
+		e.preventDefault();
+		if($(this).closest('.gnb-item').hasClass('on')){
+			$(this).closest('.gnb-item').removeClass('on').find('.depth1').slideUp(200);
+		}else{
+			$('.mobile .gnb-item').removeClass('on').find('.depth1').slideUp(200);
+			$(this).closest('.gnb-item').addClass('on').find('.depth1').slideDown(200);
+		}
+	});
 });
+
+
+$(window).resize(function(){
+	resizeGnb();// GNB
+});
+
+
+/* GNB 해상도에 따른 분기처리 */
+function resizeGnb(){
+	var winW = $(window).width();
+	if(winW > 1100){
+		$('.header').attr('class', 'header web');
+		$('.depth1, .gnb-utill').removeAttr('style');
+	}else{
+		$('.header').attr('class', 'header mobile');
+	}
+}
