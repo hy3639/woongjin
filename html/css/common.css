@@ -69,3 +69,12 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 	font-size:11px;
 	line-height:48px;
 }
+
+
+
+
+
+/* 스킨컬러 적용 */
+.fColor {color:#ff5349 !important;}
+.bgColor {background-color:#ff5349 !important;}
+.bdColor {border-color:#ff5349 !important;}
