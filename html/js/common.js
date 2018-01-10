@@ -112,7 +112,14 @@ $(document).ready(function(){
 		$(this).closest('.selectWrap').css({'width':wid}).prepend('<span class="selTitle">'+val+'</span>');
 		$(this).change(function(){
 			var cVal = $(this).val();
-			$(this).closest('.selectWrap').find('.selTitle').html(cVal);
+			$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
+			$(this).blur();
+		});
+		$(this).focus(function(){
+			$(this).closest('.selectWrap').find('.selTitle').addClass('bdColor');
+		});
+		$(this).blur(function(){
+			$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
 		});
 	});
 
