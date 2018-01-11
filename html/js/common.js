@@ -193,6 +193,10 @@ $(document).ready(function(){
 });
 
 
+$(window).load(function(){
+	resizeGnb();// GNB
+});
+
 $(window).resize(function(){
 	resizeGnb();// GNB
 });
@@ -213,5 +217,18 @@ function resizeGnb(){
 	}else{
 		$('.header').attr('class', 'header mobile');
 		$('.gnb-menu-box').removeAttr('style');
+	}
+}
+
+
+/* ==========================================================================
+	웹/모바일 해상도 대응
+========================================================================== */
+function resizeMid(){
+	var winW = $(window).width();
+	if(winW > 800){
+		/* 웹 =================================================================== */
+	}else{
+		/* 모바일 ================================================================= */
 	}
 }
