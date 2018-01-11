@@ -85,14 +85,45 @@ select.styled1 {
 	right:15px; top:13px;
 	width:11px;
 	height:7px;
-	background:url(../img/ico/ico_arr_down01.png) no-repeat 0 0;
+	background-image:url(../img/ico/ico_arr_down01.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
 }
+.selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
 
 /* ===========================================================================
 	버튼
 =========================================================================== */
 /*
-	아이콘
+	텍스트 버튼
+*/
+/* 공통 */
+.btn-text {
+	display:inline-block;
+	min-width:95px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+	line-height:38px;
+}
+.btn-text:hover {
+	border:0 !important;
+	background-color:#999;
+	color:#fff !important;
+	line-height:40px;
+}
+/* 정렬 */
+.btn-align {margin:30px 50px 0;}
+.btn-align.center {text-align:center;}
+.btn-align.right {text-align:right;}
+.btn-align .btn-text {margin-left:7px;}
+.btn-align .btn-text:first-child {margin-left:0;}
+
+/*
+	아이콘 + 텍스트 버튼
 */
 /* 공통 */
 .btn-icon-text {display:inline-block;}
@@ -358,8 +389,10 @@ select.styled1 {
 	position:relative;
 	margin:0 50px;
 	padding:15px 0;
+	border-bottom:1px solid #eee;
 }
-.sorting-area:after {
+.sorting-area:after,
+.sorting-area .left-box:after {
 	content:'';
 	display:block;
 	clear:both;
@@ -369,9 +402,116 @@ select.styled1 {
 	left:0; top:0; bottom:0;
 	padding:15px 0;
 }
+.sorting-area .left-box .selectWrap {
+	float:left;
+}
+.sorting-area .left-box .align-btns {
+	overflow:hidden;
+	float:left;
+	margin-left:10px;
+}
+.sorting-area .left-box .align-btns button {
+	float:left;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.sorting-area .left-box .align-btns button:first-child {border-right:0;}
+.sorting-area .left-box .align-btns button .icon {
+	display:block;
+	width:33px;
+	height:33px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	line-height:0;
+	opacity:.3;
+}
+.sorting-area .left-box .align-btns .btn-align1 .icon {background-image:url(../img/btn/btn_align01.png);}
+.sorting-area .left-box .align-btns .btn-align2 .icon {background-image:url(../img/btn/btn_align02.png);}
+.sorting-area .left-box .align-btns button:hover {background-color:#fafafa;}/* hover */
+.sorting-area .left-box .align-btns button:hover .icon {opacity:.6;}/* hover */
+.sorting-area .left-box .align-btns button.on {background-color:#fff; cursor:default;}/* on */
+.sorting-area .left-box .align-btns button.on .icon {opacity:1;}/* on */
 .sorting-area .left-box .all-len {
 	padding-top:17px;
 	font-size:15px;
 }
 .sorting-area .left-box .all-len .len {font-weight:700;}
 .sorting-area .right-box {float:right;}
+.sorting-area .right-box .layout-btns {
+	overflow:hidden;
+}
+.sorting-area .right-box .layout-btns button {
+	float:left;
+}
+.sorting-area .right-box .layout-btns button .text {
+	display:inline-block;
+	position:relative;
+	padding:0 10px 0 28px;
+	color:#999;
+	font-size:12px;
+	line-height:35px;
+}
+.sorting-area .right-box .layout-btns button .text:before,
+.sorting-area .right-box .layout-btns button .text:after {
+	content:'';
+	position:absolute;
+	top:50%;
+	height:11px;
+	margin-top:-6px;
+}
+.sorting-area .right-box .layout-btns button .text:before {
+	left:8px;
+	width:11px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	opacity:.3;
+}
+.sorting-area .right-box .layout-btns .btn-layout1 .text:before {background-image:url(../img/btn/btn_layout01.png);}
+.sorting-area .right-box .layout-btns .btn-layout2 .text:before {background-image:url(../img/btn/btn_layout02.png);}
+.sorting-area .right-box .layout-btns .btn-layout3 .text:before {background-image:url(../img/btn/btn_layout03.png);}
+.sorting-area .right-box .layout-btns button .text:after {
+	left:0;
+	width:1px;
+	background-color:#eee;
+}
+.sorting-area .right-box .layout-btns button:first-child .text:after {display:none;}
+.sorting-area .right-box .layout-btns button:hover .text {color:#666;}/* hover */
+.sorting-area .right-box .layout-btns button:hover .text:before {opacity:.5;}/* hover */
+.sorting-area .right-box .layout-btns button.on .text {color:#333; cursor:default;}/* on */
+.sorting-area .right-box .layout-btns button.on .text:before {opacity:1;}/* on */
+
+/* 페이징 */
+.paging {
+	margin:30px 50px 0;
+	font-size:0;
+	text-align:center;
+	line-height:0;
+}
+.paging a {
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-left:5px;
+	box-sizing:border-box;
+	vertical-align:top;
+}
+.paging a:first-child {margin-left:0;}
+.paging .page {
+	border:1px solid #fff;
+	background-color:#fff;
+	color:#666;
+	font-size:13px;
+	text-align:center;
+	line-height:28px;
+}
+.paging .page:hover,
+.paging .page.fColor {border-color:#ccc;}/* on */
+.paging .btn {
+	background-image:url(../img/btn/btn_pageing.png);
+	background-repeat:no-repeat;
+}
+.paging .btn.first {background-position:0 0;}
+.paging .btn.prev {background-position:0 -30px;margin-right:7px;}
+.paging .btn.next {background-position:0 -60px;margin-left:12px;}
+.paging .btn.end {background-position:0 -90px;}

@@ -32,7 +32,7 @@
 				<div class="user-box">
 					<button type="button" class="btn-close">닫기</button>
 					<div class="user">
-						<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+						<div class="img-area"><img src="../img/temp/@user.jpg" alt=""></div>
 						<p class="name">김웅진 부장</p>
 					</div>
 				</div>
@@ -206,7 +206,10 @@
 						</li>
 					</ul>
 				</div>
-				<button type="button" class="btn-gnb-toggle"><span class="text">상위 메뉴 보기</span></button>
+				<button type="button" class="btn-gnb-toggle">
+					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>전체 메뉴 보기</span>
+					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>전체 메뉴 닫기</span>
+				</button>
 
 				<!-- 서브 GNB -->
 				<div class="sub-gnb">
@@ -297,6 +300,45 @@
 				<div class="right-box">
 					<button type="button" class="btn-icon-text icon01"><span class="text">안 읽은 게시물 보기</span></button>
 				</div>
+			</div>
+
+			<div class="sorting-area mHide">
+				<div class="left-box">
+					<select class="styled1" style="width:120px;">
+						<option>10개씩</option>
+						<option>15개씩</option>
+						<option>20개씩</option>
+					</select>
+					<div class="align-btns">
+						<button type="button" class="btn-align1 on"><span class="icon">리스트형</span></button>
+						<button type="button" class="btn-align2"><span class="icon">미리보기형</span></button>
+					</div>
+				</div>
+				<div class="right-box">
+					<div class="layout-btns">
+						<button type="button" class="btn-layout1 on"><span class="text">목록만보기</span></button>
+						<button type="button" class="btn-layout2"><span class="text">좌우 보기</span></button>
+						<button type="button" class="btn-layout3"><span class="text">상하 보기</span></button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 페이징 -->
+			<div class="paging mHide">
+				<a href="#" class="btn first">처음</a>
+				<a href="#" class="btn prev">이전</a>
+				<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+				<a href="#" class="page">2</a>
+				<a href="#" class="page">3</a>
+				<a href="#" class="page">4</a>
+				<a href="#" class="page">5</a>
+				<a href="#" class="page">6</a>
+				<a href="#" class="page">7</a>
+				<a href="#" class="page">8</a>
+				<a href="#" class="page">9</a>
+				<a href="#" class="page">10</a>
+				<a href="#" class="btn next">다음</a>
+				<a href="#" class="btn end">마지막</a>
 			</div>
 		</div>
 	</div>

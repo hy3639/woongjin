@@ -16,16 +16,25 @@ $(document).ready(function(){
 
 	// 하위 리스크 있을경우 버튼생성
 	$('.depth2-list').each(function(){
-		$(this).closest('.depth1-item').addClass('inList');
+		$(this).closest('.depth1-item').addClass('inList').find('.d-title').append('<em class="icon">아이콘영역</em>');
 	});
 	// 하위 리스트 있을경우 링크 막음
 	$('.inList .d-title').click(function(e){
 		e.preventDefault();
 		if($(this).closest('.depth1-item').hasClass('on')){
-			$(this).closest('.depth1-item').removeClass('on').find('.depth2-list').slideUp(100);
+			$(this).closest('.depth1-item').removeClass('on')
+				.find('.depth2-list').slideUp(100)
+				.siblings('.d-title').removeClass('fColor')
+				.find('.icon').removeClass('bgColor');
 		}else{
-			$('.depth1-item').removeClass('on').find('.depth2-list').slideUp(100);
-			$(this).closest('.depth1-item').addClass('on').find('.depth2-list').slideDown(200);
+			$('.depth1-item').removeClass('on')
+				.find('.depth2-list').slideUp(100)
+				.siblings('.d-title').removeClass('fColor')
+				.find('.icon').removeClass('bgColor');
+			$(this).closest('.depth1-item').addClass('on')
+				.find('.depth2-list').slideDown(200)
+				.siblings('.d-title').addClass('fColor')
+				.find('.icon').addClass('bgColor');
 		}
 	});
 
@@ -62,13 +71,10 @@ $(document).ready(function(){
 		if($(this).hasClass('on')){
 			$('.gnb-menu-box').animate({top:'-100%'}, 300, function(){
 				$(this).hide();
-				$('.btn-gnb-toggle .text').html('상위 메뉴 보기');
 			});
 			$(this).removeClass('on').animate({top:50}, 300);
 		}else{
-			$('.gnb-menu-box').show().animate({top:0}, 300, function(){
-				$('.btn-gnb-toggle .text').html('상위 메뉴 닫기');
-			});
+			$('.gnb-menu-box').show().animate({top:0}, 300);
 			$(this).addClass('on').animate({top:'100%'}, 300);
 		}
 	});
@@ -112,16 +118,39 @@ $(document).ready(function(){
 		$(this).closest('.selectWrap').css({'width':wid}).prepend('<span class="selTitle">'+val+'</span>');
 		$(this).change(function(){
 			var cVal = $(this).val();
-			$(this).closest('.selectWrap').find('.selTitle').html(cVal);
+			$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
+			$(this).blur();
+		});
+		$(this).focus(function(){
+			$(this).closest('.selectWrap').find('.selTitle').addClass('bdColor');
+		});
+		$(this).blur(function(){
+			$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
 		});
 	});
 
 	/* ===================================================================================
 		버튼
 	=================================================================================== */
+	// 스킨 컬러 버튼 오버
+	$('.btn-text.fColor').mouseenter(function(){
+		$(this).addClass('bgColor');
+	}).mouseleave(function(){
+		$(this).removeClass('bgColor');
+	});
 	// 안 읽은 게시물 보기
 	$('.btn-icon-text.icon01').click(function(){
 		$(this).toggleClass('on');
+	});
+	// 게시판 리스트 보기방식 설정
+	$('.align-btns button').click(function(){
+		$(this).closest('.align-btns').find('button').removeClass('on');
+		$(this).addClass('on');
+	});
+	// 게시판 리스트 레이아웃 설정
+	$('.layout-btns button').click(function(){
+		$(this).closest('.layout-btns').find('button').removeClass('on');
+		$(this).addClass('on');
 	});
 
 	/* ===================================================================================
@@ -160,6 +189,12 @@ function resizeGnb(){
 	if(winW > 1100){
 		$('.header').attr('class', 'header web');
 		$('.depth1, .gnb-utill').removeAttr('style');
+
+		$('.gnb-wrap .gnb-list .gnb-item').mouseenter(function(){
+			$(this).find('.gnb-title').addClass('bgColor');
+		}).mouseleave(function(){
+			$(this).find('.gnb-title').removeClass('bgColor');
+		});
 	}else{
 		$('.header').attr('class', 'header mobile');
 		$('.gnb-menu-box').removeAttr('style');
