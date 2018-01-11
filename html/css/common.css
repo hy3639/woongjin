@@ -100,11 +100,11 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 .board-list-thumb ul li a:hover .tit {text-decoration: underline;}
 .board-list-thumb .txt-area {
 	width:100%;
-	height:194px;
-	padding:25px;
+	height:115px;
+	padding:25px 25px 0 25px;
 	box-sizing: border-box;
 }
-.board-list-thumb .txt-area .icon-important {display: none;}
+.board-list-thumb .txt-area .num {display: none;}
 .board-list-thumb .txt-area .title {
 	position:relative;
 	/* padding-right: 30px; */
@@ -135,15 +135,25 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	color:#666;
 	line-height: 20px;
 }
-.board-list-thumb .txt-area .util {margin-top: 18px;}
-.board-list-thumb .txt-area .util ul {overflow: hidden}
-.board-list-thumb .txt-area .util li {float: left;}
-.board-list-thumb .txt-area .util li span {
+.board-list-thumb .other-area {
+	position: relative;
+	width: 100%;
+	height:240px;
+}
+.board-list-thumb .other-area .util {
+	position:absolute;
+	left: 0; right:0; top:0;
+	margin-top: 18px;
+	padding:0 25px 25px 25px;
+}
+.board-list-thumb .other-area .util ul {overflow: hidden}
+.board-list-thumb .other-area .util li {float: left;}
+.board-list-thumb .other-area .util li span {
 	position: relative;
 	padding-right:10px;
 	margin-right:10px;
 }
-.board-list-thumb .txt-area .util li span:before {
+.board-list-thumb .other-area .util li span:before {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -153,26 +163,26 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	margin-top: -5px;
 	background-color:#eee;
 }
-.board-list-thumb .txt-area .util .left .right {}
-.board-list-thumb .txt-area .util p,
-.board-list-thumb .txt-area .util li span {
+.board-list-thumb .other-area .util .left .right {}
+.board-list-thumb .other-area .util p,
+.board-list-thumb .other-area .util li span {
 	font-size: 12px;
 	color:#999
 }
-.board-list-thumb .txt-area .util .left .name {display: block;}
-.board-list-thumb .txt-area .util .right .attatch {display: none;}
-.board-list-thumb .txt-area .util .right .like:before {content: none;}
-.board-list-thumb .txt-area .util span em {padding-right:2px}
+.board-list-thumb .other-area .util .left .name {display: block;}
+.board-list-thumb .other-area .util .right .attatch {display: none;}
+.board-list-thumb .other-area .util .right .like:before {content: none;}
+.board-list-thumb .other-area .util span em {padding-right:2px}
 
-.board-list-thumb .img-area {
+.board-list-thumb .other-area .img-area {
 	position: absolute;
-	left:0;right:0;bottom:0;
-	width: 100%;
+	left:-1px;right:0;bottom:0;
+	width: 300px;
 	height: 160px;
 	font-size: 0;
 	overflow: hidden;
 }
-.board-list-thumb .img-area img {width: 100%; height: 100%;}
+.board-list-thumb .other-area .img-area img {width: 100%; height: 100%;}
 
 /* 스킨컬러 적용 */
 .fColor {color:#ff5349 !important;}
