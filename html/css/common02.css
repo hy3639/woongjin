@@ -12,6 +12,57 @@
 .mHide {display:none;}
 
 /* ===========================================================================
+	폼요소
+=========================================================================== */
+/* 인풋 텍스트 */
+input[type=text] {
+	height:34px;
+	padding:0 10px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	line-height:35px;
+}
+label {vertical-align:middle;}
+
+/* 체크박스/라디오박스 */
+input[type=checkbox].styled1,
+input[type=radio].styled1 {
+	width:21px;
+	height:21px;
+	box-sizing:border-box;
+}
+.checkWrap,
+.radioWrap {
+	display:inline-block;
+	position:relative;
+	width:21px;
+	height:21px;
+	box-sizing:border-box;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:21px 43px;
+	vertical-align:middle;
+}
+.checkWrap {background-image:url(../img/mobile/ico/form_checked.png);}
+.radioWrap {background-image:url(../img/mobile/ico/form_radio.png);}
+.checkWrap.checked,
+.radioWrap.checked {background-position:0 -22px;}
+.checkWrap input[type=checkbox].styled1,
+.radioWrap input[type=radio].styled1 {
+	position:absolute;
+	left:0; top:0;
+	opacity:0;
+}
+.checkWrap + label,
+.radioWrap + label {margin-left:5px;}
+label + .checkWrap,
+label + .radioWrap {margin-left:10px;}
+/*
+input[type=text] + .checkWrap,
+input[type=text] + .radioWrap {margin-left:17px;}
+*/
+
+/* ===========================================================================
 	해더
 =========================================================================== */
 .header {
@@ -107,6 +158,35 @@
 	color:#333;
 }
 .btn-icon-text.icon01.on .text:before {background-position:0 -10px;}
+
+/* ===========================================================================
+	테이블
+=========================================================================== */
+/* 쓰기 테이블 */
+
+.board-write1 table {
+	table-layout:inherit;
+	display:block;
+}
+.board-write1 table tbody,
+.board-write1 table tr,
+.board-write1 table th,
+.board-write1 table td {
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+}
+.board-write1 table tr {overflow:hidden;}
+.board-write1 th,
+.board-write1 td {
+	float:left;
+}
+.board-write1 th {
+	
+}
+.board-write1 td {
+	float:left;
+}
 
 /* ===========================================================================
 	컨텐츠
