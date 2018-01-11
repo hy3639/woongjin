@@ -10,6 +10,133 @@
 <link rel="stylesheet" media="screen and (min-width: 1100px)" href="../css/common03.css"><!-- 1100 이상 -->
 <link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common04.css"><!-- 1100 이하 -->
 
+<style>
+@media only screen and (max-width: 800px) {
+	/* ===========================================================================
+	폼요소
+	=========================================================================== */
+	input[type=text] {width:100% !important;}
+	input[type=text] + .form-box {
+		margin-top:8px;
+	}
+
+	/* 셀렉트 박스 */
+	select.styled1 {
+		height:34px;
+		line-height:34px;
+	}
+	.selectWrap {
+		display:inline-block;
+		position:relative;
+		height:34px;
+		vertical-align:middle;
+	}
+	.selectWrap select.styled1 {
+		position:absolute;
+		left:0; top:0;
+		opacity:0;
+	}
+	.selectWrap .selTitle {
+		overflow:hidden;
+		position:absolute;
+		left:0; right:0; top:0; bottom:0;
+		padding:0 25px 0 10px;
+		box-sizing:border-box;
+		border:1px solid #e5e5e5;
+		text-overflow:ellipsis;
+		line-height:32px;
+		white-space:nowrap;
+	}
+	.selectWrap .selTitle:before {
+		content:'';
+		position:absolute;
+		right:9px; top:50%;
+		width:9px;
+		height:6px;
+		margin-top:-3px;
+		background-image:url(../img/mobile/ico/ico_arr_down01.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+		background-size:9px 13px;
+	}
+	.selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
+
+	/* ===========================================================================
+		테이블
+	=========================================================================== */
+	/* 쓰기 테이블 */
+	.board-write1 {
+		margin:0 20px;
+	}
+	.board-write1 table {
+		display:block;
+		table-layout:inherit;
+		box-sizing:border-box;
+	}
+	.board-write1 table tbody,
+	.board-write1 table tr {display:block;}
+	.board-write1 table tbody,
+	.board-write1 table tr,
+	.board-write1 table th,
+	.board-write1 table td {
+		width:100%;
+		box-sizing:border-box;
+	}
+	.board-write1 table tr {overflow:hidden;}
+	.board-write1 th,
+	.board-write1 td {float:left;}
+	.board-write1 th {
+		margin-top:20px;
+		color:#333;
+		font-size:14px;
+		font-weight:400;
+		text-align:left;
+	}
+	.board-write1 tr:first-child th {margin-top:0;}
+	.board-write1 td {margin-top:4px;}
+	.board-write1 .tr-floating th,
+	.board-write1 .tr-floating td {
+		width:auto;
+		margin-top:20px;
+	}
+	.board-write1 .tr-floating td {margin-left:10px;}
+
+
+
+	/**/
+	/* 날짜 선택 영역 */
+	.date-text {
+		display:inline-block;
+		background:#fff url(../img/mobile/btn/btn_calendar.gif) no-repeat 100% 49%;
+		background-size:20px 13px;
+	}
+	.date-text input[type=text] {
+		width:100%;
+		padding-right:35px;
+		background-color:transparent;
+	}
+	.date-area {
+		position:relative;
+		padding-bottom:28px;
+	}
+	.date-area .date-text {
+		position:absolute;
+		left:0; right:162px; top:0;
+	}
+	.date-area .date-check {
+		position:absolute;
+		left:0; bottom:0;
+	}
+	.date-area .date-select {
+		position:absolute;
+		right:0; top:0;
+		width:80px;
+		vertical-align:middle;
+	}
+	.date-area select {width:90px;}
+}
+</style>
+
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/common.js"></script>
 <script src="../js/enscroll-0.6.1.min.js"></script><!-- 스크롤바 디자인 -->
@@ -304,11 +431,13 @@
 							<th scope="row"><label for="Text01">제목</label></th>
 							<td>
 								<input type="text" id="Text01" style="width:54%;" placeholder="제목을 입력해주세요">
-								<input type="checkbox" id="Check01" class="styled1"><label for="Check01">공지</label>
-								<input type="checkbox" id="Check02" class="styled1"><label for="Check02">중요</label>
+								<div class="form-box">
+									<input type="checkbox" id="Check01" class="styled1"><label for="Check01">공지</label>
+									<input type="checkbox" id="Check02" class="styled1"><label for="Check02">중요</label>
+								</div>
 							</td>
 						</tr>
-						<tr>
+						<tr class="tr-floating">
 							<th scope="row">작성자</th>
 							<td>김웅진 부장 / 경영지원팀</td>
 						</tr>
@@ -316,43 +445,47 @@
 							<th scope="row">게시종료기간</th>
 							<td>
 								<div class="date-area">
-									<input type="checkbox" id="Check03" class="styled1"><label for="Check03">영구</label>
+									<div class="date-check">
+										<input type="checkbox" id="Check03" class="styled1"><label for="Check03">영구</label>
+									</div>
 									<span  class="date-text"><input type="text" value="2018.11.12"></span>
-									<select class="styled1">
-										<option>00시</option>
-										<option>01시</option>
-										<option>02시</option>
-										<option>03시</option>
-										<option>04시</option>
-										<option>05시</option>
-										<option>06시</option>
-										<option>07시</option>
-										<option>08시</option>
-										<option>09시</option>
-										<option>10시</option>
-										<option>11시</option>
-										<option>12시</option>
-										<option>13시</option>
-										<option>14시</option>
-										<option>15시</option>
-										<option>16시</option>
-										<option>17시</option>
-										<option>18시</option>
-										<option>19시</option>
-										<option>20시</option>
-										<option>21시</option>
-										<option>22시</option>
-										<option>23시</option>
-										<option>24시</option>
-									</select>
-									<select class="styled1">
-										<option>00분</option>
-										<option>10분</option>
-										<option>20분</option>
-										<option>30분</option>
-										<option>40분</option>
-										<option>50분</option>
-									</select>
+									<div class="date-select">
+										<select class="styled1">
+											<option>00시</option>
+											<option>01시</option>
+											<option>02시</option>
+											<option>03시</option>
+											<option>04시</option>
+											<option>05시</option>
+											<option>06시</option>
+											<option>07시</option>
+											<option>08시</option>
+											<option>09시</option>
+											<option>10시</option>
+											<option>11시</option>
+											<option>12시</option>
+											<option>13시</option>
+											<option>14시</option>
+											<option>15시</option>
+											<option>16시</option>
+											<option>17시</option>
+											<option>18시</option>
+											<option>19시</option>
+											<option>20시</option>
+											<option>21시</option>
+											<option>22시</option>
+											<option>23시</option>
+											<option>24시</option>
+										</select>
+										<select class="styled1">
+											<option>00분</option>
+											<option>10분</option>
+											<option>20분</option>
+											<option>30분</option>
+											<option>40분</option>
+											<option>50분</option>
+										</select>
+									</div>
 								</div>
 							</td>
 						</tr>

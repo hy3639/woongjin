@@ -58,6 +58,7 @@ label + .checkWrap,
 label + .radioWrap {margin-left:13px;}
 input[type=text] + .checkWrap,
 input[type=text] + .radioWrap {margin-left:17px;}
+input[type=text] + .form-box {display:inline-block; margin-left:17px;}
 
 /* 셀렉트 박스 */
 select.styled1 {
@@ -557,9 +558,25 @@ select.styled1 {
 	padding-right:35px;
 	background-color:transparent;
 }
-.date-area label + .date-text {margin-left:20px;}
+.date-area:after,
+.date-area .date-select:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.date-area .date-check,
+.date-area .date-text,
+.date-area .date-select {
+	float:left;
+	vertical-align:middle;
+}
+.date-area .date-check {margin-top:6px;}
+.date-area .date-check + .date-text {margin-left:20px;}
 .date-area select {width:90px;}
-.date-area .selectWrap {margin-left:10px;}
+.date-area .selectWrap {
+	float:left;
+	margin-left:10px;
+}
 
 /* 공유 범위 영역 */
 .share-box {
