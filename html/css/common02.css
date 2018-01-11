@@ -181,7 +181,7 @@ input[type=text] + .radioWrap {margin-left:17px;}
 	float:left;
 }
 .board-write1 th {
-	
+
 }
 .board-write1 td {
 	float:left;
@@ -224,33 +224,34 @@ input[type=text] + .radioWrap {margin-left:17px;}
 .board-list {display: none}
 /*공지사항-썸네일*/
 .board-list-thumb {overflow: inherit; margin:0;}
-.board-list-thumb .txt-area .icon-important {
+.board-list-thumb .txt-area .num {
 	display:inline-block;
 	width:34px;height:24px;
 	font-size:12px;
 	text-align:center;
 	background-color:#fff;
-	border:1px solid;
+	border:1px solid #e5e5e5;
+	color:#666;
 	box-sizing:border-box;
 	line-height: 22px;
 }
+
 .board-list-thumb > ul > li {
 	position:relative;
 	float:none;
 	width:100%;
 	margin:0;
-	box-sizing: border-box;
-
 }
 .board-list-thumb > ul > li:before {
 	content:'';
 	position:absolute;
-	left:0; right:0;bottom:0;
+	left:0; right:0;top:-4px;
 	width:100%;
-	height:5px;
+	height:3px;
 	background-color:#fafafa;
 	border-top:1px solid #e5e5e5;
 }
+.board-list-thumb > ul > li:first-child:before {content: none;}
 .board-list-thumb ul li a {
 	display: block;
 	width: 100%;
@@ -264,71 +265,81 @@ input[type=text] + .radioWrap {margin-left:17px;}
 }
 .board-list-thumb ul li a:hover .tit {text-decoration: none;}
 .board-list-thumb .txt-area {
-	padding:25px;
-	box-sizing: border-box;
+	height: inherit;
 }
 .board-list-thumb .txt-area .title {
 	position:relative;
-	/* padding-right: 30px; */
+	margin-top:5px;
 }
+.board-list-thumb .txt-area .title .checkWrap {display: none}
 .board-list-thumb .txt-area .title .tit {
-	display: inline-block;
-	max-width: 100%;
-	padding-left:25px;
-	overflow: hidden;
-	font-weight: 700;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	box-sizing: border-box;
+	padding-left:0;
+	font-size:14px;
+	font-weight: normal;
 }
 .board-list-thumb .txt-area .title .reply {
 	position:absolute;
 	padding-left:3px;
 }
-.board-list-thumb .txt-area p .checkWrap {
+.board-list-thumb .other-area {height: inherit; padding-bottom:45px;}
+.board-list-thumb .other-area .util {
+	margin-top: 0;
 	position:absolute;
-	left:0; top:0;
+	top:inherit;
+	bottom:0;
+	left: 0;
+	padding:15px 25px;
+}
+.board-list-thumb .other-area .util ul {overflow: hidden}
+.board-list-thumb .other-area .util li {float: left; height:18px;}
+.board-list-thumb .other-area .util li span {
+	position: relative;
+	padding-right:0;
+	margin-right:0;
+	padding-left:12px;
+	margin-left:12px;
+
+}
+.board-list-thumb .other-area .util li span:before {
+	right:inherit;
+	left:0;
+}
+.board-list-thumb .other-area .util .right {float: right;}
+.board-list-thumb .other-area .util p,
+.board-list-thumb .other-area .util li span {
+	vertical-align: top;
+}
+.board-list-thumb .other-area .util .name {float: left;}
+.board-list-thumb .other-area .util .right .attatch {
+	display: inline-block;
+	margin:0;
+	padding:0;
+	width: 8px;
+	/* height: 12px; */
+}
+.board-list-thumb .other-area .util .right .attatch:before {content: none;}
+.board-list-thumb .other-area .util .right .attatch img {
+	width: 100%;
 	vertical-align: middle;
 }
-.board-list-thumb .txt-area .cont {
-	overflow: hidden;
-	height: 57px;
-	margin-top: 3px;
-	color:#666;
-	line-height: 20px;
-}
-.board-list-thumb .txt-area .util {margin-top: 18px;}
-.board-list-thumb .txt-area .util ul {overflow: hidden}
-.board-list-thumb .txt-area .util li {float: left;}
-.board-list-thumb .txt-area .util li span {
-	position: relative;
-	padding-right:10px;
-	margin-right:10px;
-}
-.board-list-thumb .txt-area .util li span:before {
+.board-list-thumb .other-area .util .right .like {padding:0 1px 0 15px;}
+.board-list-thumb .other-area .util .right .like:before {content:none}
+.board-list-thumb .other-area .util .right .like:after {
 	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 1px;
-	height: 11px;
-	margin-top: -5px;
-	background-color:#eee;
+	position:absolute;
+	left:0; top:50%;
+	width:13px;
+	height:12px;
+	margin-top:-5px;
+	background-image:url(../img/mobile/ico/ico_like2.png);
+	background-size:13px 12px;
 }
-.board-list-thumb .txt-area .util .left .right {}
-.board-list-thumb .txt-area .util p,
-.board-list-thumb .txt-area .util li span {
-	font-size: 12px;
-	color:#999
-}
-.board-list-thumb .txt-area .util .left .name {display: block;}
-.board-list-thumb .txt-area .util .right .attatch {display: none;}
-.board-list-thumb .txt-area .util .right .like:before {content: none;}
-.board-list-thumb .txt-area .util span em {padding-right:2px}
-
-.board-list-thumb .img-area {
+.board-list-thumb .other-area .util span em {display: none;}
+.board-list-thumb .other-area .img-area {
 	position: inherit;
+	width: 100%;
 	height: auto;
+	margin-top: 15px;
 }
-.board-list-thumb .img-area img {width: 100%; height: auto;}
-.board-list-thumb .img-area.no-image {display: none;}
+.board-list-thumb .other-area .img-area img {width: 100%; height: auto;}
+.board-list-thumb .other-area .img-area.no-image {display: none;}
