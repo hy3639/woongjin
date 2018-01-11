@@ -21,6 +21,7 @@ h2:first-child {margin-top:0;}
 
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/common.js"></script>
+<script src="../js/enscroll-0.6.1.min.js"></script><!-- 스크롤바 디자인 -->
 <!--[if lt IE 9]>
 <script src="../js/html5.js"></script>
 <script src="../respond.src.js"></script>
@@ -28,6 +29,7 @@ h2:first-child {margin-top:0;}
 </head>
 
 <body>
+
 <h2>텍스트 버튼</h2>
 <span class="btn-text nomal">기본</span>
 <span class="btn-text bdColor fColor">레드</span>
@@ -35,22 +37,71 @@ h2:first-child {margin-top:0;}
 <br><br>
 <h3>버튼 정렬 : 왼쪽</h3>
 <div class="btn-align">
-	<span class="btn-text nomal">기본</span>
-	<span class="btn-text bdColor fColor">레드</span>
+	<div class="btn-item"><span class="btn-text">기본</span></div>
+	<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
 </div>
 
 <br><br>
 <h3>버튼 정렬 : 가운데</h3>
 <div class="btn-align center">
-	<span class="btn-text nomal">기본</span>
-	<span class="btn-text bdColor fColor">레드</span>
+	<div class="btn-item"><span class="btn-text">기본</span></div>
+	<div class="btn-item"><span class="btn-text">기본</span></div>
+	<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
 </div>
 
 <br><br>
 <h3>버튼 정렬 : 오른쪽</h3>
 <div class="btn-align right">
-	<span class="btn-text nomal">기본</span>
-	<span class="btn-text bdColor fColor">레드</span>
+	<div class="btn-item mHide"><span class="btn-text">기본</span></div>
+	<div class="btn-item"><span class="btn-text">기본</span></div>
+	<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
+</div>
+
+
+
+<br><br>
+<h3>박스 혼합 : 왼쪽</h3>
+<div class="btn-align-mix">
+	<div class="btn-align right">
+		<div class="btn-item"><span class="btn-text ">기본</span></div>
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
+	</div>
+	<div class="btn-align right">
+		<div class="btn-item mHide"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
+	</div>
+</div>
+
+<br><br>
+<h3>박스 혼합 : 가운데</h3>
+<div class="btn-align-mix center">
+	<div class="btn-align right">
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
+	</div>
+	<div class="btn-align right">
+		<div class="btn-item mHide"><span class="btn-text">기본</span></div>
+		<div class="btn-item mHide"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+	</div>
+</div>
+
+<br><br>
+<h3>박스 혼합 : 오른쪽</h3>
+<div class="btn-align-mix right">
+	<div class="btn-align right">
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
+	</div>
+	<div class="btn-align right">
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text">기본</span></div>
+		<div class="btn-item"><span class="btn-text bdColor fColor">레드</span></div>
+	</div>
 </div>
 
 

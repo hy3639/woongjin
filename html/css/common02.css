@@ -6,10 +6,10 @@
 	레이아웃
 =========================================================================== */
 .container {padding:46px 0 0;}
-.content {margin:-25px 0 0;}
+.content {margin:-25px 0 0; padding-bottom:30px;}
 
 /* 모바일에서 숨김처리 */
-.mHide {display:none;}
+.mHide {display:none !important;}
 
 /* ===========================================================================
 	폼요소
@@ -102,6 +102,79 @@ select.styled1 {
 	background-size:9px 13px;
 }
 .selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
+
+/* ===========================================================================
+	버튼
+=========================================================================== */
+/*
+	텍스트 버튼
+*/
+/* 공통 */
+.btn-text {
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+	line-height:38px;
+}
+/* 정렬 */
+.btn-align {
+	overflow:hidden;
+	margin:30px 10px 0;
+}
+.btn-align .btn-item {
+	float:left;
+	padding:0 5px;
+	box-sizing:border-box;
+}
+.btn-align-mix {
+	margin:30px 10px 0;
+}
+.btn-align-mix .btn-align {margin:10px 0 0;}
+.btn-align-mix .btn-align:first-child {margin-top:0;}
+
+/*
+	아이콘 + 텍스트 버튼
+*/
+/* 공통 */
+.btn-icon-text {
+	display:inline-block;
+}
+.btn-icon-text .text {
+	display:block;
+	position:relative;
+	height:35px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	line-height:33px;
+	cursor:pointer;
+}
+.btn-icon-text .text:before {
+	content:'';
+	position:absolute;
+	top:50%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+/* 01 */
+.btn-icon-text.icon01 .text {padding-left:34px;}
+.btn-icon-text.icon01 .text:before {
+	left:14px;
+	width:12px;
+	height:9px;
+	margin-top:-5px;
+	background-image:url(../img/btn/btn_ico01.png);
+}
+.btn-icon-text.icon01.on .text {
+	border-color:#888;
+	color:#333;
+}
+.btn-icon-text.icon01.on .text:before {background-position:0 -9px;}
 
 /* ===========================================================================
 	해더
@@ -204,9 +277,7 @@ select.styled1 {
 	테이블
 =========================================================================== */
 /* 쓰기 테이블 */
-.board-write1 {
-	margin:0 20px;
-}
+.board-write1 {margin:0 20px;}
 .board-write1 table {
 	display:block;
 	table-layout:inherit;
@@ -228,7 +299,6 @@ select.styled1 {
 	margin-top:20px;
 	color:#333;
 	font-size:14px;
-	font-weight:400;
 	text-align:left;
 }
 .board-write1 tr:first-child th {margin-top:0;}
@@ -239,6 +309,11 @@ select.styled1 {
 	margin-top:20px;
 }
 .board-write1 .tr-floating td {margin-left:10px;}
+.board-write1 .text-notice {
+	margin-top:6px;
+	color:#999;
+	font-size:11px;
+}
 
 /* ===========================================================================
 	컨텐츠
@@ -437,3 +512,53 @@ select.styled1 {
 }
 .board-list-thumb .other-area .img-area img {width: 100%; height: auto;}
 .board-list-thumb .other-area .img-area.no-image {display: none;}
+
+
+/* 공유 범위 영역 */
+.share-box {
+	position:relative;
+	margin-top:10px;
+	padding-bottom:52px;
+	border:1px solid #e5e5e5;
+}
+.share-box .btn-groupchart {
+	position:absolute;
+	left:10px; bottom:10px;
+}
+.share-box .btn-groupchart .btn {
+	width:32px;
+	height:32px;
+	background:url(../img/mobile/btn/btn_groupchart.png) no-repeat 0 0;
+	background-size:32px 32px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.share-box .btn-groupchart .tooltip {display:none;}
+.share-box .scroll-area {
+	overflow-y:scroll;
+	height:102px;
+	box-sizing:border-box;
+}
+.share-box .scroll-area .user-box {
+	position:relative;
+	padding:0 10px;
+}
+.share-box .scroll-area .user-box:hover {background-color:#fafafa;}/* hover */
+.share-box .scroll-area .user-box .text {
+	padding:7px 0;
+	color:#333;
+	line-height:20px;
+}
+.share-box .scroll-area .user-box .btn-del {
+	position:absolute;
+	right:0px; top:50%;
+	width:28px;
+	height:28px;
+	margin-top:-14px;
+	background:url(../img/mobile/btn/btn_del.gif) no-repeat 50% 50%;
+	background-size:9px 9px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}

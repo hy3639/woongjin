@@ -3,6 +3,7 @@ $(document).ready(function(){
 		GNB
 	========================================================================== */
 	resizeGnb();// GNB
+	resizeMid();// 웹/모바일 리사이징
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
 		$('.gnb-utill').show();
@@ -195,10 +196,12 @@ $(document).ready(function(){
 
 $(window).load(function(){
 	resizeGnb();// GNB
+	resizeMid();// 웹/모바일 리사이징
 });
 
 $(window).resize(function(){
 	resizeGnb();// GNB
+	resizeMid();// 웹/모바일 리사이징
 });
 
 
@@ -228,7 +231,22 @@ function resizeMid(){
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
+		$('.btn-item').removeAttr('style');
 	}else{
 		/* 모바일 ================================================================= */
+		$('.btn-align').each(function(){
+			var boxW = $(this).outerWidth();
+			var len = $(this).find('.btn-item').length;
+			var minus = $(this).find('.btn-item.mHide').length;
+			var btnW = boxW/(len - minus);
+			$(this).find('.btn-item').css({'width':btnW});
+			/*
+			if(len <= 3){
+				$(this).find('.btn-item').css({'width':boxW/len});
+			}else{
+				$(this).find('.btn-item').css({'width':boxW/3});
+			}
+			*/
+		});
 	}
 }
