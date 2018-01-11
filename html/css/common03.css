@@ -137,7 +137,9 @@
 	color:#333;
 	line-height:16px;
 }
-.gnb-wrap .depth1 .depth2-list .depth2-item a:hover {text-decoration:underline;}
+.gnb-wrap .depth1 .depth2-list .depth2-item a:hover,
+.gnb-wrap .depth1 .depth2-list .depth2-item.on a {text-decoration:underline;}
+.gnb-wrap .depth1 .depth2-list .depth2-item.on a {cursor:default;}
 
 /* 서브 gnb */
 .btn-gnb-toggle {

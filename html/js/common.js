@@ -79,6 +79,14 @@ $(document).ready(function(){
 		}
 	});
 
+	// 페이지 로드시 현재메뉴 표시
+	$('.sub-gnb .depth1-item').each(function(){
+		if($(this).hasClass('on')){
+			$(this).find('.depth2-list').show()
+				.siblings('.d-title').find('.icon').addClass('bgColor');
+		}
+	});
+
 	/* ===================================================================================
 		폼요소
 	=================================================================================== */
@@ -175,8 +183,19 @@ $(document).ready(function(){
 			$(this).closest('.tab-wrap-click').find('.tab-cont').removeClass('on').eq(idx).addClass('on');
 		});
 	});
+
+	/* 공유범위 박스 오버 */
+	$('.share-box .scroll-area .user-box').mouseenter(function(){
+		$(this).find('.text').addClass('fColor');
+	}).mouseleave(function(){
+		$(this).find('.text').removeClass('fColor');
+	});
 });
 
+
+$(window).load(function(){
+	resizeGnb();// GNB
+});
 
 $(window).resize(function(){
 	resizeGnb();// GNB
@@ -198,5 +217,18 @@ function resizeGnb(){
 	}else{
 		$('.header').attr('class', 'header mobile');
 		$('.gnb-menu-box').removeAttr('style');
+	}
+}
+
+
+/* ==========================================================================
+	웹/모바일 해상도 대응
+========================================================================== */
+function resizeMid(){
+	var winW = $(window).width();
+	if(winW > 800){
+		/* 웹 =================================================================== */
+	}else{
+		/* 모바일 ================================================================= */
 	}
 }
