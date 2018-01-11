@@ -336,8 +336,12 @@ select.styled1 {
 	font-size:12px;
 	text-align:center;
 	background-color:#fff;
+	border:1px solid;
 	box-sizing:border-box;
 }
+
+
+
 
 /* ===========================================================================
 	컨텐츠

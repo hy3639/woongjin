@@ -137,3 +137,116 @@
 	line-height:32px;
 }
 .sorting-area .right-box {float:right;}
+
+/*공지사항-리스트*/
+.board-list {display: none}
+/*공지사항-썸네일*/
+.board-list-thumb {overflow: inherit; margin:0;}
+.board-list-thumb .txt-area .icon-important {
+	display:inline-block;
+	width:34px;height:24px;
+	font-size:12px;
+	text-align:center;
+	background-color:#fff;
+	border:1px solid;
+	box-sizing:border-box;
+	line-height: 22px;
+}
+.board-list-thumb > ul > li {
+	position:relative;
+	float:none;
+	width:100%;
+	margin:0;
+	box-sizing: border-box;
+
+}
+.board-list-thumb > ul > li:before {
+	content:'';
+	position:absolute;
+	left:0; right:0;bottom:0;
+	width:100%;
+	height:5px;
+	background-color:#fafafa;
+	border-top:1px solid #e5e5e5;
+}
+.board-list-thumb ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border:none;
+	box-sizing: border-box;
+}
+.board-list-thumb ul li a:hover {
+	background-color: inherit;
+	border:none;
+}
+.board-list-thumb ul li a:hover .tit {text-decoration: none;}
+.board-list-thumb .txt-area {
+	padding:25px;
+	box-sizing: border-box;
+}
+.board-list-thumb .txt-area .title {
+	position:relative;
+	/* padding-right: 30px; */
+}
+.board-list-thumb .txt-area .title .tit {
+	display: inline-block;
+	max-width: 100%;
+	padding-left:25px;
+	overflow: hidden;
+	font-weight: 700;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	box-sizing: border-box;
+}
+.board-list-thumb .txt-area .title .reply {
+	position:absolute;
+	padding-left:3px;
+}
+.board-list-thumb .txt-area p .checkWrap {
+	position:absolute;
+	left:0; top:0;
+	vertical-align: middle;
+}
+.board-list-thumb .txt-area .cont {
+	overflow: hidden;
+	height: 57px;
+	margin-top: 3px;
+	color:#666;
+	line-height: 20px;
+}
+.board-list-thumb .txt-area .util {margin-top: 18px;}
+.board-list-thumb .txt-area .util ul {overflow: hidden}
+.board-list-thumb .txt-area .util li {float: left;}
+.board-list-thumb .txt-area .util li span {
+	position: relative;
+	padding-right:10px;
+	margin-right:10px;
+}
+.board-list-thumb .txt-area .util li span:before {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 1px;
+	height: 11px;
+	margin-top: -5px;
+	background-color:#eee;
+}
+.board-list-thumb .txt-area .util .left .right {}
+.board-list-thumb .txt-area .util p,
+.board-list-thumb .txt-area .util li span {
+	font-size: 12px;
+	color:#999
+}
+.board-list-thumb .txt-area .util .left .name {display: block;}
+.board-list-thumb .txt-area .util .right .attatch {display: none;}
+.board-list-thumb .txt-area .util .right .like:before {content: none;}
+.board-list-thumb .txt-area .util span em {padding-right:2px}
+
+.board-list-thumb .img-area {
+	position: inherit;
+	height: auto;
+}
+.board-list-thumb .img-area img {width: 100%; height: auto;}
+.board-list-thumb .img-area.no-image {display: none;}
