@@ -57,6 +57,7 @@ input[type=radio].styled1 {
 }
 .checkWrap + label,
 .radioWrap + label {margin-left:5px;}
+
 label + .checkWrap,
 label + .radioWrap {margin-left:10px;}
 
@@ -69,6 +70,7 @@ select.styled1 {
 	display:inline-block;
 	position:relative;
 	height:34px;
+	box-sizing:border-box;
 	vertical-align:middle;
 }
 .selectWrap select.styled1 {
@@ -274,6 +276,7 @@ select.styled1 {
 /* 날짜 선택영역 */
 .date-text {
 	display:inline-block;
+	width:100%;
 	background:#fff url(../img/mobile/btn/btn_calendar.gif) no-repeat 100% 49%;
 	background-size:20px 13px;
 }
@@ -284,23 +287,32 @@ select.styled1 {
 }
 .date-area {
 	position:relative;
-	padding-bottom:28px;
-}
-.date-area .date-text {
-	position:absolute;
-	left:0; right:162px; top:0;
+	height:34px;
+	padding:0 160px 28px 0;
 }
 .date-area .date-check {
 	position:absolute;
 	left:0; bottom:0;
 }
+.date-area .date-text {
+	
+}
 .date-area .date-select {
 	position:absolute;
 	right:0; top:0;
-	width:80px;
+	width:160px;
 	vertical-align:middle;
 }
-.date-area select {width:90px;}
+.date-area .date-select:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.date-area .date-select .selectWrap {
+	float:left;
+	margin-left:5px;
+}
+.date-area select {width:75px;}
 
 /*공지사항-리스트*/
 .board-list {display: none}
@@ -315,7 +327,7 @@ select.styled1 {
 	border:1px solid #e5e5e5;
 	color:#666;
 	box-sizing:border-box;
-	line-height: 22px;
+	line-height:22px;
 }
 
 .board-list-thumb > ul > li {
