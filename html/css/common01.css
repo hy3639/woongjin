@@ -499,9 +499,6 @@ select.styled1 {
 }
 .board-view1 .info-wrap .left-box ul li:first-child:before {content: none;}
 .board-view1 .info-wrap .right-box {float:right;}
-<<<<<<< HEAD
-.board-view1 .cont-wrap {}
-=======
 .board-view1 .info-wrap .right-box button {
 	position: relative;
 	font-size: 12px;
@@ -514,10 +511,9 @@ select.styled1 {
 	position:absolute;
 	right:0;
 	top:50%;
-	marign-top:-2px;
-  background: url(../img/ico/ico_down.png) no-repeat 0 0;
+	margin-top:-2px;
+	background: url(../img/ico/ico_down.png) no-repeat 0 0;
 }
->>>>>>> 5e4e542e070350225e54c12aeb6907ac71abe1ab
 .board-view1 .cont-wrap .cont {padding:15px 10px 30px 10px;}
 .board-view1 .cont-wrap .cont img {max-width: 100%;}
 .board-view1 .cont-wrap .tag-wrap {position: relative;}
@@ -585,8 +581,6 @@ select.styled1 {
   line-height: 0;
 }
 
-<<<<<<< HEAD
-=======
 .reply-wrap {
 	margin:0 50px;
 	padding:40px 30px;
@@ -601,7 +595,6 @@ select.styled1 {
 }
 .reply-wrap .input-area textarea {width: 100%; height: 100%;}
 .reply-wrap .input-area .btn-save {}
->>>>>>> 5e4e542e070350225e54c12aeb6907ac71abe1ab
 
 /* ===========================================================================
 	컨텐츠
@@ -899,39 +892,6 @@ select.styled1 {
 	color:#666;
 	line-height: 20px;
 }
-/*
-.thumb-list1 .other-area {
-	position:absolute;
-	left:0; right:0; top:194px; bottom:0;
-}
-.thumb-list1 .other-area .util ul {overflow: hidden}
-.thumb-list1 .other-area .util li {float: left;}
-.thumb-list1 .other-area .util li span {
-	position: relative;
-	padding-right:10px;
-	margin-right:10px;
-}
-.thumb-list1 .other-area .util li span:before {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 1px;
-	height: 11px;
-	margin-top: -5px;
-	background-color:#eee;
-}
-.thumb-list1 .other-area .util .left .right {}
-.thumb-list1 .other-area .util p,
-.thumb-list1 .other-area .util li span {
-	font-size: 12px;
-	color:#999
-}
-.thumb-list1 .other-area .util .left .name {display: block;}
-.thumb-list1 .other-area .util .right .attatch {display: none;}
-.thumb-list1 .other-area .util .right .like:before {content: none;}
-.thumb-list1 .other-area .util span em {padding-right:2px}
-*/
 .thumb-list1 .info-area {
 	margin-top:14px;
 	padding:0 25px ;
@@ -960,7 +920,7 @@ select.styled1 {
 	color:#999
 }
 .thumb-list1 .info-area .left .name {display: block;}
-.thumb-list1 .info-area .right .attatch {display: none;}
+.thumb-list1 .info-area .right .ico-file {display: none;}
 .thumb-list1 .info-area .right .like:before {content: none;}
 .thumb-list1 .info-area span em {padding-right:2px}
 
