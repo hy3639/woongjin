@@ -76,6 +76,8 @@ select.styled1 {
 	display:inline-block;
 	position:relative;
 	height:35px;
+	background-color:#fff;
+	text-align:left;
 	vertical-align:middle;
 }
 .selectWrap select.styled1 {
@@ -105,6 +107,35 @@ select.styled1 {
 	background-position:0 0;
 }
 .selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
+
+/* 상단 검색 박스 */
+.top-search-box {
+	margin:0 50px;
+	padding:24px 0;
+	border:1px solid #eee;
+	background-color:#fafafa;
+	text-align:center;
+}
+.top-search-box .selectWrap {}
+.top-search-box .search-text {
+	display:inline-block;
+	position:relative;
+	width:464px;
+	padding-right:53px;
+}
+.top-search-box .search-text input[type=text] {
+	width:100%;
+	margin-left:12px;
+}
+.top-search-box .search-text .btn-search {
+	position:absolute;
+	right:0; top:0; bottom:0;
+	width:54px;
+	background:#9da4ac url(../img/btn/btn_search02.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
 
 /* ===========================================================================
 	버튼
