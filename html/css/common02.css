@@ -423,128 +423,6 @@ select.styled1 {
 
 /*공지사항-리스트*/
 .board-list1 {display: none}
-/*공지사항-썸네일*/
-.board-list-thumb {overflow: inherit; margin:0;}
-.board-list-thumb .txt-area .num {
-	display:inline-block;
-	width:34px;height:24px;
-	font-size:12px;
-	text-align:center;
-	background-color:#fff;
-	border:1px solid #e5e5e5;
-	color:#666;
-	box-sizing:border-box;
-	line-height:22px;
-}
-
-.board-list-thumb > ul > li {
-	position:relative;
-	float:none;
-	width:100%;
-	margin:0;
-}
-.board-list-thumb > ul > li:before {
-	content:'';
-	position:absolute;
-	left:0; right:0;top:-4px;
-	width:100%;
-	height:3px;
-	background-color:#fafafa;
-	border-top:1px solid #e5e5e5;
-}
-.board-list-thumb > ul > li:first-child:before {content: none;}
-.board-list-thumb ul li a {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border:none;
-	box-sizing: border-box;
-}
-.board-list-thumb ul li a:hover {
-	background-color: inherit;
-	border:none;
-}
-.board-list-thumb ul li a:hover .tit {text-decoration: none;}
-.board-list-thumb .txt-area {
-	height: inherit;
-}
-.board-list-thumb .txt-area .title {
-	position:relative;
-	margin-top:5px;
-}
-.board-list-thumb .txt-area .title .checkWrap {display: none}
-.board-list-thumb .txt-area .title .tit {
-	padding-left:0;
-	font-size:14px;
-	font-weight: normal;
-}
-.board-list-thumb .txt-area .title .reply {
-	position:absolute;
-	padding-left:3px;
-}
-.board-list-thumb .other-area {height: inherit; padding-bottom:45px;}
-.board-list-thumb .other-area .util {
-	margin-top: 0;
-	position:absolute;
-	top:inherit;
-	bottom:0;
-	left: 0;
-	padding:15px 25px;
-}
-.board-list-thumb .other-area .util ul {overflow: hidden}
-.board-list-thumb .other-area .util li {float: left; height:18px;}
-.board-list-thumb .other-area .util li span {
-	position: relative;
-	padding-right:0;
-	margin-right:0;
-	padding-left:12px;
-	margin-left:12px;
-
-}
-.board-list-thumb .other-area .util li span:before {
-	right:inherit;
-	left:0;
-}
-.board-list-thumb .other-area .util .right {float: right;}
-.board-list-thumb .other-area .util p,
-.board-list-thumb .other-area .util li span {
-	vertical-align: top;
-}
-.board-list-thumb .other-area .util .name {float: left;}
-.board-list-thumb .other-area .util .right .attatch {
-	display: inline-block;
-	margin:0;
-	padding:0;
-	width: 8px;
-	/* height: 12px; */
-}
-.board-list-thumb .other-area .util .right .attatch:before {content: none;}
-.board-list-thumb .other-area .util .right .attatch img {
-	width: 100%;
-	vertical-align: middle;
-}
-.board-list-thumb .other-area .util .right .like {padding:0 1px 0 15px;}
-.board-list-thumb .other-area .util .right .like:before {content:none}
-.board-list-thumb .other-area .util .right .like:after {
-	content: '';
-	position:absolute;
-	left:0; top:50%;
-	width:13px;
-	height:12px;
-	margin-top:-5px;
-	background-image:url(../img/mobile/ico/ico_like2.png);
-	background-size:13px 12px;
-}
-.board-list-thumb .other-area .util span em {display: none;}
-.board-list-thumb .other-area .img-area {
-	position: inherit;
-	width: 100%;
-	height: auto;
-	margin-top: 15px;
-}
-.board-list-thumb .other-area .img-area img {width: 100%; height: auto;}
-.board-list-thumb .other-area .img-area.no-image {display: none;}
-
 
 /* 공유 범위 영역 */
 .share-box {
@@ -670,3 +548,53 @@ select.styled1 {
 }
 .addfind-cont .foot-info .text-area .text:first-child {padding-left:0;}
 .addfind-cont .foot-info .text-area .text:first-child:before {display:none;}
+
+/* 썸네일 */
+.thumb-list1 {}
+.thumb-list1 > ul {}
+.thumb-list1 > ul > li {border-top:1px solid #e5e5e5;}
+.thumb-list1 > ul > li a {
+	display:block;
+	padding:20px 20px 42px;
+	border-top:2px solid #fafafa;
+}
+.thumb-list1 > ul > li:first-child,
+.thumb-list1 > ul > li:first-child a {border-top:0;}
+.thumb-list1 > ul > li a .txt-area .num {
+	display:inline-block;
+	min-width:36px;
+	height:26px;
+	padding:0 6px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	font-size:12px;
+	text-align:center;
+	line-height:24px;
+}
+.thumb-list1 > ul > li a .txt-area .title {
+	position:relative;
+	padding-right:20px;
+	margin-top:6px;
+}
+.thumb-list1 > ul > li a .txt-area .title .checkWrap {display:none;}
+.thumb-list1 > ul > li a .txt-area .title .tit {
+	display:inline-block;
+	overflow:hidden;
+	max-width:100%;
+	padding-right:5px;
+	box-sizing:border-box;
+	color:#333;
+	font-size:14px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.thumb-list1 > ul > li a .txt-area .title .reply {
+	position:absolute;
+}
+.thumb-list1 > ul > li a .txt-area .cont {
+	overflow:hidden;
+	height:60px;
+	margin-top:5px;
+	line-height:20px;
+}
+.thumb-list1 > ul > li a .txt-area {}
