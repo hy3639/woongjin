@@ -182,6 +182,26 @@ select.styled1 {
 }
 .btn-icon-text.icon01.on .text:before {background-position:0 -9px;}
 
+/*02*/
+.btn-icon-text.icon02 .text {padding-left:34px;}
+.btn-icon-text.icon02 .text:before {
+	left:14px;
+	width:16px;
+	height:10px;
+	margin-top:-5px;
+	background-image:url(../img/btn/btn_ico02.png);
+}
+
+/*03*/
+.btn-icon-text.icon03 .text {padding-left:34px;}
+.btn-icon-text.icon03 .text:before {
+	left:14px;
+	width:12px;
+	height:11px;
+	margin-top:-5px;
+	background-image:url(../img/btn/btn_ico03.png);
+}
+
 /* ===========================================================================
 	해더 영역
 =========================================================================== */
@@ -447,16 +467,22 @@ select.styled1 {
 	top:50%;
 	margin-top: -18px;
 }
-.board-view1 .tit-wrap .left-box p {padding-right:250px;}
+.board-view1 .tit-wrap .left-box p {
+	padding-right:250px;
+	font-weight: 700;
+	color: #333;
+	font-size: 14px;
+}
 
 .board-view1 .info-wrap {overflow: hidden;}
-	.board-view1 .info-wrap .left-box {float:left;}
+.board-view1 .info-wrap .left-box {float:left;}
 .board-view1 .info-wrap .left-box ul {overflow: hidden;}
 .board-view1 .info-wrap .left-box ul li {
 	position:relative;
 	float: left;
 	margin-left:12px;
 	padding-left:12px;
+	font-size: 12px;
 }
 .board-view1 .info-wrap .left-box ul li:first-child {
 	margin-left: 0;
@@ -467,16 +493,33 @@ select.styled1 {
 	width: 1px;
 	height: 11px;
 	position: absolute;
-	left: 0; top:0;
+	left: 0; top:50%;
 	margin-top:-5px;
 	background-color: #eee;
 }
 .board-view1 .info-wrap .left-box ul li:first-child:before {content: none;}
 .board-view1 .info-wrap .right-box {float:right;}
+<<<<<<< HEAD
 .board-view1 .cont-wrap {}
+=======
+.board-view1 .info-wrap .right-box button {
+	position: relative;
+	font-size: 12px;
+	padding-right:15px;
+}
+.board-view1 .info-wrap .right-box button:before {
+	content: '';
+	width:7px;
+	height:4px;
+	position:absolute;
+	right:0;
+	top:50%;
+	marign-top:-2px;
+  background: url(../img/ico/ico_down.png) no-repeat 0 0;
+}
+>>>>>>> 5e4e542e070350225e54c12aeb6907ac71abe1ab
 .board-view1 .cont-wrap .cont {padding:15px 10px 30px 10px;}
 .board-view1 .cont-wrap .cont img {max-width: 100%;}
-
 .board-view1 .cont-wrap .tag-wrap {position: relative;}
 .board-view1 .cont-wrap .tag-wrap .input-area {
 	width: 100%;
@@ -491,8 +534,14 @@ select.styled1 {
 	position: absolute;
 	right: 0; top:0;
 }
+.board-view1 .cont-wrap .tag-wrap .bottom {
+	position: relative;
+	margin-top: 10px;
+}
 .board-view1 .cont-wrap .tag-wrap .bottom .tit {
-	display: inline-block;
+	position:absolute;
+	left:0; top:0;
+	display: block;
 	width: 40px;
 	height: 28px;
 	padding-right:3px;
@@ -506,7 +555,53 @@ select.styled1 {
 	line-height: 28px;
 	box-sizing: border-box;
 }
+.board-view1 .cont-wrap .tag-wrap .bottom .tag-list {
+	overflow: hidden;
+	padding-left:40px;
+}
+.board-view1 .cont-wrap .tag-wrap .bottom .tag-list span {
+	position: relative;
+	float:left;
+	display: inline-block;
+	padding:0 24px 0 10px;
+	margin-left:6px;
+	margin-bottom:6px;
+	background-color:#fafafa;
+	color:#888;
+	font-size: 12px;
+	text-align: center;
+	line-height:28px;
+}
+.board-view1 .cont-wrap .tag-wrap .bottom .tag-list span .btn-del {
+	width: 23px;
+	height: 28px;
+	position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -14px;
+  background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
 
+<<<<<<< HEAD
+=======
+.reply-wrap {
+	margin:0 50px;
+	padding:40px 30px;
+	background-color: #fafafa;
+}
+.reply-wrap .input-area {}
+.reply-wrap .input-area .textarea-wrap {
+	width: 100%;
+	height: 90px;
+	padding-right:105px;
+	box-sizing: border-box;
+}
+.reply-wrap .input-area textarea {width: 100%; height: 100%;}
+.reply-wrap .input-area .btn-save {}
+>>>>>>> 5e4e542e070350225e54c12aeb6907ac71abe1ab
 
 /* ===========================================================================
 	컨텐츠
