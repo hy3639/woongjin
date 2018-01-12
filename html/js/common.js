@@ -4,6 +4,7 @@ $(document).ready(function(){
 	========================================================================== */
 	resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
+	dotdotdot();// 말줄임
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
 		$('.gnb-utill').show();
@@ -155,6 +156,14 @@ $(document).ready(function(){
 	$('.align-btns button').click(function(){
 		$(this).closest('.align-btns').find('button').removeClass('on');
 		$(this).addClass('on');
+		if($(this).hasClass('btn-align1')){
+			$('.list-type').show();
+			$('.thumb-type').hide();
+		}else{
+			$('.list-type').hide();
+			$('.thumb-type').show();
+		}
+		dotdotdot();// 말줄임
 	});
 	// 게시판 리스트 레이아웃 설정
 	$('.layout-btns button').click(function(){
@@ -184,14 +193,6 @@ $(document).ready(function(){
 			$(this).closest('.tab-wrap-click').find('.tab-cont').removeClass('on').eq(idx).addClass('on');
 		});
 	});
-
-	/* ===================================================================================
-		말줄임
-	=================================================================================== */
-	$('.dotLine2').dotdotdot();// 2 줄
-	$('.dotLine3').dotdotdot();// 3 줄
-	$('.dotLine4').dotdotdot();// 4 줄
-	$('.dotLine5').dotdotdot();// 5 줄
 
 	/* ===================================================================================
 		기타
@@ -243,6 +244,13 @@ function selectWid(){
 	});
 }
 
+/* 말줄임 */
+function dotdotdot(){
+	$('.dotLine2').dotdotdot();// 2 줄
+	$('.dotLine3').dotdotdot();// 3 줄
+	$('.dotLine4').dotdotdot();// 4 줄
+	$('.dotLine5').dotdotdot();// 5 줄
+}
 
 /* ==========================================================================
 	웹/모바일 해상도 대응
