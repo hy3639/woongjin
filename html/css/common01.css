@@ -302,28 +302,28 @@ select.styled1 {
 	테이블
 =========================================================================== */
 /* 리스트 테이블 */
-.board-list {border-top:1px solid #eee;}
-.board-list table {
+.board-list1 {border-top:1px solid #eee;}
+.board-list1 table {
 	width: 100%;
 	border-bottom:1px solid #eee;
 }
-.board-list table caption {display: none;}
-.board-list table tbody tr:hover {background-color: #fafafa;}
-.board-list table thead th {
+.board-list1 table caption {display: none;}
+.board-list1 table tbody tr:hover {background-color: #fafafa;}
+.board-list1 table thead th {
 	height:54px;
 	font-size:14px;
 	color:#333;
 	font-weight: 700;
 }
-.board-list table thead th.title {padding-left:70px;}
-.board-list table thead th.order button {
+.board-list1 table thead th.title {padding-left:70px;}
+.board-list1 table thead th.order button {
 	position:relative;
 	color:#333;
 	font-weight: 700;
 	font-size: 14px;
 }
 
-.board-list table thead th.order button span {
+.board-list1 table thead th.order button span {
 	content: '';
 	display: block;
 	width: 0;
@@ -335,15 +335,15 @@ select.styled1 {
   top: 50%;
 	margin-top:-3px;
 }
-.board-list table thead th.order button.up {color: #ff5349;}
-.board-list table thead th.order button.up span {
+.board-list1 table thead th.order button.up {color: #ff5349;}
+.board-list1 table thead th.order button.up span {
 	/* border-bottom: 5px solid #ff5349; */
 }
-.board-list table thead th.order button.down span {
+.board-list1 table thead th.order button.down span {
 	border-top: 5px solid #9da4ac;
 }
-.board-list table thead th.order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
-.board-list table tbody td {
+.board-list1 table thead th.order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
+.board-list1 table tbody td {
 	padding:18px 0;
 	color:#666;
 	font-size:13px;
@@ -351,8 +351,8 @@ select.styled1 {
 	line-height:22px;
 	border-top:1px solid #eee;
 }
-.board-list table tbody td.subject {padding:0;}
-.board-list table tbody td.subject a {
+.board-list1 table tbody td.subject {padding:0;}
+.board-list1 table tbody td.subject a {
 	display:block;
 	overflow:hidden;
 	position:relative;
@@ -362,20 +362,20 @@ select.styled1 {
 	text-align: left;
 	box-sizing: border-box;
 }
-.board-list table tbody td.subject a span {vertical-align: middle;}
-.board-list table tbody td.subject a .tit {
+.board-list1 table tbody td.subject a span {vertical-align: middle;}
+.board-list1 table tbody td.subject a .tit {
 	display: inline-block;
 	max-width: 100%;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 }
-.board-list table tbody td.subject a .reply {position:absolute;}
-.board-list table tbody .important td.subject a{font-weight: 700;}
-.board-list table tbody td.subject a:hover {text-decoration: underline;}
-.board-list table .checkWrap,
-.board-list table img {vertical-align:middle;}
-.board-list table td .icon-important {
+.board-list1 table tbody td.subject a .reply {position:absolute;}
+.board-list1 table tbody .important td.subject a{font-weight: 700;}
+.board-list1 table tbody td.subject a:hover {text-decoration: underline;}
+.board-list1 table .checkWrap,
+.board-list1 table img {vertical-align:middle;}
+.board-list1 table td .icon-important {
 	display:inline-block;
 	width:44px;height:24px;
 	font-size:12px;
@@ -409,6 +409,64 @@ select.styled1 {
 	color:#999;
 	font-size:12px;
 }
+
+/*보기 테이블*/
+.board-view1 {
+	margin:0 50px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.board-view1 > ul > li {
+	width: 100%;
+	padding:20px 10px;
+	min-height: 55px;
+	border-top:1px solid #eee;
+	box-sizing: border-box;
+}
+.board-view1 > ul > li:first-child {border-top: none;}
+.board-view1 .tit-wrap {position: relative;}
+.board-view1 .tit-wrap:after {content: '';display: block; clear: both;}
+.board-view1 .tit-wrap .left-box {position: relative;}
+.board-view1 .tit-wrap .right-box {
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top: -18px;
+}
+.board-view1 .tit-wrap .left-box p {padding-right:250px;}
+
+.board-view1 .info-wrap {overflow: hidden;}
+	.board-view1 .info-wrap .left-box {float:left;}
+.board-view1 .info-wrap .left-box ul {overflow: hidden;}
+.board-view1 .info-wrap .left-box ul li {
+	position:relative;
+	float: left;
+	margin-left:12px;
+	padding-left:12px;
+}
+.board-view1 .info-wrap .left-box ul li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+.board-view1 .info-wrap .left-box ul li:before {
+	content: '';
+	width: 1px;
+	height: 11px;
+	position: absolute;
+	left: 0; top:50%;
+	margin-top:-5px;
+	background-color: #eee;
+}
+.board-view1 .info-wrap .left-box ul li:first-child:before {content: none;}
+.board-view1 .info-wrap .right-box {float:right;}
+.board-view1 .cont-wrap {}
+.board-view1 .cont-wrap .cont {
+	padding:15px 10px 30px 10px;
+}
+.board-view1 .cont-wrap .cont img {max-width: 100%;}
+
+
+
 
 /* ===========================================================================
 	컨텐츠
