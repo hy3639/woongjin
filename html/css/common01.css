@@ -654,6 +654,15 @@ select.styled1 {
 	line-height:34px;
 }
 .reply-wrap .reply-list .info-wrap .info-list {position: relative;}
+.reply-wrap .reply-list .info-wrap .info-list .date {
+	position:relative;
+		color:#999;
+		float:left;
+		line-height: 34px;
+		margin-left:12px;
+		padding-left:12px;
+}
+
 .reply-wrap .reply-list .info-wrap .info-list ul {overflow: hidden;}
 .reply-wrap .reply-list .info-wrap .info-list li {
 	position: relative;
@@ -663,7 +672,8 @@ select.styled1 {
 	line-height: 34px;
 	color:#999;
 }
-.reply-wrap .reply-list .info-wrap .info-list li:before {
+.reply-wrap .reply-list .info-wrap .info-list li:before,
+.reply-wrap .reply-list .info-wrap .info-list .date:before {
 	content: '';
 	width: 1px;
 	height: 11px;
