@@ -532,11 +532,6 @@ select.styled1 {
 	line-height:0;
 }
 .share-box .btn-groupchart .tooltip {display:none;}
-.share-box .scroll-area {
-	overflow-y:scroll;
-	height:102px;
-	box-sizing:border-box;
-}
 .share-box .scroll-area .user-box {
 	position:relative;
 	padding:0 10px;
