@@ -232,7 +232,7 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.header .btn-search {
+.header.mobile .btn-search {
 	position:absolute;
 	top:0; right:45px;
 	width:45px;
