@@ -124,18 +124,16 @@ select.styled1 {
 	line-height:40px;
 }
 /* 정렬 */
-.btn-align {margin:30px 50px 0;}
-.btn-align .btn-item {display:inline-block;}
-.btn-align .btn-item {margin-left:7px;}
-.btn-align .btn-item:first-child {margin-left:0;}
-.btn-align.center {text-align:center;}
-.btn-align.right {text-align:right;}
-
-.btn-align-mix {margin:30px 50px 0;}
-.btn-align-mix .btn-align {display:inline-block;margin:0 0 0 7px;}
-.btn-align-mix .btn-align:first-child {margin-left:0;}
-.btn-align-mix.right {text-align:right;}
-.btn-align-mix.center {text-align:center;}
+.btn-wrap {margin:30px 50px 0;}
+.btn-wrap .btn-align {display:inline-block;margin:0 0 0 7px;}
+.btn-wrap .btn-align:first-child {margin-left:0;}
+.btn-wrap .btn-align .btn-item {
+	display:inline-block;
+	margin-left:7px;
+}
+.btn-wrap .btn-align .btn-item:first-child {margin-left:0;}
+.btn-wrap.right {text-align:right;}
+.btn-wrap.center {text-align:center;}
 
 /*
 	아이콘 + 텍스트 버튼

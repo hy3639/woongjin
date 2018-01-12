@@ -122,9 +122,8 @@ $(document).ready(function(){
 	/* 셀렉트박스 */
 	$('select.styled1').each(function(){
 		var val = $(this).val();
-		var wid = $(this).outerWidth();
 		$(this).wrap('<span class="selectWrap">');
-		$(this).closest('.selectWrap').css({'width':wid}).prepend('<span class="selTitle">'+val+'</span>');
+		$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
 		$(this).change(function(){
 			var cVal = $(this).val();
 			$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
@@ -137,6 +136,7 @@ $(document).ready(function(){
 			$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
 		});
 	});
+	selectWid();// 셀렉트 박스넓이 설정
 
 	/* ===================================================================================
 		버튼
@@ -195,13 +195,13 @@ $(document).ready(function(){
 
 
 $(window).load(function(){
-	resizeGnb();// GNB
-	resizeMid();// 웹/모바일 리사이징
+	
 });
 
 $(window).resize(function(){
 	resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
+	selectWid();// 셀렉트 박스넓이 설정
 });
 
 
@@ -221,6 +221,15 @@ function resizeGnb(){
 		$('.header').attr('class', 'header mobile');
 		$('.gnb-menu-box').removeAttr('style');
 	}
+}
+
+
+/* 셀렉트박스 넓이 */
+function selectWid(){
+	$('select.styled1').each(function(){
+		var wid = $(this).outerWidth();
+		$(this).closest('.selectWrap').css({'width':wid});
+	});
 }
 
 

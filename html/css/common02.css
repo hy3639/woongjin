@@ -121,20 +121,17 @@ select.styled1 {
 	line-height:38px;
 }
 /* 정렬 */
-.btn-align {
+.btn-wrap {margin:30px 10px 0;}
+.btn-wrap .btn-align {
 	overflow:hidden;
-	margin:30px 10px 0;
+	margin:10px 0 0;
 }
-.btn-align .btn-item {
+.btn-wrap .btn-align:first-child {margin-top:0;}
+.btn-wrap .btn-align .btn-item {
 	float:left;
 	padding:0 5px;
 	box-sizing:border-box;
 }
-.btn-align-mix {
-	margin:30px 10px 0;
-}
-.btn-align-mix .btn-align {margin:10px 0 0;}
-.btn-align-mix .btn-align:first-child {margin-top:0;}
 
 /*
 	아이콘 + 텍스트 버튼
