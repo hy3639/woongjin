@@ -402,7 +402,7 @@ select.styled1 {
 	left:0; bottom:0;
 }
 .date-area .date-text {
-	
+
 }
 .date-area .date-select {
 	position:absolute;
@@ -422,7 +422,7 @@ select.styled1 {
 .date-area select {width:75px;}
 
 /*공지사항-리스트*/
-.board-list {display: none}
+.board-list1 {display: none}
 /*공지사항-썸네일*/
 .board-list-thumb {overflow: inherit; margin:0;}
 .board-list-thumb .txt-area .num {
