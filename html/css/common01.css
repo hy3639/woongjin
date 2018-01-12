@@ -241,6 +241,41 @@ select.styled1 {
 }
 
 /* ===========================================================================
+	탭스타일
+=========================================================================== */
+/* 01 */
+.tab-list1 {
+	margin:30px 50px 0;
+	border-bottom:1px solid #e5e5e5;
+}
+.tab-list1:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.tab-list1 .item {
+	float:left;
+	position:;
+}
+.tab-list1 .item .text {
+	display:block;
+	height:45px;
+	padding:0 20px;
+	border-top:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+	background-color:#fafafa;
+	font-size:14px;
+	text-align:center;
+	line-height:44px;
+}
+.tab-list1 .item:first-child .text {border-left:1px solid #e5e5e5;}
+.tab-list1 .item.fColor:
+.tab-list1 .item.fColor .text {
+	background-color:#fff;
+	font-weight:700;
+}
+
+/* ===========================================================================
 	해더 영역
 =========================================================================== */
 .header {
@@ -999,6 +1034,19 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
+
+/* 파일첨부 영역 */
+.addfind-cont {}
+.addfind-cont .addfile-list {}
+.addfind-cont .addfile-list .addfile-item {}
+.addfind-cont .addfile-list .addfile-item .file-name{}
+.addfind-cont .addfile-list .addfile-item .volume-state {}
+.addfind-cont .addfile-list .addfile-item .volume-state .text {}
+.addfind-cont .addfile-list .addfile-item .btn-del {}
+.addfind-cont .foot-info {}
+.addfind-cont .foot-info .btn-text {}
+.addfind-cont .foot-info .text-area {}
+.addfind-cont .foot-info .text-area .text {}
 
 /* 썸네일 */
 .thumb-list1 {margin:40px 50px 0;}
