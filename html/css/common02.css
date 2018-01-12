@@ -120,6 +120,15 @@ select.styled1 {
 	text-align:center;
 	line-height:38px;
 }
+
+/* small */
+.btn-text.sm {
+	width:auto;
+	padding:0 10px;
+	font-size:11px;
+	line-height:28px;
+}
+
 /* 정렬 */
 .btn-wrap {margin:30px 10px 0;}
 .btn-wrap .btn-align {
@@ -172,6 +181,32 @@ select.styled1 {
 	color:#333;
 }
 .btn-icon-text.icon01.on .text:before {background-position:0 -9px;}
+
+/* ===========================================================================
+	탭스타일
+=========================================================================== */
+/* 01 */
+.tab-list1 {
+	overflow:hidden;
+	margin:25px 20px 0;
+}
+.tab-list1 .item {float:left;}
+.tab-list1 .item .text {
+	display:block;
+	height:40px;
+	border:1px solid #e5e5e5;
+	border-left:0;
+	background-color:#fafafa;
+	font-size:14px;
+	text-align:center;
+	line-height:38px;
+}
+.tab-list1 .item:first-child .text {border-left:1px solid #e5e5e5;}
+.tab-list1 .item.fColor .text {
+	border-bottom:0;
+	background-color:#fff;
+	font-weight:700;
+}
 
 /* ===========================================================================
 	해더
@@ -293,7 +328,7 @@ select.styled1 {
 .board-write1 th,
 .board-write1 td {float:left;}
 .board-write1 th {
-	margin-top:20px;
+	margin-top:15px;
 	color:#333;
 	font-size:14px;
 	text-align:left;
@@ -532,11 +567,6 @@ select.styled1 {
 	line-height:0;
 }
 .share-box .btn-groupchart .tooltip {display:none;}
-.share-box .scroll-area {
-	overflow-y:scroll;
-	height:102px;
-	box-sizing:border-box;
-}
 .share-box .scroll-area .user-box {
 	position:relative;
 	padding:0 10px;
@@ -559,3 +589,84 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
+
+/* 파일첨부 영역 */
+.addfind-cont {
+	margin:-1px 20px 0;
+	border:1px solid #e5e5e5;
+}
+.addfind-cont .addfile-list {
+	padding:6px 0;
+}
+.addfind-cont .addfile-list .addfile-item {
+	position:relative;
+	margin-top:5px;
+	padding:0 10px;
+}
+.addfind-cont .addfile-list .addfile-item:first-child {margin-top:0;}
+.addfind-cont .addfile-list .addfile-item .file-name{}
+.addfind-cont .addfile-list .addfile-item .volume-state {
+	overflow:hidden;
+}
+.addfind-cont .addfile-list .addfile-item .volume-state .text {
+	float:left;
+	position:relative;
+	padding-left:18px;
+	color:#999;
+	font-size:12px;
+}
+.addfind-cont .addfile-list .addfile-item .volume-state .text:before {
+	content:'';
+	position:absolute;
+	left:8px;top:50%;
+	width:1px;
+	height:10px;
+	margin-top:-5px;
+	background-color:#eee;
+}
+.addfind-cont .addfile-list .addfile-item .volume-state .text:first-child {padding-left:0;}
+.addfind-cont .addfile-list .addfile-item .volume-state .text:first-child:before {display:none;}
+.addfind-cont .addfile-list .addfile-item .btn-del {
+	position:absolute;
+	right:0px; top:50%;
+	width:28px;
+	height:28px;
+	margin-top:-14px;
+	background:url(../img/mobile/btn/btn_del.gif) no-repeat 50% 50%;
+	background-size:9px 9px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.addfind-cont .foot-info {
+	position:relative;
+	padding:10px 9px 10px 80px;
+	border-top:1px solid #e5e5e5;
+	text-align:right;
+}
+.addfind-cont .foot-info .btn-text {
+	position:absolute;
+	left:10px; top:10px;
+}
+.addfind-cont .foot-info .text-area {
+	display:inline-block;
+}
+.addfind-cont .foot-info .text-area .text {
+	display:inline-block;
+	position:relative;
+	padding-left:15px;
+	color:#999;
+	font-size:11px;
+	line-height:30px;
+}
+.addfind-cont .foot-info .text-area .text:before {
+	content:'';
+	position:absolute;
+	left:6px;top:50%;
+	width:1px;
+	height:10px;
+	margin-top:-5px;
+	background-color:#eee;
+}
+.addfind-cont .foot-info .text-area .text:first-child {padding-left:0;}
+.addfind-cont .foot-info .text-area .text:first-child:before {display:none;}

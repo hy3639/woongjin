@@ -240,22 +240,28 @@ function resizeMid(){
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
+		/* 버튼 정렬 */
 		$('.btn-item').removeAttr('style');
+
+		/* 탭 리스트 넓이 초기화 */
+		$('.tab-list1 .item').removeAttr('style');
 	}else{
 		/* 모바일 ================================================================= */
+		/* 버튼 정렬 */
 		$('.btn-align').each(function(){
 			var boxW = $(this).outerWidth();
 			var len = $(this).find('.btn-item').length;
 			var minus = $(this).find('.btn-item.mHide').length;
 			var btnW = boxW/(len - minus);
 			$(this).find('.btn-item').css({'width':btnW});
-			/*
-			if(len <= 3){
-				$(this).find('.btn-item').css({'width':boxW/len});
-			}else{
-				$(this).find('.btn-item').css({'width':boxW/3});
-			}
-			*/
+		});
+
+		/* 탭 넓이 자동조절 */
+		$('.tab-list1').each(function(){
+			var tabWid = $(this).outerWidth();
+			var len = $(this).closest('.tab-list1').find('.item').length;
+			var wid = tabWid/len;
+			$(this).closest('.tab-list1').find('.item').css({'width':wid});
 		});
 	}
 }
