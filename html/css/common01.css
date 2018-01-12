@@ -123,6 +123,15 @@ select.styled1 {
 	color:#fff !important;
 	line-height:40px;
 }
+
+.btn-text.small {
+	min-width:44px;
+	padding:0 10px;
+	font-size:12px;
+	line-height:26px;
+}
+.btn-text.small:hover {line-height:28px;}
+
 /* 정렬 */
 .btn-wrap {margin:30px 50px 0;}
 .btn-wrap .btn-align {display:inline-block;margin:0 0 0 7px;}
