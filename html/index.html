@@ -507,7 +507,7 @@
 							<a href="#" class="btn-more">더보기</a>
 						</div>
 						<div class="slider-box">
-							<div class="slider1">
+							<div class="slider1 type1">
 								<ul class="bxslider">
 									<li class="item">
 										<a href="#" class="inner">
@@ -550,7 +550,7 @@
 							<a href="#" class="btn-more">더보기</a>
 						</div>
 						<div class="slider-box">
-							<div class="slider1">
+							<div class="slider1 type2">
 								<ul class="bxslider">
 									<li class="item">
 										<div class="inner">
@@ -818,10 +818,26 @@ $(window).load(function(){
 	});
 
 	/* 슬라이더 */
-	$('.slider1').each(function(){
+	$('.slider1.type1').each(function(){
+		var sliderW = $(this).outerWidth();
+		//var itemW = (sliderW/3) * 2;
+		slider1 = $('.slider1.type1 .bxslider').bxSlider({
+			pager: false,
+			autoControls:true,
+			minSlides: 2,
+			maxSlides: 2,
+			moveSlides: 1,
+			//slideWidth: itemW,
+			//infiniteLoop:false,
+			pause:7000, // 슬라이드 속도
+			speed:500
+		});
+		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+	});
+	$('.slider1.type2').each(function(){
 		var sliderW = $(this).outerWidth();
 		var itemW = (sliderW/3) * 2;
-		slider = $(this).find('.bxslider').bxSlider({
+		slider2 = $('.slider1.type2 .bxslider').bxSlider({
 			pager: false,
 			autoControls:true,
 			minSlides: 2,
@@ -895,11 +911,15 @@ $(window).load(function(){
 			$('.content .move-cont .cont').removeAttr('style');
 		}
 		if($(this).hasClass('btn3')){
-			$('.wrapper').attr('class', 'wrapper stage3');
+			$('.wrapper').attr('class', 'wrapper media');
 		}
 		resizeBox();
-		//slider1.destroySlider();
-		//slider1.reloadSlider();
+
+		slider1.destroySlider();
+		slider2.destroySlider();
+
+		slider1.reloadSlider();
+		slider2.reloadSlider();
 	});
 
 
