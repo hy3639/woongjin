@@ -506,7 +506,6 @@ select.styled1 {
 }
 .board-view1 .info-wrap .left-box ul li:first-child:before {content: none;}
 .board-view1 .info-wrap .right-box {float:right;}
-<<<<<<< HEAD
 .board-view1 .info-wrap .right-box button {
 	position: relative;
 	font-size: 12px;
@@ -580,19 +579,15 @@ select.styled1 {
 	width: 23px;
 	height: 28px;
 	position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -14px;
-  background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
-  font-size: 0;
-  text-indent: -9999px;
-  line-height: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -14px;
+	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 83ef95302d1d1f382d48a86d40316749291fae1b
 .reply-wrap {
 	margin:60px 50px 0 50px;
 	padding:40px 30px 20px 30px;
@@ -610,10 +605,6 @@ select.styled1 {
 	box-sizing: border-box;
 }
 .reply-wrap .input-area textarea {width: 100%; height: 100%;}
-<<<<<<< HEAD
-.reply-wrap .input-area .btn-save {}
-=======
-<<<<<<< HEAD
 .reply-wrap .input-area .btn-area {
 	position: absolute;
 	right:0;
@@ -739,7 +730,6 @@ select.styled1 {
 .page-wrap ul li .name,
 .page-wrap ul li .date {width:105px; text-align: right;position:absolute; right:0; padding-right:10px; box-sizing: border-box;}
 .page-wrap ul li .date {right:105px;}
->>>>>>> 83ef95302d1d1f382d48a86d40316749291fae1b
 
 /* ===========================================================================
 	컨텐츠
