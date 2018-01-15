@@ -142,12 +142,6 @@ $(document).ready(function(){
 	/* ===================================================================================
 		버튼
 	=================================================================================== */
-	// 스킨 컬러 버튼 오버
-	$('.btn-text.fColor').mouseenter(function(){
-		$(this).addClass('bgColor');
-	}).mouseleave(function(){
-		$(this).removeClass('bgColor');
-	});
 	// 안 읽은 게시물 보기
 	$('.btn-icon-text.icon01').click(function(){
 		$(this).toggleClass('on');
@@ -261,6 +255,13 @@ function resizeMid(){
 		/* 웹 =================================================================== */
 		/* 버튼 정렬 */
 		$('.btn-item').removeAttr('style');
+
+		// 스킨 컬러 버튼 오버
+		$('.btn-text.fColor').mouseenter(function(){
+			$(this).addClass('bgColor');
+		}).mouseleave(function(){
+			$(this).removeClass('bgColor');
+		});
 
 		/* 탭 리스트 넓이 초기화 */
 		$('.tab-list1 .item').removeAttr('style');

@@ -162,13 +162,13 @@ select.styled1 {
 	line-height:40px;
 }
 
-.btn-text.small {
+.btn-text.sm {
 	min-width:44px;
 	padding:0 10px;
 	font-size:12px;
 	line-height:26px;
 }
-.btn-text.small:hover {line-height:28px;}
+.btn-text.sm:hover {line-height:28px;}
 
 /* 정렬 */
 .btn-wrap {margin:30px 50px 0;}
@@ -1056,23 +1056,70 @@ select.styled1 {
 /* 파일첨부 영역 */
 .addfind-cont {
 	position:relative;
-	margin:0 50px;
+	margin:-1px 50px 0;
 	border:1px solid #e5e5e5;
-	border-top:0;
 }
-.addfind-cont .title-area {}
-.addfind-cont .title-area .left {}
-.addfind-cont .title-area .right {}
-.addfind-cont .addfile-list {}
-.addfind-cont .addfile-list .addfile-item {}
-.addfind-cont .addfile-list .addfile-item .file-name{}
-.addfind-cont .addfile-list .addfile-item .volume-state {}
-.addfind-cont .addfile-list .addfile-item .volume-state .text {}
-.addfind-cont .addfile-list .addfile-item .btn-del {}
-.addfind-cont .foot-info {}
-.addfind-cont .foot-info .btn-text {}
-.addfind-cont .foot-info .text-area {}
-.addfind-cont .foot-info .text-area .text {}
+.addfind-cont .title-area {
+	overflow:hidden;
+	height:44px;
+	padding:0 20px;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#fafafa;
+	color:#333;
+	font-weight:700;
+	line-height:44px;
+}
+.addfind-cont .title-area .left,
+.addfind-cont .addfile-list .addfile-item .file-name,
+.addfind-cont .foot-info .btn-text {
+	float:left;
+}
+.addfind-cont .title-area .right,
+.addfind-cont .addfile-list .addfile-item .volume-state,
+.addfind-cont .foot-info .text-area {
+	overflow:hidden;
+	float:right;
+}
+.addfind-cont .title-area .right .title,
+.addfind-cont .addfile-list .addfile-item .volume-state .text,
+.addfind-cont .foot-info .text-area .text {
+	float:left;
+	width:144px;
+	padding-right:30px;
+	text-align:right;
+}
+.addfind-cont .title-area .right .title:first-child,
+.addfind-cont .addfile-list .addfile-item .volume-state .text:first-child,
+.addfind-cont .foot-info .text-area .text:first-child {width:auto;}
+.addfind-cont .addfile-list {padding:8px 0;}
+.addfind-cont .addfile-list .addfile-item {
+	overflow:hidden;
+	position:relative;
+	padding:0 20px;
+	color:#333;
+	line-height:35px ;
+}
+.addfind-cont .addfile-list .addfile-item .volume-state .text,
+.addfind-cont .foot-info .text-area .text {color:#999;}
+.addfind-cont .addfile-list .addfile-item .btn-del {
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	width: 34px;
+	height: 34px;
+	margin-top: -17px;
+	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height:0;
+}
+.addfind-cont .foot-info {
+	overflow:hidden;
+	padding:10px 20px;
+	border-top:1px solid #f5f5f5;
+	height:28px;
+	line-height:28px;
+}
 
 /* 썸네일 */
 .thumb-list1 {margin:40px 50px 0;}
