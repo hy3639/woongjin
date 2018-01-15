@@ -558,14 +558,19 @@ select.styled1 {
 }
 .board-view1 .info-wrap .right-box .btn-attach:before {
 	content: '';
-	width:7px;
-	height:4px;
+	width:11px;
+	height:6px;
 	position:absolute;
 	right:0;
 	top:50%;
-	margin-top:-2px;
-	background: url(../img/ico/ico_down.png) no-repeat 0 0;
+	margin-top:-3px;
+	background: url(../img/mobile/ico/ico_down.png) no-repeat 0 0;
+	background-size: 11px 6px;
 }
+.board-view1 .info-wrap .right-box .btn-attach.on:before {
+	transform:rotate(180deg);
+}
+.board-view1 .info-wrap .right-box .btn-attach.on:before {transform:rotate(180deg);}
 .board-view1 .info-wrap .right-box .btn-attach.on + .attach-list {display: block;}
 .board-view1 .info-wrap .right-box .attach-list {
 		display: none;
