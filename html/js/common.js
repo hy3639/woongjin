@@ -142,10 +142,17 @@ $(document).ready(function(){
 	/* ===================================================================================
 		버튼
 	=================================================================================== */
-	// 안 읽은 게시물 보기
-	$('.btn-icon-text.icon01').click(function(){
+	// 아이콘 on/off
+	$('.btn-icon-text, .btn-icon').click(function(){
 		$(this).toggleClass('on');
 	});
+
+	$('.btn-attach').click(function(){
+		$(this).toggleClass('on');
+	});
+
+
+
 	// 게시판 리스트 보기방식 설정
 	$('.align-btns button').click(function(){
 		$(this).closest('.align-btns').find('button').removeClass('on');

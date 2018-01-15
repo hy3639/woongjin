@@ -293,6 +293,16 @@
 			<div class="title-wrap">
 				<h2 class="title">공지사항</h2>
 			</div>
+			<div class="board-top">
+				<button type="button" class="btn-icon icon01"><span class="text">즐겨찾기</span></button>
+				<button type="button" class="btn-icon icon02"><span class="text">공유</span></button>
+				<div class="tooltip">
+					<ul>
+						<li><a href="#">내용 보내기</a></li>
+						<li><a href="#">링크 보내기</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="board-view1">
 				<ul>
 					<li class="tit-wrap">
@@ -313,7 +323,14 @@
 							</ul>
 						</div>
 						<div class="right-box">
-							<button type="button">첨부파일<span class="fColor">(2)</span></button>
+							<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
+							<div class="attach-list">
+								<ul>
+									<li><a href="#">오픈안내문.ppt</a></li>
+									<li><a href="#">이벤트명단.xlsx</a></li>
+									<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
+								</ul>
+							</div>
 						</div>
 					</li>
 					<li class="cont-wrap">
@@ -324,15 +341,6 @@
 						</div>
 						<div class="tag-wrap">
 							<div class="top">
-								<div class="input-area">
-									<input type="text" id="Text01" placeholder="태그추가는 쉼표로 구분합니다.">
-								</div>
-								<div class="btn-area">
-									<button type="button"><span class="btn-text sm nomal">취소</span></button>
-									<button type="button"><span class="btn-text sm bdColor fColor">저장</span></button>
-								</div>
-							</div>
-							<div class="bottom">
 								<span class="tit bgColor">Tag</span>
 								<div class="tag-list">
 									<span>웅진 <button type="button" class="btn-del">삭제</button></span>
@@ -355,14 +363,14 @@
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<div class="btn-item"><span class="btn-text">목록</span></div>
-					<div class="btn-item"><span class="btn-text">삭제</span></div>
-					<div class="btn-item"><span class="btn-text">수정</span></div>
+					<div class="btn-item"><a class="btn-text">목록</a></div>
+					<div class="btn-item"><a class="btn-text">삭제</a></div>
+					<div class="btn-item"><a class="btn-text">수정</a></div>
 				</div>
 				<div class="btn-align">
-					<div class="btn-item"><span class="btn-text">답글</span></div>
-					<div class="btn-item"><span class="btn-text">타사공지</span></div>
-					<div class="btn-item"><span class="btn-text">공지</span></div>
+					<div class="btn-item"><a class="btn-text">답글</a></div>
+					<div class="btn-item"><a class="btn-text">타사공지</a></div>
+					<div class="btn-item"><a class="btn-text">공지</a></div>
 				</div>
 			</div>
 			<div class="reply-wrap">
@@ -372,7 +380,7 @@
 						<textarea placeholder="댓글을 입력해주세요"></textarea>
 					</div>
 					<div class="btn-area">
-						<button type="button" class="btn-save"><span class="btn-text">저장</span></button>
+						<button type="button"><span class="btn-text btn-save fColor">저장</span></button>
 					</div>
 				</div>
 				<div class="reply-list">
@@ -397,7 +405,7 @@
 								</div>
 								<div class="btn-area type2">
 									<button type="button"><span class="btn-text">취소</span></button>
-									<button type="button"><span class="btn-text">저장</span></button>
+									<button type="button"><span class="btn-text fColor">저장</span></button>
 								</div>
 							</div>
 						</li>
@@ -429,7 +437,7 @@
 					<li class="prev">
 						<a href="#">
 							<span class="tit">이전글</span>
-							<span class="cont">랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 업과</span>
+							<span class="cont"><span class="cont-tit">랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 업과</span><em class="fColor">(983)</em></span>
 							<span class="name">이화영 부장</span>
 							<span class="date">2017.07.24</span>
 						</a>
@@ -437,7 +445,7 @@
 					<li class="next">
 						<a href="#">
 							<span class="tit">다음글</span>
-							<span class="cont">랜소라마치 그룹웨어 데모 진행 <em class="fColor">(3)</em></span>
+							<span class="cont"><span class="cont-tit">소라마치 그룹웨어 데모 </span> <em class="fColor">(3)</em></span>
 							<span class="name">담당자</span>
 							<span class="date">2017.07.24</span>
 						</a>
