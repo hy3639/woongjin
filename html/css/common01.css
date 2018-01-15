@@ -255,7 +255,7 @@ select.styled1 {
 }
 .tab-list1 .item {
 	float:left;
-	position:;
+	position:relative;
 }
 .tab-list1 .item .text {
 	display:block;
@@ -263,16 +263,24 @@ select.styled1 {
 	padding:0 20px;
 	border-top:1px solid #e5e5e5;
 	border-right:1px solid #e5e5e5;
-	background-color:#fafafa;
 	font-size:14px;
 	text-align:center;
 	line-height:44px;
+	cursor:pointer;
 }
 .tab-list1 .item:first-child .text {border-left:1px solid #e5e5e5;}
-.tab-list1 .item.fColor:
+.tab-list1 .item:hover .text {background-color:#fafafa;}
+.tab-list1 .item.fColor:before {
+	content:'';
+	position:absolute;
+	left:1px; right:1px; bottom:-1px;
+	height:1px;
+	background-color:#fff;
+}
 .tab-list1 .item.fColor .text {
 	background-color:#fff;
 	font-weight:700;
+	cursor:default;
 }
 
 /* ===========================================================================
@@ -1046,7 +1054,15 @@ select.styled1 {
 }
 
 /* 파일첨부 영역 */
-.addfind-cont {}
+.addfind-cont {
+	position:relative;
+	margin:0 50px;
+	border:1px solid #e5e5e5;
+	border-top:0;
+}
+.addfind-cont .title-area {}
+.addfind-cont .title-area .left {}
+.addfind-cont .title-area .right {}
 .addfind-cont .addfile-list {}
 .addfind-cont .addfile-list .addfile-item {}
 .addfind-cont .addfile-list .addfile-item .file-name{}
@@ -1160,176 +1176,3 @@ select.styled1 {
 
 /* 공지사항 리스트 */
 .thumb-type {display:none;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
