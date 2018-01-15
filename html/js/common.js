@@ -188,6 +188,14 @@ $(document).ready(function(){
 		});
 	});
 
+	// 
+	$('.tab-list1 .item').click(function(){
+		var idx = $(this).index();
+		$(this).parents('.tab-list1').find('.item').removeClass('fColor');
+		$(this).addClass('fColor');
+		$(this).closest('.tabArea').find('.tabCont').removeClass('on').eq(idx).addClass('on');
+	});
+
 	/* ===================================================================================
 		기타
 	=================================================================================== */
