@@ -723,7 +723,6 @@
 
 /* 모바일 */
 @media only screen and (max-width: 800px) {
-	.temp-btn-area {display:none;}
 	/* 레이아웃 */
 	.content {margin:-5px 0 0; padding-bottom:0;}
 	.container.main {padding:46px 0 50px 0;}
@@ -1413,22 +1412,6 @@
 
 
 
-.temp-btn-area {
-	position:fixed;
-	right:0; top:20%;
-	z-index:99999;
-	width:50px;
-	padding:10px 0;
-	background:rgba(0,0,0,.8);
-}
-.temp-btn-area button {
-	width:50px;
-	height:30px;
-	color:#fff;
-}
-
-
-
 
 
 /* 임시 레이어 팝업 */
@@ -1445,7 +1428,88 @@
 	position:fixed;
 	left:50%; top:50%;
 	z-index:150;
-	margin:-328px 0 0 -425px;
+	box-sizing:border-box;
+	border:1px solid #eee;
+	background-color:#fff;
+}
+.layer-popup .pop-content {padding:45px 24px 0;}
+
+.layer-popup .pop-close {
+	position:absolute;
+	right:0; top:0;
+	width:56px;
+	height:56px;
+	background:#fff url(../img/btn/btn_pop_close.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.layer-popup .title-area {
+	margin-bottom:15px;
+}
+.layer-popup .title-area .title {
+	color:#000;
+	font-size:15px;
+	font-weight:700;
+}
+.layer-popup .pop-cont {
+	padding-bottom:35px;
+}
+.layer-popup .pop-btn-bottom {
+	min-height:40px;
+	padding:20px 0 30px;
+	border-top:1px solid #eee;
+	font-size:0;
+	line-height:0;
+	text-align:center;
+}
+.layer-popup .pop-btn-bottom .btn-text {margin-left:10px;}
+.layer-popup .pop-btn-bottom .btn-text:first-child {margin-left:0;}
+
+/* 설정 팝업 */
+.pop-seeting {
+	width:850px;
+	margin:-327px 0 0 -425px;
+}
+.layer-popup .floating-list {
+	overflow:hidden;
+	margin-top:-10px;
+}
+.layer-popup .floating-list .item {
+	float:left;
+	position:relative;
+	width:20%;
+	margin-top:10px;
+}
+.layer-popup .floating-list .item .icon {
+	overflow:hidden;
+	width:50px;
+	height:50px;
+	box-sizing:border-box;
+	border-radius:50%;
+	border:1px solid #efefef;
+}
+.layer-popup .floating-list .item .icon.bgColor {border:0;}
+.layer-popup .floating-list .item .icon.bgColor img {margin-top:-50px;}
+.layer-popup .floating-list .item .text {
+	position:absolute;
+	left:56px;top:50%;
+	margin-top:-9px;
+	color:#;
+	font-size:12px;
+}
+
+.layer-popup .layout-list {overflow:hidden;}
+.layer-popup .layout-list .item {
+	float:left;
+	width:52px;
+	margin-left:20px;
+	text-align:center;
+}
+.layer-popup .layout-list .item:first-child {margin-left:0;}
+.layer-popup .layout-list .item label {
+	display:block;
 	font-size:0;
 	line-height:0;
 }
+.layer-popup .layout-list .item .radioWrap {margin:10px 0 0;}
