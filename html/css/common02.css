@@ -357,36 +357,43 @@ select.styled1 {
 
 /*보기 테이블*/
 .board-view1 {
-	margin:0 50px;
+	position:relative;
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
 }
-.board-view1 > ul > li {
+/* .board-view1 > ul > li {
 	width: 100%;
-	padding:20px 10px;
-	min-height: 55px;
-	border-top:1px solid #eee;
 	box-sizing: border-box;
+} */
+/* .board-view1 > ul > li:first-child {border-top: none;} */
+.board-view1 .tit-wrap {
+	padding:18px 20px;
 }
-.board-view1 > ul > li:first-child {border-top: none;}
-.board-view1 .tit-wrap {position: relative;}
 .board-view1 .tit-wrap:after {content: '';display: block; clear: both;}
 .board-view1 .tit-wrap .left-box {position: relative;}
 .board-view1 .tit-wrap .right-box {
 	position: absolute;
-	right: 10px;
-	top:50%;
-	margin-top: -18px;
+	left:0; right:0;
+	bottom:0;
+	padding: 0 20px;
+	padding-bottom:24px;
+	text-align: center;
+	z-index: 10;
+}
+.board-view1 .tit-wrap .right-box button {
+	float: left;
+	width: 50%;
 }
 .board-view1 .tit-wrap .left-box p {
-	padding-right:250px;
 	font-weight: 700;
 	color: #333;
 	font-size: 14px;
 }
 
 .board-view1 .info-wrap {overflow: hidden;}
-.board-view1 .info-wrap .left-box {float:left;}
+.board-view1 .info-wrap .left-box {
+		padding: 0 20px 18px 20px;
+}
 .board-view1 .info-wrap .left-box ul {overflow: hidden;}
 .board-view1 .info-wrap .left-box ul li {
 	position:relative;
@@ -408,12 +415,23 @@ select.styled1 {
 	margin-top:-5px;
 	background-color: #eee;
 }
-.board-view1 .info-wrap .left-box ul li:first-child:before {content: none;}
-.board-view1 .info-wrap .right-box {float:right;}
+.board-view1 .info-wrap .left-box ul li:first-child:before,
+.board-view1 .info-wrap .left-box ul li:last-child:before {display: none;}
+.board-view1 .info-wrap .left-box ul li:last-child {
+	width: 100%;
+	margin-left: 0;
+	padding-left: 0;
+}
+.board-view1 .info-wrap .right-box {
+	padding:12px 20px;
+	border-top:1px solid #eee;
+}
 .board-view1 .info-wrap .right-box button {
 	position: relative;
+	width: 100%;
 	font-size: 12px;
 	padding-right:15px;
+	text-align: left;
 }
 .board-view1 .info-wrap .right-box button:before {
 	content: '';
@@ -425,12 +443,21 @@ select.styled1 {
 	margin-top:-2px;
 	background: url(../img/ico/ico_down.png) no-repeat 0 0;
 }
-.board-view1 .cont-wrap .cont {padding:15px 10px 30px 10px;}
+.board-view1 .cont-wrap {
+	position: relative;
+	padding:20px 20px 70px 20px;
+	border-top:1px solid #eee;
+}
+.board-view1 .cont-wrap .cont {}
 .board-view1 .cont-wrap .cont img {max-width: 100%;}
-.board-view1 .cont-wrap .tag-wrap {position: relative;}
+.board-view1 .cont-wrap .tag-wrap {
+	position: relative;
+	margin-top: 20px;
+
+}
 .board-view1 .cont-wrap .tag-wrap .input-area {
 	width: 100%;
-	padding-right:100px;
+	padding-right:88px;
 	box-sizing: border-box;
 }
 .board-view1 .cont-wrap .tag-wrap .input-area input {
@@ -445,28 +472,14 @@ select.styled1 {
 	position: relative;
 	margin-top: 10px;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tit {
-	position:absolute;
-	left:0; top:0;
-	display: block;
-	width: 40px;
-	height: 28px;
-	padding-right:3px;
-	line-height: 28px;
-	background-image: url(../img/bg/bg_tag.png);
-	background-position: right top;
-	background-repeat: no-repeat;
-	font-size: 12px;
-	color: #fff;
-	text-align: center;
-	line-height: 28px;
-	box-sizing: border-box;
+.board-view1 .cont-wrap .tag-wrap .top .tit {
+	display: none
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tag-list {
+.board-view1 .cont-wrap .tag-wrap .top .tag-list {
 	overflow: hidden;
-	padding-left:40px;
+	margin-left:-10px;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tag-list span {
+.board-view1 .cont-wrap .tag-wrap .top .tag-list span {
 	position: relative;
 	float:left;
 	display: inline-block;
@@ -479,7 +492,7 @@ select.styled1 {
 	text-align: center;
 	line-height:28px;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tag-list span .btn-del {
+.board-view1 .cont-wrap .tag-wrap .top .tag-list span .btn-del {
 	width: 23px;
 	height: 28px;
 	position: absolute;
@@ -602,14 +615,9 @@ margin-top: -1px;
 	float:left;
 	display: block;
 	width:50%;
-	height: 35px;
-	border:1px solid #e5e5e5;
+
 	background-color: #fff;
-	color: #666;
-	font-size: 14px;
-	text-align: center;
-	box-sizing: border-box;
-	line-height:32px;
+
 }
 .reply-wrap .reply-list .input-area  .btn-area .btn-cancel {margin-bottom:10px; border-right: 0}
 .page-wrap {
