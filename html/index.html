@@ -1195,6 +1195,10 @@ function resizeMain(){
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 스크롤바 디자인 */
+		$('.scroll-box').each(function(){
+			$(this).removeAttr('style').next('div').remove();
+		});
+
 		$('.scroll-box').enscroll({
 			verticalTrackClass: 'track',
 			verticalHandleClass: 'handle',
