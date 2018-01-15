@@ -195,7 +195,7 @@ $(document).ready(function(){
 		});
 	});
 
-	// 
+	//
 	$('.tab-list1 .item').click(function(){
 		var idx = $(this).index();
 		$(this).parents('.tab-list1').find('.item').removeClass('fColor');
