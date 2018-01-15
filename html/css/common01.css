@@ -162,13 +162,13 @@ select.styled1 {
 	line-height:40px;
 }
 
-.btn-text.small {
+.btn-text.sm {
 	min-width:44px;
 	padding:0 10px;
 	font-size:12px;
 	line-height:26px;
 }
-.btn-text.small:hover {line-height:28px;}
+.btn-text.sm:hover {line-height:28px;}
 
 /* 정렬 */
 .btn-wrap {margin:30px 50px 0;}
@@ -608,7 +608,7 @@ select.styled1 {
 	position: relative;
 	margin-top: 10px;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tit {
+.board-view1 .cont-wrap .tag-wrap .top .tit {
 	position:absolute;
 	left:0; top:0;
 	display: block;
@@ -625,11 +625,11 @@ select.styled1 {
 	line-height: 28px;
 	box-sizing: border-box;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tag-list {
+.board-view1 .cont-wrap .tag-wrap .top .tag-list {
 	overflow: hidden;
 	padding-left:40px;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tag-list span {
+.board-view1 .cont-wrap .tag-wrap .top .tag-list span {
 	position: relative;
 	float:left;
 	display: inline-block;
@@ -642,7 +642,7 @@ select.styled1 {
 	text-align: center;
 	line-height:28px;
 }
-.board-view1 .cont-wrap .tag-wrap .bottom .tag-list span .btn-del {
+.board-view1 .cont-wrap .tag-wrap .top .tag-list span .btn-del {
 	width: 23px;
 	height: 28px;
 	position: absolute;
@@ -760,17 +760,10 @@ select.styled1 {
 }
 .reply-wrap .reply-list .input-area .btn-area button {
 	display: block;
-	width:95px;
-	height: 40px;
-	border:1px solid #e5e5e5;
 	background-color: #fff;
-	color: #666;
-	font-size: 14px;
-	text-align: center;
-	box-sizing: border-box;
-	line-height:38px;
+
 }
-.reply-wrap .reply-list .input-area  .btn-area .btn-cancel {margin-bottom:10px}
+.reply-wrap .reply-list .input-area  .btn-area button:first-child {margin-bottom:10px}
 .page-wrap {
 	margin:50px 50px 0 50px;
 	border-bottom:1px solid #eee;
