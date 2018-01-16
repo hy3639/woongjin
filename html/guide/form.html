@@ -33,7 +33,13 @@ h2:first-child {margin-top:0;}
 <h2>체크박스</h2>
 <input type="checkbox" class="styled1" checked>
 <input type="checkbox" class="styled1">
-<br>
+
+<br><br>
+
+<input type="checkbox" class="styled1" disabled checked>
+<input type="checkbox" class="styled1" disabled>
+<br><br>
+
 <input type="text">
 <input type="checkbox" id="check01" class="styled1"><label for="check01">체크박스 01</label>
 <input type="checkbox" id="check02" class="styled1"><label for="check02">체크박스 02</label>
@@ -41,10 +47,14 @@ h2:first-child {margin-top:0;}
 <h2>라디오</h2>
 <input type="radio" name="radio01" class="styled1" checked>
 <input type="radio" name="radio01" class="styled1">
-<br>
-<input type="radio" name="radio02" class="styled1">
-<input type="radio" name="radio02" class="styled1">
-<br>
+
+<br><br>
+
+<input type="radio" name="radio02" class="styled1" disabled checked>
+<input type="radio" name="radio02" class="styled1" disabled>
+
+<br><br>
+
 <input type="radio" name="radio03" id="radio0301" class="styled1"><label for="radio0301">라디오 01</label>
 <input type="radio" name="radio03" id="radio0302" class="styled1"><label for="radio0302">라디오 02</label>
 
@@ -54,11 +64,29 @@ h2:first-child {margin-top:0;}
 	<option>1시간</option>
 	<option>33333333333333333333333333333333333333333</option>
 </select>
-<br>
+
+<br><br>
+
 <select class="styled1" style="width:150px;">
 	<option>50분</option>
 	<option>1시간</option>
 	<option selected>33333333333333333333333333333333333333333</option>
 </select>
+
+<br><br>
+
+<select class="styled1" style="width:150px;" disabled>
+	<option>사용못함</option>
+	<option>1시간</option>
+	<option>33333333333333333333333333333333333333333</option>
+</select>
+
+
+<h2>태그 입력란</h2>
+<div class="tagging-box">
+	<p class="fake-placeholder">태그추가</p>
+	<div data-tags-input-name="tag" id="js-tagBox"></div>
+</div>
+<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 또는 'Enter'로 구분해주세요.</p>
 </body>
 </html>

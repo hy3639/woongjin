@@ -98,6 +98,9 @@ $(document).ready(function(){
 		if(this.checked){
 			$(this).closest('.checkWrap').addClass('checked');
 		}
+		if(this.disabled){
+			$(this).closest('.checkWrap').addClass('disabled');
+		}
 		$(this).change(function(){
 			if(this.checked){
 				$(this).closest('.checkWrap').addClass('checked');
@@ -112,6 +115,9 @@ $(document).ready(function(){
 		if(this.checked){
 			$(this).closest('.radioWrap').addClass('checked');
 		}
+		if(this.disabled){
+			$(this).closest('.radioWrap').addClass('disabled');
+		}
 		$(this).change(function(){
 			var name = $(this).attr('name');
 			if(this.checked){
@@ -125,6 +131,9 @@ $(document).ready(function(){
 		var val = $(this).val();
 		$(this).wrap('<span class="selectWrap">');
 		$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
+		if(this.disabled){
+			$(this).closest('.selectWrap').addClass('disabled');
+		}
 		$(this).change(function(){
 			var cVal = $(this).val();
 			$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');

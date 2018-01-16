@@ -53,6 +53,10 @@ input[type=radio].styled1 {
 .radioWrap {background-image:url(../img/ico/form_radio.png);}
 .checkWrap.checked,
 .radioWrap.checked {background-position:0 -18px;}
+.checkWrap.disabled,
+.radioWrap.disabled {background-position:0 -36px;}
+.checkWrap.disabled.checked,
+.radioWrap.disabled.checked {background-position:0 -54px;}
 .checkWrap input[type=checkbox].styled1,
 .radioWrap input[type=radio].styled1 {
 	position:absolute;
@@ -107,6 +111,13 @@ select.styled1 {
 	background-position:0 0;
 }
 .selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
+
+.selectWrap.disabled .selTitle {
+	border-color:#eee;
+	background-color:#fafafa;
+	color:#bbb;
+}
+.selectWrap.disabled .selTitle:before {opacity:.4;}
 
 /* 상단 검색 박스 */
 .top-search-box {
