@@ -1171,8 +1171,6 @@ select.styled1 {
 }
 .thumb-list1 > ul > li a .img-area {margin:10px -20px 0;}
 .thumb-list1 > ul > li a .img-area img {width:100%;}
-.thumb-list1 > ul > li a .img-area.no-img img {display:none}
-
 .thumb-list1 + .btn-more {}
 .thumb-list1 + .btn-more button {
 	border:1px solid #e5e5e5;
