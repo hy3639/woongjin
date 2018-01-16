@@ -174,15 +174,23 @@ select.styled1 {
 	line-height:40px;
 }
 
+.btn-text.mid {
+	min-width:76px;
+	padding:0 15px;
+	font-size:12px;
+	line-height:33px;
+}
+.btn-text.mid:hover {line-height:35px;}
+
 .btn-text.sm {
-	min-width:44px;
+	min-width:auto;
 	padding:0 10px;
 	font-size:12px;
 	line-height:26px;
 }
-.btn-text.sm:hover {line-height:28px;}
+.btn-text.sm:hover {padding:0 11px;line-height:28px;}
 
-.btn-text.btn-save{
+.btn-text.btn-save {
 	height: 89px;
 	line-height:87px;
 }
@@ -984,7 +992,10 @@ select.styled1 {
 	컨텐츠
 =========================================================================== */
 /* 서브 공통 타이틀 영역 */
-.title-wrap {padding:43px 50px 34px;}
+.title-wrap {
+	display:none;
+	padding:43px 50px 34px;
+}
 .title-wrap .title {
 	color:#000;
 	font-size:25px;
