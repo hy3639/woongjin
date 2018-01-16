@@ -366,7 +366,10 @@
 						<tr>
 							<th scope="row">태그</th>
 							<td>
-								<input type="text" placeholder="태그추가" style="width:428px;">
+								<div class="tagging-box">
+									<p class="fake-placeholder">태그추가</p>
+									<div data-tags-input-name="tag" id="js-tagBox"></div>
+								</div>
 								<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 'Enter'로 구분해주세요.</p>
 							</td>
 						</tr>
@@ -375,7 +378,7 @@
 							<td>
 								<!-- 에딧터 영역 -->
 								<div class="wdb-editer">
-									<img src="../img/temp/@editer.gif" alt="" style="width:100%;height:369px;">
+									<img src="../img/temp/@editer.gif" alt="" style="width:100%;max-width:730px;">
 								</div>
 								<!-- //에딧터 영역 -->
 							</td>

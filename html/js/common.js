@@ -291,6 +291,22 @@ function resizeMid(){
 
 		/* 탭 리스트 넓이 초기화 */
 		$('.tab-list1 .item').removeAttr('style');
+
+		/* 태깅 */
+		$('#js-tagBox').each(function(){
+			$(this).tagging();
+			$(this).find('.type-zone').focus(function(){
+				$(this).closest('.tagging-box').find('.fake-placeholder').hide();
+			});
+			$(this).find('.type-zone').blur(function(){
+				var len = $(this).closest('.tagging').find('.tag').length;
+				if(len > 0){
+					$(this).closest('.tagging-box').find('.fake-placeholder').hide();
+				}else{
+					$(this).closest('.tagging-box').find('.fake-placeholder').show();
+				}
+			});
+		});
 	}else{
 		/* 모바일 ================================================================= */
 		/* 버튼 정렬 */

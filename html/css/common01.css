@@ -496,6 +496,43 @@ select.styled1 {
 .gnb-utill .utill .user-box .btn-close {display:none;}
 
 /* ===========================================================================
+	태깅
+=========================================================================== */
+.tagging-box {
+	position:relative;
+	border:1px solid #e5e5e5;
+	min-height:35px;
+}
+.tagging-box .fake-placeholder {
+	position:absolute;
+	left:0; top:0;
+	padding:5px 14px;
+	color:#bbb;
+	line-height:23px;
+}
+.tagging-box .tagging {
+	overflow:hidden;
+	position:relative;
+	margin-left:-10px;
+	padding:5px 14px;
+}
+.tagging-box .tagging .tag {
+	float:left;
+	margin-left:10px;
+	line-height:23px;
+}
+.tagging-box .tagging .type-zone {
+	float:left;
+	margin-left:10px;
+	border:0;
+	background-color:transparent;
+	line-height:23px;
+}
+.tagging-box .tagging .tag .tag-i {}
+.tagging-box {}
+.tagging-box {}
+
+/* ===========================================================================
 	테이블
 =========================================================================== */
 /* 리스트 테이블 */
