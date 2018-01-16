@@ -154,7 +154,7 @@
 .btn-gnb-toggle .text {
 	display:none;
 	position:relative;
-	padding:0 35px;
+	padding-left:80px;
 	background-color:#fff;
 	color:#333;
 	font-size:14px;
@@ -178,7 +178,7 @@
 .btn-gnb-toggle.on .text:before {background-image:url(../img/btn/btn_gnb_tog02.png);}
 .btn-gnb-toggle .text .icon {
 	position:absolute;
-	right:32px; top:50%;
+	left:55px; top:50%;
 	width:20px;
 	height:20px;
 	margin-top:-10px;
