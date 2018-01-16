@@ -168,6 +168,7 @@ $(document).ready(function(){
 	});
 
 	// 게시판 리스트 레이아웃 설정
+	scrollBar();
 	$('.layout-btns button').click(function(){
 		$(this).closest('.layout-btns').find('button').removeClass('on');
 		$(this).addClass('on');
@@ -181,20 +182,6 @@ $(document).ready(function(){
 			$('.list-view').attr('class', 'list-view layoyt2');
 			$('.list-left, .view-type').css({'width':'50%'});
 			$('.view-type').show();
-
-			/* 스크롤바 디자인 */
-			// 가로
-			$('.scroll-design').enscroll({
-				horizontalScrolling: true,
-				verticalTrackClass: 'vertical-track2',
-				verticalHandleClass: 'vertical-handle2',
-				horizontalTrackClass: 'horizontal-track2',
-				horizontalHandleClass: 'horizontal-handle2',
-				cornerClass: 'corner2'
-			});
-			$('.vertical-track2').each(function(){
-				$(this).parent('div').css({'right':'0'});
-			});
 		}
 		if($(this).hasClass('btn-layout3')){
 			$('.list-view').attr('class', 'list-view layoyt3');
@@ -331,3 +318,21 @@ function resizeMid(){
 		});
 	}
 }
+
+
+/* 스크롤바 디자인 */
+	function scrollBar(){
+		$('.scroll-design').each(function(){
+			$(this).enscroll({
+				horizontalScrolling: true,
+				verticalTrackClass: 'vertical-track2',
+				verticalHandleClass: 'vertical-handle2',
+				horizontalTrackClass: 'horizontal-track2',
+				horizontalHandleClass: 'horizontal-handle2'
+			});
+			$('.scrollbar-corner').remove();
+		});
+		$('.vertical-track2').each(function(){
+			$(this).parent('div').css({'right':'0'});
+		});
+	}

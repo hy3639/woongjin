@@ -582,8 +582,8 @@ select.styled1 {
 	box-sizing:border-box;
 }
 
-.sorting-area + .board-list1,
-.sorting-area + .list-type .board-list1 {border-top:0;}
+.sorting-area + .list-view .board-list1,
+.sorting-area + .list-view .list-type .board-list1 {border-top:0;}
 
 /* 쓰기 테이블 */
 .board-write1 {
@@ -1343,6 +1343,7 @@ select.styled1 {
 	공지사항 리스트
 */
 .list-view {
+	position:relative;
 	margin:0 50px;
 }
 .list-view:after {
@@ -1350,27 +1351,46 @@ select.styled1 {
 	display:block;
 	clear:both;
 }
-.list-left {
+.list-view.layoyt1 .scroll-design {height:auto !important;}
+.list-view .list-left {
 	float:left;
 	width:100%;
 }
-.view-type {
+.list-view .view-type {
 	float:right;
 	width:100%;
 }
-.thumb-type {display:none;}
-.view-type {
+.list-view .thumb-type {display:none;}
+.list-view .view-type {
 	display:none;
 	overflow:hidden;
+}
+/* 구분선 */
+.list-view .hr-bar {
+	position:absolute;
+	background-color:#e5e5e5;
+}
+.list-view .hr-bar:before {
+	content:'';
+	position:absolute;
+	background-color:#ccc;
 }
 
 
 
 
 /* 좌우보기 */
-.list-view.layoyt2 {
-	position:relative;
+.list-view.layoyt2 .hr-bar {
+	left:50%; top:0; bottom:0;
+	width:6px;
 }
+.list-view.layoyt2 .hr-bar:before {
+	top:50%;
+	width:100%;
+	height:50px;
+	margin-top:-25px;
+}
+
 .list-view.layoyt2 .scroll-design {
 	height:auto !important;
 	min-height:400px;
@@ -1379,12 +1399,13 @@ select.styled1 {
 }
 .list-view.layoyt2 .list-left,
 .list-view.layoyt2 .view-type {
-	padding:20px !important;
+	padding:20px 20px 0 !important;
 	box-sizing:border-box;
 }
 .list-view.layoyt2 .scroll-design .list-type,
 .list-view.layoyt2 .list-left .scroll-design .paging,
-.list-view.layoyt2 .list-left .btn-wrap {
+.list-view.layoyt2 .list-left .btn-wrap,
+.list-view.layoyt2 .scroll-design .thumb-list1 {
 	min-width:700px;
 	margin-left:0;
 	margin-right:0;
@@ -1410,6 +1431,44 @@ select.styled1 {
 }
 .list-view.layoyt2 .view-type .btn-wrap {margin-top:20px;}
 .list-view.layoyt2 .view-type .btn-wrap .btn-item {margin-top:10px;}
+
+/* 상하 보기 */
+.list-view.layoyt3 .hr-bar {
+	left:0; right:0; top:50%;
+	height:6px;
+}
+.list-view.layoyt3 .hr-bar:before {
+	left:50%; top:0;
+	width:50px;
+	height:100%;
+	margin-left:-25px;
+}
+
+.list-view.layoyt3 .scroll-design {
+	max-height:400px;
+}
+.list-view.layoyt3 .scroll-design {
+	height:auto !important;
+}
+.list-view.layoyt3 .list-left,
+.list-view.layoyt3 .view-type {
+	position:relative;
+	margin:20px 0;
+	padding-right:30px;
+	box-sizing:border-box;
+}
+.list-view.layoyt3 .view-type .scroll-design .board-top,
+.list-view.layoyt3 .view-type .scroll-design .board-view1,
+.list-view.layoyt3 .view-type .scroll-design .btn-wrap,
+.list-view.layoyt3 .view-type .scroll-design .reply-wrap,
+.list-view.layoyt3 .view-type .scroll-design .page-wrap {
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	box-sizing:border-box;
+}
+.list-view.layoyt3 .scroll-design .thumb-list1 {margin-left:0; margin-right:0;}
 
 
 
