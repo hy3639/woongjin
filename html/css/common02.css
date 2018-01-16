@@ -872,6 +872,7 @@ select.styled1 {
 /* ===========================================================================
 	컨텐츠
 =========================================================================== */
+.list-left {width:100% !important;}
 /* 서브 공통 타이틀 영역 */
 .title-wrap {padding:20px 20px 18px;}
 .title-wrap .title {
@@ -923,9 +924,7 @@ select.styled1 {
 	position:absolute;
 	left:0; bottom:0;
 }
-.date-area .date-text {
-
-}
+.date-area .date-text {}
 .date-area .date-select {
 	position:absolute;
 	right:0; top:0;
