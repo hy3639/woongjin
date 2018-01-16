@@ -873,7 +873,7 @@ select.styled1 {
 	컨텐츠
 =========================================================================== */
 .list-left {width:100% !important;}
-.scroll-design {padding-right:0;}
+.scroll-design {padding-right:0 !important;}
 /* 서브 공통 타이틀 영역 */
 .title-wrap {padding:20px 20px 18px;}
 .title-wrap .title {

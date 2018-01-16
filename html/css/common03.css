@@ -116,13 +116,13 @@
 	background-color:#9da4ac;
 	background-image:url(../img/btn/btn_gnb_ico02.png);
 	background-repeat:no-repeat;
-	background-position:0 0;
+	background-position:0 -9px;
 	margin-top:-4px;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
 }
-.gnb-wrap .depth1 .depth1-list .depth1-item.inList.on .d-title .icon {background-position:0 -9px;}
+.gnb-wrap .depth1 .depth1-list .depth1-item.inList.on .d-title .icon {background-position:0 0;}
 .gnb-wrap .depth1 .depth2-list {
 	display:none;
 	padding:10px 0;

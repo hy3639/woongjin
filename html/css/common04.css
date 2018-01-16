@@ -183,6 +183,7 @@
 	color:#fff;
 	line-height:18px;
 }
+.gnb-list .depth1-list .depth1-item .d-title.fColor {color:#fff !important;}
 .gnb-list .depth1-list .depth1-item:first-child .d-title {border-top:0;}
 .gnb-list .depth1-list .depth1-item.inList .d-title {
 	position:relative;

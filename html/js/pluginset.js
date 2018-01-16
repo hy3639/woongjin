@@ -25,7 +25,7 @@
 			horizontalScrolling: !1,
 			verticalScrollerSide: "right",
 			showOnHover: !1,
-			scrollIncrement: 20,//스크롤 속도
+			scrollIncrement: 50,//스크롤 속도
 			minScrollbarLength: 40,
 			pollChanges: !0,
 			drawCorner: !0,
