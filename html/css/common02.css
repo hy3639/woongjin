@@ -111,6 +111,42 @@ select.styled1 {
 }
 .selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
 
+/* 상단 검색 박스 */
+.top-search-box {
+	position: relative;
+	padding:20px;
+	border:1px solid #eee;
+	background-color:#fafafa;
+	box-sizing: border-box;
+}
+.top-search-box .selectWrap {
+	z-index: 10;
+	background-color: #fff;
+}
+.top-search-box .selectWrap select {width: 80px !important}
+.top-search-box .search-text {
+	display:inline-block;
+	position:absolute;
+	left:20px;
+	right: 20px;
+	padding-left: 80px;
+	padding-right:53px;
+	box-sizing: border-box;
+}
+.top-search-box .search-text input[type=text] {
+	width:100%;
+	margin-left: -1px;
+}
+.top-search-box .search-text .btn-search {
+	position:absolute;
+	right:0; top:0; bottom:0;
+	width:54px;
+	background:#9da4ac url(../img/btn/btn_search02.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+
 /* ===========================================================================
 	버튼
 =========================================================================== */
@@ -848,7 +884,7 @@ select.styled1 {
 	position:relative;
 	margin:0 20px;
 	padding:10px 0;
-	border-bottom:1px solid #eee;
+	/* border-bottom:1px solid #eee; */
 }
 .sorting-area:after {
 	content:'';
@@ -1042,7 +1078,7 @@ select.styled1 {
 	padding:20px 20px 42px;
 	border-top:2px solid #fafafa;
 }
-.thumb-list1 > ul > li:first-child,
+.thumb-list1 > ul > li:first-child{border-top:1px solid #eee}
 .thumb-list1 > ul > li:first-child a {border-top:0;}
 .thumb-list1 > ul > li a .txt-area .num {
 	display:inline-block;
@@ -1135,3 +1171,4 @@ select.styled1 {
 }
 .thumb-list1 > ul > li a .img-area {margin:10px -20px 0;}
 .thumb-list1 > ul > li a .img-area img {width:100%;}
+.thumb-list1 > ul > li a .img-area.no-img img {display:none}
