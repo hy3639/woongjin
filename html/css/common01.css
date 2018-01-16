@@ -53,6 +53,10 @@ input[type=radio].styled1 {
 .radioWrap {background-image:url(../img/ico/form_radio.png);}
 .checkWrap.checked,
 .radioWrap.checked {background-position:0 -18px;}
+.checkWrap.disabled,
+.radioWrap.disabled {background-position:0 -36px;}
+.checkWrap.disabled.checked,
+.radioWrap.disabled.checked {background-position:0 -54px;}
 .checkWrap input[type=checkbox].styled1,
 .radioWrap input[type=radio].styled1 {
 	position:absolute;
@@ -107,6 +111,13 @@ select.styled1 {
 	background-position:0 0;
 }
 .selectWrap .selTitle.bdColor:before {background-position:0 -7px;}
+
+.selectWrap.disabled .selTitle {
+	border-color:#eee;
+	background-color:#fafafa;
+	color:#bbb;
+}
+.selectWrap.disabled .selTitle:before {opacity:.4;}
 
 /* 상단 검색 박스 */
 .top-search-box {
@@ -163,15 +174,23 @@ select.styled1 {
 	line-height:40px;
 }
 
+.btn-text.mid {
+	min-width:76px;
+	padding:0 15px;
+	font-size:12px;
+	line-height:33px;
+}
+.btn-text.mid:hover {line-height:35px;}
+
 .btn-text.sm {
-	min-width:44px;
+	min-width:auto;
 	padding:0 10px;
 	font-size:12px;
 	line-height:26px;
 }
-.btn-text.sm:hover {line-height:28px;}
+.btn-text.sm:hover {padding:0 11px;line-height:28px;}
 
-.btn-text.btn-save{
+.btn-text.btn-save {
 	height: 89px;
 	line-height:87px;
 }
@@ -494,6 +513,41 @@ select.styled1 {
 }
 .btn-gnb {display: none;}
 .gnb-utill .utill .user-box .btn-close {display:none;}
+
+/* ===========================================================================
+	태깅
+=========================================================================== */
+.tagging-box {
+	position:relative;
+	border:1px solid #e5e5e5;
+	min-height:35px;
+}
+.tagging-box .fake-placeholder {
+	position:absolute;
+	left:0; top:0;
+	padding:5px 14px;
+	color:#bbb;
+	line-height:23px;
+}
+.tagging-box .tagging {
+	overflow:hidden;
+	position:relative;
+	margin-left:-10px;
+	padding:5px 14px;
+}
+.tagging-box .tagging .tag {
+	float:left;
+	margin-left:10px;
+	line-height:23px;
+}
+.tagging-box .tagging .type-zone {
+	float:left;
+	margin-left:10px;
+	border:0;
+	background-color:transparent;
+	line-height:23px;
+}
+.tagging-box .tagging .tag .tag-i {}
 
 /* ===========================================================================
 	테이블
@@ -938,7 +992,10 @@ select.styled1 {
 	컨텐츠
 =========================================================================== */
 /* 서브 공통 타이틀 영역 */
-.title-wrap {padding:43px 50px 34px;}
+.title-wrap {
+	display:none;
+	padding:43px 50px 34px;
+}
 .title-wrap .title {
 	color:#000;
 	font-size:25px;

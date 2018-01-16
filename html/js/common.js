@@ -98,6 +98,9 @@ $(document).ready(function(){
 		if(this.checked){
 			$(this).closest('.checkWrap').addClass('checked');
 		}
+		if(this.disabled){
+			$(this).closest('.checkWrap').addClass('disabled');
+		}
 		$(this).change(function(){
 			if(this.checked){
 				$(this).closest('.checkWrap').addClass('checked');
@@ -112,6 +115,9 @@ $(document).ready(function(){
 		if(this.checked){
 			$(this).closest('.radioWrap').addClass('checked');
 		}
+		if(this.disabled){
+			$(this).closest('.radioWrap').addClass('disabled');
+		}
 		$(this).change(function(){
 			var name = $(this).attr('name');
 			if(this.checked){
@@ -125,6 +131,9 @@ $(document).ready(function(){
 		var val = $(this).val();
 		$(this).wrap('<span class="selectWrap">');
 		$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
+		if(this.disabled){
+			$(this).closest('.selectWrap').addClass('disabled');
+		}
 		$(this).change(function(){
 			var cVal = $(this).val();
 			$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
@@ -291,6 +300,22 @@ function resizeMid(){
 
 		/* 탭 리스트 넓이 초기화 */
 		$('.tab-list1 .item').removeAttr('style');
+
+		/* 태깅 */
+		$('#js-tagBox').each(function(){
+			$(this).tagging();
+			$(this).find('.type-zone').focus(function(){
+				$(this).closest('.tagging-box').find('.fake-placeholder').hide();
+			});
+			$(this).find('.type-zone').blur(function(){
+				var len = $(this).closest('.tagging').find('.tag').length;
+				if(len > 0){
+					$(this).closest('.tagging-box').find('.fake-placeholder').hide();
+				}else{
+					$(this).closest('.tagging-box').find('.fake-placeholder').show();
+				}
+			});
+		});
 	}else{
 		/* 모바일 ================================================================= */
 		/* 버튼 정렬 */
