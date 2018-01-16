@@ -1357,14 +1357,12 @@ select.styled1 {
 	width:100%;
 }
 .list-view .view-type {
+	overflow:hidden;
 	float:right;
 	width:100%;
 }
 .list-view .thumb-type {display:none;}
-.list-view .view-type {
-	display:none;
-	overflow:hidden;
-}
+
 /* 구분선 */
 .list-view .hr-bar {
 	position:absolute;
@@ -1375,6 +1373,8 @@ select.styled1 {
 	position:absolute;
 	background-color:#ccc;
 }
+
+.list-view.layoyt1 .view-type {display:block;}
 
 
 
@@ -1390,6 +1390,8 @@ select.styled1 {
 	height:50px;
 	margin-top:-25px;
 }
+
+.list-view.layoyt2 .view-type {display:block;}
 
 .list-view.layoyt2 .scroll-design {
 	height:auto !important;
@@ -1443,6 +1445,8 @@ select.styled1 {
 	height:100%;
 	margin-left:-25px;
 }
+
+.list-view.layoyt2 .view-type {display:block;}
 
 .list-view.layoyt3 .scroll-design {
 	max-height:400px;

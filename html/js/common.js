@@ -176,17 +176,14 @@ $(document).ready(function(){
 		if($(this).hasClass('btn-layout1')){
 			$('.list-view').attr('class', 'list-view layoyt1');
 			$('.list-left, .view-type').css({'width':'100%'});
-			$('.view-type').hide();
 		}
 		if($(this).hasClass('btn-layout2')){
 			$('.list-view').attr('class', 'list-view layoyt2');
 			$('.list-left, .view-type').css({'width':'50%'});
-			$('.view-type').show();
 		}
 		if($(this).hasClass('btn-layout3')){
 			$('.list-view').attr('class', 'list-view layoyt3');
 			$('.list-left, .view-type').css({'width':'100%'});
-			$('.view-type').show();
 		}
 	});
 
