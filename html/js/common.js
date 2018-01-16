@@ -85,7 +85,7 @@ $(document).ready(function(){
 	$('.sub-gnb .depth1-item').each(function(){
 		if($(this).hasClass('on')){
 			$(this).find('.depth2-list').show()
-				.siblings('.d-title').find('.icon').addClass('bgColor');
+				.siblings('.d-title').addClass('fColor').find('.icon').addClass('bgColor');
 		}
 	});
 
