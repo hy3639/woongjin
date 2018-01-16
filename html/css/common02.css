@@ -8,6 +8,12 @@
 .container {padding:46px 0 0;}
 .content {margin:-25px 0 0; padding-bottom:30px;}
 
+.footer {
+	height: 60px;
+	padding:0;
+	text-align: center;
+}
+.footer .copyright{float: none; line-height: 60px;}
 /* 모바일에서 숨김처리 */
 .mHide {display:none !important;}
 
@@ -17,11 +23,11 @@
 /* 인풋 텍스트 */
 input[type=text] {
 	width:100% !important;
-	height:34px;
+	height:35px;
 	padding:0 10px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
-	line-height:34px;
+	line-height:35px;
 }
 label {vertical-align:middle;}
 input[type=text] + .form-box {margin-top:8px;}
@@ -69,10 +75,11 @@ input[type=radio].styled1 {
 label + .checkWrap,
 label + .radioWrap {margin-left:10px;}
 
+
 /* 셀렉트 박스 */
 select.styled1 {
-	height:34px;
-	line-height:34px;
+	height:35px;
+	line-height:35px;
 }
 .selectWrap {
 	display:inline-block;
@@ -170,7 +177,7 @@ select.styled1 {
 	width:auto;
 	padding:0 10px;
 	font-size:11px;
-	line-height:26px;
+	line-height:33px;
 }
 
 /* 정렬 */
@@ -350,8 +357,9 @@ select.styled1 {
 	height:40px;
 	border:1px solid #e5e5e5;
 	border-left:0;
-	background-color:#fafafa;
-	font-size:14px;
+	border-bottom:0;
+	/* background-color:#fafafa; */
+	font-size:15px;
 	text-align:center;
 	line-height:38px;
 }
@@ -427,13 +435,13 @@ select.styled1 {
 .btn-icon-text .text {
 	display:block;
 	position:relative;
-	height:32px;
+	height:35px;
 	padding:0 10px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
 	background-color:#fff;
 	font-size:12px;
-	line-height:30px;
+	line-height:33px;
 	cursor:pointer;
 }
 .btn-icon-text .text:before {
@@ -463,7 +471,21 @@ select.styled1 {
 	테이블
 =========================================================================== */
 /* 쓰기 테이블 */
-.board-write1 {margin:0 20px;}
+.board-write1 {padding:0 20px;}
+.board-write1.btm-line {
+	position: relative;
+	border-bottom:2px solid #fafafa;
+	padding-bottom: 20px;
+}
+.board-write1.btm-line:before{
+	content: '';
+	position:absolute;
+	bottom:0;
+	left:0; right: 0;
+	width: 100%;
+	height: 1px;
+	background-color:#e5e5e5;
+}
 .board-write1 table {
 	display:block;
 	table-layout:inherit;
@@ -481,14 +503,18 @@ select.styled1 {
 .board-write1 table tr {overflow:hidden;}
 .board-write1 th,
 .board-write1 td {float:left;}
+.board-write1 th .important {
+	margin-left:5px; font-size: 16px;
+}
 .board-write1 th {
 	margin-top:15px;
 	color:#333;
-	font-size:14px;
+	font-size:15px;
 	text-align:left;
+	font-weight: 700;
 }
 .board-write1 tr:first-child th {margin-top:0;}
-.board-write1 td {margin-top:4px;}
+.board-write1 td {margin-top:6px;}
 .board-write1 .tr-floating th,
 .board-write1 .tr-floating td {
 	width:auto;
@@ -500,6 +526,7 @@ select.styled1 {
 	color:#999;
 	font-size:11px;
 }
+
 
 /*보기 테이블*/
 .board-top {
@@ -588,7 +615,7 @@ select.styled1 {
 .board-view1 .info-wrap .right-box .btn-attach {
 	position: relative;
 	width: 100%;
-	font-size: 12px;
+	font-size: 13px;
 	padding-right:15px;
 	text-align: left;
 }
@@ -646,7 +673,7 @@ select.styled1 {
 }
 .board-view1 .cont-wrap .tag-wrap .input-area input {
 	width: 100%;
-	height: 28px;
+	/* height: 28px; */
 }
 .board-view1 .cont-wrap .tag-wrap .btn-area {
 	position: absolute;
@@ -693,7 +720,7 @@ select.styled1 {
 	padding:40px 20px 30px 20px;
 	background-color: #fafafa;
 }
-.reply-wrap .tit {font-size: 14px; font-weight: 700;}
+.reply-wrap .tit {font-size: 14px; color:#333; font-weight: 700;}
 .reply-wrap .input-area {
 	position: relative;
 	margin-top: 15px;
@@ -833,6 +860,7 @@ select.styled1 {
 	width: 100%;
 	padding-left:55px;
 	padding-right: 30px;
+	margin-bottom:2px;
 	box-sizing: border-box;
 }
 .page-wrap ul li .cont .cont-tit{
@@ -872,13 +900,31 @@ select.styled1 {
 /* ===========================================================================
 	컨텐츠
 =========================================================================== */
+.content.board {padding-bottom:130px;}
 .list-left {width:100% !important;}
+.list-left .btn-wrap {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 60px;
+	background-color: #fff;
+	margin:0;
+	padding:30px 20px;
+	border-top: 1px solid #eee;
+	box-shadow: 0 -5px 8px #fafafa;
+}
+
+.list-left .btn-align .btn-item {
+	width: 100% !important;
+	padding:0;
+}
 .scroll-design {padding-right:0 !important;}
 /* 서브 공통 타이틀 영역 */
-.title-wrap {padding:20px 20px 18px;}
+.title-wrap {padding:25px 25px 20px 25px;}
 .title-wrap .title {
 	color:#000;
-	font-size:16px;
+	font-size:19px;
+	font-weight: 700;
 }
 
 /* 게시판 상단 소팅 영역 */
@@ -899,7 +945,7 @@ select.styled1 {
 	padding:10px 0;
 }
 .sorting-area .left-box .all-len {
-	font-size:12px;
+	font-size:15px;
 	line-height:32px;
 }
 .sorting-area .right-box {float:right;}
@@ -988,18 +1034,26 @@ select.styled1 {
 }
 
 /* 파일첨부 영역 */
+.addfile-box .tab-list1 {margin:25px 0 0 0}
+.addfile-box .tab-list1 .item:first-child .text {border-left: 0}
+.addfile-box .tab-list1 .item:last-child .text {border-right: 0}
 .addfind-cont {
-	margin:-1px 20px 0;
+	display: none;
 	border:1px solid #e5e5e5;
+	border-left:0;
+	border-right: 0;
+
 }
+.addfind-cont.on {display: block;}
 .addfind-cont .addfile-list {
 	padding:6px 0;
+	margin: 0 20px;
+	border-bottom:1px solid #e5e5e5;
 }
 .addfind-cont .addfile-list .addfile-item {
 	position:relative;
 	margin-top:5px;
-	padding:0 10px;
-}
+	}
 .addfind-cont .addfile-list .addfile-item:first-child {margin-top:0;}
 .addfind-cont .addfile-list .addfile-item .file-name{}
 .addfind-cont .addfile-list .addfile-item .volume-state {
@@ -1037,13 +1091,13 @@ select.styled1 {
 }
 .addfind-cont .foot-info {
 	position:relative;
-	padding:10px 9px 10px 80px;
-	border-top:1px solid #e5e5e5;
+	padding:10px 20px 10px 80px;
+	/* border-top:1px solid #e5e5e5; */
 	text-align:right;
 }
 .addfind-cont .foot-info .btn-text {
 	position:absolute;
-	left:10px; top:10px;
+	left:20px; top:8px;
 }
 .addfind-cont .foot-info .text-area {
 	display:inline-block;
@@ -1053,7 +1107,7 @@ select.styled1 {
 	position:relative;
 	padding-left:15px;
 	color:#999;
-	font-size:11px;
+	font-size:12px;
 	line-height:30px;
 }
 .addfind-cont .foot-info .text-area .text:before {
@@ -1105,9 +1159,10 @@ select.styled1 {
 	padding-right:5px;
 	box-sizing:border-box;
 	color:#333;
-	font-size:14px;
+	font-size:15px;
 	text-overflow:ellipsis;
 	white-space:nowrap;
+	font-weight: 700;
 }
 .thumb-list1 > ul > li a .txt-area .title .reply {
 	position:absolute;
