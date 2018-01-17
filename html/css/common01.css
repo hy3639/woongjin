@@ -397,6 +397,8 @@ select.styled1 {
 /* ===========================================================================
 	탭스타일
 =========================================================================== */
+/* 탭컨텐츠 영역 */
+.tabContent {margin:0 50px;}
 /* 01 */
 .tabCont {display:none;}
 .tabCont.on {display:block;}
@@ -1409,7 +1411,7 @@ select.styled1 {
 /* 파일첨부 영역 */
 .addfind-cont {
 	position:relative;
-	margin:-1px 50px 0;
+	margin-top:-1px;
 	border:1px solid #e5e5e5;
 }
 .addfind-cont .title-area {
