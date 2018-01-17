@@ -106,7 +106,6 @@ $(document).ready(function(){
 	});
 	$('input.required').blur(function(){
 		var len = $(this).val().length;
-		console.log(len);
 		if(len == 0){
 			$(this).parent('.required-box').find('.message').fadeIn();
 		}else{
@@ -169,6 +168,45 @@ $(document).ready(function(){
 		});
 	});
 	selectWid();// 셀렉트 박스넓이 설정
+
+	/*
+		데이트피커
+	*/
+	// 기본설정
+	$('#datepicker').each(function(){
+		$(this).datepicker({ 
+			changeMonth: true,
+			changeYear: true,
+			altFormat: "yy.mm.dd",
+			monthNamesShort: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
+			dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
+			altField: ".btn-calendar input",
+			onSelect: function(dateText, inst) {
+				$('.btn-calendar input').removeClass('bdColor').closest('.date-text').removeClass('on').find('.calendar-layer').hide();
+				$('.dimmed').remove();
+			}
+		});
+	});
+	// 달력레이어 열기
+	$('.btn-calendar').click(function(){
+		if($(this).closest('.date-text').hasClass('on')){
+			$('.btn-calendar input').removeClass('bdColor').closest('.date-text').removeClass('on').find('.calendar-layer').hide();
+			$('.dimmed').remove();
+		}else{
+			$(this).find('input').addClass('bdColor').closest('.date-text').addClass('on').find('.calendar-layer').fadeIn();
+			$('body').append('<div class="dimmed" style="background-color:transparent;"></div>');
+		}
+	});
+	$('.btn-calendar input').blur(function(){
+		if($(this).closest('.date-text').hasClass('on')){
+			$(this).addClass('bdColor');
+		}
+	});
+	// 달력레이어 닫기
+	$(document).on('click', '.dimmed', function(){
+		$('.btn-calendar input').removeClass('bdColor').closest('.date-text').removeClass('on').find('.calendar-layer').hide();
+		$('.dimmed').remove();
+	});
 
 	/* ===================================================================================
 		버튼

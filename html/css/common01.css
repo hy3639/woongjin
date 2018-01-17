@@ -8,8 +8,16 @@
 .wrapper {}
 .content {padding-bottom:80px;}
 
-/* 웾에서 숨김처리 */
+/* 웹에서 숨김처리 */
 .wHide {display:none;}
+
+/* 딤드 */
+.dimmed {
+	position:fixed;
+	left:0; right:0; top:0; bottom:0;
+	z-index:95;
+	background-color:rgba(0,0,0,.5);
+}
 
 /* ===========================================================================
 	폼요소
@@ -1190,7 +1198,7 @@ select.styled1 {
 .date-text {
 	display:inline-block;
 	width:160px;
-	background:#fff url(../img/btn/btn_calendar.gif) no-repeat 100% 50%;
+	background:#fff url(../img/btn/btn_calendar.gif) no-repeat 100% 10px;
 }
 .date-text input[type=text] {
 	width:100%;
@@ -1216,6 +1224,87 @@ select.styled1 {
 	float:left;
 	margin-left:10px;
 }
+
+/* 데이트피커 */
+.date-text {
+	position:relative;
+	z-index:100;
+}
+.calendar-layer {
+	display:none;
+	position:absolute;
+	left:0; top:34px;
+	width:310px;
+	padding:0 16px 15px;
+	border-width:1px;
+	border-style:solid;
+	background-color:#fff;
+}
+.calendar-layer .hasDatepicker {}
+.calendar-layer .hasDatepicker .ui-datepicker-header {
+	position:relative;
+	height:50px;
+	text-align:center;
+}
+
+.calendar-layer .hasDatepicker .ui-datepicker-title {
+	display:inline-block;
+	overflow:hidden;
+	padding-top:15px;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-title select {
+	float:right;
+	height:28px;
+	margin-right:10px;
+	padding:0 10px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	font-size:12px;
+	line-height:26px;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-title select:first-child {margin-right:0;}
+.calendar-layer .hasDatepicker .ui-datepicker-title .ui-datepicker-month {width:60px;}
+.calendar-layer .hasDatepicker .ui-datepicker-title .ui-datepicker-year {width:75px;}
+
+.calendar-layer .hasDatepicker .ui-datepicker-header .ui-corner-all {
+	position:absolute;
+	top:15px;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-header .ui-corner-all .ui-icon {
+	display:block;
+	width:30px;
+	height:28px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-prev {left:15px;}
+.calendar-layer .hasDatepicker .ui-datepicker-next {right:15px;}
+.calendar-layer .hasDatepicker .ui-datepicker-prev .ui-icon {background-image:url(../img/btn/btn_date_prev.png);}
+.calendar-layer .hasDatepicker .ui-datepicker-next .ui-icon {background-image:url(../img/btn/btn_date_next.png);}
+
+.calendar-layer .hasDatepicker .ui-datepicker-calendar {}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar th,
+.calendar-layer .hasDatepicker .ui-datepicker-calendar td {
+	font-size:12px;
+	text-align:center;
+	height:auto;
+	padding:0;
+	border:0;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar th {
+	height:34px;
+	color:#333;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar td a {
+	display:block;
+	height:28px;
+	line-height:28px;
+}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar td.ui-datepicker-week-end a {color:#ff0000;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:#eee; color:#333;}
 
 /* 공유 범위 영역 */
 .share-box {
