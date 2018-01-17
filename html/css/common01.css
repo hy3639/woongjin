@@ -19,12 +19,6 @@
 /* ===========================================================================
 	폼요소
 =========================================================================== */
-/* placeholder */
-::-webkit-input-placeholder {color:#bbb;} /* Chrome/Opera/Safari */
-::-moz-placeholder {color:#bbb;} /* Firefox 19+ */
-:-ms-input-placeholder {color:#bbb;} /* IE 10+ */
-:-moz-placeholder {color:#bbb;} /* Firefox 18- */
-
 /* 입력박스 */
 input[type=text],
 input[type=number] {
@@ -166,6 +160,7 @@ select.styled1 {
 	background-color:#fafafa;
 	text-align:center;
 }
+.top-search-box .selectWrap + .selectWrap {margin-left:2px;}
 .top-search-box .selectWrap {}
 .top-search-box .search-text {
 	display:inline-block;
@@ -953,8 +948,7 @@ select.styled1 {
 .reply-wrap .input-area textarea {width: 100%; height: 100%;}
 .reply-wrap .input-area .btn-area {
 	position: absolute;
-	right:0;
-	top:0;
+	right:0; top:0;
 }
 
 .reply-wrap .reply-list {overflow: hidden;}
@@ -992,11 +986,11 @@ select.styled1 {
 .reply-wrap .reply-list .info-wrap .info-list {position: relative;}
 .reply-wrap .reply-list .info-wrap .info-list .date {
 	position:relative;
-		color:#999;
-		float:left;
-		line-height: 34px;
-		margin-left:12px;
-		padding-left:12px;
+	color:#999;
+	float:left;
+	line-height: 34px;
+	margin-left:12px;
+	padding-left:12px;
 }
 
 .reply-wrap .reply-list .info-wrap .info-list ul {overflow: hidden;}
@@ -1066,11 +1060,11 @@ select.styled1 {
 	overflow:hidden;
 }
 .page-wrap ul li .cont .cont-tit{
-		display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .page-wrap ul li .cont em {position: absolute;}
 .page-wrap ul li .name,
@@ -1085,9 +1079,21 @@ select.styled1 {
 	display:none;
 	padding:43px 50px 34px;
 }
+.title-wrap:after {
+	content:'';
+	display:block;
+	clear:both;
+}
 .title-wrap .title {
+	float:left;
 	color:#000;
 	font-size:25px;
+}
+.title-wrap .text {
+	float:left;
+	margin-left:20px;
+	font-size:14px;
+	line-height:37px;
 }
 
 /* 게시판 상단 소팅 영역 */

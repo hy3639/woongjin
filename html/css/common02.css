@@ -87,7 +87,7 @@ select.styled1 {
 .selectWrap {
 	display:inline-block;
 	position:relative;
-	height:34px;
+	height:35px;
 	box-sizing:border-box;
 	vertical-align:middle;
 }
@@ -103,6 +103,7 @@ select.styled1 {
 	padding:0 25px 0 10px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
+	background-color: #fff;
 	text-overflow:ellipsis;
 	line-height:32px;
 	white-space:nowrap;
@@ -129,23 +130,22 @@ select.styled1 {
 	background-color:#fafafa;
 	box-sizing: border-box;
 }
+.top-search-box:after {
+	content:'';
+	display:block;
+	clear:both;
+}
 .top-search-box .selectWrap {
 	z-index: 10;
-	background-color: #fff;
 }
 .top-search-box .selectWrap select {width: 80px !important}
 .top-search-box .search-text {
 	display:inline-block;
 	position:absolute;
-	left:20px;
-	right: 20px;
-	padding-left: 80px;
+	left:20px; right: 20px; top:20px;
+	padding-left: 79px;
 	padding-right:53px;
 	box-sizing: border-box;
-}
-.top-search-box .search-text input[type=text] {
-	width:100%;
-	margin-left: -1px;
 }
 .top-search-box .search-text .btn-search {
 	position:absolute;
@@ -155,6 +155,20 @@ select.styled1 {
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
+}
+
+.type2.top-search-box {
+	padding:20px 18px 60px;
+}
+.type2.top-search-box .selectWrap {
+	float:left;
+	width:50% !important;
+}
+.type2.top-search-box .selectWrap select {width: 100% !important}
+.type2.top-search-box .selectWrap .selTitle {left:2px;right:2px;}
+.type2.top-search-box .search-text {
+	top:60px;
+	padding-left:0;
 }
 
 /* ===========================================================================
@@ -915,7 +929,6 @@ select.styled1 {
 	margin-top: -5px;
 	background-color:#eee;
 }
-
 
 /* ===========================================================================
 	컨텐츠

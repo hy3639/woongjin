@@ -72,7 +72,13 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	line-height:48px;
 }
 
-/* 딤드 */
+/* 플레이스홀더 */
+/* placeholder */
+::-webkit-input-placeholder {color:#bbb;} /* Chrome/Opera/Safari */
+::-moz-placeholder {color:#bbb;} /* Firefox 19+ */
+:-ms-input-placeholder {color:#bbb;} /* IE 10+ */
+:-moz-placeholder {color:#bbb;} /* Firefox 18- */
+
 /* 딤드 */
 .dimmed {
 	position:fixed;
