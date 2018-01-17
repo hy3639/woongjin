@@ -176,7 +176,7 @@
 			self = this;
 			
 			if ($('input[name="' + self.config[ "tags-input-name" ] + '[]"]').length >= 10) {
-				$('input.type-zone').blur().val('');
+				$('input.type-zone').val("");
 				alert(self.config[ "max-tag-over" ]);
 				return false;
 			}
