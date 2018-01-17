@@ -455,7 +455,8 @@ select.styled1 {
 	position:absolute;
 	left:0;top:0;
 	z-index:5;
-	width:260px;
+	width:118px;
+	padding-left: 20px;
 	border-bottom:1px solid #e5e5e5;
 	background-color:#fff;
 }
@@ -534,6 +535,9 @@ select.styled1 {
 .header .utill .naver-list .link3 {background-image:url(../img/ico/ico_n03.png);}
 .header .utill .naver-list .link4 {background-image:url(../img/ico/ico_n04.png);}
 .header .utill .naver-list .link5 {background-image:url(../img/ico/ico_n05.png);}
+.header .utill .naver-list .link6 {background-image:url(../img/ico/ico_n06.png);}
+.header .utill .naver-list .link7 {background-image:url(../img/ico/ico_n07.png);}
+.header .utill .naver-list .link8 {background-image:url(../img/ico/ico_n08.png);}
 .header .utill .naver-list .link .len {
 	display:block;
 	position:absolute;
@@ -1594,3 +1598,8 @@ select.styled1 {
 .layoyt3.list-view .view-type .scrollbox-area .btn-wrap {margin:20px 20px 0;}
 .layoyt3.list-view .view-type .scrollbox-area .btn-wrap .btn-text {margin-top:10px;}
 .layoyt3.list-view .tit-wrap .right .tooltip {left:inherit; right: 0;}
+
+/* ===========================================================================
+	워크스페이스
+=========================================================================== */
+/* 서브메인 */
