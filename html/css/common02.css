@@ -713,7 +713,7 @@ select.styled1 {
 	right: 0;
 	top: 50%;
 	margin-top: -14px;
-	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background: url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size: 0;
 	text-indent: -9999px;
 	line-height: 0;
@@ -1029,7 +1029,7 @@ select.styled1 {
 	width:28px;
 	height:28px;
 	margin-top:-14px;
-	background:url(../img/mobile/btn/btn_del.gif) no-repeat 50% 50%;
+	background:url(../img/mobile/btn/btn_del.png) no-repeat 50% 50%;
 	background-size:9px 9px;
 	font-size:0;
 	text-indent:-9999px;
@@ -1086,7 +1086,7 @@ select.styled1 {
 	width:28px;
 	height:28px;
 	margin-top:-14px;
-	background:url(../img/mobile/btn/btn_del.gif) no-repeat 50% 50%;
+	background:url(../img/mobile/btn/btn_del.png) no-repeat 50% 50%;
 	background-size:9px 9px;
 	font-size:0;
 	text-indent:-9999px;

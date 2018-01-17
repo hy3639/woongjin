@@ -555,6 +555,7 @@ select.styled1 {
 	position:relative;
 	border:1px solid #e5e5e5;
 	min-height:35px;
+	box-sizing:border-box;
 }
 .tagging-box .fake-placeholder {
 	position:absolute;
@@ -566,22 +567,40 @@ select.styled1 {
 .tagging-box .tagging {
 	overflow:hidden;
 	position:relative;
-	margin-left:-10px;
+	margin:-5px 0 0 -5px;
 	padding:5px 14px;
 }
 .tagging-box .tagging .tag {
 	float:left;
-	margin-left:10px;
-	line-height:23px;
+	position:relative;
+	height:23px;
+	margin:5px 0 0 5px;
+	padding:0 20px 0 8px;
+	box-sizing:border-box;
+	border:1px solid #d2eaff;
+	background-color:#e0f1ff;
+	color:#333;
+	font-size:12px;
+	line-height:21px;
 }
+.tagging-box .tagging .tag span {display:none;}
 .tagging-box .tagging .type-zone {
 	float:left;
-	margin-left:10px;
+	margin:5px 0 0 5px;
 	border:0;
 	background-color:transparent;
 	line-height:23px;
 }
-.tagging-box .tagging .tag .tag-i {}
+.tagging-box .tagging .tag .tag-i {
+	position:absolute;
+	right:0; top:0; bottom:0;
+	width:20px;
+	background:url(../img/btn/btn_del.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	cursor:pointer;
+}
 
 /* ===========================================================================
 	테이블
@@ -873,7 +892,7 @@ select.styled1 {
 	right: 0;
 	top: 50%;
 	margin-top: -14px;
-	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background: url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size: 0;
 	text-indent: -9999px;
 	line-height: 0;
@@ -1256,7 +1275,7 @@ select.styled1 {
 	width:34px;
 	height:34px;
 	margin-top:-17px;
-	background:url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background:url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -1317,7 +1336,7 @@ select.styled1 {
 	width: 34px;
 	height: 34px;
 	margin-top: -17px;
-	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background: url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size: 0;
 	text-indent: -9999px;
 	line-height:0;
