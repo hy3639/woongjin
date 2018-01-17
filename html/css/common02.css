@@ -1042,7 +1042,7 @@ select.styled1 {
 	float:right;
 	height:28px;
 	margin-right:10px;
-	padding:0 10px;
+	padding-left:10px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
 	font-size:12px;

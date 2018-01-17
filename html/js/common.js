@@ -9,10 +9,12 @@ $(document).ready(function(){
 	$('.btn-gnb').click(function(){
 		$('.gnb-utill').show();
 		$('.gnb-utill').animate({right:0}, 300);
+		$('.header').css({'z-index':'200'});
 	});
 	$('.gnb-utill .btn-close').click(function(){
 		$('.gnb-utill').animate({right:'-100%'}, 300, function(){
 			$('.gnb-utill').hide();
+			$('.header').css({'z-index':'100'});
 		});
 	});
 
