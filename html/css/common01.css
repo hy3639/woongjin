@@ -781,8 +781,8 @@ select.styled1 {
 .board-view1 .right .tooltip {
 	display: none;
 	position: absolute;
-	top:35px;
-	left:35px;;
+	top:29px;
+	left:35px;
 	width: 105px;
 	padding:20px;
 	border:1px solid #eee;
@@ -1504,6 +1504,7 @@ select.styled1 {
 .list-view .thumb-type,
 .list-view .view-type {display:none;}
 
+
 /* 구분선 */
 .list-view .hr-bar {
 	display:none;
@@ -1592,3 +1593,4 @@ select.styled1 {
 
 .layoyt3.list-view .view-type .scrollbox-area .btn-wrap {margin:20px 20px 0;}
 .layoyt3.list-view .view-type .scrollbox-area .btn-wrap .btn-text {margin-top:10px;}
+.layoyt3.list-view .tit-wrap .right .tooltip {left:inherit; right: 0;}
