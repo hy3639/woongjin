@@ -343,6 +343,36 @@ select.styled1 {
 	transform: rotate(180deg);
 }
 
+/*조회수*/
+.icon-text {
+	display:inline-block;
+	vertical-align: middle;
+}
+.icon-text .text {
+	display:block;
+	position:relative;
+	height:30px;
+	padding:0 15px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	line-height:28px;
+}
+.icon-text .text:before {
+	content:'';
+	position:absolute;
+	top:50%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.icon-text.icon01 .text {padding-left:34px; font-size: 12px;}
+.icon-text.icon01 .text:before {
+	left:14px;
+	width:16px;
+	height:10px;
+	margin-top:-5px;
+	background-image:url(../img/btn/ico_text01.png);
+}
 /* ===========================================================================
 	탭스타일
 =========================================================================== */
@@ -529,17 +559,17 @@ select.styled1 {
 
 
 /*보기 테이블*/
-.board-top {
+.board-view1 .right {
 	position:relative;
 	margin:0 20px 15px 20px;
 }
-.board-top .icon02 {margin-left: -4px;}
-.board-top .icon02.on + .tooltip {display: block;}
-.board-top .tooltip {
+.board-view1 .right .icon02 {margin-left: -4px;}
+.board-view1 .right .icon02.on + .tooltip {display: block;}
+.board-view1 .right .tooltip {
 	display: none;
 	position: absolute;
 	top:35px;
-	left:35px;;
+	right:0;
 	width: 105px;
 	padding:20px;
 	border:1px solid #eee;
@@ -547,8 +577,8 @@ select.styled1 {
 	box-sizing: border-box;
 	z-index: 10;
 }
-.board-top .tooltip li {margin-top: 9px;}
-.board-top .tooltip li:first-child {margin-top: 0;}
+.board-view1 .right .tooltip li {margin-top: 9px;}
+.board-view1 .right .tooltip li:first-child {margin-top: 0;}
 .board-view1 {
 	position:relative;
 	border-top:1px solid #eee;
@@ -558,21 +588,31 @@ select.styled1 {
 	padding:18px 20px;
 }
 .board-view1 .tit-wrap:after {content: '';display: block; clear: both;}
-.board-view1 .tit-wrap .left-box {position: relative;}
 .board-view1 .tit-wrap .right-box {
 	position: absolute;
-	left:0; right:0;
+	/* left:0; right:0; */
 	bottom:0;
+	width: 100%;
 	padding: 0 20px;
 	padding-bottom:24px;
 	text-align: center;
 	z-index: 10;
+	background-color:gold;
+	box-sizing: border-box;
 }
-.board-view1 .tit-wrap .right-box button {
-	float: left;
-	width: 50%;
+.board-view1 .tit-wrap .right-box .left {
+	position: absolute;
+	left: 0;
+	top:0
 }
-.board-view1 .tit-wrap .right-box button:first-child .text {border-right:0}
+.board-view1 .tit-wrap .right-box .right {
+	position: absolute;
+	right: 0;
+	top:0
+}
+
+
+
 .board-view1 .tit-wrap .left-box p {
 	font-weight: 700;
 	color: #333;
@@ -673,12 +713,13 @@ select.styled1 {
 }
 .board-view1 .cont-wrap .tag-wrap .input-area input {
 	width: 100%;
-	/* height: 28px; */
+	height: 28px;
 }
 .board-view1 .cont-wrap .tag-wrap .btn-area {
 	position: absolute;
 	right: 0; top:0;
 }
+.board-view1 .cont-wrap .tag-wrap .btn-area .btn-text.sm {line-height: 26px;}
 .board-view1 .cont-wrap .tag-wrap .bottom {
 	position: relative;
 	margin-top: 10px;
