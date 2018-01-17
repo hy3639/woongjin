@@ -304,7 +304,7 @@
 						<tr>
 							<th scope="row"><label for="Text01">제목<span class="fColor important">*</span></label></th>
 							<td>
-								<input type="text" id="Text01" style="width:54%;" placeholder="제목을 입력해주세요">
+								<input type="text" id="Text01" class="required" style="width:428px;" placeholder="제목을 입력해주세요">
 								<div class="form-box">
 									<input type="checkbox" id="Check01" class="styled1"><label for="Check01">공지</label>
 									<input type="checkbox" id="Check02" class="styled1"><label for="Check02">중요</label>
@@ -366,10 +366,15 @@
 						<tr>
 							<th scope="row">태그</th>
 							<td>
-								<div class="tagging-box">
+								<!-- 웹전용 태그 입력영역 -->
+								<div class="tagging-box mHide">
 									<p class="fake-placeholder">태그추가</p>
 									<div data-tags-input-name="tag" id="js-tagBox"></div>
 								</div>
+								<!-- //웹전용 태그 입력영역 -->
+								<!-- 모바일전용 태그 입력영역 -->
+								<input type="text" placeholder="태그추가">
+								<!-- /모바일전용 태그 입력영역 -->
 								<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 또는 'Enter'로 구분해주세요.</p>
 							</td>
 						</tr>

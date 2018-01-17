@@ -30,7 +30,10 @@ input[type=text] {
 	line-height:35px;
 }
 label {vertical-align:middle;}
-input[type=text] + .form-box {margin-top:8px;}
+input[type=text] + .form-box,
+.required-box + .form-box {margin-top:8px;}
+
+.required-box .message {display:none !important;}
 
 textarea {
 	padding:20px;
