@@ -92,6 +92,28 @@ $(document).ready(function(){
 	/* ===================================================================================
 		폼요소
 	=================================================================================== */
+	/* 입력박스 */
+	//오버/아웃
+	$('input[type=text], input[type=number], textarea').focus(function(){
+		$(this).addClass('bdColor');
+	}).blur(function(){
+		$(this).removeClass('bdColor');
+	});
+	// 필수체크 인풋
+	$('input.required').each(function(){
+		$(this).wrap('<span class="required-box"></span>');
+		$(this).parent('.required-box').append('<span class="message fColor">필수 항목입니다.</span>');
+	});
+	$('input.required').blur(function(){
+		var len = $(this).val().length;
+		console.log(len);
+		if(len == 0){
+			$(this).parent('.required-box').find('.message').fadeIn();
+		}else{
+			$(this).parent('.required-box').find('.message').hide();
+		}
+	});
+
 	/* 체크박스 */
 	$('input[type=checkbox].styled1').each(function(){
 		$(this).wrap('<span class="checkWrap">');
@@ -159,7 +181,6 @@ $(document).ready(function(){
 	$('.btn-attach').click(function(){
 		$(this).toggleClass('on');
 	});
-
 
 
 	// 게시판 리스트 보기방식 설정

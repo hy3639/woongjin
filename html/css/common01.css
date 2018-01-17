@@ -14,8 +14,15 @@
 /* ===========================================================================
 	폼요소
 =========================================================================== */
-/* 인풋 텍스트 */
-input[type=text] {
+/* placeholder */
+::-webkit-input-placeholder {color:#bbb;} /* Chrome/Opera/Safari */
+::-moz-placeholder {color:#bbb;} /* Firefox 19+ */
+:-ms-input-placeholder {color:#bbb;} /* IE 10+ */
+:-moz-placeholder {color:#bbb;} /* Firefox 18- */
+
+/* 입력박스 */
+input[type=text],
+input[type=number] {
 	height:35px;
 	padding:0 14px;
 	box-sizing:border-box;
@@ -25,11 +32,35 @@ input[type=text] {
 label {vertical-align:middle;}
 
 textarea {
-	padding:20px;
+	padding:13px 15px;
 	border:1px solid #e5e5e5;
 	box-sizing: border-box;
 	resize: none;
 }
+
+.required-box {
+	display:inline-block;
+	position:relative;
+}
+.required-box .message {
+	display:none;
+	position:absolute;
+	left:15px; top:-32px;
+	height:28px;
+	padding:0 10px;
+	border:1px solid #d0d0d0;
+	background-color:#fff;
+	font-size:12px;
+	line-height:26px;
+}
+.required-box .message:before {
+	content:'';
+	position:absolute;
+	left:0; right:0; bottom:-10px;
+	height:10px;
+	background:url(../img/bg/bg_message.png) no-repeat 50% 0;
+}
+
 
 /* 체크박스/라디오박스 */
 input[type=checkbox].styled1,
@@ -68,8 +99,11 @@ input[type=radio].styled1 {
 label + .checkWrap,
 label + .radioWrap {margin-left:13px;}
 input[type=text] + .checkWrap,
-input[type=text] + .radioWrap {margin-left:17px;}
-input[type=text] + .form-box {display:inline-block; margin-left:17px;}
+input[type=text] + .radioWrap,
+.required-box + .checkWrap,
+.required-box + .radioWrap {margin-left:17px;}
+input[type=text] + .form-box,
+.required-box + .form-box {display:inline-block; margin-left:17px;}
 
 /* 셀렉트 박스 */
 select.styled1 {
@@ -538,6 +572,7 @@ select.styled1 {
 	position:relative;
 	border:1px solid #e5e5e5;
 	min-height:35px;
+	box-sizing:border-box;
 }
 .tagging-box .fake-placeholder {
 	position:absolute;
@@ -549,22 +584,40 @@ select.styled1 {
 .tagging-box .tagging {
 	overflow:hidden;
 	position:relative;
-	margin-left:-10px;
+	margin:-5px 0 0 -5px;
 	padding:5px 14px;
 }
 .tagging-box .tagging .tag {
 	float:left;
-	margin-left:10px;
-	line-height:23px;
+	position:relative;
+	height:23px;
+	margin:5px 0 0 5px;
+	padding:0 20px 0 8px;
+	box-sizing:border-box;
+	border:1px solid #d2eaff;
+	background-color:#e0f1ff;
+	color:#333;
+	font-size:12px;
+	line-height:21px;
 }
+.tagging-box .tagging .tag span {display:none;}
 .tagging-box .tagging .type-zone {
 	float:left;
-	margin-left:10px;
+	margin:5px 0 0 5px;
 	border:0;
 	background-color:transparent;
 	line-height:23px;
 }
-.tagging-box .tagging .tag .tag-i {}
+.tagging-box .tagging .tag .tag-i {
+	position:absolute;
+	right:0; top:0; bottom:0;
+	width:20px;
+	background:url(../img/btn/btn_del.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	cursor:pointer;
+}
 
 /* ===========================================================================
 	테이블
@@ -865,7 +918,7 @@ select.styled1 {
 	right: 0;
 	top: 50%;
 	margin-top: -14px;
-	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background: url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size: 0;
 	text-indent: -9999px;
 	line-height: 0;
@@ -1248,7 +1301,7 @@ select.styled1 {
 	width:34px;
 	height:34px;
 	margin-top:-17px;
-	background:url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background:url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -1309,7 +1362,7 @@ select.styled1 {
 	width: 34px;
 	height: 34px;
 	margin-top: -17px;
-	background: url(../img/btn/btn_del.gif) no-repeat 50% 50%;
+	background: url(../img/btn/btn_del.png) no-repeat 50% 50%;
 	font-size: 0;
 	text-indent: -9999px;
 	line-height:0;
