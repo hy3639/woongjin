@@ -293,16 +293,6 @@
 			<div class="title-wrap">
 				<h2 class="title">공지사항</h2>
 			</div>
-			<div class="board-top">
-				<button type="button" class="btn-icon icon01"><span class="text">즐겨찾기</span></button>
-				<button type="button" class="btn-icon icon02"><span class="text">공유</span></button>
-				<div class="tooltip">
-					<ul>
-						<li><a href="#">내용 보내기</a></li>
-						<li><a href="#">링크 보내기</a></li>
-					</ul>
-				</div>
-			</div>
 			<div class="board-view1">
 				<ul>
 					<li class="tit-wrap">
@@ -310,8 +300,20 @@
 							<p>사이트 오지 사이트 <span class="fColor">(5)</span></p>
 						</div>
 						<div class="right-box">
-							<button type="button" class="btn-icon-text icon02"><span class="text">조회수 134</span></button>
-							<button type="button" class="btn-icon-text icon03"><span class="text">좋아요 171</span></button>
+							<div class="left">
+								<span class="icon-text icon01"><span class="text"><em class="mHide">조회수</em> 134</span></span>
+								<button type="button" class="btn-icon-text icon02"><span class="text"><em class="mHide">좋아요</em> 171</span></button>
+							</div>
+							<div class="right">
+								<button type="button" class="btn-icon icon01"><span class="text">즐겨찾기</span></button>
+								<button type="button" class="btn-icon icon02"><span class="text">공유</span></button>
+								<div class="tooltip">
+									<ul>
+										<li><a href="#">내용 보내기</a></li>
+										<li><a href="#">링크 보내기</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</li>
 					<li class="info-wrap">
@@ -362,16 +364,21 @@
 
 			</div>
 			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a class="btn-text">목록</a></div>
-					<div class="btn-item"><a class="btn-text">삭제</a></div>
-					<div class="btn-item"><a class="btn-text">수정</a></div>
+				<div class="btn-align mHide">
+					<div class="btn-item"><a class="btn-text">인쇄</a></div>
 				</div>
 				<div class="btn-align">
-					<div class="btn-item"><a class="btn-text">답글</a></div>
-					<div class="btn-item"><a class="btn-text">타사공지</a></div>
+
 					<div class="btn-item"><a class="btn-text">공지</a></div>
+					<div class="btn-item"><a class="btn-text">타사공지</a></div>
+					<div class="btn-item"><a class="btn-text">답글</a></div>
 				</div>
+				<div class="btn-align">
+					<div class="btn-item"><a class="btn-text">수정</a></div>
+					<div class="btn-item"><a class="btn-text">삭제</a></div>
+					<div class="btn-item"><a class="btn-text">목록</a></div>
+				</div>
+
 			</div>
 			<div class="reply-wrap">
 				<p class="tit">댓글 <span class="fColor">(2)</span></p>
@@ -425,7 +432,7 @@
 							</div>
 							<div class="input-area">
 								<div class="text-wrap type2">
-									오픈 축하합니다. 귀사의 발전이 되길 기원합니다~
+									오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~
 								</div>
 							</div>
 						</li>

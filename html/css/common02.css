@@ -228,7 +228,7 @@ select.styled1 {
 	width:12px;
 	height:9px;
 	margin-top:-5px;
-	background-image:url(../img/btn/btn_ico01.png);
+	background-image:url(../img/mobile/btn/btn_ico01.png);
 }
 .btn-icon-text.icon01.on .text {
 	border-color:#888;
@@ -243,38 +243,18 @@ select.styled1 {
 	line-height: 33px;
 }
 .btn-icon-text.icon02 .text:before {
-	left:50%;
-	width:16px;
-	height:10px;
-	margin-top:-5px;
-	margin-left:-35px;
-	background-image:url(../img/btn/btn_ico02.png);
+	left:14px;
+	width:12px;
+	height:11px;
+	margin-top:-6px;
+	background-image:url(../img/mobile/btn/btn_ico02.png);
+	background-size:12px 23px;
 }
 .btn-icon-text.icon02.on .text {
 	border-color:#888;
 	color:#333;
 }
-.btn-icon-text.icon02.on .text:before {background-position:0 -10px;}
-
-/*03*/
-.btn-icon-text.icon03 .text {
-	padding-left:34px;
-	height:35px;
-	line-height: 33px;
-}
-.btn-icon-text.icon03 .text:before {
-	left:50%;
-	width:12px;
-	height:11px;
-	margin-top:-5px;
-	margin-left:-35px;
-	background-image:url(../img/btn/btn_ico03.png);
-}
-.btn-icon-text.icon03.on .text {
-	border-color:#888;
-	color:#333;
-}
-.btn-icon-text.icon03.on .text:before {background-position:0 -11px;}
+.btn-icon-text.icon02.on .text:before {background-position:0 -12px;}
 
 /*
 	아이콘 버튼
@@ -304,7 +284,7 @@ select.styled1 {
 /* 01 */
 .btn-icon.icon01{
 	width:37px;
-	height:36px;
+	height:35px;
 	border:1px solid #eee;
 }
 .btn-icon.icon01:before {
@@ -313,14 +293,14 @@ select.styled1 {
 	height:14px;
 	margin-left:-7px;
 	margin-top: -8px;
-	background-image:url(../img/mobile/btn/btn_ico04.png);
+	background-image:url(../img/mobile/btn/btn_ico03.png);
 	background-size: 15px 29px;
 }
 
 /* 02 */
 .btn-icon.icon02{
 	width:50px;
-	height:36px;
+	height:35px;
 	border:1px solid #eee;
 }
 .btn-icon.icon02:before {
@@ -328,7 +308,7 @@ select.styled1 {
 	width:14px;
 	height:12px;
 	margin-top: -6px;
-	background-image:url(../img/mobile/btn/btn_ico05.png);
+	background-image:url(../img/mobile/btn/btn_ico04.png);
 	background-size: 14px 25px;
 }
 .btn-icon.icon02:after {
@@ -346,6 +326,38 @@ select.styled1 {
 	transform: rotate(180deg);
 }
 
+/*조회수*/
+.icon-text {
+	display:inline-block;
+	vertical-align: middle;
+}
+.icon-text .text {
+	display:block;
+	position:relative;
+	height:35px;
+	padding:0 10px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	line-height:33px;
+	font-size: 12px;
+}
+.icon-text .text:before {
+	content:'';
+	position:absolute;
+	top:50%;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.icon-text.icon01 .text {padding-left:34px;}
+.icon-text.icon01 .text:before {
+	left:14px;
+	width:16px;
+	height:10px;
+	margin-top:-5px;
+	background-image:url(../img/mobile/btn/ico_text01.png);
+	background-size:16px 21px;
+}
 /* ===========================================================================
 	탭스타일
 =========================================================================== */
@@ -532,26 +544,6 @@ select.styled1 {
 
 
 /*보기 테이블*/
-.board-top {
-	position:relative;
-	margin:0 20px 15px 20px;
-}
-.board-top .icon02 {margin-left: -4px;}
-.board-top .icon02.on + .tooltip {display: block;}
-.board-top .tooltip {
-	display: none;
-	position: absolute;
-	top:35px;
-	left:35px;;
-	width: 105px;
-	padding:20px;
-	border:1px solid #eee;
-	background-color: #fff;
-	box-sizing: border-box;
-	z-index: 10;
-}
-.board-top .tooltip li {margin-top: 9px;}
-.board-top .tooltip li:first-child {margin-top: 0;}
 .board-view1 {
 	position:relative;
 	border-top:1px solid #eee;
@@ -561,21 +553,45 @@ select.styled1 {
 	padding:18px 20px;
 }
 .board-view1 .tit-wrap:after {content: '';display: block; clear: both;}
-.board-view1 .tit-wrap .left-box {position: relative;}
 .board-view1 .tit-wrap .right-box {
 	position: absolute;
-	left:0; right:0;
-	bottom:0;
-	padding: 0 20px;
+	left:20px;
+	right:20px;
+	bottom:25px;
+	height: 35px;
 	padding-bottom:24px;
 	text-align: center;
 	z-index: 10;
+	box-sizing: border-box;
 }
-.board-view1 .tit-wrap .right-box button {
-	float: left;
-	width: 50%;
+.board-view1 .tit-wrap .right-box .left {
+	position: absolute;
+	left: 0;
+	top:0
 }
-.board-view1 .tit-wrap .right-box button:first-child .text {border-right:0}
+.board-view1 .tit-wrap .right-box .right {
+	position: absolute;
+	right: 0;
+	top:0
+}
+.board-view1 .right {position:relative;}
+.board-view1 .right .icon02 {margin-left: -4px;}
+.board-view1 .right .icon02.on + .tooltip {display: block;}
+.board-view1 .right .tooltip {
+	display: none;
+	position: absolute;
+	top:35px;
+	right:0;
+	width: 105px;
+	padding:20px;
+	border:1px solid #eee;
+	background-color: #fff;
+	box-sizing: border-box;
+	z-index: 10;
+}
+.board-view1 .right .tooltip li {margin-top: 9px;}
+.board-view1 .right .tooltip li:first-child {margin-top: 0;}
+
 .board-view1 .tit-wrap .left-box p {
 	font-weight: 700;
 	color: #333;
@@ -661,7 +677,7 @@ select.styled1 {
 .board-view1 .info-wrap .right-box .attach-list li:first-child a {border-top: 0;}
 .board-view1 .cont-wrap {
 	position: relative;
-	padding:20px 20px 70px 20px;
+	padding:20px 20px 80px 20px;
 	border-top:1px solid #eee;
 }
 .board-view1 .cont-wrap .cont img {max-width: 100%;}
@@ -676,12 +692,13 @@ select.styled1 {
 }
 .board-view1 .cont-wrap .tag-wrap .input-area input {
 	width: 100%;
-	/* height: 28px; */
+	height: 28px;
 }
 .board-view1 .cont-wrap .tag-wrap .btn-area {
 	position: absolute;
 	right: 0; top:0;
 }
+.board-view1 .cont-wrap .tag-wrap .btn-area .btn-text.sm {line-height: 26px;}
 .board-view1 .cont-wrap .tag-wrap .bottom {
 	position: relative;
 	margin-top: 10px;
@@ -726,7 +743,7 @@ select.styled1 {
 .reply-wrap .tit {font-size: 14px; color:#333; font-weight: 700;}
 .reply-wrap .input-area {
 	position: relative;
-	margin-top: 15px;
+	margin-top: 12px;
 }
 .reply-wrap .input-area .text-wrap {
 	width: 100%;
