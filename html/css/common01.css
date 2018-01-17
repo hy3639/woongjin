@@ -11,23 +11,14 @@
 /* 웹에서 숨김처리 */
 .wHide {display:none;}
 
-/* 딤드 */
-.dimmed {
-	position:fixed;
-	left:0; right:0; top:0; bottom:0;
-	z-index:95;
-	background-color:rgba(0,0,0,.5);
+/* 투명 딤드 */
+.dimmed.opacity {
+	background-color:transparent;
 }
 
 /* ===========================================================================
 	폼요소
 =========================================================================== */
-/* placeholder */
-::-webkit-input-placeholder {color:#bbb;} /* Chrome/Opera/Safari */
-::-moz-placeholder {color:#bbb;} /* Firefox 19+ */
-:-ms-input-placeholder {color:#bbb;} /* IE 10+ */
-:-moz-placeholder {color:#bbb;} /* Firefox 18- */
-
 /* 입력박스 */
 input[type=text],
 input[type=number] {
@@ -169,6 +160,7 @@ select.styled1 {
 	background-color:#fafafa;
 	text-align:center;
 }
+.top-search-box .selectWrap + .selectWrap {margin-left:2px;}
 .top-search-box .selectWrap {}
 .top-search-box .search-text {
 	display:inline-block;
@@ -405,6 +397,8 @@ select.styled1 {
 /* ===========================================================================
 	탭스타일
 =========================================================================== */
+/* 탭컨텐츠 영역 */
+.tabContent {margin:0 50px;}
 /* 01 */
 .tabCont {display:none;}
 .tabCont.on {display:block;}
@@ -615,6 +609,7 @@ select.styled1 {
 .tagging-box .tagging .tag span {display:none;}
 .tagging-box .tagging .type-zone {
 	float:left;
+	height:23px;
 	margin:5px 0 0 5px;
 	border:0;
 	background-color:transparent;
@@ -955,8 +950,7 @@ select.styled1 {
 .reply-wrap .input-area textarea {width: 100%; height: 100%;}
 .reply-wrap .input-area .btn-area {
 	position: absolute;
-	right:0;
-	top:0;
+	right:0; top:0;
 }
 
 .reply-wrap .reply-list {overflow: hidden;}
@@ -994,11 +988,11 @@ select.styled1 {
 .reply-wrap .reply-list .info-wrap .info-list {position: relative;}
 .reply-wrap .reply-list .info-wrap .info-list .date {
 	position:relative;
-		color:#999;
-		float:left;
-		line-height: 34px;
-		margin-left:12px;
-		padding-left:12px;
+	color:#999;
+	float:left;
+	line-height: 34px;
+	margin-left:12px;
+	padding-left:12px;
 }
 
 .reply-wrap .reply-list .info-wrap .info-list ul {overflow: hidden;}
@@ -1068,11 +1062,11 @@ select.styled1 {
 	overflow:hidden;
 }
 .page-wrap ul li .cont .cont-tit{
-		display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	display: inline-block;
+	max-width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .page-wrap ul li .cont em {position: absolute;}
 .page-wrap ul li .name,
@@ -1087,9 +1081,21 @@ select.styled1 {
 	display:none;
 	padding:43px 50px 34px;
 }
+.title-wrap:after {
+	content:'';
+	display:block;
+	clear:both;
+}
 .title-wrap .title {
+	float:left;
 	color:#000;
 	font-size:25px;
+}
+.title-wrap .text {
+	float:left;
+	margin-left:20px;
+	font-size:14px;
+	line-height:37px;
 }
 
 /* 게시판 상단 소팅 영역 */
@@ -1264,10 +1270,12 @@ select.styled1 {
 	display:none;
 	position:absolute;
 	left:0; top:34px;
+	z-index:100;
 	width:310px;
 	padding:0 16px 15px;
 	border-width:1px;
 	border-style:solid;
+	box-shadow:3px 4px 4px rgba(0,0,0,.1);
 	background-color:#fff;
 }
 .calendar-layer .hasDatepicker {}
@@ -1286,7 +1294,7 @@ select.styled1 {
 	float:right;
 	height:28px;
 	margin-right:10px;
-	padding:0 10px;
+	padding-left:10px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
 	font-size:12px;
@@ -1310,8 +1318,8 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.calendar-layer .hasDatepicker .ui-datepicker-prev {left:15px;}
-.calendar-layer .hasDatepicker .ui-datepicker-next {right:15px;}
+.calendar-layer .hasDatepicker .ui-datepicker-prev {left:2px;}
+.calendar-layer .hasDatepicker .ui-datepicker-next {right:2px;}
 .calendar-layer .hasDatepicker .ui-datepicker-prev .ui-icon {background-image:url(../img/btn/btn_date_prev.png);}
 .calendar-layer .hasDatepicker .ui-datepicker-next .ui-icon {background-image:url(../img/btn/btn_date_next.png);}
 
@@ -1403,7 +1411,7 @@ select.styled1 {
 /* 파일첨부 영역 */
 .addfind-cont {
 	position:relative;
-	margin:-1px 50px 0;
+	margin-top:-1px;
 	border:1px solid #e5e5e5;
 }
 .addfind-cont .title-area {

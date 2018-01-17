@@ -857,7 +857,7 @@
 			} else {
 
 				// Invoke function on existing tags input
-				val = tagging[ arg1 ]( arg2 );
+				//val = tagging[ arg1 ]( arg2 );
 
 				if ( val /*!= null*/ ) {
 					results.push( val );

@@ -9,10 +9,12 @@ $(document).ready(function(){
 	$('.btn-gnb').click(function(){
 		$('.gnb-utill').show();
 		$('.gnb-utill').animate({right:0}, 300);
+		$('.header').css({'z-index':'200'});
 	});
 	$('.gnb-utill .btn-close').click(function(){
 		$('.gnb-utill').animate({right:'-100%'}, 300, function(){
 			$('.gnb-utill').hide();
+			$('.header').css({'z-index':'100'});
 		});
 	});
 
@@ -95,9 +97,9 @@ $(document).ready(function(){
 	/* 입력박스 */
 	//오버/아웃
 	$('input[type=text], input[type=number], textarea').focus(function(){
-		$(this).addClass('bdColor');
+		$(this).addClass('bdColor').closest('.search-text').find('.btn-search').addClass('bgColor');
 	}).blur(function(){
-		$(this).removeClass('bdColor');
+		$(this).removeClass('bdColor').closest('.search-text').find('.btn-search').removeClass('bgColor');
 	});
 	// 필수체크 인풋
 	$('input.required').each(function(){
@@ -194,7 +196,7 @@ $(document).ready(function(){
 			$('.dimmed').remove();
 		}else{
 			$(this).find('input').addClass('bdColor').closest('.date-text').addClass('on').find('.calendar-layer').fadeIn();
-			$('body').append('<div class="dimmed" style="background-color:transparent;"></div>');
+			$('.btn-calendar').append('<div class="dimmed opacity"></div>');
 		}
 	});
 	$('.btn-calendar input').blur(function(){
