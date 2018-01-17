@@ -1015,12 +1015,14 @@ select.styled1 {
 }
 .calendar-layer {
 	display:none;
+	table-layout:fixed;
 	position:fixed;
 	left:50%; top:50%;
 	z-index:100;
 	width:280px;
 	margin:-138px 0 0 -140px;
 	padding:0 16px 20px;
+	box-sizing:inherit;
 	background-color:#fff;
 	box-sizing:border-box;
 }
@@ -1070,9 +1072,14 @@ select.styled1 {
 .calendar-layer .hasDatepicker .ui-datepicker-prev .ui-icon {background-image:url(../img/mobile/btn/btn_date_prev.png);}
 .calendar-layer .hasDatepicker .ui-datepicker-next .ui-icon {background-image:url(../img/mobile/btn/btn_date_next.png);}
 
-.calendar-layer .hasDatepicker .ui-datepicker-calendar {}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar {display:table;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar thead,
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tbody {display:table-row-group;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr {display:table-row;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar th,
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td {
+	float:inherit;
+	width:auto;
 	font-size:12px;
 	text-align:center;
 	height:auto;
