@@ -194,7 +194,7 @@ $(document).ready(function(){
 			$('.dimmed').remove();
 		}else{
 			$(this).find('input').addClass('bdColor').closest('.date-text').addClass('on').find('.calendar-layer').fadeIn();
-			$('body').append('<div class="dimmed" style="background-color:transparent;"></div>');
+			$('.btn-calendar').append('<div class="dimmed opacity"></div>');
 		}
 	});
 	$('.btn-calendar input').blur(function(){

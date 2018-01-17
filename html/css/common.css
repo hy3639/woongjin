@@ -72,6 +72,15 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	line-height:48px;
 }
 
+/* 딤드 */
+/* 딤드 */
+.dimmed {
+	position:fixed;
+	left:0; right:0; top:0; bottom:0;
+	z-index:95;
+	background-color:rgba(0,0,0,.5);
+}
+
 
 /* 스킨컬러 적용 */
 .fColor {color:#ff5349 !important;}

@@ -11,12 +11,9 @@
 /* 웹에서 숨김처리 */
 .wHide {display:none;}
 
-/* 딤드 */
-.dimmed {
-	position:fixed;
-	left:0; right:0; top:0; bottom:0;
-	z-index:95;
-	background-color:rgba(0,0,0,.5);
+/* 투명 딤드 */
+.dimmed.opacity {
+	background-color:transparent;
 }
 
 /* ===========================================================================
@@ -1260,6 +1257,7 @@ select.styled1 {
 	display:none;
 	position:absolute;
 	left:0; top:34px;
+	z-index:100;
 	width:310px;
 	padding:0 16px 15px;
 	border-width:1px;
@@ -1306,8 +1304,8 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.calendar-layer .hasDatepicker .ui-datepicker-prev {left:15px;}
-.calendar-layer .hasDatepicker .ui-datepicker-next {right:15px;}
+.calendar-layer .hasDatepicker .ui-datepicker-prev {left:2px;}
+.calendar-layer .hasDatepicker .ui-datepicker-next {right:2px;}
 .calendar-layer .hasDatepicker .ui-datepicker-prev .ui-icon {background-image:url(../img/btn/btn_date_prev.png);}
 .calendar-layer .hasDatepicker .ui-datepicker-next .ui-icon {background-image:url(../img/btn/btn_date_next.png);}
 
