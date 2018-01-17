@@ -107,7 +107,7 @@
 .gnb-utill .utill .naver-list .link {
 	float:left;
 	position:relative;
-	width:20%;
+	width:12.5%;
 	height:48px;
 }
 .gnb-utill .utill .naver-list .link .text {
@@ -128,6 +128,10 @@
 .gnb-utill .utill .naver-list .link3 .text {background-image:url(../img/mobile/ico/ico_n03.png);}
 .gnb-utill .utill .naver-list .link4 .text {background-image:url(../img/mobile/ico/ico_n04.png);}
 .gnb-utill .utill .naver-list .link5 .text {background-image:url(../img/mobile/ico/ico_n05.png);}
+.gnb-utill .utill .naver-list .link6 .text {background-image:url(../img/ico/ico_n06.png);}
+.gnb-utill .utill .naver-list .link7 .text {background-image:url(../img/ico/ico_n07.png);}
+.gnb-utill .utill .naver-list .link8 .text {background-image:url(../img/ico/ico_n08.png);}
+
 .gnb-utill .utill .naver-list .link .len {
 	position:absolute;
 	right:0; top:0;
