@@ -97,9 +97,9 @@ $(document).ready(function(){
 	/* 입력박스 */
 	//오버/아웃
 	$('input[type=text], input[type=number], textarea').focus(function(){
-		$(this).addClass('bdColor');
+		$(this).addClass('bdColor').closest('.search-text').find('.btn-search').addClass('bgColor');
 	}).blur(function(){
-		$(this).removeClass('bdColor');
+		$(this).removeClass('bdColor').closest('.search-text').find('.btn-search').removeClass('bgColor');
 	});
 	// 필수체크 인풋
 	$('input.required').each(function(){

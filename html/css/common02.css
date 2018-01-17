@@ -135,9 +135,6 @@ select.styled1 {
 	display:block;
 	clear:both;
 }
-.top-search-box .selectWrap {
-	z-index: 10;
-}
 .top-search-box .selectWrap select {width: 80px !important}
 .top-search-box .search-text {
 	display:inline-block;
