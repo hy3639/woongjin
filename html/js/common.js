@@ -377,6 +377,20 @@ function resizeMid(){
 				}
 			});
 		});
+
+		/* 검색박스 셀렉트 text(년/월) 제거 */
+		$('select.year option').each(function(){
+			var text = $(this).text();
+			var textReplace = text.replace('년', '');
+			var value = $(this).closest('select').val();
+			$(this).text(textReplace).closest('.selectWrap').find('.selTitle').text(value);
+		});
+		$('select.month option').each(function(){
+			var text = $(this).text();
+			var textReplace = text.replace('월', '');
+			var value = $(this).closest('select').val();
+			$(this).text(textReplace).closest('.selectWrap').find('.selTitle').text(value);
+		});
 	}else{
 		/* 모바일 ================================================================= */
 		/* 버튼 정렬 */
@@ -394,6 +408,18 @@ function resizeMid(){
 			var len = $(this).closest('.tab-list1').find('.item').length;
 			var wid = tabWid/len;
 			$(this).closest('.tab-list1').find('.item').css({'width':wid});
+		});
+
+		/* 검색박스 셀렉트 text(년/월) 추가 */
+		$('select.year option').each(function(){
+			var text = $(this).text();
+			var value = $(this).closest('select').val();
+			$(this).text(text + '년').closest('.selectWrap').find('.selTitle').text(value);
+		});
+		$('select.month option').each(function(){
+			var text = $(this).text();
+			var value = $(this).closest('select').val();
+			$(this).text(text + '월').closest('.selectWrap').find('.selTitle').text(value);
 		});
 	}
 }
