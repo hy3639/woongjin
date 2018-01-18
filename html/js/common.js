@@ -176,7 +176,7 @@ $(document).ready(function(){
 	*/
 	// 기본설정
 	$('#datepicker').each(function(){
-		$(this).datepicker({ 
+		$(this).datepicker({
 			changeMonth: true,
 			changeYear: true,
 			altFormat: "yy.mm.dd",
