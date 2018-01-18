@@ -384,6 +384,13 @@ function resizeMid(){
 		/* 버튼 정렬 */
 		$('.btn-item').removeAttr('style');
 
+		/* 아이콘 버튼 오버 */
+		$('.btn-icon-text.icon03').mouseenter(function(){
+			$(this).addClass('bgColor');
+		}).mouseleave(function(){
+			$(this).removeClass('bgColor');
+		});
+
 		// 스킨 컬러 버튼 오버
 		$('.btn-text.fColor').mouseenter(function(){
 			$(this).addClass('bgColor');
