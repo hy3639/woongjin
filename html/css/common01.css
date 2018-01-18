@@ -234,6 +234,20 @@ select.styled1 {
 	line-height:35px;
 }
 
+.top-search-box .btn-wrap {
+	border-top:1px solid #eee;
+	margin-top:20px;
+	padding:20px 0 10px;
+}
+.top-search-box .btn-wrap .btn-text {
+	min-width:95px;
+	background-color:#999;
+	border:0;
+	color:#fff;
+	line-height:35px;
+}
+.top-search-box .btn-wrap .btn-text:hover {color:#fff;}
+
 /* ===========================================================================
 	버튼
 =========================================================================== */
@@ -297,15 +311,18 @@ select.styled1 {
 	아이콘 + 텍스트 버튼
 */
 /* 공통 */
-.btn-icon-text {display:inline-block;}
+.btn-icon-text {
+	display:inline-block;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	text-align:center;
+}
 .btn-icon-text .text {
 	display:block;
 	position:relative;
-	height:35px;
-	padding:0 15px;
+	height:33px;
+	padding:0 14px;
 	box-sizing:border-box;
-	border:1px solid #e5e5e5;
-	background-color:#fff;
 	line-height:33px;
 	cursor:pointer;
 }
@@ -325,7 +342,7 @@ select.styled1 {
 	margin-top:-5px;
 	background-image:url(../img/btn/btn_ico01.png);
 }
-.btn-icon-text.icon01.on .text {
+.btn-icon-text.icon01.on {
 	border-color:#888;
 	color:#333;
 }
@@ -341,11 +358,32 @@ select.styled1 {
 	margin-top:-5px;
 	background-image:url(../img/btn/btn_ico02.png);
 }
-.btn-icon-text.icon02.on .text {
+.btn-icon-text.icon02.on {
 	border-color:#888;
 	color:#333;
 }
 .btn-icon-text.icon02.on .text:before {background-position:0 -11px;}
+
+/*03*/
+.btn-icon-text.icon03 {}
+.btn-icon-text.icon03 .text {
+	display:inline-block;
+	padding-left:38px;
+	border:0;
+}
+.btn-icon-text.icon03 .text .icon {
+	position:absolute;
+	left:15px;top:50%;
+	width:14px;
+	height:15px;
+	margin-top:-8px;
+	background-image:url(../img/btn/btn_ico05.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+
+.btn-icon-text.icon03.bgColor .text {color:#fff !important;}
+.btn-icon-text.icon03.bgColor .text .icon {background-color:transparent !important;background-position:0 -15px;}
 
 /*
 	아이콘 버튼
@@ -509,7 +547,7 @@ select.styled1 {
 	position:absolute;
 	left:0;top:0;
 	z-index:5;
-	width:118px;
+	width:200px;
 	padding-left: 20px;
 	border-bottom:1px solid #e5e5e5;
 	background-color:#fff;
@@ -1285,9 +1323,21 @@ select.styled1 {
 /* 날짜 선택 영역 */
 .date-text {
 	display:inline-block;
+	position:relative;
 	width:160px;
-	background:#fff url(../img/btn/btn_calendar.gif) no-repeat 100% 10px;
+	background-color:#fff;
 }
+.date-text:before {
+	content:'';
+	position:absolute;
+	right:14px;top:50%;
+	width:14px;
+	height:14px;
+	margin-top:-8px;
+	background:url(../img/btn/btn_calendar.png) no-repeat 0 0;
+	opacity:.6;
+}
+.date-text.on:before {opacity:1;}
 .date-text input[type=text] {
 	width:100%;
 	padding-right:35px;
@@ -1310,6 +1360,7 @@ select.styled1 {
 .date-area select {width:90px;}
 .date-area .selectWrap {
 	float:left;
+	width:90px !important;
 	margin-left:10px;
 }
 
@@ -1395,6 +1446,59 @@ select.styled1 {
 }
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td.ui-datepicker-week-end a {color:#ff0000;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:#eee; color:#333;}
+
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a {background-color:#e0f1ff ;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
+
+.week-setting-box {
+	position:relative;
+	width:324px;
+	padding:0 66px 0 28px;
+	box-sizing:border-box;
+}
+.week-setting-box .btn-arr,
+.week-setting-box .btn-calendar {
+	position:absolute;
+	top:0;
+	width:28px;
+	height:28px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	cursor:pointer;
+}
+.week-setting-box .btn-prev {
+	left:0;
+	background-image:url(../img/btn/btn_prev02.png);
+}
+.week-setting-box .btn-next {
+	right:38px;
+	background-image:url(../img/btn/btn_next02.png);
+}
+.week-setting-box .btn-calendar {
+	right:0;
+	background-image:url(../img/btn/btn_calendar.png);
+	opacity:.6;
+}
+.week-setting-box.on .btn-calendar {opacity:1;}
+.week-setting-box .week-text {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	line-height:28px;
+}
+.week-setting-box .calendar-layer {
+	top:27px;
+	left:296px;
+}
 
 /* 공유 범위 영역 */
 .share-box {
@@ -1657,7 +1761,6 @@ select.styled1 {
 .list-view .thumb-type,
 .list-view .view-type {display:none;}
 
-
 /* 구분선 */
 .list-view .hr-bar {
 	display:none;
@@ -1671,7 +1774,6 @@ select.styled1 {
 }
 
 .list-view.layoyt1 .view-type {display:none;}
-
 
 /* 좌우보기 */
 .layoyt2.list-view {margin-top:20px;}
@@ -1710,11 +1812,6 @@ select.styled1 {
 
 .layoyt2.list-view .view-type .scrollbox-area .btn-wrap {margin:20px 0 0;}
 .layoyt2.list-view .view-type .scrollbox-area .btn-wrap .btn-text {margin-top:10px;}
-
-
-
-
-
 
 /* 상하 보기 */
 .layoyt3.list-view .hr-bar {display:block; left:0; right:0; top:50%;height:6px;}
