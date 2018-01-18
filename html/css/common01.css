@@ -1761,7 +1761,6 @@ select.styled1 {
 .list-view .thumb-type,
 .list-view .view-type {display:none;}
 
-
 /* 구분선 */
 .list-view .hr-bar {
 	display:none;
@@ -1775,7 +1774,6 @@ select.styled1 {
 }
 
 .list-view.layoyt1 .view-type {display:none;}
-
 
 /* 좌우보기 */
 .layoyt2.list-view {margin-top:20px;}
@@ -1814,11 +1812,6 @@ select.styled1 {
 
 .layoyt2.list-view .view-type .scrollbox-area .btn-wrap {margin:20px 0 0;}
 .layoyt2.list-view .view-type .scrollbox-area .btn-wrap .btn-text {margin-top:10px;}
-
-
-
-
-
 
 /* 상하 보기 */
 .layoyt3.list-view .hr-bar {display:block; left:0; right:0; top:50%;height:6px;}
