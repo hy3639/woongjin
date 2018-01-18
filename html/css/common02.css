@@ -378,7 +378,7 @@ select.styled1 {
 .btn-icon-text.icon02.on .text:before {background-position:0 -12px;}
 
 /*03*/
-.btn-icon-text.icon03 {}
+.btn-icon-text.icon03 {text-align:center;}
 .btn-icon-text.icon03 .text {
 	display:inline-block;
 	padding-left:38px;
@@ -1239,6 +1239,8 @@ select.styled1 {
 
 .week-setting-box {
 	position:relative;
+	width:280px;
+	margin:0 auto;
 	padding:0 28px;
 	box-sizing:border-box;
 }
@@ -2070,3 +2072,49 @@ select.styled1 {
 .workspace-area .right .tabArea .tabCont  ul li {overflow: hidden; margin-bottom:13px;} */
 .workspace-area .right .tabArea .tabCont  ul li.today span {color:#333}
 .workspace-area .right .tabArea .tabCont  ul li span {float: right; color:#999}
+
+
+/* 주간보고 */
+.week-content {
+	margin:0 20px;
+}
+.week-content .week-setting-box {margin-bottom:15px;}
+.week-content .week-box {
+	width:100%;
+}
+.week-content .title-area {
+	height:53px;
+	background-color:#fafafa;
+	border:1px solid #eee;
+}
+.week-content .title-area .title {
+	color:#333;
+	font-size:15px;
+	font-weight:700;
+	text-align:center;
+	line-height:53px;
+}
+.week-content .box-list {border:1px solid #eee;border-top:0;}
+.week-content .box-list .box-item {
+	position:relative;
+	padding:20px;
+	border-top:1px solid #eee;
+	color:#333;
+	line-height:19px;
+}
+.week-content .box-list .box-item:first-child {border-top:0;}
+.week-content .box-list .box-item .btn-text {
+	position:absolute;
+	right:20px; top:50%;
+	margin-top:-18px;
+}
+
+.week-content .box-list .box-item .check-item {margin-top:9px;}
+.week-content .box-list .box-item .check-item:first-child {margin-top:0;}
+
+.week-content .week-box .btn-wrap {margin:15px -5px 25px;}
+
+.week-content .week-box.right .box-list .box-item .btn-icon-text {
+	width:100%;
+	margin-top:15px;
+}
