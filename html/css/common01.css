@@ -1299,9 +1299,21 @@ select.styled1 {
 /* 날짜 선택 영역 */
 .date-text {
 	display:inline-block;
+	position:relative;
 	width:160px;
-	background:#fff url(../img/btn/btn_calendar.gif) no-repeat 100% 10px;
+	background-color:#fff;
 }
+.date-text:before {
+	content:'';
+	position:absolute;
+	right:14px;top:50%;
+	width:14px;
+	height:14px;
+	margin-top:-8px;
+	background:url(../img/btn/btn_calendar.png) no-repeat 0 0;
+	opacity:.6;
+}
+.date-text.on:before {opacity:1;}
 .date-text input[type=text] {
 	width:100%;
 	padding-right:35px;
@@ -1324,6 +1336,7 @@ select.styled1 {
 .date-area select {width:90px;}
 .date-area .selectWrap {
 	float:left;
+	width:90px !important;
 	margin-left:10px;
 }
 
@@ -1409,6 +1422,59 @@ select.styled1 {
 }
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td.ui-datepicker-week-end a {color:#ff0000;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:#eee; color:#333;}
+
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a {background-color:#e0f1ff ;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
+
+.week-setting-box {
+	position:relative;
+	width:324px;
+	padding:0 66px 0 28px;
+	box-sizing:border-box;
+}
+.week-setting-box .btn-arr,
+.week-setting-box .btn-calendar {
+	position:absolute;
+	top:0;
+	width:28px;
+	height:28px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	cursor:pointer;
+}
+.week-setting-box .btn-prev {
+	left:0;
+	background-image:url(../img/btn/btn_prev02.png);
+}
+.week-setting-box .btn-next {
+	right:38px;
+	background-image:url(../img/btn/btn_next02.png);
+}
+.week-setting-box .btn-calendar {
+	right:0;
+	background-image:url(../img/btn/btn_calendar.png);
+	opacity:.6;
+}
+.week-setting-box.on .btn-calendar {opacity:1;}
+.week-setting-box .week-text {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	line-height:28px;
+}
+.week-setting-box .calendar-layer {
+	top:27px;
+	left:296px;
+}
 
 /* 공유 범위 영역 */
 .share-box {

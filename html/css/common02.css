@@ -242,7 +242,7 @@ select.styled1 {
 	line-height:35px;
 }
 /* 360이하 */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
 	.year-month-select .select-area {
 		width:220px;
 		margin-top:10px;
@@ -1252,6 +1252,53 @@ select.styled1 {
 }
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td.ui-datepicker-week-end a {color:#ff0000;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:#eee; color:#333;}
+
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a {background-color:#e0f1ff ;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
+
+.week-setting-box {
+	position:relative;
+	padding:0 28px;
+	box-sizing:border-box;
+}
+.week-setting-box .btn-arr {
+	position:absolute;
+	top:0;
+	width:28px;
+	height:28px;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.week-setting-box .btn-prev {
+	left:0;
+	background-image:url(../img/btn/btn_prev02.png);
+}
+.week-setting-box .btn-next {
+	right:0;
+	background-image:url(../img/btn/btn_next02.png);
+}
+.week-setting-box .btn-calendar {
+	position:absolute;
+	left:32px; right:32px; top:0; bottom:0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.week-setting-box .week-text {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+	text-align:center;
+	line-height:28px;
+}
 
 /* 공유 범위 영역 */
 .share-box {
