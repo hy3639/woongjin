@@ -1074,7 +1074,7 @@ select.styled1 {
 	background-color: #fff;
 	margin:0;
 	padding:30px 20px;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #e5e5e5;
 	box-shadow: 0 -5px 8px #fafafa;
 }
 
@@ -1486,6 +1486,11 @@ select.styled1 {
 	워크스페이스
 =========================================================================== */
 /* 서브메인  */
+.select-top {
+	padding:24px 20px 0 20px;
+}
+.select-top .selectWrap {width: 100% !important;}
+
 .top-search-box2 {
 	margin-top: -44px;
 	padding:20px;
@@ -1713,6 +1718,17 @@ select.styled1 {
 .table-area .board-wrap .no-data {
 	text-align: center;
 	padding:50px 0;
+}
+.btn-floating {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 60px;
+	background-color: #fff;
+	margin:0;
+	padding:30px 20px;
+	border-top: 1px solid #eee;
+	box-shadow: 0 -5px 8px #fafafa;
 }
 /*워크스페이스 서브메인 바로가기버튼*/
 .workspace-area ul li .btn-go {
