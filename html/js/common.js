@@ -175,28 +175,38 @@ $(document).ready(function(){
 		데이트피커
 	*/
 	// 기본설정
-	$('#datepicker').each(function(){
-		$(this).datepicker({
+	$('.datepicker').each(function(){
+		var alt = $(this).closest('.date-text').find('.btn-calendar input');
+		$(this).datepicker({ 
 			changeMonth: true,
 			changeYear: true,
 			altFormat: "yy.mm.dd",
 			monthNamesShort: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
 			dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
-			altField: ".btn-calendar input",
+			altField: alt,
 			onSelect: function(dateText, inst) {
-				$('.btn-calendar input').removeClass('bdColor').closest('.date-text').removeClass('on').find('.calendar-layer').hide();
 				$('.dimmed').remove();
+				$('.btn-calendar input').removeClass('bdColor')
+					.closest('.date-text').css({'z-index':'1'}).removeClass('on')
+					.find('.calendar-layer').hide();
+				$('.week-setting-box .btn-calendar').removeClass('bdColor')
+					.closest('.week-setting-box').css({'z-index':'1'}).removeClass('on')
+					.find('.calendar-layer').hide();
 			}
 		});
 	});
 	// 달력레이어 열기
-	$('.btn-calendar').click(function(){
+	$('.date-text .btn-calendar').click(function(){
 		if($(this).closest('.date-text').hasClass('on')){
-			$('.btn-calendar input').removeClass('bdColor').closest('.date-text').removeClass('on').find('.calendar-layer').hide();
+			$('.btn-calendar input').removeClass('bdColor')
+				.closest('.date-text').css({'z-index':'1'}).removeClass('on')
+				.find('.calendar-layer').hide();
 			$('.dimmed').remove();
 		}else{
-			$(this).find('input').addClass('bdColor').closest('.date-text').addClass('on').find('.calendar-layer').fadeIn();
-			$('.btn-calendar').append('<div class="dimmed opacity"></div>');
+			$(this).find('input').addClass('bdColor')
+				.closest('.date-text').css({'z-index':'100'}).addClass('on')
+				.find('.calendar-layer').fadeIn();
+			$(this).append('<div class="dimmed opacity"></div>');
 		}
 	});
 	$('.btn-calendar input').blur(function(){
@@ -204,10 +214,27 @@ $(document).ready(function(){
 			$(this).addClass('bdColor');
 		}
 	});
+	$('.week-setting-box .btn-calendar').click(function(){
+		$(this).addClass('bdColor')
+			.closest('.week-setting-box').css({'z-index':'100'}).addClass('on').append('<div class="dimmed opacity"></div>')
+			.find('.calendar-layer').fadeIn();
+	});
 	// 달력레이어 닫기
 	$(document).on('click', '.dimmed', function(){
-		$('.btn-calendar input').removeClass('bdColor').closest('.date-text').removeClass('on').find('.calendar-layer').hide();
 		$('.dimmed').remove();
+		$('.btn-calendar input').removeClass('bdColor')
+			.closest('.date-text').css({'z-index':'1'}).removeClass('on')
+			.find('.calendar-layer').hide();
+		$('.week-setting-box .btn-calendar').removeClass('bdColor')
+			.closest('.week-setting-box').css({'z-index':'1'}).removeClass('on')
+			.find('.calendar-layer').hide();
+	});
+
+	$(document).on('mouseenter', '.week-setting-box .ui-state-default', function(){
+		$(this).parents('tr').addClass('over').next('tr').addClass('overNext');
+	});
+	$(document).on('mouseleave', '.week-setting-box .ui-state-default', function(){
+		$('tr').removeClass('over').next('tr').removeClass('overNext');
 	});
 
 	/* ===================================================================================
@@ -329,8 +356,13 @@ function resizeGnb(){
 /* 셀렉트박스 넓이 */
 function selectWid(){
 	$('select.styled1').each(function(){
-		var wid = $(this).attr('style');
-		$(this).closest('.selectWrap').attr('style', wid);
+		if($(this).closest('.selectWrap').outerWidth() < '20'){
+			var wid = $(this).outerWidth();
+			$(this).closest('.selectWrap').css({'width': wid});
+		}else{
+			var wid = $(this).attr('style');
+			$(this).closest('.selectWrap').attr('style', wid);
+		}
 	});
 }
 
@@ -351,6 +383,13 @@ function resizeMid(){
 		/* 웹 =================================================================== */
 		/* 버튼 정렬 */
 		$('.btn-item').removeAttr('style');
+
+		/* 아이콘 버튼 오버 */
+		$('.btn-icon-text.icon03').mouseenter(function(){
+			$(this).addClass('bgColor');
+		}).mouseleave(function(){
+			$(this).removeClass('bgColor');
+		});
 
 		// 스킨 컬러 버튼 오버
 		$('.btn-text.fColor').mouseenter(function(){
@@ -377,6 +416,9 @@ function resizeMid(){
 				}
 			});
 		});
+
+		/* 검색박스 셀렉트 text(년/월) 제거 */
+		textRemove();
 	}else{
 		/* 모바일 ================================================================= */
 		/* 버튼 정렬 */
@@ -395,5 +437,35 @@ function resizeMid(){
 			var wid = tabWid/len;
 			$(this).closest('.tab-list1').find('.item').css({'width':wid});
 		});
+
+		/* 검색박스 셀렉트 text(년/월) 추가 */
+		textRemove();
+		$('select.year option').each(function(){
+			var text = $(this).text();
+			var value = $(this).closest('select').val();
+			$(this).text(text + '년').closest('.selectWrap').find('.selTitle').text(value);
+		});
+		$('select.month option').each(function(){
+			var text = $(this).text();
+			var value = $(this).closest('select').val();
+			$(this).text(text + '월').closest('.selectWrap').find('.selTitle').text(value);
+		});
 	}
+}
+
+
+/* 검색박스 셀렉트 text(년/월) 제거 */
+function textRemove(){
+	$('select.year option').each(function(){
+		var text = $(this).text();
+		var textReplace = text.replace('년', '');
+		var value = $(this).closest('select').val();
+		$(this).text(textReplace).closest('.selectWrap').find('.selTitle').text(value);
+	});
+	$('select.month option').each(function(){
+		var text = $(this).text();
+		var textReplace = text.replace('월', '');
+		var value = $(this).closest('select').val();
+		$(this).text(textReplace).closest('.selectWrap').find('.selTitle').text(value);
+	});
 }
