@@ -234,6 +234,20 @@ select.styled1 {
 	line-height:35px;
 }
 
+.top-search-box .btn-wrap {
+	border-top:1px solid #eee;
+	margin-top:20px;
+	padding:20px 0 10px;
+}
+.top-search-box .btn-wrap .btn-text {
+	min-width:95px;
+	background-color:#999;
+	border:0;
+	color:#fff;
+	line-height:35px;
+}
+.top-search-box .btn-wrap .btn-text:hover {color:#fff;}
+
 /* ===========================================================================
 	버튼
 =========================================================================== */
@@ -509,7 +523,7 @@ select.styled1 {
 	position:absolute;
 	left:0;top:0;
 	z-index:5;
-	width:118px;
+	width:200px;
 	padding-left: 20px;
 	border-bottom:1px solid #e5e5e5;
 	background-color:#fff;

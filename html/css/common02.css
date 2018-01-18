@@ -262,6 +262,17 @@ select.styled1 {
 	}
 }
 
+.top-search-box .btn-wrap {
+	margin:20px -5px 0;
+}
+.top-search-box .btn-wrap .btn-text {
+	background-color:#999;
+	border:0;
+	color:#fff;
+	line-height:40px;
+}
+.top-search-box .btn-wrap .btn-text:hover {color:#fff;}
+
 /* ===========================================================================
 	버튼
 =========================================================================== */
