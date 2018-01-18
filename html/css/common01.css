@@ -182,6 +182,58 @@ select.styled1 {
 	line-height:0;
 }
 
+.top-search-box {}
+.top-search-box .list-item {
+	position:relative;
+	margin-top:10px;
+	padding-left:130px;
+	text-align:left;
+}
+.top-search-box .list-item:first-child {margin-top:0;}
+.top-search-box .list-item dt {
+	position:absolute;
+	left:30px; top:0;
+	height:35px;
+	color:#333;
+	font-size:14px;
+	font-weight:bold;
+	line-height:35px;
+}
+.year-month-select {
+	overflow:hidden;
+	position:relative;
+}
+.year-month-select .select-area {
+	overflow:hidden;
+	float:left;
+	padding-left:24px;
+}
+.year-month-select .select-area:first-child {padding-left:0;}
+.year-month-select .select-area .select-box {
+	float:left;
+	position:relative;
+	width:130px;
+	padding-right:30px;
+	box-sizing:border-box;
+}
+.year-month-select .select-area .select-box .text {
+	position:absolute;
+	right:0;top:0;
+	width:30px;
+	color:#999;
+	text-align:center;
+	line-height:35px;
+}
+.year-month-select .select-area .select-box {}
+.year-month-select .select-area .select-box {}
+.year-month-select .swung-dash {
+	position:absolute;
+	left:260px;top:0;
+	width:24px;
+	color:#999;
+	line-height:35px;
+}
+
 /* ===========================================================================
 	버튼
 =========================================================================== */

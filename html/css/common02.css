@@ -154,9 +154,7 @@ select.styled1 {
 	line-height:0;
 }
 
-.type2.top-search-box {
-	padding:20px 18px 60px;
-}
+.type2.top-search-box {padding:20px 18px 60px;}
 .type2.top-search-box .selectWrap {
 	float:left;
 	width:50% !important;
@@ -166,6 +164,101 @@ select.styled1 {
 .type2.top-search-box .search-text {
 	top:60px;
 	padding-left:0;
+}
+
+/*
+.year-month-select {overflow:hidden;}
+.year-month-select .select-area {
+	overflow:hidden;
+	float:right;
+	position:relative;
+	width:148px;
+	height:35px;
+	padding-left:82px;
+	box-sizing:border-box;
+}
+.year-month-select .select-area:first-child {float:left;}
+.year-month-select .select-area .select-box {
+	float:left;
+	width:65px;
+}
+.year-month-select .select-area .select-box:first-child {
+	position:absolute;
+	left:0;top:0;
+	width:78px;
+}
+.year-month-select .select-area .select-box .selectWrap {}
+.year-month-select .select-area .select-box .text {display:none;}
+.year-month-select .select-area .select-box {}
+.year-month-select .swung-dash {float:right;}
+*/
+
+.top-search-box {}
+.top-search-box .list-item .selectWrap,
+.top-search-box .list-item .selectWrap select {width:100% !important;}
+.top-search-box .list-item {margin-top:10px;}
+.top-search-box .list-item:first-child {margin-top:0;}
+.top-search-box .list-item dt {
+	color:#333;
+	font-size:15px;
+	font-weight:700;
+	line-height:34px;
+}
+
+.year-month-select {
+	overflow:hidden;
+	position:relative;
+	margin:0 -15px;
+}
+.year-month-select .select-area {
+	overflow:hidden;
+	float:right;
+	width:50%;
+	box-sizing:border-box;
+	padding:0 15px;
+}
+.year-month-select .select-area:first-child {
+	float:left;
+}
+.year-month-select .select-area .select-box {
+	float:left;
+	width:47%;
+	padding-left:5px;
+	box-sizing:border-box;
+}
+.year-month-select .select-area .select-box:first-child {
+	padding-left:0;
+	width:53%;
+}
+.year-month-select .select-area .select-box .selectWrap {}
+.year-month-select .select-area .select-box .text {display:none;}
+.year-month-select .select-area .select-box {}
+.year-month-select .swung-dash {
+	position:absolute;
+	left:50%; top:0;
+	width:30px;
+	margin-left:-15px;
+	text-align:center;
+	line-height:35px;
+}
+@media only screen and (max-width: 360px) {
+	.year-month-select .select-area {
+		width:220px;
+		margin-top:10px;
+	}
+	.year-month-select .select-area:first-child {margin-top:0;}
+	.year-month-select .select-area .select-box {
+		width:90px;
+	}
+	.year-month-select .select-area .select-box:first-child {
+		width:100px;
+	}
+	.year-month-select .swung-dash {
+		float:right;
+		position:inherit;
+		left:inherit; top:inherit;
+		margin:10px -15px 0 0;
+	}
 }
 
 /* ===========================================================================
