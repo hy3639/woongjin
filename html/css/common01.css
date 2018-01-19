@@ -2071,35 +2071,6 @@ select.styled1 {
 }
 .top-info .work-info li .txt em{color:#333;}
 
-.workspace-area .left,
-.workspace-area .right {
-	width: 50%;
-	float: left;
-	box-sizing: border-box;
-}
-.workspace-area .left {padding-right:20px;}
-.workspace-area .right {padding-left: 20px;}
-
-.table-area {position:relative;}
-.workspace-area .left .table-area .board-wrap {border-top: 0;}
-.workspace-area .left .table-area:first-child .board-wrap{border-top:1px solid #eee;}
-.table-area .board-wrap {}
-.table-area .title {
-	padding-bottom:15px;
-	color: #333;
-	font-size: 16px;
-	font-weight: 700;
-}
-.table-area .board-wrap .no-data {
-	text-align: center;
-	padding:70px 0;
-}
-.table-area .board-wrap {
-	padding:20px 0;
-	border-top:1px solid #eee;
-	border-bottom:1px solid #eee;
-	box-sizing: border-box;
-}
 .board-wrap .main-cont {position: relative;}
 .board-wrap .img-area {
 	overflow:hidden;
@@ -2164,10 +2135,10 @@ select.styled1 {
 	margin-left:2px;color: #333;
 	vertical-align: top
 }
-
 .board-wrap .reply-list {
 	position: relative;
 	margin-top: 15px;
+	margin-left: 80px;
 	background-color: #fafafa;
 }
 .board-wrap .reply-list li {
@@ -2182,9 +2153,7 @@ select.styled1 {
 	height: 40px;
 	top: 20px;
 }
-.board-wrap .reply-list .txt-area {
-	padding-left:60px;
-}
+.board-wrap .reply-list .txt-area {padding-left:60px;}
 .board-wrap .reply-list .txt-area .name {
 	margin-bottom:2px;
 	color: #333;
@@ -2228,6 +2197,56 @@ select.styled1 {
 }
 .board-wrap .reply-list .reply-box .btn-area .btn-text.sm {line-height: 26px;}
 
+.table-area .title {
+	padding-bottom:15px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+}
+.table-area .board-wrap .no-data {
+	text-align: center;
+	padding:70px 0;
+}
+.table-area .board-wrap {
+	padding:20px 0;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	box-sizing: border-box;
+}
+.table-area .noty-list li {
+	position: relative;
+	padding-right:110px;
+	margin-top: 14px;
+}
+.table-area .noty-list li:first-child {margin-top: 0}
+.table-area .noty-list li .cont {
+	display: block;
+	overflow: hidden;
+	max-width: 100%;
+	box-sizing: border-box;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.table-area .noty-list li .date {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.table-area .noty-list li a {display: block;}
+
+.workspace-area .left,
+.workspace-area .right {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+.workspace-area .left {padding-right:20px;}
+.workspace-area .right {padding-left: 20px;}
+
+.workspace-area .table-area {position:relative;}
+.workspace-area .left .table-area .board-wrap {border-top: 0;}
+.workspace-area .left .table-area:first-child .board-wrap{border-top:1px solid #eee;}
+
 .workspace-area .right .board-wrap {
 	border-top: 1px solid #eee;
   border-bottom:0
@@ -2251,43 +2270,27 @@ select.styled1 {
 	margin-top: -3px;
 	background:url(../img/ico/ico_go.png) no-repeat 0 0;
 }
-.table-area .noty-list li {
-	overflow: hidden;
-	position: relative;
-	max-width: 100%;
-	margin-top: 14px;
-	padding-right:110px;
-	box-sizing: border-box;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-}
-.table-area .noty-list li:first-child {margin-top: 0}
-.table-area .noty-list li span {
-	position: absolute;
-	right: 0;
-}
-
 .workspace-area .right .tabArea .tab-list1 {
 	margin: 0;
 	border-bottom:0
 }
+
 .workspace-area .right .tabArea .tab-list1 .item {
 	width: 50%;
 	background-color:#fafafa;
 }
-.workspace-area .right .tabArea .tab-list1 .item:first-child span {border-left: 0;}
-.workspace-area .right .tabArea .tab-list1 .item:first-child span em {padding-left:25px}
-.workspace-area .right .tabArea .tab-list1 .item:last-child span {border-right: 0;}
+.workspace-area .right .tabArea .tab-list1 .item:first-child .text {border-left: 0;}
+.workspace-area .right .tabArea .tab-list1 .item:first-child .text span {padding-left:25px}
+.workspace-area .right .tabArea .tab-list1 .item:last-child .text {border-right: 0;}
 .workspace-area .right .tabArea .tab-list1 .item span {color:#000;}
 @media only screen and (max-width: 895px) {
 	.workspace-area .right .tabArea .tab-list1 .item span {font-size: 12px;}
 }
-
-.workspace-area .right .tabArea .tab-list1 .item .text em {
+.workspace-area .right .tabArea .tab-list1 .item .text span {
 	position: relative;
 	padding-left:20px;
 }
-.workspace-area .right .tabArea .tab-list1 .item .text em:before {
+.workspace-area .right .tabArea .tab-list1 .item .text span:before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -2295,15 +2298,14 @@ select.styled1 {
 	height: 14px;
 	margin-top: -7px;
 }
-.workspace-area .right .tabArea .tab-list1 .item:first-child .text em:before {
+.workspace-area .right .tabArea .tab-list1 .item:first-child .text span:before {
 	width: 14px;
 	background:url(../img/ico/ico_work_main3.png) no-repeat 50% 0;
 }
-.workspace-area .right .tabArea .tab-list1 .item:last-child .text em:before {
+.workspace-area .right .tabArea .tab-list1 .item:last-child .text span:before {
 	width: 10px;
 	background:url(../img/ico/ico_work_main4.png) no-repeat 50% 0;
 }
-
 .workspace-area .right .tabArea .tabContent {
 	overflow: hidden;
 	margin: 0
