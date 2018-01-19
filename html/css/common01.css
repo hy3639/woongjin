@@ -2350,7 +2350,7 @@ select.styled1 {
 .week-content .box-list {border:1px solid #eee;border-top:0;}
 .week-content .box-list .box-item {
 	position:relative;
-	padding:15px 20px;
+	padding:20px;
 	border-top:1px solid #eee;
 	line-height:19px;
 }
@@ -2361,7 +2361,7 @@ select.styled1 {
 	margin-top:-14px;
 }
 
-.week-content .box-list .box-item .check-item {margin-top:9px;}
+.week-content .box-list .box-item .check-item {margin-top:9px;line-height:18px;}
 .week-content .box-list .box-item .check-item:first-child {margin-top:0;}
 
 .week-content .week-box .btn-wrap {margin:15px 0 0;}
