@@ -167,7 +167,9 @@ select.styled1 {
 	position:relative;
 	width:464px;
 	padding-right:53px;
+	box-sizing:border-box;
 }
+.search-text .required-box {width:100%;}
 .top-search-box .search-text input[type=text] {
 	width:100%;
 	margin-left:12px;

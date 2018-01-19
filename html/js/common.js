@@ -114,6 +114,21 @@ $(document).ready(function(){
 			$(this).parent('.required-box').find('.message').hide();
 		}
 	});
+	// 검색박스 필수 체크
+	$('.search-text .btn-search').click(function(){
+		var len = $(this).closest('.search-text').find('input.required').val().length;
+		if(len ==0 ){
+			$(this).parent('.search-text').find('.message').fadeIn();
+		}else{
+			$(this).parent('.search-text').find('.message').hide();
+		}
+	});
+	$(document).mouseup(function (e) {
+		var msg = $('.message');
+		if (!msg.is(e.target) && msg.has(e.target).length === 0){
+			msg.hide();
+		}
+	});
 
 	/* 체크박스 */
 	$('input[type=checkbox].styled1').each(function(){
