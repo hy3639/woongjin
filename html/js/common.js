@@ -179,7 +179,7 @@ $(document).ready(function(){
 			}
 		});
 	});
-	/* 셀렉트박스 */
+	/* 셀렉트박스
 	$('select.styled1').each(function(){
 		var val = $(this).val();
 		$(this).wrap('<span class="selectWrap">');
@@ -199,6 +199,8 @@ $(document).ready(function(){
 			$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
 		});
 	});
+	*/
+	selectStyled();
 	selectWid();// 셀렉트 박스넓이 설정
 
 	/*
@@ -382,7 +384,28 @@ function resizeGnb(){
 	}
 }
 
-
+/* 셀렉트박스 디자인 */
+function selectStyled(){
+	$('select.styled1').each(function(){
+		var val = $(this).val();
+		$(this).wrap('<span class="selectWrap">');
+		$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
+		if(this.disabled){
+			$(this).closest('.selectWrap').addClass('disabled');
+		}
+		$(this).change(function(){
+			var cVal = $(this).val();
+			$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
+			$(this).blur();
+		});
+		$(this).focus(function(){
+			$(this).closest('.selectWrap').find('.selTitle').addClass('bdColor');
+		});
+		$(this).blur(function(){
+			$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
+		});
+	});
+}
 /* 셀렉트박스 넓이 */
 function selectWid(){
 	$('select.styled1').each(function(){
@@ -411,6 +434,9 @@ function resizeMid(){
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
+		/* 모바일 전용 gnb 메뉴 복사 제거 */
+		$('.gnb-select').remove();
+
 		/* 버튼 정렬 */
 		$('.btn-item').removeAttr('style');
 
@@ -454,8 +480,34 @@ function resizeMid(){
 		/*
 			gnb 영역 컨텐츠로 이동
 		*/
+		/* 상단 트리메뉴 */
+		$('.depth-top .tree-menu').each(function(){
+			$('.content .title-wrap').prepend('<div class=""></div>');
+		});
+
 		/* 하단메뉴 */
-		
+		$('.gnb-select').remove();
+		$('.sub-gnb .bottom-menu').each(function(){
+			var html = $(this).html();
+			var title = $(this).find('.menu-title').text();
+			$('.content .title-wrap').prepend('<div class="gnb-select"><select class="styled1" style="width:100%;"></select></div>');
+			$('.gnb-select select').prepend('<option>' + title + '</option>');
+		});
+		$('.sub-gnb .bottom-menu .menu-item a').each(function(){
+			var text = $(this).text();
+			var url = $(this).attr('href');
+			$('.gnb-select select').append('<option data="' + url + '">' + text + '</option>');
+		});
+		// 현재 선택되어 있는 메뉴
+		var gnbSel = $('.sub-gnb .menu-item.on a').text();
+		$('.gnb-select select').val(gnbSel);
+		selectStyled();
+		// 링크 이동
+		$('.gnb-select select').change(function(){
+			var url = $(this).find('option:selected').attr('data');
+			if(! $(this).find('option:selected').attr('data') == false) window.location.href=url;
+		});
+
 
 		/* 버튼 정렬 */
 		$('.btn-align').each(function(){
