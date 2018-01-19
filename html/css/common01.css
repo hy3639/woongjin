@@ -2374,3 +2374,73 @@ select.styled1 {
 	width:100%;
 	margin:15px 0 5px;
 }
+
+/* 나의워크스페이스 */
+.myspace .board-list2 {
+	margin: 40px 50px 0 50px;
+}
+.board-list2 .th-area {
+	overflow: hidden;
+	padding:13px 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.board-list2 .th-area > span,
+.board-list2 .td-area span {
+	display: block;
+	float: left;
+	text-align: center;
+}
+.board-list2 .num {width:8%}
+.board-list2 .category {width:12%}
+.board-list2 .title {width:30%}
+.board-list2 .name {width:11%}
+.board-list2 .status {width:7%}
+.board-list2 .date {width:13%}
+.board-list2 .level {width:8%}
+.board-list2 .setting {width:11%}
+
+.board-list2 .th-area .order button {
+	position:relative;
+	color:#333;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.board-list2 .th-area .order button span {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+  right: -15px;
+  top: 50%;
+	margin-top:-3px;
+}
+.board-list2 .th-area .order button.up {color: #ff5349;}
+.board-list2 .th-area .order button.up span {
+	/* border-bottom: 5px solid #ff5349; */
+}
+.board-list2 .th-area .order button.down span {
+	border-top: 5px solid #9da4ac;
+}
+.board-list2 .th-area .order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
+.board-list2 .td-area {
+	overflow: hidden;
+	padding:13px 0;
+	border-bottom:1px solid #eee;
+}
+.board-list2 .td-area:hover {background-color:#fafafa; }
+.board-list2 .td-area span {
+	line-height: 26px;
+}
+.board-list2 .td-area .title {
+	max-width: 100%;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-align: left;
+}
+.board-list2 .td-area .title a:hover {text-decoration: underline;}

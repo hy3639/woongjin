@@ -2123,3 +2123,69 @@ select.styled1 {
 	width:100%;
 	margin-top:15px;
 }
+
+/* 나의워크스페이스 */
+.myspace .board-list2 {
+
+}
+.board-list2 .th-area {
+	display: none;
+}
+
+.board-list2 .num {display:inline-block;border:1px solid #e5e5e5; padding:5px; display: inline-block;}
+.board-list2 .category {
+	display: block;
+	font-size: 12px;
+	color:#333;
+	
+}
+.board-list2 .title {
+	display: block;
+	margin-bottom: 15px;
+
+}
+.board-list2 .title a {
+	font-size: 15px;
+	color: #333;
+	font-weight: 700;
+}
+.board-list2 .name {display: block;}
+.board-list2 .status {display: block;}
+.board-list2 .date {display: block;}
+.board-list2 .level {display: block;}
+.board-list2 .setting {
+	position: absolute;
+	right: 20px;
+	top:20px;
+}
+
+
+
+.board-list2 .td-area {
+	overflow: hidden;
+	position: relative;
+	height: 198px;
+	padding:20px;
+	border-bottom: 2px solid #fafafa;
+	box-sizing: border-box;
+}
+.board-list2 .td-area:before {
+	content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.board-list2 .td-area span {
+
+}
+.board-list2 .td-area .title {
+	max-width: 100%;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-align: left;
+}
