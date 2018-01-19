@@ -356,7 +356,7 @@ function resizeGnb(){
 /* 셀렉트박스 넓이 */
 function selectWid(){
 	$('select.styled1').each(function(){
-		if($(this).closest('.selectWrap').outerWidth() < '20'){
+		if($(this).closest('.selectWrap').outerWidth() < 70){
 			var wid = $(this).outerWidth();
 			$(this).closest('.selectWrap').css({'width': wid});
 		}else{

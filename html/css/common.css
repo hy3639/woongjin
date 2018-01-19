@@ -89,6 +89,11 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 
 
 /* 스킨컬러 적용 */
+/*
 .fColor {color:#ff5349 !important;}
 .bgColor {background-color:#ff5349 !important;}
 .bdColor {border-color:#ff5349 !important;}
+*/
+.fColor {color:blue !important;}
+.bgColor {background-color:blue !important;}
+.bdColor {border-color:blue !important;}

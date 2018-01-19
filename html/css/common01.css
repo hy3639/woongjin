@@ -161,7 +161,7 @@ select.styled1 {
 	text-align:center;
 }
 .top-search-box .selectWrap + .selectWrap {margin-left:2px;}
-.top-search-box .selectWrap {}
+.top-search-box .year-month-select .selectWrap {width:100% !important;}
 .top-search-box .search-text {
 	display:inline-block;
 	position:relative;
