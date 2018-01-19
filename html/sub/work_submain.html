@@ -377,27 +377,18 @@
 </body>
 <script>
 $(window).load(function(){
-
-
 	$('.slide-area .slider1').each(function(){
-		slider = $(this).find('.bxslider').bxSlider({
-			mode:'fade',
-			pager: true,
-			autoControls:false,
-			//infiniteLoop:false,
-			pause:7000, // 슬라이드 속도
-			speed:500
-		});
-		//$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+		if($(this).find('.bxslider .item').length > 1){
+			$(this).find('.bxslider').bxSlider({
+				mode:'fade',
+				pager: true,
+				autoControls:false,
+				//infiniteLoop:false,
+				pause:7000, // 슬라이드 속도
+				speed:500
+			});
+		}
 	});
-		// slider2.destroySlider();
-		// slider2.reloadSlider();
-
-	});
-
-
-
-
-
+});
 </script>
 </html>
