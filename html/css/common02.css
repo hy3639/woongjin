@@ -1808,7 +1808,6 @@ select.styled1 {
 }
 .top-info .work-info li:first-child {margin-top: 0}
 .top-info .work-info li:before {display: none;}
-
 .top-info .work-info li span {
 	font-weight: normal;
 	padding:0 12px 0 25px;
@@ -1822,35 +1821,7 @@ select.styled1 {
 }
 .top-info .work-info li .txt em{color:#333;}
 
-.workspace-area .left {
-	padding:0 20px;
-	position: relative;
-	border-bottom:2px solid #fafafa;
-}
-.workspace-area .left .title {padding-left: 0}
-.workspace-area .left .board-wrap {
-	border-top: 1px solid #eee;
-}
-.workspace-area .left .table-area {margin-top: 0;}
-.workspace-area .left .table-area:first-child .board-wrap {
-	border-top: 0;
-	padding-top:0;
-
-}
-.workspace-area .left:before{
-	content: '';
-	position:absolute;
-	bottom:0;
-	left:0; right: 0;
-	width: 100%;
-	height: 1px;
-	background-color:#e5e5e5;
-}
-
-.table-area {position:relative;}
-
-.workspace-area .left .table-area:last-child .board-wrap {border-bottom:0;}
-.table-area .board-wrap {}
+.workspace-area .table-area {position:relative;}
 .table-area .title {
 	padding-left:20px;
 	padding-bottom:15px;
@@ -1864,8 +1835,6 @@ select.styled1 {
 }
 .table-area .board-wrap {
 	padding:20px 0;
-	/* border-top:1px solid #eee;
-	border-bottom:1px solid #eee; */
 	box-sizing: border-box;
 }
 .board-wrap .main-cont {position: relative;}
@@ -1936,7 +1905,6 @@ select.styled1 {
 	margin-left:2px;color: #333;
 	vertical-align: top
 }
-
 .board-wrap .reply-list {
 	position: relative;
 	margin-top: 15px;
@@ -1954,9 +1922,7 @@ select.styled1 {
 	height: 40px;
 	top: 20px;
 }
-.board-wrap .reply-list .txt-area {
-	padding-left:60px;
-}
+.board-wrap .reply-list .txt-area {padding-left:60px;}
 .board-wrap .reply-list .txt-area .name {
 	margin-bottom:2px;
 	color: #333;
@@ -1988,15 +1954,57 @@ select.styled1 {
 	padding-right:70px;
 	box-sizing: border-box;
 }
-.board-wrap .reply-list .reply-box .input-area input {
-	width: 100%;
-
-}
+.board-wrap .reply-list .reply-box .input-area input {width: 100%;}
 .board-wrap .reply-list .reply-box .btn-area {
 	position: absolute;
 	right: 0; top:0;
 }
 .board-wrap .reply-list .reply-box .btn-area .btn-text.sm {width: 64px;}
+.table-area .noty-list li {
+	position: relative;
+	margin-top: 14px;
+	padding-right:110px;
+	box-sizing: border-box;
+}
+.table-area .noty-list li:first-child {margin-top: 0}
+.table-area .noty-list li .cont {
+	display: block;
+	max-width: 100%;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.table-area .noty-list li .date {display: block;}
+.workspace-area .right .tabArea .tab-list1  {margin: 0}
+.workspace-area .right .tabArea .tab-list1 .item:first-child span {border-left: 0}
+.workspace-area .right .tabArea .tab-list1 .item:last-child span {border-right: 0}
+.workspace-area .right .tabArea .tab-list1 .item .text span {
+	position: relative;
+	padding-left:20px;
+}
+
+.workspace-area .left {
+	padding:0 20px;
+	position: relative;
+	border-bottom:2px solid #fafafa;
+}
+.workspace-area .left .title {padding-left: 0}
+.workspace-area .left .board-wrap {border-top: 1px solid #eee;}
+.workspace-area .left .table-area {margin-top: 0;}
+.workspace-area .left .table-area:first-child .board-wrap {
+	border-top: 0;
+	padding-top:0;
+}
+.workspace-area .left:before{
+	content: '';
+	position:absolute;
+	bottom:0;
+	left:0; right: 0;
+	width: 100%;
+	height: 1px;
+	background-color:#e5e5e5;
+}
+.workspace-area .left .table-area:last-child .board-wrap {border-bottom:0;}
 
 .workspace-area .right .board-wrap {
 	margin:0 20px;
@@ -2022,7 +2030,6 @@ select.styled1 {
 	bottom:0;
 	left: 0;
 	right: 0;
-
 }
 .workspace-area .right .board .title {padding-bottom:0}
 .workspace-area .right .board-wrap .noty-list li {
@@ -2045,37 +2052,6 @@ select.styled1 {
 }
 .workspace-area .right .table-area .title {padding-top:20px;}
 .workspace-area .right .table-area {margin-top: 0;}
-
-
-
-.table-area .noty-list li {
-
-	position: relative;
-
-	margin-top: 14px;
-	padding-right:110px;
-	box-sizing: border-box;
-
-}
-.table-area .noty-list li:first-child {margin-top: 0}
-.table-area .noty-list li .cont {
-	display: block;
-	max-width: 100%;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-}
-.table-area .noty-list li .date {
-	display: block;
-
-}
-.workspace-area .right .tabArea .tab-list1  {margin: 0}
-.workspace-area .right .tabArea .tab-list1 .item:first-child span {border-left: 0}
-.workspace-area .right .tabArea .tab-list1 .item:last-child span {border-right: 0}
-.workspace-area .right .tabArea .tab-list1 .item .text span {
-	position: relative;
-	padding-left:20px;
-}
 .workspace-area .right .tabArea .tab-list1 .item .text span:before {
 	content: '';
 	position: absolute;
