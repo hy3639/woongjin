@@ -161,13 +161,15 @@ select.styled1 {
 	text-align:center;
 }
 .top-search-box .selectWrap + .selectWrap {margin-left:2px;}
-.top-search-box .selectWrap {}
+.top-search-box .year-month-select .selectWrap {width:100% !important;}
 .top-search-box .search-text {
 	display:inline-block;
 	position:relative;
 	width:464px;
 	padding-right:53px;
+	box-sizing:border-box;
 }
+.search-text .required-box {width:100%;}
 .top-search-box .search-text input[type=text] {
 	width:100%;
 	margin-left:12px;
@@ -2367,7 +2369,7 @@ select.styled1 {
 .week-content .box-list {border:1px solid #eee;border-top:0;}
 .week-content .box-list .box-item {
 	position:relative;
-	padding:15px 20px;
+	padding:20px;
 	border-top:1px solid #eee;
 	line-height:19px;
 }
@@ -2378,7 +2380,7 @@ select.styled1 {
 	margin-top:-14px;
 }
 
-.week-content .box-list .box-item .check-item {margin-top:9px;}
+.week-content .box-list .box-item .check-item {margin-top:9px;line-height:18px;}
 .week-content .box-list .box-item .check-item:first-child {margin-top:0;}
 
 .week-content .week-box .btn-wrap {margin:15px 0 0;}
