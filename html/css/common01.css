@@ -1084,29 +1084,34 @@ select.styled1 {
 .board-list1 table thead th.title {padding-left:70px;}
 .board-list1 table thead th.order button {
 	position:relative;
+	padding-right:13px;
 	color:#333;
 	font-weight: 700;
 	font-size: 14px;
 }
 
-.board-list1 table thead th.order button span {
+.board-list1 .order .btn-order span {
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	border-top: 5px solid #9da4ac;
+	position: absolute;
+	right: 0;
+	top:50%;
+	margin-top: -2px;
+}
+.board-list1 .order .btn-order span:before {
 	content: '';
 	display: block;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+	width: 10px;
+	height: 5px;
 	position: absolute;
-  right: -15px;
-  top: 50%;
-	margin-top:-3px;
+	right: 0;
+	top:-5px;
+	background:url(../img/btn/btn-order.png) no-repeat 0 0;
 }
-.board-list1 table thead th.order button.up {color: #ff5349;}
-.board-list1 table thead th.order button.up span {
-	/* border-bottom: 5px solid #ff5349; */
-}
-.board-list1 table thead th.order button.down span {
-	border-top: 5px solid #9da4ac;
+.board-list1 .order .btn-order.fColor span:before {
+	transform: rotate(180deg);
 }
 .board-list1 table thead th.order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
 .board-list1 table tbody td {
@@ -2735,6 +2740,7 @@ select.styled1 {
 	float: left;
 	text-align: center;
 }
+.board-list2 .td-area > span {line-height: 28px;}
 .board-list2 .num {width:8%}
 .board-list2 .category {width:12%}
 .board-list2 .title {width:30%}
@@ -2746,29 +2752,33 @@ select.styled1 {
 
 .board-list2 .th-area .order button {
 	position:relative;
+	padding-right: 13px;
 	color:#333;
 	font-weight: 700;
 	font-size: 14px;
 }
-
-.board-list2 .th-area .order button span {
+.board-list2 .th-area .order .btn-order span {
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	border-top: 5px solid #9da4ac;
+	position: absolute;
+	right: 0;
+	top:50%;
+	margin-top: -2px;
+}
+.board-list2 .th-area .order .btn-order span:before {
 	content: '';
 	display: block;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+	width: 10px;
+	height: 5px;
 	position: absolute;
-  right: -15px;
-  top: 50%;
-	margin-top:-3px;
+	right: 0;
+	top:-5px;
+	background:url(../img/btn/btn-order.png) no-repeat 0 0;
 }
-.board-list2 .th-area .order button.up {color: #ff5349;}
-.board-list2 .th-area .order button.up span {
-	/* border-bottom: 5px solid #ff5349; */
-}
-.board-list2 .th-area .order button.down span {
-	border-top: 5px solid #9da4ac;
+.board-list2 .th-area .order .btn-order.fColor span:before {
+	transform: rotate(180deg);
 }
 .board-list2 .th-area .order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
 .board-list2 .td-area {
