@@ -16,6 +16,54 @@
 	background-color:transparent;
 }
 
+/* 상단 그룹별 */
+.board-value {margin:0 50px 40px;}
+.board-value .value-title {
+	display:inline-block;
+	position:relative;
+	padding-right:20px;
+	color:#333;
+	font-size:15px;
+	font-weight:700;
+}
+.board-value .value-title:before {
+	content:'';
+	position:absolute;
+	right:0; top:50%;
+	width:8px;
+	height:12px;
+	margin-top:-5px;
+	background:url(../img/btn/btn_arr02.png) no-repeat 0 0;
+}
+.board-value .value-list-box {
+	margin-top:12px;
+	padding:20px;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+}
+.board-value .value-list-box .value-list {
+	overflow:hidden;
+	margin:-10px 0 0 -50px;
+}
+.board-value .value-list-box .value-list .item {
+	float:left;
+	margin:10px 0 0 50px;
+}
+.board-value .value-list-box .value-list .item a {
+	display:inline-block;
+	height:24px;
+	padding:0 4px;
+	box-sizing:border-box;
+	color:#333;
+	line-height:22px;
+	border:1px solid transparent;
+}
+.board-value .value-list-box .value-list .item.on a {
+	border-color:#d2eaff;
+	background-color:#e0f1ff;
+	cursor:text;
+}
+
 /* ===========================================================================
 	폼요소
 =========================================================================== */
