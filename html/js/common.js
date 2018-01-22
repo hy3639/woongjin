@@ -56,23 +56,6 @@ $(document).ready(function(){
 		}
 	});
 
-	// 원뎁스 스크롤
-	$('.web .gnb-menu-box').each(function(){
-		$(this).enscroll({
-			verticalTrackClass: 'track',
-			verticalHandleClass: 'handle',
-			minScrollbarLength: 28
-		});
-	});
-	// 투뎁스 스크롤
-	$('.web .depth1').each(function(){
-		$(this).enscroll({
-			verticalTrackClass: 'track',
-			verticalHandleClass: 'handle',
-			minScrollbarLength: 28
-		});
-	});
-
 	/* 서브 gnb : 트리메뉴 */
 	$('.tree-menu .tree-list .list .item').each(function(){
 		var len = $(this).find('ul li').length;
@@ -106,9 +89,26 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$(this).removeClass('on').animate({top:50}, 300);
+			$('.gnb-wrap .enscroll-track').parent('div').remove();
 		}else{
 			$('.gnb-menu-box').show().animate({top:0}, 300);
 			$(this).addClass('on').animate({top:'100%'}, 300);
+			// 원뎁스 스크롤
+			$('.web .gnb-menu-box').each(function(){
+				$(this).enscroll({
+					verticalTrackClass: 'track',
+					verticalHandleClass: 'handle',
+					minScrollbarLength: 28
+				});
+			});
+			// 투뎁스 스크롤
+			$('.web .depth1').each(function(){
+				$(this).enscroll({
+					verticalTrackClass: 'track',
+					verticalHandleClass: 'handle',
+					minScrollbarLength: 28
+				});
+			});
 		}
 	});
 
@@ -374,7 +374,7 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-	//resizeGnb();// GNB
+	resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
 	selectWid();// 셀렉트 박스넓이 설정
 });

@@ -1209,11 +1209,29 @@ function resizeMain(){
 		$('.enscroll-track').each(function(){
 			$(this).parent('div').css({'right':'0'});
 		});
+
+		// 원뎁스 스크롤
+		$('.web .gnb-wrap').each(function(){
+			$(this).enscroll({
+				verticalTrackClass: 'track',
+				verticalHandleClass: 'handle',
+				minScrollbarLength: 28
+			});
+		});
+		// 투뎁스 스크롤
+		$('.web .depth1').each(function(){
+			$(this).enscroll({
+				verticalTrackClass: 'track',
+				verticalHandleClass: 'handle',
+				minScrollbarLength: 28
+			});
+		});
 	}else{
 		/* 스크롤바 디자인 초기화 */
 		$('.scroll-box').each(function(){
 			$(this).removeAttr('style').next('div').remove();
 		});
+		$('.gnb-wrap .enscroll-track').parent('div').remove();
 	}
 }
 </script>
