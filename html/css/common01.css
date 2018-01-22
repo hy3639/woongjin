@@ -1084,7 +1084,7 @@ select.styled1 {
 .board-list1 table thead th.title {padding-left:70px;}
 .board-list1 table thead th.order button {
 	position:relative;
-	padding-right:13px;
+	padding-right:15px;
 	color:#333;
 	font-weight: 700;
 	font-size: 14px;
@@ -1590,7 +1590,7 @@ select.styled1 {
 .sorting-area .left-box .align-btns button.on {background-color:#fff; cursor:default;}/* on */
 .sorting-area .left-box .align-btns button.on .icon {opacity:1;}/* on */
 .sorting-area .left-box .all-len {
-	padding-top:17px;
+	padding-top:7px;
 	font-size:15px;
 }
 .sorting-area .left-box .all-len .len {font-weight:700;}
@@ -2725,74 +2725,15 @@ select.styled1 {
 }
 
 /* 나의워크스페이스 */
-.myspace .board-list2 {
-	margin: 40px 50px 0 50px;
+.myspace {margin:0 50px;}
+.myspace.type2 {margin-top: 40px;}
+.myspace .tab-list1{
+	margin: 0;
 }
-.board-list2 .th-area {
-	overflow: hidden;
-	padding:13px 0;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-}
-.board-list2 .th-area > span,
-.board-list2 .td-area span {
-	display: block;
-	float: left;
-	text-align: center;
-}
-.board-list2 .td-area > span {line-height: 28px;}
-.board-list2 .num {width:8%}
-.board-list2 .category {width:12%}
-.board-list2 .title {width:30%}
-.board-list2 .name {width:11%}
-.board-list2 .status {width:7%}
-.board-list2 .date {width:13%}
-.board-list2 .level {width:8%}
-.board-list2 .setting {width:11%}
+.myspace .tabContent {margin:0;}
+.myspace .top-search-box {margin: 40px 0 0 0;}
+.myspace .sorting-area {
+	margin:0;
+	border-bottom: 0;
 
-.board-list2 .th-area .order button {
-	position:relative;
-	padding-right: 13px;
-	color:#333;
-	font-weight: 700;
-	font-size: 14px;
 }
-.board-list2 .th-area .order .btn-order span {
-	display: inline-block;
-	width: 10px;
-	height: 5px;
-	border-top: 5px solid #9da4ac;
-	position: absolute;
-	right: 0;
-	top:50%;
-	margin-top: -2px;
-}
-.board-list2 .th-area .order .btn-order span:before {
-	content: '';
-	display: block;
-	width: 10px;
-	height: 5px;
-	position: absolute;
-	right: 0;
-	top:-5px;
-	background:url(../img/btn/btn-order.png) no-repeat 0 0;
-}
-.board-list2 .th-area .order .btn-order.fColor span:before {
-	transform: rotate(180deg);
-}
-.board-list2 .th-area .order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
-.board-list2 .td-area {
-	overflow: hidden;
-	padding:13px 0;
-	border-bottom:1px solid #eee;
-}
-.board-list2 .td-area:hover {background-color:#fafafa; }
-
-.board-list2 .td-area .title {
-	max-width: 100%;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	text-align: left;
-}
-.board-list2 .td-area .title a:hover {text-decoration: underline;}

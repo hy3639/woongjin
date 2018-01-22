@@ -560,7 +560,7 @@ select.styled1 {
 	탭스타일
 =========================================================================== */
 /* 탭컨텐츠 영역 */
-.tabContent {margin:0 50px;}
+.tabContent {/*margin:0 50px;*/}
 /* 01 */
 .tabCont {display:none;}
 .tabCont.on {display:block;}
@@ -581,7 +581,8 @@ select.styled1 {
 	text-align:center;
 	line-height:38px;
 }
-.tab-list1 .item:first-child .text {border-left:1px solid #e5e5e5;}
+.tab-list1 .item:first-child .text {border-left: 0}
+.tab-list1 .item:last-child .text {border-right: 0}
 .tab-list1 .item.fColor .text {
 	border-bottom:0;
 	background-color:#fff;
@@ -1561,8 +1562,6 @@ select.styled1 {
 
 /* 파일첨부 영역 */
 .addfile-box .tab-list1 {margin:25px 0 0 0}
-.addfile-box .tab-list1 .item:first-child .text {border-left: 0}
-.addfile-box .tab-list1 .item:last-child .text {border-right: 0}
 .addfind-cont {
 	display: none;
 	border:1px solid #e5e5e5;
@@ -2354,9 +2353,9 @@ select.styled1 {
 }
 
 /* 나의워크스페이스 */
-.myspace .board-list2 {
-
-}
+.myspace .tab-list1 {margin:0;}
+.myspace .sorting-area {border-bottom:1px solid #eee;height:35px;}
+.myspace .sorting-area .left-box .all-len {line-height: 35px;}
 .board-list2 .th-area {
 	display: none;
 }
@@ -2393,12 +2392,10 @@ select.styled1 {
 	top:20px;
 }
 
-
-
 .board-list2 .td-area {
 	overflow: hidden;
 	position: relative;
-	height: 198px;
+	/* height: 198px; */
 	padding:20px;
 	border-bottom: 2px solid #fafafa;
 	box-sizing: border-box;
@@ -2413,9 +2410,7 @@ select.styled1 {
   height: 1px;
   background-color: #e5e5e5;
 }
-.board-list2 .td-area span {
 
-}
 .board-list2 .td-area .title {
 	max-width: 100%;
 	overflow: hidden;

@@ -254,7 +254,7 @@
 	</div>
 
 	<div class="container">
-		<div class="content board">
+		<div class="content">
 			<div class="title-wrap">
 				<h2 class="title">나의 워크스페이스</h2>
 			</div>
@@ -274,9 +274,48 @@
 				</div>
 			</div>
 			<!-- 목록 보기 -->
-			<div class="myspace">
+			<div class="myspace type2">
 				<!-- 목록 -->
-				<div class="board-list2">
+				<div class="board-list1 mHide">
+					<table>
+						<caption>회원가입신청 게시판</caption>
+						<colgroup>
+							<col style="width:8%;">
+							<col style="width:12%;">
+							<col >
+							<col style="width:10%;">
+							<col style="width:10%;">
+							<col style="width:10%;">
+							<col style="width:10%;">
+							<col style="width:10%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"  class="order"><button type="button" class="btn-order">번호<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">유형<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="title order"><button type="button" class="btn-order">워크스페이스<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">시샵명<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">상태<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">가입일<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">회원레벨<span><em>내림차순</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">기본설정<span><em>내림차순</em></span></button></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>219</td>
+								<td>Organization</td>
+								<td class="subject"><a href="#none"><span class="tit">Technical 게시판 설명입니다.</span></a></td>
+								<td>관리자</td>
+								<td>개설</td>
+								<td>2017.12.24</td>
+								<td>시샵</td>
+								<td><button type="button"><span class="btn-toggle toggle1">기본</span></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="board-list2 wHide">
 					<ul>
 						<li class="th-area">
 							<!-- <span class=""><input type="checkbox" class="styled1"></span> -->
@@ -359,11 +398,11 @@
 	<div class="footer">
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
-	<div class="btn-wrap btn-floating wHide">
+	<!-- <div class="btn-wrap btn-floating wHide">
 		<div class="btn-align">
 			<div class="btn-item" style="width: 269.5px;"><a href="#" class="btn-text bdColor fColor">워크스페이스 개설신청</a></div>
 		</div>
-	</div>
+	</div> -->
 </div>
 </body>
 
