@@ -65,6 +65,12 @@
 }
 .board-value .value-list-box .value-list .item a .fColor {font-weight:700;}
 
+/* 불릿 텍스트 */
+.blt-text1 {
+	padding-left:25px;
+	background:url(../img/ico/ico_blt01.png) no-repeat 0 2px;
+}
+
 /* ===========================================================================
 	폼요소
 =========================================================================== */
@@ -2771,6 +2777,81 @@ select.styled1 {
 .week-content .week-box.right .box-list .box-item .btn-icon-text {
 	width:100%;
 	margin:15px 0 5px;
+}
+
+/* 레이아웃 설정 */
+.layout-portlet {padding-bottom:0;}
+.layout-portlet .week-box {
+	position:relative;
+	min-height:450px;
+	margin-top:15px;
+	padding:20px 20px 20px 190px;
+	border:1px solid #eee;
+	background-color:#fafafa;
+	box-sizing:border-box;
+}
+.layout-portlet .week-box.right {
+	bottom:0;
+	margin-top:0;
+	padding:0;
+	border:1px solid #eee;
+	background-color:#fff;
+}
+.layout-portlet .week-box.right .title-area {border:0; border-bottom:1px solid #eee;}
+.layout-portlet .box-list {border:0;}
+.layout-portlet .week-content .box-list .box-item {border:0;}
+.layout-portlet .week-box .lnb-box {
+	position:absolute;
+	left:20px; top:20px; bottom:20px;
+	width:150px;
+	background-color:#9da4ac;
+	text-align:center;
+}
+.layout-portlet .week-box .lnb-box .text {
+	position:absolute;
+	left:0; right:0; top:50%;
+	margin-top:-21px;
+	color:#fafafa;
+	font-size:14px;
+	font-weight:700;
+}
+.layout-portlet .week-box .cont-box {
+	
+}
+.layout-portlet .week-box .cont-box .box-fixed {
+	height:50px;
+	background-color:#9da4ac;
+	color:#fafafa;
+	font-size:14px;
+	font-weight:700;
+	text-align:center;
+	line-height:50px;
+}
+.layout-portlet .cont-box {}
+.layout-portlet .cont-box {}
+.layout-portlet .cont-box {}
+.layout-portlet {}
+
+.drag-area {
+	background:url(../img/bg/bg_layout_drag.png) repeat-y 0 0;
+	background-size:100% 60px;
+}
+.drag-area .drag-box {
+	margin-top:10px;
+	height:50px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+	text-align:center;
+	font-size:14px;
+	line-height:48px;
+}
+.drag-area .drag-box:hover {cursor:s-resize;}
+.drag-area .drag-box.ui-sortable-helper {
+	border-color:#ff5349;
+	background-color:#ff5349;
+	color:#fff;
+	opacity:.7;
 }
 
 /* 나의워크스페이스 */
