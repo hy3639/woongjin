@@ -623,6 +623,209 @@ select.styled1 {
 }
 
 /* ===========================================================================
+	gnb
+=========================================================================== */
+.gnb-utill {
+	display:none;
+	position:fixed;
+	right:-100%; top:0; bottom:0;
+	width:100%;
+	max-width:450px;
+	border-left:1px solid #e5e5e5;
+	background-color:#fafafa;
+}
+.gnb-utill .utill {
+	position:absolute;
+	left:0; right:0; top:0;
+	background-color:#fff;
+	border-bottom:1px solid #f5f5f5;
+}
+.gnb-utill .utill .user-box {
+	float:inherit;
+	position:relative;
+	height:48px;
+	border-bottom:1px solid #f5f5f5;
+}
+.header .utill .user-box:before {display:none;}
+.gnb-utill .utill .user-box .btn-close {
+	display:block;
+	position:absolute;
+	right:10px; top:50%;
+	width:32px;
+	height:32px;
+	margin-top:-16px;
+	background:url(../img/mobile/btn/btn_gnb_close.png) no-repeat 50% 50%;
+	background-size:14px 14px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.gnb-utill .utill .user-box .user {
+	display:inline-block;
+	position:absolute;
+	left:0; top:0;
+	height:48px;
+	padding:0 42px 0 56px;
+	line-height:48px;
+	white-space:nowrap;
+}
+.gnb-utill .utill .user-box .user:before {
+	content:'';
+	position:absolute;
+	right:20px; top:50%;
+	width:13px;
+	height:7px;
+	margin-top:-4px;
+	background:url(../img/mobile/btn/btn_arr_down.png) no-repeat 0 0;
+	background-size:13px 7px;
+}
+.gnb-utill .utill .user-box .user .img-area {
+	overflow:hidden;
+	position:absolute;
+	left:20px; top:50%;
+	width:26px;
+	height:26px;
+	margin-top:-13px;
+	border-radius:50%;
+	font-size:0;
+	line-height:0;
+}
+.gnb-utill .utill .user-box .user .img-area img {width:100%;}
+.gnb-utill .utill .naver-list {
+	overflow:hidden;
+	padding:0 20px;
+	border-left:0;
+}
+.header .utill .naver-list {float:inherit;}
+.gnb-utill .utill .naver-list .link {
+	float:left;
+	position:relative;
+	width:12.5%;
+	height:48px;
+}
+.gnb-utill .utill .naver-list .link .text {
+	position:absolute;
+	left:50%; top:50%;
+	width:36px;
+	height:34px;
+	margin:-17px 0 0 -18px;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:22px 22px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.gnb-utill .utill .naver-list .link1 .text {background-image:url(../img/mobile/ico/ico_n01.png);}
+.gnb-utill .utill .naver-list .link2 .text {background-image:url(../img/mobile/ico/ico_n02.png);}
+.gnb-utill .utill .naver-list .link3 .text {background-image:url(../img/mobile/ico/ico_n03.png);}
+.gnb-utill .utill .naver-list .link4 .text {background-image:url(../img/mobile/ico/ico_n04.png);}
+.gnb-utill .utill .naver-list .link5 .text {background-image:url(../img/mobile/ico/ico_n05.png);}
+.gnb-utill .utill .naver-list .link6 .text {background-image:url(../img/ico/ico_n06.png);}
+.gnb-utill .utill .naver-list .link7 .text {background-image:url(../img/ico/ico_n07.png);}
+.gnb-utill .utill .naver-list .link8 .text {background-image:url(../img/ico/ico_n08.png);}
+
+.gnb-utill .utill .naver-list .link .len {
+	position:absolute;
+	right:0; top:0;
+	width:18px;
+	height:18px;
+	border-radius:50%;
+	background-color:#ff5349;
+	color:#fff;
+	font-size:11px;
+	text-align:center;
+	text-indent:0;
+	line-height:18px;
+}
+
+.mobile .gnb-wrap {
+	display:block;
+	overflow-y:auto;
+	position:absolute;
+	left:0; right:0; top:98px; bottom:0;
+}
+.gnb-wrap .home .link-home,
+.gnb-list .gnb-item .gnb-title {
+	display:block;
+	padding:14px 20px 14px 45px;
+	background-repeat:no-repeat;
+	background-position:20px 15px;
+	background-size:16px 16px;
+	color:#000;
+	font-size:14px;
+	line-height:18px;
+}
+.gnb-wrap .home .link-home.ico01 {background-image:url(../img/mobile/ico/gnb_ico01.png);}
+.gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../img/mobile/ico/gnb_ico02.png);}
+.gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../img/mobile/ico/gnb_ico03.png);}
+.gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../img/mobile/ico/gnb_ico04.png);}
+.gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../img/mobile/ico/gnb_ico05.png);}
+.gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../img/mobile/ico/gnb_ico06.png);}
+.gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../img/mobile/ico/gnb_ico07.png);}
+.gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../img/mobile/ico/gnb_ico08.png);}
+.gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../img/mobile/ico/gnb_ico09.png);}
+.gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../img/mobile/ico/gnb_ico10.png);}
+.gnb-wrap .home .btn-setting {display:none;}
+
+.gnb-list .depth1 {
+	display:none;
+	background-color:#ff5c52;
+}
+.gnb-list .depth1 .depth1-title {display:none;}
+.gnb-list .depth1-list {}
+.gnb-list .depth1-list .depth1-item .d-title {
+	display:block;
+	margin:0 20px;
+	padding:14px 0 14px;
+	border-top:1px solid #ff766d;
+	color:#fff;
+	line-height:18px;
+}
+.gnb-list .depth1-list .depth1-item .d-title.fColor {color:#fff !important;}
+.gnb-list .depth1-list .depth1-item:first-child .d-title {border-top:0;}
+.gnb-list .depth1-list .depth1-item.inList .d-title {
+	position:relative;
+}
+.gnb-list .depth1-list .depth1-item.inList .d-title:before,
+.gnb-list .depth1-list .depth1-item.inList .d-title:after {
+	content:'';
+	position:absolute;
+	background-color:#fff;
+}
+.gnb-list .depth1-list .depth1-item.inList .d-title:before {
+	right:0; top:50%;
+	width:14px;
+	height:2px;
+	margin-top:-1px;
+}
+.gnb-list .depth1-list .depth1-item.inList .d-title:after {
+	right:6px; top:50%;
+	width:2px;
+	height:14px;
+	margin-top:-7px;
+}
+.gnb-list .depth1-list .depth1-item.inList.on .d-title:before {}
+.gnb-list .depth1-list .depth1-item.inList.on .d-title:after {display:none;}
+.gnb-list .depth1-list .depth1-item {}
+.gnb-list .depth2-list {
+	display:none;
+	background-color:#eaeaea;
+	padding:10px 20px;
+}
+.gnb-list .depth2-list .depth2-item {}
+.gnb-list .depth2-list .depth2-item a {
+	display:block;
+	padding:5px 0;
+	font-size:12px;
+}
+
+.btn-gnb-toggle,
+.sub-gnb {display:none;}
+
+.top-search-box2 {margin-top:0;}
+
+/* ===========================================================================
 	테이블
 =========================================================================== */
 /* 쓰기 테이블 */

@@ -7,9 +7,23 @@ $(document).ready(function(){
 	dotdotdot();// 말줄임
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
-		$('.gnb-utill').show();
-		$('.gnb-utill').animate({right:0}, 300);
+		var winW = $(window).width();
 		$('.header').css({'z-index':'200'});
+		if(winW > 800){
+			if($(this).hasClass('on')){
+				$(this).removeClass('on');
+				$('.gnb-wrap').animate({left:-220}, 300, function(){
+					$(this).hide();
+					$('.header').css({'z-index':'100'});
+				});
+			}else{
+				$(this).addClass('on');
+				$('.gnb-wrap').show().animate({left:0}, 300);
+			}
+		}else{
+			$('.gnb-utill').show();
+			$('.gnb-utill').animate({right:0}, 300);
+		}
 	});
 	$('.gnb-utill .btn-close').click(function(){
 		$('.gnb-utill').animate({right:'-100%'}, 300, function(){
@@ -360,7 +374,7 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-	resizeGnb();// GNB
+	//resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
 	selectWid();// 셀렉트 박스넓이 설정
 });
@@ -431,6 +445,8 @@ function dotdotdot(){
 	웹/모바일 해상도 대응
 ========================================================================== */
 function resizeMid(){
+	$('.gnb-wrap').removeAttr('style');
+	$('.btn-gnb').removeClass('on');
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
@@ -501,7 +517,7 @@ function resizeMid(){
 		// 현재 선택되어 있는 메뉴
 		var gnbSel = $('.sub-gnb .menu-item.on a').text();
 		$('.gnb-select select').val(gnbSel);
-		selectStyled();
+		//selectStyled();
 		// 링크 이동
 		$('.gnb-select select').change(function(){
 			var url = $(this).find('option:selected').attr('data');
