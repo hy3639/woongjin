@@ -223,7 +223,7 @@ $(document).ready(function(){
 	// 기본설정
 	$('.datepicker').each(function(){
 		var alt = $(this).closest('.date-text').find('.btn-calendar input');
-		$(this).datepicker({ 
+		$(this).datepicker({
 			changeMonth: true,
 			changeYear: true,
 			altFormat: "yy.mm.dd",
@@ -295,6 +295,15 @@ $(document).ready(function(){
 		$(this).toggleClass('on');
 	});
 
+	// 토글버튼 on/off
+		$('.btn-toggle').click(function(){
+			if($(this).hasClass('fColor')){
+				$(this).removeClass('fColor bdColor');
+			}else{
+				$('.btn-toggle').removeClass('fColor bdColor');
+				$(this).addClass('fColor bdColor');
+			}
+		});
 
 	// 게시판 리스트 보기방식 설정
 	$('.align-btns button').click(function(){
@@ -325,6 +334,18 @@ $(document).ready(function(){
 			$('.list-view').attr('class', 'list-view layoyt3');
 		}
 	});
+
+ //게시판 정렬
+	$('.btn-order').click(function(){
+		if($(this).hasClass('fColor')){
+			$(this).removeClass('fColor');
+			$(this).children('span').removeClass('bdColor');
+		}else{
+			$(this).addClass('fColor');
+			$(this).children('span').addClass('bdColor');
+		}
+	});
+
 
 	/* ===================================================================================
 		탭

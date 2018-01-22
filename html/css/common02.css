@@ -2368,6 +2368,7 @@ select.styled1 {
 }
 .board-list2 .category {
 	display: block;
+	margin-top: 5px;
 	font-size: 12px;
 	color:#333;
 
