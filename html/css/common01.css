@@ -63,6 +63,7 @@
 	background-color:#e0f1ff;
 	cursor:text;
 }
+.board-value .value-list-box .value-list .item a .fColor {font-weight:700;}
 
 /* ===========================================================================
 	폼요소
