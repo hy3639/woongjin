@@ -301,6 +301,26 @@ select.styled1 {
 	line-height:33px;
 }
 
+/*toggle 버튼*/
+.btn-toggle {
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color: #fff;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+}
+/* 높이 23 */
+.btn-toggle.toggle1 {
+	width:auto;
+	min-width: 33px;
+	padding: 0 5px;
+	font-size:11px;
+	line-height: 23px;
+}
+
 /* 정렬 */
 .btn-wrap {margin:30px 10px 0;}
 .btn-wrap .btn-align {
@@ -2341,12 +2361,16 @@ select.styled1 {
 	display: none;
 }
 
-.board-list2 .num {display:inline-block;border:1px solid #e5e5e5; padding:5px; display: inline-block;}
+.board-list2 .num {
+	display:inline-block;
+	border:1px solid #e5e5e5;
+	padding: 1px 5px;
+}
 .board-list2 .category {
 	display: block;
 	font-size: 12px;
 	color:#333;
-	
+
 }
 .board-list2 .title {
 	display: block;

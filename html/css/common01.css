@@ -297,6 +297,26 @@ select.styled1 {
 	line-height:87px;
 }
 
+/*toggle 버튼*/
+.btn-toggle {
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color: #fff;
+	color:#666;
+	font-size:14px;
+	text-align:center;
+}
+/* 높이 28 */
+.btn-toggle.toggle1 {
+	width:auto;
+	min-width: 44px;
+	padding: 0 10px;
+	font-size:11px;
+	line-height: 26px;
+}
+
 /* 정렬 */
 .btn-wrap {margin:30px 50px 0;}
 .btn-wrap .btn-align {display:inline-block;margin:0 0 0 7px;}
@@ -2757,9 +2777,7 @@ select.styled1 {
 	border-bottom:1px solid #eee;
 }
 .board-list2 .td-area:hover {background-color:#fafafa; }
-.board-list2 .td-area span {
-	line-height: 26px;
-}
+
 .board-list2 .td-area .title {
 	max-width: 100%;
 	overflow: hidden;
