@@ -39,11 +39,11 @@
 					</div>
 				</div>
 				<div class="user-menu">
-					<button type="button" class="btn-close2">닫기</button>
+					<button type="button" class="btn-close2 mHide">닫기</button>
 					<div class="user">
-						<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+						<div class="img-area mHide"><img src="img/temp/@user.jpg" alt=""></div>
 						<div class="txt-area">
-							<p class="name">김웅진 부장</p>
+							<p class="name mHide">김웅진 부장</p>
 							<p class="info">경영지원부<br>woongjin2@woongjin.co.kr</p>
 							<a href="#" class="btn-admin">관리자설정</a>
 						</div>
@@ -55,7 +55,7 @@
 					</div>
 				</div>
 				<div class="naver-list">
-					<button type="button" class="btn-close2">닫기</button>
+					<button type="button" class="btn-close2 mHide">닫기</button>
 					<a href="#" class="link link1"><span class="text">메일<em class="len">99</em></span></a>
 					<a href="#" class="link link2"><span class="text">전화번호부</span></a>
 					<a href="#" class="link link3"><span class="text">일정관리</span></a>
@@ -66,7 +66,7 @@
 					<!-- <a href="#" class="link link8"><span class="text">포탈관리자</span></a> -->
 				</div>
 			</div>
-			<!-- gnb -->
+			<!-- gnb-->
 			<div class="gnb-wrap">
 				<div class="home">
 					<a href="#" class="link-home ico01">홈</a>
@@ -227,6 +227,7 @@
 					</li>
 				</ul>
 			</div>
+
 		</div>
 	</div>
 
@@ -1144,14 +1145,24 @@ $(window).load(function(){
 	});
 
 	//상단 사용자 레이어팝업
-	$('.user-box').click(function(){
-		$(this).next('.user-menu').addClass('on');
+	$('.user-box .user').click(function(){
+		var userM = $(this).closest('.user-box').next('.user-menu');
+		if(userM.hasClass('on')){
+			userM.removeClass('on');
+		}else{
+			userM.addClass('on');
+		}
+		var utillH = $('.utill').outerHeight();
+		var naverH = $('.naver-list').outerHeight();
+		var sumH = utillH+naverH;
+		$('.gnb-wrap').css('top',sumH);
+
 	});
 	//상단 네이버웍스 레이어팝업(태블릿)
 	$('.btn-naver').click(function(){
 		$(this).siblings('.gnb-utill').find('.naver-list').addClass('on');
 	});
-	//팝업닫기
+	//사용자,네이버웍스 팝업닫기
 	$('.btn-close2').click(function(){
 		$(this).closest('div').removeClass('on');
 	});
