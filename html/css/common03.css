@@ -8,8 +8,7 @@
 .container {
 	padding:71px 0 50px;
 }
-.gnb-wrap,
-.btn-gnb-toggle {
+.gnb-sliding {
 	display:none;
 	left:-220px;
 }

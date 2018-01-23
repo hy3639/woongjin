@@ -12,13 +12,13 @@ $(document).ready(function(){
 		if(winW > 800){
 			if($(this).hasClass('on')){
 				$(this).removeClass('on');
-				$('.gnb-wrap').animate({left:-220}, 300, function(){
+				$('.gnb-sliding').animate({left:-220}, 300, function(){
 					$(this).hide();
 					$('.header').css({'z-index':'100'});
 				});
 			}else{
 				$(this).addClass('on');
-				$('.gnb-wrap').show().animate({left:0}, 300);
+				$('.gnb-sliding').show().animate({left:0}, 300);
 			}
 		}else{
 			$('.gnb-utill').show();
@@ -38,7 +38,7 @@ $(document).ready(function(){
 			$('.gnb-menu-box').animate({top:'-100%'}, 300, function(){
 				$(this).hide();
 			});
-			$(this).removeClass('on').animate({top:171}, 300);
+			$(this).removeClass('on').animate({top:50}, 300);
 		}else{
 			$('.gnb-menu-box').show().animate({top:0}, 300);
 			$(this).addClass('on').animate({top:'100%'}, 300);
@@ -295,14 +295,14 @@ $(document).ready(function(){
 	});
 
 	// 토글버튼 on/off
-		$('.btn-toggle').click(function(){
-			if($(this).hasClass('fColor')){
-				$(this).removeClass('fColor bdColor');
-			}else{
-				$('.btn-toggle').removeClass('fColor bdColor');
-				$(this).addClass('fColor bdColor');
-			}
-		});
+	$('.btn-toggle').click(function(){
+		if($(this).hasClass('fColor')){
+			$(this).removeClass('fColor bdColor');
+		}else{
+			$('.btn-toggle').removeClass('fColor bdColor');
+			$(this).addClass('fColor bdColor');
+		}
+	});
 
 	// 게시판 리스트 보기방식 설정
 	$('.align-btns button').click(function(){
@@ -526,7 +526,7 @@ function resizeMid(){
 		/* 모바일 ================================================================= */
 		/* gnb */
 		$('.header').attr('class', 'header mobile');
-		$('.gnb-menu-box').removeAttr('style');
+		$('.gnb-sliding, .gnb-menu-box').removeAttr('style');
 		$('.btn-gnb-toggle').removeClass('on').removeAttr('style');
 
 		/*

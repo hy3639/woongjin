@@ -838,12 +838,17 @@ select.styled1 {
 /* ===========================================================================
 	gnb
 =========================================================================== */
-.gnb-wrap {
-	overflow:hidden;
+.gnb-sliding {
 	position:fixed;
 	left:0; top:71px;bottom:50px;
 	width:220px;
 	padding-top:25px;
+}
+.gnb-wrap {
+	overflow:hidden;
+	position:absolute;
+	left:0; right:0; top:0;bottom:0;
+	width:220px;
 	box-sizing:border-box;
 	border-right:1px solid #e5e5e5;
 	background-color:#fafafa;
@@ -983,12 +988,12 @@ select.styled1 {
 
 /* 서브 gnb */
 .btn-gnb-toggle {
-	position:fixed;
-	left:0; top:171px;
+	position:absolute;
+	left:0; top:50px;
 	z-index:5;
 	height:50px;
 	width:219px;
-	margin-top:-100px;
+	margin-top:-50px;
 	outline:0;
 }
 .btn-gnb-toggle .text {
