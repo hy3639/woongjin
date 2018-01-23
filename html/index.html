@@ -26,6 +26,7 @@
 		<h1 class="logo">
 			<a href="#">웅진원팩그룹웨어</a>
 		</h1>
+		<button type="button" class="btn-naver">네이버웍스</button>
 		<button type="button" class="btn-gnb">메뉴열기</button>
 		<button type="button" class="btn-search">검색</button>
 		<div class="gnb-utill">
@@ -37,7 +38,24 @@
 						<p class="name">김웅진 부장</p>
 					</div>
 				</div>
+				<div class="user-menu">
+					<button type="button" class="btn-close2">닫기</button>
+					<div class="user">
+						<div class="img-area"><img src="img/temp/@user.jpg" alt=""></div>
+						<div class="txt-area">
+							<p class="name">김웅진 부장</p>
+							<p class="info">경영지원부<br>woongjin2@woongjin.co.kr</p>
+							<a href="#" class="btn-admin">관리자설정</a>
+						</div>
+					</div>
+					<div class="btn-area">
+						<a href="#" class="">내정보관리</a>
+						<a href="#" class="">비밀번호변경</a>
+						<a href="#" class="">로그아웃</a>
+					</div>
+				</div>
 				<div class="naver-list">
+					<button type="button" class="btn-close2">닫기</button>
 					<a href="#" class="link link1"><span class="text">메일<em class="len">99</em></span></a>
 					<a href="#" class="link link2"><span class="text">전화번호부</span></a>
 					<a href="#" class="link link3"><span class="text">일정관리</span></a>
@@ -45,7 +63,7 @@
 					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
 					<a href="#" class="link link6"><span class="text">설문조사</span></a>
 					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
-					<a href="#" class="link link8"><span class="text">포탈관리자</span></a>
+					<!-- <a href="#" class="link link8"><span class="text">포탈관리자</span></a> -->
 				</div>
 			</div>
 			<!-- gnb -->
@@ -1125,7 +1143,18 @@ $(window).load(function(){
 		$(this).removeClass('bdColor');
 	});
 
-
+	//상단 사용자 레이어팝업
+	$('.user-box').click(function(){
+		$(this).next('.user-menu').addClass('on');
+	});
+	//상단 네이버웍스 레이어팝업(태블릿)
+	$('.btn-naver').click(function(){
+		$(this).siblings('.gnb-utill').find('.naver-list').addClass('on');
+	});
+	//팝업닫기
+	$('.btn-close2').click(function(){
+		$(this).closest('div').removeClass('on');
+	});
 
 	// 임시 레이어팝업
 	$('.btn-setting').click(function(){
@@ -1151,6 +1180,8 @@ $(window).load(function(){
 		if(data == 'layout3'){
 			$('.wrapper').attr('class', 'wrapper media');
 		}
+
+
 
 		resizeBox();
 

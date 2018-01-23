@@ -632,7 +632,6 @@ select.styled1 {
 	width:200px;
 	padding-left: 20px;
 	border-bottom:1px solid #e5e5e5;
-	background-color:#fff;
 }
 .header .logo a {
 	display:block;
@@ -687,11 +686,103 @@ select.styled1 {
 	margin-left:10px;
 	line-height:40px;
 }
+.header .utill .user-menu {
+	display:none;
+	position:absolute;
+	right:406px;
+	top:70px;
+	width:300px;
+	height:220px;
+	background-color:#fff;
+	border:1px solid #bbb;
+	z-index: 5;
+}
+.header .utill .user-menu.on {display: block;}
+.header .utill .user-menu:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top:-8px;
+	right: 30px;
+	width: 14px;
+	height: 8px;
+	background:url(../img/bg/bg_user.png) no-repeat 0 0;
+
+}
+.header .utill .user-menu .user {padding:30px 30px 0 30px;}
+.header .utill .user-menu .user .img-area {
+	overflow:hidden;
+	float:left;
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	font-size:0;
+	line-height:0;
+}
+.header .utill .user-menu .user .img-area img {width: 100%}
+.header .utill .user-menu .user .txt-area {
+	float: left;
+	padding-top: 12px;
+	margin-left: 20px;
+}
+.header .utill .user-menu .user .txt-area .name {
+	margin-bottom: 11px;
+	color: #333;
+	font-size: 15px;
+	font-weight: 700;
+}
+.header .utill .user-menu .user .txt-area .info {
+	margin-bottom: 13px;
+	font-size: 12px;
+	color:#999;
+}
+.header .utill .user-menu .user .txt-area .btn-admin {
+	background:url(../img/btn/btn_admin.png) no-repeat 0 0;
+	padding-left: 20px;
+	font-size: 12px;
+	color:#999;
+	font-weight: 700;
+}
+.header .utill .user-menu .btn-area {
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0; right: 0;
+	border-top: 1px solid #eee;
+	background-color: #fafafa;
+}
+.header .utill .user-menu .btn-area a {
+	float: left;
+	display: block;
+	width: 33.3%;
+	border-left: 1px solid #eee;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 48px;
+	font-size: 12px;
+	color: #333;
+}
+.header .utill .user-menu .btn-area a:first-child{border-left: 0}
+.header .utill .user-menu .btn-close2,
+.header .utill .naver-list .btn-close2  {
+	position: absolute;
+  right: 0;
+  top: 0;
+  width: 37px;
+  height: 37px;
+  background: #fff url(../img/btn/btn_del2.gif) no-repeat 50% 50%;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+	z-index: 10
+}
+.header .utill .naver-list .btn-close2 {display: none;}
 .header .utill .naver-list {
 	overflow:hidden;
 	float:left;
 	padding:0 14px;
 	border-left:1px solid #e5e5e5;
+	z-index: 9;
 }
 .header .utill .naver-list .link {
 	float:left;
@@ -711,7 +802,7 @@ select.styled1 {
 .header .utill .naver-list .link5 {background-image:url(../img/ico/ico_n05.png);}
 .header .utill .naver-list .link6 {background-image:url(../img/ico/ico_n06.png);}
 .header .utill .naver-list .link7 {background-image:url(../img/ico/ico_n07.png);}
-.header .utill .naver-list .link8 {background-image:url(../img/ico/ico_n08.png);}
+
 .header .utill .naver-list .link .len {
 	display:block;
 	position:absolute;
@@ -740,7 +831,8 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.btn-gnb {display: none;}
+.btn-gnb,
+.btn-naver {display: none;}
 .gnb-utill .utill .user-box .btn-close {display:none;}
 
 /* ===========================================================================
@@ -2819,7 +2911,7 @@ select.styled1 {
 	font-weight:700;
 }
 .layout-portlet .week-box .cont-box {
-	
+
 }
 .layout-portlet .week-box .cont-box .box-fixed {
 	height:50px;
