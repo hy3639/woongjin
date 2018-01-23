@@ -602,13 +602,13 @@ select.styled1 {
 }
 .header .logo {
 	left:10px; top:2px;
-	width:165px;
+	width:63px;
 }
 .header .logo a {
 	display:block;
-	height:40px;
-	background:url(../img/mobile/layout/site_logo.png) no-repeat 0 0;
-	background-size:165px 40px;
+	height:45px;
+	background:url(../img/mobile/layout/site_logo.png) no-repeat 50%;
+	background-size:63px 37px;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
