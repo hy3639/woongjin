@@ -633,7 +633,6 @@ select.styled1 {
 	position:absolute;
 	right:0; top:0;
 	width:45px;
-
 	height:45px;
 	border-left:1px solid #e5e5e5;
 	background-image:url(../img/mobile/btn/btn_gnb.png);
@@ -645,6 +644,50 @@ select.styled1 {
 	line-height:0;
 }
 .header .btn-naver {display: none;}
+
+.mobile.header .utill .user-menu {display:none;}
+.mobile.header .utill .user-menu.on {display: block;}
+
+.mobile.header .utill .user-menu .user {
+	padding:20px 0 20px 60px;
+	box-sizing: border-box;
+}
+
+.header .utill .user-menu .user .txt-area .name {
+	margin-bottom: 11px;
+	color: #333;
+	font-size: 15px;
+	font-weight: 700;
+}
+.mobile.header .utill .user-menu .user .txt-area .info {
+	margin-bottom: 13px;
+	font-size: 12px;
+	color:#999;
+}
+.mobile.header .utill .user-menu .user .txt-area .btn-admin {
+	background:url(../img/btn/btn_admin.png) no-repeat 0 0;
+	padding-left: 20px;
+	font-size: 12px;
+	color:#999;
+	font-weight: normal;
+}
+.mobile.header .utill .user-menu .btn-area {
+	overflow: hidden;
+	border-top: 1px solid #eee;
+	background-color: #fafafa;
+}
+.mobile.header .utill .user-menu .btn-area a {
+	float: left;
+	display: block;
+	width: 33.3%;
+	border-left: 1px solid #eee;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 48px;
+	font-size: 12px;
+	color: #333;
+}
+.mobile.header .utill .user-menu .btn-area a:first-child{border-left: 0}
 
 /* ===========================================================================
 	gnb
@@ -659,10 +702,10 @@ select.styled1 {
 	background-color:#fafafa;
 }
 .gnb-utill .utill {
-	position:absolute;
-	left:0; right:0; top:0;
+	/* position:absolute;
+	left:0; right:0; top:0; */
 	background-color:#fff;
-	border-bottom:1px solid #f5f5f5;
+	/* border-bottom:1px solid #f5f5f5; */
 }
 .gnb-utill .utill .user-box {
 	float:inherit;
@@ -715,19 +758,32 @@ select.styled1 {
 	line-height:0;
 }
 .gnb-utill .utill .user-box .user .img-area img {width:100%;}
-.gnb-utill .utill .naver-list {
+.mobile .gnb-utill .utill .naver-list {
+	width: 100%;
+	display: block;
 	overflow:hidden;
-	padding:0 20px;
-	border-left:0;
+	position:static;
+	top:49px;
+	left: 0;
+	right: 0;
+	padding:0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-color: #eaeaea;
+	box-sizing: border-box;
 }
-.header .utill .naver-list {float:inherit;}
-.gnb-utill .utill .naver-list .link {
+.mobile .gnb-utill .utill .naver-list:before,
+.mobile .gnb-utill .utill .naver-list:after {display: none;}
+/* .header .utill .naver-list {float:inherit;} */
+.mobile .gnb-utill .utill .naver-list .link {
 	float:left;
 	position:relative;
-	width:12.5%;
+	width:14.2%;
 	height:48px;
+	background-image: none;
 }
-.gnb-utill .utill .naver-list .link .text {
+.mobile .gnb-utill .utill .naver-list .link .text {
 	position:absolute;
 	left:50%; top:50%;
 	width:36px;
@@ -740,16 +796,15 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.gnb-utill .utill .naver-list .link1 .text {background-image:url(../img/mobile/ico/ico_n01.png);}
-.gnb-utill .utill .naver-list .link2 .text {background-image:url(../img/mobile/ico/ico_n02.png);}
-.gnb-utill .utill .naver-list .link3 .text {background-image:url(../img/mobile/ico/ico_n03.png);}
-.gnb-utill .utill .naver-list .link4 .text {background-image:url(../img/mobile/ico/ico_n04.png);}
-.gnb-utill .utill .naver-list .link5 .text {background-image:url(../img/mobile/ico/ico_n05.png);}
-.gnb-utill .utill .naver-list .link6 .text {background-image:url(../img/ico/ico_n06.png);}
-.gnb-utill .utill .naver-list .link7 .text {background-image:url(../img/ico/ico_n07.png);}
-.gnb-utill .utill .naver-list .link8 .text {background-image:url(../img/ico/ico_n08.png);}
+.mobile .gnb-utill .utill .naver-list .link1 .text {background-image:url(../img/mobile/ico/ico_n01.png);}
+.mobile .gnb-utill .utill .naver-list .link2 .text {background-image:url(../img/mobile/ico/ico_n02.png);}
+.mobile .gnb-utill .utill .naver-list .link3 .text {background-image:url(../img/mobile/ico/ico_n03.png);}
+.mobile .gnb-utill .utill .naver-list .link4 .text {background-image:url(../img/mobile/ico/ico_n04.png);}
+.mobile .gnb-utill .utill .naver-list .link5 .text {background-image:url(../img/mobile/ico/ico_n05.png);}
+.mobile .gnb-utill .utill .naver-list .link6 .text {background-image:url(../img/mobile/ico/ico_n06.png);}
+.mobile .gnb-utill .utill .naver-list .link7 .text {background-image:url(../img/mobile/ico/ico_n07.png);}
 
-.gnb-utill .utill .naver-list .link .len {
+.mobile .gnb-utill .utill .naver-list .link .len {
 	position:absolute;
 	right:0; top:0;
 	width:18px;
