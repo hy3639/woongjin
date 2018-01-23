@@ -57,10 +57,10 @@ $(document).ready(function(){
 	});
 
 	/* 서브 gnb : 트리메뉴 */
-	$('.tree-menu .tree-list .list .item').each(function(){
-		var len = $(this).find('ul li').length;
+	$('.tree-list li').each(function(){
+		var len = $(this).children('ul').length;
 		if(len > 0){
-			$(this).find('.link').prepend('<button type="button" class="icon bgColor"></button>');
+			$(this).children('.link').prepend('<button type="button" class="icon bgColor"></button>');
 		}
 	});
 	$(document).on('click', '.tree-menu .link .icon', function(){

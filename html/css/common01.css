@@ -960,24 +960,24 @@ select.styled1 {
 	border:0;
 }
 
-/* 트리 리스트 */
+/* 트리 리스트 2018-01-23
 .tree-menu {padding:0 25px 20px;}
 .tree-menu .tree-list {
 	padding:10px 0 17px;
 	border:1px solid #e5e5e5;
 	background-color:#fff;
 }
-.tree-menu .tree-list .tree-item {}
-.tree-menu .tree-list .tree-item .title {
+.tree-menu .tree-item {}
+.tree-menu .tree-item .title {
 	display:block;
 	padding:6px 20px;
 	color:#333;
 	line-height:20px;
 }
-.tree-menu .tree-list .tree-item a.title:hover {color:#333;text-decoration:underline;}/* hover */
-.tree-menu .tree-list .tree-item .list {}
-.tree-menu .tree-list .tree-item .list .item {padding:0 10px 0 27px;}
-.tree-menu .tree-list .tree-item .list .item .link {
+.tree-menu .tree-item a.title:hover {color:#333;text-decoration:underline;}
+.tree-menu .tree-item .list {}
+.tree-menu .tree-item .list .item {padding:0 10px 0 27px;}
+.tree-menu .tree-item .list .item .link {
 	display:block;
 	overflow:hidden;
 	position:relative;
@@ -985,8 +985,8 @@ select.styled1 {
 	padding-left:17px;
 	line-height:23px;
 }
-.tree-menu .tree-list .tree-item .list .item .link:before,
-.tree-menu .tree-list .tree-item .list .item ul li a:before {
+.tree-menu .tree-item .list .item .link:before,
+.tree-menu .tree-item .list .item ul li a:before {
 	content:'';
 	position:absolute;
 	left:0; top:-40px;
@@ -996,11 +996,11 @@ select.styled1 {
 	background-repeat:no-repeat;
 	background-position:0 0;
 }
-.tree-menu .tree-list .tree-item .list .item:last-child .link:before,
-.tree-menu .tree-list .tree-item .list .item ul li:last-child a:before {
+.tree-menu .tree-item .list .item:last-child .link:before,
+.tree-menu .tree-item .list .item ul li:last-child a:before {
 	background-image:url(../img/bg/bg_tree02.png);
 }
-.tree-menu .tree-list .tree-item .list .item .link .icon {
+.tree-menu .tree-item .list .item .link .icon {
 	display:inline-block;
 	width:17px;
 	height:15px;
@@ -1010,24 +1010,83 @@ select.styled1 {
 	background-position:0 0;
 	vertical-align:top;
 }
-.tree-menu .tree-list .tree-item .list .item.on .link .icon {background-position:0 -15px;}
-.tree-menu .tree-list .tree-item .list .item .link a {vertical-align:top;}
-.tree-menu .tree-list .tree-item .list .item ul {
+.tree-menu .tree-item .list .item.on .link .icon {background-position:0 -15px;}
+.tree-menu .tree-item .list .item .link a {vertical-align:top;}
+.tree-menu .tree-item .list .item ul {
 	display:none;
 	padding-left:26px;
 }
-.tree-menu .tree-list .tree-item .list .item ul li a {
+.tree-menu .tree-item .list .item ul li a {
 	display:block;
 	overflow:hidden;
 	position:relative;
 	padding-left:17px;
 	word-break:keep-all;
 }
-.tree-menu .tree-list .tree-item .list .item a:hover {color:#333;text-decoration:underline;}/* hover */
-.tree-menu .tree-list .tree-item a.fColor:hover {
+.tree-menu .tree-item .list .item a:hover {color:#333;text-decoration:underline;}
+.tree-menu .tree-item a.fColor:hover {
 	text-decoration:none !important;
 	cursor:text;
 }
+*/
+.tree-menu {}
+.tree-menu .tree-list {
+	margin-left:-14px;
+}
+.tree-menu .tree-list li .link {
+	position:relative;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+.tree-menu .tree-list li .link .icon {
+	display:inline-block;
+	position:relative;
+	z-index:2;
+	width:17px;
+	height:15px;
+	margin-right:2px;
+	background:url(../img/ico/ico_tree.png) no-repeat 0 0;
+}
+.tree-menu .tree-list li li .link .icon {margin:-3px 6px 0 -7px;}
+.tree-menu .tree-list li .link .text {
+	display:inline-block;
+}
+
+.tree-menu .tree-list ul {
+	position:relative;
+	padding-left:8px;
+}
+.tree-menu .tree-list ul:before {
+	content:'';
+	position:absolute;
+	left:22px;top:-8px;bottom:0;
+	width:1px;
+	background-image:url(../img/bg/bg_tree01.png);
+	background-repeat:repeat-y;
+	background-position:0 0;
+}
+.tree-menu .tree-list ul ul:before {left:36px;bottom:0px/*16px*/;}
+
+.tree-menu .tree-list ul ul {padding-left:22px;}
+.tree-menu .tree-list li li .link {
+	padding-left:35px;
+	background:url(../img/bg/bg_tree02.png);
+	background-repeat:no-repeat;
+	background-position:14px 15px;
+}
+.tree-menu .tree-list > li > .link {padding-left:14px;}
+
+.tree-menu .tree-list li li {position:relative;}
+.tree-menu .tree-list li li:last-child:before {
+	content:'';
+	position:absolute;
+	left:0;top:16px;bottom:0;
+	width:16px;
+	background-color:#fff;
+}
+
+
+
 
 .sub-gnb .bottom-menu {
 	padding:30px 0 10px;
