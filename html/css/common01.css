@@ -747,6 +747,7 @@ select.styled1 {
 	gnb
 =========================================================================== */
 .gnb-wrap {
+	overflow:hidden;
 	position:fixed;
 	left:0; top:71px;bottom:50px;
 	width:220px;
@@ -807,13 +808,20 @@ select.styled1 {
 
 .gnb-wrap .depth1 {
 	display:none;
+	overflow:hidden;
 	position:fixed;
 	left:220px; top:71px; bottom:50px;
 	width:220px;
-	padding-top:12px;
 	box-sizing:border-box;
 	border-right:1px solid #e5e5e5;
 	background-color:#fafafa;
+}
+.gnb-wrap .depth1 .scroll-area {
+	overflow-y:auto;
+	height:100%;
+	margin-right:-20px;
+	padding-top:12px;
+	box-sizing:border-box;
 }
 .gnb-wrap .depth1 .depth1-title {
 	position:relative;
@@ -883,12 +891,12 @@ select.styled1 {
 
 /* 서브 gnb */
 .btn-gnb-toggle {
-	position:absolute;
-	left:0; top:50px;
+	position:fixed;
+	left:0; top:171px;
 	z-index:5;
 	height:50px;
-	width:100%;
-	margin-top:-50px;
+	width:219px;
+	margin-top:-100px;
 	outline:0;
 }
 .btn-gnb-toggle .text {
@@ -932,10 +940,10 @@ select.styled1 {
 
 .gnb-menu-box {
 	display:none;
+	overflow-y:auto;
 	position:absolute;
-	left:0; top:-100%;
+	left:0; right:-20px; top:-100%;
 	z-index:5;
-	width:100%;
 	height:100%;
 	padding-top:25px;
 	box-sizing:border-box;
@@ -943,6 +951,7 @@ select.styled1 {
 }
 
 .gnb-wrap .sub-gnb {
+	overflow:hidden;
 	position:absolute;
 	left:0; top:50px; bottom:0;
 	width:220px;
