@@ -914,7 +914,7 @@ select.styled1 {
 	background-color:#fafafa;
 }
 .gnb-wrap .depth1 .scroll-area {
-	overflow-y:auto;
+	overflow-y:scroll;
 	height:100%;
 	margin-right:-20px;
 	padding-top:12px;
@@ -1037,9 +1037,9 @@ select.styled1 {
 
 .gnb-menu-box {
 	display:none;
-	overflow-y:auto;
+	overflow-y:scroll;
 	position:absolute;
-	left:0; right:0; top:-100%;
+	left:0; right:-20px; top:-100%;
 	z-index:5;
 	height:100%;
 	padding-top:25px;
