@@ -723,6 +723,7 @@
 
 /* 모바일 */
 @media only screen and (max-width: 800px) {
+	.gnb-sliding {display:block;left:0;}
 	/* 레이아웃 */
 	.content {margin:-5px 0 0; padding-bottom:0;}
 	.container.main {padding:46px 0 50px 0;}
