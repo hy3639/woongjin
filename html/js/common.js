@@ -2,11 +2,13 @@ $(document).ready(function(){
 	/* ==========================================================================
 		GNB
 	========================================================================== */
-	resizeGnb();// GNB
+	//resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
 	dotdotdot();// 말줄임
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
+		$('.gnb-wrap .enscroll-track').parent('div').remove();//스크롤 제거
+
 		var winW = $(window).width();
 		$('.header').css({'z-index':'200'});
 		if(winW > 800){
@@ -19,6 +21,7 @@ $(document).ready(function(){
 			}else{
 				$(this).addClass('on');
 				$('.gnb-wrap').show().animate({left:0}, 300);
+				gnbSubScrl();// 스크롤 호출
 			}
 		}else{
 			$('.gnb-utill').show();
@@ -56,19 +59,35 @@ $(document).ready(function(){
 		}
 	});
 
-	/* 서브 gnb : 트리메뉴 */
+	/* 트리메뉴 */
 	$('.tree-list li').each(function(){
 		var len = $(this).children('ul').length;
 		if(len > 0){
 			$(this).children('.link').prepend('<button type="button" class="icon bgColor"></button>');
 		}
 	});
+	// 열려있는경우
+	$('.tree-menu.open').each(function(){
+		$(this).find('li, .link').addClass('on');
+		$(this).find('ul').show();
+	});
+	// 레이어 열고 닫기
 	$(document).on('click', '.tree-menu .link .icon', function(){
-		if($(this).closest('.item').hasClass('on')){
-			$('.item').removeClass('on').find('ul').slideUp(100);
+		if($(this).closest('li').hasClass('on')){
+			$(this).closest('.link').removeClass('on')
+				.closest('li').removeClass('on')
+				.children('ul').slideUp(100);
 		}else{
-			$(this).closest('.item').addClass('on').find('ul').slideDown(200);
+			$(this).closest('.link').addClass('on')
+				.closest('li').addClass('on')
+				.children('ul').slideDown(200);
 		}
+	});
+
+	// 우클릭 방지
+	$('.tree-menu .link').on('contextmenu', function() {
+		return false;
+		alert(0);
 	});
 
 	// 모바일
@@ -82,16 +101,16 @@ $(document).ready(function(){
 		}
 	});
 
-	gnbScrl(); //gnb 스크롤
+	gnbSubScrl(); //gnb 스크롤 :서브
 
 	// 서브 gnb 토클버튼
 	$('.btn-gnb-toggle').click(function(){
+		$('.gnb-wrap .enscroll-track').parent('div').remove();//스크롤 제거
 		if($(this).hasClass('on')){
 			$('.gnb-menu-box').animate({top:'-100%'}, 300, function(){
 				$(this).hide();
 			});
 			$(this).removeClass('on').animate({top:50}, 300);
-			$('.gnb-wrap .enscroll-track').parent('div').remove();
 		}else{
 			$('.gnb-menu-box').show().animate({top:0}, 300);
 			$(this).addClass('on').animate({top:'100%'}, 300);
@@ -382,16 +401,16 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-	resizeGnb();// GNB
+	//resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
 	selectWid();// 셀렉트 박스넓이 설정
 });
 
 
-/* GNB 해상도에 따른 분기처리 */
+/* GNB 해상도에 따른 분기처리 
 function resizeGnb(){
 	var winW = $(window).width();
-	if(winW > 1100){
+	if(winW > 800){
 		$('.header').attr('class', 'header web');
 		$('.depth1, .gnb-utill').removeAttr('style');
 
@@ -405,6 +424,7 @@ function resizeGnb(){
 		$('.gnb-menu-box').removeAttr('style');
 	}
 }
+*/
 
 /* 셀렉트박스 디자인 */
 function selectStyled(){
@@ -458,6 +478,16 @@ function resizeMid(){
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
+		/* gnb */
+		$('.header').attr('class', 'header web');
+		$('.depth1, .gnb-utill').removeAttr('style');
+
+		$('.gnb-wrap .gnb-list .gnb-item').mouseenter(function(){
+			$(this).find('.gnb-title').addClass('bgColor');
+		}).mouseleave(function(){
+			$(this).find('.gnb-title').removeClass('bgColor');
+		});
+
 		/* 모바일 전용 gnb 메뉴 복사 제거 */
 		$('.gnb-select').remove();
 
@@ -501,6 +531,10 @@ function resizeMid(){
 		textRemove();
 	}else{
 		/* 모바일 ================================================================= */
+		/* gnb */
+		$('.header').attr('class', 'header mobile');
+		$('.gnb-menu-box').removeAttr('style');
+
 		/*
 			gnb 영역 컨텐츠로 이동
 		*/
@@ -595,6 +629,17 @@ function gnbScrl(){
 	});
 	// 투뎁스 스크롤
 	$('.web .depth1').each(function(){
+		$(this).enscroll({
+			verticalTrackClass: 'track',
+			verticalHandleClass: 'handle',
+			minScrollbarLength: 28
+		});
+	});
+}
+
+//gnb 스크롤 :서브
+function gnbSubScrl(){
+	$('.web .sub-gnb .depth1').each(function(){
 		$(this).enscroll({
 			verticalTrackClass: 'track',
 			verticalHandleClass: 'handle',
