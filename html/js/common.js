@@ -98,20 +98,19 @@ $(document).ready(function(){
 	});
 
 	// 우클릭 방지
-	$('.tree-menu .link').on('contextmenu', function() {
+	$('.tree-menu .link .text').on('contextmenu', function() {
 		return false;
-		alert(0);
 	});
 	// 컨텍트 메뉴 노출
-	$('.tree-menu .link').mousedown(function(e){
+	$('.tree-menu .link .text').mousedown(function(e){
 		if(e.which == 3){
 			var boxT = $(this).closest('.tree-menu').offset().top;
-			var linkT = $(this).offset().top;
+			var linkT = $(this).closest('.link').offset().top;
 			var top = linkT - boxT + 30;
 
 			var boxL = $(this).closest('.tree-menu').offset().left;
-			var linkL = $(this).find('.text').offset().left;
-			var ico = $(this).find('.icon').outerWidth();
+			var linkL = $(this).closest('.link').find('.text').offset().left;
+			var ico = $(this).closest('.link').find('.icon').outerWidth();
 			var left = linkL - boxL + ico;
 			console.log(top);
 
