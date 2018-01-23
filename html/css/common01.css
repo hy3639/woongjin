@@ -629,12 +629,12 @@ select.styled1 {
 	position:absolute;
 	left:0;top:0;
 	z-index:5;
-	width:200px;
 	padding-left: 20px;
 	border-bottom:1px solid #e5e5e5;
 }
 .header .logo a {
 	display:block;
+	width:120px;
 	height:70px;
 	background:url(../img/layout/site_logo.png) no-repeat 0 0;
 	font-size:0;
@@ -1052,7 +1052,6 @@ select.styled1 {
 	position:absolute;
 	left:0; top:50px; bottom:0;
 	width:220px;
-	padding-top: 12px;
 	box-sizing: border-box;
 	border-right: 1px solid #e5e5e5;
 	background-color: #fafafa;
@@ -1066,12 +1065,14 @@ select.styled1 {
 	padding-top:0;
 	border:0;
 }
+.gnb-wrap .sub-gnb .scroll-area {padding-top:0;}
 
 /* 트리 리스트 */
 .tree-menu {
+	position:relative;
+	padding:17px 25px;
 	border:1px solid #eee;
 	background-color:#fff;
-	padding:17px 25px;
 }
 .tree-menu .tree-list {
 	margin-left:-14px;
@@ -1153,6 +1154,27 @@ select.styled1 {
 .sub-gnb .tree-menu .tree-list > li > .link .text {padding-left:0;}
 .sub-gnb .tree-menu .tree-list > li > .link .icon {display:none;}
 .sub-gnb .tree-menu .tree-list li li .link .text {color:#666;}
+
+/* 트리 컨텍스트메뉴 */
+.contextmenu {
+	display:none;
+	position:absolute;
+	z-index:5;
+	width:150px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.contextmenu .list {padding:13px 20px;}
+.contextmenu .list li {}
+.contextmenu .list li a {
+	display:block;
+	padding:4px 0;
+}
+.contextmenu .list li a:hover {
+	color:#333;
+	text-decoration:underline;
+}
 
 
 

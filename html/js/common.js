@@ -99,6 +99,34 @@ $(document).ready(function(){
 		return false;
 		alert(0);
 	});
+	// 컨텍트 메뉴 노출
+	$('.tree-menu .link').mousedown(function(e){
+		if(e.which == 3){
+			var boxT = $(this).closest('.tree-menu').offset().top;
+			var linkT = $(this).offset().top;
+			var top = linkT - boxT + 30;
+
+			var boxL = $(this).closest('.tree-menu').offset().left;
+			var linkL = $(this).find('.text').offset().left;
+			var ico = $(this).find('.icon').outerWidth();
+			var left = linkL - boxL + ico;
+			console.log(top);
+
+			$(this).closest('.tree-menu').find('.contextmenu').hide().fadeIn(200).css({'left':left, 'top':top});
+			if($(this).hasClass('noDel')){
+				$(this).closest('.tree-menu').find('.contextmenu .del').hide();
+			}else{
+				$(this).closest('.tree-menu').find('.contextmenu .del').show();
+			}
+		}
+	});
+	// 컨텍스트메뉴 닫기
+	$(document).mouseup(function (e) {
+		var conMunu = $('.tree-menu .link a.text');
+		if (!conMunu.is(e.target) && conMunu.has(e.target).length === 0){
+			$('.contextmenu').hide();
+		}
+	});
 
 	// 모바일
 	$(document).on('click', '.mobile .gnb-item .gnb-title', function(e){
