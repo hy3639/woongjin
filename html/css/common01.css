@@ -1034,7 +1034,7 @@ select.styled1 {
 	display:none;
 	overflow-y:auto;
 	position:absolute;
-	left:0; right:-20px; top:-100%;
+	left:0; right:0; top:-100%;
 	z-index:5;
 	height:100%;
 	padding-top:25px;
