@@ -29,6 +29,90 @@
 	text-indent:-9999px;
 	line-height:0;
 }
-.mobile.header .utill {right:140px;}
+.btn-naver {
+	display:block;
+	position:absolute;
+	right:140px;top:0;
+	width:70px;
+	height:70px;
+	border-left:1px solid #e5e5e5;
+	background-image:url(../img/mobile/btn/btn_naver.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.header .utill .naver-list {
+	display: none;
+	position: absolute;
+	right: -71px;
+	top:70px;
+	overflow:inherit;
+	float:left;
+	width: 300px;
+	padding:14px;
+	background-color:#fff;
+	border:1px solid #bbb;
+}
+.header .utill .naver-list.on {display: block;}
+.header .utill .naver-list .btn-close2 {
+	display: block;
+}
+.header .utill .naver-list:after {
+	content: '';
+  display: block;
+  width: 100%;
+	height:1px;
+	background-color: #eee;
+	position: absolute;
+	top:50%;
+	left: 0;right: 0;
+}
+.header .utill .naver-list:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top:-8px;
+	right: 28px;
+	width: 14px;
+	height: 8px;
+	background:url(../img/bg/bg_user.png) no-repeat 0 0;
+}
+.header .utill .naver-list .link {
+	float:left;
+	position:relative;
+	width:25%;
+	height:70px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.header .utill .naver-list .link1 {background-image:url(../img/mobile/ico/ico_n01_t.png);}
+.header .utill .naver-list .link2 {background-image:url(../img/mobile/ico/ico_n02_t.png);}
+.header .utill .naver-list .link3 {background-image:url(../img/mobile/ico/ico_n03_t.png);}
+.header .utill .naver-list .link4 {background-image:url(../img/mobile/ico/ico_n04_t.png);}
+.header .utill .naver-list .link5 {background-image:url(../img/mobile/ico/ico_n05_t.png);}
+.header .utill .naver-list .link6 {background-image:url(../img/mobile/ico/ico_n06_t.png);}
+.header .utill .naver-list .link7 {background-image:url(../img/mobile/ico/ico_n07_t.png);}
+.header .utill .naver-list .link .len {
+	display:block;
+	position:absolute;
+	right:11px; top:12px;
+	width:23px;
+	height:24px;
+	border-radius:50%;
+	background-color:#ff5349;
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+	text-indent:0;
+	line-height:24px;
+}
+
+.mobile.header .utill {right:210px;}
+.header .utill .user-menu {right: -1px;}
 
 .title-wrap {display:block;}

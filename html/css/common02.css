@@ -613,6 +613,7 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
+.mobile.header .utill {right:0;}
 .header.mobile .btn-search {
 	position:absolute;
 	top:0; right:45px;
@@ -632,6 +633,7 @@ select.styled1 {
 	position:absolute;
 	right:0; top:0;
 	width:45px;
+
 	height:45px;
 	border-left:1px solid #e5e5e5;
 	background-image:url(../img/mobile/btn/btn_gnb.png);
@@ -642,6 +644,7 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
+.header .btn-naver {display: none;}
 
 /* ===========================================================================
 	gnb
