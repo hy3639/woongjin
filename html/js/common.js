@@ -82,6 +82,8 @@ $(document).ready(function(){
 		}
 	});
 
+	gnbScrl(); //gnb 스크롤
+
 	// 서브 gnb 토클버튼
 	$('.btn-gnb-toggle').click(function(){
 		if($(this).hasClass('on')){
@@ -93,22 +95,7 @@ $(document).ready(function(){
 		}else{
 			$('.gnb-menu-box').show().animate({top:0}, 300);
 			$(this).addClass('on').animate({top:'100%'}, 300);
-			// 원뎁스 스크롤
-			$('.web .gnb-menu-box').each(function(){
-				$(this).enscroll({
-					verticalTrackClass: 'track',
-					verticalHandleClass: 'handle',
-					minScrollbarLength: 28
-				});
-			});
-			// 투뎁스 스크롤
-			$('.web .depth1').each(function(){
-				$(this).enscroll({
-					verticalTrackClass: 'track',
-					verticalHandleClass: 'handle',
-					minScrollbarLength: 28
-				});
-			});
+			gnbScrl();
 		}
 	});
 
@@ -592,5 +579,26 @@ function textRemove(){
 		var textReplace = text.replace('월', '');
 		var value = $(this).closest('select').val();
 		$(this).text(textReplace).closest('.selectWrap').find('.selTitle').text(value);
+	});
+}
+
+
+/* gnb 스크롤 */
+function gnbScrl(){
+	// 원뎁스 스크롤
+	$('.web .gnb-menu-box').each(function(){
+		$(this).enscroll({
+			verticalTrackClass: 'track',
+			verticalHandleClass: 'handle',
+			minScrollbarLength: 28
+		});
+	});
+	// 투뎁스 스크롤
+	$('.web .depth1').each(function(){
+		$(this).enscroll({
+			verticalTrackClass: 'track',
+			verticalHandleClass: 'handle',
+			minScrollbarLength: 28
+		});
 	});
 }

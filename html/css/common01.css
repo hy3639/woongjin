@@ -8,6 +8,9 @@
 .wrapper {}
 .content {padding-bottom:80px;}
 
+/* 컨텐츠 마진 */
+.section {margin:0 50px;}
+
 /* 웹에서 숨김처리 */
 .wHide {display:none;}
 
@@ -2827,10 +2830,6 @@ select.styled1 {
 	text-align:center;
 	line-height:50px;
 }
-.layout-portlet .cont-box {}
-.layout-portlet .cont-box {}
-.layout-portlet .cont-box {}
-.layout-portlet {}
 
 .drag-area {
 	background:url(../img/bg/bg_layout_drag.png) repeat-y 0 0;
@@ -2850,6 +2849,7 @@ select.styled1 {
 .drag-area .drag-box.ui-sortable-helper {
 	border-color:#ff5349;
 	background-color:#ff5349;
+	box-shadow:1px 3px 6px rgba(0,0,0,.4);
 	color:#fff;
 	opacity:.7;
 }
