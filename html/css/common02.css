@@ -2432,3 +2432,7 @@ select.styled1 {
 	text-align: left;
 }
 .board-list2 .type2 .td-area .category {padding-top: 5px;}
+.myspace .btn-wrap.wide {
+	margin-left:10px !important;
+	margin-right:10px !important;
+}
