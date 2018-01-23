@@ -75,6 +75,9 @@ $(document).ready(function(){
 		if(len > 0){
 			$(this).children('.link').prepend('<button type="button" class="icon bgColor"></button>');
 		}
+		if($(this).hasClass('on')){
+			$(this).children('ul').show();
+		}
 	});
 	// 열려있는경우
 	$('.tree-menu.open').each(function(){

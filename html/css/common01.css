@@ -924,6 +924,7 @@ select.styled1 {
 	position:relative;
 	height:63px;
 	box-sizing:border-box;
+	border-bottom:1px solid #eaeaea;
 }
 .gnb-wrap .depth1 .depth1-title .text {
 	position:absolute;
@@ -938,7 +939,6 @@ select.styled1 {
 	padding:10px 0;
 	box-sizing:border-box;
 }
-.gnb-wrap .depth1 .depth1-title + .depth1-list {border-top:1px solid #eaeaea;}
 
 .gnb-wrap .depth1 .depth1-list .depth1-item {}
 .gnb-wrap .depth1 .depth1-list .depth1-item .d-title {
@@ -1146,10 +1146,14 @@ select.styled1 {
 }
 
 /* 서브메인 트리 리스트 */
-.sub-gnb .tree-menu {
-	margin:0 25px;
-	padding:12px 20px;
+.sub-gnb .tree-menu-box {
+	position:relative;
+	z-index:5;
+	margin-top:-1px;
+	padding:0 25px;
+	background-color:#fafafa;
 }
+.sub-gnb .tree-menu {padding:12px 20px;}
 .tree-menu .tree-list ul ul {display:none;}
 .sub-gnb .tree-menu .tree-list > li > .link .text {padding-left:0;}
 .sub-gnb .tree-menu .tree-list > li > .link .icon {display:none;}
