@@ -2354,12 +2354,17 @@ select.styled1 {
 
 /* 나의워크스페이스 */
 .myspace .tab-list1 {margin:0;}
-.myspace .sorting-area {border-bottom:1px solid #eee;height:35px;}
+.myspace .sorting-area {
+	height:35px;
+	margin: 0;
+	border-bottom:1px solid #eee;
+}
+.myspace .sorting-area .left-box {left: 20px;}
 .myspace .sorting-area .left-box .all-len {line-height: 35px;}
 .board-list2 .th-area {
 	display: none;
 }
-
+.board-list2 .checkWrap {margin-bottom: 5px;}
 .board-list2 .num {
 	display:inline-block;
 	border:1px solid #e5e5e5;
@@ -2367,14 +2372,13 @@ select.styled1 {
 }
 .board-list2 .category {
 	display: block;
-	margin-top: 5px;
 	font-size: 12px;
 	color:#333;
 
 }
 .board-list2 .title {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 
 }
 .board-list2 .title a {
@@ -2386,6 +2390,7 @@ select.styled1 {
 .board-list2 .status {display: block;}
 .board-list2 .date {display: block;}
 .board-list2 .level {display: block;}
+.board-list2 .status {display: block;}
 .board-list2 .setting {
 	position: absolute;
 	right: 20px;
@@ -2400,6 +2405,7 @@ select.styled1 {
 	border-bottom: 2px solid #fafafa;
 	box-sizing: border-box;
 }
+.board-list2 .td-area:last-child {border-bottom: 0}
 .board-list2 .td-area:before {
 	content: '';
   position: absolute;
@@ -2410,11 +2416,23 @@ select.styled1 {
   height: 1px;
   background-color: #e5e5e5;
 }
-
+.board-list2 .td-area:last-child:before {
+	display: none;
+}
+.board-list2 .td-area span {
+	margin-top: 2px;
+}
+.board-list2 .td-area span:first-child {margin-top: 0}
 .board-list2 .td-area .title {
+	margin-top: 0;
 	max-width: 100%;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	text-align: left;
+}
+.board-list2 .type2 .td-area .category {padding-top: 5px;}
+.myspace .btn-wrap.wide {
+	margin-left:10px !important;
+	margin-right:10px !important;
 }

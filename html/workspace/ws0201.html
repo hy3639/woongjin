@@ -226,10 +226,10 @@
 									<li class="depth2-item"><a href="#">Community</a></li>
 								</ul>
 							</li>
-							<li class="depth1-item">
+							<li class="depth1-item on">
 								<a href="#" class="d-title">나의 메뉴</a>
 								<ul class="depth2-list">
-									<li class="depth2-item"><a href="#">나의 워크스페이스</a></li>
+									<li class="depth2-item on"><a href="#">나의 워크스페이스</a></li>
 									<li class="depth2-item"><a href="#">나의 신청내역</a></li>
 								</ul>
 							</li>
@@ -273,9 +273,8 @@
 					<button type="button" class="btn-search">검색</button>
 				</div>
 			</div>
-			<!-- 목록 보기 -->
 			<div class="myspace type2">
-				<!-- 목록 -->
+				<!-- Pc 컨텐츠  -->
 				<div class="board-list1 mHide">
 					<table>
 						<caption>회원가입신청 게시판</caption>
@@ -291,14 +290,14 @@
 						</colgroup>
 						<thead>
 							<tr>
-								<th scope="col"  class="order"><button type="button" class="btn-order">번호<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="order"><button type="button" class="btn-order">유형<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="title order"><button type="button" class="btn-order">워크스페이스<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="order"><button type="button" class="btn-order">시샵명<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="order"><button type="button" class="btn-order">상태<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="order"><button type="button" class="btn-order">가입일<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="order"><button type="button" class="btn-order">회원레벨<span><em>내림차순</em></span></button></th>
-								<th scope="col" class="order"><button type="button" class="btn-order">기본설정<span><em>내림차순</em></span></button></th>
+								<th scope="col"  class="order"><button type="button" class="btn-order">번호<span><em>정렬</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">유형<span><em>정렬</em></span></button></th>
+								<th scope="col" class="title order"><button type="button" class="btn-order">워크스페이스<span><em>정렬</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">시샵명<span><em>정렬</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">상태<span><em>정렬</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">가입일<span><em>정렬</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">회원레벨<span><em>정렬</em></span></button></th>
+								<th scope="col" class="order"><button type="button" class="btn-order">기본설정<span><em>정렬</em></span></button></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -315,18 +314,37 @@
 						</tbody>
 					</table>
 				</div>
+				<!-- 페이징 -->
+				<div class="paging mHide">
+					<a href="#" class="btn first">처음</a>
+					<a href="#" class="btn prev">이전</a>
+					<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+					<a href="#" class="page">2</a>
+					<a href="#" class="page">3</a>
+					<a href="#" class="page">4</a>
+					<a href="#" class="page">5</a>
+					<a href="#" class="page">6</a>
+					<a href="#" class="page">7</a>
+					<a href="#" class="page">8</a>
+					<a href="#" class="page">9</a>
+					<a href="#" class="page">10</a>
+					<a href="#" class="btn next">다음</a>
+					<a href="#" class="btn end">마지막</a>
+				</div>
+				<!--// PC 컨텐츠  -->
+				<!-- Mobile 컨텐츠  -->
 				<div class="board-list2 wHide">
-					<ul>
+					<ul class="type2">
 						<li class="th-area">
 							<!-- <span class=""><input type="checkbox" class="styled1"></span> -->
-							<span class="num order"><button type="button" class="btn-order">번호<span><em>내림차순</em></span></button></span>
-							<span class="category order"><button type="button" class="btn-order">유형<span><em>내림차순</em></span></button></span>
-							<span class="title order"><button type="button" class="btn-order">워크스페이스<span><em>내림차순</em></span></button></span>
-							<span class="name order"><button type="button" class="btn-order">시샵명<span><em>내림차순</em></span></button></span>
-							<span class="status order"><button type="button" class="btn-order">상태<span><em>내림차순</em></span></button></span>
-							<span class="date order"><button type="button" class="btn-order">가입일<span><em>내림차순</em></span></button></span>
-							<span class="level order"><button type="button" class="btn-order">회원레벨<span><em>내림차순</em></span></button></span>
-							<span class="setting order"><button type="button" class="btn-order">기본설정<span><em>내림차순</em></span></button></span>
+							<span class="num order"><button type="button" class="btn-order">번호<span><em>정렬</em></span></button></span>
+							<span class="category order"><button type="button" class="btn-order">유형<span><em>정렬</em></span></button></span>
+							<span class="title order"><button type="button" class="btn-order">워크스페이스<span><em>정렬</em></span></button></span>
+							<span class="name order"><button type="button" class="btn-order">시샵명<span><em>정렬</em></span></button></span>
+							<span class="status order"><button type="button" class="btn-order">상태<span><em>정렬</em></span></button></span>
+							<span class="date order"><button type="button" class="btn-order">가입일<span><em>정렬</em></span></button></span>
+							<span class="level order"><button type="button" class="btn-order">회원레벨<span><em>정렬</em></span></button></span>
+							<span class="setting order"><button type="button" class="btn-order">기본설정<span><em>정렬</em></span></button></span>
 						</li>
 						<li class="td-area">
 							<!-- <span><input type="checkbox" class="styled1"></span> -->
@@ -374,23 +392,10 @@
 						</li>
 					</ul>
 				</div>
-				<!-- 페이징 -->
-				<div class="paging mHide">
-					<a href="#" class="btn first">처음</a>
-					<a href="#" class="btn prev">이전</a>
-					<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
-					<a href="#" class="page">2</a>
-					<a href="#" class="page">3</a>
-					<a href="#" class="page">4</a>
-					<a href="#" class="page">5</a>
-					<a href="#" class="page">6</a>
-					<a href="#" class="page">7</a>
-					<a href="#" class="page">8</a>
-					<a href="#" class="page">9</a>
-					<a href="#" class="page">10</a>
-					<a href="#" class="btn next">다음</a>
-					<a href="#" class="btn end">마지막</a>
+				<div class="btn-more wHide">
+					<button type="button"><span>더보기</span></button>
 				</div>
+				<!--// Mobile 컨텐츠  -->
 			</div>
 		</div>
 	</div>
