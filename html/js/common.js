@@ -116,9 +116,9 @@ $(document).ready(function(){
 
 			$(this).closest('.tree-menu').find('.contextmenu').hide().fadeIn(200).css({'left':left, 'top':top});
 			if($(this).closest('.link').hasClass('noDel')){
-				$(this).closest('.tree-menu').find('.contextmenu .del').hide();
+				$(this).closest('.tree-menu').find('.del').hide();
 			}else{
-				$(this).closest('.tree-menu').find('.contextmenu .del').show();
+				$(this).closest('.tree-menu').find('.del').show();
 			}
 		}
 	});
@@ -562,10 +562,6 @@ function resizeMid(){
 		/*
 			gnb 영역 컨텐츠로 이동
 		*/
-		/* 상단 트리메뉴 */
-		$('.depth-top .tree-menu').each(function(){
-			$('.content .title-wrap').prepend('<div class=""></div>');
-		});
 
 		/* 하단메뉴 */
 		$('.gnb-select').remove();
