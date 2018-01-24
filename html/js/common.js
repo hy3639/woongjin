@@ -70,6 +70,10 @@ $(document).ready(function(){
 	});
 
 	/* 트리메뉴 */
+	// 현재 선택된 메뉴 표시
+	$('.tree-menu .tree-list li li .link .text.fColor').each(function(){
+		$(this).parents('li').addClass('on');
+	});
 	$('.tree-list li').each(function(){
 		var len = $(this).children('ul').length;
 		if(len > 0){
@@ -98,7 +102,7 @@ $(document).ready(function(){
 	});
 
 	// 우클릭 방지
-	$('.tree-menu .link .text').on('contextmenu', function() {
+	$('.content .tree-menu .link .text').on('contextmenu', function() {
 		return false;
 	});
 	// 컨텍스트 메뉴 노출
@@ -116,9 +120,9 @@ $(document).ready(function(){
 
 			$(this).closest('.tree-menu').find('.contextmenu').hide().fadeIn(200).css({'left':left, 'top':top});
 			if($(this).closest('.link').hasClass('noDel')){
-				$(this).closest('.tree-menu').find('.contextmenu .del').hide();
+				$(this).closest('.tree-menu').find('.del').hide();
 			}else{
-				$(this).closest('.tree-menu').find('.contextmenu .del').show();
+				$(this).closest('.tree-menu').find('.del').show();
 			}
 		}
 	});
@@ -142,9 +146,9 @@ $(document).ready(function(){
 	});
 
 	// 페이지 로드시 현재메뉴 표시
-	$('.sub-gnb .depth1-item').each(function(){
+	$('.sub-gnb .depth2-item').each(function(){
 		if($(this).hasClass('on')){
-			$(this).find('.depth2-list').show()
+			$(this).closest('.depth2-list').show()
 				.siblings('.d-title').addClass('fColor').find('.icon').addClass('bgColor');
 		}
 	});
@@ -562,10 +566,6 @@ function resizeMid(){
 		/*
 			gnb 영역 컨텐츠로 이동
 		*/
-		/* 상단 트리메뉴 */
-		$('.depth-top .tree-menu').each(function(){
-			$('.content .title-wrap').prepend('<div class=""></div>');
-		});
 
 		/* 하단메뉴 */
 		$('.gnb-select').remove();
