@@ -1014,7 +1014,7 @@ select.styled1 {
 .btn-gnb-toggle {
 	position:absolute;
 	left:0; top:50px;
-	z-index:5;
+	z-index:15;
 	height:50px;
 	width:219px;
 	margin-top:-50px;
