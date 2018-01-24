@@ -324,6 +324,7 @@ select.styled1 {
 	line-height:35px;
 }
 .year-month-select .select-area .select-box {}
+.year-month-select .select-area .select-box {}
 .year-month-select .swung-dash {
 	position:absolute;
 	left:260px;top:0;
@@ -532,6 +533,16 @@ select.styled1 {
 
 .btn-icon-text.icon03.bgColor .text {color:#fff !important;}
 .btn-icon-text.icon03.bgColor .text .icon {background-color:transparent !important;background-position:0 -15px;}
+
+/*04*/
+.btn-icon-text.icon04 .text {padding-left:40px;}
+.btn-icon-text.icon04 .text:before {
+	left:14px;
+	width:18px;
+	height:17px;
+	margin-top:-9px;
+	background-image:url(../img/btn/btn_ico06.png);
+}
 
 /*
 	아이콘 버튼
@@ -1441,6 +1452,33 @@ select.styled1 {
 .sorting-area + .list-view .board-list1,
 .sorting-area + .list-view .list-type .board-list1 {border-top:0;}
 
+/* 리스트(통계) 테이블 */
+.board-list3 {border:1px solid #eee;}
+.board-list3 table {width: 100%;}
+.board-list3 table caption {display: none;}
+.board-list3 table thead th {
+	padding:18px 0;
+	border-bottom: 1px solid #eee;
+	border-left:1px solid #eee;
+	font-size:14px;
+	color:#333;
+}
+.board-list3 table thead th:first-child {border-left: 0}
+.board-list3 table thead tr:first-child th {font-weight: 700;}
+
+.board-list3 table tbody td {
+	padding:18px 0;
+	color:#666;
+	font-size:13px;
+	text-align:center;
+	border-left:1px solid #eee;
+	border-bottom: 1px solid #eee;
+	/* line-height:22px; */
+}
+.board-list3 table tbody td:first-child {border-left: 0}
+.board-list3 table tbody tr:last-child td {border-bottom: 0}
+
+
 /* 쓰기 테이블 */
 .board-write1 {
 	margin:0 50px;
@@ -2008,12 +2046,9 @@ select.styled1 {
 .date-text {
 	display:inline-block;
 	position:relative;
-	z-index:100;
 	width:160px;
 	background-color:#fff;
 }
-.date-text.on {z-index:105;}
-.date-text.weekType {width:224px;}
 .date-text:before {
 	content:'';
 	position:absolute;
@@ -2053,6 +2088,10 @@ select.styled1 {
 }
 
 /* 데이트피커 */
+.date-text {
+	position:relative;
+	z-index:100;
+}
 .calendar-layer {
 	display:none;
 	position:absolute;
@@ -2132,22 +2171,13 @@ select.styled1 {
 	height:28px;
 	line-height:28px;
 }
-
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td.ui-datepicker-week-end a {color:#ff0000;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:#eee; color:#333;}
 
-/* 주단위 선택 달력 */
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:transparent;}
-
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a,
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a.ui-state-active {background-color:#e0f1ff ;}
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
-.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar a.ui-state-highlight {
-	background-color:#eee;
-	color:#333;
-}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a {background-color:#e0f1ff ;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
+.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
 
 .week-setting-box {
 	position:relative;
@@ -3072,8 +3102,6 @@ select.styled1 {
 	margin:15px 0 5px;
 }
 
-/*주간보고 등록*/
-
 /* 레이아웃 설정 */
 .layout-portlet {padding-bottom:0;}
 .layout-portlet .week-box {
@@ -3178,5 +3206,9 @@ select.styled1 {
 	margin:0;
 	border-bottom: 0;
 }
+
+/* 활동통계 */
+.stats .board-list3 {margin-top: 40px;}
+
 
 .blt-text1 + .web-editer {margin-top:15px;}
