@@ -266,7 +266,7 @@ $(document).ready(function(){
 	// 기본설정
 	$('.datepicker').each(function(){
 		if($(this).closest('.date-text').hasClass('weekType')){
-			
+			// 주단위 날짜설정
 		}else{
 			var alt = $(this).closest('.date-text').find('.btn-calendar input');
 		}
