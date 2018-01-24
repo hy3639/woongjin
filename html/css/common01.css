@@ -69,9 +69,34 @@
 .board-value .value-list-box .value-list .item a .fColor {font-weight:700;}
 
 /* 불릿 텍스트 */
-.blt-text1 {
+.blt-text1,
+.blt-text2 {
 	padding-left:25px;
-	background:url(../img/ico/ico_blt01.png) no-repeat 0 2px;
+	background-image:url(../img/ico/ico_blt01.png);
+	background-repeat:no-repeat;
+	background-position:0 2px;
+}
+.blt-text2 {
+	color:#333;
+	font-size:15px;
+	font-weight:700;
+	background-position:0 3px;
+}
+
+/* 불릿 리스트 */
+.blt-list1 {}
+.blt-list1 .item {
+	position:relative;
+	padding:4px 0 4px 10px;
+}
+.blt-list1 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	width:3px;
+	height:3px;
+	margin-top:-2px;
+	background-color:#bbb;
 }
 
 /* ===========================================================================
@@ -1106,7 +1131,7 @@ select.styled1 {
 	display:none;
 	content:'';
 	position:absolute;
-	left:1px; top:5px;bottom:3px;
+	left:1px; top:11px;bottom:3px;
 	width:1px;
 	background:url(../img/bg/bg_tree01.png) repeat-y 0 0;
 }
@@ -3006,16 +3031,35 @@ select.styled1 {
 	opacity:.7;
 }
 
+/* 관리자 메뉴 > 게시판관리 */
+.board-setting {
+	position:relative;
+	padding-left:340px;
+	margin:0 50px;
+}
+.board-setting .tree-menu {
+	position:absolute;
+	left:0;top:0;
+	width:300px;
+	box-sizing:border-box;
+}
+.board-setting .notice-area {}
+.board-setting .notice-area .title {
+	margin-top:18px;
+	padding:20px 0 14px;
+	border-top:1px solid #eee;
+	color:#333;
+	font-size:14px;
+}
+.board-setting .notice-area .blt-text2 + .title {margin-top:22px;}
+
 /* 나의워크스페이스 */
 .myspace {margin:0 50px;}
 .myspace.type2 {margin-top: 40px;}
-.myspace .tab-list1{
-	margin: 0;
-}
+.myspace .tab-list1{margin: 0;}
 .myspace .tabContent {margin:0;}
 .myspace .top-search-box {margin: 40px 0 0 0;}
 .myspace .sorting-area {
 	margin:0;
 	border-bottom: 0;
-
 }

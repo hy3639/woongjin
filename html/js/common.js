@@ -98,7 +98,7 @@ $(document).ready(function(){
 	});
 
 	// 우클릭 방지
-	$('.tree-menu .link .text').on('contextmenu', function() {
+	$('.content .tree-menu .link .text').on('contextmenu', function() {
 		return false;
 	});
 	// 컨텍스트 메뉴 노출
