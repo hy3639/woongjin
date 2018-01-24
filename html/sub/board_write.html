@@ -44,7 +44,6 @@
 					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
 					<a href="#" class="link link6"><span class="text">설문조사</span></a>
 					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
-					<a href="#" class="link link8"><span class="text">포탈관리자</span></a>
 				</div>
 			</div>
 			<!-- gnb -->
@@ -324,7 +323,7 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th scope="row"><label for="Text01">제목<span class="fColor important">*</span></label></th>
+							<th scope="row"><label for="Text01">제목<span class="important">*</span></label></th>
 							<td>
 								<input type="text" id="Text01" class="required" style="width:428px;" placeholder="제목을 입력해주세요">
 								<div class="form-box">
@@ -405,14 +404,15 @@
 								<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 또는 'Enter'로 구분해주세요.</p>
 							</td>
 						</tr>
-						<tr>
+						<tr class="empty">
 							<th scope="row">세부내용</th>
-							<td>
+							<td colspan="2">
 								<!-- 에딧터 영역 -->
-								<div class="wdb-editer">
-									<img src="../img/temp/@editer.gif" alt="" style="width:100%;max-width:730px;">
+								<div class="web-editer mHide">
+									<img src="../img/temp/@editer.gif" alt="" style="width:100%;height:370px;">
 								</div>
 								<!-- //에딧터 영역 -->
+								<textarea cols="" rows="" placeholder="내용을 입력해 주세요." class="wHide" style="height:150px;"></textarea>
 							</td>
 						</tr>
 						<tr>

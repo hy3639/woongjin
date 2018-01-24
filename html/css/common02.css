@@ -5,7 +5,7 @@
 /* ===========================================================================
 	레이아웃
 =========================================================================== */
-.container {padding:46px 0 0;}
+.mobile .container {padding:71px 0 60px;}
 .content {margin:-25px 0 0; padding-bottom:30px;}
 
 .footer {
@@ -37,7 +37,8 @@ input[type=text] + .form-box,
 .required-box .message {display:none !important;}
 
 textarea {
-	padding:20px;
+	width:100%;
+	padding:10px;
 	border:1px solid #e5e5e5;
 	box-sizing: border-box;
 	resize: none;
@@ -613,8 +614,8 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.mobile.header .utill {right:0;}
-.header.mobile .btn-search {
+.mobile .header .utill {right:0;}
+.mobile .header .btn-search {
 	position:absolute;
 	top:0; right:45px;
 	width:45px;
@@ -645,10 +646,10 @@ select.styled1 {
 }
 .header .btn-naver {display: none;}
 
-.mobile.header .utill .user-menu {display:none;}
-.mobile.header .utill .user-menu.on {display: block;}
+.mobile .header .utill .user-menu {display:none;}
+.mobile .header .utill .user-menu.on {display: block;}
 
-.mobile.header .utill .user-menu .user {
+.mobile .header .utill .user-menu .user {
 	padding:20px 0 20px 60px;
 	box-sizing: border-box;
 }
@@ -659,24 +660,24 @@ select.styled1 {
 	font-size: 15px;
 	font-weight: 700;
 }
-.mobile.header .utill .user-menu .user .txt-area .info {
+.mobile .header .utill .user-menu .user .txt-area .info {
 	margin-bottom: 13px;
 	font-size: 12px;
 	color:#999;
 }
-.mobile.header .utill .user-menu .user .txt-area .btn-admin {
+.mobile .header .utill .user-menu .user .txt-area .btn-admin {
 	background:url(../img/btn/btn_admin.png) no-repeat 0 0;
 	padding-left: 20px;
 	font-size: 12px;
 	color:#999;
 	font-weight: normal;
 }
-.mobile.header .utill .user-menu .btn-area {
+.mobile .header .utill .user-menu .btn-area {
 	overflow: hidden;
 	border-top: 1px solid #eee;
 	background-color: #fafafa;
 }
-.mobile.header .utill .user-menu .btn-area a {
+.mobile .header .utill .user-menu .btn-area a {
 	float: left;
 	display: block;
 	width: 33.3%;
@@ -687,11 +688,15 @@ select.styled1 {
 	font-size: 12px;
 	color: #333;
 }
-.mobile.header .utill .user-menu .btn-area a:first-child{border-left: 0}
+.mobile .header .utill .user-menu .btn-area a:first-child{border-left: 0}
 
 /* ===========================================================================
 	gnb
 =========================================================================== */
+.mobile .gnb-sliding {
+	display:block;
+	left:inherit;
+}
 .gnb-utill {
 	display:none;
 	position:fixed;
@@ -909,6 +914,10 @@ select.styled1 {
 =========================================================================== */
 /* 쓰기 테이블 */
 .board-write1 {padding:0 20px;}
+.board-write1 .important {
+	margin-left:5px;
+	color:#ff5349;
+}
 .board-write1.btm-line {
 	position: relative;
 	border-bottom:2px solid #fafafa;
@@ -940,9 +949,6 @@ select.styled1 {
 .board-write1 table tr {overflow:hidden;}
 .board-write1 th,
 .board-write1 td {float:left;}
-.board-write1 th .important {
-	margin-left:5px; font-size: 16px;
-}
 .board-write1 th {
 	margin-top:15px;
 	color:#333;
