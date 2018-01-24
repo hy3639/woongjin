@@ -2415,6 +2415,8 @@ select.styled1 {
 	width:100%;
 	margin-top:15px;
 }
+/*주간보고 등록*/
+.addfile-box.section {margin-top:22px; }
 
 /* 나의워크스페이스 */
 .myspace .tab-list1 {margin:0;}
