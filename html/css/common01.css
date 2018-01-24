@@ -3069,3 +3069,5 @@ select.styled1 {
 	margin:0;
 	border-bottom: 0;
 }
+
+.blt-text1 + .wdb-editer {margin-top:15px;}

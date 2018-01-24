@@ -70,6 +70,10 @@ $(document).ready(function(){
 	});
 
 	/* 트리메뉴 */
+	// 현재 선택된 메뉴 표시
+	$('.tree-menu .tree-list li li .link .text.fColor').each(function(){
+		$(this).parents('li').addClass('on');
+	});
 	$('.tree-list li').each(function(){
 		var len = $(this).children('ul').length;
 		if(len > 0){
@@ -142,9 +146,9 @@ $(document).ready(function(){
 	});
 
 	// 페이지 로드시 현재메뉴 표시
-	$('.sub-gnb .depth1-item').each(function(){
+	$('.sub-gnb .depth2-item').each(function(){
 		if($(this).hasClass('on')){
-			$(this).find('.depth2-list').show()
+			$(this).closest('.depth2-list').show()
 				.siblings('.d-title').addClass('fColor').find('.icon').addClass('bgColor');
 		}
 	});
