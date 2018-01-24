@@ -1418,7 +1418,18 @@ select.styled1 {
 	color:#999;
 	font-size:12px;
 }
-
+.board-write1 .input-area {
+	position: relative;
+	padding-right: 88px;
+}
+.board-write1 .input-area input[type="text"] {
+	width: 100%;
+}
+.board-write1 .input-area .btn-text {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 /*보기 테이블*/
 .board-view1 {
 	margin:0 50px;
