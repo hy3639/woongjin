@@ -320,65 +320,55 @@
 
 			<div class="top-search-box">
 				<dl class="list-item">
-					<dt>회원선택</dt>
+					<dt><label for="Text01">양식명</label></dt>
+					<dd><input type="text" id="Text01" style="width:100%;max-width:300px;"></dd>
+				</dl>
+				<dl class="list-item">
+					<dt>기안일</dt>
+					<dd class="period-area">
+						<div class="box-item">
+							<div  class="date-text">
+								<div class="btn-calendar"><input type="text" readonly></div>
+								<div class="calendar-layer bdColor">
+									<div class="datepicker"></div>
+								</div>
+							</div>
+						</div>
+						<span class="swung-dash">~</span>
+						<div class="box-item">
+							<div  class="date-text">
+								<div class="btn-calendar"><input type="text" readonly></div>
+								<div class="calendar-layer bdColor">
+									<div class="datepicker"></div>
+								</div>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<dl class="list-item">
+					<dt><label for="Text02">문서 제목</label></dt>
+					<dd><input type="text" id="Text02" style="width:100%;max-width:300px;">
+				</dl>
+				<dl class="list-item">
+					<dt>문서상태</dt>
 					<dd>
-						<select class="styled1" style="width:230px;">
-							<option>준회원포함</option>
+						<select class="styled1" style="width:140px;">
+							<option>전체</option>
+							<option>진행중</option>
+							<option>완료</option>
+							<option>반려</option>
+							<option>회수</option>
 						</select>
 					</dd>
 				</dl>
 				<dl class="list-item">
-					<dt>부서제한</dt>
+					<dt>그룹사 여부</dt>
 					<dd>
-						<select class="styled1" style="width:230px;">
-							<option>모든회원</option>
+						<select class="styled1" style="width:140px;">
+							<option>전체</option>
+							<option>일반</option>
+							<option>그룹사</option>
 						</select>
-					</dd>
-				</dl>
-				<dl class="list-item block"><!-- 한줄로 쓸경우 class="block" -->
-					<dt>기간</dt>
-					<dd class="year-month-select">
-						<div class="select-area">
-							<div class="select-box">
-								<select class="styled1 year" style="width:100%;">
-									<option>2018</option>
-									<option>2017</option>
-									<option>2016</option>
-									<option>2015</option>
-								</select>
-								<span class="text">년</span>
-							</div>
-							<div class="select-box">
-								<select class="styled1 month" style="width:100%;">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-								<span class="text">월</span>
-							</div>
-						</div>
-						<div class="select-area">
-							<div class="select-box">
-								<select class="styled1 year" style="width:100%;">
-									<option>2018</option>
-									<option>2017</option>
-									<option>2016</option>
-									<option>2015</option>
-								</select>
-								<span class="text">년</span>
-							</div>
-							<div class="select-box">
-								<select class="styled1 month" style="width:100%;">
-									<option>12</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-								<span class="text">월</span>
-							</div>
-						</div>
-						<span class="swung-dash">~</span>
 					</dd>
 				</dl>
 				<div class="btn-wrap center">

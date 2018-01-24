@@ -264,6 +264,30 @@ select.styled1 {
 	}
 }
 
+.period-area {
+	position:relative;
+	margin:0 -10px;
+}
+.period-area:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.period-area .box-item {
+	float:left;
+	width:50%;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.period-area .swung-dash {
+	position:absolute;
+	left:50%;top:0;
+	width:20px;
+	margin-left:-10px;
+	text-align:center;
+	line-height:35px;
+}
+
 .top-search-box .btn-wrap {
 	margin:20px -5px 0;
 }

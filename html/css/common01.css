@@ -82,6 +82,12 @@
 	font-weight:700;
 	background-position:0 3px;
 }
+.blt-text3 {
+	padding-left:25px;
+	font-size:12px;
+	line-height:22px;
+	background:url(../img/ico/ico_blt03.png) no-repeat 0 2px;
+}
 
 /* 불릿 리스트 */
 .blt-list1 {}
@@ -326,12 +332,38 @@ select.styled1 {
 	line-height:35px;
 }
 
+.period-area {}
+.period-area:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.period-area .box-item {
+	float:left;
+}
+.period-area .box-item .date-text {width:140px;}
+.period-area .swung-dash {
+	float:left;
+	width:20px;
+	color:#999;
+	text-align:center;
+	line-height:35px;
+}
+
 .top-search-box .btn-wrap {
 	float:left;
+	position:relative;
 	width:100%;
-	border-top:1px solid #eee;
-	margin:10px 30px 0;
+	margin:10px 0 0;
 	padding:20px 0 10px;
+	box-sizing:border-box;
+}
+.top-search-box .btn-wrap:before {
+	content:'';
+	position:absolute;
+	left:30px; right:30px; top:0;
+	height:1px;
+	background-color:#eee;
 }
 .top-search-box .btn-wrap .btn-text {
 	min-width:95px;
@@ -1865,17 +1897,18 @@ select.styled1 {
 .sorting-area .left-box .align-btns button.on {background-color:#fff; cursor:default;}/* on */
 .sorting-area .left-box .align-btns button.on .icon {opacity:1;}/* on */
 .sorting-area .left-box .all-len {
+	display:inline-block;
 	padding-top:7px;
 	font-size:15px;
 }
 .sorting-area .left-box .all-len .len {font-weight:700;}
+.sorting-area .left-box .blt-text3 {
+	display:inline-block;
+	margin-left:18px;
+}
 .sorting-area .right-box {float:right;}
-.sorting-area .right-box .layout-btns {
-	overflow:hidden;
-}
-.sorting-area .right-box .layout-btns button {
-	float:left;
-}
+.sorting-area .right-box .layout-btns {overflow:hidden;}
+.sorting-area .right-box .layout-btns button {float:left;}
 .sorting-area .right-box .layout-btns button .text {
 	display:inline-block;
 	position:relative;
@@ -1969,6 +2002,7 @@ select.styled1 {
 	opacity:.6;
 }
 .date-text.on:before {opacity:1;}
+.date-text .btn-calendar {position:relative; z-index:5;}
 .date-text input[type=text] {
 	width:100%;
 	padding-right:35px;
@@ -2007,6 +2041,10 @@ select.styled1 {
 	border-style:solid;
 	box-shadow:3px 4px 4px rgba(0,0,0,.1);
 	background-color:#fff;
+}
+.right .calendar-layer {
+	left:inherit;
+	right:0;
 }
 .calendar-layer .hasDatepicker {}
 .calendar-layer .hasDatepicker .ui-datepicker-header {

@@ -286,6 +286,8 @@ $(document).ready(function(){
 					.find('.calendar-layer').hide();
 			}
 		});
+
+		calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지
 	});
 	// 달력레이어 열기
 	$('.date-text .btn-calendar').click(function(){
@@ -444,6 +446,7 @@ $(window).resize(function(){
 	//resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
 	selectWid();// 셀렉트 박스넓이 설정
+	calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지
 });
 
 
@@ -507,6 +510,20 @@ function dotdotdot(){
 	$('.dotLine3').dotdotdot();// 3 줄
 	$('.dotLine4').dotdotdot();// 4 줄
 	$('.dotLine5').dotdotdot();// 5 줄
+}
+
+// 오른쪽 화면에서 달력 레이어 잘림방지
+function calendarLayer(){
+	$('.date-text').each(function(){
+		var dateL = $(this).offset().left;
+		var winW = $(window).width();
+		var calW = $(this).find('.calendar-layer').outerWidth();
+		if(calW > winW - dateL){
+			$(this).addClass('right');
+		}else{
+			$(this).removeClass('right');
+		}
+	});
 }
 
 /* ==========================================================================
