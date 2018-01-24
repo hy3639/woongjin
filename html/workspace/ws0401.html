@@ -44,7 +44,6 @@
 					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
 					<a href="#" class="link link6"><span class="text">설문조사</span></a>
 					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
-					<a href="#" class="link link8"><span class="text">포탈관리자</span></a>
 				</div>
 			</div>
 			<!-- gnb -->
@@ -234,28 +233,43 @@
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">워크스페이스</span></p>
+									<p class="depth1-title"><span class="text">영업 1팀</span></p>
+									<div class="tree-menu-box">
+										<div class="tree-menu">
+											<ul class="tree-list">
+												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
+												<li><p class="link"><a href="#" class="text">주간보고</a></p></li>
+												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
+												<li>
+													<p class="link"><a href="#" class="text">게시판 목록</a></p>
+													<ul>
+														<li><p class="link"><a href="#" class="text">일반 게시판</a></p></li>
+														<li>
+															<p class="link"><a href="#" class="text">방명록</a></p>
+															<ul>
+																<li><p class="link"><a href="#" class="text">양식기 저장함 전용 게시판</a></p></li>
+																<li><p class="link"><a href="#" class="text">익명 게시판</a></p></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 								<ul class="depth1-list">
-									<li class="depth1-item on">
-										<a href="#" class="d-title">워크스페이스 유형</a>
+									<li class="depth1-item">
+										<a href="#" class="d-title">활동 통계</a>
 										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">Organization</a></li>
-											<li class="depth2-item on"><a href="#">Community</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item ">
-										<a href="#" class="d-title">나의 메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">나의 워크 스페이스</a></li>
-											<li class="depth2-item"><a href="#">나의 신청 내역</a></li>
+											<li class="depth2-item"><a href="#">워크스페이스 활동 통계</a></li>
+											<li class="depth2-item"><a href="#">회원 활동 통계</a></li>
 										</ul>
 									</li>
 									<li class="depth1-item">
 										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
 											<li class="depth2-item"><a href="#">정보관리</a></li>
-											<li class="depth2-item"><a href="#">소개화면편집</a></li>
+											<li class="depth2-item on"><a href="#">소개화면편집</a></li><!-- 선택된메뉴 class="on" -->
 											<li class="depth2-item"><a href="#">레이아웃관리</a></li>
 											<li class="depth2-item"><a href="#">게시판관리</a></li>
 											<li class="depth2-item"><a href="#">회원관리</a></li>
@@ -268,7 +282,7 @@
 									<h2 class="menu-title">나의 워크스페이스 목록</h2>
 									<ul class="menu-list">
 										<li class="menu-item"><a href="#" class="text">대표 워크스페이스</a></li>
-										<li class="menu-item"><a href="#" class="text">웅진 스터디 카페</a></li>
+										<li class="menu-item on"><a href="#" class="text">웅진 스터디 카페</a></li>
 										<li class="menu-item"><a href="#" class="text">웅진 씽크빅</a></li>
 									</ul>
 									<a href="#" class="btn-text mid">전체 워크스페이스</a>
@@ -290,9 +304,8 @@
 		<div class="content">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">워크스페이스 개설 신청</h2>
+				<h2 class="title">정보관리</h2>
 			</div>
-
 			<div class="board-write1 btm-line">
 				<table>
 					<colgroup class="mHide"><!-- 웹전용 -->
@@ -301,7 +314,7 @@
 					</colgroup>
 					<tbody>
 						<tr class="tr-floating">
-							<th scope="row">작성자</th>
+							<th scope="row">신청자</th>
 							<td>관리자</td>
 						</tr>
 						<tr>
@@ -309,24 +322,9 @@
 							<td>2018.01312</td>
 						</tr>
 						<tr>
-							<th scope="row">유형</th>
-							<td>
-								<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">Community</label>
-								<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">Development</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">카테고리선택<span class="important">*</span></th>
-							<td>
-								<select class="styled1" style="width:130px;">
-									<option>업무사이트</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
 							<th scope="row">워크스페이스<span class="important">*</span></th>
 							<td>
-								<div class="input-area" style="max-width:615px;">
+								<div class="input-area" style="max-width:100%;">
 									<input type="text">
 									<span class="btn-text mid">중복확인</span>
 								</div>
@@ -339,57 +337,23 @@
 							</td>
 						</tr>
 						<tr>
-							<th scope="row">회원</th>
-							<td>
-								<div class="input-area" style="max-width:435px;">
-									<input type="text">
-									<span class="btn-text mid">검색</span>
-								</div>
-								<div class="share-box">
-									<div class="btn-groupchart">
-										<button type="button" class="btn">조직도</button>
-										<p class="tooltip">조직도</p>
-									</div>
-									<div class="scroll-area">
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
 							<th scope="row">소개 이미지<span class="important">*</span></th>
 							<td><span class="btn-text mid">이미지 첨부</span></td>
+						</tr>
+						<tr>
+							<th scope="row">주간업무보고 사용 유무</th>
+							<td>
+								<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">사용안함</label>
+								<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">사용</label>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<div class="btn-item"><a class="btn-text">취소</a></div>
-					<div class="btn-item"><a class="btn-text fColor bdColor">저장</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">초기화</a></div>
+					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
 				</div>
 			</div>
 		</div>

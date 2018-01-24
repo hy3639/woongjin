@@ -234,21 +234,36 @@
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">워크스페이스</span></p>
+									<p class="depth1-title"><span class="text">영업 1팀</span></p>
+									<div class="tree-menu-box">
+										<div class="tree-menu">
+											<ul class="tree-list">
+												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
+												<li><p class="link"><a href="#" class="text">주간보고</a></p></li><!-- 선택된메뉴 class="fColor" -->
+												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
+												<li>
+													<p class="link"><a href="#" class="text">게시판 목록</a></p>
+													<ul>
+														<li><p class="link"><a href="#" class="text">일반 게시판</a></p></li>
+														<li>
+															<p class="link"><a href="#" class="text">방명록</a></p>
+															<ul>
+																<li><p class="link"><a href="#" class="text">양식기 저장함 전용 게시판</a></p></li>
+																<li><p class="link"><a href="#" class="text">익명 게시판</a></p></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 								<ul class="depth1-list">
-									<li class="depth1-item on">
-										<a href="#" class="d-title">워크스페이스 유형</a>
+									<li class="depth1-item">
+										<a href="#" class="d-title">활동 통계</a>
 										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">Organization</a></li>
-											<li class="depth2-item on"><a href="#">Community</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item ">
-										<a href="#" class="d-title">나의 메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">나의 워크 스페이스</a></li>
-											<li class="depth2-item"><a href="#">나의 신청 내역</a></li>
+											<li class="depth2-item on"><a href="#">워크스페이스 활동 통계</a></li>
+											<li class="depth2-item"><a href="#">회원 활동 통계</a></li>
 										</ul>
 									</li>
 									<li class="depth1-item">
@@ -290,106 +305,137 @@
 		<div class="content">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">워크스페이스 개설 신청</h2>
+				<h2 class="title">워크스페이스 활동 통계</h2>
 			</div>
 
-			<div class="board-write1 btm-line">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr class="tr-floating">
-							<th scope="row">작성자</th>
-							<td>관리자</td>
-						</tr>
-						<tr>
-							<th scope="row">신청일</th>
-							<td>2018.01312</td>
-						</tr>
-						<tr>
-							<th scope="row">유형</th>
-							<td>
-								<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">Community</label>
-								<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">Development</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">카테고리선택<span class="important">*</span></th>
-							<td>
-								<select class="styled1" style="width:130px;">
-									<option>업무사이트</option>
+			<div class="top-search-box">
+				<dl class="list-item">
+					<dt>회원선택</dt>
+					<dd>
+						<select class="styled1" style="width:230px;">
+							<option>준회원포함</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="list-item">
+					<dt>부서제한</dt>
+					<dd>
+						<select class="styled1" style="width:230px;">
+							<option>모든회원</option>
+						</select>
+					</dd>
+				</dl>
+				<dl class="list-item">
+					<dt>기간</dt>
+					<dd class="year-month-select">
+						<div class="select-area">
+							<div class="select-box">
+								<select class="styled1 year" style="width:100%;">
+									<option>2018</option>
+									<option>2017</option>
+									<option>2016</option>
+									<option>2015</option>
 								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">워크스페이스<span class="important">*</span></th>
-							<td>
-								<div class="input-area" style="max-width:615px;">
-									<input type="text">
-									<span class="btn-text mid">중복확인</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개글<span class="important">*</span></th>
-							<td>
-								<textarea style="width:100%"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">회원</th>
-							<td>
-								<div class="input-area" style="max-width:435px;">
-									<input type="text">
-									<span class="btn-text mid">검색</span>
-								</div>
-								<div class="share-box">
-									<div class="btn-groupchart">
-										<button type="button" class="btn">조직도</button>
-										<p class="tooltip">조직도</p>
-									</div>
-									<div class="scroll-area">
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개 이미지<span class="important">*</span></th>
-							<td><span class="btn-text mid">이미지 첨부</span></td>
-						</tr>
-					</tbody>
-				</table>
+								<span class="text">년</span>
+							</div>
+							<div class="select-box">
+								<select class="styled1 month" style="width:100%;">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+								<span class="text">월</span>
+							</div>
+						</div>
+						<div class="select-area">
+							<div class="select-box">
+								<select class="styled1 year" style="width:100%;">
+									<option>2018</option>
+									<option>2017</option>
+									<option>2016</option>
+									<option>2015</option>
+								</select>
+								<span class="text">년</span>
+							</div>
+							<div class="select-box">
+								<select class="styled1 month" style="width:100%;">
+									<option>12</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+								<span class="text">월</span>
+							</div>
+						</div>
+						<span class="swung-dash">~</span>
+					</dd>
+				</dl>
+				<div class="btn-wrap center">
+					<div class="btn-align">
+						<div class="btn-item"><button type="button" class="btn-text mid">초기화</button></div>
+						<div class="btn-item"><a href="#" class="btn-text mid bgColor">검색</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="section stats">
+				<div class="board-list3">
+					<table>
+						<caption>워크스페이스 활동 통계 게시판</caption>
+						<colgroup>
+							<col >
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+							<col style="width:9%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">기간</th>
+								<th scope="col" colspan="2">지식생성</th>
+								<th scope="col" colspan="4">지식활용 및 피드백</th>
+								<th scope="col" colspan="4">지식활용 및 피드백</th>
+							</tr>
+							<tr>
+								<th scope="col">게시글<br>등록</th>
+								<th scope="col">주간보고<br>등록</th>
+								<th scope="col">조회</th>
+								<th scope="col">추천</th>
+								<th scope="col">댓글</th>
+								<th scope="col">Favorite</th>
+								<th scope="col">회원<br>방문율</th>
+								<th scope="col">게시글<br>작성율</th>
+								<th scope="col">댓글<br>작성율</th>
+								<th scope="col">주간보고<br>작성율</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017-12</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0.0%</td>
+								<td>0.0%</td>
+								<td>0.0%</td>
+								<td>0.0%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<div class="btn-item"><a class="btn-text">취소</a></div>
-					<div class="btn-item"><a class="btn-text fColor bdColor">저장</a></div>
+					<span class="btn-icon-text icon04"><span class="text">Excel 다운로드</span></span>
 				</div>
 			</div>
 		</div>

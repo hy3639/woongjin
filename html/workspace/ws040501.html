@@ -44,7 +44,6 @@
 					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
 					<a href="#" class="link link6"><span class="text">설문조사</span></a>
 					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
-					<a href="#" class="link link8"><span class="text">포탈관리자</span></a>
 				</div>
 			</div>
 			<!-- gnb -->
@@ -234,21 +233,36 @@
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">워크스페이스</span></p>
+									<p class="depth1-title"><span class="text">영업 1팀</span></p>
+									<div class="tree-menu-box">
+										<div class="tree-menu">
+											<ul class="tree-list">
+												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
+												<li><p class="link"><a href="#" class="text">주간보고</a></p></li>
+												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
+												<li>
+													<p class="link"><a href="#" class="text">게시판 목록</a></p>
+													<ul>
+														<li><p class="link"><a href="#" class="text">일반 게시판</a></p></li>
+														<li>
+															<p class="link"><a href="#" class="text">방명록</a></p>
+															<ul>
+																<li><p class="link"><a href="#" class="text">양식기 저장함 전용 게시판</a></p></li>
+																<li><p class="link"><a href="#" class="text">익명 게시판</a></p></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 								<ul class="depth1-list">
-									<li class="depth1-item on">
-										<a href="#" class="d-title">워크스페이스 유형</a>
+									<li class="depth1-item">
+										<a href="#" class="d-title">활동 통계</a>
 										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">Organization</a></li>
-											<li class="depth2-item on"><a href="#">Community</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item ">
-										<a href="#" class="d-title">나의 메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">나의 워크 스페이스</a></li>
-											<li class="depth2-item"><a href="#">나의 신청 내역</a></li>
+											<li class="depth2-item"><a href="#">워크스페이스 활동 통계</a></li>
+											<li class="depth2-item"><a href="#">회원 활동 통계</a></li>
 										</ul>
 									</li>
 									<li class="depth1-item">
@@ -257,7 +271,7 @@
 											<li class="depth2-item"><a href="#">정보관리</a></li>
 											<li class="depth2-item"><a href="#">소개화면편집</a></li>
 											<li class="depth2-item"><a href="#">레이아웃관리</a></li>
-											<li class="depth2-item"><a href="#">게시판관리</a></li>
+											<li class="depth2-item on"><a href="#">게시판관리</a></li><!-- 선택된메뉴 class="on" -->
 											<li class="depth2-item"><a href="#">회원관리</a></li>
 											<li class="depth2-item"><a href="#">게시판이관관리</a></li>
 											<li class="depth2-item"><a href="#">폐쇄신청</a></li>
@@ -268,7 +282,7 @@
 									<h2 class="menu-title">나의 워크스페이스 목록</h2>
 									<ul class="menu-list">
 										<li class="menu-item"><a href="#" class="text">대표 워크스페이스</a></li>
-										<li class="menu-item"><a href="#" class="text">웅진 스터디 카페</a></li>
+										<li class="menu-item on"><a href="#" class="text">웅진 스터디 카페</a></li>
 										<li class="menu-item"><a href="#" class="text">웅진 씽크빅</a></li>
 									</ul>
 									<a href="#" class="btn-text mid">전체 워크스페이스</a>
@@ -290,106 +304,101 @@
 		<div class="content">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">워크스페이스 개설 신청</h2>
+				<h2 class="title">게시판 관리</h2>
 			</div>
 
-			<div class="board-write1 btm-line">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr class="tr-floating">
-							<th scope="row">작성자</th>
-							<td>관리자</td>
-						</tr>
-						<tr>
-							<th scope="row">신청일</th>
-							<td>2018.01312</td>
-						</tr>
-						<tr>
-							<th scope="row">유형</th>
-							<td>
-								<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">Community</label>
-								<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">Development</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">카테고리선택<span class="important">*</span></th>
-							<td>
-								<select class="styled1" style="width:130px;">
-									<option>업무사이트</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">워크스페이스<span class="important">*</span></th>
-							<td>
-								<div class="input-area" style="max-width:615px;">
-									<input type="text">
-									<span class="btn-text mid">중복확인</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개글<span class="important">*</span></th>
-							<td>
-								<textarea style="width:100%"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">회원</th>
-							<td>
-								<div class="input-area" style="max-width:435px;">
-									<input type="text">
-									<span class="btn-text mid">검색</span>
-								</div>
-								<div class="share-box">
-									<div class="btn-groupchart">
-										<button type="button" class="btn">조직도</button>
-										<p class="tooltip">조직도</p>
-									</div>
-									<div class="scroll-area">
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개 이미지<span class="important">*</span></th>
-							<td><span class="btn-text mid">이미지 첨부</span></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a class="btn-text">취소</a></div>
-					<div class="btn-item"><a class="btn-text fColor bdColor">저장</a></div>
+			<div class="tabArea myspace">
+				<ul class="tab-list1">
+					<li class="item fColor"><a href="ws0301.html" class="text fColor">전체회원관리</a></li><!-- 선택 (class="fColor") -->
+					<li class="item"><a href="ws0302.html" class="text">가입회원관리</a></li>
+				</ul>
+				<div class="top-search-box">
+					<select class="styled1" style="width:150px;">
+						<option>이름</option>
+						<option>부서</option>
+					</select>
+					<div class="search-text">
+						<input type="text" class="required" placeholder="검색어를 입력해주세요">
+						<button type="button" class="btn-search">검색</button>
+					</div>
+				</div>
+				<div class="sorting-area">
+					<div class="left-box">
+						<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+					</div>
+					<div class="right-box mHide">
+						<select class="styled1" style="width:120px;">
+							<option>10개씩</option>
+							<option>100개씩</option>
+						</select>
+					</div>
+				</div>
+				<!-- 탭 컨텐츠영역 -->
+				<div class="tabContent">
+					<div class="tabCont on">
+						<div class="board-list1">
+							<table>
+								<caption>전체회원관리 게시판</caption>
+								<colgroup>
+									<col style="width:10%;">
+									<col style="width:18%;">
+									<col style="width:18%;">
+									<col style="width:18%;">
+									<col style="width:18%;">
+									<col style="width:18%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"><input type="checkbox" class="styled1"></th>
+										<th scope="col" class="order"><button type="button" class="btn-order">이름<span><em>정렬</em></span></button></th>
+										<th scope="col" class="title order"><button type="button" class="btn-order">호칭<span><em>정렬</em></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-order">부서<span><em>정렬</em></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-order">가입일<span><em>정렬</em></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-order">역할<span><em>정렬</em></span></button></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td><a href="#none">김웅진</a></td>
+										<td>부장</td>
+										<td>Guest1팀</td>
+										<td>2017.12.24</td>
+										<td>시샵</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 페이징 -->
+						<div class="paging mHide">
+							<a href="#" class="btn first">처음</a>
+							<a href="#" class="btn prev">이전</a>
+							<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+							<a href="#" class="page">2</a>
+							<a href="#" class="page">3</a>
+							<a href="#" class="page">4</a>
+							<a href="#" class="page">5</a>
+							<a href="#" class="page">6</a>
+							<a href="#" class="page">7</a>
+							<a href="#" class="page">8</a>
+							<a href="#" class="page">9</a>
+							<a href="#" class="page">10</a>
+							<a href="#" class="btn next">다음</a>
+							<a href="#" class="btn end">마지막</a>
+						</div>
+						<!-- 버튼영역 -->
+						<div class="btn-wrap right wide">
+							<div class="btn-align">
+								<div class="btn-item"><a href="#" class="btn-text">시샵지정</a></div>
+								<div class="btn-item"><a href="#" class="btn-text">운영진지정</a></div>
+								<div class="btn-item"><a href="#" class="btn-text">정회원지정</a></div>
+								<div class="btn-item"><a href="#" class="btn-text">준회원지정</a></div>
+								<div class="btn-item"><a href="#" class="btn-text">강제탈퇴</a></div>
+								<div class="btn-item"><a href="#" class="btn-text fColor bdColor">신규회원등록</a></div>
+							</div>
+						</div>
+						<!--// 버튼영역 -->
+					</div>
 				</div>
 			</div>
 		</div>
@@ -399,5 +408,14 @@
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
+
+<script>
+$(window).load(function(){
+	$('.board-setting').each(function(){
+		var treeH = $(this).find('.tree-menu').outerHeight();
+		$(this).css({'min-height':treeH});
+	});
+});
+</script>
 </body>
 </html>
