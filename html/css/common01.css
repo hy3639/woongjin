@@ -243,6 +243,11 @@ select.styled1 {
 	background-color:#fafafa;
 	text-align:center;
 }
+.top-search-box:after {
+	content:'';
+	display:block;
+	clear:both;
+}
 .top-search-box .selectWrap + .selectWrap {margin-left:2px;}
 .top-search-box .year-month-select .selectWrap {width:100% !important;}
 .top-search-box .search-text {
@@ -267,14 +272,17 @@ select.styled1 {
 	line-height:0;
 }
 
-.top-search-box {}
 .top-search-box .list-item {
+	float:left;
 	position:relative;
-	margin-top:10px;
+	width:50%;
+	min-height:35px;
+	margin-bottom:10px;
 	padding-left:130px;
+	box-sizing:border-box;
 	text-align:left;
 }
-.top-search-box .list-item:first-child {margin-top:0;}
+.top-search-box .list-item.block {width:100%;}
 .top-search-box .list-item dt {
 	position:absolute;
 	left:30px; top:0;
@@ -319,8 +327,10 @@ select.styled1 {
 }
 
 .top-search-box .btn-wrap {
+	float:left;
+	width:100%;
 	border-top:1px solid #eee;
-	margin:20px 30px 0;
+	margin:10px 30px 0;
 	padding:20px 0 10px;
 }
 .top-search-box .btn-wrap .btn-text {
@@ -944,11 +954,16 @@ select.styled1 {
 	padding-top:12px;
 	box-sizing:border-box;
 }
+.gnb-wrap .depth1 .depth-top {border-bottom:1px solid #eaeaea;}
+.gnb-wrap .depth1 .depth-top .btn-area {
+	margin:0 25px;
+	padding-bottom:20px;
+}
+.gnb-wrap .depth1 .depth-top .btn-area .btn-text {width:100%;}
 .gnb-wrap .depth1 .depth1-title {
 	position:relative;
 	height:63px;
 	box-sizing:border-box;
-	border-bottom:1px solid #eaeaea;
 }
 .gnb-wrap .depth1 .depth1-title .text {
 	position:absolute;
@@ -1171,7 +1186,7 @@ select.styled1 {
 .sub-gnb .tree-menu-box {
 	position:relative;
 	z-index:5;
-	margin-top:-1px;
+	margin-bottom:-1px;
 	padding:0 25px;
 	background-color:#fafafa;
 }
