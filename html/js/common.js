@@ -153,15 +153,14 @@ $(document).ready(function(){
 		}
 	});
 	// 서브 gnb 스크롤 제어
-	$('.sub-gnb').each(function(){
-		var itemT = $(this).find('.depth1-item.on').offset().top;
-		var itemH = $(this).find('.depth1-item.on').outerHeight();
-		var winH = $(window).height();
-		console.log(itemT + itemH);
-		if(winH < itemT + itemH){
-			$(this).find('.scroll-area').scrollTop(itemT);
-		}
-	});
+	if($('.depth1-item.on').length > 0){
+		$('.sub-gnb').each(function(){
+			var itemT = $(this).find('.depth1-item.on').offset().top;
+			var itemH = $(this).find('.depth1-item.on').outerHeight();
+			var winH = $(window).height();
+			if(winH < itemT + itemH) $(this).find('.scroll-area').scrollTop(itemT);
+		});
+	}
 
 	/* ===================================================================================
 		폼요소
