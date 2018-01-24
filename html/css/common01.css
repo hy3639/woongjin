@@ -113,6 +113,7 @@ input[type=number] {
 label {vertical-align:middle;}
 
 textarea {
+	width:100%;
 	padding:13px 15px;
 	border:1px solid #e5e5e5;
 	box-sizing: border-box;
@@ -1400,6 +1401,10 @@ select.styled1 {
 	border-top:1px solid #eee;
 	border-bottom:1px solid #eee;
 }
+.board-write1 .important {
+	margin-left:4px;
+	color:#ff5349;
+}
 .board-write1 th,
 .board-write1 td {border-top:1px solid #f5f5f5;}
 .board-write1 tr:first-child th,
@@ -1412,6 +1417,14 @@ select.styled1 {
 .board-write1 td {
 	height:35px;
 	padding:15px 30px;
+}
+.board-write1 .empty th {display:none;}
+.board-write1 .empty td {
+	border:0;padding:0;
+}
+.board-write1 .empty + tr th,
+.board-write1 .empty + tr td {
+	border-top:0;
 }
 .board-write1 .text-notice {
 	margin-top:6px;
@@ -3081,4 +3094,4 @@ select.styled1 {
 	border-bottom: 0;
 }
 
-.blt-text1 + .wdb-editer {margin-top:15px;}
+.blt-text1 + .web-editer {margin-top:15px;}

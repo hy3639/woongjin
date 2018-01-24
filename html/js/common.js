@@ -506,7 +506,7 @@ function resizeMid(){
 	if(winW > 800){
 		/* 웹 =================================================================== */
 		/* gnb */
-		$('.header').attr('class', 'header web');
+		$('.wrapper').addClass('web').removeClass('mobile');
 		$('.depth1, .gnb-utill').removeAttr('style');
 
 		$('.gnb-wrap .gnb-list .gnb-item').mouseenter(function(){
@@ -559,7 +559,7 @@ function resizeMid(){
 	}else{
 		/* 모바일 ================================================================= */
 		/* gnb */
-		$('.header').attr('class', 'header mobile');
+		$('.wrapper').addClass('mobile').removeClass('web');
 		$('.gnb-sliding, .gnb-menu-box').removeAttr('style');
 		$('.btn-gnb-toggle').removeClass('on').removeAttr('style');
 
