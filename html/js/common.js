@@ -265,7 +265,11 @@ $(document).ready(function(){
 	*/
 	// 기본설정
 	$('.datepicker').each(function(){
-		var alt = $(this).closest('.date-text').find('.btn-calendar input');
+		if($(this).closest('.date-text').hasClass('weekType')){
+			// 주단위 날짜설정
+		}else{
+			var alt = $(this).closest('.date-text').find('.btn-calendar input');
+		}
 		$(this).datepicker({
 			changeMonth: true,
 			changeYear: true,
@@ -293,7 +297,7 @@ $(document).ready(function(){
 			$('.dimmed').remove();
 		}else{
 			$(this).find('input').addClass('bdColor')
-				.closest('.date-text').css({'z-index':'100'}).addClass('on')
+				.closest('.date-text').css({'z-index':'105'}).addClass('on')
 				.find('.calendar-layer').fadeIn();
 			$(this).append('<div class="dimmed opacity"></div>');
 		}
@@ -320,7 +324,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('mouseenter', '.weekType .ui-state-default', function(){
-		$(this).parents('tr').addClass('over').next('tr').addClass('overNext');
+		$(this).closest('tr').addClass('over').next('tr').addClass('overNext');
 	});
 	$(document).on('mouseleave', '.weekType .ui-state-default', function(){
 		$('tr').removeClass('over').next('tr').removeClass('overNext');

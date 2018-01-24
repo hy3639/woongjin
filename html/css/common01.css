@@ -1938,9 +1938,12 @@ select.styled1 {
 .date-text {
 	display:inline-block;
 	position:relative;
+	z-index:100;
 	width:160px;
 	background-color:#fff;
 }
+.date-text.on {z-index:105;}
+.date-text.weekType {width:224px;}
 .date-text:before {
 	content:'';
 	position:absolute;
@@ -1979,10 +1982,6 @@ select.styled1 {
 }
 
 /* 데이트피커 */
-.date-text {
-	position:relative;
-	z-index:100;
-}
 .calendar-layer {
 	display:none;
 	position:absolute;
@@ -2058,13 +2057,22 @@ select.styled1 {
 	height:28px;
 	line-height:28px;
 }
+
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td.ui-datepicker-week-end a {color:#ff0000;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:#eee; color:#333;}
 
-.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a {background-color:#e0f1ff ;}
-.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
-.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
-.calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
+/* 주단위 선택 달력 */
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar td .ui-state-active {background-color:transparent;}
+
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a,
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td a.ui-state-active {background-color:#e0f1ff ;}
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a {background-color:#fff;}
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.over td:first-child a.ui-state-active {background-color:#eee;}
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar tr.overNext td:first-child a {background-color:#e0f1ff ;}
+.weekType .calendar-layer .hasDatepicker .ui-datepicker-calendar a.ui-state-highlight {
+	background-color:#eee;
+	color:#333;
+}
 
 .week-setting-box {
 	position:relative;
