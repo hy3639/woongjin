@@ -1946,6 +1946,29 @@ select.styled1 {
 .sorting-area .right-box .layout-btns button.on .text {color:#333; cursor:default;}/* on */
 .sorting-area .right-box .layout-btns button.on .text:before {opacity:1;}/* on */
 
+.sorting-area .right-box .icon-area {}
+.sorting-area .right-box .icon-area .icon {
+	position:relative;
+	margin-left:13px;
+	padding-left:16px;
+	font-size:12px;
+}
+.sorting-area .right-box .icon-area .icon:first-child {margin-left:0;}
+.sorting-area .right-box .icon-area .icon:before {
+	content:'';
+	position:absolute;
+	left:0; top:50%;
+	width:10px;
+	height:10px;
+	margin-top:-5px;
+	border-radius:50%;
+}
+.sorting-area .right-box .icon-area .icon1:before {background-color:#26a7f5;}
+.sorting-area .right-box .icon-area .icon2:before {background-color:#555;}
+.sorting-area .right-box .icon-area .icon3:before {background-color:#ff5349;}
+.sorting-area .right-box .icon-area .icon4:before {background-color:#ff8549;}
+.sorting-area .right-box .icon-area + .selectWrap {margin-left:20px;}
+
 /* 페이징 */
 .paging {
 	margin:30px 50px 0;
