@@ -101,7 +101,7 @@ $(document).ready(function(){
 	$('.tree-menu .link .text').on('contextmenu', function() {
 		return false;
 	});
-	// 컨텍트 메뉴 노출
+	// 컨텍스트 메뉴 노출
 	$('.tree-menu .link .text').mousedown(function(e){
 		if(e.which == 3){
 			var boxT = $(this).closest('.tree-menu').offset().top;
@@ -115,7 +115,7 @@ $(document).ready(function(){
 			console.log(top);
 
 			$(this).closest('.tree-menu').find('.contextmenu').hide().fadeIn(200).css({'left':left, 'top':top});
-			if($(this).hasClass('noDel')){
+			if($(this).closest('.link').hasClass('noDel')){
 				$(this).closest('.tree-menu').find('.contextmenu .del').hide();
 			}else{
 				$(this).closest('.tree-menu').find('.contextmenu .del').show();
@@ -124,7 +124,7 @@ $(document).ready(function(){
 	});
 	// 컨텍스트메뉴 닫기
 	$(document).mouseup(function (e) {
-		var conMunu = $('.tree-menu .link a.text');
+		var conMunu = $('.tree-menu .link .text');
 		if (!conMunu.is(e.target) && conMunu.has(e.target).length === 0){
 			$('.contextmenu').hide();
 		}

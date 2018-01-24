@@ -1077,11 +1077,7 @@ select.styled1 {
 .tree-menu .tree-list {
 	margin-left:-14px;
 }
-.tree-menu .tree-list li .link {
-	position:relative;
-	padding-top:6px;
-	padding-bottom:6px;
-}
+.tree-menu .tree-list li .link {position:relative;}
 .tree-menu .tree-list li .link .icon {
 	display:inline-block;
 	position:absolute;
@@ -1097,6 +1093,8 @@ select.styled1 {
 .tree-menu .tree-list li li .link .icon {left:29px;}
 .tree-menu .tree-list li .link .text {
 	display:inline-block;
+	padding-top:6px;
+	padding-bottom:6px;
 	color:#333;
 }
 .tree-menu .tree-list li .link .icon + .text {padding-left:23px;}
