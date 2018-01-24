@@ -148,8 +148,18 @@ $(document).ready(function(){
 	// 페이지 로드시 현재메뉴 표시
 	$('.sub-gnb .depth2-item').each(function(){
 		if($(this).hasClass('on')){
-			$(this).closest('.depth2-list').show()
+			$(this).parents('li').addClass('on').find('.depth2-list').show()
 				.siblings('.d-title').addClass('fColor').find('.icon').addClass('bgColor');
+		}
+	});
+	// 서브 gnb 스크롤 제어
+	$('.sub-gnb').each(function(){
+		var itemT = $(this).find('.depth1-item.on').offset().top;
+		var itemH = $(this).find('.depth1-item.on').outerHeight();
+		var winH = $(window).height();
+		console.log(itemT + itemH);
+		if(winH < itemT + itemH){
+			$(this).find('.scroll-area').scrollTop(itemT);
 		}
 	});
 
