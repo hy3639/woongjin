@@ -1429,28 +1429,29 @@ select.styled1 {
 	border-top:1px solid #eee;
 }
 .board-list1 table td.subject {padding:0;}
-.board-list1 table tbody td.title {
+/* .board-list1 table tbody td.title {
 	text-align:left;
 	padding-left: 20px;
-}
-.board-list1 table tbody td.subject {padding:0;}
+} */
+.board-list1 table tbody td.subject {padding:0 0 0 20px; text-align: left;}
 .board-list1 table tbody td.subject .link {
 	display:block;
 	overflow:hidden;
 	position:relative;
 	width:100%;
-	padding:18px 30px 18px 20px;
+	padding:18px 30px 18px 0;
 	color: #333;
 	text-align: left;
 	box-sizing: border-box;
 }
 .board-list1 table td.subject .link span {vertical-align: middle;}
-.board-list1 table td.subject .link .tit {
+.board-list1 table td.subject .tit {
 	display: inline-block;
 	max-width: 100%;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
+	vertical-align: middle;
 }
 .board-list1 table td.subject .link .reply {position:absolute;}
 .board-list1 table .important td.subject .link {font-weight: 700;}
@@ -3225,6 +3226,7 @@ select.styled1 {
 }
 
 /* 관리자 메뉴 > 게시판관리 */
+.admin-board-area .tab-list1 {margin: 0 50px 40px 50px;}
 .board-setting {
 	position:relative;
 	padding-left:340px;
