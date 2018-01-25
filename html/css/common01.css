@@ -1429,6 +1429,12 @@ select.styled1 {
 }
 .board-list1 table td.subject {padding:0;}
 .board-list1 table td.subject .link {
+.board-list1 table tbody td.title {
+	text-align:left;
+	padding-left: 20px;
+}
+.board-list1 table tbody td.subject {padding:0;}
+.board-list1 table tbody td.subject .link {
 	display:block;
 	overflow:hidden;
 	position:relative;

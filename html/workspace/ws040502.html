@@ -309,8 +309,8 @@
 
 			<div class="tabArea myspace">
 				<ul class="tab-list1">
-					<li class="item fColor"><a href="ws040501.html" class="text fColor">전체회원관리</a></li><!-- 선택 (class="fColor") -->
-					<li class="item"><a href="ws040502.html" class="text">가입회원관리</a></li>
+					<li class="item"><a href="ws040501.html" class="text">전체회원관리</a></li>
+					<li class="item fColor"><a href="ws040502.html" class="text fColor">가입회원관리</a></li><!-- 선택 (class="fColor") -->
 				</ul>
 				<div class="top-search-box">
 					<select class="styled1" style="width:150px;">
@@ -341,20 +341,20 @@
 								<caption>전체회원관리 게시판</caption>
 								<colgroup>
 									<col style="width:10%;">
-									<col style="width:18%;">
-									<col style="width:18%;">
-									<col style="width:18%;">
-									<col style="width:18%;">
-									<col style="width:18%;">
+									<col style="width:10%;">
+									<col style="width:10%;">
+									<col style="width:10%;">
+									<col >
+									<col style="width:10%;">
 								</colgroup>
 								<thead>
 									<tr>
 										<th scope="col"><input type="checkbox" class="styled1"></th>
-										<th scope="col"><button type="button" class="btn-sorting">이름<span class="icon"></span></button></th>
-										<th scope="col"><button type="button" class="btn-sorting">호칭<span class="icon"></span></button></th>
-										<th scope="col"><button type="button" class="btn-sorting">부서<span class="icon"></span></button></th>
-										<th scope="col"><button type="button" class="btn-sorting">가입일<span class="icon"></span></button></th>
-										<th scope="col"><button type="button" class="btn-sorting">역할<span class="icon"></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-sorting">이름<span class="icon"></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-sorting">호칭<span class="icon"></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-sorting">부서<span class="icon"></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-sorting">회원소개<span class="icon"></span></button></th>
+										<th scope="col" class="order"><button type="button" class="btn-sorting">가입일<span class="icon"></span></button></th>
 									</tr>
 								</thead>
 								<tbody>
@@ -363,8 +363,8 @@
 										<td><a href="#none">김웅진</a></td>
 										<td>부장</td>
 										<td>Guest1팀</td>
+										<td class="title">웅진 그룹 부장입니다.</td>
 										<td>2017.12.24</td>
-										<td>시샵</td>
 									</tr>
 								</tbody>
 							</table>
@@ -389,12 +389,10 @@
 						<!-- 버튼영역 -->
 						<div class="btn-wrap right wide">
 							<div class="btn-align">
-								<div class="btn-item"><a href="#" class="btn-text">시샵지정</a></div>
-								<div class="btn-item"><a href="#" class="btn-text">운영진지정</a></div>
-								<div class="btn-item"><a href="#" class="btn-text">정회원지정</a></div>
-								<div class="btn-item"><a href="#" class="btn-text">준회원지정</a></div>
-								<div class="btn-item"><a href="#" class="btn-text">강제탈퇴</a></div>
-								<div class="btn-item"><a href="#" class="btn-text fColor bdColor">신규회원등록</a></div>
+
+								<div class="btn-item"><a href="#" class="btn-text">정회원승인</a></div>
+								<div class="btn-item"><a href="#" class="btn-text">준회원승인</a></div>
+								<div class="btn-item"><a href="#" class="btn-text">가입반려</a></div>
 							</div>
 						</div>
 						<!--// 버튼영역 -->
