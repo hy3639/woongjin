@@ -393,6 +393,7 @@ select.styled1 {
 	font-size:14px;
 	text-align:center;
 	line-height:38px;
+	cursor:pointer;
 }
 .btn-text:hover {
 	border:0 !important;
@@ -644,6 +645,20 @@ select.styled1 {
 }
 
 /* ===========================================================================
+	아이콘
+=========================================================================== */
+/* 긴급 */
+.ico-urgency {
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url(../img/ico/ico_blt03.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+
+/* ===========================================================================
 	탭스타일
 =========================================================================== */
 /* 탭컨텐츠 영역 */
@@ -664,6 +679,7 @@ select.styled1 {
 .tab-list1 .item {
 	float:left;
 	position:relative;
+	background-color:#fff;
 }
 .tab-list1 .item .text {
 	display:block;
@@ -1363,11 +1379,16 @@ select.styled1 {
 /* 리스트 테이블 */
 .board-list1 {border-top:1px solid #eee;}
 .board-list1 table {
-	width: 100%;
+	width:100%;
 	border-bottom:1px solid #eee;
 }
 .board-list1 table caption {display: none;}
-.board-list1 table tbody tr:hover {background-color: #fafafa;}
+.board-list1 table tbody tr:hover td {
+	background-color: #fafafa;
+	-webkit-transition:all .5s;
+	-ms-transition:all .5s;
+	transition:all .5s;
+}
 .board-list1 table thead th {
 	height:54px;
 	font-size:14px;
@@ -1375,40 +1396,6 @@ select.styled1 {
 	font-weight: 700;
 }
 .board-list1 table thead th.title {padding-left:70px;}
-/*
-.board-list1 table thead th.order button {
-	position:relative;
-	padding-right:15px;
-	color:#333;
-	font-weight: 700;
-	font-size: 14px;
-}
-
-.board-list1 .order .btn-order span {
-	display: inline-block;
-	width: 10px;
-	height: 5px;
-	border-top: 5px solid #9da4ac;
-	position: absolute;
-	right: 0;
-	top:50%;
-	margin-top: -2px;
-}
-.board-list1 .order .btn-order span:before {
-	content: '';
-	display: block;
-	width: 10px;
-	height: 5px;
-	position: absolute;
-	right: 0;
-	top:-5px;
-	background:url(../img/btn/btn-order.png) no-repeat 0 0;
-}
-.board-list1 .order .btn-order.fColor span:before {
-	transform: rotate(180deg);
-}
-.board-list1 table thead th.order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
-*/
 
 .btn-sorting {
 	position:relative;
@@ -1432,7 +1419,7 @@ select.styled1 {
 .btn-sorting .icon.bgColor {background-position:0 -5px;}
 
 
-.board-list1 table tbody td {
+.board-list1 table td {
 	padding:18px 0;
 	color:#666;
 	font-size:13px;
@@ -1440,8 +1427,8 @@ select.styled1 {
 	line-height:22px;
 	border-top:1px solid #eee;
 }
-.board-list1 table tbody td.subject {padding:0;}
-.board-list1 table tbody td.subject a {
+.board-list1 table td.subject {padding:0;}
+.board-list1 table td.subject .link {
 	display:block;
 	overflow:hidden;
 	position:relative;
@@ -1451,17 +1438,17 @@ select.styled1 {
 	text-align: left;
 	box-sizing: border-box;
 }
-.board-list1 table tbody td.subject a span {vertical-align: middle;}
-.board-list1 table tbody td.subject a .tit {
+.board-list1 table td.subject .link span {vertical-align: middle;}
+.board-list1 table td.subject .link .tit {
 	display: inline-block;
 	max-width: 100%;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 }
-.board-list1 table tbody td.subject a .reply {position:absolute;}
-.board-list1 table tbody .important td.subject a{font-weight: 700;}
-.board-list1 table tbody td.subject a:hover {text-decoration: underline;}
+.board-list1 table td.subject .link .reply {position:absolute;}
+.board-list1 table .important td.subject .link {font-weight: 700;}
+.board-list1 table td.subject .link:hover {text-decoration: underline;}
 .board-list1 table .checkWrap,
 .board-list1 table img {vertical-align:middle;}
 .board-list1 table td .icon-important {
@@ -1473,6 +1460,42 @@ select.styled1 {
 	border:1px solid;
 	box-sizing:border-box;
 }
+
+.board-list1 .subject .ico-urgency {
+	position:absolute;
+	top:50%;
+	margin:-10px 0 0 7px;
+}
+
+.board-list1 .btn-type td {
+	cursor:pointer;
+}
+
+.board-list1 .layer-type {display:none;}
+.board-list1 .layer-type > td {
+	padding:0;
+	border:0;
+}
+.board-list1 .layer-type td .layer-box {
+	padding:20px 20px 35px;
+	background-color:#fafafa;
+}
+.board-list1 .layer-type table th,
+.board-list1 .layer-type table td {
+	background-color:#fff !important;
+	font-size:13px;
+}
+.board-list1 .layer-type table th {height:43px;}
+.board-list1 .layer-type table td {padding:10px 5px;}
+
+.board-list1 .layer-type .tab-list1 {margin:0;}
+.board-list1 .layer-type .scroll-x-area {
+	position:relative;
+	margin:-1px 0 0;
+	border:1px solid #e5e5e5;
+	border-bottom:0;
+}
+
 
 .sorting-area + .list-view .board-list1,
 .sorting-area + .list-view .list-type .board-list1 {border-top:0;}
@@ -2021,9 +2044,9 @@ select.styled1 {
 	content:'';
 	position:absolute;
 	left:0; top:50%;
-	width:10px;
-	height:10px;
-	margin-top:-5px;
+	width:9px;
+	height:9px;
+	margin-top:-4px;
 	border-radius:50%;
 }
 .sorting-area .right-box .icon-area .icon1:before {background-color:#26a7f5;}
