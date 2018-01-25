@@ -1477,13 +1477,15 @@ select.styled1 {
 .board-list1 .btn-type td {
 	cursor:pointer;
 }
+.board-list1 .btn-type.on td {background-color:#fafafa;}
 
-.board-list1 .layer-type {display:none;}
+.board-list1 .layer-type {}
 .board-list1 .layer-type > td {
 	padding:0;
 	border:0;
 }
 .board-list1 .layer-type td .layer-box {
+	display:none;
 	padding:20px 20px 35px;
 	background-color:#fafafa;
 }
@@ -2045,21 +2047,15 @@ select.styled1 {
 	margin-left:13px;
 	padding-left:16px;
 	font-size:12px;
+	background-repeat:no-repeat;
+	background-position:0 50%;
 }
 .sorting-area .right-box .icon-area .icon:first-child {margin-left:0;}
-.sorting-area .right-box .icon-area .icon:before {
-	content:'';
-	position:absolute;
-	left:0; top:50%;
-	width:9px;
-	height:9px;
-	margin-top:-4px;
-	border-radius:50%;
-}
-.sorting-area .right-box .icon-area .icon1:before {background-color:#26a7f5;}
-.sorting-area .right-box .icon-area .icon2:before {background-color:#555;}
-.sorting-area .right-box .icon-area .icon3:before {background-color:#ff5349;}
-.sorting-area .right-box .icon-area .icon4:before {background-color:#ff8549;}
+.sorting-area .right-box .icon-area .icon1 {background-image:url(../img/ico/ico_state01.png);}
+.sorting-area .right-box .icon-area .icon2 {background-image:url(../img/ico/ico_state02.png);}
+.sorting-area .right-box .icon-area .icon3 {background-image:url(../img/ico/ico_state03.png);}
+.sorting-area .right-box .icon-area .icon4 {background-image:url(../img/ico/ico_state04.png);}
+
 .sorting-area .right-box .icon-area + .selectWrap {margin-left:20px;}
 
 /* 페이징 */
