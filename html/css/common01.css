@@ -3252,6 +3252,111 @@ select.styled1 {
 }
 .board-setting .notice-area .blt-text2 + .title {margin-top:22px;}
 
+/* 관리자 메뉴 > 게시판관리(상세) */
+.admin-board-area .selectWrap {width: 100%}
+.admin-board-area .input-area {float: left;}
+.admin-board-area .input-area + span {
+	line-height: 35px;
+	margin-left: 20px;
+}
+.display-area {margin-top: 10px;}
+.display-area p {
+	margin-top:5px;
+	font-size: 12px;
+	color:#999;
+}
+.att-option1,
+.att-option2 {margin-top: 15px;}
+.att-option1 p,
+.att-option2 p {margin:15px 0}
+.att-option2 {display: none;}
+.att-option1 .radioWrap + label {line-height:26px; }
+.read,
+.write{display: table-row;}
+.read.hidden,
+.write.hidden{display: none;}
+
+/* 관리자 메뉴 > 게시물관리 */
+.admin-board-area .board-setting .top-search-box {margin:0}
+.admin-board-area .board-setting .sorting-area {
+	margin:0;
+	border-bottom: 0
+}
+.admin-board-area .board-setting .btn-wrap {margin:30px 0 0 0;}
+
+/*관리자메뉴 > 게시판 import*/
+.import-list {
+	margin: 0 50px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding:30px;
+}
+.import-list > ul > li {
+	position: relative;
+	padding-left:80px;
+	padding-bottom: 50px;
+}
+.import-list > ul > li:before {
+	content: '';
+	position: absolute;
+	left:30px;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #eee;
+}
+.import-list > ul > li:last-child:before {display: none;}
+.import-list li .step {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	padding-top: 12px;
+	color:#fff;
+	font-size: 11px;
+	text-align: center;
+	border-radius: 30px;
+	box-sizing: border-box;
+
+}
+.import-list li .step em {
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 17px;
+}
+
+.import-list li .cont > p {
+	font-size: 16px;
+	color:#333;
+	font-weight: 700;
+}
+.import-list li .cont > p span {
+	display: block;
+	font-size: 13px;
+	color:#666;
+	font-weight: normal;
+}
+
+.box-cont {
+	padding:30px;
+	margin-top: 25px;
+	background-color:#fafafa;
+}
+.box-cont p {
+	color:#333;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.box-cont > ul > li {margin-bottom: 7px}
+.box-cont ul li ul li {
+	padding-left: 15px;
+
+}
+
 /* 나의워크스페이스 */
 .myspace {margin:0 50px;}
 .myspace.type2 {margin-top: 40px;}

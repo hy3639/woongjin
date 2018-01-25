@@ -315,76 +315,139 @@
 				<h2 class="title">게시판 관리</h2>
 			</div>
 
-			<div class="admin-board-area">
-				<ul class="tab-list1">
-					<li class="item fColor"><a href="bd0201.html" class="text fColor">트리보기</a></li><!-- 선택 (class="fColor") -->
-					<li class="item"><a href="bd0202.html" class="text">목록보기</a></li>
-				</ul>
-				<div class="board-setting">
-					<div class="tree-menu open">
-						<ul class="tree-list">
-							<li>
-								<p class="link noDel"><span class="text">메뉴01</span></p><!-- 수정/삭제 불가 (class="noDel") -->
-								<ul>
-									<li><p class="link"><a href="#" class="text">메뉴01-01</a></p></li>
-									<li>
-										<p class="link"><a href="#" class="text">메뉴01-02</a></p>
-										<ul>
-											<li>
-												<p class="link"><a href="#" class="text">메뉴01-02-01</a></p>
-												<ul>
-													<li>
-														<p class="link"><a href="#" class="text">메뉴01-02-01-01</a></p>
-														<ul>
-															<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-01</a></p></li>
-															<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-02</a></p></li>
-															<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-03</a></p></li>
-														</ul>
-													</li>
-													<li><p class="link"><a href="#" class="text">메뉴01-02-01-02</a></p></li>
-													<li><p class="link"><a href="#" class="text">메뉴01-02-01-03</a></p></li>
-												</ul>
-											</li>
-											<li><p class="link"><a href="#" class="text">메뉴01-02-02</a></p></li>
-											<li><p class="link"><a href="#" class="text">메뉴01-02-03</a></p></li>
-											<li><p class="link"><a href="#" class="text">메뉴01-02-04</a></p></li>
-										</ul>
-									</li>
-									<li><p class="link"><a href="#" class="text">메뉴01-03</a></p></li>
-								</ul>
-							</li>
-						</ul>
-						<!-- contextmenu 레이어-->
-						<div class="contextmenu">
-							<ul class="list">
-								<li><a href="#">게시판 생성</a></li>
-								<li><a href="#">링크 생성</a></li>
-								<li><a href="#">카테고리 생성</a></li>
-								<li class="del"><a href="#">수정</a></li>
-								<li class="del"><a href="#">삭제</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="notice-area">
-						<h3 class="blt-text2">유의사항</h3>
-						<h4 class="title">게시판 추가 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">게시판 트리의 폴더에서 마우스 우클릭 하면 여러 형태의 폴더 추가 메뉴가 나타납니다.</li>
-							<li class="item">게시판 생성 : 게시물을 등록할 게시판을 생성할 때 선택하는 메뉴 입니다.</li>
-							<li class="item">카테고리 생성 : 게시물 등록용이 아닌 여러 게시판을 하나로 묶는 Dummy 폴더를 생성할 때 선택하는 메뉴입니다.</li>
-							<li class="item">링크 생성 : 특정 URL로 링크되는 폴더를 생성할 때 선택하는 메뉴입니다.</li>
-							<li class="item">추가할 게시판 정보를 입력하고 저장하면 처음 선택했던 게시판 폴더의 하위에 생성됩니다.</li>
-						</ul>
-						<h4 class="title">게시판 조회/수정/삭제 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">게시판 트리의 폴더를 클릭하면 상세정보를 조회하고, 수정/삭제 할 수 있습니다.</li>
-							<li class="item">게시판 트리의 폴더에서 마우스 우클릭 하면 수정/삭제 메뉴가 나타납니다.</li>
-						</ul>
-						<h4 class="title">게시판 이동 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">이동을 원하는 게시판 폴더를 선택하여 Drag & Drop으로 이동할 수 있습니다.</li>
-						</ul>
-					</div>
+			<div class="board-write1 admin-board-area">
+				<table>
+					<colgroup class="mHide"><!-- 웹전용 -->
+						<col style="width:18%;">
+						<col>
+						<col style="width:18%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">게시판 경로</th>
+							<td colspan="3">게시판 &gt; 공지사항</td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 이름</th>
+							<td colspan="3">공지사항</td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 이름(영어)</th>
+							<td colspan="3">Notice</td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 설명</th>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 설명(영어)</th>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 목록 타입</th>
+							<td colspan="3">기본목록</td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 형태</th>
+							<td colspan="3">일반게시판</td>
+						</tr>
+						<tr>
+							<th scope="row">익명 등록</th>
+							<td colspan="3">미사용</td>
+						</tr>
+						<tr>
+							<th scope="row">페이지당 글 개수</th>
+							<td>10</td>
+							<th scope="row">메신저 연동</th>
+							<td>미사용</td>
+						</tr>
+						<tr>
+							<th scope="row">타 파일시스템연동(SFTP)</th>
+							<td>사용</td>
+							<th scope="row">첨부파일 크기</th>
+							<td>700 MB</td>
+						</tr>
+						<tr>
+							<th scope="row">Editor Image 첨부파일 크기</th>
+							<td>1 MB</td>
+							<th scope="row">Editor Image 파일 가로길이</th>
+							<td>2048 Pixel</td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 사용</th>
+							<td>사용</td>
+							<th scope="row">게시기간 설정</th>
+							<td>사용</td>
+						</tr>
+						<tr>
+							<th scope="row">답글</th>
+							<td>사용</td>
+							<th scope="row">댓글</th>
+							<td>사용</td>
+						</tr>
+						<tr>
+							<th scope="row">답글알림</th>
+							<td>사용</td>
+							<th scope="row">댓글알림</th>
+							<td>사용</td>
+						</tr>
+						<tr>
+							<th scope="row">공지</th>
+							<td>사용</td>
+							<th scope="row">중요</th>
+							<td>사용</td>
+						</tr>
+						<tr>
+							<th scope="row">말머리 유형</th>
+							<td>미사용</td>
+							<th scope="row">태그</th>
+							<td>사용</td>
+						</tr>
+						<tr>
+							<th scope="row">최근게시글</th>
+							<td>사용</td>
+							<th scope="row">모바일</th>
+							<td>사용</td>
+						</tr>
+						<tr>
+							<th scope="row">타사공지</th>
+							<td>사용</td>
+							<th scope="row"><label for="Text05">타사공지 매핑키</label></th>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일 옵션</th>
+							<td colspan="3">파일타입 허용방식(all)</td>
+						</tr>
+						<tr>
+							<th scope="row">게시판 관리자</th>
+							<td>관리자 과장</td>
+							<th scope="row">게시물 등록 알림</th>
+							<td>미사용</td>
+						</tr>
+						<tr>
+							<th scope="row">읽기 권한</th>
+							<td colspan="3">
+								<input type="radio" name="Radio21" id="Radio2101" class="styled1" checked><label for="Radio2101">전사</label>
+								<input type="radio" name="Radio21" id="Radio2102" class="styled1"><label for="Radio2102">개별설정</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">쓰기 권한</th>
+							<td colspan="3">전사</td>
+						</tr>
+						<tr>
+							<th scope="row">비고</th>
+							<td colspan="3"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-wrap right">
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
+					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
 				</div>
 			</div>
 		</div>
@@ -393,12 +456,8 @@
 	<div class="footer">
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
-	<!-- <div class="btn-wrap btn-floating wHide">
-		<div class="btn-align">
-			<div class="btn-item" style="width: 269.5px;"><a href="#" class="btn-text bdColor fColor">워크스페이스 개설신청</a></div>
-		</div>
-	</div> -->
 </div>
 </body>
+
 
 </html>

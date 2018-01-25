@@ -289,8 +289,8 @@
 										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
 											<li class="depth2-item"><a href="#">게시판셋 관리</a></li>
-											<li class="depth2-item on"><a href="#">게시판 관리</a></li><!-- 선택메뉴 class="on" -->
-											<li class="depth2-item"><a href="#">게시물 관리</a></li>
+											<li class="depth2-item"><a href="#">게시판 관리</a></li>
+											<li class="depth2-item on"><a href="#">게시물 관리</a></li><!-- 선택메뉴 class="on" -->
 											<li class="depth2-item"><a href="#">게시판 Import</a></li>
 											<li class="depth2-item"><a href="#">게시판 Export</a></li>
 										</ul>
@@ -312,14 +312,10 @@
 	<div class="container">
 		<div class="content">
 			<div class="title-wrap">
-				<h2 class="title">게시판 관리</h2>
+				<h2 class="title">게시물 관리</h2>
 			</div>
 
 			<div class="admin-board-area">
-				<ul class="tab-list1">
-					<li class="item fColor"><a href="bd0201.html" class="text fColor">트리보기</a></li><!-- 선택 (class="fColor") -->
-					<li class="item"><a href="bd0202.html" class="text">목록보기</a></li>
-				</ul>
 				<div class="board-setting">
 					<div class="tree-menu open">
 						<ul class="tree-list">
@@ -365,25 +361,180 @@
 							</ul>
 						</div>
 					</div>
-					<div class="notice-area">
-						<h3 class="blt-text2">유의사항</h3>
-						<h4 class="title">게시판 추가 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">게시판 트리의 폴더에서 마우스 우클릭 하면 여러 형태의 폴더 추가 메뉴가 나타납니다.</li>
-							<li class="item">게시판 생성 : 게시물을 등록할 게시판을 생성할 때 선택하는 메뉴 입니다.</li>
-							<li class="item">카테고리 생성 : 게시물 등록용이 아닌 여러 게시판을 하나로 묶는 Dummy 폴더를 생성할 때 선택하는 메뉴입니다.</li>
-							<li class="item">링크 생성 : 특정 URL로 링크되는 폴더를 생성할 때 선택하는 메뉴입니다.</li>
-							<li class="item">추가할 게시판 정보를 입력하고 저장하면 처음 선택했던 게시판 폴더의 하위에 생성됩니다.</li>
-						</ul>
-						<h4 class="title">게시판 조회/수정/삭제 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">게시판 트리의 폴더를 클릭하면 상세정보를 조회하고, 수정/삭제 할 수 있습니다.</li>
-							<li class="item">게시판 트리의 폴더에서 마우스 우클릭 하면 수정/삭제 메뉴가 나타납니다.</li>
-						</ul>
-						<h4 class="title">게시판 이동 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">이동을 원하는 게시판 폴더를 선택하여 Drag & Drop으로 이동할 수 있습니다.</li>
-						</ul>
+					<div class="top-search-box">
+						<select class="styled1" style="width:150px;">
+							<option>제목</option>
+							<option>게시자</option>
+							<option>내용</option>
+						</select>
+						<div class="search-text">
+							<input type="text" class="required" placeholder="검색어를 입력해주세요">
+							<button type="button" class="btn-search">검색</button>
+						</div>
+					</div>
+					<div class="sorting-area">
+						<div class="left-box">
+							<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+						</div>
+						<div class="right-box mHide">
+							<select class="styled1" style="width:120px;">
+								<option>10개</option>
+								<option>20개</option>
+								<option>30개</option>
+								<option>40개</option>
+								<option>50개</option>
+							</select>
+							<select class="styled1" style="width:120px;">
+								<option>전체</option>
+								<option>공개</option>
+								<option>대기</option>
+								<option>만료</option>
+								<option>삭제</option>
+							</select>
+						</div>
+					</div>
+					<div class="board-list1 mHide">
+						<table>
+							<caption>게시물관리 게시판</caption>
+							<colgroup>
+								<col style="width:6%;">
+								<col style="width:9%;">
+								<col style="width:10%;">
+								<col >
+								<col style="width:10%;">
+								<col style="width:10%;">
+								<col style="width:10%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col"><input type="checkbox" class="styled1"></th>
+									<th scope="col">번호</th>
+									<th scope="col">첨부</th>
+									<th scope="col">제목</th>
+									<th scope="col">상태</th>
+									<th scope="col">게시자</th>
+									<th scope="col">게시일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="styled1"></td>
+									<td>219</td>
+									<td>본문</td>
+									<td class="subject"><a href="#" class="link"><span class="tit">[중요] 소라마치 그룹웨어 데모 진행</span></a></td>
+									<td>공개</td>
+									<td><button type="button" class="btn-userinfo">관리자</button></td>
+									<td>2017.12.24</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- 페이징 -->
+					<div class="paging mHide">
+						<a href="#" class="btn first">처음</a>
+						<a href="#" class="btn prev">이전</a>
+						<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+						<a href="#" class="page">2</a>
+						<a href="#" class="page">3</a>
+						<a href="#" class="page">4</a>
+						<a href="#" class="page">5</a>
+						<a href="#" class="page">6</a>
+						<a href="#" class="page">7</a>
+						<a href="#" class="page">8</a>
+						<a href="#" class="page">9</a>
+						<a href="#" class="page">10</a>
+						<a href="#" class="btn next">다음</a>
+						<a href="#" class="btn end">마지막</a>
+					</div>
+					<div class="btn-wrap right">
+						<div class="btn-align">
+							<div class="btn-item"><a href="#" class="btn-text">공개</a></div>
+							<div class="btn-item"><a href="#" class="btn-text">만료</a></div>
+							<div class="btn-item"><a href="#" class="btn-text">복구</a></div>
+							<div class="btn-item"><a href="#" class="btn-text">이동</a></div>
+							<div class="btn-item"><a href="#" class="btn-text">삭제</a></div>
+						</div>
 					</div>
 				</div>
 			</div>

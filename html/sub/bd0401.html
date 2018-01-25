@@ -289,9 +289,9 @@
 										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
 											<li class="depth2-item"><a href="#">게시판셋 관리</a></li>
-											<li class="depth2-item on"><a href="#">게시판 관리</a></li><!-- 선택메뉴 class="on" -->
+											<li class="depth2-item"><a href="#">게시판 관리</a></li>
 											<li class="depth2-item"><a href="#">게시물 관리</a></li>
-											<li class="depth2-item"><a href="#">게시판 Import</a></li>
+											<li class="depth2-item on"><a href="#">게시판 Import</a></li><!-- 선택메뉴 class="on" -->
 											<li class="depth2-item"><a href="#">게시판 Export</a></li>
 										</ul>
 									</li>
@@ -312,81 +312,76 @@
 	<div class="container">
 		<div class="content">
 			<div class="title-wrap">
-				<h2 class="title">게시판 관리</h2>
+				<h2 class="title">게시판 Import</h2>
 			</div>
 
 			<div class="admin-board-area">
-				<ul class="tab-list1">
-					<li class="item fColor"><a href="bd0201.html" class="text fColor">트리보기</a></li><!-- 선택 (class="fColor") -->
-					<li class="item"><a href="bd0202.html" class="text">목록보기</a></li>
-				</ul>
-				<div class="board-setting">
-					<div class="tree-menu open">
-						<ul class="tree-list">
-							<li>
-								<p class="link noDel"><span class="text">메뉴01</span></p><!-- 수정/삭제 불가 (class="noDel") -->
-								<ul>
-									<li><p class="link"><a href="#" class="text">메뉴01-01</a></p></li>
-									<li>
-										<p class="link"><a href="#" class="text">메뉴01-02</a></p>
-										<ul>
-											<li>
-												<p class="link"><a href="#" class="text">메뉴01-02-01</a></p>
-												<ul>
-													<li>
-														<p class="link"><a href="#" class="text">메뉴01-02-01-01</a></p>
-														<ul>
-															<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-01</a></p></li>
-															<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-02</a></p></li>
-															<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-03</a></p></li>
-														</ul>
-													</li>
-													<li><p class="link"><a href="#" class="text">메뉴01-02-01-02</a></p></li>
-													<li><p class="link"><a href="#" class="text">메뉴01-02-01-03</a></p></li>
-												</ul>
-											</li>
-											<li><p class="link"><a href="#" class="text">메뉴01-02-02</a></p></li>
-											<li><p class="link"><a href="#" class="text">메뉴01-02-03</a></p></li>
-											<li><p class="link"><a href="#" class="text">메뉴01-02-04</a></p></li>
-										</ul>
-									</li>
-									<li><p class="link"><a href="#" class="text">메뉴01-03</a></p></li>
-								</ul>
-							</li>
-						</ul>
-						<!-- contextmenu 레이어-->
-						<div class="contextmenu">
-							<ul class="list">
-								<li><a href="#">게시판 생성</a></li>
-								<li><a href="#">링크 생성</a></li>
-								<li><a href="#">카테고리 생성</a></li>
-								<li class="del"><a href="#">수정</a></li>
-								<li class="del"><a href="#">삭제</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="notice-area">
-						<h3 class="blt-text2">유의사항</h3>
-						<h4 class="title">게시판 추가 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">게시판 트리의 폴더에서 마우스 우클릭 하면 여러 형태의 폴더 추가 메뉴가 나타납니다.</li>
-							<li class="item">게시판 생성 : 게시물을 등록할 게시판을 생성할 때 선택하는 메뉴 입니다.</li>
-							<li class="item">카테고리 생성 : 게시물 등록용이 아닌 여러 게시판을 하나로 묶는 Dummy 폴더를 생성할 때 선택하는 메뉴입니다.</li>
-							<li class="item">링크 생성 : 특정 URL로 링크되는 폴더를 생성할 때 선택하는 메뉴입니다.</li>
-							<li class="item">추가할 게시판 정보를 입력하고 저장하면 처음 선택했던 게시판 폴더의 하위에 생성됩니다.</li>
-						</ul>
-						<h4 class="title">게시판 조회/수정/삭제 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">게시판 트리의 폴더를 클릭하면 상세정보를 조회하고, 수정/삭제 할 수 있습니다.</li>
-							<li class="item">게시판 트리의 폴더에서 마우스 우클릭 하면 수정/삭제 메뉴가 나타납니다.</li>
-						</ul>
-						<h4 class="title">게시판 이동 방법</h4>
-						<ul class="blt-list1">
-							<li class="item">이동을 원하는 게시판 폴더를 선택하여 Drag & Drop으로 이동할 수 있습니다.</li>
-						</ul>
-					</div>
+				<div class="import-list">
+					<ul>
+						<li>
+							<span class="step bgColor">
+								STEP<em>01</em>
+							</span>
+							<span class="btn-icon-text icon04"><span class="text">Excel 다운로드</span></span>
+							<div class="cont">
+								<p>샘플파일 다운로드/데이터 입력 <span>오른쪽 버튼을 클릭하여  Excel 샘플파일을 다운로드 받으세요</span></p>
+								<div class="box-cont">
+									<p>아래 설명을 참고하여  Import할 데이터 파일을 작성해 주십시오.</p>
+									<ul>
+										<li>1. 다운받은 샘플 엑셀 파일에 등록할 데이터를 입력합니다. </li>
+										<li>2. 입력할 데이터는 아래와 같습니다. 컬럼이 2개 이상일 경우 순서에 주의해주세요. (* : 필수 입력 컬럼)
+											<ul>
+												<li class="fColor">* 부모게시판ID(없을 경우 root 입력) | 게시판ID | * 게시판명 | * 게시판 영문명 |</li>
+												<li class="fColor">* 게시판 타입(0:일반게시판, 1:링크게시판-Import 불가, 2:카테고리)  </li>
+											</ul>
+										</li>
+										<li>3. 필수 입력 데이터가 없거나 입력 데이터 길이가 초과한 경우 정상적인 Import가 되지 않습니다. </li>
+										<li>4. 데이터에 쉼표(,)가 들어 있으면 비 정상적으로 인식될 수 있습니다.</li>
+										<li>5. 이미 등록되어 있는 데이터는 중복되어 등록되지 않습니다. 또한, 링크 타입 게시판 Import는 지원하지 않습니다. </li>
+										<li>6. 데이터를 모두 입력하신 후 파일을 저장하고 STEP 2를 수행합니다.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="step bgColor">
+								STEP<em>02</em>
+							</span>
+							<div class="cont">
+								<p>데이터 파일 선택</p>
+								<div class="box-cont">
+									<ul>
+										<li>1. 찾아보기 버튼을 클릭하여 Import할 데이터 파일을 선택합니다.</li>
+										<li>2. 확인 버튼을 클릭하면 STEP 3의 목록에 파일의 내용이 출력됩니다.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="step bgColor">
+								STEP<em>03</em>
+							</span>
+							<div class="cont">
+								<p>데이터 저장하기</p>
+								<div class="box-cont">
+									<ul>
+										<li>1. 등록 가능한 목록에만 체크박스가 표시됩니다. </li>
+										<li>2. 체크박스로 등록할 데이터를 선택하고 저장 버튼을 클릭하면 데이터 Import가 완료됩니다. </li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
+			<!-- 버튼영역 -->
+			<div class="btn-wrap right">
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
+					<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
+				</div>
+			</div>
+			<!--// 버튼영역 -->
 		</div>
 	</div>
 
