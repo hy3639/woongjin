@@ -10,6 +10,7 @@
 
 /* 컨텐츠 마진 */
 .section {margin:0 50px;}
+.board-section {margin:40px 50px 0 50px} /*상단검색영역이 있고 하단 바로 테이블일경우*/
 
 /* 웹에서 숨김처리 */
 .wHide {display:none;}
@@ -3235,9 +3236,6 @@ select.styled1 {
 	margin:0;
 	border-bottom: 0;
 }
-
-/* 활동통계 */
-.stats .board-list3 {margin-top: 40px;}
 
 
 .blt-text1 + .web-editer {margin-top:15px;}
