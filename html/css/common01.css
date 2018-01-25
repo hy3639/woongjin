@@ -1375,6 +1375,7 @@ select.styled1 {
 	font-weight: 700;
 }
 .board-list1 table thead th.title {padding-left:70px;}
+/*
 .board-list1 table thead th.order button {
 	position:relative;
 	padding-right:15px;
@@ -1407,6 +1408,30 @@ select.styled1 {
 	transform: rotate(180deg);
 }
 .board-list1 table thead th.order button span em {font-size: 0; line-height:0; text-indent: -9999px;}
+*/
+
+.btn-sorting {
+	position:relative;
+	padding-right:13px;
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+}
+.btn-sorting .icon {
+	display:block;
+	position:absolute;
+	right:0; top:50%;
+	width:7px;
+	height:5px;
+	margin-top:-3px;
+	background-color:#9da4ac;
+	background-image:url(../img/btn/btn_sorting.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.btn-sorting .icon.bgColor {background-position:0 -5px;}
+
+
 .board-list1 table tbody td {
 	padding:18px 0;
 	color:#666;
