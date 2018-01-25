@@ -383,14 +383,13 @@ $(document).ready(function(){
 		}
 	});
 
-	//게시판 정렬
-	$('.btn-order').click(function(){
+	//게시판 소팅
+	$('.btn-sorting').click(function(){
 		if($(this).hasClass('fColor')){
-			$(this).removeClass('fColor');
-			$(this).children('span').removeClass('bdColor');
+			$(this).closest('tr').find('.btn-sorting').removeClass('fColor').find('.icon').removeClass('bgColor');
 		}else{
-			$(this).addClass('fColor');
-			$(this).children('span').addClass('bdColor');
+			$(this).closest('tr').find('.btn-sorting').removeClass('fColor').find('.icon').removeClass('bgColor');
+			$(this).addClass('fColor').find('.icon').addClass('bgColor');
 		}
 	});
 
