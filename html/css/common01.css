@@ -1415,6 +1415,10 @@ select.styled1 {
 	line-height:22px;
 	border-top:1px solid #eee;
 }
+.board-list1 table tbody td.title {
+	text-align:left;
+	padding-left: 20px;
+}
 .board-list1 table tbody td.subject {padding:0;}
 .board-list1 table tbody td.subject a {
 	display:block;
