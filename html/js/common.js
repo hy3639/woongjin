@@ -434,6 +434,16 @@ $(document).ready(function(){
 	}).mouseleave(function(){
 		$(this).find('.text').removeClass('fColor');
 	});
+
+	/* 테이블 토글 */
+	$('.btn-type td').click(function(){
+		if($(this).closest('.btn-type').hasClass('on')){
+			$(this).closest('table').find('.btn-type').removeClass('on').next('.layer-type').find('.layer-box').slideUp(100);
+		}else{
+			$(this).closest('table').find('.btn-type').removeClass('on').next('.layer-type').find('.layer-box').slideUp(100);
+			$(this).closest('.btn-type').addClass('on').next('.layer-type').find('.layer-box').slideDown(200);
+		}
+	});
 });
 
 
