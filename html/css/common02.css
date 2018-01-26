@@ -5,8 +5,10 @@
 /* ===========================================================================
 	레이아웃
 =========================================================================== */
-.mobile .container {padding:71px 0 60px;}
+.mobile .container {padding:71px 0 0;}
 .content {margin:-25px 0 0; padding-bottom:30px;}
+
+.wrapper.fixed-btn-type {padding-bottom:100px;}
 
 .footer {
 	height: 60px;
@@ -17,6 +19,42 @@
 .footer .copyright{float: none; line-height: 60px;}
 /* 모바일에서 숨김처리 */
 .mHide {display:none !important;}
+
+
+/*
+	플로팅 버튼
+*/
+.btn-page-prev,
+.btn-scroll-top {
+	position:fixed;
+	bottom:50px;
+	z-index:105;
+	width:34px;
+	height:34px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:rgba(255,255,255,.8);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+/* 이전페이지 버튼 */
+.btn-page-prev {
+	left:20px;
+	background-image:url(../img/mobile/btn/btn_page_prev.png);
+	background-size:12px 9px;
+}
+/* 스크롤 탑 버튼 */
+.btn-scroll-top {
+	display:none;
+	right:20px;
+	background-image:url(../img/mobile/btn/btn_scroll_top.png);
+	background-size:10px 13px;
+}
+.wrapper.fixed-btn-type .btn-page-prev,
+.wrapper.fixed-btn-type .btn-scroll-top {bottom:85px;}
 
 /* ===========================================================================
 	폼요소
@@ -580,6 +618,24 @@ select.styled1 {
 	margin-left: -6px;
 	right:0;
 	margin-top:-3px;
+}
+
+/* 모바일 하단 버튼 고정영역 */
+.m-fixed-btn {
+	position: fixed;
+	left: 0;right: 0;bottom: 0;
+	z-index:105;
+	background-color: #fff;
+	margin:0;
+	padding:30px 20px;
+	box-sizing:border-box;
+	border-top: 1px solid #e5e5e5;
+	box-shadow:0 0px 16px rgba(0,0,0,.1);
+}
+
+.m-fixed-btn .btn-align .btn-item {
+	width: 100% !important;
+	padding:0;
 }
 /* ===========================================================================
 	탭스타일
@@ -1379,22 +1435,6 @@ select.styled1 {
 =========================================================================== */
 .content.board {padding-bottom:130px;}
 .list-left {width:100% !important;}
-.list-left .btn-wrap {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 60px;
-	background-color: #fff;
-	margin:0;
-	padding:30px 20px;
-	border-top: 1px solid #e5e5e5;
-	box-shadow: 0 -5px 8px #fafafa;
-}
-
-.list-left .btn-align .btn-item {
-	width: 100% !important;
-	padding:0;
-}
 .scroll-design {padding-right:0 !important;}
 /* 서브 공통 타이틀 영역 */
 .title-wrap {padding:25px 20px 20px}
