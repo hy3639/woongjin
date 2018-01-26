@@ -69,7 +69,7 @@ $(document).ready(function(){
 		}
 	});
 
-	/* 검색 오버 */
+	/* 검색 포커스 */
 	$('.search-box1 input[type=text]').focus(function(){
 		$(this).next('.btn-srch').addClass('bgColor');
 	}).blur(function(){
