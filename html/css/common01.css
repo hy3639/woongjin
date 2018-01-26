@@ -376,6 +376,33 @@ select.styled1 {
 }
 .top-search-box .btn-wrap .btn-text:hover {color:#fff;}
 
+/* 검색 */
+.search-box1 {position:relative;}
+.search-box1 input[type=text] {
+	width:100%;
+	padding-right:45px;
+}
+.search-box1 .btn-srch {
+	position:absolute;
+	right:0;top:0;
+	width:36px;
+	height:35px;
+	border-left:1px solid #e5e5e5;
+	background-image:url(../img/btn/btn_search03.png);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.search-box1 .btn-srch.bgColor {
+	border:0;
+	background-image:url(../img/btn/btn_search04.png);
+	-webkit-transition:all .5s;
+	-ms-transition:all .5s;
+	transition:all .5s;
+}
+
 /* ===========================================================================
 	버튼
 =========================================================================== */
@@ -1015,11 +1042,16 @@ select.styled1 {
 	box-sizing:border-box;
 }
 .gnb-wrap .depth1 .depth-top {border-bottom:1px solid #eaeaea;}
+
+.gnb-wrap .depth1 .depth-top .search-box1 {margin:0 25px;}
 .gnb-wrap .depth1 .depth-top .btn-area {
 	margin:0 25px;
 	padding-bottom:20px;
 }
 .gnb-wrap .depth1 .depth-top .btn-area .btn-text {width:100%;}
+
+.gnb-wrap .depth1 .depth-top .search-box1 + .btn-area {margin-top:5px;}
+
 .gnb-wrap .depth1 .depth1-title {
 	position:relative;
 	height:63px;
