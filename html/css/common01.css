@@ -1043,14 +1043,13 @@ select.styled1 {
 }
 .gnb-wrap .depth1 .depth-top {border-bottom:1px solid #eaeaea;}
 
-.gnb-wrap .depth1 .depth-top .search-box1 {margin:0 25px;}
-.gnb-wrap .depth1 .depth-top .btn-area {
+.gnb-wrap .depth1 .depth-top .menu-box {
 	margin:0 25px;
 	padding-bottom:20px;
 }
-.gnb-wrap .depth1 .depth-top .btn-area .btn-text {width:100%;}
+.gnb-wrap .depth1 .depth-top .menu-box .btn-text {width:100%;}
 
-.gnb-wrap .depth1 .depth-top .search-box1 + .btn-area {margin-top:5px;}
+.gnb-wrap .depth1 .depth-top .menu-box .search-box1 + .btn-text {margin-top:5px;}
 
 .gnb-wrap .depth1 .depth1-title {
 	position:relative;
