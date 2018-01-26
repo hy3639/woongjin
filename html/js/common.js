@@ -69,6 +69,13 @@ $(document).ready(function(){
 		}
 	});
 
+	/* 검색 포커스 */
+	$('.search-box1 input[type=text]').focus(function(){
+		$(this).next('.btn-srch').addClass('bgColor');
+	}).blur(function(){
+		$(this).next('.btn-srch').removeClass('bgColor');
+	});
+
 	/* 트리메뉴 */
 	// 현재 선택된 메뉴 표시
 	$('.tree-menu .tree-list li li .link .text.fColor').each(function(){
@@ -482,7 +489,7 @@ function resizeGnb(){
 
 /* 셀렉트박스 디자인 */
 function selectStyled(){
-	$('select.styled1').each(function(){
+	var sDesign = $('select.styled1').each(function(){
 		var val = $(this).val();
 		$(this).wrap('<span class="selectWrap">');
 		$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
@@ -615,6 +622,7 @@ function resizeMid(){
 			var title = $(this).find('.menu-title').text();
 			$('.content .title-wrap').prepend('<div class="gnb-select"><select class="styled1" style="width:100%;"></select></div>');
 			$('.gnb-select select').prepend('<option>' + title + '</option>');
+			selectStyled();
 		});
 		$('.sub-gnb .bottom-menu .menu-item a').each(function(){
 			var text = $(this).text();
