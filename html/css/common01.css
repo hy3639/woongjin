@@ -1421,7 +1421,7 @@ select.styled1 {
 
 
 .board-list1 table td {
-	padding:18px 0;
+	padding:14px 0;
 	color:#666;
 	font-size:13px;
 	text-align:center;
@@ -1439,7 +1439,7 @@ select.styled1 {
 	overflow:hidden;
 	position:relative;
 	width:100%;
-	padding:18px 30px 18px 0;
+	padding:15px 30px 15px 0;
 	color: #333;
 	text-align: left;
 	box-sizing: border-box;
@@ -3283,8 +3283,7 @@ select.styled1 {
 .import-list {
 	margin: 0 50px;
 	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	padding:30px;
+	padding:30px 0 0 0;
 }
 .import-list > ul > li {
 	position: relative;
@@ -3301,6 +3300,7 @@ select.styled1 {
 	height: 100%;
 	background-color: #eee;
 }
+.import-list > ul > li:last-child {padding-bottom: 0}
 .import-list > ul > li:last-child:before {display: none;}
 .import-list li .step {
 	position: absolute;
@@ -3315,7 +3315,11 @@ select.styled1 {
 	text-align: center;
 	border-radius: 30px;
 	box-sizing: border-box;
-
+}
+.import-list > ul > li .btn-icon-text {
+	position: absolute;
+	right: 0;
+	top:13px;
 }
 .import-list li .step em {
 	display: block;
@@ -3323,12 +3327,16 @@ select.styled1 {
 	font-weight: 700;
 	line-height: 17px;
 }
-
+/* .import-list li .cont {padding-top: 5px;} */
 .import-list li .cont > p {
+	min-height: 60px;
+	padding:8px 0;
 	font-size: 16px;
 	color:#333;
 	font-weight: 700;
+	box-sizing: border-box;
 }
+.import-list li .cont > p.line1 {line-height: 44px;}
 .import-list li .cont > p span {
 	display: block;
 	font-size: 13px;
@@ -3349,9 +3357,96 @@ select.styled1 {
 .box-cont > ul > li {margin-bottom: 7px}
 .box-cont ul li ul li {
 	padding-left: 15px;
-
+}
+.admin-board-area .import-list .box-cont {overflow: hidden;}
+.admin-board-area .import-list .file-box {
+	float: left;
+	margin-top: 10px;
 }
 
+.admin-board-area .import-list .box-cont .board-list1 {
+	background-color: #fff;
+	margin-top: 18px;
+}
+.admin-board-area .import-list .box-cont .board-list1 th,
+.admin-board-area .import-list .box-cont .board-list1 td {text-align: center; height: 45px;}
+.admin-board-area .import-list .box-cont .board-list1 td {
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.file-box {
+	position:relative;
+	width: 100%;
+	padding-right:174px;
+	box-sizing: border-box;
+}
+.file_input_textbox {
+	width:100% !important;
+	max-width: 100% !important;
+	border:1px solid #e5e5e5;
+	font-size: 12px;
+	color:#666;
+	box-sizing: border-box;
+}
+.file_input_div {
+	overflow:hidden;
+	position:absolute;
+	right:81px;
+	top:0;
+	display:inline-block;
+	width:73px;
+	height:35px !important;
+	vertical-align:middle;
+	cursor:pointer;
+}
+.file_input_div:hover .file_input_button {
+	border:0 !important;
+	background-color:#999;
+	color:#fff !important;
+	line-height:35px;
+}
+.file_input_button {
+	position:absolute;
+	top:0;
+	right:0;
+	width:73px;
+	height:35px !important;
+	font-size:12px;
+	line-height:33px;
+	color:#666;
+	border:0;
+	background-color:#fff;
+	border: 1px solid #e5e5e5
+}
+.file_input_hidden {
+	position:absolute;
+	right:0;
+	top:0;
+	width:73px;
+	height:35px !important;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-ms-filter:"alpha(opacity=0)";
+	-khtml-opacity:0;
+	-moz-opacity:0;
+}
+.file-box .btn-text {
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+/*게시판 Export*/
+.export-list + .section {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.export-list + .section p {display: inline-block; line-height: 35px;}
+.export-list + .section .f-right{float: right;}
+.export-list .board-write1 td {height: 54px; box-sizing: border-box;}
 /* 나의워크스페이스 */
 .myspace {margin:0 50px;}
 .myspace.type2 {margin-top: 40px;}

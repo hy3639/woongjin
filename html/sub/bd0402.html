@@ -291,8 +291,8 @@
 											<li class="depth2-item"><a href="#">게시판셋 관리</a></li>
 											<li class="depth2-item"><a href="#">게시판 관리</a></li>
 											<li class="depth2-item"><a href="#">게시물 관리</a></li>
-											<li class="depth2-item on"><a href="#">게시판 Import</a></li><!-- 선택메뉴 class="on" -->
-											<li class="depth2-item"><a href="#">게시판 Export</a></li>
+											<li class="depth2-item"><a href="#">게시판 Import</a></li>
+											<li class="depth2-item on"><a href="#">게시판 Export</a></li><!-- 선택메뉴 class="on" -->
 										</ul>
 									</li>
 								</ul>
@@ -312,139 +312,36 @@
 	<div class="container">
 		<div class="content">
 			<div class="title-wrap">
-				<h2 class="title">게시판 Import</h2>
+				<h2 class="title">게시판 Export</h2>
 			</div>
 
 			<div class="admin-board-area">
-				<div class="import-list">
-					<ul>
-						<li>
-							<span class="step bgColor">
-								STEP<em>01</em>
-							</span>
-							<span class="btn-icon-text icon04"><span class="text">Excel 다운로드</span></span>
-							<div class="cont">
-								<p>샘플파일 다운로드/데이터 입력 <span>오른쪽 버튼을 클릭하여  Excel 샘플파일을 다운로드 받으세요</span></p>
-								<div class="box-cont">
-									<p>아래 설명을 참고하여  Import할 데이터 파일을 작성해 주십시오.</p>
-									<ul>
-										<li>1. 다운받은 샘플 엑셀 파일에 등록할 데이터를 입력합니다. </li>
-										<li>2. 입력할 데이터는 아래와 같습니다. 컬럼이 2개 이상일 경우 순서에 주의해주세요. (* : 필수 입력 컬럼)
-											<ul>
-												<li class="fColor">* 부모게시판ID(없을 경우 root 입력) | 게시판ID | * 게시판명 | * 게시판 영문명 |</li>
-												<li class="fColor">* 게시판 타입(0:일반게시판, 1:링크게시판-Import 불가, 2:카테고리)  </li>
-											</ul>
-										</li>
-										<li>3. 필수 입력 데이터가 없거나 입력 데이터 길이가 초과한 경우 정상적인 Import가 되지 않습니다. </li>
-										<li>4. 데이터에 쉼표(,)가 들어 있으면 비 정상적으로 인식될 수 있습니다.</li>
-										<li>5. 이미 등록되어 있는 데이터는 중복되어 등록되지 않습니다. 또한, 링크 타입 게시판 Import는 지원하지 않습니다. </li>
-										<li>6. 데이터를 모두 입력하신 후 파일을 저장하고 STEP 2를 수행합니다.</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li>
-							<span class="step bgColor">
-								STEP<em>02</em>
-							</span>
-							<div class="cont">
-								<p class="line1">데이터 파일 선택</p>
-								<div class="box-cont">
-									<ul>
-										<li>1. 찾아보기 버튼을 클릭하여 Import할 데이터 파일을 선택합니다.</li>
-										<li>2. 확인 버튼을 클릭하면 STEP 3의 목록에 파일의 내용이 출력됩니다.</li>
-									</ul>
-									<div class="file-box" style="max-width: 610px;">
-										<input type="text" id="fileName" class="file_input_textbox" readonly="readonly">
-										<div class="file_input_div">
-											<input type="button" value="파일선택" class="file_input_button">
-											<input type="file" id="AddFile" class="file_input_hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
-										</div>
-										<button type="button"><span class="btn-text mid bdColor fColor">확인</span></button>
-									</div>
-
-								</div>
-							</div>
-						</li>
-						<li>
-							<span class="step bgColor">
-								STEP<em>03</em>
-							</span>
-							<div class="cont">
-								<p class="line1">데이터 저장하기</p>
-								<div class="box-cont">
-									<ul>
-										<li>1. 등록 가능한 목록에만 체크박스가 표시됩니다. </li>
-										<li>2. 체크박스로 등록할 데이터를 선택하고 저장 버튼을 클릭하면 데이터 Import가 완료됩니다. </li>
-									</ul>
-									<div class="board-list1">
-										<table>
-											<caption>게시물관리 게시판</caption>
-											<colgroup>
-												<col style="width:7%;">
-												<col style="width:7%;">
-												<col style="width:12%;">
-												<col style="width:15%;">
-												<col style="width:15%;">
-												<col style="width:15%;">
-												<col style="width:15%;">
-												<col style="width:14%;">
-											</colgroup>
-											<thead>
-												<tr>
-													<th scope="col"><input type="checkbox" class="styled1"></th>
-													<th scope="col">등록여부</th>
-													<th scope="col">사유</th>
-													<th scope="col">부모 카테고리 ID</th>
-													<th scope="col">카테고리 ID</th>
-													<th scope="col">카테고리 명</th>
-													<th scope="col">카테고리 영어명</th>
-													<th scope="col">게시판 타입</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td><input type="checkbox" class="styled1"></td>
-													<td>O</td>
-													<td></td>
-													<td>root</td>
-													<td></td>
-													<td>게시판카테고리</td>
-													<td>Category</td>
-													<td>카테고리</td>
-												</tr>
-												<tr>
-													<td><input type="checkbox" class="styled1"></td>
-													<td>O</td>
-													<td></td>
-													<td>root</td>
-													<td></td>
-													<td>일반게시판</td>
-													<td>Board1</td>
-													<td>게시판</td>
-												</tr>
-												<tr>
-													<td class="no-data" colspan="8">
-														해당하는 데이터가 없습니다.
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
+				<div class="export-list">
+					<div class="board-write1 mHide">
+						<table>
+							<caption>게시판 Export</caption>
+							<colgroup>
+								<col style="width:18%;">
+								<col >
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">파일형식</th>
+									<td>일반(.xls)</td>
+								</tr>
+								<tr>
+									<th scope="">데이터 형식</th>
+									<td>1.부모게시판ID 2.게시판ID 3.게시판명 4.게시판영어명 5.게시판타입 </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="section">
+					<p>* Export한 파일을 편집하여 Import 할 경우 컬럼명이 입력되어 있는 첫번째행은 삭제하고 업로드해주세요</p>
+					<button class="btn-icon-text icon04 f-right"><span class="text">Excel 내보내기</span></button>
 				</div>
 			</div>
-			<!-- 버튼영역 -->
-			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
-					<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
-				</div>
-			</div>
-			<!--// 버튼영역 -->
 		</div>
 	</div>
 
