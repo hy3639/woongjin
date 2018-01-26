@@ -1397,7 +1397,7 @@ select.styled1 {
 }
 .scroll-design {padding-right:0 !important;}
 /* 서브 공통 타이틀 영역 */
-.title-wrap {padding:25px 25px 20px 25px;}
+.title-wrap {padding:25px 20px 20px}
 .title-wrap .title {
 	color:#000;
 	font-size:19px;
@@ -1847,13 +1847,10 @@ select.styled1 {
 =========================================================================== */
 /***공통*/
 /*검색박스*/
-.select-top {
-	padding:24px 20px 0 20px;
-}
+.select-top {padding:24px 20px 0 20px;}
 .select-top .selectWrap {width: 100% !important;}
 
 .top-search-box2 {
-	margin-top: -44px;
 	padding:20px;
 	background-color:#fafafa;
 	border-top:1px solid #eee;

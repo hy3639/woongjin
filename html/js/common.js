@@ -286,6 +286,7 @@ $(document).ready(function(){
 					.find('.calendar-layer').hide();
 			}
 		});
+		$(this).find('.ui-state-default').removeClass('ui-state-active');
 
 		calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지
 	});
@@ -324,6 +325,7 @@ $(document).ready(function(){
 			.find('.calendar-layer').hide();
 	});
 
+	// 주단위 선택
 	$(document).on('mouseenter', '.weekType .ui-state-default', function(){
 		$(this).closest('tr').addClass('over').next('tr').addClass('overNext');
 	});
