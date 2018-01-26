@@ -45,7 +45,7 @@ $(document).ready(function(){
 		}
 	});
 
-	// 하위 리스크 있을경우 버튼생성
+	// 하위 리스트 있을경우 버튼생성
 	$('.depth2-list').each(function(){
 		$(this).closest('.depth1-item').addClass('inList').find('.d-title').append('<em class="icon">아이콘영역</em>');
 	});
@@ -343,6 +343,16 @@ $(document).ready(function(){
 	/* ===================================================================================
 		버튼
 	=================================================================================== */
+	// 스크롤 탑 버튼
+	$('.btn-scroll-top').click(function(){
+		$('html, body').stop().animate({scrollTop:0}, 200);
+	});
+
+	/* 하단에 버튼 고정영역이 있을경우 */
+	$('.m-fixed-btn').each(function(){
+		$('.wrapper').addClass('fixed-btn-type');
+	});
+
 	// 아이콘 on/off
 	$('.btn-icon-text, .btn-icon').click(function(){
 		$(this).toggleClass('on');
@@ -465,6 +475,16 @@ $(window).resize(function(){
 	resizeMid();// 웹/모바일 리사이징
 	selectWid();// 셀렉트 박스넓이 설정
 	calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지
+});
+
+$(window).scroll(function(){
+	// 스크롤 탑 버튼
+	winTop = $(window).scrollTop();
+	if(winTop > 100){
+		$('.btn-scroll-top').fadeIn();
+	}else{
+		$('.btn-scroll-top').fadeOut(300);
+	}
 });
 
 

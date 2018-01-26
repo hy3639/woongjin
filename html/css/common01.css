@@ -7,6 +7,27 @@
 =========================================================================== */
 .wrapper {}
 .content {padding-bottom:80px;}
+.footer {
+	position:fixed;
+	left:0; right:0; bottom:0;
+	z-index:5;
+}
+
+/* 스크롤 탑 버튼 */
+.btn-scroll-top {
+	display:none;
+	position:fixed;
+	right:34px;bottom:50px;
+	width:50px;
+	height:47px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	border-bottom:0;
+	background:rgba(255,255,255,.8) url(../img/btn/btn_scroll_top.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
 
 /* 컨텐츠 마진 */
 .section {margin:0 50px;}
