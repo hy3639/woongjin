@@ -256,7 +256,7 @@
 										<div class="tree-menu">
 											<ul class="tree-list">
 												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
-												<li><p class="link"><a href="#" class="text">주간보고</a></p></li>
+												<li><p class="link"><a href="#" class="text fColor">주간보고</a></p></li><!-- 선택된메뉴 class="fColor" -->
 												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
 												<li>
 													<p class="link"><a href="#" class="text">게시판 목록</a></p>
@@ -286,7 +286,7 @@
 									<li class="depth1-item">
 										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
-											<li class="depth2-item on"><a href="#">정보관리</a></li><!-- 선택된메뉴 class="on" -->
+											<li class="depth2-item"><a href="#">정보관리</a></li>
 											<li class="depth2-item"><a href="#">소개화면편집</a></li>
 											<li class="depth2-item"><a href="#">레이아웃관리</a></li>
 											<li class="depth2-item"><a href="#">게시판관리</a></li>
@@ -300,7 +300,7 @@
 									<h2 class="menu-title">나의 워크스페이스 목록</h2>
 									<ul class="menu-list">
 										<li class="menu-item"><a href="#" class="text">대표 워크스페이스</a></li>
-										<li class="menu-item on"><a href="#" class="text">웅진 스터디 카페</a></li>
+										<li class="menu-item"><a href="#" class="text">웅진 스터디 카페</a></li>
 										<li class="menu-item"><a href="#" class="text">웅진 씽크빅</a></li>
 									</ul>
 									<a href="#" class="btn-text mid">전체 워크스페이스</a>
@@ -322,56 +322,46 @@
 		<div class="content">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">정보관리</h2>
+				<h2 class="title">주간보고</h2>
 			</div>
-			<div class="board-write1 btm-line">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr class="tr-floating">
-							<th scope="row">신청자</th>
-							<td>관리자</td>
-						</tr>
-						<tr>
-							<th scope="row">신청일</th>
-							<td>2018.01312</td>
-						</tr>
-						<tr>
-							<th scope="row">워크스페이스<span class="important">*</span></th>
-							<td>
-								<div class="input-area" style="max-width:100%;">
-									<input type="text">
-									<span class="btn-text mid">중복확인</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개글<span class="important">*</span></th>
-							<td>
-								<textarea style="width:100%"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개 이미지<span class="important">*</span></th>
-							<td><span class="btn-text mid">이미지 첨부</span></td>
-						</tr>
-						<tr>
-							<th scope="row">주간업무보고 사용 유무</th>
-							<td>
-								<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">사용안함</label>
-								<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">사용</label>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">초기화</a></div>
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
+
+			<div class="week-content">
+				<div class="week-setting-box">
+					<button type="button" class="btn-arr btn-prev">전주</button>
+					<button type="button" class="btn-arr btn-next">다음주</button>
+					<p class="week-text">2018.01.15 ~ 2017.01.21</p>
+					<div class="btn-calendar">달력열기</div>
+					<div class="calendar-layer bdColor weekType">
+						<div class="datepicker"></div>
+					</div>
+				</div>
+
+				<div class="week-box">
+					<div class="title-area">
+						<h3 class="title">작성현황</h3>
+					</div>
+					<div class="box-list">
+						<div class="box-item">관리자 사원<a href="#" class="btn-text sm">주간보고 등록</a></div>
+						<div class="box-item">김웅진 부장</div>
+					</div>
+					<div class="btn-wrap right">
+						<div class="btn-align">
+							<div class="btn-item"><a href="#" class="btn-text">취합</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="week-box right">
+					<div class="title-area">
+						<h3 class="title">미완료</h3>
+					</div>
+					<div class="box-list">
+						<div class="box-item"><input type="checkbox" id="check01" class="styled1"><label for="check01">전체선택</label></div>
+						<div class="box-item">
+							<p class="check-item"><input type="checkbox" id="check02" class="styled1"><label for="check02">관리자 사원</label></p>
+							<p class="check-item"><input type="checkbox" id="check03" class="styled1"><label for="check03">김웅진 부장</label></p>
+							<a href="#" class="btn-icon-text icon03 bdColor"><span class="text fColor"><em class="icon bgColor"></em>작성독려</span></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

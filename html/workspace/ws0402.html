@@ -44,6 +44,7 @@
 					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
 					<a href="#" class="link link6"><span class="text">설문조사</span></a>
 					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
+					<a href="#" class="link link8"><span class="text">포탈관리자</span></a>
 				</div>
 			</div>
 			<!-- gnb -->
@@ -256,7 +257,7 @@
 										<div class="tree-menu">
 											<ul class="tree-list">
 												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
-												<li><p class="link"><a href="#" class="text">주간보고</a></p></li>
+												<li><p class="link"><a href="#" class="text fColor">주간보고</a></p></li><!-- 선택된메뉴 class="fColor" -->
 												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
 												<li>
 													<p class="link"><a href="#" class="text">게시판 목록</a></p>
@@ -287,7 +288,7 @@
 										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
 											<li class="depth2-item"><a href="#">정보관리</a></li>
-											<li class="depth2-item on"><a href="#">소개화면편집</a></li><!-- 선택된메뉴 class="on" -->
+											<li class="depth2-item"><a href="#">소개화면편집</a></li>
 											<li class="depth2-item"><a href="#">레이아웃관리</a></li>
 											<li class="depth2-item"><a href="#">게시판관리</a></li>
 											<li class="depth2-item"><a href="#">회원관리</a></li>
@@ -300,7 +301,7 @@
 									<h2 class="menu-title">나의 워크스페이스 목록</h2>
 									<ul class="menu-list">
 										<li class="menu-item"><a href="#" class="text">대표 워크스페이스</a></li>
-										<li class="menu-item on"><a href="#" class="text">웅진 스터디 카페</a></li>
+										<li class="menu-item"><a href="#" class="text">웅진 스터디 카페</a></li>
 										<li class="menu-item"><a href="#" class="text">웅진 씽크빅</a></li>
 									</ul>
 									<a href="#" class="btn-text mid">전체 워크스페이스</a>
@@ -322,19 +323,102 @@
 		<div class="content">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">소개화면편집</h2>
+				<h2 class="title">주간보고 등록</h2>
 			</div>
 
-			<div class="section">
-				<p class="blt-text1">이 공간은 부서에서 꾸밀 수 있는 공간입니다. 부서를 대표하는 비젼 또는 슬로건을 등록해 주세요.</p>
-				<div class="web-editer">
-					<img src="../img/temp/@editer02.gif" alt="" style="width:100%;height:500px;">
+			<div class="board-write1">
+				<table>
+					<colgroup class="mHide"><!-- 웹전용 -->
+						<col style="width:18%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">기간<span class="important">*</span></th>
+							<td>
+								<div class="date-text weekType">
+									<div class="btn-calendar"><input type="text" readonly value="2018.01.08 ~ 2018.01.14"></div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td><input type="text" style="width:100%"></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<!-- 에딧터 영역 -->
+								<div class="web-editer mHide">
+									<img src="../img/temp/@editer.gif" alt="" style="width:100%;height:370px;">
+								</div>
+								<!-- //에딧터 영역 -->
+								<textarea cols="" rows="" placeholder="내용을 입력해 주세요." class="wHide" style="height:150px;"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="addfile-box section">
+				<div class="addfind-cont on">
+					<div class="title-area mHide">
+						<div class="left">
+							<p class="title">파일명</p>
+						</div>
+						<div class="right">
+							<p class="title">용량</p>
+							<p class="title">상태</p>
+						</div>
+					</div>
+					<ul class="addfile-list">
+						<li class="addfile-item">
+							<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+							<div class="volume-state">
+								<p class="text"><em class="wHide">용량</em> 310b</p>
+								<p class="text"><em class="wHide">상태</em> 0%</p>
+							</div>
+							<button type="button" class="btn-del">삭제</button>
+						</li>
+						<li class="addfile-item">
+							<div class="file-name">임직원 그룹조직도.pdf</div>
+							<div class="volume-state">
+								<p class="text"><em class="wHide">용량</em> 25b</p>
+								<p class="text"><em class="wHide">상태</em> 0%</p>
+							</div>
+							<button type="button" class="btn-del">삭제</button>
+						</li>
+						<li class="addfile-item">
+							<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+							<div class="volume-state">
+								<p class="text"><em class="wHide">용량</em> 310b</p>
+								<p class="text"><em class="wHide">상태</em> 0%</p>
+							</div>
+							<button type="button" class="btn-del">삭제</button>
+						</li>
+						<li class="addfile-item">
+							<div class="file-name">임직원 그룹조직도.pdf</div>
+							<div class="volume-state">
+								<p class="text"><em class="wHide">용량</em> 25b</p>
+								<p class="text"><em class="wHide">상태</em> 0%</p>
+							</div>
+							<button type="button" class="btn-del">삭제</button>
+						</li>
+					</ul>
+					<div class="foot-info">
+						<button type="button" class="btn-text sm">파일추가</button>
+						<div class="text-area">
+							<p class="text">용량 355b / 700mb</p>
+							<p class="text">상태 0%</p>
+						</div>
+					</div>
 				</div>
 			</div>
-
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
+					<div class="btn-item"><a class="btn-text">취소</a></div>
+					<div class="btn-item"><a class="btn-text fColor bdColor">저장</a></div>
 				</div>
 			</div>
 		</div>
