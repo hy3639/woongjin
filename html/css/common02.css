@@ -326,9 +326,7 @@ select.styled1 {
 	line-height:35px;
 }
 
-.top-search-box .btn-wrap {
-	margin:20px -5px 0;
-}
+.top-search-box .btn-wrap {margin:20px -5px 0;}
 .top-search-box .btn-wrap .btn-text {
 	background-color:#999;
 	border:0;
@@ -336,6 +334,40 @@ select.styled1 {
 	line-height:40px;
 }
 .top-search-box .btn-wrap .btn-text:hover {color:#fff;}
+
+.btn-search-toggle {
+	position:relative;
+	width:100%;
+	border:1px solid #eee;
+}
+.btn-search-toggle.close {
+	margin-top:-20px;
+	border-top-color:#fafafa;
+	background-color:#fafafa;
+}
+.btn-search-toggle.open {background-color:#fff;}
+.btn-search-toggle .text {
+	display:inline-block;
+	position:relative;
+	height:40px;
+	padding-right:20px;
+	font-size:12px;
+	line-height:40px;
+}
+.btn-search-toggle .text:before {
+	content:'';
+	position:absolute;
+	right:0; top:50%;
+	width:9px;
+	height:6px;
+	margin-top:-3px;
+	background-image:url(../img/mobile/ico/ico_arr_down01.png);
+	background-repeat:no-repeat;
+	background-size:9px 13px;
+}
+.btn-search-toggle.open .text:before {background-position:0 0;}
+.btn-search-toggle.close .text:before {background-position:0 -7px;}
+.btn-search-toggle {}
 
 /* ===========================================================================
 	버튼

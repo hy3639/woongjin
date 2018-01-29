@@ -2601,6 +2601,7 @@ select.styled1 {
 	display:none;
 	position:absolute;
 	background-color:#e5e5e5;
+	z-index:5;
 }
 .list-view .hr-bar:before {
 	content:'';
@@ -2614,7 +2615,11 @@ select.styled1 {
 .layoyt2.list-view {margin-top:20px;}
 .layoyt2.list-view .board-list1 {border-top:1px solid #eee !important;}
 
-.layoyt2.list-view .hr-bar {display:block;left:50%; top:0; bottom:0; width:6px;}
+.layoyt2.list-view .hr-bar {
+	display:block;
+	left:50%;top:0;bottom:0;
+	width:6px;
+}
 .layoyt2.list-view .hr-bar:before {
 	top:50%;
 	width:100%;
