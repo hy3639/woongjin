@@ -281,7 +281,8 @@ select.styled1 {
 .top-search-box .search-text {
 	display:inline-block;
 	position:relative;
-	width:464px;
+	width:60%;
+	max-width:464px;
 	padding-right:53px;
 	box-sizing:border-box;
 }
@@ -493,12 +494,12 @@ select.styled1 {
 }
 
 /* 정렬 */
-.btn-wrap {margin:30px 50px 0;}
+.btn-wrap {margin:20px 50px 0;}
 .btn-wrap .btn-align {display:inline-block;margin:0 0 0 7px;}
 .btn-wrap .btn-align:first-child {margin-left:0;}
 .btn-wrap .btn-align .btn-item {
 	display:inline-block;
-	margin-left:7px;
+	margin:10px 0 0 7px;
 }
 .btn-wrap .btn-align .btn-item:first-child {margin-left:0;}
 .btn-wrap.right {text-align:right;}
@@ -1479,6 +1480,7 @@ select.styled1 {
 	text-align:center;
 	line-height:22px;
 	border-top:1px solid #eee;
+	word-wrap:break-word;
 }
 .board-list1 table td.subject {padding:0;}
 /* .board-list1 table tbody td.title {
@@ -2112,7 +2114,9 @@ select.styled1 {
 
 /* 페이징 */
 .paging {
-	margin:30px 50px 0;
+	position:relative;
+	margin:30px 0 0;
+	padding:0 78px 0 72px;
 	font-size:0;
 	text-align:center;
 	line-height:0;
@@ -2121,12 +2125,12 @@ select.styled1 {
 	display:inline-block;
 	width:30px;
 	height:30px;
-	margin-left:5px;
 	box-sizing:border-box;
 	vertical-align:top;
 }
 .paging a:first-child {margin-left:0;}
 .paging .page {
+	margin-left:5px;
 	border:1px solid #fff;
 	background-color:#fff;
 	color:#666;
@@ -2137,13 +2141,16 @@ select.styled1 {
 .paging .page:hover,
 .paging .page.fColor {border-color:#ccc;}/* on */
 .paging .btn {
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
 	background-image:url(../img/btn/btn_pageing.png);
 	background-repeat:no-repeat;
 }
-.paging .btn.first {background-position:0 0;}
-.paging .btn.prev {background-position:0 -30px;margin-right:7px;}
-.paging .btn.next {background-position:0 -60px;margin-left:12px;}
-.paging .btn.end {background-position:0 -90px;}
+.paging .btn.first {left:0;background-position:0 0;}
+.paging .btn.prev {left:35px;background-position:0 -30px;margin-right:7px;}
+.paging .btn.next {right:35px;background-position:0 -60px;margin-left:12px;}
+.paging .btn.end {right:0;background-position:0 -90px;}
 
 /* 날짜 선택 영역 */
 .date-text {
@@ -3334,7 +3341,7 @@ select.styled1 {
 	margin:0;
 	border-bottom: 0
 }
-.admin-board-area .board-setting .btn-wrap {margin:30px 0 0 0;}
+.admin-board-area .board-setting .btn-wrap {margin:20px 0 0 0;}
 
 /*관리자메뉴 > 게시판 import*/
 .import-list {

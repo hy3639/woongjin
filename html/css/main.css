@@ -1,5 +1,5 @@
 /* 웹 전용 */
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:801px) {
 	/* gnb */
 	.gnb-menu-box {display:block;top:0;}
 	/* 탭 */
