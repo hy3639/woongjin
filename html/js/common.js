@@ -544,8 +544,7 @@ function selectStyled(){
 function selectWid(){
 	$('select.styled1').each(function(){
 		if($(this).closest('.selectWrap').outerWidth() < 70){
-			var wid = $(this).outerWidth();
-			$(this).closest('.selectWrap').css({'width': wid});
+			$(this).css({'width': '100%'}).closest('.selectWrap').css({'width': '100%'});
 		}else{
 			var wid = $(this).attr('style');
 			$(this).closest('.selectWrap').attr('style', wid);

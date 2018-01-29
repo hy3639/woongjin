@@ -368,7 +368,7 @@
 <!-- 모바일에서 드래그 가능 (항상 페이지 하단에 있어야 작동함) -->
 <script src="../js/jquery.ui.touch-punch.js"></script>
 <script>
-$('.drag-area').sortable();
+$('.drag-area').sortable({axis:'y', containment:'.content', scroll:false});
 </script>
 </body>
 </html>
