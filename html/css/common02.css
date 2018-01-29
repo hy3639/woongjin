@@ -1261,7 +1261,7 @@ select.styled1 {
 .reply-wrap .input-area textarea {width: 100%; height: 100%;}
 .reply-wrap .input-area .btn-area {margin-top: -1px;}
 .reply-wrap .input-area .btn-area button {width: 100%;}
-.reply-wrap .input-area .btn-area .btn-save {
+.reply-wrap .input-area .btn-area .btn-square {
 	width:100%;
 	height: 35px;
 	border:1px solid #e5e5e5;

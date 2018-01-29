@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 800px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="logo">
+			<a href="#">웅진원팩그룹웨어</a>
+		</h1>
+		<button type="button" class="btn-gnb">메뉴열기</button>
+		<button type="button" class="btn-search">검색</button>
+		<div class="gnb-utill">
+			<div class="utill">
+				<div class="user-box">
+					<button type="button" class="btn-close">닫기</button>
+					<div class="user">
+						<div class="img-area"><img src="../img/temp/@user.jpg" alt=""></div>
+						<p class="name">김웅진 부장</p>
+					</div>
+				</div>
+				<div class="naver-list">
+					<a href="#" class="link link1"><span class="text">메일<em class="len">99</em></span></a>
+					<a href="#" class="link link2"><span class="text">전화번호부</span></a>
+					<a href="#" class="link link3"><span class="text">일정관리</span></a>
+					<a href="#" class="link link4"><span class="text">내 드라이브</span></a>
+					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
+					<a href="#" class="link link6"><span class="text">설문조사</span></a>
+					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
+				</div>
+			</div>
+			<!-- gnb -->
+			<div class="gnb-sliding">
+				<div class="gnb-wrap">
+					<div class="gnb-menu-box">
+						<div class="home">
+							<a href="#" class="link-home ico01">홈</a>
+							<button type="button" class="btn-setting">설정</button>
+						</div>
+						<ul class="gnb-list">
+							<li class="gnb-item">
+								<p class="gnb-title ico02">게시판</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">게시판</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item">
+												<a href="#" class="d-title">최근게시물</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">공지사항</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">경조사</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자유게시판lv2</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">IT/Biz Trend</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">양식기 전용 게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자유게시판</a>
+												<ul class="depth2-list">
+													<li class="depth2-item"><a href="#">게시판 01</a></li>
+													<li class="depth2-item"><a href="#">게시판 02</a></li>
+													<li class="depth2-item"><a href="#">게시판 03</a></li>
+													<li class="depth2-item"><a href="#">게시판 04</a></li>
+													<li class="depth2-item"><a href="#">게시판 05</a></li>
+													<li class="depth2-item"><a href="#">게시판 06</a></li>
+													<li class="depth2-item"><a href="#">게시판 07</a></li>
+												</ul>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자료실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">R&amp;D부문/개발실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">Master Data 신규</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">익명게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">제안자료실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">권한 게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">임시저장함</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">관리자 메뉴</a>
+												<ul class="depth2-list">
+													<li class="depth2-item"><a href="#">게시판 01</a></li>
+													<li class="depth2-item"><a href="#">게시판 02</a></li>
+													<li class="depth2-item"><a href="#">게시판 03</a></li>
+													<li class="depth2-item"><a href="#">게시판 04</a></li>
+													<li class="depth2-item"><a href="#">게시판 05</a></li>
+													<li class="depth2-item"><a href="#">게시판 06</a></li>
+													<li class="depth2-item"><a href="#">게시판 07</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico03">전자결재</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">전자결재</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico04">설문조사</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">설문조사</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico05">업무지원</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">업무지원</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico06">Knowledge</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">Knowledge</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico07">e-HR</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">e-HR</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico08">평가시스템</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">평가시스템</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico09">개인블로그</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">개인블로그</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico10">전사공유지식</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">전사공유지식</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item">
+												<a href="#" class="d-title">전사공유지식</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 서브 GNB -->
+					<div class="sub-gnb">
+						<div class="depth1">
+							<div class="scroll-area">
+								<div class="depth-top">
+									<p class="depth1-title"><span class="text">전자결재</span></p>
+									<div class="menu-box">
+										<a href="#" class="btn-text mid">기안문 작성</a>
+									</div>
+								</div>
+								<ul class="depth1-list">
+									<li class="depth1-item">
+										<a href="#" class="d-title">개인문서함</a>
+										<ul class="depth2-list">
+											<li class="depth2-item on"><a href="#">결재요청함</a></li><!-- 선택메뉴 (class="on") -->
+											<li class="depth2-item"><a href="#">임시저장함</a></li>
+											<li class="depth2-item"><a href="#">참조문서함</a></li>
+											<li class="depth2-item"><a href="#">전체결재문서</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">결재</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">결재대기함</a></li>
+											<li class="depth2-item"><a href="#">결재진행함</a></li>
+											<li class="depth2-item"><a href="#">완료문서함</a></li>
+											<li class="depth2-item"><a href="#">개인지출결의</a></li>
+											<li class="depth2-item"><a href="#">회수/반려문서함</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">부서</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">부서수신함</a></li>
+											<li class="depth2-item"><a href="#">부서문서함</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">개인보관함</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">개인</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">환경설정</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">대결자관리</a></li>
+											<li class="depth2-item"><a href="#">개임보관함</a></li>
+											<li class="depth2-item"><a href="#">알림설정</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">관리자메뉴</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">사용관리</a></li>
+											<li class="depth2-item"><a href="#">결재문서 관리</a></li>
+											<li class="depth2-item"><a href="#">문서보안관리</a></li>
+											<li class="depth2-item"><a href="#">부서문서함관리</a></li>
+											<li class="depth2-item"><a href="#">문서함 관리</a></li>
+											<li class="depth2-item"><a href="#">시스템관리</a></li>
+											<li class="depth2-item"><a href="#">코드관리</a></li>
+											<li class="depth2-item"><a href="#">양식관리</a></li>
+											<li class="depth2-item"><a href="#">수신함담당자관리</a></li>
+											<li class="depth2-item"><a href="#">부서별담당자관리</a></li>
+											<li class="depth2-item"><a href="#">전결관리</a></li>
+											<li class="depth2-item"><a href="#">전결규정 설정</a></li>
+											<li class="depth2-item"><a href="#">전결규정 결재선설정</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //서브 GNB -->
+				</div>
+				<button type="button" class="btn-gnb-toggle">
+					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="content app-wrap">
+			<!-- 타이틀 영역 -->
+			<div class="title-wrap">
+				<h2 class="title">결재요청함</h2>
+			</div>
+			<div class="btn-wrap right">
+				<div class="btn-align">
+					<a class="btn-item"><span class="btn-text">결제선표시</span></a>
+					<a class="btn-item"><span class="btn-text">선택반려</span></a>
+					<a class="btn-item"><span class="btn-text">참조자</span></a>
+				</div>
+				<div class="btn-align right">
+					<a class="btn-item"><span class="btn-text">기안부서진행현황</span></a>
+					<a class="btn-item"><span class="btn-text">목록</span></a>
+					<a class="btn-item"><span class="btn-text">인쇄</span></a>
+				</div>
+				<div class="btn-align">
+					<a class="btn-item"><span class="btn-text">수정</span></a>
+					<a class="btn-item"><span class="btn-text">결재선</span></a>
+					<a class="btn-item"><span class="btn-text bdColor fColor">결재</span></a>
+				</div>
+			</div>
+			<div class="approval-view">
+				<p class="title"><em>기안지 - 3단</em></p>
+				<ul class="app-list">
+					<li class="box">
+						<div class="line">
+							<p>수신부서</p>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp1.png" alt="제출">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김웅진<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김은미<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀장</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										이종석<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<p class="info"></p>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+									<p class="info"></p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="box">
+						<div class="line">
+							<p>발신부서</p>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										오종욱<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김은미<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀장</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp5.png" alt="반려">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										이화영<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp4.png" alt="미결">
+								</div>
+								<div class="info-wrap">
+									<p class="info">박정수</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">대표</p>
+								<div class="stamp">
+									<span class="txt">진행</span>
+								</div>
+								<div class="info-wrap">
+									<p class="info">관리자</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="app-list">
+					<li class="box">
+						<div class="line">
+							<p class="type2">결<br><br>재</p>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										강현진<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김은미<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀장</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										이화영<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">본부장</p>
+								<div class="stamp">
+									<span class="txt">진행</span>
+								</div>
+								<div class="info-wrap">
+									<p class="info">박정수</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">대표</p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+									<p class="info">관리자</p>
+								</div>
+							</div>
+						</div>
+
+					</li>
+					<li class="box">
+						<div class="line">
+							<p class="type2">관<br><br>련</p>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										고대호<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김은미<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀장</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp6.png" alt="회수">
+								</div>
+								<div class="info-wrap">
+									<p class="info">이화영</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+									<p class="info"></p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+									<p class="info"></p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="app-list">
+					<li class="box">
+						<div class="line">
+							<p class="type2">합<br><br>의</p>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp3.png" alt="합의">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										박종철<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp3.png" alt="합의">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김한준<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀장</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp4.png" alt="미결">
+								</div>
+								<div class="info-wrap">
+									<p class="info">이화영</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+										<p class="info"></p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+									<p class="info"></p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="box">
+						<div class="line">
+							<p class="type2">주<br><br>관</p>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										박종철<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김한준<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀원</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp2.png" alt="승인">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										김은미<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position">팀장
+								</p>
+								<div class="stamp">
+									<img src="../img/img/img_stamp6.png" alt="회수">
+								</div>
+								<div class="info-wrap">
+									<p class="info">
+										이화영<span>01.17 10:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="position"></p>
+								<div class="stamp"></div>
+								<div class="info-wrap">
+									<p class="info"></p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="board-view2">
+					<ul>
+						<li class="tr-area">
+							<span class="th-area">문서번호</span>
+							<span class="td-area">20180122A-0201</span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">기안일자</span>
+							<span class="td-area">2018.01.17</span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">기안자</span>
+							<span class="td-area">김웅진 부장 / 관리본부</span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">보안설정</span>
+							<span class="td-area">공개 / 영구</span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">참조자 지정 <button type="button" class="btn-text sm"><span class="text">열람</span></button></span>
+							<span class="td-area"></span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">열람권한 지정</span>
+							<span class="td-area"></span>
+						</li>
+						<li class="tr-area type2">
+							<span class="th-area">수신처 지정</span>
+							<span class="td-area">관리자(본부장) 관리자 / 웅진</span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">사번</span>
+							<span class="td-area">woongjin003</span>
+						</li>
+						<li class="tr-area">
+							<span class="th-area">이름</span>
+							<span class="td-area">김웅진 부장 / 팀원 / 관리본부</span>
+						</li>
+						<li class="tr-area type2">
+							<span class="th-area">문서 제목</span>
+							<span class="td-area">결재 표준 기안지</span>
+						</li>
+						<li class="tr-area type2">
+							<span class="th-area">기결재 첨부</span>
+							<span class="td-area">
+								<ul class="attach-list2">
+									<li><a href="#">20180801-사업계획서(통합)</a></li>
+									<li><a href="#">상수도 원격검침시스템구축 사업화 용역/원격검침부문</a></li>
+									<li><a href="#">계약금액 발주서</a></li>
+								</ul>
+							</span>
+						</li>
+						<li class="tr-area type2">
+							<span class="th-area">첨부파일</span>
+							<span class="td-area">
+								<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
+								<div class="attach-list">
+									<ul>
+										<li><a href="#">오픈안내문.ppt</a></li>
+										<li><a href="#">이벤트명단.xlsx</a></li>
+										<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
+									</ul>
+								</div>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="cont">
+					1. 계약 개요<br>
+					가. 발 주 처 : (주)안세기술 (원청 : 인천시 상수도사업본부)<br>
+					나. 사 업 명  : 상수도 원격검침시스템구축 사업화 용역/원격검침부문<br>
+					다. 계약금액 : 12,000,000원 (VAT 별도)<br>
+					라. 공사기간 : 2017.8.18 ~ 2017. 12.15 (4개월)<br><br><br>
+
+
+					2. 업무범위<br>
+					가. 현황 및 타당성 분석<br>
+					ㅇ 현행 업무 및 운영 중인 정보시스템 현황 분석(개선과제 포함)<br>
+					ㅇ 원격검침시스템 시범사업 구축 현황 및 활용 가능성 진단<br>
+					ㅇ 관련 법․제도 및 정부정책 분석<br>
+					ㅇ 원격검침시스템 구축의 경제적 기술적 정책적 타당성 분석<br>
+					ㅇ 서비스 연계 및 확장 가능 분야 조사<br>
+					나. 목표시스템 및 실행방안 수립<br>
+					ㅇ 상수도 원격검침시스템 구축 목표 모델 수립<br>
+					ㅇ 중 장기 로드맵 및 상세 이행 계획 수립<br>
+					- 적정 사업비 및 운영비 산출<br>
+					- 인천시 최적의 사업화 방안 수립<br>
+					- 단계별 과제별 이행계획 수립 및 이행과제 정의<br>
+					- 원격검침시스템 도입에 따른 업무프로세스 변경 내용 분석<br>
+					ㅇ 현 검침원의 고용보장을 위한 사업단계별 인력운용 계획 수립<br>
+					ㅇ 효율적 구축 및 운영 조직 구성(안) 제시<br>
+					다. 시스템 구성 및 데이터베이스 설계<br>
+					ㅇ 목표시스템 운영을 위한 H/W, S/W, 네트워크 등 인프라 구성 설계<br>
+					ㅇ 관리적, 물리적, 기술적 보안 모델 설계<br>
+					ㅇ 연차별 사업의 통합운영을 위한 데이터베이스 설계 및 표준화 방안 제시<br>
+					ㅇ 타 시스템과 데이터 연계를 위한 요구사항 및 연계 방안 제시<br>
+					라. 사업기본계획 및 원격검침시스템 구축 RFP 작성
+					<div class="attach-list">
+						<span>첨부 :</span>
+						<ul>
+							<li><a href="#">1. 계약서 날인본    ..........1부</a></li>
+							<li><a href="#">2. (주)쓰리노우솔루션즈 확인서. 1부 . 끝</a></li>
+						</ul>
+					</div>
+					<div class="cont-bottom">
+						<p class="left"><img src="../img/img/img_cont_logo.png" alt="logo"> 위와 같은 사유로 결재를 요청하오니 허가해주시기 바랍니다.</p>
+						<p class="right">
+							2017년   01월  17일<br>
+							기안자  <span>김웅진 부장</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<p class="sub-tit">결재의견</p>
+				<div class="board-list1">
+					<table>
+						<caption>결재의견 게시판</caption>
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:13%;">
+							<col style="width:12%;">
+							<col style="width:17%;">
+							<col >
+							<col style="width:7%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">결재결과</th>
+								<th scope="col">결재자</th>
+								<th scope="col">부서</th>
+								<th scope="col">결재일시</th>
+								<th scope="col">의견</th>
+								<th scope="col">파일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>승인</td>
+								<td>오종욱 대리</td>
+								<td>영업 2팀</td>
+								<td>2018.01.18 15:00</td>
+								<td>이상없어 보입니다. 승인합니다.</td>
+								<td><img src="../img/ico/ico_file.png" alt="첨부"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<p class="sub-tit">기안부서 결재의견</p>
+				<div class="board-list1">
+					<table>
+						<caption>결재의견 게시판</caption>
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:13%;">
+							<col style="width:12%;">
+							<col style="width:17%;">
+							<col >
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">결재결과</th>
+								<th scope="col">결재자</th>
+								<th scope="col">부서</th>
+								<th scope="col">결재일시</th>
+								<th scope="col">의견</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>승인</td>
+								<td>오종욱 대리</td>
+								<td>영업 2팀</td>
+								<td>2018.01.18 15:00</td>
+								<td>이상없어 보입니다. 승인합니다.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="section">
+				<p class="sub-tit">간단결재처리</p>
+				<div class="reply-wrap">
+					<p>
+						결재처리 :
+						<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">승인</label>
+						<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">반려</label>
+					</p>
+					<div class="input-area">
+						<div class="text-wrap">
+							<textarea placeholder="승인합니다."></textarea>
+						</div>
+						<div class="btn-area">
+							<button type="button"><span class="btn-text btn-square">결재</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	</div>
+</div>
+</body>
+</html>
