@@ -251,36 +251,24 @@
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">영업 1팀</span></p>
-									<div class="tree-menu-box">
-										<div class="tree-menu">
-											<ul class="tree-list">
-												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
-												<li><p class="link"><a href="#" class="text fColor">주간보고</a></p></li><!-- 선택된메뉴 class="fColor" -->
-												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
-												<li>
-													<p class="link"><a href="#" class="text">게시판 목록</a></p>
-													<ul>
-														<li><p class="link"><a href="#" class="text">일반 게시판</a></p></li>
-														<li>
-															<p class="link"><a href="#" class="text">방명록</a></p>
-															<ul>
-																<li><p class="link"><a href="#" class="text">양식기 저장함 전용 게시판</a></p></li>
-																<li><p class="link"><a href="#" class="text">익명 게시판</a></p></li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</div>
+									<p class="depth1-title"><span class="text">워크스페이스</span></p>
+									<div class="menu-box">
+										<a href="#" class="btn-text mid">워크스페이스 개설신청</a>
 									</div>
 								</div>
 								<ul class="depth1-list">
 									<li class="depth1-item">
-										<a href="#" class="d-title">활동 통계</a>
+										<a href="#" class="d-title">워크스페이스 유형</a>
 										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">워크스페이스 활동 통계</a></li>
-											<li class="depth2-item"><a href="#">회원 활동 통계</a></li>
+											<li class="depth2-item on"><a href="#">Organization</a></li><!-- 선택된 메뉴 (class="on") -->
+											<li class="depth2-item"><a href="#">Community</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item ">
+										<a href="#" class="d-title">나의 메뉴</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">나의 워크 스페이스</a></li>
+											<li class="depth2-item"><a href="#">나의 신청 내역</a></li>
 										</ul>
 									</li>
 									<li class="depth1-item">
@@ -322,47 +310,302 @@
 		<div class="content">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">주간보고</h2>
+				<h2 class="title">Organization</h2>
+				<p class="text">웅진그룹의 팀워크를 다지기 위한 그룹</p>
 			</div>
-
-			<div class="week-content">
-				<div class="week-setting-box">
-					<button type="button" class="btn-arr btn-prev">전주</button>
-					<button type="button" class="btn-arr btn-next">다음주</button>
-					<p class="week-text">2018.01.15 ~ 2017.01.21</p>
-					<div class="btn-calendar">달력열기</div>
-					<div class="calendar-layer bdColor weekType">
-						<div class="datepicker"></div>
-					</div>
+			<div class="board-value mHide">
+				<a href="#" class="value-title">전체 워크스페이스 보기 <span class="fColor">(2,900)</span></a>
+				<div class="value-list-box">
+					<ul class="value-list">
+						<li class="item on"><a href="#">웅진 그룹 <span class="fColor">(1,500)</span></a></li>
+						<li class="item"><a href="#">CEO 그룹 <span class="fColor">(3)</span></a></li>
+						<li class="item"><a href="#">팀장 그룹 <span class="fColor">(50)</span></a></li>
+						<li class="item"><a href="#">직원 그룹 <span class="fColor">(1,200)</span></a></li>
+						<li class="item"><a href="#">웅진 북스 클럽 <span class="fColor">(85)</span></a></li>
+						<li class="item"><a href="#">씽크빅 <span class="fColor">(55)</span></a></li>
+						<li class="item"><a href="#">오킨스전자 <span class="fColor">(71)</span></a></li>
+						<li class="item"><a href="#">기타 <span class="fColor">(29)</span></a></li>
+					</ul>
 				</div>
-
-				<div class="week-box">
-					<div class="title-area">
-						<h3 class="title">작성현황</h3>
-					</div>
-					<div class="box-list">
-						<div class="box-item">관리자 사원<a href="#" class="btn-text sm">주간보고 등록</a></div>
-						<div class="box-item">김웅진 부장</div>
-					</div>
-					<div class="btn-wrap right">
-						<div class="btn-align">
-							<div class="btn-item"><a href="#" class="btn-text">취합</a></div>
-						</div>
-					</div>
+			</div>
+			<div class="top-search-box type2">
+				<select class="styled1" style="width:150px;">
+					<option>제목</option>
+					<option>게시자</option>
+					<option>내용</option>
+					<option>양식작성기</option>
+				</select>
+				<select class="styled1" style="width:150px;">
+					<option>워크스페이스</option>
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+				</select>
+				<div class="search-text">
+					<input type="text" class="required" placeholder="검색어를 입력해주세요">
+					<button type="button" class="btn-search">검색</button>
 				</div>
-				<div class="week-box right">
-					<div class="title-area">
-						<h3 class="title">미완료</h3>
-					</div>
-					<div class="box-list">
-						<div class="box-item"><input type="checkbox" id="check01" class="styled1"><label for="check01">전체선택</label></div>
-						<div class="box-item">
-							<p class="check-item"><input type="checkbox" id="check02" class="styled1"><label for="check02">관리자 사원</label></p>
-							<p class="check-item"><input type="checkbox" id="check03" class="styled1"><label for="check03">김웅진 부장</label></p>
-							<a href="#" class="btn-icon-text icon03 bdColor"><span class="text fColor"><em class="icon bgColor"></em>작성독려</span></a>
-						</div>
-					</div>
-				</div>
+			</div>
+			<div class="sorting-area">
+				<div class="left-box">
+					<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+				</div>			
+			</div>
+			<!-- 썸네일리스트 -->
+			<div class="thumb-list1 section">
+				<ul>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="icon-important num fColor bdColor">필독</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area">
+								<img src="../img/temp/@thumb.jpg" alt="">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="num">219</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area mHide">
+								<img src="../img/img/thumb_noimage.png" alt="">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="num">218</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area">
+								<img src="../img/temp/@thumb.jpg" alt="">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="num">218</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area">
+								<img src="../img/temp/@thumb.jpg" alt="">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="num">218</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area">
+								<img src="../img/temp/@thumb.jpg" alt="">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="num">218</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(122)</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area">
+								<img src="../img/temp/@thumb.jpg" alt="">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="txt-area">
+								<span class="num">218</span>
+								<p class="title">
+									<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+								</p>
+								<p class="cont dotLine3">
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+									소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+									다음과 같이 소리마치 그룹웨어 도입에 관한
+									데모를 진행합니다. 게시판 테스트입니다.
+								</p>
+							</div>
+							<div class="info-area">
+								<p class="name">관리자</p>
+								<ul>
+									<li class="left">
+										<span class="text date">2017.11.30</span>
+										<span class="text count"><em>조회</em> 108</span>
+									</li>
+									<li class="right">
+										<span class="ico-file">첨부파일</span>
+										<span class="like"><em class="mHide">좋아요</em> 200</span>
+									</li>
+								</ul>
+							</div>
+							<div class="img-area">
+								<img src="../img/temp/@thumb.jpg" alt="">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-more wHide">
+				<button type="button"><span>더보기</span></button>
+			</div>
+			<!-- 페이징 -->
+			<div class="paging mHide">
+				<a href="#" class="btn first">처음</a>
+				<a href="#" class="btn prev">이전</a>
+				<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+				<a href="#" class="page">2</a>
+				<a href="#" class="page">3</a>
+				<a href="#" class="page">4</a>
+				<a href="#" class="page">5</a>
+				<a href="#" class="page">6</a>
+				<a href="#" class="page">7</a>
+				<a href="#" class="page">8</a>
+				<a href="#" class="page">9</a>
+				<a href="#" class="page">10</a>
+				<a href="#" class="btn next">다음</a>
+				<a href="#" class="btn end">마지막</a>
 			</div>
 		</div>
 	</div>
