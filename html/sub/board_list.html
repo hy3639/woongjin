@@ -982,15 +982,18 @@
 <script>
 $(function(){
 	$('.hr-bar').draggable({
-		axis:'x', containment: '.list-view.layoyt2', scroll: false,
+		axis:'x',
+		containment: '.list-view.layoyt2',
+		scroll: false,
+
 		start: function() {
-			
+			// 드래그 시작
 		},
 		drag: function() {
-			
+			// 드래그 진행
 		},
 		stop: function() {
-			alert(0);
+			// 그래그 완료
 		}
 	});
 });
