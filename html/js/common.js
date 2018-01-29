@@ -372,6 +372,17 @@ $(document).ready(function(){
 		}
 	});
 
+	// 상단 검색 모바일에서 접기
+	$('.btn-search-toggle').click(function(){
+		if($(this).hasClass('close')){
+			$(this).find('.text').text('검색');
+			$(this).removeClass('close').addClass('open').prev('.top-search-box').slideUp();
+		}else{
+		$(this).find('.text').text('접기');
+			$(this).removeClass('open').addClass('close').prev('.top-search-box').slideDown();
+		}
+	});
+
 	// 게시판 리스트 보기방식 설정
 	$('.align-btns button').click(function(){
 		$(this).closest('.align-btns').find('button').removeClass('on');
@@ -533,8 +544,7 @@ function selectStyled(){
 function selectWid(){
 	$('select.styled1').each(function(){
 		if($(this).closest('.selectWrap').outerWidth() < 70){
-			var wid = $(this).outerWidth();
-			$(this).closest('.selectWrap').css({'width': wid});
+			$(this).css({'width': '100%'}).closest('.selectWrap').css({'width': '100%'});
 		}else{
 			var wid = $(this).attr('style');
 			$(this).closest('.selectWrap').attr('style', wid);
@@ -605,6 +615,10 @@ function resizeMid(){
 
 		/* 탭 리스트 넓이 초기화 */
 		$('.tab-list1 .item').removeAttr('style');
+
+		/* 상단 검색 영역 초기화 */
+		$('.top-search-box').show();
+		$('.btn-search-toggle').removeClass('open').addClass('close').find('.text').text('접기');
 
 		/* 태깅 */
 		$('#js-tagBox').each(function(){
