@@ -2664,3 +2664,88 @@ select.styled1 {
 	font-size: 11px;
 	color:#999;
 }
+
+
+/* ===========================================================================
+	윈도우 팝업
+=========================================================================== */
+/* 전자결재 > 결재선 변경팝업*/
+.approve-box {border-top:1px solid #eee;}
+.approve-box .tree-menu {
+	padding:20px 20px 0;
+}
+.approve-box .tree-menu .search-area {}
+.approve-box .tree-menu .search-area .search-box {
+	position:relative;
+	padding-right:80px;
+}
+.approve-box .tree-menu .search-area .search-box input[type=text] {}
+.approve-box .tree-menu .search-area .search-box .btn-text {
+	position:absolute;
+	right:0;top:0;
+	width:75px;
+	line-height:33px;
+}
+
+.approve-box .tree-menu .search-area .result-area {
+	margin-top:16px;
+	padding:0 15px;
+}
+.approve-box .tree-menu .search-area .result-text {
+	display:block;
+	margin-top:10px;
+}
+.approve-box .tree-menu .search-area .result-text:first-child {margin-top:0;}
+
+
+.approve-box .box-item {margin:20px 20px 0;}
+.approve-box .approve-mid .box-item {
+	border-top:1px solid #eee;
+	padding-top:16px;
+}
+.approve-box .box-item .box-title {
+	margin-bottom:10px;
+	color:#333;
+	font-size:15px;
+	font-weight:700;
+}
+.approve-box .box-item p + p {margin-top:10px;}
+.approve-box .approve-mid .box-item .btn-area {
+	overflow:hidden;
+	margin-top:20px;
+}
+.approve-box .approve-mid .box-item .btn-area .btn-method {
+	float:left;
+	width:33%;
+	padding-right:5px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.approve-box .approve-mid .box-item .btn-area .btn-method:first-child {width:34%;}
+.approve-box .approve-mid .box-item .btn-area .btn-method:last-child {padding-right:0;}
+.approve-box .approve-mid .box-item .btn-area .btn-method span {
+	display:block;
+	height:40px;
+	border:1px solid #e5e5e5;
+	font-size:14px;
+	text-align:center;
+	line-height:38px;
+}
+.approve-box .approve-mid .box-item .btn-area .btn-method span:before {
+	content:'';
+	display:inline-block;
+	width:11px;
+	height:38px;
+	margin-right:5px;
+	vertical-align:top;
+}
+.approve-box .approve-mid .box-item .btn-area .method1 span:before {background:url(../img/mobile/btn/btn_method01.png) no-repeat 0 50%;background-size:9px 9px;}
+.approve-box .approve-mid .box-item .btn-area .method2 span:before {background:url(../img/mobile/btn/btn_method02.png) no-repeat 0 50%;background-size:9px 1px;}
+.approve-box .approve-mid .box-item .btn-area .method3 span:before {background:url(../img/mobile/btn/btn_method03.png) no-repeat 0 50%;background-size:11px 13px;}
+
+.approve-box .approve-mid .box-item {}
+.approve-box {}
+.approve-box {}
+.approve-box {}
+.approve-box {}
+.approve-box {}
