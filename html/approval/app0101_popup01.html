@@ -31,71 +31,75 @@
 		</ul>
 		<div class="tabContent">
 			<div class="approve-box tabCont on">
-				<div class="tree-menu open">
-					<div class="search-area">
-						<div class="search-box">
-							<input type="text" placeholder="조직원을 입력하세요.">
-							<button type="button" class="btn-text mid">검색</button>
+				<div class="toggle-cont">
+					<div class="tree-menu open">
+						<div class="search-area">
+							<div class="search-box">
+								<input type="text" placeholder="조직원을 입력하세요.">
+								<button type="button" class="btn-text mid">검색</button>
+							</div>
+							<div class="result-area">
+								<a href="#" class="result-text">최빛나리 본부장/팀원</a>
+								<a href="#" class="result-text">최빛나리 사원/팀원</a>
+							</div>
 						</div>
-						<div class="result-area">
-							<a href="#" class="result-text">최빛나리 본부장/팀원</a>
-							<a href="#" class="result-text">최빛나리 사원/팀원</a>
-						</div>
+						<ul class="tree-list user mHide">
+							<li>
+								<p class="link"><a href="#" class="text">웅진</a></p>
+								<ul>
+									<li>
+										<p class="link"><a href="#" class="text">영업본부</a></p>
+										<ul>
+											<li><p class="link"><a href="#" class="text">김웅진 부장/팀장</a></p></li>
+											<li>
+												<p class="link"><a href="#" class="text">영업1팀</a></p>
+												<ul>
+													<li><p class="link"><a href="#" class="text">최빛나리 본부장/팀원</a></p></li>
+													<li><p class="link"><a href="#" class="text">김현주 대리/팀원</a></p></li>
+													<li><p class="link"><a href="#" class="text">이현표 과장/팀원</a></p></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<p class="link"><a href="#" class="text">관리본부</a></p>
+										<ul>
+											<li><p class="link"><a href="#" class="text">관리자 사원/팀원</a></p></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
-					<ul class="tree-list user mHide">
-						<li>
-							<p class="link"><a href="#" class="text">웅진</a></p>
-							<ul>
-								<li>
-									<p class="link"><a href="#" class="text">영업본부</a></p>
-									<ul>
-										<li><p class="link"><a href="#" class="text">김웅진 부장/팀장</a></p></li>
-										<li>
-											<p class="link"><a href="#" class="text">영업1팀</a></p>
-											<ul>
-												<li><p class="link"><a href="#" class="text">최빛나리 본부장/팀원</a></p></li>
-												<li><p class="link"><a href="#" class="text">김현주 대리/팀원</a></p></li>
-												<li><p class="link"><a href="#" class="text">이현표 과장/팀원</a></p></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<p class="link"><a href="#" class="text">관리본부</a></p>
-									<ul>
-										<li><p class="link"><a href="#" class="text">관리자 사원/팀원</a></p></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 
-				<div class="approve-mid">
-					<div class="box-item">
-						<h2 class="box-title">결재구분</h2>
-						<select class="styled1">
-							<option>결재</option>
-						</select>
-					</div>
-					<div class="box-item">
-						<h2 class="box-title">결제방법</h2>
-						<p><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">결재</label></p>
-						<p><input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">합의</label></p>
-						<p><input type="radio" name="Radio01" id="Radio0103" class="styled1"><label for="Radio0103">합의(선택)</label></p>
-						<div class="btn-area">
-							<button type="button" class="btn-method method1"><span>추가</span></button>
-							<button type="button" class="btn-method method2"><span>삭제</span></button>
-							<button type="button" class="btn-method method3"><span>리셋</span></button>
+					<div class="approve-mid">
+						<div class="box-item">
+							<h2 class="box-title">결재구분</h2>
+							<select class="styled1" style="width:100%;">
+								<option>결재</option>
+							</select>
+						</div>
+						<div class="box-item">
+							<h2 class="box-title">결제방법</h2>
+							<p><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">결재</label></p>
+							<p><input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">합의</label></p>
+							<p><input type="radio" name="Radio01" id="Radio0103" class="styled1"><label for="Radio0103">합의(선택)</label></p>
+							<div class="btn-area">
+								<button type="button" class="btn-method method1"><span>추가</span></button>
+								<button type="button" class="btn-method method2"><span>삭제</span></button>
+								<button type="button" class="btn-method method3"><span>리셋</span></button>
+							</div>
 						</div>
 					</div>
 				</div>
+				<button type="button" class="btn-m-toggle wHide"><span class="text close">접기</span><span class="text open">조직도검색</span></button>
 
 				<div class="approve-info">
+					<h3 class="mTitle1 wHide">결재선정보</h3>
 					<div class="search-area">
 						<label for="Select01">사용자 결제선</label>
 						<select id="Select01" class="styled1" style="width:100%;">
-							<option>사용자 결재선을 선택하세요</option>
+							<option>선택하세요</option>
 							<option>결재선명 01</option>
 							<option>결재선명 02</option>
 						</select>
@@ -129,7 +133,7 @@
 						<div class="set-box">
 							<div class="box-item">
 								<h2 class="box-title">결제방법변경</h2>
-								<select class="styled1">
+								<select class="styled1" style="width:100%;">
 									<option>결재</option>
 									<option>합의</option>
 									<option>합의(선택)</option>
@@ -156,13 +160,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="btn-wrap right">
-		<div class="btn-align">
-			<div class="btn-item"><a href="#" class="btn-text">닫기</a></div>
-			<div class="btn-item"><a href="#" class="btn-text bdColor fColor">적용</a></div>
+			<div class="btn-wrap right">
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">닫기</a></div>
+					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">적용</a></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -89,6 +89,12 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	background-color:rgba(0,0,0,.5);
 }
 
+/* 드래그시 색상 */
+.drag-area .drag-box.ui-sortable-helper {
+	box-shadow:1px 3px 6px rgba(0,0,0,.4);
+	opacity:.7;
+}
+
 
 /* 스킨컬러 적용 */
 .selTitle.bdColor,
@@ -101,3 +107,8 @@ input.bdColor {
 .fColor {color:#ff5349 !important;}
 .bgColor {background-color:#ff5349 !important;}
 .bdColor {border-color:#ff5349 !important;}
+.drag-area .drag-box.ui-sortable-helper {
+	border-color:#ff5349 !important;
+	background-color:#ff5349 !important;
+	color:#fff !important;
+}

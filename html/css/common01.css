@@ -126,6 +126,9 @@
 	background-color:#bbb;
 }
 
+/* 모바일에서 감춘영역 웹에서 보이기 */
+.toggle-cont {display:block !important;}
+
 /* ===========================================================================
 	폼요소
 =========================================================================== */
@@ -3429,13 +3432,6 @@ select.styled1 {
 	line-height:48px;
 }
 .drag-area .drag-box:hover {cursor:s-resize;}
-.drag-area .drag-box.ui-sortable-helper {
-	border-color:#ff5349 !important;
-	background-color:#ff5349 !important;
-	box-shadow:1px 3px 6px rgba(0,0,0,.4);
-	color:#fff !important;
-	opacity:.7;
-}
 
 /* ===========================================================================
 	전자결재

@@ -383,6 +383,15 @@ $(document).ready(function(){
 		}
 	});
 
+	// 모바일에서 컨텐츠 접기
+	$('.btn-m-toggle').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').prev('.toggle-cont').slideUp(200);
+		}else{
+			$(this).addClass('on').prev('.toggle-cont').slideDown(300);
+		}
+	});
+
 	// 게시판 리스트 보기방식 설정
 	$('.align-btns button').click(function(){
 		$(this).closest('.align-btns').find('button').removeClass('on');
