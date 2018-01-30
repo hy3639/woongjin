@@ -543,12 +543,8 @@ function selectStyled(){
 /* 셀렉트박스 넓이 */
 function selectWid(){
 	$('select.styled1').each(function(){
-		if($(this).closest('.selectWrap').outerWidth() < 70){
-			$(this).css({'width': '100%'}).closest('.selectWrap').css({'width': '100%'});
-		}else{
-			var wid = $(this).attr('style');
-			$(this).closest('.selectWrap').attr('style', wid);
-		}
+		var wid = $(this).attr('style');
+		$(this).closest('.selectWrap').attr('style', wid);
 	});
 }
 
