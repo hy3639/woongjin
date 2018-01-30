@@ -2595,3 +2595,72 @@ select.styled1 {
 	margin-left:10px !important;
 	margin-right:10px !important;
 }
+
+/* ===========================================================================
+	전자결재
+=========================================================================== */
+.app-list {overflow: hidden; margin-top: -1px;}
+.app-list .box {}
+.app-list .box:nth-child(odd) {}
+.app-list .box:nth-child(even) {}
+.app-list .box .line {
+	width: 100%;
+	position: relative;
+	min-height: 130px;
+	padding-left:35px;
+	box-sizing: border-box;
+}
+.app-list .box .line > p {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 35px;
+	padding :28px 10px;
+	border:1px solid #e5e5e5;
+	background-color:#fafafa;
+	color: #333;
+	font-weight: 700;
+	box-sizing: border-box;
+}
+.app-list .box .line > p.type2 {padding:35px 10px}
+.app-list .box .line {overflow: hidden;}
+.app-list .box .line .item {
+	float: left;
+	width: 33.3%;
+	height: 130px;
+	border:1px solid #e5e5e5;
+	border-left: 0;
+	text-align: center;
+	box-sizing: border-box;
+}
+.app-list .box .line .item .position {
+	min-height: 35px;
+	line-height: 35px;
+	border-bottom:1px solid #e5e5e5;
+	background-color:#fafafa;
+}
+.app-list .box .line .item .stamp {
+	min-height: 51px;
+	padding: 10px 0 6px;
+	font-size: 0;
+	box-sizing: border-box;
+}
+.app-list .box .line .item .stamp .txt {
+	font-size: 14px;
+	color:#0f7ccf;
+	font-weight: 700;
+	line-height: 35px;
+}
+.app-list .box .line .item .info-wrap {display:table;	min-height: 35px;	width: 100%;}
+.app-list .box .line .item .info {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+.app-list .box .line .item .info span {
+	display: block;
+	font-size: 11px;
+	color:#999;
+}

@@ -1842,8 +1842,8 @@ select.styled1 {
 }
 .board-view2 .tr-area.type2 {width: 100%;}
 .board-view2 .tr-area {display: table;}
-.board-view2 .tr-area.type2 .th-area {width:20%; display: table-cell;}
-.board-view2 .tr-area.type2 .td-area {width:80%; display: table-cell;}
+.board-view2 .tr-area .th-area {width:20%; display: table-cell;}
+.board-view2 .tr-area .td-area {width:80%; display: table-cell;}
 .board-view2 .th-area,
 .board-view2 .td-area {
 	display: block;
