@@ -171,8 +171,19 @@
 	margin-top:-7px;
 	background-color:#ddd;
 }
+.text-box1 .title-area .label {
+	float:left;
+	margin:2px 0 0 10px;
+	padding:0 8px;
+	height:20px;
+	color:#fff;
+	font-size:12px;
+	line-height:20px;
+}
 .text-box1 .title-area + p,
 .text-box1 .title-area + .blt-list2 {margin-top:10px;}
+
+.text-box1 .date {margin-top:8px;}
 
 /* 모바일에서 감춘영역 웹에서 보이기 */
 .toggle-cont {display:block !important;}
@@ -3880,12 +3891,6 @@ select.styled1 {
 	font-weight:700;
 }
 .total-box .total-item .text .number.fColor {font-size:25px;}
-.total-box .total-item {}
-.total-box {}
-.total-box {}
-
-
-
 
 /* ===========================================================================
 	윈도우 팝업
