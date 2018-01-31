@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="logo">
+			<a href="#">웅진원팩그룹웨어</a>
+		</h1>
+		<button type="button" class="btn-gnb">메뉴열기</button>
+		<button type="button" class="btn-search">검색</button>
+		<div class="gnb-utill">
+			<div class="utill">
+				<div class="user-box">
+					<button type="button" class="btn-close">닫기</button>
+					<div class="user">
+						<div class="img-area"><img src="../img/temp/@user.jpg" alt=""></div>
+						<p class="name">김웅진 부장</p>
+					</div>
+				</div>
+				<div class="naver-list">
+					<a href="#" class="link link1"><span class="text">메일<em class="len">99</em></span></a>
+					<a href="#" class="link link2"><span class="text">전화번호부</span></a>
+					<a href="#" class="link link3"><span class="text">일정관리</span></a>
+					<a href="#" class="link link4"><span class="text">내 드라이브</span></a>
+					<a href="#" class="link link5"><span class="text">메신저함<em class="len">1</em></span></a>
+					<a href="#" class="link link6"><span class="text">설문조사</span></a>
+					<a href="#" class="link link7"><span class="text">네이버웍스관리자</span></a>
+				</div>
+			</div>
+			<!-- gnb -->
+			<div class="gnb-sliding">
+				<div class="gnb-wrap">
+					<div class="gnb-menu-box">
+						<div class="home">
+							<a href="#" class="link-home ico01">홈</a>
+							<button type="button" class="btn-setting">설정</button>
+						</div>
+						<ul class="gnb-list">
+							<li class="gnb-item">
+								<p class="gnb-title ico02">게시판</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">게시판</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item">
+												<a href="#" class="d-title">최근게시물</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">공지사항</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">경조사</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자유게시판lv2</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">IT/Biz Trend</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">양식기 전용 게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자유게시판</a>
+												<ul class="depth2-list">
+													<li class="depth2-item"><a href="#">게시판 01</a></li>
+													<li class="depth2-item"><a href="#">게시판 02</a></li>
+													<li class="depth2-item"><a href="#">게시판 03</a></li>
+													<li class="depth2-item"><a href="#">게시판 04</a></li>
+													<li class="depth2-item"><a href="#">게시판 05</a></li>
+													<li class="depth2-item"><a href="#">게시판 06</a></li>
+													<li class="depth2-item"><a href="#">게시판 07</a></li>
+												</ul>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자료실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">R&amp;D부문/개발실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">Master Data 신규</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">익명게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">제안자료실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">권한 게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">임시저장함</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">관리자 메뉴</a>
+												<ul class="depth2-list">
+													<li class="depth2-item"><a href="#">게시판 01</a></li>
+													<li class="depth2-item"><a href="#">게시판 02</a></li>
+													<li class="depth2-item"><a href="#">게시판 03</a></li>
+													<li class="depth2-item"><a href="#">게시판 04</a></li>
+													<li class="depth2-item"><a href="#">게시판 05</a></li>
+													<li class="depth2-item"><a href="#">게시판 06</a></li>
+													<li class="depth2-item"><a href="#">게시판 07</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico03">전자결재</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">전자결재</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico04">설문조사</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">설문조사</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico05">업무지원</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">업무지원</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico06">Knowledge</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">Knowledge</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico07">e-HR</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">e-HR</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico08">평가시스템</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">평가시스템</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico09">개인블로그</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">개인블로그</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico10">전사공유지식</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">전사공유지식</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item">
+												<a href="#" class="d-title">전사공유지식</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 서브 GNB -->
+					<div class="sub-gnb">
+						<div class="depth1">
+							<div class="scroll-area">
+								<div class="depth-top">
+									<p class="depth1-title"><span class="text">설문조사</span></p>
+									<div class="menu-box">
+										<a href="#" class="btn-text mid">설문 작성</a>
+									</div>
+								</div>
+								<ul class="depth1-list">
+									<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+									<li class="depth1-item"><a href="#" class="d-title">설문 신청</a></li>
+									<li class="depth1-item on"><a href="#" class="d-title">설문 결과</a></li><!-- 현재메뉴 표시(class="on") -->
+									<li class="depth1-item">
+										<a href="#" class="d-title">관리자 메뉴</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">설문 결재</a></li>
+											<li class="depth2-item"><a href="#">전체 설문 결과</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //서브 GNB -->
+				</div>
+				<button type="button" class="btn-gnb-toggle">
+					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="content">
+			<!-- 타이틀 영역 -->
+			<div class="title-wrap">
+				<h2 class="title">설문결과조회</h2>
+			</div>
+
+			<div class="text-box1">
+				<div class="title-area">
+					<p class="title">소셜미디어 운영에 관한 설문조사 실시</p>
+				</div>
+				<p>소셜미디어의 현 실태를 파악하고자 합니다.</p>
+				<p>많은 설문 참여 부탁드립니다.</p>
+			</div>
+
+			<div class="survey-js">
+				<div class="board-list1">
+					<table>
+						<caption>설문결과조회</caption>
+						<colgroup>
+							<col style="width:120px;">
+							<col style="width:70px;">
+							<col style="width:130px;">
+							<col style="width:90px;">
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">날짜</th>
+								<th scope="col">요일</th>
+								<th scope="col">설문응답인원</th>
+								<th scope="col">비율(%)</th>
+								<th scope="col">그래프</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2018.01.19</td>
+								<td>금</td>
+								<td>205</td>
+								<td>13.14%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.20</td>
+								<td>토</td>
+								<td>197</td>
+								<td>12.62%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.21</td>
+								<td>일</td>
+								<td>350</td>
+								<td>22.44%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.22</td>
+								<td>월</td>
+								<td>91</td>
+								<td>5.84%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.23</td>
+								<td>화</td>
+								<td>88</td>
+								<td>5.64%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.24</td>
+								<td>수</td>
+								<td>64</td>
+								<td>4.10%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.25</td>
+								<td>목</td>
+								<td>62</td>
+								<td>3.97%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+							<tr>
+								<td>2018.01.26</td>
+								<td>금</td>
+								<td>503</td>
+								<td>32.25%</td>
+								<td class="subject">
+									<div class="graph-gauge"><div class="gauge bgColor"></div></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="total-box">
+				<h3 class="total-title">합계</h3>
+				<div class="total-item">
+					<p class="title">설문 대상 인원</p>
+					<p class="text"><em class="number">2000</em>명</p>
+				</div>
+				<div class="total-item minus">
+					<p class="title">설문 반려 인원</p>
+					<p class="text"><em class="number">350</em>명</p>
+				</div>
+				<div class="box">
+					<div class="total-item equals">
+						<p class="title">총 응답인원</p>
+						<p class="text"><em class="number fColor">1650</em>명</p>
+					</div>
+					<div class="total-item">
+						<p class="title">응답비율</p>
+						<p class="text"><em class="number fColor">82.5</em>%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-wrap right">
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">미응답자 메일발송</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">설문결과 상세조회</a></div>
+				</div>
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">목록</a></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	</div>
+</div>
+
+<script>
+$(window).load(function(){
+	/* 그래프 영역 애니메이션 */
+	$('.graph-gauge').each(function(){
+		var gauge = $(this).closest('td').prev('td').text();
+		$(this).find('.gauge').animate({'width':gauge});
+	});
+
+	/* 테이블 모바일 스타일로 변경 */
+	$('.survey-js .board-list1 td').each(function(){
+		if(!$(this).hasClass('subject')){
+			var idx = $(this).index();
+			var title = $(this).closest('.board-list1').find('th').eq(idx).text() + ' : ';
+			$(this).prepend('<span class="wHide">' + title + '</span>');
+		}
+	});
+});
+</script>
+</body>
+</html>

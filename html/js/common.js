@@ -153,6 +153,9 @@ $(document).ready(function(){
 	});
 
 	// 페이지 로드시 현재메뉴 표시
+	$('.sub-gnb .depth1-item.on').each(function(){
+		$(this).children('.d-title').addClass('fColor');
+	});
 	$('.sub-gnb .depth2-item').each(function(){
 		if($(this).hasClass('on')){
 			$(this).parents('li').addClass('on').find('.depth2-list').show()
