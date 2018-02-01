@@ -664,7 +664,7 @@ function resizeMid(){
 			var title = $(this).find('.menu-title').text();
 			$('.content .title-wrap').prepend('<div class="gnb-select"><select class="styled1" style="width:100%;"></select></div>');
 			$('.gnb-select select').prepend('<option>' + title + '</option>');
-			selectStyled();
+			//selectStyled();
 		});
 		$('.sub-gnb .bottom-menu .menu-item a').each(function(){
 			var text = $(this).text();

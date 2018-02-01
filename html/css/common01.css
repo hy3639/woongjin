@@ -3558,6 +3558,25 @@ select.styled1 {
 	color:#999;
 }
 
+/*전자결재 > 전자결재 양식목록*/
+.app-wrap .sorting-area {border-bottom: 0}
+.app-wrap .board-setting .sub-title {
+	padding-bottom:15px;
+	font-size: 16px;
+	color:#333;
+}
+.app-wrap .board-list1 .like {
+	display: inline-block;
+	font-size: 0;
+	width: 17px;
+	height: 16px;
+	background-image:url(../img/btn/btn_like.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color:#ddd;
+}
+
+
 /* 관리자 메뉴 > 게시판관리 */
 .admin-board-area .tab-list1 {margin: 0 50px 40px 50px;}
 .board-setting {
@@ -3891,6 +3910,12 @@ select.styled1 {
 	font-weight:700;
 }
 .total-box .total-item .text .number.fColor {font-size:25px;}
+.total-box .total-item {}
+.total-box {}
+.total-box {}
+
+
+
 
 /* ===========================================================================
 	윈도우 팝업

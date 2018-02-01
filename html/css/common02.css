@@ -104,6 +104,19 @@
 .wrapper.fixed-btn-type .btn-page-prev,
 .wrapper.fixed-btn-type .btn-scroll-top {bottom:85px;}
 
+/* 텍스트 박스 */
+.text-box1 {
+	padding:21px 20px 22px;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+}
+.text-box1 .title {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+}
+.text-box1 .title + p {margin-top:10px;}
+
 /* ===========================================================================
 	폼요소
 =========================================================================== */
@@ -223,6 +236,7 @@ select.styled1 {
 	display:block;
 	clear:both;
 }
+.top-search-box label {line-height: 35px;}
 .top-search-box .selectWrap select {width: 80px !important}
 .top-search-box .search-text {
 	display:inline-block;
@@ -232,6 +246,7 @@ select.styled1 {
 	padding-right:53px;
 	box-sizing: border-box;
 }
+.top-search-box.label-type .search-text {padding-left:45px;} /*검색영역에 레이블있는경우(전자결재양식목록)*/
 .top-search-box .search-text .btn-search {
 	position:absolute;
 	right:0; top:0; bottom:0;
@@ -1068,6 +1083,86 @@ select.styled1 {
 .sub-gnb {display:none;}
 
 .top-search-box2 {margin-top:0;}
+
+
+/* 트리 리스트 */
+.tree-menu {
+	position:relative;
+	padding:17px 25px;
+	box-sizing:border-box;
+	border:1px solid #eee;
+	background-color:#fff;
+}
+.tree-menu .tree-list {
+	margin-left:-14px;
+}
+.tree-menu .tree-list li .link {position:relative;}
+.tree-menu .tree-list li .link .icon {
+	display:inline-block;
+	position:absolute;
+	left:14px; top:8px;
+	z-index:2;
+	width:17px;
+	height:15px;
+	background-image:url(../img/ico/ico_tree.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.tree-menu .tree-list li .link.on .icon {background-position:0 -15px;}
+.tree-menu .tree-list li li .link .icon {left:29px;}
+.tree-menu .tree-list li .link .text {
+	display:inline-block;
+	padding-top:6px;
+	padding-bottom:6px;
+	color:#333;
+}
+.tree-menu .tree-list li .link .text:hover {text-decoration:underline;}
+.tree-menu .tree-list li .link .icon + .text {padding-left:23px;}
+.tree-menu .tree-list li li .link .icon + .text {
+	position:relative;
+	padding-left:16px;
+}
+.tree-menu .tree-list li li .link .icon + .text:before {
+	display:none;
+	content:'';
+	position:absolute;
+	left:1px; top:11px;bottom:3px;
+	width:1px;
+	background:url(../img/bg/bg_tree01.png) repeat-y 0 0;
+}
+.tree-menu .tree-list li li .link.on .icon + .text:before {display:block;}
+
+.tree-menu .tree-list ul {
+	position:relative;
+	padding-left:8px;
+}
+.tree-menu .tree-list ul:before {
+	content:'';
+	position:absolute;
+	left:22px;top:-8px;bottom:0;
+	width:1px;
+	background:url(../img/bg/bg_tree01.png) repeat-y 0 0;
+}
+.tree-menu .tree-list ul ul:before {left:36px;bottom:0px/*16px*/;}
+
+.tree-menu .tree-list ul ul {padding-left:22px;}
+.tree-menu .tree-list li li .link {
+	padding-left:35px;
+	background:url(../img/bg/bg_tree02.png);
+	background-repeat:no-repeat;
+	background-position:14px 15px;
+}
+.tree-menu .tree-list > li > .link {padding-left:14px;}
+
+.tree-menu .tree-list li li {position:relative;}
+.tree-menu .tree-list li li:last-child:before {
+	content:'';
+	position:absolute;
+	left:0;top:16px;bottom:0;
+	width:16px;
+	background-color:#fff;
+}
+
 
 /* ===========================================================================
 	테이블
@@ -2978,7 +3073,7 @@ select.styled1 {
 .survey-js .board-list1 table tr {
 	display:block;
 	overflow:hidden;
-	padding:15px 20px 20px;
+	padding:15px 20px;
 	border-top:1px solid #f5f5f5;
 }
 .survey-js .board-list1 table td {
@@ -3013,6 +3108,67 @@ select.styled1 {
 	opacity:0.4;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+	설문조사
+------------------------------------------------------------------------------------------------------------------------------------------- */
+/*설문결과 조회*/
+.survey-js {margin-top:10px;}
+
+.total-box {
+	padding:16px 20px 10px;
+	border:1px solid #eee;
+	background-color:#fafafa;
+	text-align:right;
+}
+.total-box .total-title {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+	text-align:left;
+}
+.total-box .total-item {
+	display:inline-block;
+	overflow:hidden;
+	position:relative;
+	width:230px;
+	padding-left:40px;
+	box-sizing:border-box;
+	font-size:14px;
+	line-height:25px;
+}
+.total-box .total-item.minus:before,
+.total-box .total-item.equals:before,
+.total-box .total-item.equals:after {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	width:16px;
+	height:2px;
+}
+.total-box .total-item.minus:before {
+	margin-top:-4px;
+	background-color:#bbb;
+}
+.total-box .total-item.equals:before {
+	margin-top:-7px;
+	background-color:#666;
+}
+.total-box .total-item.equals:after {
+	margin-top:-2px;
+	background-color:#666;
+}
+.total-box .total-item .title {
+	float:left;
+}
+.total-box .total-item .text {
+	float:right;
+}
+.total-box .total-item .text .number {
+	color:#333;
+	font-size:20px;
+	font-weight:700;
+}
+.total-box .total-item .text .number {font-size:25px;}
 /* ===========================================================================
 	윈도우 팝업
 =========================================================================== */
