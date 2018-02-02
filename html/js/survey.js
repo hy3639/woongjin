@@ -63,4 +63,14 @@ $(window).resize(function(){
 	var footH = $('.footer').outerHeight();
 	var boxH = winH - (conT - wrapT + titleH + footH + 20);
 	$('.modify-wrap').css({'height':boxH});
+
+	$('.modify-wrap').each(function(){
+		var wrapH = $(this).outerHeight();
+		var boxH = $(this).find('.modify-box').outerHeight();
+		if(boxH > wrapH){
+			$(this).addClass('scroll');
+		}else{
+			$(this).removeClass('scroll');
+		}
+	});
 });

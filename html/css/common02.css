@@ -1709,6 +1709,8 @@ select.styled1 {
 	position:relative;
 	margin:0 20px;
 	padding:10px 0;
+	min-height: 55px;
+	box-sizing: border-box;
 	/* border-bottom:1px solid #eee; */
 }
 .sorting-area:after {
@@ -2766,19 +2768,21 @@ select.styled1 {
 .board-list2 .title {
 	display: block;
 	margin-bottom: 13px;
-
-}
-.board-list2 .title a {
 	font-size: 15px;
 	color: #333;
 	font-weight: 700;
 }
+
+/*
 .board-list2 .name {display: block;}
 .board-list2 .status {display: block;}
 .board-list2 .date {display: block;}
 .board-list2 .level {display: block;}
 .board-list2 .status {display: block;}
-.board-list2 .setting {
+*/
+.board-list2 .text {display: block;}
+.board-list2 .setting,
+.board-list2 .like {
 	position: absolute;
 	right: 20px;
 	top:20px;
@@ -2823,6 +2827,7 @@ select.styled1 {
 	margin-left:10px !important;
 	margin-right:10px !important;
 }
+.board-list2.bdT {border-top:1px solid #eee}
 
 /* ===========================================================================
 	전자결재
@@ -2850,6 +2855,10 @@ select.styled1 {
 	background-size:10px 5px;
 }
 */
+.app-wrap .sorting-area {
+	min-height: 55px;
+	box-sizing: border-box;
+}
 
 .app-wrap .btn-wrap {margin-top:0;}
 .approval-view .app-total-wrap {
@@ -2871,7 +2880,7 @@ select.styled1 {
 	font-weight:700;
 }
 .app-list {overflow: hidden;}
-.app-list .box .line {
+.app-list .line {
 	width: 100%;
 	position: relative;
 	min-height: 130px;
@@ -2881,7 +2890,7 @@ select.styled1 {
  border-bottom: 0;
 	box-sizing: border-box;
 }
-.app-list .box .line > p {
+.app-list .line > p {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -2894,9 +2903,9 @@ select.styled1 {
 	font-weight: 700;
 	box-sizing: border-box;
 }
-.app-list .box .line > p.type2 {padding:98px 10px}
-.app-list .box .line {overflow: hidden;}
-.app-list .box .line .item {
+.app-list .line > p.type2 {padding:98px 10px}
+.app-list .line {overflow: hidden;}
+.app-list .line .item {
 	float: left;
 	width: 33.3%;
 	height: 130px;
@@ -2906,32 +2915,32 @@ select.styled1 {
 	text-align: center;
 	box-sizing: border-box;
 }
-.app-list .box .line .item.wHide {border-top:1px solid #e5e5e5;}
-.app-list .box .line .item .position {
+.app-list .line .item.wHide {border-top:1px solid #e5e5e5;}
+.app-list .line .item .position {
 	min-height: 35px;
 	line-height: 35px;
 	border-bottom:1px solid #e5e5e5;
 	background-color:#fafafa;
 }
-.app-list .box .line .item .stamp {
+.app-list .line .item .stamp {
 	min-height: 51px;
 	padding: 10px 0 6px;
 	font-size: 0;
 	box-sizing: border-box;
 }
-.app-list .box .line .item .stamp .txt {
+.app-list .line .item .stamp .txt {
 	font-size: 14px;
 	color:#0f7ccf;
 	font-weight: 700;
 	line-height: 35px;
 }
-.app-list .box .line .item .info-wrap {display:table;	min-height: 35px;	width: 100%;}
-.app-list .box .line .item .info {
+.app-list .line .item .info-wrap {display:table;	min-height: 35px;	width: 100%;}
+.app-list .line .item .info {
 	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
-.app-list .box .line .item .info span {
+.app-list .line .item .info span {
 	display: block;
 	font-size: 11px;
 	color:#999;
@@ -3055,6 +3064,120 @@ select.styled1 {
 	position: absolute;
 	right: 0;
 	top:10px;
+}
+
+/*전자결재 양식목록*/
+.app-wrap .tree-menu {border-bottom: 0;}
+.app-wrap .btn-m-toggle {
+	border-bottom: 0;
+	border-top:1px solid #eee;
+}
+.app-wrap .btn-m-toggle.on {border-top: 0}
+.app-wrap .board-list2 {border-top: 1px solid #eee}
+.app-wrap .board-setting .sorting-area.wide {margin:0 20px !important;}
+.app-wrap .board-list2 .num {margin-bottom:7px;}
+.app-wrap .board-list2 .title {margin-bottom:8px;}
+.app-wrap .board-list2 .btn-like {
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	background-image:url(../img/mobile/btn/btn_like.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color:#ddd;
+	background-size: 17px 16px;
+}
+.app-wrap .board-list2 .btn-like .like{	font-size: 0;}
+
+/*전자결재 >결재요청함*/
+.app-request .sorting-area .left-box {
+	width: 100%;
+	position: relative;
+	padding:0;
+}
+.app-request .sorting-area .left-box .blt-text3 {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -11px;
+}
+.app-request .board-list2 {border-top: 1px solid #eee;}
+.app-request .board-list2 .td-area {border:0; border-bottom: 1px solid #eee}
+.app-request .board-list2 .td-area.on {background-color:#fafafa; border-bottom: 0}
+.app-request .board-list2 .td-area:before {display: none;}
+.app-request .board-list2 .td-area.on:before{display: block; bottom:2px;}
+.app-request .board-list2 .td-area:last-child:before {display: none;}
+.app-request .board-list2 .td-area:last-child {border-bottom: 0}
+.app-request .board-list2 .td-area .setting {margin-top: 0}
+.app-request .board-list2 .td-area .label {
+	display: inline-block;
+	width: 43px;
+	height: 23px;
+	border:1px solid #e5e5e5;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 12px;
+	line-height: 21px;
+}
+.app-request .board-list2 .td-area .label.type1 {color:#0f7ccf}
+.app-request .board-list2 .td-area .label.type2 {color:#ff5349}
+.app-request .board-list2 .td-area .label.type3 {color:#666}
+.app-request .board-list2 .td-area .label.type4 {color:#ff8549}
+
+/*layer 하위 테이블*/
+.app-request .board-list2 .layer-type {
+	display: none;
+	padding: 0;
+}
+.app-request .board-list2 .layer-type > td {
+	padding:0;
+	border:0;
+}
+.app-request .board-list2 .layer-box {
+	padding:20px 0 0 0;
+	background-color:#fafafa;
+}
+.app-request .board-list2 .layer-type table th,
+.app-request .board-list2 .layer-type table td {
+	background-color:#fff !important;
+	font-size:13px;
+}
+.app-request .board-list2 .layer-type table th {height:43px;}
+.app-request .board-list2 .layer-type table td {padding:10px 5px;}
+
+.app-request .board-list2 .layer-type .tab-list1 {
+	margin:0;
+	background-color: #fff;
+}
+.app-request .board-list2 .tab-list1 .item .text {font-size: 13px;}
+.app-request .board-list2 .tab-list1 .item:first-child .text {border-left: 1px solid #e5e5e5;}
+.app-request .board-list2 .tab-list1 .item:last-child .text {border-right: 1px solid #e5e5e5;}
+.app-request .board-list2 .layer-type .scroll-x-area {
+	position:relative;
+	margin:-1px 0 0;
+	border:1px solid #e5e5e5;
+}
+
+.app-request .board-list2 .layer-type table th,
+.app-request .board-list2 .layer-type table td {
+	background-color:#fff !important;
+	font-size:13px;
+	text-align: center;
+}
+.app-request .board-list2 .layer-type table th {
+	height:43px;
+	color:#333;
+}
+.app-request .board-list2 .layer-type table td {
+	padding:10px 5px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.app-request .board-list2 .layer-type .tab-list1 {margin:0;}
+.app-request .board-list2 .layer-type .scroll-x-area {
+	position:relative;
+	margin:-1px 0 0;
+	border:1px solid #e5e5e5;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------
@@ -3184,7 +3307,10 @@ select.styled1 {
 	padding:20px 10px;
 }
 
-.approve-box .tree-menu {padding:20px 20px 0;}
+.approve-box .tree-menu {
+	padding:20px 20px 0;
+	border:0;
+}
 .approve-box .tree-menu .search-area {}
 .approve-box .tree-menu .search-area .search-box {
 	position:relative;

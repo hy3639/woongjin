@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진 - 완료문서함</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="window-popup">
+	<div class="title-wrap">
+		<h1 class="title">완료문서함</h1>
+	</div>
+
+	<div class="top-search-box">
+		<dl class="list-item">
+			<dt><label for="Text01">양식명</label></dt>
+			<dd><input type="text" id="Text01" style="width:100%;max-width:300px;"></dd>
+		</dl>
+		<dl class="list-item">
+			<dt>기안일</dt>
+			<dd class="period-area">
+				<div class="box-item">
+					<div  class="date-text">
+						<div class="btn-calendar"><input type="text" readonly></div>
+						<div class="calendar-layer bdColor">
+							<div class="datepicker"></div>
+						</div>
+					</div>
+				</div>
+				<span class="swung-dash">~</span>
+				<div class="box-item">
+					<div  class="date-text">
+						<div class="btn-calendar"><input type="text" readonly></div>
+						<div class="calendar-layer bdColor">
+							<div class="datepicker"></div>
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		<dl class="list-item">
+			<dt><label for="Text02">문서 번호</label></dt>
+			<dd><input type="text" id="Text02" style="width:100%;max-width:300px;"></dd>
+		</dl>
+		<dl class="list-item">
+			<dt><label for="Text03">문서 제목</label></dt>
+			<dd><input type="text" id="Text03" style="width:100%;max-width:300px;"></dd>
+		</dl>
+		<div class="btn-wrap center">
+			<div class="btn-align">
+				<div class="btn-item"><button type="button" class="btn-text mid">초기화</button></div>
+				<div class="btn-item"><a href="#" class="btn-text mid bgColor">검색</a></div>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="btn-search-toggle close wHide"><span class="text">접기</span></button>
+
+	<div class="sorting-area">
+		<div class="left-box">
+			<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+		</div>
+		<div class="right-box mHide">
+			<select class="styled1 mHide" style="width:120px;">
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+				<option>30</option>
+				<option>40</option>
+				<option>50</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="list-view">
+		<!-- web 리스트 -->
+		<div class="list-type mHide">
+			<div class="board-list1">
+				<table>
+					<caption>완료문서함 게시판</caption>
+					<colgroup>
+						<col style="width:8%;">
+						<col style="width:20%;">
+						<col style="width:8%;">
+						<col>
+						<col style="width:10%;">
+						<col style="width:13%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><input type="checkbox" class="styled1"></th>
+							<th scope="col"><button type="button" class="btn-sorting">문서번호<span class="icon"></span></button></th>
+							<th scope="col">분류</th>
+							<th scope="col"><button type="button" class="btn-sorting">문서 제목<span class="icon"></span></button></th>
+							<th scope="col">기안자</th>
+							<th scope="col"><button type="button" class="btn-sorting">완료일<span class="icon"></span></button></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" class="styled1"></td>
+							<td>20171128A-0211</td>
+							<td>공통</td>
+							<td class="subject"><div class="link"><span class="tit">사업계획서(통합)</span></div></td>
+							<td>관리자</td>
+							<td>2017.11.12 15:17</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--// web 리스트 -->
+		<!-- mobile  리스트 -->
+		<div class="board-list2 bdT wHide">
+			<ul>
+				<li class="td-area">
+					<a href="#none">
+						<span><input type="checkbox" class="styled1"></span>
+						<span class="category">20171128A-0211</span>
+						<span class="title">사업계획서(통합)</span>
+						<span class="text"><em class="wHide">분류 :</em>공통</span>
+						<span class="text"><em class="wHide">기안자 :관리자</em></span>
+						<span class="text"><em class="wHide">완료일 :</em>2017.12.24 20:25</span>
+						</a>
+				</li>
+				<li class="td-area">
+					<a href="#none">
+						<span><input type="checkbox" class="styled1"></span>
+						<span class="category">20171128A-0211</span>
+						<span class="title">사업계획서(통합)</span>
+						<span class="text"><em class="wHide">분류 :</em>공통</span>
+						<span class="text"><em class="wHide">기안자 :관리자</em></span>
+						<span class="text"><em class="wHide">완료일 :</em>2017.12.24 20:25</span>
+						</a>
+				</li>
+				<li class="td-area">
+					<a href="#none">
+						<span><input type="checkbox" class="styled1"></span>
+						<span class="category">20171128A-0211</span>
+						<span class="title">사업계획서(통합)</span>
+						<span class="text"><em class="wHide">분류 :</em>공통</span>
+						<span class="text"><em class="wHide">기안자 :관리자</em></span>
+						<span class="text"><em class="wHide">완료일 :</em>2017.12.24 20:25</span>
+						</a>
+				</li>
+			</ul>
+		</div>
+		<div class="btn-more wHide">
+			<button type="button"><span>더보기</span></button>
+		</div>
+		<!--// mobile  리스트 -->
+	</div>
+
+	<div class="paging mHide">
+		<a href="#" class="btn first">처음</a>
+		<a href="#" class="btn prev">이전</a>
+		<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+		<a href="#" class="page">2</a>
+		<a href="#" class="page">3</a>
+		<a href="#" class="page">4</a>
+		<a href="#" class="page">5</a>
+		<a href="#" class="page">6</a>
+		<a href="#" class="page">7</a>
+		<a href="#" class="page">8</a>
+		<a href="#" class="page">9</a>
+		<a href="#" class="page">10</a>
+		<a href="#" class="btn next">다음</a>
+		<a href="#" class="btn end">마지막</a>
+	</div>
+
+	<div class="btn-wrap right">
+		<div class="btn-align">
+			<div class="btn-item"><a href="#" class="btn-text">삭제</a></div>
+			<div class="btn-item"><a href="#" class="btn-text bdColor fColor">등록</a></div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

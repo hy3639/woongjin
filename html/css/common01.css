@@ -1948,12 +1948,14 @@ select.styled1 {}
 	padding:16px 20px;
 	background-color:#fafafa;
 	border-right: 1px solid #eee;
+	border-left:1px solid #eee;
 	border-bottom:1px solid #eee;
 	font-size: 14px;
 	color:#333;
 	text-align: left;
 	box-sizing: border-box;
 }
+.board-view2 tr th:first-child {border-left:0}
 .board-view2 tr:last-child th,
 .board-view2 tr:last-child td {border-bottom:0;}
 .board-view2 td {
@@ -2586,6 +2588,7 @@ select.styled1 {}
 	padding-bottom:68px;
 	border:1px solid #e5e5e5;
 }
+.share-box.type2 {padding-bottom: 0}
 .share-box .btn-groupchart {
 	position:absolute;
 	left:20px; bottom:20px;
@@ -3543,9 +3546,11 @@ select.styled1 {}
 
 .app-list {overflow: hidden; margin-top: -1px;}
 .app-list .box {width: 100%; box-sizing: border-box;}
+/*
 .app-list .box .line:nth-child(odd) {padding-right: 15px;}
 .app-list .box .line:nth-child(even) {padding-left:15px;}
-.app-list .box .line {
+*/
+.app-list .line {
 	width: 50%;
 	float: left;
 	position: relative;
@@ -3553,22 +3558,28 @@ select.styled1 {}
 	padding-left:35px;
 	box-sizing: border-box;
 }
-.app-list .box .line > p {
+
+.app-list .line > p {
 	position: absolute;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	width: 35px;
-	padding :28px 10px;
 	border:1px solid #e5e5e5;
 	background-color:#fafafa;
 	color: #333;
 	font-weight: 700;
 	box-sizing: border-box;
 }
-.app-list .box .line > p.type2 {padding:35px 10px}
-.app-list .box .line {overflow: hidden;}
-.app-list .box .line .item {
+.app-list .line > p span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.app-list .line {overflow: hidden;}
+.app-list .line .item {
 	float: left;
 	width: 20%;
 	height: 130px;
@@ -3577,36 +3588,35 @@ select.styled1 {}
 	text-align: center;
 	box-sizing: border-box;
 }
-.app-list .box .line .item .position {
+.app-list .line .item .position {
 	min-height: 35px;
 	line-height: 35px;
 	border-bottom:1px solid #e5e5e5;
 	background-color:#fafafa;
 }
-.app-list .box .line .item .stamp {
+.app-list .line .item .stamp {
 	min-height: 51px;
 	padding: 10px 0 6px;
 	font-size: 0;
 	box-sizing: border-box;
 }
-.app-list .box .line .item .stamp .txt {
+.app-list .line .item .stamp .txt {
 	font-size: 14px;
 	color:#0f7ccf;
 	font-weight: 700;
 	line-height: 35px;
 }
-.app-list .box .line .item .info-wrap {display:table;	min-height: 35px;	width: 100%;}
-.app-list .box .line .item .info {
+.app-list .line .item .info-wrap {display:table;	min-height: 35px;	width: 100%;}
+.app-list .line .item .info {
 	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
-.app-list .box .line .item .info span {
+.app-list .line .item .info span {
 	display: block;
 	font-size: 11px;
 	color:#999;
 }
-
 /*전자결재 > 전자결재 양식목록*/
 .app-wrap .sorting-area {border-bottom: 0}
 .app-wrap .board-setting .sub-title {
@@ -3614,9 +3624,9 @@ select.styled1 {}
 	font-size: 16px;
 	color:#333;
 }
-.app-wrap .board-list1 .like {
+
+.app-wrap .board-list1 .btn-like {
 	display: inline-block;
-	font-size: 0;
 	width: 17px;
 	height: 16px;
 	background-image:url(../img/btn/btn_like.png);
@@ -3624,6 +3634,49 @@ select.styled1 {}
 	background-position: 0 0;
 	background-color:#ddd;
 }
+.app-wrap .board-list1 .btn-like .like{	font-size: 0;}
+
+/*기안문 작성*/
+.app-total-wrap .board-write1 .input-area.sum {padding-right:110px;}
+.app-total-wrap .board-write1 th .btn {margin-left: 10px; height:18px; font-size: 0;vertical-align: text-top;}
+.app-total-wrap .board-write1 td {padding-left: 0}
+.app-total-wrap .board-write1 td.center {
+	text-align: center;
+	font-size: 14px;
+	color:#333;
+}
+.app-total-wrap .board-write1 .txt-box li  {
+	position: relative;
+	padding-left: 20px;
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.app-total-wrap .board-write1 .txt-box li:first-child {margin-top: 0}
+.app-total-wrap .board-write1 .txt-box li .important {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -7px;
+}
+.app-total-wrap .board-write1 .required-box {display: block;}
+
+.app-total-wrap .board-write1 .btn-area {margin-top:10px;}
+
+.app-total-wrap .board-list3{	overflow-x:scroll;}
+.app-total-wrap .board-list3 table {min-width: 860px;}
+.app-total-wrap .board-list3 table thead th {text-align: center;}
+.app-total-wrap .board-list3 table tbody td {
+	padding:15px 10px;
+	border-bottom: 1px solid #eee !important;
+}
+.app-total-wrap .board-list3  tfoot td {
+	padding:15px 0;
+	background-color: #fafafa;
+	text-align: center;
+}
+.app-total-wrap .board-list3  tfoot label {margin-right: 10px}
 
 
 /* 관리자 메뉴 > 게시판관리 */
@@ -4251,11 +4304,16 @@ select.styled1 {}
 	position:absolute;
 	right:50px;top:0;
 	width:215px;
+	border-top:1px solid #eee;
 	box-sizing:border-box;
-	border:1px solid #eee;
 	background-color:#fff;
 }
-
+.modify-box {
+	border:1px solid #eee;
+	border-top:0;
+}
+.modify-wrap.scroll {border-bottom:1px solid #eee;}
+.modify-wrap.scroll .modify-box {border-bottom:0;}
 .modify-box .type-area {
 	padding:16px 25px 20px;
 	border-bottom:1px solid #eee;

@@ -691,13 +691,7 @@ function resizeMid(){
 			$(this).find('.btn-item').css({'width':btnW});
 		});
 
-		/* 탭 넓이 자동조절 */
-		$('.tab-list1').each(function(){
-			var tabWid = $(this).outerWidth();
-			var len = $(this).closest('.tab-list1').find('.item').length;
-			var wid = tabWid/len;
-			$(this).closest('.tab-list1').find('.item').css({'width':wid});
-		});
+		tabSize()/* 탭 넓이 자동조절 */
 
 		/* 검색박스 셀렉트 text(년/월) 추가 */
 		textRemove();
@@ -711,6 +705,24 @@ function resizeMid(){
 			var value = $(this).closest('select').val();
 			$(this).text(text + '월').closest('.selectWrap').find('.selTitle').text(value);
 		});
+
+		/*테이블 토글*/
+		$('.td-area .btn-type').click(function(){
+			var item = $(this).closest('.board-list2');
+			var item2 = $(this).closest('.td-area');
+			if($(this).hasClass('on')){
+				item.find('.td-area').removeClass('on');
+				item.find('.btn-type').removeClass('on').next('.layer-type').slideUp(200);
+				tabSize();
+			}else{
+				item.find('.td-area').removeClass('on');
+				item.find('.btn-type').removeClass('on').next('.layer-type').slideUp();
+				item2.addClass('on');
+				item2.find('.btn-type').addClass('on').next('.layer-type').slideDown(300);
+				tabSize();
+			}
+		});
+		tabSize(); //탭 넓이 자동조절
 	}
 }
 
@@ -728,5 +740,15 @@ function textRemove(){
 		var textReplace = text.replace('월', '');
 		var value = $(this).closest('select').val();
 		$(this).text(textReplace).closest('.selectWrap').find('.selTitle').text(value);
+	});
+}
+
+/* 탭 넓이 자동조절 */
+function tabSize(){
+	$('.tab-list1').each(function(){
+		var tabWid = $(this).outerWidth();
+		var len = $(this).closest('.tab-list1').find('.item').length;
+		var wid = tabWid/len;
+		$(this).closest('.tab-list1').find('.item').css({'width':wid});
 	});
 }
