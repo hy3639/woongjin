@@ -683,13 +683,12 @@ select.styled1 {}
 	position: relative;
 	display:inline-block;
 	box-sizing: border-box;
+	font-size:0;
+	text-indent:-9999px;
+	vertical-align:middle;
+	line-height:0;
 }
 .btn-icon .text {
-	font-size: 0;
-	line-height: 0;
-	text-indent: -9999px;
-}
-.btn-icon:before {
 	content:'';
 	display: block;
 	position:absolute;
@@ -706,7 +705,7 @@ select.styled1 {}
 	height:35px;
 	border:1px solid #eee;
 }
-.btn-icon.icon01:before {
+.btn-icon.icon01 .text {
 	left:50%;
 	width:16px;
 	height:15px;
@@ -721,26 +720,31 @@ select.styled1 {}
 	height:35px;
 	border:1px solid #eee;
 }
-.btn-icon.icon02:before {
-	left:10px;
-	width:14px;
+.btn-icon.icon02 .text {
+	left:10px;right:10px;
 	height:13px;
 	margin-top: -7px;
 	background-image:url(../img/btn/btn_ico04.png);
 }
-.btn-icon.icon02:after {
+.btn-icon.icon02 .text:before {
 	content:'';
 	display: block;
 	position:absolute;
 	top:50%;
-	right:10px;
+	right:0;
 	width:7px;
 	height: 4px;
 	margin-top:-2px;
 	background:url(../img/ico/ico_down.png) 0 0 no-repeat;
 }
-.btn-icon.icon02.on:after {
+.btn-icon.icon02.on .text:before {
 	transform: rotate(180deg);
+}
+
+.btn-icon.icon03 {
+	width:24px;
+	height:24px;
+	background:url(../img/btn/btn_modify_layer.png) no-repeat 0 0;
 }
 
 /*조회수*/
@@ -3930,6 +3934,7 @@ select.styled1 {}
 	color:#000;
 	font-size:16px;
 	font-weight:700;
+	line-height:24px;
 }
 .survey-list-item .survey-title .title + .text {margin-top:10px;}
 
@@ -4335,12 +4340,6 @@ select.styled1 {}
 .modify-box .type-area .text-area .btn-layer {
 	position:absolute;
 	right:0;top:0;
-	width:24px;
-	height:24px;
-	background:url(../img/btn/btn_modify_layer.png) no-repeat 0 0;
-	font-size:0;
-	text-indent:-9999px;
-	line-height:0;
 }
 
 .modify-box .set-list {
