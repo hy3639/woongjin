@@ -477,6 +477,16 @@ $(document).ready(function(){
 		$(this).find('.text').removeClass('fColor');
 	});
 
+	/* 전결리스트 박스 오버 */
+	$('.select-box .scroll-area .item-box').click(function(){
+		//$(this).click(function(){
+			$(this).closest('.select-box').find('.item-box').removeClass('on');
+			$(this).closest('.select-box').find('.text').removeClass('fColor');		
+			$(this).toggleClass('on');
+			$(this).find('.text').toggleClass('fColor');
+	//	});
+	});
+
 	/* 테이블 토글 */
 	$('.btn-type td').click(function(){
 		if($(this).closest('.btn-type').hasClass('on')){
