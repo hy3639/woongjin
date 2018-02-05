@@ -7,24 +7,70 @@ $(window).load(function(){
 		$(this).removeClass('bgColor').removeClass('bdColor').find('.text').addClass('fColor');
 	});
 
-
-	/* 텍스트 옆 텍스트필드 크기조정*/
-	$('.survey-list-item .survey-list .survey-item .item-list.max').each(function(){
-		var labelW = $(this).find('label').outerWidth();
-		var labelArray = $(this).find('label').map(function(){
-			return $(this).outerWidth() +2;
-		});
-		var moreW = Math.max.apply(Math , labelArray);
-		$(this).find('label').css({'width':moreW});
+	$('.btn-addlist').mouseenter(function(){
+		$(this).addClass('bgColor').find('.text').removeClass('fColor');
+	}).mouseleave(function(){
+		$(this).removeClass('bgColor').find('.text').addClass('fColor');
 	});
-	$('.survey-list-item .survey-list .survey-item .item-list .item .field').each(function(){
-		$(this).closest('.item').addClass('textfield');
 
-		var itemW = $(this).closest('.item').outerWidth();
-		var laW = $(this).closest('.item').find('label').outerWidth();
-		var chRaW = $(this).closest('.item').find('input.styled1').outerWidth();
-		var inW = itemW - (laW+ chRaW +34);
-		$(this).css({'width':inW});
+	/* 설문수정 */
+	// 리스트 열고 닫기
+
+
+	// 항목 선택
+	$(document).on('click', '.survey-item .inner', function(){
+		$('.survey-item').removeClass('active');
+		$(this).closest('.survey-item').addClass('active');
+	});
+
+	// 위아래 이동 버튼
+	$(document).on('click', '.btn-up-down .btn-icon', function(){
+		var clon = $(this).closest('.survey-item').clone();
+		var idx = $(this).closest('.survey-item').index();
+		var len = $(this).closest('.survey-list').find('.survey-item').length - 1;
+
+		if($(this).hasClass('btn-up')){
+			if(idx > 0){
+				$(this).closest('.survey-item').prev('.survey-item').before(clon);
+				$(this).closest('.survey-item').remove();
+			}
+		}else{
+			if(idx < len){
+				$(this).closest('.survey-item').next('.survey-item').after(clon);
+				$(this).closest('.survey-item').remove();
+			}
+		}
+		numbering();//리스트 넘버링
+	});
+
+	// 항목 추가
+	$(document).on('click', '.survey-item .btn-add-del .btn-add', function(){
+		
+	});
+
+	// 항목삭제
+	$(document).on('click', '.survey-item .btn-add-del .btn-del', function(){
+		$(this).closest('.survey-item').remove();
+		numbering();//리스트 넘버링
+	});
+
+	// 편집
+	$(document).on('click', '.btn-modify', function(){
+		var sItem = $(this).closest('.survey-item');
+		var title = $(sItem).find('.question .text').text();
+		$(sItem).addClass('editing').find('.question').prepend('<input type="text" class="editArea" placeholder="내용을 입력해주세요." value="' + title + '">');
+		$(sItem).append('<div class="btn-area" class="editArea"><button type="button" class="btn-text btn-cencel">취소</button><button type="button" class="btn-text bdColor fColor">저장</button></div>');
+
+		if($(sItem).hasClass('type1')){
+			$(sItem).find('.item-list .item').each(function(){
+				var text = $(this).find('label').text();
+				console.log(text);
+				$(this).append('<div class="editArea textarea"><input type="text" placeholder="내용을 입력해주세요." value="' + text + '"></div');
+			});
+		}
+	});
+	$(document).on('click', '.btn-cencel', function(){
+		
 	});
 
 
@@ -73,4 +119,32 @@ $(window).resize(function(){
 			$(this).removeClass('scroll');
 		}
 	});
+
+	/* 텍스트 옆 텍스트필드 크기조정*/
+	$('.survey-list-item .survey-list .survey-item .item-list.max').each(function(){
+		var labelW = $(this).find('label').outerWidth();
+		var labelArray = $(this).find('label').map(function(){
+			return $(this).outerWidth();
+		});
+		var moreW = Math.max.apply(Math , labelArray);
+		$(this).find('label').css({'width':moreW});
+	});
+	$('.survey-list-item .survey-list .survey-item .item-list .item .field').each(function(){
+		$(this).closest('.item').addClass('textfield');
+
+		var itemW = $(this).closest('.item').outerWidth();
+		var laW = $(this).prev('label').outerWidth();
+		var chRaW = $(this).closest('.item').find('input.styled1').outerWidth();
+		var inW = itemW - (laW+ chRaW + 34);
+		$(this).css({'width':inW});
+	});
 });
+
+
+/* 리스트 넘버링 */
+function numbering(){
+	$('.survey-item').each(function(){
+		var numIdx = $(this).index() + 1;
+		$(this).find('.question-area .number .num').text(numIdx);
+	});
+}

@@ -2855,6 +2855,201 @@ select.styled1 {
 	background-size:10px 5px;
 }
 */
+
+/*전자결재 서브메인*/
+.mobile .content.app-submain {
+	margin-top: -26px;
+	padding-bottom: 0
+}
+.app-submain .cont {overflow: hidden;}
+.app-submain .cont .cont-inner {
+	position:relative;
+	padding:10px 20px 25px 20px;
+	box-sizing: border-box;
+	border-left: 1px solid #f5f5f5;
+	border-top: 4px solid #fafafa;
+}
+.app-submain .cont .cont-inner:first-child {border-top: 0;}
+.app-submain .cont .cont-inner:before {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100%;
+	position:absolute;
+	left: 0; right:0;
+	top:-5px;
+	background-color: #e5e5e5;
+
+}
+.app-submain .cont .cont-inner:nth-child(2n+1) {border-left:0}
+
+.app-submain .cont-inner .title-area {position: relative;}
+.app-submain .cont-inner .title-area .btn-slide {
+	position:absolute;
+	right:0;
+	top:50%;
+}
+.app-submain .cont-inner .title-area a,
+.app-submain .cont-inner .title-area2 {
+	position:relative;
+	height:45px;
+	color:#000;
+	font-size:16px;
+	font-weight:700;
+	line-height:45px;
+}
+.app-submain .cont-inner .title-area .btn-more {
+	position:absolute;
+	right:-15px; top:50%;
+	width:42px;
+	height:42px;
+	margin-top:-21px;
+	background:url(../img/btn/btn_more.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.status-area .status-list {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.status-area .status-list li {
+	float:left;
+	width: 50%;
+	margin-bottom:32px;
+	padding-top: 75px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.status-area .status-list li.item1 {background:url(../img/mobile/ico/ico_app_stat1.png) no-repeat 50% top;background-size: 66px 66px; margin-top: 0;}
+.status-area .status-list li.item2 {background:url(../img/mobile/ico/ico_app_stat2.png) no-repeat 50% top; background-size: 66px 66px; margin-top: 0;}
+.status-area .status-list li.item3 {background:url(../img/mobile/ico/ico_app_stat3.png) no-repeat 50% top; background-size: 66px 66px;}
+.status-area .status-list li.item4 {background:url(../img/mobile/ico/ico_app_stat4.png) no-repeat 50% top; background-size: 66px 66px;}
+.status-area .status-list li .tit {
+	font-size: 12px;
+	color:#333;
+	font-weight: 700;
+}
+.status-area .status-list li .count {
+	font-size: 11px;
+	color:#999;;
+}
+.status-area .status-list li .count span {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.app-submain .bx-wrapper {
+	position:relative;
+	*zoom:1;
+}
+
+.app-submain .slider-box {
+	overflow:hidden;
+	padding-top:10px;
+}
+.app-submain .slider1 {
+	width:120%;
+}
+.app-submain .slider1 .bx-wrapper {max-width:100% !important;}
+.app-submain .slider1 .bxslider {}
+.app-submain .slider1 .bxslider .item {
+	width:220px !important;
+	box-sizing:border-box;
+	padding-right:10px;
+}
+.app-submain .slider1 .bxslider .item .inner {
+	display:block;
+	position:relative;
+	height:215px;
+	padding:26px 30px 0;
+	border:1px solid #eee;
+	box-sizing: border-box;
+}
+.app-submain .slider1 .bxslider .item span {display:block;}
+.app-submain .slider1 .bxslider .item .state {
+	margin-bottom:20px;
+	font-size:12px;
+}
+.app-submain .slider1 .bxslider .item .state.type1 {color:#26a7f5}
+.app-submain .slider1 .bxslider .item .state.type2 {color:#333}
+.app-submain .slider1 .bxslider .item .state.type3 {color:#ff5349}
+.app-submain .slider1 .bxslider .item .state.type4 {color:#ff8549}
+.app-submain .slider1 .bxslider .item .text {
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+}
+.app-submain .slider1 .bxslider .item .date {
+	color:#999;
+	font-size:12px;
+	margin-bottom:14px;
+}
+.app-submain .slider1 .bxslider .item .date.bottom {
+	position:absolute;
+	right:30px; bottom:26px;
+	margin-bottom:0;
+}
+
+.app-submain .slider1 .bxslider .item .join {
+	position:absolute;
+	left:30px; top:135px;
+	color:#999;
+	font-size:12px;
+}
+.app-submain .slider1 .bxslider .item .join .per {
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+}
+.app-submain .slider1 .bxslider .item .btn-join {
+	position:absolute;
+	right:30px; bottom:30px;
+	height:35px;
+	padding:0 29px 0 15px;
+	box-sizing:border-box;
+	border-radius:25px;
+	border:1px solid #eee;
+	color:#666;
+	font-size:12px;
+	line-height:33px;
+}
+.app-submain .slider1 .bxslider .item .btn-join:before {
+	content:'';
+	position:absolute;
+	right:15px; top:50%;
+	width:6px;
+	height:10px;
+	margin-top:-5px;
+	background:url(../img/btn/btn_arr.png) no-repeat 0 0;
+}
+
+.app-submain .slider1 .bxslider .item.complete .inner {background-color:#fafafa;}
+.app-submain .slider1 .bxslider .item.complete .state,
+.app-submain .slider1 .bxslider .item.complete .text,
+.app-submain .slider1 .bxslider .item.complete .date {color:#bbb;}
+.app-submain .slider1 .bx-controls {display:none;}
+
+.app-submain .cont .btn-slide {
+	position:absolute;
+	right:30px; top:50%;
+	height:20px;
+	margin-top:-10px;
+}
+.app-submain .cont .btn-slide button {
+	width:10px;
+	height:18px;
+	background-image:url(../img/mobile/btn/btn_app_bx_direction.png);
+	background-repeat:no-repeat;
+	font-size:0;
+	text-indent:-9999px;
+	vertical-align:top;
+	line-height:0;
+	background-size: 21px 18px;
+}
+.app-submain .cont .btn-slide .btn-prev {background-position:left top; margin-right:10px; }
+.app-submain .cont .btn-slide .btn-next {background-position:right top;}
+
 .app-wrap .sorting-area {
 	min-height: 55px;
 	box-sizing: border-box;

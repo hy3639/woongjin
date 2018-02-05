@@ -615,9 +615,10 @@ function resizeMid(){
 		});
 
 		// 스킨 컬러 버튼 오버
-		$('.btn-text.fColor').mouseenter(function(){
+		$(document).on('mouseenter', '.btn-text.fColor', function(){
 			$(this).addClass('bgColor');
-		}).mouseleave(function(){
+		});
+		$(document).on('mouseleave', '.btn-text.fColor', function(){
 			$(this).removeClass('bgColor');
 		});
 
