@@ -295,6 +295,600 @@
 							<div class="text-area">
 								<p class="text">텍스트 - TextBox Form</p>
 								<button type="button" class="btn-icon icon03 btn-layer">레이어 열기</button>
+								<div class="type-layer">
+									<div class="title-area">
+										설문 문항 타입 선택
+										<button type="button" class="btn-close">닫기</button>
+									</div>
+									<div class="cont-area">
+										<div class="menu-list">
+											<div class="menu-item on">
+												<p class="menu-title fColor">선택형<em class="icon bgColor"></em></p>
+												<ul class="list">
+													<li class="item on">단일선택 - 기본</li>
+													<li class="item">단일선택 - Image</li>
+													<li class="item">단일선택 - TextBox</li>
+													<li class="item">단일선택 - TextArea</li>
+													<li class="item">다중선택 - 기본</li>
+													<li class="item">다중선택 - Image</li>
+													<li class="item">다중선택 - TextBox</li>
+													<li class="item">다중선택 - TextArea</li>
+												</ul>
+											</div>
+											<div class="menu-item">
+												<p class="menu-title">텍스트형<em class="icon"></em></p>
+												<ul class="list">
+													<li class="item">텍스트 - 단일TextBox</li>
+													<li class="item">텍스트 - TextBox Form</li>
+													<li class="item">텍스트 - 다중TextBox</li>
+													<li class="item">텍스트 - TextArea</li>
+												</ul>
+											</div>
+											<div class="menu-item">
+												<p class="menu-title">순위형<em class="icon"></em></p>
+												<ul class="list">
+													<li class="item">순위 - 기본</li>
+												</ul>
+											</div>
+											<div class="menu-item">
+												<p class="menu-title">척도형<em class="icon"></em></p>
+												<ul class="list">
+													<li class="item">척도 - 3점</li>
+													<li class="item">척도 - 5점</li>
+													<li class="item">척도 - 6점</li>
+													<li class="item">척도 - 7점</li>
+													<li class="item">척도 - OX+5점</li>
+													<li class="item">척도 - OX+7점</li>
+													<li class="item">척도 - N/A+7점</li>
+												</ul>
+											</div>
+										</div>
+										<!-- 미리보기 -->
+										<div class="preview-area">
+											<h3 class="preview-title">설문 문항 예제</h3>
+											<div class="preview-list">
+												<!-- 선택형 -->
+												<div class="preview-item wHide">
+													<div class="survey-item type1 active">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">1</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하의 호칭은 무엇입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list inline">
+																<li class="item"><input type="radio" class="styled1" checked><label>부장 이상(책임 이상)</label></li>
+																<li class="item"><input type="radio" class="styled1"><label>대리(전임)</label></li>
+																<li class="item"><input type="radio" class="styled1"><label>과장(선임)</label></li>
+																<li class="item"><input type="radio" class="styled1"><label>차장</label></li>
+																<li class="item"><input type="radio" class="styled1"><label>선임</label></li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item image">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">6</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하께서 가장 좋아하는 연예인은 누구입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list inline">
+																<li class="item">
+																	<input type="radio" class="styled1" checked>
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+																<li class="item">
+																	<input type="radio" class="styled1">
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+																<li class="item">
+																	<input type="radio" class="styled1">
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+																<li class="item">
+																	<input type="radio" class="styled1">
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type1">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">4</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하께서 자격증을 취득할 의향이 있으시다면 그 이유는 무엇입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list">
+																<li class="item"><input type="radio" class="styled1" checked><label>본인의 경력개발을 위해서</label></li>
+																<li class="item"><input type="radio" class="styled1"><label>효과적인 업무수행을 위해서</label></li>
+																<li class="item">
+																	<input type="radio" class="styled1"><label>기타</label>
+																	<div class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></div>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type1">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">4</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하께서 자격증을 취득할 의향이 있으시다면 그 이유는 무엇입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list">
+																<li class="item"><input type="radio" class="styled1" checked><label>본인의 경력개발을 위해서</label></li>
+																<li class="item"><input type="radio" class="styled1"><label>효과적인 업무수행을 위해서</label></li>
+																<li class="item">
+																	<input type="radio" class="styled1"><label>기타</label>
+																	<div class="field-box"><textarea cols="" rows="" placeholder="내용을 입력해주세요." class="field"></textarea></div>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type1 active">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">1</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하의 호칭은 무엇입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list inline">
+																<li class="item"><input type="checkbox" class="styled1" checked><label>부장 이상(책임 이상)</label></li>
+																<li class="item"><input type="checkbox" class="styled1"><label>대리(전임)</label></li>
+																<li class="item"><input type="checkbox" class="styled1"><label>과장(선임)</label></li>
+																<li class="item"><input type="checkbox" class="styled1"><label>차장</label></li>
+																<li class="item"><input type="checkbox" class="styled1"><label>선임</label></li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item image">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">6</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하께서 가장 좋아하는 연예인은 누구입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list inline">
+																<li class="item">
+																	<input type="checkbox" class="styled1" checked>
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+																<li class="item">
+																	<input type="checkbox" class="styled1">
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+																<li class="item">
+																	<input type="checkbox" class="styled1">
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+																<li class="item">
+																	<input type="checkbox" class="styled1">
+																	<label>
+																		<img src="../img/img/no_image02.jpg" alt="">
+																		<em class="name"></em>
+																	</label>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type1">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">4</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하께서 자격증을 취득할 의향이 있으시다면 그 이유는 무엇입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list">
+																<li class="item"><input type="checkbox" class="styled1" checked><label>본인의 경력개발을 위해서</label></li>
+																<li class="item"><input type="checkbox" class="styled1"><label>효과적인 업무수행을 위해서</label></li>
+																<li class="item">
+																	<input type="checkbox" class="styled1"><label>기타</label>
+																	<div class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></div>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type1">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">4</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀하께서 자격증을 취득할 의향이 있으시다면 그 이유는 무엇입니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list">
+																<li class="item"><input type="checkbox" class="styled1" checked><label>본인의 경력개발을 위해서</label></li>
+																<li class="item"><input type="checkbox" class="styled1"><label>효과적인 업무수행을 위해서</label></li>
+																<li class="item">
+																	<input type="checkbox" class="styled1"><label>기타</label>
+																	<div class="field-box"><textarea cols="" rows="" placeholder="내용을 입력해주세요." class="field"></textarea></div>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+												</div>
+												<!-- 텍스트형 -->
+												<div class="preview-item wHide">
+													<div class="survey-item">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">8</em><span class="required">*</span></div>
+																<p class="question">
+																	<label class="text">귀하의 직무는 무엇입니까?</label>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list">
+																<li class="item">
+																	<input type="text" class="field" placeholder="내용을 입력해주세요." style="width:100%;">
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type2">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">9</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">귀사께서 생각하시는 소셜미디어의 장점은 무엇인가요?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list max">
+																<li class="item">
+																	<label for="Text0201">성</label>
+																	<span class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></span>
+																</li>
+																<li class="item">
+																	<label for="Text0201">이름</label>
+																	<span class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></span>
+																</li>
+																<li class="item">
+																	<label for="Text0201">메일주소</label>
+																	<span class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></span>
+																</li>
+																<li class="item">
+																	<label for="Text0201">주소</label>
+																	<span class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></span>
+																</li>
+																<li class="item">
+																	<label for="Text0201">우편번호</label>
+																	<span class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></span>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item type2">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">9</em><span class="required">*</span></div>
+																<p class="question">
+																	<span class="text">장래를 위해 가장 중요하게 고려되어야할 상징적인 단어가 무엇이라고 생각하십니까?</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list max">
+																<li class="item"><input type="text" placeholder="내용을 입력해주세요." style="width:100%;"></li>
+																<li class="item"><input type="text" placeholder="내용을 입력해주세요." style="width:100%;"></li>
+																<li class="item"><input type="text" placeholder="내용을 입력해주세요." style="width:100%;"></li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+
+													<div class="survey-item">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">8</em><span class="required">*</span></div>
+																<p class="question">
+																	<label class="text">기타 본 핵심가치에 대한 의견이 있으시다면 자유롭게 서술해주시기 바랍니다.</label>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<ul class="item-list">
+																<li class="item">
+																	<textarea cols="" rows="" class="field" placeholder="내용을 입력해주세요." style="width:100%;"></textarea>
+																</li>
+															</ul>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+												</div>
+												<!-- 순위형 -->
+												<div class="preview-item wHide">
+													<div class="survey-item type3">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">10</em></div>
+																<p class="question">
+																	<span class="text">다음 중에서 가장 중요하다고 생각되는 것부터 우선순위를 정해주시기 바랍니다.</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<div class="board-write2">
+																<table>
+																	<colgroup>
+																		<col>
+																		<col style="width:100px;">
+																	</colgroup>
+																	<tbody>
+																		<tr>
+																			<td class="left edit"><span class="text">열정</span></td>
+																			<td>
+																				<select class="styled1" style="width:100%;">
+																					<option selected>1</option>
+																					<option>2</option>
+																					<option>3</option>
+																					<option>4</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="left edit"><span class="text">혁신</span></td>
+																			<td>
+																				<select class="styled1" style="width:100%;">
+																					<option>1</option>
+																					<option selected>2</option>
+																					<option>3</option>
+																					<option>4</option>
+																				</select>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="left edit"><span class="text">존경</span></td>
+																			<td>
+																				<select class="styled1" style="width:100%;">
+																					<option>1</option>
+																					<option>2</option>
+																					<option>3</option>
+																					<option selected>4</option>
+																				</select>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+												</div>
+												<!-- 척도형 -->
+												<div class="preview-item">
+													<div class="survey-item type3">
+														<div class="inner">
+															<div class="question-area">
+																<div class="number">Q<em class="num">11</em></div>
+																<p class="question">
+																	<span class="text">다음의 물음에 답변해 주시기 바랍니다.</span>
+																	<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+																</p>
+															</div>
+															<div class="board-write2">
+																<table>
+																	<colgroup>
+																		<col>
+																		<col style="width:48px;">
+																		<col style="width:48px;">
+																		<col style="width:40px;">
+																		<col style="width:30px;">
+																		<col style="width:30px;">
+																		<col style="width:30px;">
+																		<col style="width:30px;">
+																		<col style="width:30px;">
+																		<col style="width:40px;">
+																	</colgroup>
+																	<thead>
+																		<tr>
+																			<th scope="col" rowspan="2">문항</th>
+																			<th scope="col" colspan="2">적용기회</th>
+																			<th scope="col" colspan="2" class="left">낮다</th>
+																			<th scope="col" colspan="3" class="bdL0">보통</th>
+																			<th scope="col" colspan="2" class="bdL0 right">높다</th>
+																		</tr>
+																		<tr class="pdA0">
+																			<th scope="col">O</th>
+																			<th scope="col">X</th>
+																			<th scope="col" class="bdL pdL">1</th>
+																			<th scope="col">2</th>
+																			<th scope="col">3</th>
+																			<th scope="col">4</th>
+																			<th scope="col">5</th>
+																			<th scope="col">6</th>
+																			<th scope="col" class="pdR">7</th>
+																		</tr>
+																	<thead>
+																	<tbody class="pdA0">
+																		<tr>
+																			<td class="left edit"><span class="text">우리 회사가 향후 글로벌 기업으로 성장하기 위해 반드시 필요한 역량이라고 생각하십니까?</span></td>
+																			<td><input type="radio" class="styled1" checked></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td class="left"><input type="radio" class="styled1" checked></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td class="right"><input type="radio" class="styled1"></td>
+																		</tr>
+																		<tr>
+																			<td class="left edit"><span class="text">우리회사의 특성을 잘 반영하고 있다고 생각 하십니까?</span></td>
+																			<td><input type="radio" class="styled1" checked></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td class="left"><input type="radio" class="styled1" checked></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td><input type="radio" class="styled1"></td>
+																			<td class="right"><input type="radio" class="styled1"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="btn-up-down">
+															<button type="button" class="btn-icon btn-up">위로</button>
+															<button type="button" class="btn-icon btn-down">아래로</button>
+														</div>
+														<div class="btn-add-del">
+															<button type="button" class="btn-icon btn-add">항목추가</button>
+															<button type="button" class="btn-icon btn-del">삭제</button>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<!-- //미리보기 -->
+									</div>
+								</div>
 							</div>
 						</div>
 						<ul class="set-list">
@@ -516,7 +1110,7 @@
 										<li class="item">
 											<input type="radio" name="Radio05" id="Radio0502" class="styled1">
 											<label for="Radio0502">
-												<img src="../img/temp/@user2.jpg" alt="">
+												<img src="../img/img/no_image02.jpg" alt="">
 												<em class="name">주임/대리</em>
 											</label>
 										</li>

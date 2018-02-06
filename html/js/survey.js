@@ -181,6 +181,19 @@ $(window).load(function(){
 	});
 	/* ================================================================================================ */
 
+	/* 오른쪽 수정박스 영역 */
+	$('.menu-item.on').each(function(){
+		$(this).find('.list').show();
+	});
+	$('.menu-item .menu-title').click(function(){
+		if(!$(this).closest('.menu-item').hasClass('on')){
+			$('.menu-item').removeClass('on').find('.menu-title').removeClass('fColor').find('.icon').removeClass('bgColor');
+			$('.menu-item').find('.list').slideUp(100);
+			$(this).closest('.menu-item').addClass('on').find('.menu-title').addClass('fColor').find('.icon').addClass('bgColor');
+			$(this).closest('.menu-item').find('.list').slideDown(200);
+		}
+	});
+
 
 
 
@@ -246,8 +259,8 @@ function numbering(){
 
 /* 텍스트 옆 텍스트필드 크기조정*/
 function textWid(){
-	$('.survey-list-item .survey-list .survey-item .item-list.max label').css({'width':'auto'});
-	$('.survey-list-item .survey-list .survey-item .item-list.max').each(function(){
+	$('.survey-item .item-list.max label').css({'width':'auto'});
+	$('.survey-item .item-list.max').each(function(){
 		var labelW = $(this).find('label').outerWidth();
 		var labelArray = $(this).find('label').map(function(){
 			return $(this).outerWidth();
@@ -255,7 +268,7 @@ function textWid(){
 		var moreW = Math.max.apply(Math , labelArray);
 		$(this).find('label').css({'width':moreW});
 	});
-	$('.survey-list-item .survey-list .survey-item .item-list .item .field-box').each(function(){
+	$('.survey-item .item-list .item .field-box').each(function(){
 		$(this).closest('.item').addClass('textfield');
 
 		var itemW = $(this).closest('.item').outerWidth();
