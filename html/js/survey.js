@@ -19,8 +19,11 @@ $(window).load(function(){
 
 	// 항목 선택
 	$(document).on('click', '.survey-item .inner', function(){
-		$('.survey-item').removeClass('active');
-		$(this).closest('.survey-item').addClass('active');
+		if(!$(this).closest('.survey-item').hasClass('editing')){
+			$('.survey-item').removeClass('active').removeClass('editing');
+			$('.survey-item').removeClass('editing').find('.editArea').remove();
+			$(this).closest('.survey-item').addClass('active');
+		}
 	});
 
 	// 위아래 이동 버튼
@@ -59,19 +62,43 @@ $(window).load(function(){
 		var sItem = $(this).closest('.survey-item');
 		var title = $(sItem).find('.question .text').text();
 		$(sItem).addClass('editing').find('.question').prepend('<input type="text" class="editArea" placeholder="내용을 입력해주세요." value="' + title + '">');
-		$(sItem).append('<div class="btn-area" class="editArea"><button type="button" class="btn-text btn-cencel">취소</button><button type="button" class="btn-text bdColor fColor">저장</button></div>');
+		if(title == '설문 문항'){
+			$(sItem).addClass('editing').find('.question .editArea').val('');
+		}
+		$(sItem).append('<div class="btn-area editArea"><button type="button" class="btn-text btn-cancel">취소</button><button type="button" class="btn-text bdColor fColor btn-save">저장</button></div>');
 
 		if($(sItem).hasClass('type1')){
 			$(sItem).find('.item-list .item').each(function(){
 				var text = $(this).find('label').text();
-				console.log(text);
 				$(this).append('<div class="editArea textarea"><input type="text" placeholder="내용을 입력해주세요." value="' + text + '"></div');
+				if(text == '설문 문항 답변'){
+					$(this).find('.editArea input[type=text]').val('');
+				}
 			});
 		}
 	});
-	$(document).on('click', '.btn-cencel', function(){
-		
+	// 작성취소
+	$(document).on('click', '.btn-cancel', function(){
+		$(this).closest('.survey-item').removeClass('editing').find('.editArea').remove();
 	});
+	// 저장
+	$(document).on('click', '.btn-save', function(){
+		var title = $(this).closest('.survey-item').find('.question .editArea').val();
+		$(this).closest('.survey-item').find('.question .text').text(title);
+		if(title == ''){
+			$(this).closest('.survey-item').find('.question .text').text('설문 문항');
+		}
+		$(this).closest('.survey-item').find('.item-list .item').each(function(){
+			var text = $(this).find('.editArea input[type=text]').val();
+			$(this).find('label').text(text);
+			if(text == ''){
+				$(this).find('label').text('설문 문항 답변');
+			}
+		});
+		$(this).closest('.survey-item').removeClass('editing').find('.editArea').remove();
+	});
+
+
 
 
 

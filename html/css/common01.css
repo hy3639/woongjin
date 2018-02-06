@@ -4549,6 +4549,7 @@ select.styled1 {}
 }
 .survey-item.editing.type1 .item-list .item input[type=text] {width:100%;}
 .survey-item.editing.type1 {}
+.survey-list-item .survey-list .survey-item.editing.type1 .item-list.inline .item {float:inherit;}
 
 
 /* ===========================================================================
