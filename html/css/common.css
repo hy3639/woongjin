@@ -112,3 +112,5 @@ input.bdColor {
 	background-color:#ff5349 !important;
 	color:#fff !important;
 }
+.survey-list-item.ui-sortable-helper {border-color:#ff5349 !important;}
+.survey-list-item.ui-sortable-helper .survey-title {background-color:#ff5349 !important;}

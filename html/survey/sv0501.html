@@ -2,12 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <title>웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
-<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
-<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
-<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+<link rel="stylesheet" href="../css/common01.css"> <!--PC-->
 
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/jquery-ui.11.12.1.js"></script>
@@ -458,7 +456,7 @@
 										<li class="item"><input type="radio" name="Radio03" id="Radio0304" class="styled1"><label for="Radio0304">12시간 이내</label></li>
 										<li class="item">
 											<input type="radio" name="Radio03" id="Radio0305" class="styled1"><label for="Radio0305">기타</label>
-											<input type="text" placeholder="내용을 입력해주세요." class="field">
+											<div class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></div>
 										</li>
 									</ul>
 								</div>
@@ -471,18 +469,21 @@
 									<button type="button" class="btn-icon btn-del">삭제</button>
 								</div>
 							</div>
-							<div class="survey-item">
+							<div class="survey-item type1">
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">5</em><span class="required">*</span></div>
-										<p class="question">사용하고 계신 소셜미디어들 중에서 중심이 되는 소셜미디어는 무엇인가요?<button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<span class="text">사용하고 계신 소셜미디어들 중에서 중심이 되는 소셜미디어는 무엇인가요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<ul class="item-list">
 										<li class="item"><input type="radio" name="Radio04" id="Radio0401" class="styled1" checked><label for="Radio0401">페이스북</label></li>
 										<li class="item"><input type="radio" name="Radio04" id="Radio0402" class="styled1"><label for="Radio0402">트위터</label></li>
 										<li class="item">
 											<input type="radio" name="Radio04" id="Radio0403" class="styled1"><label for="Radio0403">기타</label>
-											<input type="text" placeholder="내용을 입력해주세요." class="field">
+											<div class="field-box"><input type="text" placeholder="내용을 입력해주세요." class="field"></div>
 										</li>
 									</ul>
 								</div>
@@ -499,7 +500,10 @@
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">6</em><span class="required">*</span></div>
-										<p class="question">소셜미디어 운영을 어느 직급(직책)에게 맡기시나요?<button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<span class="text">소셜미디어 운영을 어느 직급(직책)에게 맡기시나요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<ul class="item-list">
 										<li class="item">
@@ -538,7 +542,10 @@
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">7</em><span class="required">*</span></div>
-										<p class="question">귀사의 대표 소셜미디어는 무엇인가요?<button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<span class="text">귀사의 대표 소셜미디어는 무엇인가요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<ul class="item-list inline">
 										<li class="item">
@@ -584,11 +591,14 @@
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">8</em><span class="required">*</span></div>
-										<p class="question"><label for="Text0101">귀사께서 소셜미디어를 활용하시는 이유는 무엇인가요?</label><button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<label for="Text0101" class="text">귀사께서 소셜미디어를 활용하시는 이유는 무엇인가요?</label>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<ul class="item-list">
 										<li class="item">
-											<input type="text" id="Text0101" placeholder="내용을 입력해주세요." style="width:100%;">
+											<input type="text" id="Text0101" class="field" placeholder="내용을 입력해주세요." style="width:100%;">
 										</li>
 									</ul>
 								</div>
@@ -601,28 +611,31 @@
 									<button type="button" class="btn-icon btn-del">삭제</button>
 								</div>
 							</div>
-							<div class="survey-item">
+							<div class="survey-item type2">
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">9</em><span class="required">*</span></div>
-										<p class="question">귀사께서 생각하시는 소셜미디어의 장점은 무엇인가요?<button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<span class="text">귀사께서 생각하시는 소셜미디어의 장점은 무엇인가요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<ul class="item-list max">
 										<li class="item">
 											<label for="Text0201">페이스북</label>
-											<input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field">
+											<span class="field-box"><input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field"></span>
 										</li>
 										<li class="item">
 											<label for="Text0201">트위터</label>
-											<input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field">
+											<span class="field-box"><input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field"></span>
 										</li>
 										<li class="item">
 											<label for="Text0201">인스타그램</label>
-											<input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field">
+											<span class="field-box"><input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field"></span>
 										</li>
 										<li class="item">
 											<label for="Text0201">구글플러스</label>
-											<input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field">
+											<span class="field-box"><input type="text" id="Text0201" placeholder="내용을 입력해주세요." class="field"></span>
 										</li>
 									</ul>
 								</div>
@@ -635,11 +648,14 @@
 									<button type="button" class="btn-icon btn-del">삭제</button>
 								</div>
 							</div>
-							<div class="survey-item">
+							<div class="survey-item type3">
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">10</em></div>
-										<p class="question">각 소셜미디어 활용 순위는 어떻게 되시나요?<button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<span class="text">각 소셜미디어 활용 순위는 어떻게 되시나요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<div class="board-write2">
 										<table>
@@ -649,7 +665,7 @@
 											</colgroup>
 											<tbody>
 												<tr>
-													<td class="left">페이스북 FaceBook</td>
+													<td class="left edit"><span class="text">페이스북 FaceBook</span></td>
 													<td>
 														<select class="styled1" style="width:100%;">
 															<option selected>1</option>
@@ -660,7 +676,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="left">트위터 Twitter</td>
+													<td class="left edit"><span class="text">트위터 Twitter</span></td>
 													<td>
 														<select class="styled1" style="width:100%;">
 															<option>1</option>
@@ -671,7 +687,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="left">인스타그램 Instagram</td>
+													<td class="left edit"><span class="text">인스타그램 Instagram</span></td>
 													<td>
 														<select class="styled1" style="width:100%;">
 															<option>1</option>
@@ -682,7 +698,7 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="left">구글플러스 Google+</td>
+													<td class="left edit"><span class="text">구글플러스 Google+</span></td>
 													<td>
 														<select class="styled1" style="width:100%;">
 															<option>1</option>
@@ -705,11 +721,14 @@
 									<button type="button" class="btn-icon btn-del">삭제</button>
 								</div>
 							</div>
-							<div class="survey-item">
+							<div class="survey-item type3">
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">11</em></div>
-										<p class="question">각 소셜미디어 활용 빈도는 어떻게 되시나요?<button type="button" class="btn-icon icon03 btn-modify">수정</button></p>
+										<p class="question">
+											<span class="text">각 소셜미디어 활용 빈도는 어떻게 되시나요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<div class="board-write2">
 										<table>
@@ -747,7 +766,7 @@
 											<thead>
 											<tbody class="pdA0">
 												<tr>
-													<td class="left">페이스북 FaceBook</td>
+													<td class="left edit"><span class="text">페이스북 FaceBook</span></td>
 													<td><input type="radio" name="Radio06" id="Radio0601" class="styled1" checked></td>
 													<td><input type="radio" name="Radio06" id="Radio0602" class="styled1"></td>
 													<td class="left"><input type="radio" name="Radio07" id="Radio0701" class="styled1" checked></td>
@@ -759,7 +778,7 @@
 													<td class="right"><input type="radio" name="Radio07" id="Radio0707" class="styled1"></td>
 												</tr>
 												<tr>
-													<td class="left">트위터 Twitter</td>
+													<td class="left edit"><span class="text">트위터 Twitter</span></td>
 													<td><input type="radio" name="Radio08" id="Radio0801" class="styled1" checked></td>
 													<td><input type="radio" name="Radio08" id="Radio0802" class="styled1"></td>
 													<td class="left"><input type="radio" name="Radio09" id="Radio0901" class="styled1" checked></td>
@@ -771,7 +790,7 @@
 													<td class="right"><input type="radio" name="Radio09" id="Radio0907" class="styled1"></td>
 												</tr>
 												<tr>
-													<td class="left">인스타그램 Instagram</td>
+													<td class="left edit"><span class="text">인스타그램 Instagram</span></td>
 													<td><input type="radio" name="Radio10" id="Radio1001" class="styled1" checked></td>
 													<td><input type="radio" name="Radio10" id="Radio1002" class="styled1"></td>
 													<td class="left"><input type="radio" name="Radio11" id="Radio1101" class="styled1" checked></td>
@@ -783,7 +802,7 @@
 													<td class="right"><input type="radio" name="Radio11" id="Radio1107" class="styled1"></td>
 												</tr>
 												<tr>
-													<td class="left">구글플러스 Google+</td>
+													<td class="left edit"><span class="text">구글플러스 Google+</span></td>
 													<td><input type="radio" name="Radio12" id="Radio1201" class="styled1" checked></td>
 													<td><input type="radio" name="Radio12" id="Radio1202" class="styled1"></td>
 													<td class="left"><input type="radio" name="Radio13" id="Radio1301" class="styled1" checked></td>
@@ -815,12 +834,18 @@
 							<p class="title">소셜미디어를 통한 일반인들의 정책 참여 유도 확인</p>
 							<p class="text">단순한 라이크나 리트윗을 겨냥한 일회성 포스팅이 아닌 지속 가능한 장기적 소셜 PR 캠페인 노력의 시작</p>
 						</div>
+						<div class="btn-add-area">
+							<button type="button" class="btn-icon-text btn-addlist bdColor"><span class="text fColor"><em class="icon bgColor"></em>설문 문항 추가</span></button>
+						</div>
 						<div class="survey-list">
-							<div class="survey-item">
+							<div class="survey-item type1">
 								<div class="inner">
 									<div class="question-area">
 										<div class="number">Q<em class="num">1</em><span class="required">*</span></div>
-										<p class="question">기업과 연계를 통한 소셜 상의 협업 강화를 위해 무엇을 하나요?</p>
+										<p class="question">
+											<span class="text">기업과 연계를 통한 소셜 상의 협업 강화를 위해 무엇을 하나요?</span>
+											<button type="button" class="btn-icon icon03 btn-modify">수정</button>
+										</p>
 									</div>
 									<ul class="item-list">
 										<li class="item"><input type="radio" name="Radio14" id="Radio1401" class="styled1" checked><label for="Radio1401"> 부서간 소셜 콜레보레이션</label></li>
@@ -840,47 +865,6 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-					<div class="survey-list-item">
-						<div class="survey-list" style="display:block;">
-							<div class="survey-item type1 editing">
-								<div class="inner">
-									<div class="question-area">
-										<div class="number">Q<em class="num">1</em><span class="required">*</span></div>
-										<p class="question"><input type="text"></p>
-									</div>
-									<ul class="item-list">
-										<li class="item"><input type="radio" name="Radio20" id="Radio2001" class="styled1" checked><label for="Radio2001"><input type="text" placeholder="내용을 입력해주세요."></label></li>
-										<li class="item"><input type="radio" name="Radio20" id="Radio2002" class="styled1"><label for="Radio2002"><input type="text" placeholder="내용을 입력해주세요."></label></li>
-										<li class="item"><input type="radio" name="Radio20" id="Radio2003" class="styled1"><label for="Radio2003"><input type="text" placeholder="내용을 입력해주세요."></label></li>
-										<li class="item"><input type="radio" name="Radio20" id="Radio2004" class="styled1"><label for="Radio2004"><input type="text" placeholder="내용을 입력해주세요."></label></li>
-									</ul>
-								</div>
-								<div class="btn-up-down">
-									<button type="button" class="btn-icon btn-up">위로</button>
-									<button type="button" class="btn-icon btn-down">아래로</button>
-								</div>
-								<div class="btn-add-del">
-									<button type="button" class="btn-icon btn-add">항목추가</button>
-									<button type="button" class="btn-icon btn-del">삭제</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
 				</div>
 			</div>
 		</div>
@@ -890,5 +874,9 @@
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
+
+<script>
+$('.survey-wrap').sortable({axis:'y', containment:'.content', scroll:false});
+</script>
 </body>
 </html>
