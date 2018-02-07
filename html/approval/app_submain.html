@@ -553,7 +553,7 @@
 $(window).load(function(){
 	/* 슬라이더 */
 	$('.slider1.type1').each(function(){
-		slider1 = $('.slider1.type1 .bxslider').bxSlider({
+		slider1 = $(this).find('.bxslider').bxSlider({
 			pager: false,
 			autoControls:true,
 			minSlides: 2,
