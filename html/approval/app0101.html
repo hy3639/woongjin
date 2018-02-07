@@ -337,13 +337,13 @@
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<a href="#" class="btn-item"><span class="btn-text">결제선표시</span></a>
-					<a href="#" class="btn-item"><span class="btn-text">취소</span></a>
-					<a href="#" class="btn-item"><span class="btn-text">임시저장</span></a>
+					<div class="btn-item"><a href="#" type="button" class="btn-text">결제선표시</a></div>
+					<div class="btn-item"><a href="#" type="button" class="btn-text">취소</a></div>
+					<div class="btn-item"><a href="#" type="button" class="btn-text">임시저장</a></div>
 				</div>
 				<div class="btn-align">
-					<a href="#" class="btn-item"><span class="btn-text">결재선</span></a>
-					<a href="#" class="btn-item"><span class="btn-text bdColor fColor">결재요청</span></a>
+					<div class="btn-item"><a href="#" class="btn-text">결재선</a></div>
+					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">결재요청</a></div>
 				</div>
 			</div>
 			<div class="approval-view">
@@ -573,7 +573,7 @@
 									<td colspan="3">
 										<div class="input-area sum">
 											<input type="text" id="Text04">
-											<span class="btn-text mid">결재라인 확인</span>
+											<button type="button" class="btn-text mid">결재라인 확인</button>
 										</div>
 									</td>
 								</tr>
@@ -582,16 +582,16 @@
 									<td colspan="2">
 										<input type="text" style="width:100%">
 										<div class="btn-area">
-											<button type="button"><span class="btn-text mid">검색</span></button>
-											<button type="button"><span class="btn-text mid">주소록</span></button>
+											<button type="button" class="btn-text mid">검색</button>
+											<button type="button" class="btn-text mid">주소록</button>
 										</div>
 									</td>
 									<th scope="row">부서<span class="important">*</span></th>
 									<td colspan="2">
 										<input type="text" style="width:100%">
 										<div class="btn-area">
-											<button type="button"><span class="btn-text mid">검색</span></button>
-											<button type="button"><span class="btn-text mid">주소록</span></button>
+											<button type="button" class="btn-text mid">검색</button>
+											<button type="button" class="btn-text mid">주소록</button>
 										</div>
 									</td>
 									<th scope="row">날짜<span class="important">*</span></th>
@@ -652,7 +652,7 @@
 														<th scope="col">일자<span class="important">*</span></th>
 														<th scope="col">비고<span class="important">*</span></th>
 														<th scope="col">금액<span class="important">*</span></th>
-														<th scope="col"><button type="button" class="btn-add"><span class="btn-text mid">추가</span></button></th>
+														<th scope="col"><button type="button" class="btn-text mid btn-add">추가</button></th>
 													</tr>
 												</thead>
 												<tfoot>
@@ -676,7 +676,7 @@
 														<td><input type="text" style="width:100%"></td>
 														<td><input type="text" style="width:100%"></td>
 														<td><input type="text" style="width:100%"></td>
-														<td><button type="button" class="btn-delete"><span class="btn-text mid">삭제</span></button></td>
+														<td><button type="button" class="btn-text mid btn-delete">삭제</button></td>
 													</tr>
 												</tbody>
 											</table>
@@ -697,7 +697,7 @@
 													<td><input type="text" style="width:100%"></td>
 													<td><input type="text" style="width:100%"></td>
 													<td><input type="text" style="width:100%"></td>
-													<td><button type="button" class="btn-delete"><span class="btn-text mid">삭제</span></button></td>
+													<td><button type="button" class="btn-text mid btn-delete">삭제</button></td>
 												</tr>
 											</textarea>
 										</div>
@@ -864,8 +864,13 @@ $(window).load(function(){
 		$(this).closest('table').find('tbody').append(copyTR);
 	});
 
-	$('.btn-delete').click(function(){
-		$(this).closest('tr').remove();
+	$(document).on('click', '.btn-delete', function(){
+		if($('.board-list3 tbody tr').size() > 1){
+			$(this).closest('tr').remove();
+		}else{
+			alert('삭제할 수 없습니다.');
+			return false;
+		}
 	});
 });
 
