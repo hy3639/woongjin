@@ -371,7 +371,7 @@
 						<tr>
 							<th scope="row">문서종류</th>
 							<td>
-								<select class="styled1" style="width:110px;">
+								<select class="styled1 doc-type-select" style="width:110px;">
 									<option>일반결재</option>
 									<option>신청 2단</option>
 									<option>신청 3단</option>
@@ -398,7 +398,7 @@
 							<col >
 						</colgroup>
 						<tbody>
-							<tr>
+							<tr class="form-line01">
 								<th scope="row">1단 결재선 유형</th>
 								<td colspan="3">
 									<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">결재선 선택지정</label>
@@ -406,7 +406,7 @@
 									<input type="radio" name="Radio01" id="Radio0103" class="styled1"><label for="Radio0103">결재선 고정지정</label>
 								</td>
 							</tr>
-							<tr>
+							<tr style="display:none">
 								<th scope="row">1단 최종 결재자</th>
 								<td>
 									<select class="styled1" style="width:150px;">
@@ -420,7 +420,7 @@
 									</select>
 								</td>
 							</tr>
-							<tr>
+							<tr class="form-line02" style="display:none">
 								<th scope="row">2단 결재선 유형</th>
 								<td colspan="3">
 									<input type="radio" name="Radio01" id="Radio0201" class="styled1" checked><label for="Radio0201">결재선 선택지정</label>
@@ -428,7 +428,7 @@
 									<input type="radio" name="Radio01" id="Radio0203" class="styled1"><label for="Radio0203">결재선 고정지정</label>
 								</td>
 							</tr>
-							<tr>
+							<tr style="display:none">
 								<th scope="row">2단 결재선 담당자 지정</th>
 								<td colspan="3">
 									<div class="input-area">
@@ -439,7 +439,7 @@
 									</div>
 								</td>
 							</tr>
-							<tr>
+							<tr class="form-line03" style="display:none">
 								<th scope="row">3단 결재선 유형</th>
 								<td colspan="3">
 									<input type="radio" name="Radio01" id="Radio0301" class="styled1" checked><label for="Radio0301">결재선 선택지정</label>
@@ -447,7 +447,7 @@
 									<input type="radio" name="Radio01" id="Radio0303" class="styled1"><label for="Radio0303">결재선 고정지정</label>
 								</td>
 							</tr>
-							<tr>
+							<tr style="display:none">
 								<th scope="row">3단 고정결재선 지정</th>
 								<td colspan="3">
 									<div class="input-area type2" style="max-width:400px;">
@@ -489,7 +489,7 @@
 									</div>
 								</td>
 							</tr>
-							<tr>
+							<tr style="display:none">
 								<th scope="row">참조자 지정</th>
 								<td colspan="3">
 									<div class="input-area type2" style="max-width:400px;">
@@ -551,6 +551,31 @@
 </div>
 <script>
 $(window).load(function(){
+	$('.doc-type-select').change(function(){
+		var value = $(this).val();
+	//	console.log(value);
+		if(value=='일반결재'){
+			$('.dynamic-table').find('.form-line01').show();
+			$('.dynamic-table').find('.form-line02').hide();
+			$('.dynamic-table').find('.form-line03').hide();
+
+		}else if(value=='신청 2단') {
+			$('.dynamic-table').find('.form-line01').show();
+			$('.dynamic-table').find('.form-line02').show();
+			$('.dynamic-table').find('.form-line03').hide();
+		}else {
+			$('.dynamic-table').find('.form-line01').show();
+			$('.dynamic-table').find('.form-line02').show();
+			$('.dynamic-table').find('.form-line03').show();
+		}
+	});
+
+	$('.board-write1 .doc-type .styled1').each(function(){
+
+
+		console.log(value);
+	});
+
 });
 </script>
 </body>
