@@ -4380,6 +4380,7 @@ select.styled1 {}
 }
 .survey-item .item-list.inline .item {display:inline-block;}
 .survey-item .item-list.column .item {display:inline-block;}
+.survey-item .item-list.column br:last-child {display:none;}
 .survey-item .item-list .item:after {
 	content:'';
 	display:block;
@@ -4678,7 +4679,9 @@ select.styled1 {}
 }
 .survey-item.editing.type1 .item-list .item .textarea input[type=text] {width:100%;}
 .survey-list-item .survey-list .survey-item.editing .item-list.inline .item,
-.survey-list-item .survey-list .survey-item.editing.type1 .item-list .item.textfield .field-box {float:inherit;}
+.survey-list-item .survey-list .survey-item.editing .item-list.column .item,
+.survey-list-item .survey-list .survey-item.editing.type1 .item-list .item.textfield .field-box {display:block;}
+.survey-list-item .survey-list .survey-item.editing .item-list.column br {display:none;}
 .survey-item.editing.type1 .item-list .item.textfield .field-box {
 	width:100% !important;
 	padding-left:24px;

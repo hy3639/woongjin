@@ -211,39 +211,22 @@ $(document).ready(function(){
 		}
 	});
 
-	/* 체크박스 */
-	$('input[type=checkbox].styled1').each(function(){
-		$(this).wrap('<span class="checkWrap">');
+	rdoChk();// 체크박스/라디오
+	/* 체크박스 */	
+	$(document).on('change', 'input[type=checkbox].styled1', function(){
 		if(this.checked){
 			$(this).closest('.checkWrap').addClass('checked');
+		}else{
+			$(this).closest('.checkWrap').removeClass('checked');
 		}
-		if(this.disabled){
-			$(this).closest('.checkWrap').addClass('disabled');
-		}
-		$(this).change(function(){
-			if(this.checked){
-				$(this).closest('.checkWrap').addClass('checked');
-			}else{
-				$(this).closest('.checkWrap').removeClass('checked');
-			}
-		});
 	});
 	/* 라디오 */
-	$('input[type=radio].styled1').each(function(){
-		$(this).wrap('<span class="radioWrap">');
+	$(document).on('change', 'input[type=radio].styled1', function(){
+		var name = $(this).attr('name');
 		if(this.checked){
+			$('input[name="'+ name +'"]').closest('.radioWrap').removeClass('checked');
 			$(this).closest('.radioWrap').addClass('checked');
 		}
-		if(this.disabled){
-			$(this).closest('.radioWrap').addClass('disabled');
-		}
-		$(this).change(function(){
-			var name = $(this).attr('name');
-			if(this.checked){
-				$('input[name="'+ name +'"]').closest('.radioWrap').removeClass('checked');
-				$(this).closest('.radioWrap').addClass('checked');
-			}
-		});
 	});
 	/* 셀렉트박스
 	$('select.styled1').each(function(){
@@ -735,6 +718,51 @@ function resizeMid(){
 		});
 		tabSize(); //탭 넓이 자동조절
 	}
+}
+
+function rdoChk(){
+	// 체크박스
+	$('input[type=checkbox].styled1').each(function(){
+		$(this).wrap('<span class="checkWrap">');
+		if(this.checked){
+			$(this).closest('.checkWrap').addClass('checked');
+		}
+		if(this.disabled){
+			$(this).closest('.checkWrap').addClass('disabled');
+		}
+	});
+	// 라디오
+	$('input[type=radio].styled1').each(function(){
+		$(this).wrap('<span class="radioWrap">');
+		if(this.checked){
+			$(this).closest('.radioWrap').addClass('checked');
+		}
+		if(this.disabled){
+			$(this).closest('.radioWrap').addClass('disabled');
+		}
+	});
+}
+
+function rdoChkState(){
+	$('.checkWrap, .radioWrap').removeClass('checked');
+	// 체크박스
+	$('input[type=checkbox].styled1').each(function(){
+		if(this.checked){
+			$(this).closest('.checkWrap').addClass('checked');
+		}
+		if(this.disabled){
+			$(this).closest('.checkWrap').addClass('disabled');
+		}
+	});
+	// 라디오
+	$('input[type=radio].styled1').each(function(){
+		if(this.checked){
+			$(this).closest('.radioWrap').addClass('checked');
+		}
+		if(this.disabled){
+			$(this).closest('.radioWrap').addClass('disabled');
+		}
+	});
 }
 
 
