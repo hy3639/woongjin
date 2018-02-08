@@ -20,6 +20,12 @@ $(window).load(function(){
 	/* 설문테이블 안 라디오 */
 	surForm();
 
+	/* 설문 문항 그룹 삭제 */
+	$(document).on('click', '.btn-all-del', function(){
+		//$(this).closest('.survey-list-item').remove();
+		$('.survey-list-item').addClass('on');
+	});
+
 	// 리스트 열고 닫기
 	$(document).on('click', '.survey-list-item .survey-title', function(){
 		var len = $('.survey-wrap .survey-list-item.on').length;
@@ -39,6 +45,13 @@ $(window).load(function(){
 			$('.survey-item').removeClass('active').removeClass('editing');
 			$('.survey-item').removeClass('editing').find('.editArea').remove();
 			$(this).closest('.survey-item').addClass('active');
+		}
+
+		if(!$(this).closest('.survey-item').find('.item-list').hasClass('column')){
+			if(!$('.set-item.item05').hasClass('on')){
+				var itemIen = $(this).closest('.survey-item').find('.item-list .item').length;
+				$(this).closest('.survey-item').find('.item-list').attr('data', itemIen);
+			}
 		}
 
 		//텍스트형
@@ -85,15 +98,15 @@ $(window).load(function(){
 
 			$('.set-item.item04 p .radioWrap').removeClass('checked').find('input[type=radio]').prop('checked', false);
 			$('.set-item.item04 .ra03 .radioWrap').addClass('checked').find('input[type=radio]').prop('checked', true);
-			$('.set-item.item05').show();
+			$('.set-item.item05').show().addClass('on');
 		}else if($(this).find('.item-list').hasClass('inline')){
 			$('.set-item.item04 p .radioWrap').removeClass('checked').find('input[type=radio]').prop('checked', false);
 			$('.set-item.item04 .ra02 .radioWrap').addClass('checked').find('input[type=radio]').prop('checked', true);
-			$('.set-item.item05').hide();
+			$('.set-item.item05').hide().removeClass('on');
 		}else{
 			$('.set-item.item04 p .radioWrap').removeClass('checked').find('input[type=radio]').prop('checked', false);
 			$('.set-item.item04 .ra01 .radioWrap').addClass('checked').find('input[type=radio]').prop('checked', true);
-			$('.set-item.item05').hide();
+			$('.set-item.item05').hide().removeClass('on');
 		}
 	});
 
@@ -124,7 +137,27 @@ $(window).load(function(){
 
 	/* 항목 추가 */
 	$(document).on('click', '.survey-item .btn-add-del .btn-add', function(){
-		
+		var clon = $('.preview-item:first-child .survey-item:first-child').clone();
+		$(this).closest('.survey-item').before(clon);
+		$('.survey-item.active').removeClass('active').prev('.survey-item').addClass('active');
+		$('.survey-item:last-child').addClass('active').find('.item-list').attr('data', '4');
+		$('.survey-item.active').find('.question .text').text('설문 문항');
+		$('.survey-item.active').find('.item-list').removeClass('inline').find('.item .text').text('설문 문항 답변');
+		$('.survey-item.active .item-list .item:last-child').remove();
+		$('.set-item.item05').hide().removeClass('on');
+	});
+	$(document).on('click', '.btn-addlist', function(){
+		var clon = $('.preview-item:first-child .survey-item:first-child').clone();
+		$(this).closest('.survey-list-item').find('.survey-list').append(clon);
+		$('.survey-item.active').removeClass('active');
+		$('.survey-item:last-child').addClass('active').find('.item-list').attr('data', '4');
+		$('.survey-item.active .item-list .item:last-child').remove();
+		$('.survey-item.active').find('.question .text').text('설문 문항');
+		$('.survey-item.active').find('.item-list').removeClass('inline').find('.item .text').text('설문 문항 답변');
+		$('.set-item.item05').hide().removeClass('on');
+
+		var sBtm = $(document).height();
+		$('html, body').animate({scrollTop:sBtm});
 	});
 
 	/* 항목삭제 */
@@ -391,21 +424,21 @@ $(window).load(function(){
 	// 문항표시방법
 	$('.set-item.item04 p.ra01 input[type=radio]').change(function(){
 		if(this.checked){
-			$('.set-item.item05').hide();
+			$('.set-item.item05').hide().removeClass('on');
 			$('.survey-item.active .item-list').removeClass('inline').removeClass('column');
 		}
 	});
 	$('.set-item.item04 p.ra02 input[type=radio]').change(function(){
 		if(this.checked){
-			$('.set-item.item05').hide();
+			$('.set-item.item05').hide().removeClass('on');
 			$('.survey-item.active .item-list').removeClass('column').addClass('inline').find('br').remove();
 		}
 	});
 	$('.set-item.item04 p.ra03 input[type=radio]').change(function(){
 		if(this.checked){
-			$('.set-item.item05').show();
+			$('.set-item.item05').show().addClass('on');
 			$('.survey-item.active .item-list').removeClass('inline').addClass('column');
-			var len = $('.survey-item.active .item').length;
+			var len = $('.survey-item.active .item-list').attr('data');
 			$('.set-item.item05 input[type=text]').val(len);
 		}
 	});

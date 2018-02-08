@@ -796,6 +796,12 @@ select.styled1 {}
 	background:url(../img/btn/btn_modify_layer.png) no-repeat 0 0;
 }
 
+.btn-icon.icon04 {
+	width:24px;
+	height:24px;
+	background:url(../img/btn/btn_del04.png) no-repeat 0 0;
+}
+
 /*조회수*/
 .icon-text {
 	display:inline-block;
@@ -1827,6 +1833,19 @@ select.styled1 {}
 .board-write2 table tr .right {padding-right:15px;text-align:right;}
 .board-write2 table tr .pdL {padding-left:8px;}
 .board-write2 table tr .pdR {padding-right:8px;}
+
+.board-write3 {border:1px solid #eee;}
+.board-write3 th {
+	padding-left: 30px;
+	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+	color: #333;
+  font-size: 14px;
+  text-align: left;
+}
+.board-write3 td{border-top: 1px solid #eee;}
+
+.board-write3 td:first-child { border-top: 0}
 
 /*보기 테이블*/
 .board-view1 {
@@ -4126,6 +4145,11 @@ select.styled1 {}
 }
 .app-wrap2 .dynamic-table .input-area.type2 + span {margin-left:15px;}
 
+.app-wrap2 .dynamic-table + .dynamic-table {
+	display: none;
+	margin-top: 50px;
+}
+
 /* 관리자 메뉴 > 게시물관리 */
 .admin-board-area .board-setting .top-search-box {margin:0}
 .admin-board-area .board-setting .sorting-area {
@@ -4545,11 +4569,13 @@ select.styled1 {}
 /* on */
 .survey-modify .survey-list-item.on .survey-title {background-color:#fafafa;}
 .survey-modify .survey-list-item.on .survey-title .text {display:block;}
-.survey-modify .survey-list-item.on .survey-title .title .btn-modify {display:inline-block;}
+.survey-modify .survey-list-item.on .survey-title .title .btn-modify,
+.survey-modify .survey-list-item.on .survey-title .title .btn-all-del {display:inline-block;}
 .survey-modify .survey-list-item.on .survey-list {display:block;}
 
 .survey-modify .survey-list-item.on .survey-title:before {background-position:0 -18px;}
-.survey-list-item .btn-modify {display:none; margin-left:10px;}
+.survey-list-item .btn-modify {display:none;margin-left:10px;}
+.survey-list-item .btn-all-del {display:none;margin-left:3px;}
 
 .btn-add-area {
 	display:none;
@@ -5175,3 +5201,75 @@ select.styled1 {}
 .modify-box .type-layer .survey-item .btn-modify {display:none;}
 .modify-box .type-layer .survey-item .question-area .question {padding-left:0;}
 .modify-box .type-layer .survey-item .item-list {margin-top:9px;}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+		업무지원
+------------------------------------------------------------------------------------------------------------------------------------------- */
+/*팝업관리*/
+.form-list {
+	overflow:hidden;
+	margin:0 0 0 -20px;
+}
+.form-list .item {
+	position:relative;
+	padding-left:20px;
+	box-sizing:border-box;
+	line-height:28px;
+}
+.form-list.inline .item {float:left;}
+.form-list.inline .item.clear {clear:both;}
+.form-list.inline .item:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.form-list .item .radioWrap {margin-right: 6px}
+.form-list .item .checkWrap{margin-right: 7px;}
+
+.form-list.image  .item {
+	padding-top:6px;
+	padding-bottom:2px;
+	line-height: 35px;
+}
+.form-list.image  .item .radioWrap,
+.form-list.image  .item .checkWrap {vertical-align:middle;}
+.form-list.image   .item label {
+	display:inline-block;
+	width:35px;
+	line-height:0;
+}
+.form-list.image .item label img {
+	width:35px;
+	height:35px;
+}
+
+.period-type1 .date-select  {margin-left: -10px}
+.period-type1 .date-select .selectWrap {}
+.period-type1 .date-area .swung-dash {
+	float: left;
+	width: 20px;
+	color: #999;
+	text-align: center;
+	line-height: 35px;
+}
+.pop-write .form-list {
+	display: inline-block;
+}
+.pop-write .form-list + span {
+	margin-left: 10px;
+	display: inline-block;
+	color:#999;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: top;
+}
+.pop-write .board-write3 {
+	margin: 0
+}
+.pop-write .board-write3 .input-area.type2 {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.pop-write .board-write3 .input-area.type2 + span {margin-left: 15px;}
