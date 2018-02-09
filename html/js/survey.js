@@ -69,6 +69,7 @@ $(window).load(function(){
 				$(this).closest('.survey-item').find('.item-list').attr('data', itemIen);
 			}
 		}
+		$('.item-list .item .field').removeAttr('disabled');
 
 		//텍스트형
 		if($(this).closest('.survey-item').hasClass('textType')){
@@ -332,12 +333,13 @@ $(window).load(function(){
 
 	/* 설문그룹수정 */
 	$(document).on('click', '.survey-title .btn-layer', function(){
-		var title = $(this).closest('.survey-title').find('.title .tit').text();
-		var text = $(this).closest('.survey-title').find('.text').text();
-		$(this).closest('.survey-title').find('.groupTitle').val(title);
-		$(this).closest('.survey-title').find('.groupText').val(text);
-		if(title == '설문 그룹명') $(this).closest('.survey-title').find('.groupTitle').val('');
-		if(text == '설문 그룹설명') $(this).closest('.survey-title').find('.groupText').val('');
+		var surTit = $(this).closest('.survey-title');
+		var title = $(surTit).find('.title .tit').html().replace('<br>', '\n');
+		var text = $(surTit).find('.text').html().replace('<br>', '\n');
+		$(surTit).find('.groupTitle').val(title);
+		$(surTit).find('.groupText').val(text);
+		if(title == '설문 그룹명') $(surTit).find('.groupTitle').val('');
+		if(text == '설문 그룹설명') $(surTit).find('.groupText').val('');
 	});
 	$(document).on('click', '.modify-layer .btn-save', function(){
 		var title = $(this).closest('.modify-layer').find('.groupTitle').val().replace(/\n/g, '<br>');
@@ -537,14 +539,16 @@ $(window).load(function(){
 
 $(window).scroll(function(){
 	/* 오른쪽 고정영역 스크롤시 위치 */
-	var winT = $(window).scrollTop();
-	var modiT = $('.survey-modify').offset().top;
-	var headH = $('.header').outerHeight();
-	if(winT >= modiT - headH){
-		$('.modify-wrap').css({'top':winT - 20});
-	}else{
-		$('.modify-wrap').css({'top':'0'});
-	}
+	$('.modify-wrap').each(function(){
+		var winT = $(window).scrollTop();
+		var modiT = $('.survey-modify').offset().top;
+		var headH = $('.header').outerHeight();
+		if(winT >= modiT - headH){
+			$('.modify-wrap').css({'top':winT - 20});
+		}else{
+			$('.modify-wrap').css({'top':'0'});
+		}
+	});
 });
 
 

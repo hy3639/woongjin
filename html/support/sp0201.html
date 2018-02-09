@@ -251,60 +251,27 @@
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">영업 1팀</span></p>
-									<div class="tree-menu-box">
-										<div class="tree-menu">
-											<ul class="tree-list">
-												<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
-												<li><p class="link"><a href="#" class="text">주간보고</a></p></li>
-												<li><p class="link"><a href="#" class="text">Contents Stream</a></p></li>
-												<li>
-													<p class="link"><a href="#" class="text">게시판 목록</a></p>
-													<ul>
-														<li><p class="link"><a href="#" class="text">일반 게시판</a></p></li>
-														<li>
-															<p class="link"><a href="#" class="text">방명록</a></p>
-															<ul>
-																<li><p class="link"><a href="#" class="text">양식기 저장함 전용 게시판</a></p></li>
-																<li><p class="link"><a href="#" class="text">익명 게시판</a></p></li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</div>
-									</div>
+									<p class="depth1-title"><span class="text">업무지원</span></p>
 								</div>
 								<ul class="depth1-list">
 									<li class="depth1-item">
-										<a href="#" class="d-title">활동 통계</a>
+										<a href="#" class="d-title">팝업관리</a>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">자원 예약</a>
 										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">워크스페이스 활동 통계</a></li>
-											<li class="depth2-item"><a href="#">회원 활동 통계</a></li>
+											<li class="depth2-item"><a href="#">자원 예약</a></li>
+											<li class="depth2-item on"><a href="#">자원 관리</a></li>
+											<li class="depth2-item"><a href="#">전산 장비</a></li>
 										</ul>
 									</li>
 									<li class="depth1-item">
-										<a href="#" class="d-title">관리자 메뉴</a>
+										<a href="#" class="d-title">관리자메뉴</a>
 										<ul class="depth2-list">
-											<li class="depth2-item on"><a href="#">정보관리</a></li><!-- 선택된메뉴 class="on" -->
-											<li class="depth2-item"><a href="#">소개화면편집</a></li>
-											<li class="depth2-item"><a href="#">레이아웃관리</a></li>
-											<li class="depth2-item"><a href="#">게시판관리</a></li>
-											<li class="depth2-item"><a href="#">회원관리</a></li>
-											<li class="depth2-item"><a href="#">게시판이관관리</a></li>
-											<li class="depth2-item"><a href="#">폐쇄신청</a></li>
+											<li class="depth2-item"><a href="#">시스템관리</a></li>
 										</ul>
 									</li>
 								</ul>
-								<div class="bottom-menu">
-									<h2 class="menu-title">나의 워크스페이스 목록</h2>
-									<ul class="menu-list">
-										<li class="menu-item"><a href="#" class="text">대표 워크스페이스</a></li>
-										<li class="menu-item on"><a href="#" class="text">웅진 스터디 카페</a></li>
-										<li class="menu-item"><a href="#" class="text">웅진 씽크빅</a></li>
-									</ul>
-									<a href="#" class="btn-text mid">전체 워크스페이스</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -319,61 +286,87 @@
 	</div>
 
 	<div class="container">
-		<div class="content">
+		<div class="content support-wrap">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">정보관리</h2>
+				<h2 class="title">자원관리</h2>
 			</div>
-			<div class="board-write1 btm-line">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr class="tr-floating">
-							<th scope="row">신청자</th>
-							<td>관리자</td>
-						</tr>
-						<tr>
-							<th scope="row">신청일</th>
-							<td>2018.01312</td>
-						</tr>
-						<tr>
-							<th scope="row">워크스페이스<span class="important">*</span></th>
-							<td>
-								<div class="input-area" style="max-width:100%;">
-									<input type="text">
-									<span class="btn-text mid">중복확인</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개글<span class="important">*</span></th>
-							<td>
-								<textarea style="width:100%"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">소개 이미지<span class="important">*</span></th>
-							<td><span class="btn-text mid">이미지 첨부</span></td>
-						</tr>
-						<tr>
-							<th scope="row">주간업무보고 사용 유무</th>
-							<td>
-								<ul class="form-list inline">
-									<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">사용안함</label></li>
-									<li class="item">	<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">사용</label></li>
-								</ul>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<div class="sorting-area">
+				<div class="left-box">
+					<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+				</div>
+				<div class="right-box mHide">
+					<select class="styled1" style="width:120px;">
+						<option>사용가능</option>
+						<option>20개</option>
+						<option>30개</option>
+						<option>40개</option>
+						<option>50개</option>
+					</select>
+					<select class="styled1" style="width:120px;">
+						<option>전체</option>
+						<option>공개</option>
+						<option>대기</option>
+						<option>만료</option>
+						<option>삭제</option>
+					</select>
+				</div>
+			</div>
+			<div class="resource-area">
+				<div class="board-list1">
+					<table>
+						<caption>자원관리 게시판</caption>
+						<colgroup>
+							<col style="width:15%;">
+							<col >
+							<col style="width:12%;">
+							<col style="width:10%;">
+							<col style="width:10%;">
+							<col style="width:15%;">
+						</colgroup>
+						<thead class="mHide">
+							<tr>
+								<th scope="col">자원 번호</th>
+								<th scope="col">자원 명칭</th>
+								<th scope="col">사용 여부</th>
+								<th scope="col">출력순서</th>
+								<th scope="col">등록자</th>
+								<th scope="col">등록일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실1</span></a></td>
+								<td>사용가능</td>
+								<td>1</td>
+								<td>관리자</td>
+								<td>2017.12.24</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 페이징 -->
+				<div class="paging mHide">
+					<a href="#" class="btn first">처음</a>
+					<a href="#" class="btn prev">이전</a>
+					<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+					<a href="#" class="page">2</a>
+					<a href="#" class="page">3</a>
+					<a href="#" class="page">4</a>
+					<a href="#" class="page">5</a>
+					<a href="#" class="page">6</a>
+					<a href="#" class="page">7</a>
+					<a href="#" class="page">8</a>
+					<a href="#" class="page">9</a>
+					<a href="#" class="page">10</a>
+					<a href="#" class="btn next">다음</a>
+					<a href="#" class="btn end">마지막</a>
+				</div>
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">초기화</a></div>
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
+					<div class="btn-item"><a href="#" class="btn-text fColor bdColor">등록</a></div>
 				</div>
 			</div>
 		</div>
@@ -383,5 +376,6 @@
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
+
 </body>
 </html>

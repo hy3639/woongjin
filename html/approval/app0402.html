@@ -377,8 +377,10 @@
 									<option>신청 3단</option>
 								</select>
 								(<div class="doc-type">
-									<input type="checkbox" id="check01" class="styled1 doc-type1"><label for="check01">합의</label>
-									<input type="checkbox" id="check02" class="styled1 doc-type2"><label for="check02">참조자 지정</label>
+									<ul class="form-list inline">
+										<li class="item"><input type="checkbox" id="check01" class="styled1 doc-type1"><label for="check01">합의</label></li>
+										<li class="item"><input type="checkbox" id="check02" class="styled1 doc-type2"><label for="check02">참조자 지정</label></li>
+									</ul>
 								</div>)
 							</td>
 						</tr>
@@ -401,9 +403,11 @@
 							<tr class="form-line01">
 								<th scope="row">1단 결재선 유형</th>
 								<td colspan="3">
-									<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">결재선 선택지정</label>
-									<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">결재선 자동계산</label>
-									<input type="radio" name="Radio01" id="Radio0103" class="styled1"><label for="Radio0103">결재선 고정지정</label>
+									<ul class="form-list inline">
+										<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">결재선 선택지정</label></li>
+										<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">결재선 자동계산</label></li>
+										<li class="item"><input type="radio" name="Radio01" id="Radio0103" class="styled1"><label for="Radio0103">결재선 고정지정</label></li>
+									</ul>
 								</td>
 							</tr>
 							<tr class="form-line01-type1" style="display:none">
@@ -466,9 +470,11 @@
 							<tr class="form-line02" style="display:none">
 								<th scope="row">2단 결재선 유형</th>
 								<td colspan="3">
-									<input type="radio" name="Radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">결재선 선택지정</label>
-									<input type="radio" name="Radio02" id="Radio0202" class="styled1"><label for="Radio0202">결재선 자동계산</label>
-									<input type="radio" name="Radio02" id="Radio0203" class="styled1"><label for="Radio0203">결재선 고정지정</label>
+									<ul class="form-list inline">
+										<li class="item"><input type="radio" name="Radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">결재선 선택지정</label></li>
+										<li class="item">	<input type="radio" name="Radio02" id="Radio0202" class="styled1"><label for="Radio0202">결재선 자동계산</label></li>
+										<li class="item">	<input type="radio" name="Radio02" id="Radio0203" class="styled1"><label for="Radio0203">결재선 고정지정</label></li>
+									</ul>
 								</td>
 							</tr>
 							<tr class="form-line02-type1" style="display:none">
@@ -542,9 +548,11 @@
 							<tr class="form-line03" style="display:none">
 								<th scope="row">3단 결재선 유형</th>
 								<td colspan="3">
-									<input type="radio" name="Radio03" id="Radio0301" class="styled1" checked><label for="Radio0301">결재선 선택지정</label>
-									<input type="radio" name="Radio03" id="Radio0302" class="styled1"><label for="Radio0302">결재선 자동계산</label>
-									<input type="radio" name="Radio03" id="Radio0303" class="styled1"><label for="Radio0303">결재선 고정지정</label>
+									<ul class="form-list inline">
+										<li class="item"><input type="radio" name="Radio03" id="Radio0301" class="styled1" checked><label for="Radio0301">결재선 선택지정</label></li>
+										<li class="item"><input type="radio" name="Radio03" id="Radio0302" class="styled1"><label for="Radio0302">결재선 자동계산</label></li>
+										<li class="item"><input type="radio" name="Radio03" id="Radio0303" class="styled1"><label for="Radio0303">결재선 고정지정</label></li>
+									</ul>
 								</td>
 							</tr>
 							<tr class="form-line03-type1" style="display:none">
@@ -619,8 +627,10 @@
 							<tr class="form-line-type1" style="display:none">
 								<th scope="row">합의 결재선 유형</th>
 								<td colspan="3">
-									<input type="radio" name="Radio04" id="Radio0401" class="styled1" checked><label for="Radio0401">결재선 선택지정</label>
-									<input type="radio" name="Radio04" id="Radio0402" class="styled1"><label for="Radio0402">결재선 고정지정</label>
+									<ul class="form-list inline">
+										<li class="item"><input type="radio" name="Radio04" id="Radio0401" class="styled1" checked><label for="Radio0401">결재선 선택지정</label></li>
+										<li class="item"><input type="radio" name="Radio04" id="Radio0402" class="styled1"><label for="Radio0402">결재선 고정지정</label></li>
+									</ul>
 								</td>
 							</tr>
 							<tr class="form-line-type2" style="display:none">
@@ -814,7 +824,7 @@ $(window).load(function(){
 				$('.dynamic-table').find('.form-line03-type1').hide();
 				$('.dynamic-table').find('.form-line03-type2').hide();
 			}
-			return false;
+	//		return false;
 		}
 		if(value=='신청 2단') {
 			$('.dynamic-table').find('.form-line01').show();
@@ -850,7 +860,7 @@ $(window).load(function(){
 				$('.dynamic-table').find('.form-line03-type1').hide();
 				$('.dynamic-table').find('.form-line03-type2').hide();
 			}
-			return false;
+		//	return false;
 		}
 		if(value='신청 3단') {
 			$('.dynamic-table').find('.form-line01').show();
@@ -886,7 +896,7 @@ $(window).load(function(){
 				$('.dynamic-table').find('.form-line02-type1').hide();
 				$('.dynamic-table').find('.form-line02-type2').hide();
 			}
-			return false;
+		//	return false;
 		}
 	});
 
@@ -913,7 +923,7 @@ $(window).load(function(){
 					$('.dynamic-table').find('.form-line-type3').hide();
 
 				}
-				return false;
+			//	return false;
 			}
 			if(value=='check02'){
 				if($(this).is(':checked')){
@@ -921,7 +931,7 @@ $(window).load(function(){
 				}else{
 					$('.dynamic-table.reference').hide();
 				}
-				return false;
+				//return false;
 			}
 	});
 
@@ -932,17 +942,17 @@ $(window).load(function(){
 		if(value=='Radio0101'){
 			$('.dynamic-table').find('.form-line01-type1').hide();
 			$('.dynamic-table').find('.form-line01-type2').hide();
-			return false;
+			//return false;
 		}
 		if(value=='Radio0102'){
 			$('.dynamic-table').find('.form-line01-type1').show();
 			$('.dynamic-table').find('.form-line01-type2').hide();
-			return false;
+			//return false;
 		}
 		if(value=='Radio0103'){
 			$('.dynamic-table').find('.form-line01-type2').show();
 			$('.dynamic-table').find('.form-line01-type1').hide();
-			return false;
+		//	return false;
 		}
 	});
 
@@ -953,17 +963,17 @@ $(window).load(function(){
 		if(value=='Radio0201'){
 			$('.dynamic-table').find('.form-line02-type1').hide();
 			$('.dynamic-table').find('.form-line02-type2').hide();
-			return false;
+			//return false;
 		}
 		if(value=='Radio0202'){
 			$('.dynamic-table').find('.form-line02-type1').show();
 			$('.dynamic-table').find('.form-line02-type2').hide();
-			return false;
+		//	return false;
 		}
 		if(value=='Radio0203'){
 			$('.dynamic-table').find('.form-line02-type2').show();
 			$('.dynamic-table').find('.form-line02-type1').hide();
-			return false;
+			//return false;
 		}
 	});
 
@@ -974,17 +984,17 @@ $(window).load(function(){
 		if(value=='Radio0301'){
 			$('.dynamic-table').find('.form-line03-type1').hide();
 			$('.dynamic-table').find('.form-line03-type2').hide();
-			return false;
+			//return false;
 		}
 		if(value=='Radio0302'){
 			$('.dynamic-table').find('.form-line03-type1').show();
 			$('.dynamic-table').find('.form-line03-type2').hide();
-			return false;
+			//return false;
 		}
 		if(value=='Radio0303'){
 			$('.dynamic-table').find('.form-line03-type2').show();
 			$('.dynamic-table').find('.form-line03-type1').hide();
-			return false;
+			//return false;
 		}
 	});
 
@@ -995,12 +1005,12 @@ $(window).load(function(){
 		if(value=='Radio0401'){
 			$('.dynamic-table').find('.form-line-type2').show();
 			$('.dynamic-table').find('.form-line-type3').hide();
-			return false;
+			//return false;
 		}
 		if(value=='Radio0402'){
 			$('.dynamic-table').find('.form-line-type2').hide();
 			$('.dynamic-table').find('.form-line-type3').show();
-			return false;
+			//return false;
 		}
 	});
 

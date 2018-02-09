@@ -304,12 +304,12 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th scope="row">담당자 사번</th>
-								<td><input type="text"></td>
-								<th scope="row">담당자 성명</th>
-								<td><input type="text"></td>
-								<th scope="row">담당자 직위/직책</th>
-								<td><input type="text"></td>
+								<th scope="row"><label for="Text01">담당자 사번</label></th>
+								<td><input type="text" id="Text01"></td>
+								<th scope="row"><label for="Text02">담당자 성명</label></th>
+								<td><input type="text" id="Text02"></td>
+								<th scope="row"><label for="Text03">담당자 직위/직책</label></th>
+								<td><input type="text" id="Text03"></td>
 							</tr>
 							<tr>
 								<th scope="row">담당자 소속</th>
@@ -322,19 +322,19 @@
 								<td colspan="5"><input type="text" style="width:100%"></td>
 							</tr>
 							<tr>
-								<th scope="row">가로길이 <span class="important">*</span></th>
-								<td colspan="5"><input type="text"> px</td>
+								<th scope="row"><label for="Text04">가로길이</label> <span class="important">*</span></th>
+								<td colspan="5"><input type="text" id="Text04"> px</td>
 							</tr>
 							<tr>
-								<th scope="row">세로길이 <span class="important">*</span></th>
-								<td colspan="5"><input type="text"> px</td>
+								<th scope="row"><label for="Text04">세로길이</label> <span class="important">*</span></th>
+								<td colspan="5"><input type="text" id="Text04"> px</td>
 							</tr>
 							<tr>
 								<th scope="row">사용여부 <span class="important">*</span></th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio01" class="styled1" checked> 사용</li>
-										<li class="item"><input type="radio" name="radio01" class="styled1"> 미사용</li>
+										<li class="item"><input type="radio" name="radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">사용</label></li>
+										<li class="item"><input type="radio" name="radio01" id="Radio0102" class="styled1"><label for="Radio0102">미사용</label></li>
 									</ul>
 								</td>
 							</tr>
@@ -342,8 +342,8 @@
 								<th scope="row">구분 <span class="important">*</span></th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio02" class="styled1" checked> 기간</li>
-										<li class="item"><input type="radio" name="radio02" class="styled1"> 특정일선택</li>
+										<li class="item"><input type="radio" name="radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">기간</label></li>
+										<li class="item"><input type="radio" name="radio02" id="Radio0202" class="styled1"><label for="Radio0202">특정일선택</label></li>
 									</ul>
 								</td>
 							</tr>
@@ -374,7 +374,7 @@
 							<tr class="period-type2">
 								<th scope="row">특정일선택 <span class="important">*</span></th>
 								<td colspan="5">
-									<div class="date-area">
+									<div class="date-area special">
 										<div  class="date-text">
 											<div class="btn-calendar"><input type="text" readonly></div>
 											<div class="calendar-layer bdColor">
@@ -399,45 +399,97 @@
 							<tr>
 								<th>매일</th>
 								<td colspan="5">
-									<div class="date-area">
+									<div class="year-month-select">
 										<div class="select-area">
 											<div class="select-box">
 												<select class="styled1 year" style="width:100%;">
-													<option>2018</option>
-													<option>2017</option>
-													<option>2016</option>
-													<option>2015</option>
+													<option>선택</option>
+													<option>00</option>
+													<option>01</option>
+													<option>02</option>
+													<option>03</option>
+													<option>04</option>
+													<option>05</option>
+													<option>05</option>
+													<option>06</option>
+													<option>07</option>
+													<option>08</option>
+													<option>09</option>
+													<option>10</option>
+													<option>11</option>
+													<option>12</option>
+													<option>13</option>
+													<option>14</option>
+													<option>15</option>
+													<option>16</option>
+													<option>17</option>
+													<option>18</option>
+													<option>19</option>
+													<option>20</option>
+													<option>21</option>
+													<option>22</option>
+													<option>23</option>
+													<option>24</option>
 												</select>
-												<span class="text">년</span>
+												<span class="text">시</span>
 											</div>
 											<div class="select-box">
 												<select class="styled1 month" style="width:100%;">
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
+													<option>선택</option>
+													<option>00</option>
+													<option>10</option>
+													<option>20</option>
+													<option>30</option>
+													<option>40</option>
+													<option>50</option>
 												</select>
-												<span class="text">월</span>
+												<span class="text">분</span>
 											</div>
 										</div>
 										<div class="select-area">
 											<div class="select-box">
 												<select class="styled1 year" style="width:100%;">
-													<option>2018</option>
-													<option>2017</option>
-													<option>2016</option>
-													<option>2015</option>
+													<option>선택</option>
+													<option>00</option>
+													<option>01</option>
+													<option>02</option>
+													<option>03</option>
+													<option>04</option>
+													<option>05</option>
+													<option>05</option>
+													<option>06</option>
+													<option>07</option>
+													<option>08</option>
+													<option>09</option>
+													<option>10</option>
+													<option>11</option>
+													<option>12</option>
+													<option>13</option>
+													<option>14</option>
+													<option>15</option>
+													<option>16</option>
+													<option>17</option>
+													<option>18</option>
+													<option>19</option>
+													<option>20</option>
+													<option>21</option>
+													<option>22</option>
+													<option>23</option>
+													<option>24</option>
 												</select>
-												<span class="text">년</span>
+												<span class="text">시</span>
 											</div>
 											<div class="select-box">
 												<select class="styled1 month" style="width:100%;">
-													<option>12</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
+													<option>선택</option>
+													<option>00</option>
+													<option>10</option>
+													<option>20</option>
+													<option>30</option>
+													<option>40</option>
+													<option>50</option>
 												</select>
-												<span class="text">월</span>
+												<span class="text">분</span>
 											</div>
 										</div>
 										<span class="swung-dash">~</span>
@@ -448,13 +500,13 @@
 								<th>매주</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="checkbox" class="styled1" checked>월요일</li>
-										<li class="item"><input type="checkbox" class="styled1">화요일</li>
-										<li class="item"><input type="checkbox" class="styled1">수요일</li>
-										<li class="item"><input type="checkbox" class="styled1">목요일</li>
-										<li class="item"><input type="checkbox" class="styled1">금요일</li>
-										<li class="item"><input type="checkbox" class="styled1">토요일</li>
-										<li class="item"><input type="checkbox" class="styled1">일요일</li>
+										<li class="item"><input type="checkbox" id="Check01" class="styled1" checked><label for="Check01">월요일</label></li>
+										<li class="item"><input type="checkbox" id="Check02" class="styled1"><label for="Check02">화요일</label></li>
+										<li class="item"><input type="checkbox" id="Check03" class="styled1"><label for="Check03">수요일</label></li>
+										<li class="item"><input type="checkbox" id="Check04" class="styled1"><label for="Check04">목요일</label></li>
+										<li class="item"><input type="checkbox" id="Check05" class="styled1"><label for="Check05">금요일</label></li>
+										<li class="item"><input type="checkbox" id="Check06" class="styled1"><label for="Check06">토요일</label></li>
+										<li class="item"><input type="checkbox" id="Check07" class="styled1"><label for="Check07">일요일</label></li>
 									</ul>
 								</td>
 							</tr>
@@ -462,37 +514,37 @@
 								<th>매달</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="checkbox" class="styled1" checked>01</li>
-										<li class="item"><input type="checkbox" class="styled1">02</li>
-										<li class="item"><input type="checkbox" class="styled1">03</li>
-										<li class="item"><input type="checkbox" class="styled1">04</li>
-										<li class="item"><input type="checkbox" class="styled1">05</li>
-										<li class="item"><input type="checkbox" class="styled1">06</li>
-										<li class="item"><input type="checkbox" class="styled1">07</li>
-										<li class="item"><input type="checkbox" class="styled1">08</li>
-										<li class="item"><input type="checkbox" class="styled1">09</li>
-										<li class="item"><input type="checkbox" class="styled1">10</li>
-										<li class="item"><input type="checkbox" class="styled1">11</li>
-										<li class="item"><input type="checkbox" class="styled1">12</li>
-										<li class="item"><input type="checkbox" class="styled1">13</li>
-										<li class="item"><input type="checkbox" class="styled1">14</li>
-										<li class="item"><input type="checkbox" class="styled1">15</li>
-										<li class="item"><input type="checkbox" class="styled1">16</li>
-										<li class="item"><input type="checkbox" class="styled1">17</li>
-										<li class="item"><input type="checkbox" class="styled1">18</li>
-										<li class="item"><input type="checkbox" class="styled1">19</li>
-										<li class="item"><input type="checkbox" class="styled1">20</li>
-										<li class="item"><input type="checkbox" class="styled1">21</li>
-										<li class="item"><input type="checkbox" class="styled1">22</li>
-										<li class="item"><input type="checkbox" class="styled1">23</li>
-										<li class="item"><input type="checkbox" class="styled1">24</li>
-										<li class="item"><input type="checkbox" class="styled1">25</li>
-										<li class="item"><input type="checkbox" class="styled1">26</li>
-										<li class="item"><input type="checkbox" class="styled1">27</li>
-										<li class="item"><input type="checkbox" class="styled1">28</li>
-										<li class="item"><input type="checkbox" class="styled1">29</li>
-										<li class="item"><input type="checkbox" class="styled1">30</li>
-										<li class="item"><input type="checkbox" class="styled1">말일</li>
+										<li class="item"><input type="checkbox" id="Check08" class="styled1" checked><label for="Check08">01</label></li>
+										<li class="item"><input type="checkbox" id="Check09" class="styled1"><label for="Check09">02</label></li>
+										<li class="item"><input type="checkbox" id="Check10" class="styled1"><label for="Check10">03</label></li>
+										<li class="item"><input type="checkbox" id="Check11" class="styled1"><label for="Check11">04</label></li>
+										<li class="item"><input type="checkbox" id="Check12" class="styled1"><label for="Check12">05</label></li>
+										<li class="item"><input type="checkbox" id="Check13" class="styled1"><label for="Check13">06</label></li>
+										<li class="item"><input type="checkbox" id="Check14" class="styled1"><label for="Check14">07</label></li>
+										<li class="item"><input type="checkbox" id="Check15" class="styled1"><label for="Check15">08</label></li>
+										<li class="item"><input type="checkbox" id="Check16" class="styled1"><label for="Check16">09</label></li>
+										<li class="item"><input type="checkbox" id="Check17" class="styled1"><label for="Check17">10</label></li>
+										<li class="item"><input type="checkbox" id="Check18" class="styled1"><label for="Check18">11</label></li>
+										<li class="item"><input type="checkbox" id="Check19" class="styled1"><label for="Check19">12</label></li>
+										<li class="item"><input type="checkbox" id="Check20" class="styled1"><label for="Check20">13</label></li>
+										<li class="item"><input type="checkbox" id="Check21" class="styled1"><label for="Check21">14</label></li>
+										<li class="item"><input type="checkbox" id="Check22" class="styled1"><label for="Check22">15</label></li>
+										<li class="item"><input type="checkbox" id="Check23" class="styled1"><label for="Check23">16</label></li>
+										<li class="item"><input type="checkbox" id="Check24" class="styled1"><label for="Check24">17</label></li>
+										<li class="item"><input type="checkbox" id="Check25" class="styled1"><label for="Check25">18</label></li>
+										<li class="item"><input type="checkbox" id="Check26" class="styled1"><label for="Check26">19</label></li>
+										<li class="item"><input type="checkbox" id="Check27" class="styled1"><label for="Check27">20</label></li>
+										<li class="item"><input type="checkbox" id="Check28" class="styled1"><label for="Check28">21</label></li>
+										<li class="item"><input type="checkbox" id="Check29" class="styled1"><label for="Check29">22</label></li>
+										<li class="item"><input type="checkbox" id="Check30" class="styled1"><label for="Check30">23</label></li>
+										<li class="item"><input type="checkbox" id="Check31" class="styled1"><label for="Check31">24</label></li>
+										<li class="item"><input type="checkbox" id="Check32" class="styled1"><label for="Check32">25</label></li>
+										<li class="item"><input type="checkbox" id="Check33" class="styled1"><label for="Check33">26</label></li>
+										<li class="item"><input type="checkbox" id="Check34" class="styled1"><label for="Check34">27</label></li>
+										<li class="item"><input type="checkbox" id="Check35" class="styled1"><label for="Check35">28</label></li>
+										<li class="item"><input type="checkbox" id="Check36" class="styled1"><label for="Check36">29</label></li>
+										<li class="item"><input type="checkbox" id="Check37" class="styled1"><label for="Check37">30</label></li>
+										<li class="item"><input type="checkbox" id="Check38" class="styled1"><label for="Check38">말일</label></li>
 									</ul>
 								</td>
 							</tr>
@@ -500,9 +552,9 @@
 								<th scope="row">팝업방식</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio03" class="styled1" checked> 새창</li>
-										<li class="item"><input type="radio" name="radio03" class="styled1"> 레이어</li>
-										<li class="item"><input type="radio" name="radio03" class="styled1"> 전체화면 모달 레이어</li>
+										<li class="item"><input type="radio" name="radio03" id="Radio0301" class="styled1" checked><label for="Radio0301">새창</label> </li>
+										<li class="item"><input type="radio" name="radio03" id="Radio0302" class="styled1"><label for="Radio0302">레이어</label> </li>
+										<li class="item"><input type="radio" name="radio03" id="Radio0303" class="styled1"><label for="Radio0303">전체화면 모달 레이어</label> </li>
 									</ul>
 								</td>
 							</tr>
@@ -510,10 +562,10 @@
 								<th scope="row">배경이미지</th>
 								<td colspan="5">
 									<ul class="form-list inline image">
-										<li class="item"><input type="radio" name="radio04" class="styled1" checked> 미사용</li>
+										<li class="item"><input type="radio" name="radio04" id="Radio0401" class="styled1" checked><label for="Radio0401">미사용</label></li>
 										<li class="item">
-											<input type="radio" name="radio04" class="styled1">
-											<label for="Radio0503">
+											<input type="radio" name="radio04" id="Radio0402" class="styled1">
+											<label for="Radio0402">
 												<img src="../img/temp/temp_bg.gif" alt="">
 											</label>
 										</li>
@@ -524,9 +576,9 @@
 								<th scope="row">팝업타입</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio05" class="styled1" checked> IMAGE</li>
-										<li class="item"><input type="radio" name="radio05" class="styled1"> URL</li>
-										<li class="item"><input type="radio" name="radio05" class="styled1"> URL</li>
+										<li class="item"><input type="radio" name="radio05" id="Radio0501" class="styled1" checked><label for="Radio0501">IMAGE</label> </li>
+										<li class="item"><input type="radio" name="radio05" id="Radio0502" class="styled1"><label for="Radio0502">URL</label> </li>
+										<li class="item"><input type="radio" name="radio05" id="Radio0503" class="styled1"><label for="Radio0503">CONTENTS</label></li>
 									</ul>
 								</td>
 							</tr>
@@ -546,38 +598,101 @@
 								<th scope="row">링크#1 사용여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio01" class="styled1" checked> 사용</li>
-										<li class="item"><input type="radio" name="radio01" class="styled1"> 미사용</li>
+										<li class="item"><input type="radio" name="radio06" id="Radio0601" class="styled1"><label for="Radio0601">사용</label></li>
+										<li class="item"><input type="radio" name="radio06" id="Radio0602" class="styled1" checked><label for="Radio0602">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(1번째)</span>
+								</td>
+							</tr>
+							<tr class="link-area1" style="display:none">
+								<th scope="row">URL#1</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : http://portal.wjtb.net)</span>
+								</td>
+							</tr>
+							<tr class="link-area1" style="display:none">
+								<th scope="row">MAP Code#1</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : 292,196,353,237)</span>
+								</td>
+							</tr>
+							<tr class="link-area1" style="display:none">
+								<th scope="row">사번Parameter명#1</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : id)</span>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row">링크#2 사용여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio01" class="styled1" checked> 사용</li>
-										<li class="item"><input type="radio" name="radio01" class="styled1"> 미사용</li>
+										<li class="item"><input type="radio" name="radio07" id="Radio0701" class="styled1"><label for="Radio0701">사용</label></li>
+										<li class="item"><input type="radio" name="radio07" id="Radio0702" class="styled1" checked><label for="Radio0702">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(2번째)</span>
 								</td>
 							</tr>
+							<tr class="link-area2" style="display:none">
+								<th scope="row">URL#2</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : http://portal.wjtb.net)</span>
+								</td>
+							</tr>
+							<tr class="link-area2" style="display:none">
+								<th scope="row">MAP Code#2</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : 292,196,353,237)</span>
+								</td>
+							</tr>
+							<tr class="link-area2" style="display:none">
+								<th scope="row">사번Parameter명#2</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : id)</span>
+								</td>
+							</tr>
 							<tr>
-								<th scope="row">링크#3 사용여부</th>
+						 		<th scope="row">링크#3 사용여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio01" class="styled1" checked> 사용</li>
-										<li class="item"><input type="radio" name="radio01" class="styled1"> 미사용</li>
+										<li class="item"><input type="radio" name="radio08" id="Radio0801" class="styled1"><label for="Radio0801">사용</label></li>
+										<li class="item"><input type="radio" name="radio08" id="Radio0802" class="styled1" checked><label for="Radio0802">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(3번째)</span>
+								</td>
+							</tr>
+							<tr class="link-area3" style="display:none">
+								<th scope="row">URL#3</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : http://portal.wjtb.net)</span>
+								</td>
+							</tr>
+							<tr class="link-area3" style="display:none">
+								<th scope="row">MAP Code#3</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : 292,196,353,237)</span>
+								</td>
+							</tr>
+							<tr class="link-area3" style="display:none">
+								<th scope="row">사번Parameter명#3</th>
+								<td colspan="5">
+									<input type="text">
+									<span>(예 : id)</span>
 								</td>
 							</tr>
 							<tr>
 								<th scope="row">담당자표시여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio01" class="styled1" checked> 사용</li>
-										<li class="item"><input type="radio" name="radio01" class="styled1"> 미사용</li>
+										<li class="item"><input type="radio" name="radio09" id="Radio0901" class="styled1" checked><label for="Radio0901">사용</label></li>
+										<li class="item"><input type="radio" name="radio09" id="Radio0902" class="styled1"><label for="Radio0902">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(1번째)</span>
 								</td>
@@ -586,12 +701,12 @@
 								<th scope="row">팝업신청사유 <span class="important">*</span></th>
 								<td colspan="5"><input type="text" style="width:100%"></td>
 							</tr>
-							<tr>
+							<tr >
 								<th scope="row">권한범위</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio01" class="styled1" checked> 전사</li>
-										<li class="item"><input type="radio" name="radio01" class="styled1"> 개별설정</li>
+										<li class="item"><input type="radio" name="radio10" id="Radio1001" class="styled1" checked><label for="Radio1001">전사</label></li>
+										<li class="item"><input type="radio" name="radio10" id="Radio1002" class="styled1"><label for="Radio1002">개별설정</label></li>
 									</ul>
 								</td>
 							</tr>
@@ -768,6 +883,50 @@
 </div>
 <script>
 $(window).load(function(){
+
+	//구분선택
+	$('.form-list input[name="radio02"]').change(function(){
+		var value = $(this).attr('id');
+		if(value == 'Radio0201'){
+			$('.period-type2').hide();
+			$('.period-type1').show();
+		}
+		if(value == 'Radio0202'){
+			$('.period-type1').hide();
+			$('.period-type2').show();
+		}
+	});
+
+	//링크1 사용어부
+	$('.form-list input[name="radio06"]').change(function(){
+		var value = $(this).attr('id');
+		if(value == 'Radio0601'){
+			$('.link-area1').show();
+		}
+		if(value == 'Radio0602'){
+			$('.link-area1').hide();
+		}
+	});
+	//링크2 사용어부
+	$('.form-list input[name="radio07"]').change(function(){
+		var value = $(this).attr('id');
+		if(value == 'Radio0701'){
+			$('.link-area2').show();
+		}
+		if(value == 'Radio0702'){
+			$('.link-area2').hide();
+		}
+	});
+	//링크3 사용어부
+	$('.form-list input[name="radio08"]').change(function(){
+		var value = $(this).attr('id');
+		if(value == 'Radio0801'){
+			$('.link-area3').show();
+		}
+		if(value == 'Radio0802'){
+			$('.link-area3').hide();
+		}
+	});
 
 });
 </script>
