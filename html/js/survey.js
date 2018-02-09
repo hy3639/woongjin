@@ -49,13 +49,14 @@ $(window).load(function(){
 	$(document).on('click', '.btn-all-del', function(){
 		$(this).closest('.survey-list-item').remove();
 		setTimeout(function(){
-			$('.survey-list-item:first-child .survey-title .btn-list-tog').trigger('click');
+			//$('.survey-list-item:first-child .survey-title .btn-list-tog').trigger('click');
+			$('.survey-list-item:first-child').addClass('on');
 		}, 100);
 	});
 
 
 	/* 항목 선택 */
-	$(document).on('click', '.survey-wrap .survey-item .inner', function(){
+	$(document).on('click', '.survey-modify .survey-wrap .survey-item .inner', function(){
 		if(!$(this).closest('.survey-item').hasClass('editing')){
 			$('.survey-item').removeClass('active').removeClass('editing');
 			$('.survey-item').removeClass('editing').find('.editArea').remove();
