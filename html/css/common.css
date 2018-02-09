@@ -88,6 +88,10 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	z-index:95;
 	background-color:rgba(0,0,0,.5);
 }
+/* 투명 딤드 */
+.dimmed.opacity {
+	background-color:transparent;
+}
 
 /* 드래그시 색상 */
 .drag-area .drag-box.ui-sortable-helper {

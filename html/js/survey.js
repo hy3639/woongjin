@@ -20,22 +20,37 @@ $(window).load(function(){
 	/* 설문테이블 안 라디오 */
 	surForm();
 
-	/* 설문 문항 그룹 삭제 */
-	$(document).on('click', '.btn-all-del', function(){
-		//$(this).closest('.survey-list-item').remove();
-		$('.survey-list-item').addClass('on');
+	/* 설문텍스트 영역 열고닫기 버튼생성 */
+	$('.survey-list-item .survey-title').prepend('<div class="btn-list-tog"></div>')
+	$('.btn-list-tog').css({
+		'position':'absolute',
+		'left':'0',
+		'right':'0',
+		'top':'0',
+		'bottom':'0',
 	});
 
 	// 리스트 열고 닫기
-	$(document).on('click', '.survey-list-item .survey-title', function(){
-		var len = $('.survey-wrap .survey-list-item.on').length;
-
+	$(document).on('click', '.survey-list-item .survey-title .btn-list-tog', function(){
 		if($(this).closest('.survey-list-item').hasClass('on')){
 			$('.survey-list-item').removeClass('on');
 		}else{
 			$('.survey-list-item').removeClass('on');
 			$(this).closest('.survey-list-item').addClass('on');
 		}
+	});
+
+	/* 설문 그룹 타이틀 수정 */
+	$(document).on('click', '.survey-title .btn-modify', function(){
+		
+	});
+
+	/* 설문 문항 그룹 삭제 */
+	$(document).on('click', '.btn-all-del', function(){
+		$(this).closest('.survey-list-item').remove();
+		setTimeout(function(){
+			$('.survey-list-item:first-child .survey-title .btn-list-tog').trigger('click');
+		}, 100);
 	});
 
 
@@ -140,11 +155,13 @@ $(window).load(function(){
 		var clon = $('.preview-item:first-child .survey-item:first-child').clone();
 		$(this).closest('.survey-item').before(clon);
 		$('.survey-item.active').removeClass('active').prev('.survey-item').addClass('active');
-		$('.survey-item:last-child').addClass('active').find('.item-list').attr('data', '4');
 		$('.survey-item.active').find('.question .text').text('설문 문항');
 		$('.survey-item.active').find('.item-list').removeClass('inline').find('.item .text').text('설문 문항 답변');
 		$('.survey-item.active .item-list .item:last-child').remove();
 		$('.set-item.item05').hide().removeClass('on');
+		numbering();// 리스트 넘버링
+		surForm();// 폼요소
+		rdoChkState();// 체크박스/라디오
 	});
 	$(document).on('click', '.btn-addlist', function(){
 		var clon = $('.preview-item:first-child .survey-item:first-child').clone();
@@ -158,6 +175,10 @@ $(window).load(function(){
 
 		var sBtm = $(document).height();
 		$('html, body').animate({scrollTop:sBtm});
+
+		numbering();// 리스트 넘버링
+		surForm();// 폼요소
+		rdoChkState();// 체크박스/라디오
 	});
 
 	/* 항목삭제 */
@@ -224,7 +245,7 @@ $(window).load(function(){
 		$(sItem).find('.item .field').prop('disabled', false);
 	});
 
-	$(document).mouseup(function (e){
+	$(document).mouseup(function(e){
 		var layer = $('.survey-list');
 		if(!layer.is(e.target) && layer.has(e.target).length === 0){
 			$('.survey-item .btn-cancel').trigger('click');
@@ -275,7 +296,6 @@ $(window).load(function(){
 		if($(sItem).hasClass('image')){
 			$(this).closest('.survey-item').find('.item-list .item').each(function(){
 				var name = $(this).find('.modify-area input[type=text]').val();
-				console.log(name);
 				$(this).find('label .name').text(name);
 			});
 		}
@@ -285,19 +305,54 @@ $(window).load(function(){
 		textWid()//텍스트 옆 텍스트필드 크기조정
 	});
 	/* ================================================================================================ */
-
-	/* 오른쪽 수정박스 영역 */
+	/* 레이어타입1 */
 	//레이어 열기
-	$('.btn-layer').click(function(){
-		$(this).next('.type-layer').fadeIn(300);
+	$(document).on('click', '.btn-layer', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').next('.layer-type1').fadeOut(200);
+		}else{
+			$(this).addClass('on').next('.layer-type1').fadeIn(300);
+		}
 	});
-	$('.type-layer .btn-close').click(function(){
-		$(this).closest('.type-layer').fadeOut(200);
+	$(document).on('click', '.layer-type1 .btn-close', function(){
+		$(this).closest('.layer-type1').fadeOut(200);
+		$('.btn-layer').removeClass('on')
 	});
+
+	/*
 	$(document).mouseup(function (e){
-		var layer = $('.type-layer');
+		var layer = $('.layer-type1');
 		if(!layer.is(e.target) && layer.has(e.target).length === 0){
 			layer.fadeOut(200);
+			$('.btn-layer').removeClass('on')
+		}
+	});
+	*/
+
+	/* 설문그룹수정 */
+	$(document).on('click', '.survey-title .btn-layer', function(){
+		var title = $(this).closest('.survey-title').find('.title .tit').text();
+		var text = $(this).closest('.survey-title').find('.text').text();
+		$(this).closest('.survey-title').find('.groupTitle').val(title);
+		$(this).closest('.survey-title').find('.groupText').val(text);
+		if(title == '설문 그룹명') $(this).closest('.survey-title').find('.groupTitle').val('');
+		if(text == '설문 그룹설명') $(this).closest('.survey-title').find('.groupText').val('');
+	});
+	$(document).on('click', '.modify-layer .btn-save', function(){
+		var title = $(this).closest('.modify-layer').find('.groupTitle').val().replace(/\n/g, '<br>');
+		var text = $(this).closest('.modify-layer').find('.groupText').val().replace(/\n/g, '<br>');
+		$(this).closest('.survey-title').find('.title .tit').html(title);
+		$(this).closest('.survey-title').find('.text').html(text);
+		$('.modify-layer').hide();
+		$('.btn-layer').removeClass('on')
+	});
+
+	/* 오른쪽 수정박스 영역 */
+	$('.modify-wrap .btn-layer').click(function(){
+		if($(this).hasClass('on')){
+			$(this).closest('.modify-wrap').css({'overflow-y':'auto'});
+		}else{
+			$(this).closest('.modify-wrap').css({'overflow-y':'inherit'});
 		}
 	});
 
@@ -348,7 +403,6 @@ $(window).load(function(){
 				$(surItem).find('.item-list .item label .text').each(function(i){
 					var text = $(this).text();
 					$(prevItem).find('.item-list').find('.item label .name').eq(i).text(text);
-					console.log(text);
 				});
 			}
 		}
@@ -466,6 +520,16 @@ $(window).load(function(){
 		textWid()//텍스트 옆 텍스트필드 크기조정
 	});
 
+	/* 설문그룹추가 */
+	$('.btn-group').click(function(){
+		var group = $('.group-add-area').html();
+		$('.survey-wrap').append(group);
+		$('.survey-list-item').removeClass('on');
+		$('.survey-list-item:last-child').addClass('on');
+	});
+
+	reColumn();
+
 	$(window).resize();
 });
 
@@ -566,5 +630,16 @@ function surForm(){
 		$(this).find('input[type=radio]').attr('name', 'Radio' + box + idx + tr).removeAttr('id');
 		$(this).find('.ox input[type=radio]').attr('name', 'RadioOx' + box + idx +tr).removeAttr('id');
 		$('.radioWrap.checked input[type=radio]').prop('checked', true);
+	});
+}
+
+
+/* 컬럼수 */
+function reColumn(){
+	$('.item-list').each(function(){
+		if(!$(this).hasClass('column')){
+			var len = $(this).find('.item').length;
+			$(this).attr('data', len);
+		}
 	});
 }

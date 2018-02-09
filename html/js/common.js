@@ -340,7 +340,7 @@ $(document).ready(function(){
 	});
 
 	// 아이콘 on/off
-	$('.btn-icon-text, .btn-icon').click(function(){
+	$('.btn-icon-text, .btn-icon.icon02').click(function(){
 		$(this).toggleClass('on');
 	});
 
