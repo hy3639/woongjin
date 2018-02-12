@@ -237,7 +237,11 @@ select.styled1 {
 	clear:both;
 }
 .top-search-box label {line-height:35px;}
-.top-search-box .selectWrap select {width:80px !important}
+.top-search-box .selectWrap select {
+	width:80px !important;
+	z-index:5;
+}
+.top-search-box .selTitle.bdColor {z-index:10;}
 .top-search-box .search-text {
 	display:inline-block;
 	position:absolute;
@@ -777,7 +781,8 @@ select.styled1 {
 	background-color:#fff;
 }
 .header .logo {
-	left:10px;top:2px;
+	position:absolute;
+	left:10px;top:0;
 	width:63px;
 }
 .header .logo a {
@@ -2823,6 +2828,7 @@ select.styled1 {
 	text-overflow:ellipsis;
 	text-align:left;
 }
+.board-list2 .td-area .num + .title {margin-top:10px;}
 .board-list2 .type2 .td-area .category {padding-top:5px;}
 .myspace .btn-wrap.wide {
 	margin-left:10px !important;

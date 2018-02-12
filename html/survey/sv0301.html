@@ -257,9 +257,9 @@
 									</div>
 								</div>
 								<ul class="depth1-list">
-									<li class="depth1-item on"><a href="#" class="d-title">설문 참여</a></li><!-- 현재메뉴 표시(class="on") -->
+									<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
 									<li class="depth1-item"><a href="#" class="d-title">설문 신청</a></li>
-									<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									<li class="depth1-item on"><a href="#" class="d-title">설문 결과</a></li><!-- 현재메뉴 표시(class="on") -->
 									<li class="depth1-item">
 										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
@@ -285,13 +285,18 @@
 		<div class="content app-request">
 			<!-- 타이틀 영역 -->
 			<div class="title-wrap">
-				<h2 class="title">설문 참여</h2>
+				<h2 class="title">설문 결과</h2>
 			</div>
 
-			<div class="top-search-box">
+			<div class="top-search-box type2">
 				<select class="styled1" style="width:150px;">
-					<option>제목</option>
-					<option>등록자</option>
+					<option>전체</option>
+					<option>진행중</option>
+					<option>마감</option>
+				</select>
+				<select class="styled1" style="width:150px;">
+					<option>설문명</option>
+					<option>설문작성자</option>
 				</select>
 				<div class="search-text">
 					<input type="text" class="required" placeholder="검색어를 입력해주세요">
@@ -325,6 +330,7 @@
 								<col style="width:9%;">
 								<col>
 								<col style="width:12%;">
+								<col style="width:10%;">
 								<col style="width:9%;">
 								<col style="width:22%;">
 							</colgroup>
@@ -333,6 +339,7 @@
 									<th scope="col">번호</th>
 									<th scope="col">설문명</th>
 									<th scope="col">설문 작성자</th>
+									<th scope="col">설문상태</th>
 									<th scope="col">응답률</th>
 									<th scope="col">설문일정</th>
 								</tr>
@@ -342,6 +349,7 @@
 									<td>219</td>
 									<td class="subject"><div class="link"><span class="tit">총무부 주관 신년 비품 신청 관련 설문조사</span></div></td>
 									<td>관리자</td>
+									<td>진행중</td>
 									<td>0.10%</td>
 									<td>2018.01.19~2018.01.25</td>
 								</tr>
@@ -349,6 +357,7 @@
 									<td>218</td>
 									<td class="subject"><div class="link"><span class="tit">연차촉진제 개선에 관한 설문조사</span></div></td>
 									<td>관리자</td>
+									<td>진행중</td>
 									<td>0.5%</td>
 									<td>2018.01.11~2018.01.22</td>
 								</tr>
@@ -356,6 +365,7 @@
 									<td>217</td>
 									<td class="subject"><div class="link"><span class="tit">회사 구내식당 업체 설문</span></div></td>
 									<td>김웅진 부장</td>
+									<td>진행중</td>
 									<td>0.00%</td>
 									<td>2018.01.02~2018.01.16</td>
 								</tr>
@@ -363,6 +373,7 @@
 									<td>216</td>
 									<td class="subject"><div class="link"><span class="tit"></span>2017 송년회 장소 설문조사</div></td>
 									<td>게스트</td>
+									<td>진행중</td>
 									<td>0.2%</td>
 									<td>2018.01.01~2018.01.25</td>
 								</tr>
@@ -370,6 +381,7 @@
 									<td>215</td>
 									<td class="subject"><div class="link"><span class="tit">남직원 사내 복장(no-tie) 규정관련 설문</span></div></td>
 									<td>이현표 과장</td>
+									<td>마감</td>
 									<td>0.07%</td>
 									<td>2017.12.29~2018.01.01</td>
 								</tr>
@@ -377,6 +389,7 @@
 									<td>214</td>
 									<td class="subject"><div class="link"><span class="tit">1층 로비 바리게이트 설치에 관한 설문조사</span></div></td>
 									<td>김현주 대리</td>
+									<td>진행중</td>
 									<td>0.7%</td>
 									<td>2017.12.22~2018.01.07</td>
 								</tr>
@@ -384,6 +397,7 @@
 									<td>213</td>
 									<td class="subject"><div class="link"><span class="tit">직원 휴게실 공기청정기 사용에 관한 설문 (전직원 대상)</span></div></td>
 									<td>관리자</td>
+									<td>마감</td>
 									<td>0.00%</td>
 									<td>2017.12.12~2017.12.19</td>
 								</tr>
@@ -391,6 +405,7 @@
 									<td>212</td>
 									<td class="subject"><div class="link"><span class="tit">신입사원 선임 멘토링 실시 관련 설문조사</span></div></td>
 									<td>관리자</td>
+									<td>마감</td>
 									<td>0.00%</td>
 									<td>2017.12.08~2017.12.13</td>
 								</tr>
@@ -398,6 +413,7 @@
 									<td>211</td>
 									<td class="subject"><div class="link"><span class="tit">점심시간 내 음악방송 설문</span></div></td>
 									<td>고아라 대리</td>
+									<td>진행중</td>
 									<td>0.00%</td>
 									<td>2017.12.08~2017.12.13</td>
 								</tr>
@@ -405,6 +421,7 @@
 									<td>210</td>
 									<td class="subject"><div class="link"><span class="tit">사원증 관련 시스템 도입 정직원 설문조사</span></div></td>
 									<td>최재영 팀장</td>
+									<td>진행중</td>
 									<td>0.00%</td>
 									<td>2017.12.08~2017.12.13</td>
 								</tr>
@@ -421,6 +438,7 @@
 								<span class="num">219</span>
 								<span class="title">총무부 주관 신년 비품 신청 관련 설문조사</span>
 								<span class="text">설문 작성자 : 관리자</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.10%</span>
 								<span class="text">설문일정 : 2018.01.19~2018.01.25</span>
 							</a>
@@ -430,6 +448,7 @@
 								<span class="num">218</span>
 								<span class="title">연차촉진제 개선에 관한 설문조사</span>
 								<span class="text">설문 작성자 : 관리자</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.5%</span>
 								<span class="text">설문일정 : 2018.01.11~2018.01.22</span>
 							</a>
@@ -439,6 +458,7 @@
 								<span class="num">217</span>
 								<span class="title">회사 구내식당 업체 설문</span>
 								<span class="text">설문 작성자 : 김웅진 부장</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.00%</span>
 								<span class="text">설문일정 : 2018.01.02~2018.01.16</span>
 							</a>
@@ -448,6 +468,7 @@
 								<span class="num">216</span>
 								<span class="title">2017 송년회 장소 설문조사</span>
 								<span class="text">설문 작성자 : 게스트</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.2%</span>
 								<span class="text">설문일정 : 2018.01.01~2018.01.25</span>
 							</a>
@@ -457,6 +478,7 @@
 								<span class="num">215</span>
 								<span class="title">남직원 사내 복장(no-tie) 규정관련 설문</span>
 								<span class="text">설문 작성자 : 이현표 과장</span>
+								<span class="text">설문상태 : 마감</span>
 								<span class="text">응답률 : 0.07%</span>
 								<span class="text">설문일정 : 2017.12.29~2018.01.01</span>
 							</a>
@@ -466,6 +488,7 @@
 								<span class="num">214</span>
 								<span class="title">1층 로비 바리게이트 설치에 관한 설문조사</span>
 								<span class="text">설문 작성자 : 김현주 대리</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.7%</span>
 								<span class="text">설문일정 : 2017.12.22~2018.01.07</span>
 							</a>
@@ -475,6 +498,7 @@
 								<span class="num">213</span>
 								<span class="title">직원 휴게실 공기청정기 사용에 관한 설문 (전직원 대상)</span>
 								<span class="text">설문 작성자 : 관리자</span>
+								<span class="text">설문상태 : 마감</span>
 								<span class="text">응답률 : 0.00%</span>
 								<span class="text">설문일정 : 2017.12.12~2017.12.19</span>
 							</a>
@@ -484,6 +508,7 @@
 								<span class="num">212</span>
 								<span class="title">신입사원 선임 멘토링 실시 관련 설문조사</span>
 								<span class="text">설문 작성자 : 관리자</span>
+								<span class="text">설문상태 : 마감</span>
 								<span class="text">응답률 : 0.00%</span>
 								<span class="text">설문일정 : 2017.12.08~2017.12.13</span>
 							</a>
@@ -493,6 +518,7 @@
 								<span class="num">211</span>
 								<span class="title">점심시간 내 음악방송 설문</span>
 								<span class="text">설문 작성자 : 고아라 대리</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.00%</span>
 								<span class="text">설문일정 : 2017.12.08~2017.12.13</span>
 							</a>
@@ -502,6 +528,7 @@
 								<span class="num">210</span>
 								<span class="title">사원증 관련 시스템 도입 정직원 설문조사</span>
 								<span class="text">설문 작성자 : 최재영 팀장</span>
+								<span class="text">설문상태 : 진행중</span>
 								<span class="text">응답률 : 0.00%</span>
 								<span class="text">설문일정 : 2017.12.08~2017.12.13</span>
 							</a>
