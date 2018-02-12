@@ -185,7 +185,10 @@ $(document).ready(function(){
 	// 필수체크 인풋
 	$('input.required').each(function(){
 		$(this).wrap('<span class="required-box"></span>');
-		$(this).parent('.required-box').append('<span class="message fColor">필수 항목입니다.</span>');
+		$(this).closest('.required-box').append('<span class="message fColor">필수 항목입니다.</span>');
+		if($(this).attr('style') == 'width:100%;'){
+			$(this).closest('.required-box').css('width', '100%');
+		}
 	});
 	$('input.required').blur(function(){
 		var len = $(this).val().length;
@@ -212,7 +215,7 @@ $(document).ready(function(){
 	});
 
 	rdoChk();// 체크박스/라디오
-	/* 체크박스 */	
+	/* 체크박스 */
 	$(document).on('change', 'input[type=checkbox].styled1', function(){
 		if(this.checked){
 			$(this).closest('.checkWrap').addClass('checked');
@@ -332,6 +335,12 @@ $(document).ready(function(){
 	});
 	$(document).on('mouseleave', '.weekType .ui-state-default', function(){
 		$('tr').removeClass('over').next('tr').removeClass('overNext');
+	});
+
+	/* 파일첨부 */
+	$('.input-file2 input[type=file]').change(function(){
+		var file = $(this).val();
+		$(this).closest('.input-file2').find('input[type=text]').val(file);
 	});
 
 	/* ===================================================================================
