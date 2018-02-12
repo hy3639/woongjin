@@ -93,6 +93,17 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	background-color:transparent;
 }
 
+
+/* 웹/모바일 통이미지 영역 */
+.replace-img-area {}
+.replace-img-area .text-area {
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.replace-img-area .img-area img {font-size:0;line-height:0;}
+
+
 /* 드래그시 색상 */
 .ui-sortable-helper {
 	border-color:#ff5349 !important;

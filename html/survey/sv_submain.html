@@ -251,68 +251,20 @@
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">전자결재</span></p>
+									<p class="depth1-title"><span class="text">설문조사</span></p>
 									<div class="menu-box">
-										<a href="#" class="btn-text mid">기안문 작성</a>
+										<a href="#" class="btn-text mid">설문 작성</a>
 									</div>
 								</div>
 								<ul class="depth1-list">
+									<li class="depth1-item on"><a href="#" class="d-title">설문 참여</a></li><!-- 현재메뉴 표시(class="on") -->
+									<li class="depth1-item"><a href="#" class="d-title">설문 신청</a></li>
+									<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
 									<li class="depth1-item">
-										<a href="#" class="d-title">개인문서함</a>
+										<a href="#" class="d-title">관리자 메뉴</a>
 										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">결재요청함</a></li>
-											<li class="depth2-item"><a href="#">임시저장함</a></li>
-											<li class="depth2-item"><a href="#">참조문서함</a></li>
-											<li class="depth2-item"><a href="#">전체결재문서</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">결재</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">결재대기함</a></li>
-											<li class="depth2-item"><a href="#">결재진행함</a></li>
-											<li class="depth2-item"><a href="#">완료문서함</a></li>
-											<li class="depth2-item"><a href="#">개인지출결의</a></li>
-											<li class="depth2-item"><a href="#">회수/반려문서함</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">부서</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">부서수신함</a></li>
-											<li class="depth2-item"><a href="#">부서문서함</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">개인보관함</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">개인</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">환경설정</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">대결자관리</a></li>
-											<li class="depth2-item"><a href="#">개임보관함</a></li>
-											<li class="depth2-item"><a href="#">알림설정</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">관리자메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">사용관리</a></li>
-											<li class="depth2-item"><a href="#">결재문서 관리</a></li>
-											<li class="depth2-item"><a href="#">문서보안관리</a></li>
-											<li class="depth2-item"><a href="#">부서문서함관리</a></li>
-											<li class="depth2-item"><a href="#">문서함 관리</a></li>
-											<li class="depth2-item"><a href="#">시스템관리</a></li>
-											<li class="depth2-item"><a href="#">코드관리</a></li>
-											<li class="depth2-item"><a href="#">양식관리</a></li>
-											<li class="depth2-item"><a href="#">수신함담당자관리</a></li>
-											<li class="depth2-item"><a href="#">부서별담당자관리</a></li>
-											<li class="depth2-item"><a href="#">전결관리</a></li>
-											<li class="depth2-item on"><a href="#">전결규정 설정</a></li><!-- 선택메뉴 (class="on") -->
-											<li class="depth2-item"><a href="#">전결규정 결재선설정</a></li>
+											<li class="depth2-item"><a href="#">설문 결재</a></li>
+											<li class="depth2-item"><a href="#">전체 설문 결과</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -330,170 +282,64 @@
 	</div>
 
 	<div class="container">
-		<div class="content app-wrap">
-			<!-- 타이틀 영역 -->
-			<div class="title-wrap">
-				<h2 class="title">전결규정 설정</h2>
-			</div>
-			<div class="board-write1">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th scope="row">결재양식</th>
-							<td>
-								<div class="input-area type2">
-									<input type="text" style="max-width:300px;">
-									<button type="button" class="btn-text mid">Category</button>
-									<select class="styled1" style="width:150px;">
-										<option>기안지</option>
-									</select>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><label for="Text01">설명</label></th>
-							<td><input type="text" id="Text01" style="width:100%"></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-
-			<div class="float-area">
-				<p class="sub-title left">전결항목 입력</p>
-
-
-				<div class="btn-wrap right">
-					<div class="btn-align">
-						<div class="btn-item"><button type="button" class="btn-text mid btn-add">추가</button></div>
-						<div class="btn-item"><button type="button" class="btn-text mid btn-all-delete">삭제</button></div>
-					</div>
+		<div class="content">
+			<div class="replace-img-area">
+				<div class="img-area">
+					<img src="../img/img/img_survey_main.jpg" alt="" class="web">
+					<img src="../img/mobile/img/img_survey_main.jpg" alt="" class="mobile">
 				</div>
-			</div>
-			<div class="board-write1 type2">
-				<table>
-					<caption>전결규정 설정 테이블</caption>
-					<colgroup>
-						<col style="width:12%;">
-						<col style="width:25%;">
-						<col style="width:28%;">
-						<col style="width:35%;">
-					</colgroup>
-					<thead>
-						<tr>
-							<th scope="col">항목 삭제</th>
-							<th scope="col">전결 항목</th>
-							<th scope="col">전결 입력</th>
-							<th scope="col">항목별 전결리스트</th>
-						</tr>
-					</thead>
-					<tbody class="d_tbody">
-						<tr>
-							<td><button type="button" class="btn-text mid btn-delete">삭제</button></td>
-							<td>
-								<div class="check-area">
-									<input type="checkbox" class="styled1"><label>전결명 없음</label>
-									<input type="text" style="width:100%;">
-								</div>
-							</td>
-							<td>
-								<div class="input-area">
-									<input type="text">
-									<button type="button" class="btn-text mid">확인</button>
-								</div>
-								<div class="input-area scope">
-									<label>범위</label>
-									<div class="input-box">
-										<input type="text">
-										<span class="swung-dash">~</span>
-										<input type="text">
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="share-box type2">
-									<div class="scroll-area">
-										<div class="user-box">
-											<p class="text">전결사항 [ 10,000 ~ 50,000 ]</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-									</div>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<textarea id="copyTR" style="display:none">
-					<tr>
-						<td><button type="button" class="btn-text mid btn-delete">삭제</button></td>
-						<td>
-							<div class="check-area">
-								<span class="checkWrap">
-									<input type="checkbox" id="" class="styled1">
-								</span>
-								<label for="">전결명 없음</label>
-								<input type="text" style="width:100%;">
-							</div>
-						</td>
-						<td>
-							<div class="input-area">
-								<input type="text">
-								<button type="button" class="btn-text mid">확인</button>
-							</div>
-							<div class="input-area scope">
-								<label>범위</label>
-								<div class="input-box">
-									<input type="text">
-									<span class="swung-dash">~</span>
-									<input type="text">
-								</div>
-							</div>
-						</td>
-						<td>
-							<div class="share-box type2">
-							<div class="scroll-area">
-								<!-- <div class="user-box">
-									<p class="text">전결사항 [ 10,000 ~ 50,000 ]</p>
-									<button type="button" class="btn-del">삭제</button>
-								</div> -->
-							</div>
-						</div>
-						</td>
-					</tr>
-				</textarea>
-			</div>
-
-			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
-					<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
+				<div class="text-area">
+					<h3>Survey Guide</h3>
+					<ul>
+						<li>
+							STEP.01 설문작성
+							<ul>
+								<li>1.설문기본정보등록</li>
+								<li>2.설문문항등록</li>
+							</ul>
+						</li>
+						<li>
+							STEP.02 설문결재요청
+							<ul>
+								<li>1.설문결재요청</li>
+							</ul>
+						</li>
+						<li>
+							STEP.03 설문결재처리
+							<ul>
+								<li>1.설문결재요청</li>
+							</ul>
+						</li>
+						<li>
+							STEP.03 설문결재처리
+							<ul>
+								<li>1.설문결재요청확인</li>
+								<li><strong>2.설문결재</strong></li>
+							</ul>
+						</li>
+						<li>
+							STEP.04 설문실시
+							<ul>
+								<li>1.설문게시</li>
+								<li>2.메일발송</li>
+							</ul>
+						</li>
+						<li>
+							STEP.05 설문참여
+							<ul>
+								<li>1.메일수신</li>
+								<li>2.설문응답</li>
+							</ul>
+						</li>
+						<li>
+							STEP.06 설문결과확인
+							<ul>
+								<li>1.진행현황확인</li>
+								<li>2. 설문결과확인 다운로드</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-			</div>
-
-			<p class="blt-text2">유의사항</p>
-			<div class="text-box1">
-				<div class="title-area">
-					<p class="title2">전결 항목 : 전결 규정 명칭을 등록</p>
-				</div>
-
-				<ul class="blt-list1">
-					<li class="item">전결항목 추가/삭제 시 '추가'/'삭제' 버튼을 클릭하시면 됩니다.</li>
-					<li class="item">'전결명 없음' 체크 시 항목명칭을 입력하지 않아도 됩니다. 단 결재 양식에서 한 건만 가능합니다.</li>
-				</ul>
-			</div>
-			<div class="text-box1">
-				<div class="title-area">
-					<p class="title2">전결 입력  : 지표 항목명칭을 등록 (예 : 1억원이하 0~100,000,000)</p>
-				</div>
-
-				<ul class="blt-list1">
-					<li class="item">전결항목별 규정 추가 시 지표 입력란에 새로운 값을 입력 한 후 '확인'버튼을 클릭하면 계속해서 추가 하실 수 있습니다.</li>
-					<li class="item">특정금액 이상일 경우 최대 9,999,999,999,999 까지 가능합니다.</li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -502,51 +348,29 @@
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
+
 <script>
 $(window).load(function(){
-	idFor();// 체크박스/라디오 id값 생성
-
-	/* 전결항목 추가 */
-	$('.btn-add').click(function(){
-		var copyTR = $('#copyTR').val();
-		$(this).closest('.float-area').next('.board-write1').find('tbody').append(copyTR);
-		idFor();// 체크박스/라디오 id값 생성
-	});
-
-	/* 전결항목 삭제 */
-	$(document).on('click', '.btn-delete', function(){
-		if($('.board-write1 .d_tbody tr').size() > 1){
-			$(this).closest('tr').remove();
-		}else{
-			alert('삭제할 수 없습니다.');
-			return false;
-		}
-	});
-
-	/* 전결항목 전체 삭제 */
-	$('.btn-all-delete').click(function(){
-		$(this).closest('.float-area').next('.board-write1').find('tr').not('tr:first-child').remove();
-	});
-
-	/* 전결명 없음 체크 */
-	$(document).on('change', '.check-area .styled1', function(){
-		if(this.checked){
-			var label = $(this).closest('.check-area').find('label').text();
-			$(this).closest('.check-area').find('input[type=text]').val(label);
-		}else{
-			$(this).closest('.check-area').find('input[type=text]').val('');
-		}
+	$('.textChecked').each(function(){
+		$(this).find('.item input[type=radio]').change(function(){
+			if(this.checked){
+				$(this).closest('.textChecked').find('.item input[type=text]').attr('disabled', 'disabled');
+			}
+		});
+		$(this).find('.item:last-child input.styled1').change(function(){
+			if(this.checked){
+				$(this).closest('.item').find('input[type=text]').removeAttr('disabled').focus();
+			}
+		});
+		$(this).find('.item input[type=checkbox]').change(function(){
+			if(this.checked){
+				$(this).closest('.item').find('input[type=text]').removeAttr('disabled').focus();
+			}else{
+				$(this).closest('.item').find('input[type=text]').attr('disabled', 'disabled');
+			}
+		});
 	});
 });
-
-/* 체크박스/라디오 id값 생성 */
-function idFor(){
-	$('input[type=checkbox]').each(function(){
-		var idx = $(this).closest('tr').index();
-		$(this).attr('id', 'Check' + idx)
-			.closest('.check-area').find('label').attr('for', 'Check' + idx);
-	});
-}
 </script>
 </body>
 </html>

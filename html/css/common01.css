@@ -2683,7 +2683,7 @@ select.styled1 {}
 	padding-bottom:68px;
 	border:1px solid #e5e5e5;
 }
-.share-box.type2 {padding-bottom:0}
+.share-box.type2 {margin-top:0;padding-bottom:0}
 .share-box .btn-groupchart {
 	position:absolute;
 	left:20px;bottom:20px;
@@ -4114,7 +4114,7 @@ select.styled1 {}
 }
 .app-wrap  .board-write1 .input-area.scope .input-box input:first-child {float:left;}
 .app-wrap  .board-write1 .input-area.scope .input-box input:last-child {float:right;}
-.app-wrap  .board-write1 .check-area input {
+.app-wrap  .board-write1 .check-area input[type=text] {
 	display:block;
 	margin-top:15px;
 }
@@ -4354,6 +4354,9 @@ select.styled1 {}
 /* -------------------------------------------------------------------------------------------------------------------------------------------
 	설문조사
 ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 서브메인 */
+.replace-img-area .img-area .mobile {display:none;}
+
 /* 설문참여 */
 .survey-wrap {margin:40px 50px 0;}
 .survey-list-item {border:1px solid #eee;}

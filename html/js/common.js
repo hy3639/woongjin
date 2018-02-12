@@ -249,6 +249,14 @@ $(document).ready(function(){
 		});
 	});
 	*/
+
+	/* 검색 영역 */
+	$('.search-area input[type=text]').focus(function(){
+		$(this).next('.btn-text').addClass('bdColor bgColor').css({'color':'#fff'});
+	}).blur(function(){
+		$(this).next('.btn-text').removeClass('bdColor bgColor').css({'color':'#666'});
+	});
+
 	selectStyled();
 	selectWid();// 셀렉트 박스넓이 설정
 
@@ -416,6 +424,15 @@ $(document).ready(function(){
 			$(this).closest('tr').find('.btn-sorting').removeClass('fColor').find('.icon').removeClass('bgColor');
 			$(this).addClass('fColor').find('.icon').addClass('bgColor');
 		}
+	});
+
+	// 프레스버튼
+	$('.btn-press').mousedown(function(){
+		$(this).css({'background-color':'#d2eaff'});
+	}).mouseup(function(){
+		$(this).css({'background-color':'#fff'});
+	}).mouseleave(function(){
+		$(this).css({'background-color':'#fff'});
 	});
 
 
