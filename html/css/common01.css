@@ -1322,7 +1322,7 @@ select.styled1 {}
 	height:50px;
 	width:219px;
 	margin-top:-50px;
-	outline:0;
+	cursor:pointer;
 }
 .btn-gnb-toggle .text {
 	display:none;
@@ -2231,6 +2231,8 @@ select.styled1 {}
 .reply-wrap .reply-list li:first-child {border-top:none}
 .reply-wrap .reply-list .user {
 	float:left;
+	position:relative;
+	z-index:5;
 }
 .reply-wrap .reply-list .user:after {
 	content:'';
@@ -2311,7 +2313,8 @@ select.styled1 {}
 	border-top:1px solid #eee;
 	box-sizing:border-box;
 }
-.page-wrap ul li span {
+.page-wrap ul li span,
+.page-wrap ul li a {
 	float:left;
 	display:block;
 	color:#333;
@@ -2910,7 +2913,7 @@ select.styled1 {}
 	line-height:20px;
 }
 .thumb-list1 .info-area {
-	margin-top:14px;
+	margin-top:34px;
 	padding:0 25px;
 }
 .thumb-list1 .info-area ul {overflow:hidden}
@@ -2949,6 +2952,10 @@ select.styled1 {}
 	overflow:hidden;
 }
 .thumb-list1 .img-area img {width:100%;height:100%;}
+.thumb-list1 .name {
+	position:absolute;
+	left:55px; top:160px;
+}
 
 /* ===========================================================================
 	공지사항 리스트
@@ -4995,6 +5002,87 @@ select.styled1 {}
 .modify-box .type-layer .survey-item .btn-modify {display:none;}
 .modify-box .type-layer .survey-item .question-area .question {padding-left:0;}
 .modify-box .type-layer .survey-item .item-list {margin-top:9px;}
+
+/* ===========================================================================
+	레이어 팝업
+=========================================================================== */
+/* 공통 */
+.layer-popup-wrap {
+	display:none;
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	z-index:120;
+	background-color:rgba(0,0,0,.7);
+}
+.layer-popup {
+	position:absolute;
+	left:0;top:0;
+	background-color:#fff;
+}
+.layer-popup .pop-heard {
+	position:relative;
+	height:56px;
+	padding:0 90px 0 30px;
+	background-color:#eee;
+}
+.layer-popup .pop-heard .title {
+	color:#000;
+	font-size:16px;
+	font-weight:700;
+	line-height:56px;
+}
+.layer-popup .pop-heard .btn-close {
+	position:absolute;
+	right:0;top:0;
+	width:78px;
+	height:100%;
+	background:url(../img/btn/btn_close01.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.layer-popup .pop-content {
+	padding:30px 30px 40px;
+}
+
+/* 인물정보 팝업 */
+.btn-user {cursor:pointer;}
+.user-popup {width:600px;}
+.user-popup .pop-content {overflow:hidden;}
+.user-popup .img-area {
+	float:left;
+	width:133px;
+	height:133px;
+}
+.user-popup .img-area img {
+	width:100%;
+	height:100%;
+}
+.user-popup .text-area {
+	float:left;
+	margin-left:25px;
+}
+.user-popup .text-area .name {
+	margin-top:-4px;
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+}
+.user-popup .text-area dl {
+	overflow:hidden;
+	font-size:12px;
+	margin-top:14px;
+}
+.user-popup .text-area dl dt {
+	clear:both;
+	float:left;
+	margin-top:8px;
+}
+.user-popup .text-area dl dd {
+	float:left;
+	color:#333;
+	margin-top:8px;
+}
 
 /* ===========================================================================
 	윈도우 팝업

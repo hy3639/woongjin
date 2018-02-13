@@ -1,0 +1,71 @@
+.text-box1 {
+	padding:21px 20px 22px;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+}
+.text-box1 .title {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+}
+.text-box1 .title + p {margin-top:10px;}
+
+
+
+.survey-js {margin-top:10px;}
+
+.total-box {
+	padding:16px 20px 10px;
+	border:1px solid #eee;
+	background-color:#fafafa;
+	text-align:right;
+}
+.total-box .total-title {
+	color:#333;
+	font-size:16px;
+	font-weight:700;
+	text-align:left;
+}
+.total-box .total-item {
+	display:inline-block;
+	overflow:hidden;
+	position:relative;
+	width:230px;
+	padding-left:40px;
+	box-sizing:border-box;
+	font-size:14px;
+	line-height:25px;
+}
+.total-box .total-item.minus:before,
+.total-box .total-item.equals:before,
+.total-box .total-item.equals:after {
+	content:'';
+	position:absolute;
+	left:0;top:50%;
+	width:16px;
+	height:2px;
+}
+.total-box .total-item.minus:before {
+	margin-top:-4px;
+	background-color:#bbb;
+}
+.total-box .total-item.equals:before {
+	margin-top:-7px;
+	background-color:#666;
+}
+.total-box .total-item.equals:after {
+	margin-top:-2px;
+	background-color:#666;
+}
+.total-box .total-item .title {
+	float:left;
+}
+.total-box .total-item .text {
+	float:right;
+}
+.total-box .total-item .text .number {
+	color:#333;
+	font-size:20px;
+	font-weight:700;
+}
+.total-box .total-item .text .number {font-size:25px;}
