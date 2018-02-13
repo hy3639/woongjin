@@ -76,6 +76,12 @@ $(document).ready(function(){
 		$(this).next('.btn-srch').removeClass('bgColor');
 	});
 
+	$('.search-box2 input[type=text]').focus(function(){
+		$(this).next('.btn-text').addClass('bdColor bgColor').css({'color':'#fff'});
+	}).blur(function(){
+		$(this).next('.btn-text').removeClass('bdColor bgColor').css({'color':'#666'});
+	});
+
 	/* 트리메뉴 */
 	// 현재 선택된 메뉴 표시
 	$('.tree-menu .tree-list li li .link .text.fColor').each(function(){
@@ -343,6 +349,33 @@ $(document).ready(function(){
 		$(this).closest('.input-file2').find('input[type=text]').val(file);
 	});
 
+	/* 라디오 선택시 컨텐츠 영역 노출 : 다수*/
+	$('.formChange').each(function(){
+		var idx = $(this).find('.form-list input[type=radio]:checked').index();
+		$(this).find('.formItem').eq(idx).show();
+
+		$(this).find('.form-list input[type=radio]').change(function(){
+			var on = $(this).closest('.form-list').find('input[type=radio]:checked').closest('.item').index();
+			$(this).closest('.formChange').find('.formItem').hide().eq(on).show();
+		});
+	});
+
+	/* 라디오 선택시 컨텐츠 영역 노출 : 단독*/
+	$('.formSingle').each(function(){
+		var id = $(this).attr('id');
+		if(this.checked){
+			$('.' + id).show();
+		}
+		var name = $(this).attr('name');
+		$('input[name=' + name + ']').change(function(){
+			if($('.formSingle').is(':checked')){
+				$('.' + id).show();
+			}else{
+				$('.' + id).hide();
+			}
+		});
+	});
+
 	/* ===================================================================================
 		버튼
 	=================================================================================== */
@@ -574,8 +607,9 @@ function selectStyled(){
 /* 셀렉트박스 넓이 */
 function selectWid(){
 	$('select.styled1').each(function(){
-		var wid = $(this).outerWidth();
-		$(this).closest('.selectWrap').css({'width':wid});
+		//var wid = $(this).outerWidth();
+		var wid = $(this).attr('style');
+		$(this).closest('.selectWrap').attr('style', wid);
 	});
 }
 

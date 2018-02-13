@@ -425,7 +425,7 @@
 											<td><span class="icon-important fColor bdColor">필독</span></td>
 											<td><img src="../img/ico/ico_file.png" alt="첨부"></td>
 											<td class="subject"><a href="#" class="link"><span class="tit">서비스 오픈 안내</span></a></td>
-											<td>관리자</td>
+											<td><button type="button" class="btn-user">관리자</button></td>
 											<td>2017.12.24</td>
 											<td>999</td>
 											<td>200</td>
@@ -980,21 +980,10 @@
 </div>
 
 <script>
-$(function(){
-	$('.hr-bar').draggable({
-		axis:'x',
-		containment: '.list-view.layoyt2',
-		scroll: false,
-
-		start: function() {
-			// 드래그 시작
-		},
-		drag: function() {
-			// 드래그 진행
-		},
-		stop: function() {
-			// 그래그 완료
-		}
+$(window).load(function(){
+	$('.btn-user').click(function(){
+		$('body').append('<div class="layer-popup user-popup"></div>');
+		$('.user-popup').load('../popup/popup_user.html');
 	});
 });
 </script>

@@ -509,6 +509,16 @@ select.styled1 {}
 	transition:all .5s;
 }
 
+.search-box2 {
+	position:relative;
+	padding-right:86px;
+}
+.search-box2 input[type=text] {width:100%;}
+.search-box2 .btn-text {
+	position:absolute;
+	right:0;top:0;
+}
+
 /* 파일첩부 */
 .input-file {
 	display:inline-block;
@@ -575,6 +585,10 @@ select.styled1 {}
 	color:#999;
 	font-size:12px;
 }
+
+/* 라디오 선택시 컨텐츠 영역 노출 */
+.formCont {margin-top:10px;}
+.formCont .formItem {display:none;}
 
 /* ===========================================================================
 	버튼
@@ -4379,6 +4393,42 @@ select.styled1 {}
 ------------------------------------------------------------------------------------------------------------------------------------------- */
 /* 서브메인 */
 .replace-img-area .img-area .mobile {display:none;}
+
+/* 설문작성 */
+.user-search-box {
+	position:relative;
+	padding-left:100px;
+	border:1px solid #f5f5f5;
+}
+.user-search-box + .user-search-box {border-top:0;}
+.user-search-box .title-area {
+	position:absolute;
+	left:0;top:0;bottom:0;
+	width:100px;
+}
+.user-search-box .title-area .title {
+	position:absolute;
+	left:10px;right:10px;top:50%;
+	margin-top:-10px;
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+	text-align:center;
+	line-height:20px;
+}
+.user-search-box .cont-area {
+	padding:15px 20px;
+	border-left:1px solid #f5f5f5;
+}
+.user-search-box .cont-area .seach-top {overflow:hidden;}
+.user-search-box .cont-area .seach-top .search-box2 {float:left;}
+.user-search-box .cont-area .seach-top .len-text {
+	float:left;
+	margin-left:20px;
+	line-height:35px;
+}
+.user-search-box .cont-area .text-notice {}
+.user-search-box {}
 
 /* 설문참여 */
 .survey-wrap {margin:40px 50px 0;}
