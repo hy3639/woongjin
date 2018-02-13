@@ -1344,17 +1344,17 @@ select.styled1 {
 .board-view1 .info-wrap .right-box .btn-attach.on:before {transform:rotate(180deg);}
 .board-view1 .info-wrap .right-box .btn-attach.on + .attach-list {display:block;}
 .board-view1 .info-wrap .right-box .attach-list {
-		display:none;
-    position:absolute;
-    background-color:#fff;
-    left:0;
-    right:0;
-    z-index:10;
-		padding:0 20px;
-    border-top:1px solid #eee;
-		border-bottom:1px solid #eee;
-    margin-top:10px;
-    background-color:#fafafa;
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	left:0;
+	right:0;
+	z-index:10;
+	padding:0 20px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	margin-top:10px;
+	background-color:#fafafa;
 }
 .board-view1 .info-wrap .right-box .attach-list li a {
 	display:block;
@@ -1437,8 +1437,8 @@ select.styled1 {
 	padding-right:15px;
 	vertical-align:top;
 }
-.board-view2  .btn-attach.on {font-weight:700;}
-.board-view2  .btn-attach:before {
+.board-view2 .btn-attach.on {font-weight:700;}
+.board-view2 .btn-attach:before {
 	content:'';
 	width:7px;
 	height:4px;
@@ -1448,8 +1448,8 @@ select.styled1 {
 	margin-top:-2px;
 	background:url(../img/ico/ico_down.png) no-repeat 0 0;
 }
-.board-view2  .btn-attach.on:before {transform:rotate(180deg);}
-.board-view2  .btn-attach.on + .attach-list {display:block;}
+.board-view2 .btn-attach.on:before {transform:rotate(180deg);}
+.board-view2 .btn-attach.on + .attach-list {display:block;}
 .board-view2 .attach-list {
 	display:none;
 	position:absolute;
@@ -1627,7 +1627,7 @@ select.styled1 {
 	width:50%;
 	background-color:#fff;
 }
-.reply-wrap .reply-list .input-area  .btn-area .btn-cancel {margin-bottom:10px;border-right:0}
+.reply-wrap .reply-list .input-area .btn-area .btn-cancel {margin-bottom:10px;border-right:0}
 .page-wrap {border-bottom:1px solid #eee;}
 .page-wrap ul li {
 	padding:20px;
@@ -2211,7 +2211,7 @@ select.styled1 {
 	overflow:hidden;
 	margin-bottom:15px;
 }
-.work-info  li {
+.work-info li {
 	position:relative;
 	float:left;
 	font-size:12px;
@@ -2219,21 +2219,20 @@ select.styled1 {
 	margin-left:10px;
 	padding-left:10px;
 }
-.work-info  li:first-child {
+.work-info li:first-child {
 	margin-left:0;
 	padding-left:0
 }
-.work-info  li:before {
+.work-info li:before {
 	content:'';
-  width:1px;
-  height:12px;
-  position:absolute;
-  left:0;
-  top:50%;
-  margin-top:-6px;
-  background-color:#eee;
+	width:1px;
+	height:12px;
+	position:absolute;
+	left:0;top:50%;
+	margin-top:-6px;
+	background-color:#eee;
 }
-.work-info  li:first-child:before {display:none;}
+.work-info li:first-child:before {display:none;}
 .work-info .info1 span {
 	background:url(../img/ico/ico_work_main1.png) no-repeat 0 50%;
 	padding:0 12px 0 25px;
@@ -2245,7 +2244,7 @@ select.styled1 {
 
 .workspace-area {margin-top:20px;}
 
-/* 서브메인  */
+/* 서브메인 */
 .slide-area .slider1 {position:relative;}
 .slide-area .slider1 .bx-wrapper {position:relative;}
 .slide-area .slider1 .item {
@@ -2344,7 +2343,7 @@ select.styled1 {
 
 }
 
-.box-area  {
+.box-area {
 	position:relative;
 	border-top:2px solid #fafafa;
 }
@@ -2357,23 +2356,23 @@ select.styled1 {
 	height:1px;
 	background-color:#e5e5e5;
 }
-.box-area  ul  {overflow:hidden;}
-.box-area  ul li {
+.box-area ul {overflow:hidden;}
+.box-area ul li {
 	position:relative;
 	padding:15px 0;
 	margin:0 15px;
 	border-top:1px solid #e5e5e5;
 	box-sizing:border-box;
 }
-.box-area  ul li:first-child {border-top:0;}
-.box-area  ul li .tit {
+.box-area ul li:first-child {border-top:0;}
+.box-area ul li .tit {
 	margin-bottom:13px;
 	font-weight:700;
 	color:#333;
 	font-size:15px;
 }
-.box-area  ul li .tit span {font-weight:normal}
-.box-area  ul li .cont {
+.box-area ul li .tit span {font-weight:normal}
+.box-area ul li .cont {
 	overflow:hidden;
 	height:57px;
 }
@@ -2500,7 +2499,7 @@ select.styled1 {
 	overflow:hidden;
 	margin-top:4px;
 }
-.board-wrap .text-area  .info-list li {
+.board-wrap .text-area .info-list li {
 	position:relative;
 	float:left;
 	font-size:12px;
@@ -2508,11 +2507,11 @@ select.styled1 {
 	margin-left:10px;
 	padding-left:10px;
 }
-.board-wrap .text-area  .info-list li:first-child {
+.board-wrap .text-area .info-list li:first-child {
 	margin-left:0;
 	padding-left:0;
 }
-.board-wrap .text-area  .info-list li:before {
+.board-wrap .text-area .info-list li:before {
 	content:'';
 	width:1px;
 	height:11px;
@@ -2521,8 +2520,8 @@ select.styled1 {
 	margin-top:-5px;
 	background-color:#eee;
 }
-.board-wrap .text-area  .info-list li:first-child:before {display:none;}
-.board-wrap .text-area  .info-list li em {
+.board-wrap .text-area .info-list li:first-child:before {display:none;}
+.board-wrap .text-area .info-list li em {
 	margin-left:2px;color:#333;
 	vertical-align:top
 }
@@ -2570,7 +2569,7 @@ select.styled1 {
 	position:relative;
 	margin-top:20px;
 }
-.board-wrap .reply-list .reply-box  .input-area {
+.board-wrap .reply-list .reply-box .input-area {
 	width:100%;
 	padding-right:70px;
 	box-sizing:border-box;
@@ -2596,7 +2595,7 @@ select.styled1 {
 	text-overflow:ellipsis;
 }
 .table-area .noty-list li .date {display:block;}
-.workspace-area .right .tabArea .tab-list1  {margin:0}
+.workspace-area .right .tabArea .tab-list1 {margin:0}
 .workspace-area .right .tabArea .tab-list1 .item:first-child span {border-left:0}
 .workspace-area .right .tabArea .tab-list1 .item:last-child span {border-right:0}
 .workspace-area .right .tabArea .tab-list1 .item .text span {
@@ -2629,7 +2628,7 @@ select.styled1 {
 
 .workspace-area .right .board-wrap {
 	margin:0 20px;
-  border-bottom:0
+	border-bottom:0
 }
 .workspace-area .right .board {
 	position:relative;
@@ -2638,13 +2637,12 @@ select.styled1 {
 }
 .workspace-area .right .board:before {
 	content:'';
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  width:100%;
-  height:1px;
-  background-color:#e5e5e5;
+	position:absolute;
+	bottom:0;
+	left:0;right:0;
+	width:100%;
+	height:1px;
+	background-color:#e5e5e5;
 }
 .workspace-area .right .board .btn-more {
 	position:absolute;
@@ -2694,10 +2692,10 @@ select.styled1 {
 	padding:10px 15px;
 	border-top:1px solid #eee;
 }
-.workspace-area .right .tabArea .tabCont  ul li {margin-top:8px;}
-.workspace-area .right .tabArea .tabCont  ul li:first-child {margin-top:0}
-.workspace-area .right .tabArea .tabCont  ul li.today span {color:#333}
-.workspace-area .right .tabArea .tabCont  ul li span {float:right;color:#999}
+.workspace-area .right .tabArea .tabCont ul li {margin-top:8px;}
+.workspace-area .right .tabArea .tabCont ul li:first-child {margin-top:0}
+.workspace-area .right .tabArea .tabCont ul li.today span {color:#333}
+.workspace-area .right .tabArea .tabCont ul li span {float:right;color:#999}
 
 
 /* 주간보고 */
@@ -2805,20 +2803,17 @@ select.styled1 {
 .board-list2 .td-area:last-child {border-bottom:0}
 .board-list2 .td-area:before {
 	content:'';
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  width:100%;
-  height:1px;
-  background-color:#e5e5e5;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:1px;
+	background-color:#e5e5e5;
 }
-.board-list2 .td-area:last-child:before {
-	display:none;
-}
-.board-list2 .td-area span {
-	margin-top:2px;
-}
+.board-list2 .td-area:last-child:before {display:none;}
+.board-list2 .td-area a {display:block;}
+.board-list2 .td-area span {margin-top:2px;}
 .board-list2 .td-area span:first-child {margin-top:0}
 .board-list2 .td-area .title {
 	margin-top:0;
@@ -3096,7 +3091,7 @@ select.styled1 {
 	top:0;
 	bottom:0;
 	width:35px;
-	padding :90px 10px;
+	padding:90px 10px;
 	border-right:1px solid #e5e5e5;
 	background-color:#fafafa;
 	color:#333;
@@ -3187,7 +3182,7 @@ select.styled1 {
 	left:0;
 	top:0;
 }
-.board-view-tab + .cont .attach-list  ul {padding-left:35px;}
+.board-view-tab + .cont .attach-list ul {padding-left:35px;}
 .board-view-tab + .cont .cont-bottom {margin-top:25px;}
 .board-view-tab + .cont .cont-bottom .left {color:#999;}
 .board-view-tab + .cont .cont-bottom .left img {display:block;}
@@ -3678,7 +3673,7 @@ select.styled1 {
 /* -------------------------------------------------------------------------------------------------------------------------------------------
 	업무지원
 ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* .pop-write .board-write1 tr {position:relative;} */
+/* .pop-write .board-write1 tr {position:relative;}*/
 
 .pop-write .board-write1 tr.pop-img td {
 		display:block;
@@ -3705,7 +3700,274 @@ select.styled1 {
 .pop-write .board-write1 td {padding-top:7px;}
 
 /*자원관리*/
-.resource-area {padding:0 20px}
-.resource-area .board-list1  td {
-	display:block;
+.resource-area {border-top:1px solid ##e5e5e5}
+.resource-area .board-list2 ul {border-top:1px solid #e5e5e5}
+.resource-area .board-list1 tr {position:relative;}
+.resource-area .board-list1 td {display:block;}
+.resource-area .board-list1 td.num {
+	color:#333;
+	font-size:12px;
 }
+
+.support-wrap .sorting-area .right-box .selectWrap:last-child {display:none;}
+.support-wrap .board-write1 {
+	position:relative;
+	padding-bottom:22px;
+	border-bottom:2px solid #fafafa
+}
+.support-wrap .board-write1:before {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:1px;
+	background-color:#e5e5e5;
+}
+.support-wrap .board-write1 .tr-floating th {width:auto;}
+.support-wrap .board-write1 .tr-floating td {width:70%;margin-left:10px}
+.support-wrap .board-write1.view .tr-floating th {width:26%;margin-top:10px;color:#666;font-size:13px;}
+.support-wrap .board-write1.view .tr-floating td {margin-top:10px;}
+
+/*자원예약*/
+.support-wrap {position:relative;}
+.support-wrap .week-content {padding:0;margin:0}
+.support-wrap .week-content .week-setting-box {
+	 width:inherit;
+	/*padding-right:180px;*/
+	padding:0;
+	margin:0 20px;
+}
+.support-wrap .week-content .week-setting-box .inner {
+	position:relative;
+	width:155px;
+}
+
+.support-wrap .week-content .week-setting-box .week-text {width:155px}
+
+.support-wrap .week-setting-box .btn-next {right:0}
+.support-wrap .week-setting-box .btn-calendar {
+	/*position:inherit;*/
+	right:0;
+	left:160px;
+	width:28px;
+	height:28px;
+	background-image:url(../img/btn/btn_calendar.png);
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	opacity:.6;
+}
+.support-wrap .week-setting-box .btn-text.today {
+	position:absolute;
+	top:0;right:0;
+	line-height:26px;
+}
+
+.support-wrap .week-content .calendar-box {
+	position:relative;
+	margin-top:18px;
+	padding:0 20px 20px 20px;
+	border-bottom:2px solid #fafafa;
+}
+.support-wrap .week-content .calendar-box:before {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:1px;
+	background-color:#e5e5e5;
+}
+.support-wrap .week-content .calendar-box th {
+	color:#333;
+	font-weight:700;
+	line-height:35px;
+	text-align:center;
+}
+
+.support-wrap .week-content .calendar-box th.sun {color:#ff5349;}
+.support-wrap .week-content .calendar-box td {
+	position:relative;
+	height:28px;
+	box-sizing:border-box;
+	text-align:center;
+	vertical-align:top;
+}
+.support-wrap .week-content .calendar-box td.select .day {color:#fff;}
+
+.support-wrap .week-content .calendar-box td .notice {display:none;}
+.support-wrap .week-content .calendar-box td .cont-list + .notice {
+	display:block;
+	position:absolute;
+	left:50%;
+	bottom:3px;
+	margin-left:-2px;
+	text-indent:-9999px;
+	font-size:0;
+	line-height:0;
+	width:4px;
+	height:4px;
+	border-radius:2px;
+}
+.support-wrap .week-content .calendar-box td.select .notice {background-color:#fff !important;}
+
+.support-wrap .week-content .calendar-box td.today .day {font-weight:700;}
+
+.support-wrap .week-content .calendar-box td .day {
+	/* position:absolute;
+	right:10px;
+	top:12px;*/
+}
+.support-wrap .week-content .calendar-box td .day.sun {color:#ff5349;}
+
+.support-wrap .week-content .view-change-area {
+	overflow:hidden;
+	position:absolute;
+	right:20px;top:25px;
+}
+.support-wrap .week-content .view-change-area a {
+	float:left;
+	display:block;
+	width:44px;
+	height:28px;
+	line-height:26px;
+	font-size:12px;
+	text-align:center;
+	border:1px solid #e5e5e5;
+}
+.support-wrap .week-content .view-change-area a:first-child.on + a{border-left:0}
+.support-wrap .week-content .view-change-area a:last-child.on {margin-left:-1px;}
+.support-wrap .week-content .view-change-area a.on {
+	border:1px solid #ff8d86;
+	color:#ff5349;
+	background-color:#fff3f2;
+}
+.calendar-cont-box {
+	padding:20px;
+	border-bottom:1px solid #e5e5e5;
+}
+.calendar-cont-box dt {
+	font-size:14px;
+	color:#333;
+	font-weight:700;
+}
+.calendar-cont-box dd {
+	position:relative;
+	font-size:12px;
+	margin-top:15px;
+	padding-left:10px;
+}
+
+.calendar-cont-box dd .txt {
+	display:block;
+	font-size:13px;
+	color:#333;
+}
+.calendar-cont-box dd .bullet {
+	display:block;
+	position:absolute;
+	left:3px;
+	top:6px;
+	margin-left:-2px;
+	text-indent:-9999px;
+	font-size:0;
+	line-height:0;
+	width:4px;
+	height:4px;
+	border-radius:2px;
+}
+
+.calendar-box .title {
+	font-size:14px;
+	font-weight:700;
+	color:#333;
+	padding-bottom:13px;
+}
+.calendar-box .schedule-list {}
+.calendar-box .schedule-list .item {
+	position:relative;
+	padding:20px 0 0 22px;
+}
+.calendar-box .schedule-list .item:before {
+	content:'';
+	position:absolute;
+	left:5px;top:0;bottom:0;
+	width:2px;
+	background-color:#eee;
+}
+.calendar-box .schedule-list .item:first-child {padding-top:0;}
+.calendar-box .schedule-list .item:first-child:before {top:5px;}
+.calendar-box .schedule-list .item:last-child:before {
+	bottom:inherit;
+	height:30px;
+}
+.calendar-box .schedule-list .item p {}
+.calendar-box .schedule-list .item .time {
+	position:relative;
+	margin-left:-22px;
+	padding-left:20px;
+	font-size:12px;
+}
+.calendar-box .schedule-list .item .time .icon {
+	content:'';
+	overflow:hidden;
+	position:absolute;
+	left:0;top:50%;
+	width:12px;
+	height:12px;
+	margin-top:-6px;
+	box-sizing:border-box;
+	border-radius:50%;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.calendar-box .schedule-list .item .time.fColor .icon {border:0;}
+.calendar-box .schedule-list .item .time.fColor .icon:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	width:8px;
+	height:8px;
+	margin:-4px 0 0 -4px;
+	border-radius:50%;
+	background-color:#fff;
+}
+.calendar-box .schedule-list .item .sub {
+	margin-top:3px;
+	color:#333;
+	font-size:13px;
+}
+.calendar-box .schedule-list .item .text {
+	margin-top:2px;
+	color:#bbb;
+	font-size:12px;
+}
+/*자원예약(일간) 전용클래스*/
+.support-wrap .week-content .calendar-box.type2 {	padding:0;}
+.calendar-box.type2 .inner {
+	position:relative;
+	padding:0 20px 15px 20px;
+	margin-top:20px;
+	border-bottom:2px solid #fafafa;
+}
+.calendar-box.type2 .inner:before {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:0;right:0;
+	width:100%;
+	height:1px;
+	background-color:#e5e5e5;
+}
+.calendar-box.type2 .inner:first-child {margin-top:0}
+.calendar-box.type2 .inner:last-child {border:0}
+.calendar-box.type2 .inner:last-child:before {display:none;}
+.support-wrap .week-content .calendar-box.type2 {border-bottom:0}

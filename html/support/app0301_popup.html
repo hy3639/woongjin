@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진 - 자원예약</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="window-popup">
+	<div class="title-wrap">
+		<h1 class="title">자원예약</h1>
+	</div>
+
+	<div class="board-write1 admin-board-area">
+		<table>
+			<colgroup class="mHide"><!-- 웹전용 -->
+				<col style="width:18%;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">등록정보</th>
+					<td>김웅진 부장</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="Text01">주제</label></th>
+					<td><input type="text" id="Text01" style="width:280px;"></td>
+				</tr>
+				<tr>
+					<th scope="row">예약일자</th>
+					<td>
+						<ul class="form-list inline">
+							<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">일반</label></li>
+							<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">반복예약</label></li>
+						</ul>
+						<div class="period-area">
+							<div class="box-item">
+								<div  class="date-text">
+									<div class="btn-calendar"><input type="text" readonly></div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+							</div>
+							<span class="swung-dash">~</span>
+							<div class="box-item">
+								<div  class="date-text">
+									<div class="btn-calendar"><input type="text" readonly></div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">반복단위</th>
+					<td>
+						<ul class="form-list inline">
+							<li class="item"><input type="radio" name="Radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">일단위</label></li>
+							<li class="item"><input type="radio" name="Radio02" id="Radio0202" class="styled1"><label for="Radio0202">주단위</label></li>
+							<li class="item"><input type="radio" name="Radio02" id="Radio0203" class="styled1"><label for="Radio0203">격주단위</label></li>
+							<li class="item"><input type="radio" name="Radio02" id="Radio0204" class="styled1"><label for="Radio0204">월단위</label></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">반복조건</th>
+					<td>
+						<div class="year-month-select">
+							<span class="text">매월</span>
+							<div class="select-area">
+								<div class="select-box">
+									<select class="styled1 year" style="width:100%;">
+										<option>마지막</option>
+									</select>
+									<span class="text">째주</span>
+								</div>
+								<div class="select-box">
+									<select class="styled1 month" style="width:100%;">
+										<option>월</option>
+										<option>화</option>
+										<option>수</option>
+										<option>목</option>
+										<option>금</option>
+										<option>토</option>
+										<option>일</option>
+									</select>
+									<span class="text">요일</span>
+								</div>
+							</div>
+							<div class="select-area">
+								<div class="select-box">
+									<select class="styled1" style="width:100%;">
+										<option>선택</option>
+									</select>
+									<span class="text">시</span>
+								</div>
+								<div class="select-box">
+									<select class="styled1" style="width:100%;">
+										<option>선택</option>
+										<option>00</option>
+										<option>10</option>
+										<option>20</option>
+										<option>30</option>
+										<option>40</option>
+										<option>50</option>
+									</select>
+									<span class="text">분</span>
+								</div>
+							</div>
+							<span class="swung-dash">~</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">예약시간</th>
+					<td>
+						<div class="year-month-select">
+							<div class="select-area">
+								<div class="select-box">
+									<select class="styled1 year" style="width:100%;">
+										<option>선택</option>
+									</select>
+									<span class="text">~</span>
+								</div>
+								<div class="select-box">
+									<select class="styled1" style="width:150px">
+										<option>선택</option>
+										<option>10</option>
+										<option>20</option>
+										<option>30</option>
+										<option>40</option>
+										<option>50</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">자원선택</th>
+					<td>
+						<span class="btn-text mid">검색</span>
+						<select class="styled1" style="width:400px">
+							<option>선택</option>
+							<option>10</option>
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+							<option>50</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">메일발송유무</th>
+					<td>
+						<ul class="form-list inline">
+							<li class="item"><input type="radio" name="Radio03" id="Radio0301" class="styled1" checked><label for="Radio0301">예</label></li>
+							<li class="item"><input type="radio" name="Radio03" id="Radio0302" class="styled1"><label for="Radio0302">아니오</label></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">참석자</th>
+					<td>
+						<div class="input-area" style="max-width:315px;">
+							<input type="text">
+							<span class="btn-text mid">중복확인</span>
+						</div>
+						<span>총 <em class="fColor">5</em>명</span>
+						<div class="share-box">
+							<div class="btn-groupchart">
+								<button type="button" class="btn">조직도</button>
+								<p class="tooltip">조직도</p>
+							</div>
+							<div class="scroll-area">
+								<div class="user-box">
+									<p class="text">김웅진 부장 / 경영지원팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">고아라 대리 / 총무팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">최재영 부장 / 디자인팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">김웅진 부장 / 경영지원팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">고아라 대리 / 총무팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">최재영 부장 / 디자인팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="Text06">외부참석자<span class="important">*</span></label></th>
+					<td>
+						<input type="text" id="Text06"  style="width:100%;">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="Text07">외부참석자 e-mail<span class="important">*</span></label></th>
+					<td>
+						<input type="text" id="Text07"  style="width:100%;">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="Text07">연락처<span class="important">*</span></label></th>
+					<td>
+						<input type="text" id="Text07"  style="width:100%;">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="Text07">사유<span class="important">*</span></label></th>
+					<td>
+						<input type="text" id="Text07"  style="width:100%;">
+					</td>
+				</tr>
+				<tr>
+					<th>첨부파일</th>
+					<td>
+						<div class="addfind-cont tabCont on">
+						<div class="title-area mHide">
+							<div class="left">
+								<p class="title">파일명</p>
+							</div>
+							<div class="right">
+								<p class="title">용량</p>
+								<p class="title">상태</p>
+							</div>
+						</div>
+						<ul class="addfile-list">
+							<li class="addfile-item">
+								<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 310b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+							<li class="addfile-item">
+								<div class="file-name">임직원 그룹조직도.pdf</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 25b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+							<li class="addfile-item">
+								<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 310b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+							<li class="addfile-item">
+								<div class="file-name">임직원 그룹조직도.pdf</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 25b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+						</ul>
+						<div class="foot-info">
+							<button type="button" class="btn-text sm">파일추가</button>
+							<div class="text-area">
+								<p class="text">용량 355b / 700mb</p>
+								<p class="text">상태 0%</p>
+							</div>
+						</div>
+					</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+
+	<div class="btn-wrap right">
+		<div class="btn-align">
+			<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
+			<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
