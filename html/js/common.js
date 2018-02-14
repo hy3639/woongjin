@@ -570,7 +570,7 @@ $(document).ready(function(){
 	// 열기
 	$('.btn-user').click(function(){
 		$('body').append('<div class="layer-popup-wrap"></div>');
-		$('.layer-popup-wrap').load('../popup/popup_user.html', function(){
+		$('.layer-popup-wrap').load('../popup/layer_popup.html .user-popup', function(){
 			$('.layer-popup-wrap').fadeIn(300);
 			var wid = $('.layer-popup').outerWidth();
 			var hei = $('.layer-popup').outerHeight();

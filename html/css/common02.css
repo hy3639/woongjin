@@ -2051,7 +2051,7 @@ select.styled1 {
 .thumb-list1 > ul > li a {
 	display:block;
 	position:relative;
-	padding:20px 20px 42px;
+	padding:20px 20px 0;
 	border-top:2px solid #fafafa;
 }
 .thumb-list1 > ul > li:first-child{border-top:1px solid #eee}
@@ -2094,28 +2094,27 @@ select.styled1 {
 	margin-top:5px;
 	line-height:20px;
 }
-.thumb-list1 > ul > li a .info-area {
+.thumb-list1 > ul > li .info-area {
 	overflow:hidden;
-	position:absolute;
-	left:20px;right:20px;bottom:0;
+	padding:0 20px;
 	color:#999;
 	font-size:12px;
 	line-height:42px;
 }
-.thumb-list1 > ul > li a .info-area .name {
+.thumb-list1 > ul > li .info-area .name {
 	float:left;
 }
-.thumb-list1 > ul > li a .info-area .left {
+.thumb-list1 > ul > li .info-area .left {
 	overflow:hidden;
 	float:left;
 	padding-right:3px;
 }
-.thumb-list1 > ul > li a .info-area .left .text {
+.thumb-list1 > ul > li .info-area .left .text {
 	float:left;
 	position:relative;
 	padding-left:15px;
 }
-.thumb-list1 > ul > li a .info-area .left .text:before {
+.thumb-list1 > ul > li .info-area .left .text:before {
 	content:'';
 	position:absolute;
 	left:7px;top:50%;
@@ -2124,13 +2123,13 @@ select.styled1 {
 	margin-top:-5px;
 	background-color:#eee;
 }
-.thumb-list1 > ul > li a .info-area .left .text {}
-.thumb-list1 > ul > li a .info-area .right {
+.thumb-list1 > ul > li .info-area .left .text {}
+.thumb-list1 > ul > li .info-area .right {
 	overflow:hidden;
 	float:right;
 	padding-right:1px;
 }
-.thumb-list1 > ul > li a .info-area .right .ico-file {
+.thumb-list1 > ul > li .info-area .right .ico-file {
 	float:left;
 	width:28px;
 	height:42px;
@@ -2140,14 +2139,14 @@ select.styled1 {
 	text-indent:-9999px;
 	line-height:0;
 }
-.thumb-list1 > ul > li a .info-area .right .like {
+.thumb-list1 > ul > li .info-area .right .like {
 	float:left;
 	padding-left:15px;
 	background:url(../img/mobile/ico/ico_like2.png) no-repeat 0 50%;
 	background-size:13px 12px;
 }
-.thumb-list1 > ul > li a .img-area {margin:10px -20px 0;}
-.thumb-list1 > ul > li a .img-area img {width:100%;}
+.thumb-list1 > ul > li .img-area {margin:10px -20px 0;font-size:0;line-height:0;}
+.thumb-list1 > ul > li .img-area img {width:100%;}
 
 
 /* ===========================================================================
