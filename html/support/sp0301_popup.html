@@ -75,17 +75,16 @@
 					<td class="formChange2">
 						<ul class="form-list inline">
 							<li class="item"><input type="radio" name="Radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">일단위</label></li>
-							<li class="item"><input type="radio" name="Radio02" id="Radio0202" class="styled1 formSingle"><label for="Radio0202">주단위</label></li>
-							<li class="item"><input type="radio" name="Radio02" id="Radio0203" class="styled1 formSingle"><label for="Radio0203">격주단위</label></li>
-							<li class="item"><input type="radio" name="Radio02" id="Radio0204" class="styled1 formSingle"><label for="Radio0204">월단위</label></li>
+							<li class="item"><input type="radio" name="Radio02" id="Radio0202" class="styled1 formShow"><label for="Radio0202">주단위</label></li>
+							<li class="item"><input type="radio" name="Radio02" id="Radio0203" class="styled1 formShow"><label for="Radio0203">격주단위</label></li>
+							<li class="item"><input type="radio" name="Radio02" id="Radio0204" class="styled1 formShow"><label for="Radio0204">월단위</label></li>
 						</ul>
 					</td>
 				</tr>
-				<tr class="hide Radio0102 Radio0202 Radio0203 Radio0204">
+				<tr class="hide">
 					<th scope="row">반복조건</th>
 					<td>
 						<div class="formCont">
-							<div class="repeat-area formItem"></div>
 							<div class="repeat-area formItem">
 								<div class="select-area">
 									<div class="select-box">
@@ -517,7 +516,7 @@
 </div>
 
 <script>
-/* 반복단위 라디오버튼*/
+/* 반복단위 라디오버튼
 $('.formChange2').each(function(){
 	var idx = $(this).find('.form-list input[type=radio]:checked').index();
 	$(this).closest('tr').next('tr').find('.formItem').eq(idx).show();
@@ -538,9 +537,10 @@ $('.formChange2').each(function(){
 
 
 });
+*/
 
 
-/* 예약일자 라디오버튼*/
+/* 예약일자 라디오버튼
 $('.reservation-date').find('.period-area').find('.swung-dash').hide().next('.box-item').hide();
 $('.reservation-date input[name="Radio01"]').change(function(){
 	var id = $(this).attr('id');
@@ -550,6 +550,20 @@ $('.reservation-date input[name="Radio01"]').change(function(){
 	}
 	if(id == 'Radio0102'){
 		$(this).closest('.reservation-date').find('.period-area').find('.swung-dash').show().next('.box-item').css('display','table-row');
+	}
+});
+*/
+
+$('.formShow').change(function(){
+	if(this.checked){
+		var idx = $(this).closest('.item').index();
+		$(this).closest('tr').next('tr').show().find('.formItem').hide().eq(idx-1).show();
+	}
+});
+$('.formChange2 .form-list .item:first-child input[type=radio]').change(function(){
+	if(this.checked){
+		$(this).closest('tr').next('tr').hide().find('.formItem').hide();
+		console.log(0);
 	}
 });
 </script>
