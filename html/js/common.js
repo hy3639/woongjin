@@ -183,7 +183,7 @@ $(document).ready(function(){
 	=================================================================================== */
 	/* 입력박스 */
 	//오버/아웃
-	$('input[type=text], input[type=number], textarea').focus(function(){
+	$('input[type=text], input[type=number], input[type=password], textarea').focus(function(){
 		$(this).addClass('bdColor').closest('.search-text').find('.btn-search').addClass('bgColor');
 	}).blur(function(){
 		$(this).removeClass('bdColor').closest('.search-text').find('.btn-search').removeClass('bgColor');

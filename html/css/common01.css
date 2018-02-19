@@ -213,7 +213,8 @@
 =========================================================================== */
 /* 입력박스 */
 input[type=text],
-input[type=number] {
+input[type=number],
+input[type=password] {
 	height:35px;
 	padding:0 14px;
 	box-sizing:border-box;
@@ -1797,6 +1798,7 @@ select.styled1 {}
 	font-size:14px;
 	text-align:left;
 }
+.board-write1 tbody th {padding:0;}
 .board-write1 td {
 	height:35px;
 	padding:18px 30px;
@@ -2348,6 +2350,85 @@ select.styled1 {}
 .page-wrap ul li .name,
 .page-wrap ul li .date {width:105px;text-align:right;position:absolute;right:0;padding-right:10px;box-sizing:border-box;}
 .page-wrap ul li .date {right:105px;}
+
+/* ===========================================================================
+	로그인
+=========================================================================== */
+.login-wrap {
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	background-color:#f6f6f6;
+}
+.login-wrap .login-area {
+	width:740px;
+	position:absolute;
+	left:50%;top:50%;
+	margin:-250px 0 0 -370px;
+}
+.login-wrap .login-area .logo {
+	width:118px;
+	height:69px;
+	margin:0 auto;
+	background:url(../img/layout/site_logo.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.login-wrap .login-area .login-box {
+	overflow:hidden;
+	margin-top:20px;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.login-wrap .login-area .login-box .form {
+	float:left;
+	width:360px;
+	padding:40px 0 40px 40px;
+	box-sizing:border-box;
+}
+.login-wrap .login-area .login-box .form input {
+	width:100%;
+	margin-top:10px;
+}
+.login-wrap .login-area .login-box .form input:first-child {margin-top:0;}
+.login-wrap .login-area .login-box .form .btn-text {
+	width:100%;
+	margin-top:10px;
+	color:#fff;
+}
+.login-wrap .login-area .login-box .form .check-list {
+	overflow:hidden;
+	margin-top:8px;
+}
+.login-wrap .login-area .login-box .form .check-list .item {
+	float:left;
+	font-size:12px;
+	line-height:20px;
+}
+.login-wrap .login-area .login-box .form .check-list .item + .item {
+	position:relative;
+	padding-left:21px;
+}
+.login-wrap .login-area .login-box .form .check-list .item + .item:before {
+	content:'';
+	position:absolute;
+	left:10px;top:50%;
+	width:1px;
+	height:10px;
+	margin-top:-4px;
+	background-color:#ddd;
+}
+.login-wrap .login-area .login-box .form .check-list .item a {
+	display:inline-block;
+	padding-top:1px;
+}
+.login-wrap .login-area .login-box .img-area {
+	float:right;
+	padding:10px;
+	border-left:1px solid #e5e5e5;
+	font-size:0;
+	line-height:0;
+}
 
 /* ===========================================================================
 	컨텐츠
@@ -5540,11 +5621,10 @@ select.styled1 {}
 	border:1px solid #e5e5e5;
 	border-left:0;
 	box-sizing:border-box;
+	vertical-align:top;
 }
 .support-wrap .week-content .calendar-box td.select.bgColor {background-color:none !important;}
-.support-wrap .week-content .calendar-box td.today {
-	background-color:#e0f1ff;
-}
+.support-wrap .week-content .calendar-box td.today {background-color:#e0f1ff;}
 .support-wrap .week-content .calendar-box td.today .day {font-weight:700;}
 .support-wrap .week-content .calendar-box td:first-child {border-left:1px solid #e5e5e5;}
 .support-wrap .week-content .calendar-box td .day {
@@ -5554,11 +5634,7 @@ select.styled1 {}
 }
 .support-wrap .week-content .calendar-box td .day.sun {color:#ff5349;}
 
-.support-wrap .week-content .calendar-box td .cont-list {
-	position:absolute;
-	left:16px;
-	top:35px;
-}
+.support-wrap .week-content .calendar-box td .cont-list {padding:30px 0 4px 0;}
 .support-wrap .week-content .calendar-box td .cont-list li {
 	position:relative;
 	margin-top:5px;
@@ -5604,50 +5680,67 @@ select.styled1 {}
 	color:#ff5349;
 	background-color:#fff3f2;
 }
+.support-wrap .week-content .calendar-box .board-day table {border-left:1px solid #e5e5e5;}
+.support-wrap .week-content .calendar-box .board-day td {
+	height:40px;
+	border-left:0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
 
-.day-view .line {position:relative;}
-.day-view .line p {
+.board-day {
+	position:relative;
+}
+.dimmed-box {
 	position:absolute;
-	width:195px;
+	left:0;
+	height:41px;
+	background-color:#ffb8b4;
+	opacity:.4;
+}
+.dimmed-box span {
+	display:inline-block;
+	position:absolute;
+	height:40px;
+}
+.dimmed-box.box0 {top:0;}
+.dimmed-box.box1 {top:40px;}
+.dimmed-box.box2 {top:80px;}
+.dimmed-box.box3 {top:120px;}
+.dimmed-box.box4 {top:160px;}
+
+.calendar-box .graph-area {
+	overflow:hidden;
+	margin-left:177px;
+}
+.calendar-box .graph-area .hour {
+	float:left;
+	width:6.25%;
+	color:#999;
+	font-size:12px;
+	text-align:center;
+}
+
+.day-graph {
+	position:relative;
+	padding:0 15px 0 194px;
+}
+.day-graph .board-title {
+	position:absolute;
+	left:0;top:0;
+	width:194px;
+	box-sizing:border-box;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+}
+.day-graph .board-title p {
 	height:40px;
 	padding-left:15px;
+	box-sizing:border-box;
+	border-top:1px solid #e5e5e5;
 	color:#333;
 	font-weight:700;
 	line-height:40px;
-	border:1px solid #eee;
-	box-sizing:border-box;
 }
-.day-view .line.time .graph-area {
-	/* padding-left:135px;*/
-	/* margin-left:-18px; */
-	height:30px;}
-.day-view .line.time .graph-area .hour {
-	width:6.25%;
-	height:30px;
-	line-height:30px;
-	border:0;
-	font-size:12px;
-	color:#999;
-	text-align:right;
-
-}
-.day-view .line .graph-area {
-	padding-left:195px;
-	overflow:hidden;
-	width:100%;
-	height:40px;
-	box-sizing:border-box;
-}
-.day-view .line .graph-area .hour {
-	float:left;
-	width:6.6%;
-	height:40px;
-	padding-right:3px;
-	border:1px solid #eee;
-	border-left:0;
-	/* background-color:gold;*/
-	box-sizing:border-box;
-}
-/* .day-view .line .graph-area .hour:last-child {
-	border:0
-}*/
+.day-graph {}

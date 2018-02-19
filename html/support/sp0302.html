@@ -312,47 +312,126 @@
 				<div class="calendar-box mHide">
 					<div class="day-view">
 						<div class="line time">
-								<div class="graph-area">
-									<div class="hour">07:00</div>
-									<div class="hour">08:00</div>
-									<div class="hour">09:00</div>
-									<div class="hour">10:00</div>
-									<div class="hour">11:00</div>
-									<div class="hour">12:00</div>
-									<div class="hour">13:00</div>
-									<div class="hour">14:00</div>
-									<div class="hour">15:00</div>
-									<div class="hour">16:00</div>
-									<div class="hour">17:00</div>
-									<div class="hour">18:00</div>
-									<div class="hour">19:00</div>
-									<div class="hour">20:00</div>
-									<div class="hour">21:00</div>
-									<div class="hour">22:00</div>
-								</div>
+							<div class="graph-area">
+								<div class="hour">07:00</div>
+								<div class="hour">08:00</div>
+								<div class="hour">09:00</div>
+								<div class="hour">10:00</div>
+								<div class="hour">11:00</div>
+								<div class="hour">12:00</div>
+								<div class="hour">13:00</div>
+								<div class="hour">14:00</div>
+								<div class="hour">15:00</div>
+								<div class="hour">16:00</div>
+								<div class="hour">17:00</div>
+								<div class="hour">18:00</div>
+								<div class="hour">19:00</div>
+								<div class="hour">20:00</div>
+								<div class="hour">21:00</div>
+								<div class="hour">22:00</div>
+							</div>
 						</div>
 
-						<div class="line">
+						<div class="day-graph">
+							<div class="board-title">
 								<p>대회의실</p>
-								<div class="graph-area">
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-									<div class="hour"></div>
-								</div>
+								<p>로비 카페테리아 (1F)</p>
+								<p>소회의실 1-1(3F)</p>
+								<p>대강연장</p>
+								<p>시청각실 (5F)</p>
+							</div>
+							<div class="board-day">
+								<table>
+									<tbody>
+										<tr>
+											<td>07:00</td>
+											<td>08:00</td>
+											<td>09:00</td>
+											<td>10:00</td>
+											<td>11:00</td>
+											<td>12:00</td>
+											<td>13:00</td>
+											<td>14:00</td>
+											<td>15:00</td>
+											<td>16:00</td>
+											<td>17:00</td>
+											<td>18:00</td>
+											<td>19:00</td>
+											<td>20:00</td>
+											<td>21:00</td>
+										</tr>
+										<tr>
+											<td>07:00</td>
+											<td>08:00</td>
+											<td>09:00</td>
+											<td>10:00</td>
+											<td>11:00</td>
+											<td>12:00</td>
+											<td>13:00</td>
+											<td>14:00</td>
+											<td>15:00</td>
+											<td>16:00</td>
+											<td>17:00</td>
+											<td>18:00</td>
+											<td>19:00</td>
+											<td>20:00</td>
+											<td>21:00</td>
+										</tr>
+										<tr>
+											<td>07:00</td>
+											<td>08:00</td>
+											<td>09:00</td>
+											<td>10:00</td>
+											<td>11:00</td>
+											<td>12:00</td>
+											<td>13:00</td>
+											<td>14:00</td>
+											<td>15:00</td>
+											<td>16:00</td>
+											<td>17:00</td>
+											<td>18:00</td>
+											<td>19:00</td>
+											<td>20:00</td>
+											<td>21:00</td>
+										</tr>
+										<tr>
+											<td>07:00</td>
+											<td>08:00</td>
+											<td>09:00</td>
+											<td>10:00</td>
+											<td>11:00</td>
+											<td>12:00</td>
+											<td>13:00</td>
+											<td>14:00</td>
+											<td>15:00</td>
+											<td>16:00</td>
+											<td>17:00</td>
+											<td>18:00</td>
+											<td>19:00</td>
+											<td>20:00</td>
+											<td>21:00</td>
+										</tr>
+										<tr>
+											<td>07:00</td>
+											<td>08:00</td>
+											<td>09:00</td>
+											<td>10:00</td>
+											<td>11:00</td>
+											<td>12:00</td>
+											<td>13:00</td>
+											<td>14:00</td>
+											<td>15:00</td>
+											<td>16:00</td>
+											<td>17:00</td>
+											<td>18:00</td>
+											<td>19:00</td>
+											<td>20:00</td>
+											<td>21:00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-
 					</div>
 				</div>
 				<!--// PC 컨텐츠 -->
@@ -425,16 +504,151 @@
 	</div>
 </div>
 
-<!-- <script>
-function time_position(){
-	var boxW = $('.day-view .graph-area .hour').outerWidth() *2;
-	$('.day-view .time .graph-area').css('padding-left', boxW);
-}
-$(window).resize(function(){
- time_position();
+<script>
+$(window).load(function(){
+	dataRe();
 });
- time_position();
-</script> -->
 
+$(window).resize(function(){
+	dataRe();
+});
+
+function dataRe(){
+	$('.dimmed-box').remove();
+	// 대회의실
+	BoxS00 = '07:00' //시작
+	BoxE00 = '15:00' // 끝
+	// 로비 카페테리아 (1F)
+	BoxS01 = '09:10' //시작
+	BoxE01 = '10:50' //끝
+	// 소회의실 1-1(3F)
+	BoxS02 = '20:30' //시작
+	BoxE02 = '21:50' //끝
+	// 대강연장
+	BoxS03 = '15:20' //시작
+	BoxE03 = '19:10' //끝
+	// 시청각실 (5F)
+	BoxS04 = '12:10' //시작
+	BoxE04 = '15:30' //끝
+
+	$('.board-day tr').each(function(){
+		var idx = $(this).index();
+		$('.board-day').append('<div class="dimmed-box box' + idx + '"><span class="start"></span><span class="end"></span></div>');
+	});
+
+	$('.dimmed-box.box0 .start').attr('data', BoxS00);
+	$('.dimmed-box.box0 .end').attr('data', BoxE00);
+	$('.dimmed-box.box1 .start').attr('data', BoxS01);
+	$('.dimmed-box.box1 .end').attr('data', BoxE01);
+	$('.dimmed-box.box2 .start').attr('data', BoxS02);
+	$('.dimmed-box.box2 .end').attr('data', BoxE02);
+	$('.dimmed-box.box3 .start').attr('data', BoxS03);
+	$('.dimmed-box.box3 .end').attr('data', BoxE03);
+	$('.dimmed-box.box4 .start').attr('data', BoxS04);
+	$('.dimmed-box.box4 .end').attr('data', BoxE04);
+
+	$('.dimmed-box span').each(function(){
+		var wid = $('.board-day td').outerWidth();
+
+		if($(this).attr('data') == '07:00') $(this).attr('data', '0');
+		if($(this).attr('data') == '07:10') $(this).attr('data', wid*1.19 - wid);
+		if($(this).attr('data') == '07:20') $(this).attr('data', wid*1.32 - wid);
+		if($(this).attr('data') == '07:30') $(this).attr('data', wid*1.5 -wid );
+		if($(this).attr('data') == '07:40') $(this).attr('data', wid*1.66 - wid);
+		if($(this).attr('data') == '07:50') $(this).attr('data', wid*1.82 - wid);
+		if($(this).attr('data') == '08:00') $(this).attr('data', wid);
+		if($(this).attr('data') == '08:10') $(this).attr('data', wid*1.19);
+		if($(this).attr('data') == '08:20') $(this).attr('data', wid*1.32);
+		if($(this).attr('data') == '08:30') $(this).attr('data', wid*1.5);
+		if($(this).attr('data') == '08:40') $(this).attr('data', wid*1.66);
+		if($(this).attr('data') == '08:50') $(this).attr('data', wid*1.82);
+		if($(this).attr('data') == '09:00') $(this).attr('data', wid*2);
+		if($(this).attr('data') == '09:10') $(this).attr('data', wid*2.19);
+		if($(this).attr('data') == '09:20') $(this).attr('data', wid*2.32);
+		if($(this).attr('data') == '09:30') $(this).attr('data', wid*2.5);
+		if($(this).attr('data') == '09:40') $(this).attr('data', wid*2.66);
+		if($(this).attr('data') == '09:50') $(this).attr('data', wid*2.82);
+		if($(this).attr('data') == '10:00') $(this).attr('data', wid*3);
+		if($(this).attr('data') == '10:10') $(this).attr('data', wid*3.19);
+		if($(this).attr('data') == '10:20') $(this).attr('data', wid*3.32);
+		if($(this).attr('data') == '10:30') $(this).attr('data', wid*3.5);
+		if($(this).attr('data') == '10:40') $(this).attr('data', wid*3.66);
+		if($(this).attr('data') == '10:50') $(this).attr('data', wid*3.82);
+		if($(this).attr('data') == '11:00') $(this).attr('data', wid*4);
+		if($(this).attr('data') == '11:10') $(this).attr('data', wid*4.19);
+		if($(this).attr('data') == '11:20') $(this).attr('data', wid*4.32);
+		if($(this).attr('data') == '11:30') $(this).attr('data', wid*4.5);
+		if($(this).attr('data') == '11:40') $(this).attr('data', wid*4.66);
+		if($(this).attr('data') == '11:50') $(this).attr('data', wid*4.82);
+		if($(this).attr('data') == '12:00') $(this).attr('data', wid*5);
+		if($(this).attr('data') == '12:10') $(this).attr('data', wid*5.19);
+		if($(this).attr('data') == '12:20') $(this).attr('data', wid*5.32);
+		if($(this).attr('data') == '12:30') $(this).attr('data', wid*5.5);
+		if($(this).attr('data') == '12:40') $(this).attr('data', wid*5.66);
+		if($(this).attr('data') == '12:50') $(this).attr('data', wid*5.82);
+		if($(this).attr('data') == '13:00') $(this).attr('data', wid*6);
+		if($(this).attr('data') == '13:10') $(this).attr('data', wid*6.19);
+		if($(this).attr('data') == '13:20') $(this).attr('data', wid*6.32);
+		if($(this).attr('data') == '13:30') $(this).attr('data', wid*6.5);
+		if($(this).attr('data') == '13:40') $(this).attr('data', wid*6.66);
+		if($(this).attr('data') == '13:50') $(this).attr('data', wid*6.82);
+		if($(this).attr('data') == '14:00') $(this).attr('data', wid*7);
+		if($(this).attr('data') == '14:10') $(this).attr('data', wid*7.19);
+		if($(this).attr('data') == '14:20') $(this).attr('data', wid*7.32);
+		if($(this).attr('data') == '14:30') $(this).attr('data', wid*7.5);
+		if($(this).attr('data') == '14:40') $(this).attr('data', wid*7.66);
+		if($(this).attr('data') == '14:50') $(this).attr('data', wid*7.82);
+		if($(this).attr('data') == '15:00') $(this).attr('data', wid*8);
+		if($(this).attr('data') == '15:10') $(this).attr('data', wid*8.19);
+		if($(this).attr('data') == '15:20') $(this).attr('data', wid*8.32);
+		if($(this).attr('data') == '15:30') $(this).attr('data', wid*8.5);
+		if($(this).attr('data') == '15:40') $(this).attr('data', wid*8.66);
+		if($(this).attr('data') == '15:50') $(this).attr('data', wid*8.82);
+		if($(this).attr('data') == '16:00') $(this).attr('data', wid*9);
+		if($(this).attr('data') == '16:10') $(this).attr('data', wid*9.19);
+		if($(this).attr('data') == '16:20') $(this).attr('data', wid*9.32);
+		if($(this).attr('data') == '16:30') $(this).attr('data', wid*9.5);
+		if($(this).attr('data') == '16:40') $(this).attr('data', wid*9.66);
+		if($(this).attr('data') == '16:50') $(this).attr('data', wid*9.82);
+		if($(this).attr('data') == '17:00') $(this).attr('data', wid*10);
+		if($(this).attr('data') == '17:10') $(this).attr('data', wid*10.19);
+		if($(this).attr('data') == '17:20') $(this).attr('data', wid*10.32);
+		if($(this).attr('data') == '17:30') $(this).attr('data', wid*10.5);
+		if($(this).attr('data') == '17:40') $(this).attr('data', wid*10.66);
+		if($(this).attr('data') == '17:50') $(this).attr('data', wid*10.82);
+		if($(this).attr('data') == '18:00') $(this).attr('data', wid*11);
+		if($(this).attr('data') == '18:10') $(this).attr('data', wid*11.19);
+		if($(this).attr('data') == '18:20') $(this).attr('data', wid*11.32);
+		if($(this).attr('data') == '18:30') $(this).attr('data', wid*11.5);
+		if($(this).attr('data') == '18:40') $(this).attr('data', wid*11.66);
+		if($(this).attr('data') == '18:50') $(this).attr('data', wid*11.82);
+		if($(this).attr('data') == '19:00') $(this).attr('data', wid*12);
+		if($(this).attr('data') == '19:10') $(this).attr('data', wid*12.19);
+		if($(this).attr('data') == '19:20') $(this).attr('data', wid*12.32);
+		if($(this).attr('data') == '19:30') $(this).attr('data', wid*12.5);
+		if($(this).attr('data') == '19:40') $(this).attr('data', wid*12.66);
+		if($(this).attr('data') == '19:50') $(this).attr('data', wid*12.82);
+		if($(this).attr('data') == '20:00') $(this).attr('data', wid*13);
+		if($(this).attr('data') == '20:10') $(this).attr('data', wid*13.19);
+		if($(this).attr('data') == '20:20') $(this).attr('data', wid*13.32);
+		if($(this).attr('data') == '20:30') $(this).attr('data', wid*13.5);
+		if($(this).attr('data') == '20:40') $(this).attr('data', wid*13.66);
+		if($(this).attr('data') == '20:50') $(this).attr('data', wid*13.82);
+		if($(this).attr('data') == '21:00') $(this).attr('data', wid*14);
+		if($(this).attr('data') == '21:10') $(this).attr('data', wid*14.19);
+		if($(this).attr('data') == '21:20') $(this).attr('data', wid*14.32);
+		if($(this).attr('data') == '21:30') $(this).attr('data', wid*14.5);
+		if($(this).attr('data') == '21:40') $(this).attr('data', wid*14.66);
+		if($(this).attr('data') == '21:50') $(this).attr('data', wid*14.82);
+		if($(this).attr('data') == '22:00') $(this).attr('data', '100%');
+	});
+
+	$('.dimmed-box').each(function(){
+		var left = $(this).find('.start').attr('data');
+		var wid = $(this).find('.end').attr('data');
+		$(this).delay(500).animate({'left':left, 'width':wid - left}, 1);
+	});
+}
+</script>
 </body>
 </html>

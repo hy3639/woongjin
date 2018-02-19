@@ -121,7 +121,8 @@
 	폼요소
 =========================================================================== */
 /* 인풋 텍스트 */
-input[type=text] {
+input[type=text],
+input[type=password] {
 	width:100% !important;
 	height:35px;
 	padding:0 10px;
@@ -1695,6 +1696,68 @@ select.styled1 {
 =========================================================================== */
 .gnb-select {margin-bottom:10px;}
 .gnb-select .selectWrap {width:100%;}
+
+/* ===========================================================================
+	로그인
+=========================================================================== */
+.login-wrap {}
+.login-wrap .login-area {
+	padding:10px 20px 20px;
+}
+.login-wrap .login-area .logo {
+	width:81px;
+	height:48px;
+	margin:0 auto;
+	background:url(../img/mobile/layout/site_logo02.png) no-repeat 0 0;
+	background-size:81px 48px;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.login-wrap .login-area .login-box {margin-top:10px;}
+.login-wrap .login-area .login-box .form {}
+.login-wrap .login-area .login-box .form input {
+	width:100%;
+	margin-top:5px;
+}
+.login-wrap .login-area .login-box .form input:first-child {margin-top:0;}
+.login-wrap .login-area .login-box .form .btn-text {
+	width:100%;
+	margin-top:10px;
+	color:#fff;
+}
+.login-wrap .login-area .login-box .form .check-list {
+	overflow:hidden;
+	margin-top:8px;
+}
+.login-wrap .login-area .login-box .form .check-list .item {
+	float:left;
+	font-size:12px;
+	line-height:20px;
+}
+.login-wrap .login-area .login-box .form .check-list .item + .item {
+	position:relative;
+	padding-left:21px;
+}
+.login-wrap .login-area .login-box .form .check-list .item + .item:before {
+	content:'';
+	position:absolute;
+	left:10px;top:50%;
+	width:1px;
+	height:10px;
+	margin-top:-4px;
+	background-color:#ddd;
+}
+.login-wrap .login-area .login-box .form .check-list .item a {
+	display:inline-block;
+	padding-top:1px;
+}
+.login-wrap .login-area .login-box .img-area {
+	margin-top:10px;
+	font-size:0;
+	line-height:0;
+}
+.login-wrap .login-area .login-box .img-area img {width:100%;}
 
 /* ===========================================================================
 	컨텐츠
