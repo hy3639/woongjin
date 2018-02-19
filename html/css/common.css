@@ -45,6 +45,10 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 	url(font/NanumGothicBold.ttf) format('truetype');
 }
 
+input[type=password] {
+	font-family:-webkit-body;
+}
+
 .hide {display:none;}
 
 .wide {
@@ -53,9 +57,7 @@ table {table-layout:fixed;width:100%;margin:0;padding:0;border-spacing:0;border:
 }
 
 
-.container {
-	padding:115px 0 50px 220px;
-}
+.container {padding:115px 0 50px 220px;}
 
 .footer {
 	overflow:hidden;

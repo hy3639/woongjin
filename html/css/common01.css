@@ -5169,6 +5169,42 @@ select.styled1 {}
 	margin-top:8px;
 }
 
+/* 예약정보 레이어 */
+.layer-popup.info-layer {
+	display:none;
+	position:fixed;
+	left:0;top:0;
+	z-index:120;
+	width:300px;
+	box-shadow:1px 4px 4px rgba(0,0,0,.1);
+	border:1px solid #ddd;
+}
+.layer-popup.info-layer .info-cont {
+	padding:26px 30px 37px;
+}
+.layer-popup.info-layer .info-cont .title {
+	color:#333;
+	font-size:14px;
+	font-weight:700;
+}
+.layer-popup.info-layer .info-cont dl {
+	overflow:hidden;
+	font-size:12px;
+	padding-top:10px;
+}
+.layer-popup.info-layer .info-cont dl dt {
+	clear:both;
+	float:left;
+	margin-top:7px;
+	width:70px;
+}
+.layer-popup.info-layer .info-cont dl dd {
+	float:left;
+	margin-top:7px;
+	color:#333;
+}
+.layer-popup.info-layer {}
+
 /* ===========================================================================
 	윈도우 팝업
 =========================================================================== */
