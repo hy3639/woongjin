@@ -3761,6 +3761,30 @@ select.styled1 {
 .pop-write .board-write1 th,
 .pop-write .board-write1 td {padding-top:7px;}
 
+/*팝업미리보기*/
+.window-popup.support-wrap .pop-wrap .pop-img-area {
+	width:100%;
+	font-size:0;
+}
+.window-popup.support-wrap .pop-wrap .bottom-area {
+	padding:12px 15px;
+	background-color:#666;
+}
+.window-popup.support-wrap .pop-wrap .bottom-area label {color:#fff;}
+.window-popup.support-wrap .pop-wrap .bottom-area .btn-pop-close {
+	float:right;
+	color:#fff;
+	line-height:20px;
+}
+.window-popup.support-wrap .pop-wrap .bottom-area .btn-pop-close:before {
+	content:'';
+	display:inline-block;
+	width:9px;
+	height:9px;
+	margin-right:5px;
+	background:url(../img/btn/btn_pop_close2.png) no-repeat 0 50%;
+}
+
 /*자원관리*/
 .resource-area {border-top:1px solid ##e5e5e5}
 .resource-area .board-list2 ul {border-top:1px solid #e5e5e5}
@@ -4033,3 +4057,88 @@ select.styled1 {
 .calendar-box.type2 .inner:last-child {border:0}
 .calendar-box.type2 .inner:last-child:before {display:none;}
 .support-wrap .week-content .calendar-box.type2 {border-bottom:0}
+
+/*자원예약(작성)*/
+.selectWrap {
+	display:inline-block;
+	position:relative;
+	height:35px;
+	background-color:#fff;
+	text-align:left;
+	vertical-align:middle;
+}
+.hide {display:none;}
+.formCont .formItem {display:none;}
+.form-list.inline{overflow:hidden;}
+.form-list.inline .item {float:left;margin-left:10px;}
+.form-list.inline .item:first-child {margin-left:0}
+.window-popup.support-wrap .Radio0102 .form-list.inline .item {float:none;margin-left:0}
+.window-popup.support-wrap .board-write1 {
+	position:inherit;
+	padding-bottom:0;
+	border-bottom:0;
+}
+.window-popup.support-wrap .board-write1:before {display:none;}
+.window-popup.support-wrap .form-list {	overflow:hidden;}
+.window-popup.support-wrap .reservation-date .form-list li{	float:left;	margin-left:10px;}
+.window-popup.support-wrap .form-list li {margin-bottom:10px;}
+.window-popup.support-wrap .form-list li:first-child {margin-left:0}
+.window-popup.support-wrap .form-list li:last-child {margin-bottom:0}
+.window-popup.support-wrap .repeat-area > .text {vertical-align:middle;margin-right:5px;}
+.window-popup .year-month-select {margin:0;}
+.window-popup.support-wrap .repeat-area .year-month-select {
+	display:inline-block;
+	vertical-align:middle;
+}
+.window-popup.support-wrap .year-month-select .select-area {padding-left:0;width:100%}
+.window-popup.support-wrap .year-month-select .select-area {
+	overflow:hidden;
+	float:left;
+	padding:0
+}
+.window-popup.support-wrap .year-month-select .select-area .select-box {position:relative;}
+.window-popup.support-wrap .year-month-select .select-area .select-box .text {
+	display:block;
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-11px;
+}
+.window-popup.support-wrap .repeat-area .year-month-select .select-area .select-box {width:120px;}
+.window-popup.support-wrap .repeat-area .year-month-select .select-area .select-box .selectWrap {width:90px !important;}
+.window-popup.support-wrap .repeat-area .year-month-select .select-area .select-box:last-child .selectWrap {width:70px !important;}
+.window-popup.support-wrap .repeat-area .year-month-select .select-area .select-box:last-child {width:105px;}
+
+.window-popup.support-wrap .input-area + span {
+	line-height:35px;
+	margin-left:20px;
+}
+
+
+.window-popup.support-wrap .reservation-time .year-month-select .select-area .select-box {width:50%;}
+.window-popup.support-wrap .reservation-time .year-month-select .select-area .select-box:first-child {position:relative;}
+.window-popup.support-wrap .reservation-time .year-month-select .select-area .select-box:first-child {padding-right:12px;}
+
+.window-popup.support-wrap .btn-text {line-height:33px;}
+.window-popup.support-wrap .choice-area {position:relative;padding-left:80px}
+.window-popup.support-wrap .choice-area .btn-text {
+	position:absolute;
+	left:0;
+	top:0;
+	width:75px;
+}
+
+.window-popup.support-wrap .choice-area .selectWrap {width:100% !important;}
+.window-popup.support-wrap .input-area {position:relative;box-sizing:border-box;}
+.window-popup.support-wrap .input-area .btn-text {
+	position:absolute;
+	right:0;
+	top:0;
+	width:54px;
+}
+.window-popup.support-wrap .board-write1 tr:nth-child(9) td {position:relative;}
+.window-popup.support-wrap .input-area + span {
+	position:absolute;
+	right:0;top:-1px;
+}
+.window-popup.support-wrap .input-area {padding-right:60px;}

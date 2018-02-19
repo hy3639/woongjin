@@ -587,6 +587,21 @@ select.styled1 {}
 	font-size:12px;
 }
 
+.input-file3 {
+display:inline-block;
+overflow:hidden;
+position:relative;
+box-sizing:border-box;
+vertical-align:middle;
+line-height:35px;
+}
+.input-file3 input[type=file] {
+	position:absolute;
+	left:0;top:0;bottom:0;
+	width:100%;
+	opacity:0;
+}
+
 /* 라디오 선택시 컨텐츠 영역 노출 */
 .formCont {margin-top:10px;}
 .formCont .formItem {display:none;}
@@ -1787,9 +1802,9 @@ select.styled1 {}
 }
 .board-write1 th,
 .board-write1 td {
-	height:35px;
-	padding:15px 30px;
-	/* box-sizing:border-box;*/
+	height:66px;
+	border-top:1px solid #f5f5f5;
+	box-sizing:border-box;
 }
 .board-write1 tr:first-child th,
 .board-write1 tr:first-child td {border-top:0;}
@@ -1800,8 +1815,9 @@ select.styled1 {}
 }
 .board-write1 tbody th {padding:0;}
 .board-write1 td {
-	height:35px;
-	padding:18px 30px;
+	height:66px;
+	padding:15px 30px;
+	border-top:1px solid #f5f5f5;
 	box-sizing:border-box;
 }
 .board-write1 .empty th {display:none;}
@@ -3294,13 +3310,13 @@ select.styled1 {}
 }
 
 .slide-area .slider1 .bx-pager {
-		position:absolute;
-		right:30px;top:35px;
-		z-index:5;
-		font-size:0;
-		line-height:0;
-		z-index:100;
-	}
+	position:absolute;
+	right:0;top:-45px;
+	z-index:5;
+	font-size:0;
+	line-height:0;
+	z-index:100;
+}
 .slide-area .slider1 .bx-pager-item {
 	display:inline-block;
 	text-indent:-9999px;
@@ -3748,6 +3764,9 @@ select.styled1 {}
 	line-height:48px;
 }
 .drag-area .drag-box:hover {cursor:s-resize;}
+
+/*워크스페이스 개설신청 소개이미지영역*/
+.td-img-area img {width:110px;height:90px;vertical-align:bottom}
 
 /* ===========================================================================
 	전자결재
@@ -5620,6 +5639,31 @@ select.styled1 {}
 .pop-write .date-area.special .date-text {margin-left:10px;}
 .pop-write .date-area.special .date-text:first-child {margin-left:0}
 
+/*팝업미리보기*/
+.window-popup.support-wrap .pop-wrap .pop-img-area {
+	width:100%;
+	font-size:0;
+}
+/* .window-popup.support-wrap .pop-wrap .pop-img-area img {width:100%}*/
+.window-popup.support-wrap .pop-wrap .bottom-area {
+	padding:12px 15px;
+	background-color:#666;
+}
+.window-popup.support-wrap .pop-wrap .bottom-area label {color:#fff;}
+.window-popup.support-wrap .pop-wrap .bottom-area .btn-pop-close {
+	float:right;
+	color:#fff;
+	line-height:20px;
+}
+.window-popup.support-wrap .pop-wrap .bottom-area .btn-pop-close:before {
+	content:'';
+	display:inline-block;
+	width:9px;
+	height:9px;
+	margin-right:5px;
+	background:url(../img/btn/btn_pop_close2.png) no-repeat 0 50%;
+}
+
 /*자원관리*/
 .support-wrap .sorting-area {border-bottom:0}
 .resource-area {margin:0 50px;}
@@ -5779,4 +5823,90 @@ select.styled1 {}
 	font-weight:700;
 	line-height:40px;
 }
-.day-graph {}
+
+
+/*자원예약 등록(윈도우팝업)*/
+.window-popup.support-wrap .section {margin:0 25px}
+.window-popup.support-wrap .board-write1 {margin:0 25px;}
+.window-popup.support-wrap .board-write1 td {padding:15px 0;}
+.window-popup.support-wrap .reservation-date .form-list {
+	display:inline-block;
+	vertical-align:middle;
+}
+.window-popup.support-wrap .reservation-date .period-area {
+	margin-left:20px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.window-popup.support-wrap .repeat-area > .text{
+	vertical-align:middle;
+}
+.window-popup.support-wrap .repeat-area .year-month-select {
+	display:inline-block;
+	vertical-align:middle;
+}
+.window-popup.support-wrap .year-month-select .select-box {
+	width:140px;
+}
+.window-popup.support-wrap .repeat-area .year-month-select .select-box {	margin-left:10px;}
+.window-popup.support-wrap .repeat-area .year-month-select .text {color:#666;margin-left:5px;}
+
+.window-popup.support-wrap .input-area {float:left;}
+.window-popup.support-wrap .input-area + span {
+	line-height:35px;
+	margin-left:20px;
+}
+.window-popup.support-wrap .choice-area .btn-text {margin-right:8px;}
+
+.window-popup.support-wrap .formCont {margin-top:0}
+
+.hide{display:none;}
+
+/*Knowledge*/
+.tree-area .tree-menu {border:0;background-color:#f5f5f5}
+.tree-area .tree-menu .tree-list li li:last-child:before {background-color:#f5f5f5}
+/* .gnb-wrap .depth1 .depth2-list .depth2-item a {}*/
+.gnb-wrap .depth1 .depth2-list .depth2-item.tree-area a {
+	padding:8px 0;
+	}
+.gnb-wrap .depth1 .depth2-list .depth2-item.tree-area a:hover, .gnb-wrap .depth1 .depth2-list .depth2-item.tree-area.on a {
+	text-decoration:none;
+	font-weight:700;
+}
+.knowledge-area{
+	position:relative;
+	padding-right:300px;
+	margin:40px 50px 0 50px;
+}
+.knowledge-area .tab-list1 {margin:0}
+.knowledge-area .tabArea.left {
+	/* position:absolute;
+	left:0;top:0;
+	width:100%;
+	box-sizing:border-box;*/
+}
+.knowledge-area .tabArea + .right {
+	position:absolute;
+	right:0;top:0;
+	width:260px;
+}
+.knowledge-area .tabContent {margin:40px 0 0 0}
+.knowledge-area .right .table-area {position:relative}
+.knowledge-area .right .table-area:first-child {margin-bottom:40px;}
+.knowledge-area .right .table-area .btn-more {
+	position:absolute;
+	right:0;
+	top:0;
+	padding-right:12px;
+	color:#999;
+}
+.knowledge-area .right .table-area .btn-more:before {
+	content:'';
+	position:absolute;
+	right:0;
+	top:50%;
+	width:4px;
+	height:7px;
+	margin-top:-3px;
+	background:url(../img/ico/ico_go.png) no-repeat 0 0;
+}
