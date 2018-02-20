@@ -36,7 +36,6 @@
 /* 웹에서 숨김처리 */
 .wHide {display:none;}
 
-
 /* 상단 그룹별 */
 .board-value {margin:0 50px 40px;}
 .board-value .value-title {
@@ -1847,6 +1846,9 @@ line-height:35px;
 	right:0;
 	top:0;
 }
+
+.board-write1 .bdT0 th,
+.board-write1 .bdT0 td {border-top:0;}
 
 .board-write2 {}
 .board-write2 .selectWrap {height:28px;}
@@ -5593,6 +5595,11 @@ line-height:35px;
 	display:block;
 	clear:both;
 }
+.form-list .item.alertMsg {
+	margin-left:20px;
+	padding-left:0;
+}
+.form-list .item.alertMsg input {display:none;}
 /*
 .form-list .item .radioWrap {margin-right:6px}
 .form-list .item .checkWrap{margin-right:7px;}
