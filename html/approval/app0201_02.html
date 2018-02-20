@@ -1,12 +1,10 @@
-<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <title>웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
-<link rel="stylesheet" media="screen and (min-width: 800px)" href="../css/common01.css"> <!--PC-->
-<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" href="../css/common01.css"> <!--PC-->
 <link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
 
 <script src="../js/jquery-1.9.1.min.js"></script>
@@ -337,19 +335,19 @@
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
-					<a class="btn-item"><span class="btn-text">결제선표시</span></a>
-					<a class="btn-item mHide"><span class="btn-text">선택반려</span></a>
-					<a class="btn-item mHide"><span class="btn-text">참조자</span></a>
+					<div class="btn-item"><button type="button" class="btn-text btn-app-tog">결재선표시</button></div>
+					<div class="btn-item mHide"><a href="#" class="btn-text">선택반려</a></div>
+					<div class="btn-item mHide"><a href="#" class="btn-text">참조자</a></div>
 				</div>
 				<div class="btn-align right">
-					<a class="btn-item mHide"><span class="btn-text">기안부서진행현황</span></a>
-					<a class="btn-item"><span class="btn-text">목록</span></a>
-					<a class="btn-item mHide"><span class="btn-text">인쇄</span></a>
+					<div class="btn-item mHide"><span class="btn-text">기안부서진행현황</a></div>
+					<div class="btn-item"><span class="btn-text">목록</a></div>
+					<div class="btn-item mHide"><span class="btn-text">인쇄</a></div>
 				</div>
 				<div class="btn-align">
-					<a class="btn-item mHide"><span class="btn-text">수정</span></a>
-					<a class="btn-item mHide"><span class="btn-text">결재선</span></a>
-					<a class="btn-item"><span class="btn-text bdColor fColor">결재</span></a>
+					<div class="btn-item mHide"><a href="#" class="btn-text">수정</a></div>
+					<div class="btn-item mHide"><a href="#" class="btn-text">결재선</a></div>
+					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">결재</a></div>
 				</div>
 			</div>
 			<div class="approval-view">
@@ -357,90 +355,6 @@
 				<div class="app-total-wrap">
 					<div class="app-list-wrap">
 						<div class="app-list">
-							<div class="line">
-								<p><span>수<br>신<br>부<br>서</span></p>
-								<div class="item">
-									<p class="position">팀원</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp1.png" alt="제출">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											김웅진<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position">팀원</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp2.png" alt="승인">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											김은미<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position">팀장</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp2.png" alt="승인">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											이종석<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<p class="info"></p>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item wHide"></div>
-							</div>
 							<div class="line">
 								<p><span>발<br>신<br>부<br>서</span></p>
 								<div class="item">
@@ -494,7 +408,76 @@
 										<p class="info">관리자</p>
 									</div>
 								</div>
-								<div class="item wHide"></div>
+							</div>
+							<div class="line">
+								<p><span>수<br>신<br>부<br>서</span></p>
+								<div class="item">
+									<p class="position">팀원</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp1.png" alt="제출">
+									</div>
+									<div class="info-wrap">
+										<p class="info">
+											김웅진<span>01.17 10:00</span>
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<p class="position">팀원</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp2.png" alt="승인">
+									</div>
+									<div class="info-wrap">
+										<p class="info">
+											김은미<span>01.17 10:00</span>
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<p class="position">팀장</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp2.png" alt="승인">
+									</div>
+									<div class="info-wrap">
+										<p class="info">
+											이종석<span>01.17 10:00</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="line">
+								<p><span>관<br><br>련</span></p>
+								<div class="item">
+									<p class="position">팀원</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp2.png" alt="승인">
+									</div>
+									<div class="info-wrap">
+										<p class="info">
+											고대호<span>01.17 10:00</span>
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<p class="position">팀원</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp2.png" alt="승인">
+									</div>
+									<div class="info-wrap">
+										<p class="info">
+											김은미<span>01.17 10:00</span>
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<p class="position">팀장</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp6.png" alt="회수">
+									</div>
+									<div class="info-wrap">
+										<p class="info">이화영</p>
+									</div>
+								</div>
 							</div>
 							<div class="line">
 								<p><span>결<br><br>재</span></p>
@@ -547,105 +530,6 @@
 										<p class="info">관리자</p>
 									</div>
 								</div>
-								<div class="item wHide"></div>
-							</div>
-							<div class="line">
-								<p><span>관<br><br>련</span></p>
-								<div class="item">
-									<p class="position">팀원</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp2.png" alt="승인">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											고대호<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position">팀원</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp2.png" alt="승인">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											김은미<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position">팀장</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp6.png" alt="회수">
-									</div>
-									<div class="info-wrap">
-										<p class="info">이화영</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item wHide"></div>
-							</div>
-							<div class="line">
-								<p><span>합<br><br>의</span></p>
-								<div class="item">
-									<p class="position">팀원</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp3.png" alt="합의">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											박종철<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position">팀원</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp3.png" alt="합의">
-									</div>
-									<div class="info-wrap">
-										<p class="info">
-											김한준<span>01.17 10:00</span>
-										</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position">팀장</p>
-									<div class="stamp">
-										<img src="../img/img/img_stamp4.png" alt="미결">
-									</div>
-									<div class="info-wrap">
-										<p class="info">이화영</p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-											<p class="info"></p>
-									</div>
-								</div>
-								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
-									<div class="info-wrap">
-										<p class="info"></p>
-									</div>
-								</div>
-								<div class="item wHide"></div>
 							</div>
 							<div class="line">
 								<p><span>주<br><br>관</span></p>
@@ -694,14 +578,40 @@
 										</p>
 									</div>
 								</div>
+							</div>
+							<div class="line">
+								<p><span>합<br><br>의</span></p>
 								<div class="item">
-									<p class="position"></p>
-									<div class="stamp"></div>
+									<p class="position">팀원</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp3.png" alt="합의">
+									</div>
 									<div class="info-wrap">
-										<p class="info"></p>
+										<p class="info">
+											박종철<span>01.17 10:00</span>
+										</p>
 									</div>
 								</div>
-								<div class="item wHide"></div>
+								<div class="item">
+									<p class="position">팀원</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp3.png" alt="합의">
+									</div>
+									<div class="info-wrap">
+										<p class="info">
+											김한준<span>01.17 10:00</span>
+										</p>
+									</div>
+								</div>
+								<div class="item">
+									<p class="position">팀장</p>
+									<div class="stamp">
+										<img src="../img/img/img_stamp4.png" alt="미결">
+									</div>
+									<div class="info-wrap">
+										<p class="info">이화영</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -477,6 +477,11 @@ $(document).ready(function(){
 		$(this).css({'background-color':'#fff'});
 	});
 
+	// 결재선표시 버튼
+	$('.btn-app-tog').click(function(){
+		$('.app-list-wrap').slideToggle(100);
+	});
+
 
 	/* ===================================================================================
 		탭
@@ -598,7 +603,11 @@ $(document).ready(function(){
 
 
 $(window).load(function(){
-
+	/* 전저결제 결제선 */
+	$('.app-list .line > p span').each(function(){
+		var hei = $(this).outerHeight()
+		$(this).css({'margin-top':-hei/2});
+	});
 });
 
 $(window).resize(function(){
@@ -756,6 +765,29 @@ function resizeMid(){
 
 		/* 검색박스 셀렉트 text(년/월) 제거 */
 		textRemove();
+
+		/* 전저결제 결제선 */
+		$('.app-list .line').removeClass('mgT').find('.item.new').remove();
+		$('.app-list .line').each(function(){
+			var ea = $(this).find('.item').length;
+			if(ea < 5){
+				$(this).append('<div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div>');
+				$(this).find('.item').eq(4).nextAll('.item').remove();
+			}
+			if(ea > 5 && ea < 10){
+				$(this).append('<div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div>');
+				$(this).find('.item').eq(9).nextAll('.item').remove();
+			}
+
+			var idx = $(this).index();
+			if(idx%2 == 1){
+				var tHei = $(this).outerHeight();
+				var pHei = $(this).prev('.line').outerHeight();
+				if(tHei > pHei){
+					$(this).next('.line').addClass('mgT');
+				}
+			}
+		});
 	}else{
 		/* 모바일 ================================================================= */
 		/* gnb */
@@ -833,6 +865,24 @@ function resizeMid(){
 			}
 		});
 		tabSize(); //탭 넓이 자동조절
+
+		/* 전저결제 결제선 */
+		$('.app-list .line').removeClass('mgT').find('.item.new').remove();
+		$('.app-list .line').each(function(){
+			var ea = $(this).find('.item').length;
+			if(ea < 3){
+				$(this).append('<div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div>');
+				$(this).find('.item').eq(2).nextAll('.item').remove();
+			}
+			if(ea > 3 && ea < 6){
+				$(this).append('<div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div>');
+				$(this).find('.item').eq(5).nextAll('.item').remove();
+			}
+			if(ea > 6 && ea < 10){
+				$(this).append('<div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div><div class="item new"></div>');
+				$(this).find('.item').eq(8).nextAll('.item').remove();
+			}
+		});
 	}
 }
 

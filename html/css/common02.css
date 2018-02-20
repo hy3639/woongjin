@@ -3142,25 +3142,28 @@ select.styled1 {
 	position:relative;
 	min-height:130px;
 	padding-left:35px;
- border:1px solid #e5e5e5;
- border-right:0;
- border-bottom:0;
+	border:1px solid #e5e5e5;
+	border-right:0;
+	border-bottom:0;
 	box-sizing:border-box;
 }
 .app-list .line > p {
 	position:absolute;
-	left:0;
-	top:0;
+	left:0;top:0;
 	bottom:0;
 	width:35px;
-	padding:90px 10px;
+	padding:0 10px;
 	border-right:1px solid #e5e5e5;
 	background-color:#fafafa;
 	color:#333;
 	font-weight:700;
 	box-sizing:border-box;
 }
-.app-list .line > p.type2 {padding:98px 10px}
+.app-list .line > p span {
+	position:absolute;
+	left:10px;top:50%;
+	margin-top:-36px;
+}
 .app-list .line {overflow:hidden;}
 .app-list .line .item {
 	float:left;

@@ -623,10 +623,12 @@ line-height:35px;
 	color:#666;
 	font-size:14px;
 	text-align:center;
+	vertical-align:middle;
 	line-height:38px;
 	cursor:pointer;
 }
 .btn-text:hover {
+	padding:0 16px;
 	border:0 !important;
 	background-color:#999;
 	color:#fff !important;
@@ -2899,9 +2901,7 @@ line-height:35px;
 }
 .addfind-cont .title-area .left,
 .addfind-cont .addfile-list .addfile-item .file-name,
-.addfind-cont .foot-info .btn-text {
-	float:left;
-}
+.addfind-cont .foot-info .btn-text {float:left;}
 .addfind-cont .title-area .right,
 .addfind-cont .addfile-list .addfile-item .volume-state,
 .addfind-cont .foot-info .text-area {
@@ -2947,6 +2947,10 @@ line-height:35px;
 	border-top:1px solid #f5f5f5;
 	height:28px;
 	line-height:28px;
+}
+.addfind-cont .title-area .title {
+	margin:0;
+	font-size:13px;
 }
 
 /* 썸네일 */
@@ -3958,7 +3962,6 @@ line-height:35px;
 	padding:40px 0;
 	margin:30px 50px 0 50px;
 }
-.approval-view .board-view2 {margin-top:30px;}
 .approval-view .title {
 	margin-bottom:33px;
 	font-size:30px;
@@ -3975,21 +3978,27 @@ line-height:35px;
 }
 .approval-view .title em {border-bottom:2px solid #333;}
 
-.app-list {overflow:hidden;margin-top:-1px;}
+.app-list-wrap {margin-bottom:30px;}
+.app-list {
+	overflow:hidden;
+	margin-right:-30px;
+}
 .app-list .box {width:100%;box-sizing:border-box;}
 /*
 .app-list .box .line:nth-child(odd) {padding-right:15px;}
 .app-list .box .line:nth-child(even) {padding-left:15px;}
 */
 .app-list .line {
-	width:50%;
-	float:left;
+	overflow:hidden;
+	float:right;
 	position:relative;
+	width:50%;
 	min-height:130px;
-	padding-left:35px;
+	padding:0 30px 0 35px;
 	box-sizing:border-box;
 }
-
+.app-list .line + .line + .line {margin-top:-2px;}
+.app-list .line.mgT {margin-top:-131px;}
 .app-list .line > p {
 	position:absolute;
 	left:0;
@@ -4005,11 +4014,8 @@ line-height:35px;
 .app-list .line > p span {
 	position:absolute;
 	top:50%;
-	left:50%;
-	transform:translate(-50%, -50%);
-	-webkit-transform:translate(-50%, -50%);
+	left:10px;
 }
-.app-list .line {overflow:hidden;}
 .app-list .line .item {
 	float:left;
 	width:20%;
@@ -4019,6 +4025,12 @@ line-height:35px;
 	text-align:center;
 	box-sizing:border-box;
 }
+.app-list .line .item + .item + .item + .item + .item + .item {border-top:0;}
+.app-list .line .item.new:before {
+	content:'';
+	display:block;
+}
+.app-list .line .item.new:before,
 .app-list .line .item .position {
 	min-height:35px;
 	line-height:35px;
