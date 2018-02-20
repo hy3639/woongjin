@@ -57,8 +57,8 @@
 										</div>
 									</div>
 								</div>
-								<span class="swung-dash">~</span>
-								<div class="box-item">
+								<span class="swung-dash Radio0102 hide">~</span>
+								<div class="box-item Radio0102 hide">
 									<div  class="date-text">
 										<div class="btn-calendar"><input type="text" readonly></div>
 										<div class="calendar-layer bdColor">
@@ -168,6 +168,7 @@
 								<div class="select-area">
 									<div class="select-box">
 										<select class="styled1" style="width:100%">
+											<option>07:00</option>
 											<option>07:10</option>
 											<option>07:20</option>
 											<option>07:30</option>
@@ -263,6 +264,7 @@
 									</div>
 									<div class="select-box">
 										<select class="styled1" style="width:100%">
+											<option>07:00</option>
 											<option>07:10</option>
 											<option>07:20</option>
 											<option>07:30</option>
@@ -516,55 +518,18 @@
 </div>
 
 <script>
-/* 반복단위 라디오버튼
-$('.formChange2').each(function(){
-	var idx = $(this).find('.form-list input[type=radio]:checked').index();
-	$(this).closest('tr').next('tr').find('.formItem').eq(idx).show();
-	console.log(idx);
-
-	$(this).find('.form-list input[type=radio]').change(function(){
-		var on = $(this).closest('.form-list').find('input[type=radio]:checked').closest('.item').index();
-		 var sel = $(this).closest('.form-list').find('input[type=radio]:checked').attr('id');
-		 console.log(sel);
-		$(this).closest('tr').next('tr').find('.formItem').hide().eq(on).css('display','table-row');
-		if(sel == 'Radio0201'){
-			$(this).closest('tr').next('tr').hide();
-		}else{
-			$(this).closest('tr').next('tr').css('display','table-row');
+$(document).ready(function(){
+	$('.formShow').change(function(){
+		if(this.checked){
+			var idx = $(this).closest('.item').index();
+			$(this).closest('tr').next('tr').show().find('.formItem').hide().eq(idx-1).show();
 		}
 	});
-
-
-
-});
-*/
-
-
-/* 예약일자 라디오버튼
-$('.reservation-date').find('.period-area').find('.swung-dash').hide().next('.box-item').hide();
-$('.reservation-date input[name="Radio01"]').change(function(){
-	var id = $(this).attr('id');
-	console.log(id);
-	if(id == 'Radio0101'){
-		$(this).closest('.reservation-date').find('.period-area').find('.swung-dash').hide().next('.box-item').hide();
-	}
-	if(id == 'Radio0102'){
-		$(this).closest('.reservation-date').find('.period-area').find('.swung-dash').show().next('.box-item').css('display','table-row');
-	}
-});
-*/
-
-$('.formShow').change(function(){
-	if(this.checked){
-		var idx = $(this).closest('.item').index();
-		$(this).closest('tr').next('tr').show().find('.formItem').hide().eq(idx-1).show();
-	}
-});
-$('.formChange2 .form-list .item:first-child input[type=radio]').change(function(){
-	if(this.checked){
-		$(this).closest('tr').next('tr').hide().find('.formItem').hide();
-		console.log(0);
-	}
+	$('.formChange2 .form-list .item:first-child input[type=radio]').change(function(){
+		if(this.checked){
+			$(this).closest('tr').next('tr').hide().find('.formItem').hide();
+		}
+	});
 });
 </script>
 </body>
