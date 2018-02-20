@@ -782,26 +782,38 @@
 <script>
 $(document).ready(function(){
 	/*-- 문서종류 ----------------------------------------------------------------------------------*/
-	// 셀렉트 변환
+	/* 셀렉트 변환 */
 	$('.doc-type-select').change(function(){
 		var idx = $(this).find('option:selected').index();
+		// 일반결재
 		if(idx == 0){
 			$('.form-line0101').show();
-			$('.form-line0201, .form-line0301').hide();
+			$('.form-line0201, .form-line0202, .form-line0203').hide();
+			$('.form-line0301, .form-line0302, .form-line0303').hide();
 			$('input[type=checkbox].form-line0401').prop('disabled', false).closest('.item').removeClass('alertMsg');
+
+			$('input.form-line0202, input.form-line0203, input.form-line0302, input.form-line0303').prop('checked', false).closest('.radioWrap').removeClass('checked');
+			$('input.form-line0201, input.form-line0301').prop('checked', true).closest('.radioWrap').addClass('checked');
 		}
+		// 신청 2단
 		if(idx == 1){
 			$('.form-line0101, .form-line0201').show();
-			$('.form-line0301').hide();
+			$('.form-line0301, .form-line0302, .form-line0303').hide();
 			$('input[type=checkbox].form-line0401').prop('disabled', false).closest('.item').removeClass('alertMsg');
+
+			$('input.form-line0302, input.form-line0303').prop('checked', false).closest('.radioWrap').removeClass('checked');
+			$('input.form-line0301').prop('checked', true).closest('.radioWrap').addClass('checked');
 		}
+		// 신청 3단
 		if(idx == 2){
 			$('.form-line0101, .form-line0201, .form-line0301').show();
 			$('input[type=checkbox].form-line0401').prop('checked', false).prop('disabled', true).closest('.checkWrap').removeClass('checked').closest('.item').addClass('alertMsg');
 			$('tr.form-line0401').hide();
 		}
 	});
-	// 합의
+
+	/* 합의 */
+	// 선택 가능
 	$('input[type=checkbox].form-line0401').change(function(){
 		if(this.checked){
 			$('tr.form-line0401').show();
@@ -809,11 +821,12 @@ $(document).ready(function(){
 			$('tr.form-line0401').hide();
 		}
 	});
-	// 합의 :: 신청 3단 선택시 불가
+	// 신청 3단 선택시 불가
 	$(document).on('click', '.item.alertMsg', function(){
 		alert('3단 결재선은 합의를 선택할수 없습니다.');
 	});
-	// 참조자 지정
+
+	/* 참조자 지정 */
 	$('input[type=checkbox].form-table05').change(function(){
 		if(this.checked){
 			$('div.form-table05').show();
@@ -825,9 +838,11 @@ $(document).ready(function(){
 	/*-- 합의 결재선 유형 -------------------------------------------------------------------------*/
 	$('input[type=radio]').change(function(){
 		if(this.checked){
+			// 결재선 선택지정
 			if($(this).hasClass('form-line0401')){
 				$('tr.form-line0402').hide();
 			}
+			// 결재선 고정지정
 			if($(this).hasClass('form-line0402')){
 				$('tr.form-line0402').show();
 			}

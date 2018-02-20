@@ -778,6 +778,24 @@ line-height:35px;
 	background-image:url(../img/btn/btn_ico06.png);
 }
 
+/*05*/
+.btn-icon-text.icon05 {padding:0 14px;}
+.btn-icon-text.icon05 .text {padding:0 0 0 23px;}
+.btn-icon-text.icon05 .text:before {
+	left:0;
+	width:14px;
+	height:14px;
+	margin-top:-7px;
+	background-image:url(../img/btn/btn_admin.png);
+}
+
+/*06*/
+.btn-icon-text.icon06 {padding:0 14px;}
+.btn-icon-text.icon06 .text {padding:0 0 0 23px;}
+.btn-icon-text.icon06 .text .icon {
+	background-image:url(../img/btn/btn_write.png);
+}
+
 /*
 	아이콘 버튼
 */
@@ -854,6 +872,11 @@ line-height:35px;
 	width:24px;
 	height:24px;
 	background:url(../img/btn/btn_del04.png) no-repeat 0 0;
+}
+.btn-icon.icon05 {
+	width:20px;
+	height:20px;
+	background:url(../img/btn/btn_modify.png) no-repeat 50% 50%;
 }
 
 /*조회수*/
