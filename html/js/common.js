@@ -70,7 +70,7 @@ $(document).ready(function(){
 	});
 
 	/* 검색 포커스 */
-	$('.search-box1 input[type=text]').focus(function(){
+	$('.search-box1 input[type=text], .search-box3 input[type=text]').focus(function(){
 		$(this).next('.btn-srch').addClass('bgColor');
 	}).blur(function(){
 		$(this).next('.btn-srch').removeClass('bgColor');
@@ -187,6 +187,10 @@ $(document).ready(function(){
 		$(this).addClass('bdColor').closest('.search-text').find('.btn-search').addClass('bgColor');
 	}).blur(function(){
 		$(this).removeClass('bdColor').closest('.search-text').find('.btn-search').removeClass('bgColor');
+	});
+	// 텍스트아레아 자동 높이조절
+	$('.autoHei').each(function(){
+		$(this).autosize();
 	});
 	// 필수체크 인풋
 	$('input.required').each(function(){
@@ -482,6 +486,56 @@ $(document).ready(function(){
 		$('.app-list-wrap').slideToggle(100);
 	});
 
+	// 태그 수정
+	$('.btn-tagModi').click(function(){
+		$(this).closest('.tag-wrap').addClass('modify');
+		var ea = $(this).closest('.tag-list').find('.tag').length;
+		if(ea > 0){
+			$(this).closest('.tag-wrap').find('.fake-placeholder').hide();
+			$(this).closest('.tag-list').find('.tag').each(function(){
+				var text = $(this).text();
+				// 웹
+				$(this).closest('.tag-wrap').find('.tagging .type-zone').before('<div class="tag"><span>#</span> ' + text + '<input type="hidden" name="tag[]" value="' + text + '"><a role="button" class="tag-i">x</a></div>');
+
+				// 모바일
+				$(this).closest('.tag-wrap').find('.tag-modify textarea').append(', ' + text);
+			});
+		}
+	});
+	$(document).on('keydown', '.tagging', function(e){
+		if(e.keyCode  == 8 || e.keyCode  == 46){
+			var ea  = $(this).find('.type-zone').val().length;
+			if(ea == 0){
+				$(this).find('.type-zone').prev('.tag').remove();
+			}
+		}
+	});
+	$(document).on('click', '.tag-i', function(){
+		$(this).closest('.tag').remove();
+	});
+	$('.mHide .btnCancel').click(function(){
+		$(this).closest('.tag-wrap').removeClass('modify').find('.tag-modify .tagging .tag').remove();
+	});
+	$('.mHide .btnStorage').click(function(){
+		var tag = $(this).closest('.tag-wrap');
+		$(tag).find('.tag-list .tag').remove();
+		$(tag).find('.tag-modify .tagging .tag').each(function(){
+			var text = $(this).find('input[type=hidden]').val();
+			$(tag).find('.tag-list .tag-group').append('<a href="#" class="tag">' + text + '</a>');
+		});
+		$(tag).removeClass('modify').find('.tag-modify .tagging .tag').remove();
+	});
+
+	// 모바일
+	$('.wHide .btnCancel').click(function(){
+		$(this).closest('.tag-wrap').removeClass('modify').find('.tag-modify textarea').val('');
+	});
+	$('.wHide .btnStorage').click(function(){
+		var text = $(this).closest('.tag-wrap').removeClass('modify').find('.tag-modify textarea').val();
+		var jbSplit = text.split(', ');
+		console.log(jbSplit);
+	});
+
 
 	/* ===================================================================================
 		탭
@@ -726,7 +780,7 @@ function resizeMid(){
 		$('.btn-item').removeAttr('style');
 
 		/* 아이콘 버튼 오버 */
-		$('.btn-icon-text.icon03').mouseenter(function(){
+		$('.btn-icon-text.icon03, .btn-icon-text.icon06').mouseenter(function(){
 			$(this).addClass('bgColor');
 		}).mouseleave(function(){
 			$(this).removeClass('bgColor');
