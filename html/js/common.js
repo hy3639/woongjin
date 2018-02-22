@@ -545,17 +545,17 @@ $(document).ready(function(){
 	});
 	/* 댓글 수정 */
 	$(document).on('click', '.btn-re-modify', function(){
+		$(this).removeClass('on').closest('.reply-wrap').find('.input-area').hide();
+		$(this).removeClass('on').closest('.reply-wrap').find('.text-area').show();
 		var text =  $(this).closest('.reply-item').find('.text-area').html().replace(/<br>/g, '\n');
-		$(this).closest('.reply-item').find('.text-area').siblings('.rereply-inupt').show().find('textarea').val(text);
+		$(this).closest('.reply-item').find('.text-area').hide().siblings('.rereply-inupt').show().find('textarea').val(text);
 	});
 	$('.reply-item .btn-save').click(function(){
 		var text = $(this).closest('.input-area').find('textarea').val().replace(/\n/g, '<br>');
-		$(this).closest('.reply-item').find('.text-area').html(text);
-
-		
+		$(this).closest('.reply-item').find('.text-area').html(text).show().siblings('.rereply-inupt').hide();
 	});
 	$('.reply-item .btn-cancel').click(function(){
-		$(this).closest('.input-area').find('textarea').val('');
+		$(this).closest('.reply-item').find('.text-area').show().siblings('.rereply-inupt').hide();
 	});
 
 

@@ -1436,11 +1436,6 @@ select.styled1 {
 .board-view1 .cont-wrap .tag-wrap .tag-modify .btn-area .btn-text {line-height:26px;}
 .board-view1 .cont-wrap .tag-wrap .tag-modify .btn-area .btn-text + .btn-text {margin-left:5px;}
 
-.reply-wrap {
-	margin:40px 0 30px 0;
-	padding:40px 20px 30px 20px;
-	background-color:#fafafa;
-}
 .board-view2 .th-area {vertical-align:top;}
 .board-view2 .td-area .check-list {	display:inline-block;}
 .board-view2 .btn-attach {
@@ -1526,8 +1521,33 @@ select.styled1 {
 	padding-top:13px;
 	font-weight:700;
 }
+
+.reply-wrap {
+	position:relative;
+	margin:40px 0 30px 0;
+	padding:25px 20px 5px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	background-color:#fafafa;
+}
+.reply-wrap .btn-reply {
+	display:inline-block;
+	position:absolute;
+	right:15px;top:24px;
+	height:24px;
+	padding:0 27px 0 10px;
+	background:url(../img/btn/btn_reply_off.png) no-repeat 100% 50%;
+	font-size:12px;
+	line-height:24px;
+	cursor:pointer;
+}
+.reply-wrap .btn-reply .on {display:none;}
+.reply-wrap .btn-reply.on {background:url(../img/btn/btn_reply_on.png) no-repeat 100% 50%;}
+.reply-wrap .btn-reply.on .off {display:none;}
+.reply-wrap .btn-reply.on .on {display:block;}
 .reply-wrap .tit {font-size:14px;color:#333;font-weight:700;}
 .reply-wrap .input-area {
+	display:none;
 	position:relative;
 	margin-top:12px;
 }
@@ -1628,6 +1648,9 @@ select.styled1 {
 .reply-wrap .reply-list .input-area {margin-top:0}
 .reply-wrap .reply-list .input-area .text-wrap {
 	padding-left:50px;
+}
+.reply-wrap .reply-list .text-area {
+	margin:-7px 0 0 51px;
 }
 .reply-wrap .reply-list .input-area .text-wrap.type2{
 	padding-right:0;

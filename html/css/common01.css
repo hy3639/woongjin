@@ -2311,7 +2311,7 @@ line-height:35px;
 }
 .reply-wrap .tit {font-size:14px;font-weight:700;}
 .reply-wrap .input-area {
-	
+	display:none;
 	position:relative;
 	margin-top:15px;
 }
