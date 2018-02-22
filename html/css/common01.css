@@ -2285,16 +2285,33 @@ line-height:35px;
 }
 
 .reply-wrap {
+	position:relative;
 	margin:60px 50px 0 50px;
-	padding:40px 30px 20px 30px;
+	padding:25px 30px 20px 30px;
 	background-color:#fafafa;
 }
+.reply-wrap .btn-reply {
+	display:inline-block;
+	position:absolute;
+	right:15px;top:24px;
+	height:24px;
+	padding:0 27px 0 10px;
+	background:url(../img/btn/btn_reply_off.png) no-repeat 100% 50%;
+	font-size:12px;
+	line-height:24px;
+	cursor:pointer;
+}
+.reply-wrap .btn-reply .on {display:none;}
+.reply-wrap .btn-reply.on {background:url(../img/btn/btn_reply_on.png) no-repeat 100% 50%;}
+.reply-wrap .btn-reply.on .off {display:none;}
+.reply-wrap .btn-reply.on .on {display:block;}
 .app-wrap .reply-wrap {
 	margin:0;
 	padding:29px 30px 30px 30px;
 }
 .reply-wrap .tit {font-size:14px;font-weight:700;}
 .reply-wrap .input-area {
+	
 	position:relative;
 	margin-top:15px;
 }
@@ -2354,6 +2371,8 @@ line-height:35px;
 	padding-left:12px;
 }
 
+.reply-wrap .reply-list .text-area {margin-left:54px;}
+
 .reply-wrap .reply-list .info-wrap .info-list ul {overflow:hidden;}
 .reply-wrap .reply-list .info-wrap .info-list li {
 	position:relative;
@@ -2382,11 +2401,7 @@ line-height:35px;
 	padding-right:0;
 	height:inherit;
 }
-.reply-wrap .reply-list .input-area .btn-area button {
-	display:block;
-	background-color:#fff;
-
-}
+.reply-wrap .reply-list .input-area .btn-area button {display:block;}
 .reply-wrap .reply-list .input-area .btn-area button:first-child {margin-bottom:10px}
 .page-wrap {
 	margin:50px 50px 0 50px;
@@ -2396,14 +2411,15 @@ line-height:35px;
 	position:relative;
 	overflow:hidden;
 	width:100%;
+	min-height:19px;
 	padding:20px 10px;
 	border-top:1px solid #eee;
-	box-sizing:border-box;
 }
 .page-wrap ul li span,
 .page-wrap ul li a {
-	float:left;
 	display:block;
+	position:relative;
+	min-height:19px;
 	color:#333;
 }
 .page-wrap ul li .tit {
@@ -2411,15 +2427,18 @@ line-height:35px;
 	position:absolute;
 }
 .page-wrap ul li .cont {
-	position:relative;
-	padding-left:85px;
-	padding-right:210px;
+	overflow:hidden;
+	position:absolute;
+	left:0;top:0;
 	width:100%;
-	line-height:19px;
+	min-height:19px;
+	padding-left:85px;
+	padding-right:220px;
+	box-sizing:border-box;
 	color:#333;
 	font-weight:700;
-	box-sizing:border-box;
-	overflow:hidden;
+	line-height:19px;
+	
 }
 .page-wrap ul li .cont .cont-tit{
 	display:inline-block;

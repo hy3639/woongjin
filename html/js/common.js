@@ -535,6 +535,29 @@ $(document).ready(function(){
 		$(this).closest('.tag-wrap').removeClass('modify');
 	});
 
+	/* 댓글달기 */
+	$('.btn-reply').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').closest('.reply-wrap').find('.reply-inupt').hide();
+		}else{
+			$(this).addClass('on').closest('.reply-wrap').find('.reply-inupt').show();
+		}
+	});
+	/* 댓글 수정 */
+	$(document).on('click', '.btn-re-modify', function(){
+		var text =  $(this).closest('.reply-item').find('.text-area').html().replace(/<br>/g, '\n');
+		$(this).closest('.reply-item').find('.text-area').siblings('.rereply-inupt').show().find('textarea').val(text);
+	});
+	$('.reply-item .btn-save').click(function(){
+		var text = $(this).closest('.input-area').find('textarea').val().replace(/\n/g, '<br>');
+		$(this).closest('.reply-item').find('.text-area').html(text);
+
+		
+	});
+	$('.reply-item .btn-cancel').click(function(){
+		$(this).closest('.input-area').find('textarea').val('');
+	});
+
 
 	/* ===================================================================================
 		탭

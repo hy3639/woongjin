@@ -334,8 +334,8 @@ $(window).load(function(){
 	/* 설문그룹수정 */
 	$(document).on('click', '.survey-title .btn-layer', function(){
 		var surTit = $(this).closest('.survey-title');
-		var title = $(surTit).find('.title .tit').html().replace('<br>', '\n');
-		var text = $(surTit).find('.text').html().replace('<br>', '\n');
+		var title = $(surTit).find('.title .tit').html().replace(/<br>/g, '\n');
+		var text = $(surTit).find('.text').html().replace(/<br>/g, '\n');
 		$(surTit).find('.groupTitle').val(title);
 		$(surTit).find('.groupText').val(text);
 		if(title == '설문 그룹명') $(surTit).find('.groupTitle').val('');
