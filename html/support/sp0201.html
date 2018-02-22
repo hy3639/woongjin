@@ -277,10 +277,10 @@
 					</div>
 					<!-- //서브 GNB -->
 				</div>
-				<div class="btn-gnb-toggle">
+				<button type="button" class="btn-gnb-toggle">
 					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
 					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
-				</div>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -295,28 +295,27 @@
 				<div class="left-box">
 					<p class="all-len">전체 <span class="len fColor">221</span>건</p>
 				</div>
-				<div class="right-box mHide">
+				<div class="right-box">
 					<select class="styled1" style="width:120px;">
+						<option>전체</option>
 						<option>사용가능</option>
+						<option>사용불가</option>
+					</select>
+					<select class="styled1" style="width:120px;">
+						<option>10개</option>
 						<option>20개</option>
 						<option>30개</option>
 						<option>40개</option>
 						<option>50개</option>
 					</select>
-					<select class="styled1" style="width:120px;">
-						<option>전체</option>
-						<option>공개</option>
-						<option>대기</option>
-						<option>만료</option>
-						<option>삭제</option>
-					</select>
 				</div>
 			</div>
 			<div class="resource-area">
-				<div class="board-list1">
+				<!-- PC컨텐츠 -->
+				<div class="board-list1 mHide">
 					<table>
 						<caption>자원관리 게시판</caption>
-						<colgroup>
+						<colgroup class="mHide">
 							<col style="width:15%;">
 							<col >
 							<col style="width:12%;">
@@ -336,12 +335,84 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>1012002985713</td>
+								<td class="num">1012002985713</td>
 								<td class="subject"><a href="#" class="link"><span class="tit">대회의실1</span></a></td>
-								<td>사용가능</td>
-								<td>1</td>
-								<td>관리자</td>
-								<td>2017.12.24</td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>1</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실2</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>2</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실3</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>3</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실4</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>4</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실5</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>5</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실6</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>6</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실7</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>7</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실8</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>8</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실9</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>9</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
+							</tr>
+							<tr>
+								<td class="num">1012002985713</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">대회의실10</span></a></td>
+								<td><span class="wHide">사용여부 :</span>사용가능</td>
+								<td><span class="wHide">출력순서 :</span>10</td>
+								<td><span class="wHide">등록자 :</span>관리자</td>
+								<td><span class="wHide">등록일 :</span>2017.12.24</td>
 							</tr>
 						</tbody>
 					</table>
@@ -363,6 +434,47 @@
 					<a href="#" class="btn next">다음</a>
 					<a href="#" class="btn end">마지막</a>
 				</div>
+				<!--// PC컨텐츠 -->
+
+				<!-- Mobile 컨텐츠 -->
+				<div class="board-list2 wHide">
+					<ul class="type2">
+						<li class="td-area">
+							<a href="#none">
+								<span class="category">1012002985713</span>
+								<span class="title">대회의실1</span>
+								<span class="text"><em class="wHide">사용여부 :</em>사용가능</span>
+								<span class="text"><em class="wHide">출력순서 :</em>1</span>
+								<span class="text"><em class="wHide">등록자 :</em>관리자</span>
+								<span class="text"><em class="wHide">등록일 :</em>2017.12.24</span>
+							</a>
+						</li>
+						<li class="td-area">
+							<a href="#none">
+								<span class="category">1012002985713</span>
+								<span class="title">대회의실2</span>
+								<span class="text"><em class="wHide">사용여부 :</em>사용가능</span>
+								<span class="text"><em class="wHide">출력순서 :</em>2</span>
+								<span class="text"><em class="wHide">등록자 :</em>관리자</span>
+								<span class="text"><em class="wHide">등록일 :</em>2017.12.24</span>
+							</a>
+						</li>
+						<li class="td-area">
+							<a href="#none">
+								<span class="category">1012002985713</span>
+								<span class="title">대회의실3</span>
+								<span class="text"><em class="wHide">사용여부 :</em>사용가능</span>
+								<span class="text"><em class="wHide">출력순서 :</em>3</span>
+								<span class="text"><em class="wHide">등록자 :</em>관리자</span>
+								<span class="text"><em class="wHide">등록일 :</em>2017.12.24</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-more wHide">
+					<button type="button"><span>더보기</span></button>
+				</div>
+				<!--// Mobile 컨텐츠 -->
 			</div>
 			<div class="btn-wrap right">
 				<div class="btn-align">
