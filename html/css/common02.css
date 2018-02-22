@@ -1415,9 +1415,12 @@ select.styled1 {
 	vertical-align:top;
 }
 .board-view1 .cont-wrap .tag-wrap .tag-modify {
+	display:none;
 	position:relative;
 	padding-right:96px;
 }
+.board-view1 .cont-wrap .tag-wrap.modify .tag-list {display:none;}
+.board-view1 .cont-wrap .tag-wrap.modify .tag-modify {display:block;}
 .board-view1 .cont-wrap .tag-wrap .tag-modify textarea {
 	height:28px;
 	padding-top:0;
@@ -1432,7 +1435,6 @@ select.styled1 {
 }
 .board-view1 .cont-wrap .tag-wrap .tag-modify .btn-area .btn-text {line-height:26px;}
 .board-view1 .cont-wrap .tag-wrap .tag-modify .btn-area .btn-text + .btn-text {margin-left:5px;}
-.board-view1 .cont-wrap .tag-wrap .tag-modify {}
 
 .reply-wrap {
 	margin:40px 0 30px 0;

@@ -486,8 +486,9 @@ $(document).ready(function(){
 		$('.app-list-wrap').slideToggle(100);
 	});
 
-	// 태그 수정
-	$('.btn-tagModi').click(function(){
+	/* 태그 수정 */
+	// 웹
+	$('.mHide .btn-tagModi').click(function(){
 		$(this).closest('.tag-wrap').addClass('modify');
 		var ea = $(this).closest('.tag-list').find('.tag').length;
 		if(ea > 0){
@@ -496,9 +497,6 @@ $(document).ready(function(){
 				var text = $(this).text();
 				// 웹
 				$(this).closest('.tag-wrap').find('.tagging .type-zone').before('<div class="tag"><span>#</span> ' + text + '<input type="hidden" name="tag[]" value="' + text + '"><a role="button" class="tag-i">x</a></div>');
-
-				// 모바일
-				$(this).closest('.tag-wrap').find('.tag-modify textarea').append(', ' + text);
 			});
 		}
 	});
@@ -527,13 +525,14 @@ $(document).ready(function(){
 	});
 
 	// 모바일
+	$('.wHide .btn-tagModi').click(function(){
+		$(this).closest('.tag-wrap').addClass('modify');
+	});
 	$('.wHide .btnCancel').click(function(){
-		$(this).closest('.tag-wrap').removeClass('modify').find('.tag-modify textarea').val('');
+		$(this).closest('.tag-wrap').removeClass('modify');
 	});
 	$('.wHide .btnStorage').click(function(){
-		var text = $(this).closest('.tag-wrap').removeClass('modify').find('.tag-modify textarea').val();
-		var jbSplit = text.split(', ');
-		console.log(jbSplit);
+		$(this).closest('.tag-wrap').removeClass('modify');
 	});
 
 
