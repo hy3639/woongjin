@@ -550,10 +550,12 @@ $(document).ready(function(){
 		var text =  $(this).closest('.reply-item').find('.text-area').html().replace(/<br>/g, '\n');
 		$(this).closest('.reply-item').find('.text-area').hide().siblings('.rereply-inupt').show().find('textarea').val(text);
 	});
+	/* 댓글 저장 */
 	$('.reply-item .btn-save').click(function(){
 		var text = $(this).closest('.input-area').find('textarea').val().replace(/\n/g, '<br>');
 		$(this).closest('.reply-item').find('.text-area').html(text).show().siblings('.rereply-inupt').hide();
 	});
+	/* 댓글 수정 취소 */
 	$('.reply-item .btn-cancel').click(function(){
 		$(this).closest('.reply-item').find('.text-area').show().siblings('.rereply-inupt').hide();
 	});
