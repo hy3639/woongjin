@@ -2417,7 +2417,6 @@ line-height:35px;
 .page-wrap ul li {
 	position:relative;
 	overflow:hidden;
-	width:100%;
 	min-height:19px;
 	padding:20px 10px;
 	border-top:1px solid #eee;
@@ -2436,7 +2435,7 @@ line-height:35px;
 .page-wrap ul li .cont {
 	overflow:hidden;
 	position:absolute;
-	left:0;top:0;
+	left:0;top:20px;
 	width:100%;
 	min-height:19px;
 	padding-left:85px;
@@ -2445,9 +2444,9 @@ line-height:35px;
 	color:#333;
 	font-weight:700;
 	line-height:19px;
-	
 }
-.page-wrap ul li .cont .cont-tit{
+.page-wrap ul li .cont:hover span {text-decoration:underline;}
+.page-wrap ul li .cont .cont-tit {
 	display:inline-block;
 	max-width:100%;
 	overflow:hidden;
