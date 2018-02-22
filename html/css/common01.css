@@ -5331,6 +5331,7 @@ line-height:35px;
 .user-popup .text-area dl dt {
 	clear:both;
 	float:left;
+	min-width:85px;
 	margin-top:8px;
 }
 .user-popup .text-area dl dd {
