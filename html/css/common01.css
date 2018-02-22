@@ -932,6 +932,13 @@ line-height:35px;
 	height:20px;
 	background:url(../img/btn/btn_modify.png) no-repeat 50% 50%;
 }
+.btn-icon.icon06 {
+	width:21px;
+	height:21px;
+	background:url(../img/btn/btn_bookmark.png) no-repeat 50% 50%;
+	opacity:.4;
+}
+.btn-icon.icon06.on {opacity:1;}
 
 /*조회수*/
 .icon-text {
@@ -6225,13 +6232,16 @@ line-height:35px;
 	border-top:0;
 }
 .blog-wrap .blog-cont .cont-box .board-view1,
-.blog-wrap .blog-cont .cont-box .btn-wrap,
-.blog-wrap .blog-cont .cont-box .reply-wrap {
+.blog-wrap .blog-cont .cont-box .btn-wrap {
 	margin-left:0;
 	margin-right:0;
 }
 .blog-wrap .blog-cont .cont-box .board-view1 {border-bottom:0;}
 .blog-wrap .blog-cont .cont-box .board-view1 .tit-wrap {padding:20px 25px;}
+.blog-wrap .blog-cont .cont-box .board-view1 .tit-wrap .left-box p {padding-right:105px;}
+.blog-wrap .blog-cont .cont-box .board-view1 .tit-wrap .left-box p .btn-icon {margin-left:7px;vertical-align:top;}
+.blog-wrap .blog-cont .cont-box .board-view1 .tit-wrap .right-box {right:25px;}
+.blog-wrap .blog-cont .cont-box .board-view1 .tit-wrap .right-box .btn-text + .btn-text {margin-left:3px;}
 .blog-wrap .blog-cont .cont-box .board-view1 .info-wrap {
 	min-height:auto;
 	padding:10px 25px;
@@ -6259,6 +6269,10 @@ line-height:35px;
 	box-sizing:border-box;
 	border:1px solid #eee;
 	background:#fff url(../img/btn/btn_recom.png) no-repeat 50% 15px;
+}
+
+.blog-wrap .blog-cont .cont-box .reply-wrap {
+	margin:50px 25px 25px;
 }
 
 /* ===========================================================================

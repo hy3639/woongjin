@@ -398,6 +398,11 @@ $(document).ready(function(){
 		$(this).toggleClass('on');
 	});
 
+	// 아이콘 on
+	$('.btn-icon.icon06').click(function(){
+		$(this).addClass('on');
+	});
+
 	$('.btn-attach').click(function(){
 		$(this).toggleClass('on');
 	});
@@ -495,7 +500,6 @@ $(document).ready(function(){
 			$(this).closest('.tag-wrap').find('.fake-placeholder').hide();
 			$(this).closest('.tag-list').find('.tag').each(function(){
 				var text = $(this).text();
-				// 웹
 				$(this).closest('.tag-wrap').find('.tagging .type-zone').before('<div class="tag"><span>#</span> ' + text + '<input type="hidden" name="tag[]" value="' + text + '"><a role="button" class="tag-i">x</a></div>');
 			});
 		}
@@ -826,7 +830,7 @@ function resizeMid(){
 		$('.btn-search-toggle').removeClass('open').addClass('close').find('.text').text('접기');
 
 		/* 태깅 */
-		$('#js-tagBox').each(function(){
+		$('.js-tagBox').each(function(){
 			$(this).tagging();
 			$(this).find('.type-zone').focus(function(){
 				$(this).closest('.tagging-box').find('.fake-placeholder').hide();
