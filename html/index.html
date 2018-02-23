@@ -1165,29 +1165,6 @@ $(window).load(function(){
 		$(this).removeClass('bdColor');
 	});
 
-	//상단 사용자 레이어팝업
-	$('.user-box .user').click(function(){
-		var userM = $(this).closest('.user-box').next('.user-menu');
-		if(userM.hasClass('on')){
-			userM.removeClass('on');
-		}else{
-			userM.addClass('on');
-		}
-		var utillH = $('.utill').outerHeight();
-		var naverH = $('.naver-list').outerHeight();
-		var sumH = utillH+naverH;
-		$('.mobile .gnb-wrap').css('top',sumH);
-
-	});
-	//상단 네이버웍스 레이어팝업(태블릿)
-	$('.btn-naver').click(function(){
-		$(this).siblings('.gnb-utill').find('.naver-list').addClass('on');
-	});
-	//사용자,네이버웍스 팝업닫기
-	$('.btn-close2').click(function(){
-		$(this).closest('div').removeClass('on');
-	});
-
 	// 임시 레이어팝업
 	$('.btn-setting').click(function(){
 		$('.wrapper').append('<div class="dimmed"></div>');

@@ -5,6 +5,33 @@ $(document).ready(function(){
 	//resizeGnb();// GNB
 	resizeMid();// 웹/모바일 리사이징
 	dotdotdot();// 말줄임
+
+	//상단 사용자 레이어팝업
+	$('.header .user-box').click(function(){
+		$('.btn-naver').removeClass('on').siblings('.gnb-utill').find('.naver-list').removeClass('on');
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').next('.user-menu').removeClass('on');
+		}else{
+			$(this).addClass('on').next('.user-menu').addClass('on');
+		}
+	});
+	$('.user-menu .btn-close2').click(function(){
+		$('.header .user-box').removeClass('on').next('.user-menu').removeClass('on');
+	});
+
+	//상단 네이버웍스 레이어팝업(태블릿)
+	$('.btn-naver').click(function(){
+		$('.header .user-box').removeClass('on').next('.user-menu').removeClass('on');
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').siblings('.gnb-utill').find('.naver-list').removeClass('on');
+		}else{
+			$(this).addClass('on').siblings('.gnb-utill').find('.naver-list').addClass('on');
+		}
+	});
+	$('.naver-list .btn-close2').click(function(){
+		$('.btn-naver').removeClass('on').siblings('.gnb-utill').find('.naver-list').removeClass('on');
+	});
+
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
 		var winW = $(window).width();
