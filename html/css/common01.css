@@ -3325,7 +3325,7 @@ line-height:35px;
 /*info 아이콘*/
 .work-info {
 	overflow:hidden;
-	margin-bottom:18px;
+	margin-bottom:17px;
 }
 .work-info li {
 	position:relative;
@@ -3360,6 +3360,7 @@ line-height:35px;
 	background:url(../img/ico/ico_work_main2.png) no-repeat 0 50%;
 	padding:0 12px 0 16px;
 }
+.work-info li button {color:#333;}
 
 .workspace-area {
 	overflow:hidden;
@@ -3483,6 +3484,11 @@ line-height:35px;
 	padding-left:0;
 }
 .top-info .work-info li span {font-weight:normal}
+.top-info .work-info li .btn-user {
+	color: #333;
+	font-weight: 700;
+	vertical-align: top;
+}
 .top-info .work-info li .txt {
 	color:#666;
 	background-image:none;
@@ -3713,14 +3719,13 @@ line-height:35px;
 }
 
 .workspace-area .table-area {position:relative;}
-.workspace-area .left .table-area .board-wrap {border-top:0;}
 .workspace-area .left .table-area:first-child .board-wrap{border-top:1px solid #eee;}
 
 .workspace-area .right .board-wrap {
 	border-top:1px solid #eee;
 	border-bottom:0
 }
-.workspace-area .right .table-area {margin-top:13px;}
+.workspace-area .right .table-area {margin-top:13px; border-bottom:0}
 .workspace-area .right .table-area:first-child {margin-top:0}
 .workspace-area .right .table-area .btn-more {
 	position:absolute;
@@ -3792,6 +3797,14 @@ line-height:35px;
 .workspace-area .right .tabArea .tabCont ul li.today span {color:#333}
 .workspace-area .right .tabArea .tabCont ul li span {float:right;color:#999}
 
+.workspace-thumb {margin : 40px 50px 0 50px}
+.workspace-thumb .info-area .btn-user {
+	vertical-align: top;
+	font-size: 12px;
+	color:#999
+}
+.workspace-thumb .info-area p em {margin-right: 5px}
+.workspace-thumb .info-area ul li span {padding-right: 10px !important; margin-right: 10px !important;}
 
 /* 주간보고 */
 .week-content {
@@ -4102,6 +4115,7 @@ line-height:35px;
 	padding:40px 0;
 	margin:30px 50px 0 50px;
 }
+.approval-view .app-list-wrap + .board-write1 {margin-top: 30px}
 .approval-view .board-view2 {margin-top:30px;}
 .approval-view .title {
 	margin-bottom:33px;
@@ -4121,12 +4135,17 @@ line-height:35px;
 .approval-view .title em {border-bottom:2px solid #333;}
 
 .app-list .box {width:100%;box-sizing:border-box;}
+.app-list .line {
+	overflow:hidden;
+	float:right;
+	position:relative;
+	width:50%;
+	min-height:130px;
+	padding:0 0 0 35px;
+	box-sizing:border-box;
+}
 .app-list {overflow:hidden;margin-top:-1px;}
 .app-list .box {width:100%;box-sizing:border-box;}
-/*
-.app-list .box .line:nth-child(odd) {padding-right:15px;}
-.app-list .box .line:nth-child(even) {padding-left:15px;}
-*/
 .app-list .line {
 	overflow:hidden;
 	float:right;
