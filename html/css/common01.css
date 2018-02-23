@@ -1787,7 +1787,7 @@ line-height:35px;
 }
 .board-list1 table td.subject .link .reply {position:absolute;}
 .board-list1 table .important td.subject .link {font-weight:700;}
-.board-list1 table td.subject .link:hover {text-decoration:underline;}
+.board-list1 table td.subject .link:hover span {text-decoration:underline;}
 .board-list1 table .checkWrap,
 .board-list1 table img {vertical-align:middle;}
 .board-list1 table td .icon-important {
