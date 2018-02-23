@@ -506,17 +506,16 @@
 </div>
 
 <script>
-
+/* 달력 select시 스타일 */
 function td_select(){
-	/*달력 select시 스타일 */
-	 $('.calendar-box td').click(function(){
-		 var winW = $(window).width();
-		 if(winW < 800){
-			 $('.calendar-box td').removeClass('select bgColor');
-			 $(this).addClass('select bgColor');
-		 }
-	 });
-	}
+	$('.calendar-box td').click(function(){
+		var winW = $(window).width();
+		if(winW < 800){
+			$('.calendar-box td').removeClass('select bgColor');
+			$(this).addClass('select bgColor');
+		}
+	});
+}
 
 /*달력 select시 스타일 웹에서 삭제*/
 function bg_remove(){
@@ -531,13 +530,11 @@ function bg_remove(){
 }
 
 $(window).resize(function(){
- bg_remove();
- td_select();
+	bg_remove();
+	td_select();
 });
 
- bg_remove();
-
+bg_remove();
 </script>
-
 </body>
 </html>

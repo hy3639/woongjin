@@ -906,49 +906,49 @@
 		</div>
 	</div> -->
 </div>
-</body>
+
 <script>
+$(document).ready(function(){
+	// 말머리유형 선택
+	$('input[name="Radio14"]').change(function(){
+		if($('input[name="Radio14"]:checked').attr('id')=='Radio1401') {
+			$(this).closest('td').find('.display-area').show();
+		}else{
+			$(this).closest('td').find('.display-area').hide();
+		}
+	});
 
+	// 첨부파일 옵션
+	$('input[name="Radio19"]').change(function(){
+		if($('input[name="Radio19"]:checked').attr('id')=='Radio1901') {
+			$(this).closest('td').find('.att-option1').show();
+			$(this).closest('td').find('.att-option2').hide();
+		}else{
+			$(this).closest('td').find('.att-option1').hide();
+			$(this).closest('td').find('.att-option2').show();
+		}
+	});
 
-//말머리유형 선택
-$('input[name="Radio14"]').change(function(){
-	if($('input[name="Radio14"]:checked').attr('id')=='Radio1401') {
-		$(this).closest('td').find('.display-area').show();
-	}else{
-		$(this).closest('td').find('.display-area').hide();
-	}
-});
+	// 읽기사용권한
+	$('input[name="Radio21"]').change(function(){
+		console.log($('input[name="Radio21"]:checked').attr('id'));
+		if($('input[name="Radio21"]:checked').attr('id')=='Radio2101') {
+			$(this).closest('tr').siblings('.read').addClass('hidden');
+		}else{
+			$(this).closest('tr').siblings('.read').removeClass('hidden');
+		}
+	});
 
-//첨부파일 옵션
-$('input[name="Radio19"]').change(function(){
-	if($('input[name="Radio19"]:checked').attr('id')=='Radio1901') {
-		$(this).closest('td').find('.att-option1').show();
-		$(this).closest('td').find('.att-option2').hide();
-	}else{
-		$(this).closest('td').find('.att-option1').hide();
-		$(this).closest('td').find('.att-option2').show();
-	}
-});
-
-//읽기사용권한
-$('input[name="Radio21"]').change(function(){
-	console.log($('input[name="Radio21"]:checked').attr('id'));
-	if($('input[name="Radio21"]:checked').attr('id')=='Radio2101') {
-		$(this).closest('tr').siblings('.read').addClass('hidden');
-	}else{
-		$(this).closest('tr').siblings('.read').removeClass('hidden');
-	}
-});
-
-//쓰기 사용권한
-$('input[name="Radio23"]').change(function(){
-	console.log($('input[name="Radio23"]:checked').attr('id'));
-	if($('input[name="Radio23"]:checked').attr('id')=='Radio2301') {
-		$(this).closest('tr').siblings('.write').addClass('hidden');
-	}else{
-		$(this).closest('tr').siblings('.write').removeClass('hidden');
-	}
+	// 쓰기 사용권한
+	$('input[name="Radio23"]').change(function(){
+		console.log($('input[name="Radio23"]:checked').attr('id'));
+		if($('input[name="Radio23"]:checked').attr('id')=='Radio2301') {
+			$(this).closest('tr').siblings('.write').addClass('hidden');
+		}else{
+			$(this).closest('tr').siblings('.write').removeClass('hidden');
+		}
+	});
 });
 </script>
-
+</body>
 </html>
