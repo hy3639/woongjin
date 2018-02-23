@@ -273,33 +273,7 @@ select.styled1 {
 	top:60px;
 	padding-left:0;
 }
-
-/*
-.year-month-select {overflow:hidden;}
-.year-month-select .select-area {
-	overflow:hidden;
-	float:right;
-	position:relative;
-	width:148px;
-	height:35px;
-	padding-left:82px;
-	box-sizing:border-box;
-}
-.year-month-select .select-area:first-child {float:left;}
-.year-month-select .select-area .select-box {
-	float:left;
-	width:65px;
-}
-.year-month-select .select-area .select-box:first-child {
-	position:absolute;
-	left:0;top:0;
-	width:78px;
-}
-.year-month-select .select-area .select-box .selectWrap {}
-.year-month-select .select-area .select-box .text {display:none;}
-.year-month-select .select-area .select-box {}
-.year-month-select .swung-dash {float:right;}
-*/
+.type3.top-search-box .selectWrap {width:80px !important;}
 
 .top-search-box {}
 .top-search-box .list-item .selectWrap,
@@ -1868,6 +1842,7 @@ select.styled1 {
 	float:left;
 	margin-left:5px;
 }
+.date-area .selectWrap {width:75px;}
 .date-area select {width:75px;}
 
 /* 데이트피커 */
@@ -2315,6 +2290,16 @@ select.styled1 {
 	margin-left:10px;
 	padding-left:10px;
 }
+.work-info li button {
+	font-size: 12px;
+	color:#999;
+	vertical-align: top;
+}
+.top-info .work-info li button {
+	color: #333;
+	font-weight: 700;
+	font-size: 13px;
+}
 .work-info li:first-child {
 	margin-left:0;
 	padding-left:0
@@ -2473,14 +2458,12 @@ select.styled1 {
 	height:57px;
 }
 
-/*
-.table-area {margin-top:20px;}
-.table-area .title {
-	padding-bottom:15px;
-	font-size:16px;
-	font-weight:700;
+.workspace-area .box-area  + .table-area .title {
+	padding-top:15px;
+	padding-left: 20px;
 }
-*/
+.workspace-area .box-area  + .table-area .board-wrap {border-top: 0}
+
 .table-area .board-wrap .no-data {
 	text-align:center;
 	padding:50px 0;
@@ -2531,6 +2514,8 @@ select.styled1 {
 	bottom:0;
 }
 .workspace-area ul li .btn-go span{display:none;}
+.workspace-area .slide-area ul li .txt-area .link {display: inline-block;}
+.workspace-area .slide-area ul li .btn-go {top:122px;}
 
 /*서브메인2*/
 .top-info {
@@ -2761,28 +2746,18 @@ select.styled1 {
 .workspace-area .left {
 	padding:0 20px;
 	position:relative;
-	/* border-bottom:2px solid #fafafa; */
 }
-.workspace-area .left .title {padding-left:0}
-/*
-.workspace-area .left .board-wrap {border-top:1px solid #eee;}
-*/
+.workspace-area .left .title {
+	padding-left:0;
+	font-size: 19px;
+	color:#333;
+	font-weight: 700;
+}
 .workspace-area .left .table-area {margin-top:0;}
 .workspace-area .left .table-area:first-child .board-wrap {
 	border-top:0;
 	padding-top:0;
 }
-/*
-.workspace-area .left:before {
-	content:'';
-	position:absolute;
-	bottom:0;
-	left:0;right:0;
-	width:100%;
-	height:1px;
-	background-color:#e5e5e5;
-}
-*/
 .workspace-area .left .table-area:last-child .board-wrap {border-bottom:0;}
 
 .workspace-area .right .board-wrap {border-bottom:0; border-top: 0}
@@ -2853,6 +2828,28 @@ select.styled1 {
 .workspace-area .right .tabArea .tabCont ul li:first-child {margin-top:0}
 .workspace-area .right .tabArea .tabCont ul li.today span {color:#333}
 .workspace-area .right .tabArea .tabCont ul li span {float:right;color:#999}
+
+.workspace-thumb .info-area .btn-user {
+	font-size: 12px;
+	color:#999
+}
+.workspace-thumb .info-area p{position:relative; padding-right: 10px !important; margin-right: 7px !important;}
+.workspace-thumb .info-area p em {margin-right: 5px}
+.workspace-thumb .info-area ul li span {position:relative; padding-right: 10px !important; margin-right: 7px !important;}
+.workspace-thumb .info-area p:before,
+.workspace-thumb .info-area ul li span:before{
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 1px;
+	height: 11px;
+	margin-top: -5px;
+	background-color: #eee;
+}
+
+.workspace-thumb .info-area ul li span:last-child:before {display: none}
 
 
 /* 주간보고 */
