@@ -530,8 +530,9 @@
 	</div>
 </div>
 
+<div class="layer-popup-wrap"></div>
 <div class="layer-popup info-layer">
-	<div class="pop-heard">
+	<div class="pop-head">
 		<h3 class="title">예약정보</h3>
 		<button type="button" class="btn-close">닫기</button>
 	</div>
@@ -559,7 +560,7 @@ $(window).load(function(){
 	// 그래프 오버
 	$(document).on('mouseenter', '.dimmed-box', function(e){
 		var x = e.pageX;
-		var y = e.pageY; 
+		var y = e.pageY;
 		$('.info-layer').css({'left':x, 'top':y}).fadeIn(200);
 	});
 	$(document).on('mouseleave', '.dimmed-box', function(){
