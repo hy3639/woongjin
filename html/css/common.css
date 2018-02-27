@@ -80,15 +80,15 @@ input[type=password] {
 
 /* 플레이스홀더 */
 /* placeholder */
-::-webkit-input-placeholder {color:#bbb;} /* Chrome/Opera/Safari */
-::-moz-placeholder {color:#bbb;} /* Firefox 19+ */
-:-ms-input-placeholder {color:#bbb;} /* IE 10+ */
-:-moz-placeholder {color:#bbb;} /* Firefox 18- */
+::-webkit-input-placeholder {color:#bbb;}/* Chrome/Opera/Safari */
+::-moz-placeholder {color:#bbb;}/* Firefox 19+ */
+:-ms-input-placeholder {color:#bbb;}/* IE 10+ */
+:-moz-placeholder {color:#bbb;}/* Firefox 18- */
 
 /* 딤드 */
 .dimmed {
 	position:fixed;
-	left:0; right:0; top:0; bottom:0;
+	left:0;right:0;top:0;bottom:0;
 	z-index:95;
 	background-color:rgba(0,0,0,.5);
 }

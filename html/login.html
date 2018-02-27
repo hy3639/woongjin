@@ -22,18 +22,19 @@
 <body>
 <div class="login-wrap">
 	<div class="login-area">
-		<h1 class="logo">woongjin</h1>
+		<h1 class="logo"><img src="img/layout/site_logo3.png" alt="로고"></h1> <!--180226 pc 로고 최대 사이즈 width:200px, height:130px , mobile 최대 width:120px, height:auto -->
 		<div class="login-box">
 			<div class="form">
 				<input type="text" placeholder="Id">
 				<input type="password" placeholder="Password">
 				<a href="#" class="btn-text mid bdColor bgColor">로그인</a>
 				<div class="check-list">
+					<li class="item"><input type="checkbox" id="gwId" class="styled1" checked><label for="gwId">그룹웨어 ID로그인</label></li> <!--180226 추가-->
 					<li class="item"><input type="checkbox" id="Id" class="styled1" checked><label for="Id">아이디 저장</label></li>
 					<li class="item"><a href="#">비밀번호 찾기</a></li>
 				</div>
 			</div>
-			<div class="img-area">
+			<div class="img-area mHide"> <!--180226 : mHide 추가-->
 				<img src="img/img/img_login.jpg" alt="또또 사랑 사랑하고, 또 사랑하고, 또 사랑하는 마음">
 			</div>
 		</div>

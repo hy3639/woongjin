@@ -35,7 +35,7 @@
 .gnb-utill {
 	display:none;
 	position:fixed;
-	right:-100%; top:0; bottom:0;
+	right:-100%;top:0;bottom:0;
 	width:100%;
 	max-width:450px;
 	border-left:1px solid #e5e5e5;
@@ -43,7 +43,7 @@
 }
 .gnb-utill .utill {
 	position:absolute;
-	left:0; right:0; top:0;
+	left:0;right:0;top:0;
 	background-color:#fff;
 	border-bottom:1px solid #f5f5f5;
 }
@@ -57,7 +57,7 @@
 .gnb-utill .utill .user-box .btn-close {
 	display:block;
 	position:absolute;
-	right:10px; top:50%;
+	right:10px;top:50%;
 	width:32px;
 	height:32px;
 	margin-top:-16px;
@@ -70,7 +70,7 @@
 .gnb-utill .utill .user-box .user {
 	display:inline-block;
 	position:absolute;
-	left:0; top:0;
+	left:0;top:0;
 	height:48px;
 	padding:0 42px 0 56px;
 	line-height:48px;
@@ -79,7 +79,7 @@
 .gnb-utill .utill .user-box .user:before {
 	content:'';
 	position:absolute;
-	right:20px; top:50%;
+	right:20px;top:50%;
 	width:13px;
 	height:7px;
 	margin-top:-4px;
@@ -89,7 +89,7 @@
 .gnb-utill .utill .user-box .user .img-area {
 	overflow:hidden;
 	position:absolute;
-	left:20px; top:50%;
+	left:20px;top:50%;
 	width:26px;
 	height:26px;
 	margin-top:-13px;
@@ -112,7 +112,7 @@
 }
 .gnb-utill .utill .naver-list .link .text {
 	position:absolute;
-	left:50%; top:50%;
+	left:50%;top:50%;
 	width:36px;
 	height:34px;
 	margin:-17px 0 0 -18px;
@@ -134,7 +134,7 @@
 
 .gnb-utill .utill .naver-list .link .len {
 	position:absolute;
-	right:0; top:0;
+	right:0;top:0;
 	width:18px;
 	height:18px;
 	border-radius:50%;
@@ -150,7 +150,7 @@
 	overflow-y:auto;
 	display:block;
 	position:absolute;
-	left:0; right:0; top:98px; bottom:0;
+	left:0;right:0;top:98px;bottom:0;
 }
 .gnb-wrap .home .link-home,
 .gnb-list .gnb-item .gnb-title {
@@ -201,13 +201,13 @@
 	background-color:#fff;
 }
 .gnb-list .depth1-list .depth1-item.inList .d-title:before {
-	right:0; top:50%;
+	right:0;top:50%;
 	width:14px;
 	height:2px;
 	margin-top:-1px;
 }
 .gnb-list .depth1-list .depth1-item.inList .d-title:after {
-	right:6px; top:50%;
+	right:6px;top:50%;
 	width:2px;
 	height:14px;
 	margin-top:-7px;

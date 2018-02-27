@@ -1693,24 +1693,25 @@ select.styled1 {
 .reply-wrap .reply-list .input-area .btn-area .btn-cancel {margin-bottom:10px;border-right:0}
 .page-wrap {border-bottom:1px solid #eee;}
 .page-wrap ul li {
-	padding:20px;
+	position: relative;
+	padding:15px 20px;
 	width:100%;
 	border-top:1px solid #eee;
 	box-sizing:border-box;
 }
+
 .page-wrap ul li a {
 	position:relative;
 	overflow:hidden;
 	display:block;
 }
 .page-wrap ul li span {
-	display:block;
-	float:left;
+	display:inline-block;
 	color:#666;
 }
 .page-wrap ul li .tit {
 	position:absolute;
-	left:0;top:0;
+	left:20px;top:15px;
 	color:#666;
 }
 .page-wrap ul li .cont {
@@ -1727,6 +1728,7 @@ select.styled1 {
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	font-weight:700;
+	color:#333;
 }
 .page-wrap ul li .cont em {
 	position:absolute;
@@ -1763,19 +1765,9 @@ select.styled1 {
 	로그인
 =========================================================================== */
 .login-wrap {}
-.login-wrap .login-area {
-	padding:10px 20px 20px;
-}
-.login-wrap .login-area .logo {
-	width:81px;
-	height:48px;
-	margin:0 auto;
-	background:url(../img/mobile/layout/site_logo02.png) no-repeat 0 0;
-	background-size:81px 48px;
-	font-size:0;
-	text-indent:-9999px;
-	line-height:0;
-}
+.login-wrap .login-area {padding:50px 20px 20px;}
+.login-wrap .login-area .logo {max-width:120px;margin:0 auto}
+.login-wrap .login-area .logo img {width: 100%}
 .login-wrap .login-area .login-box {margin-top:10px;}
 .login-wrap .login-area .login-box .form {}
 .login-wrap .login-area .login-box .form input {
@@ -4489,4 +4481,97 @@ select.styled1 {
 	font-size:12px;
 	color:#333;
 	vertical-align:top;
+}
+
+/* 예약정보 레이어 */
+.layer-popup.pop-dictionary {
+	display:none;
+	position:fixed;
+	left:0;top:0;
+	z-index:120;
+	width:300px;
+	box-shadow:1px 4px 4px rgba(0,0,0,.1);
+	border:1px solid #ddd;
+}
+.pop-dictionary .pop-content {padding:0 18px;}
+
+/* ===========================================================================
+	레이어 팝업
+=========================================================================== */
+
+/* 공통 */
+.layer-popup-wrap {
+	display:none;
+	position:fixed;
+	left:0;right:0;top:0;bottom:0;
+	z-index:101;
+	background-color:rgba(0,0,0,.7);
+}
+.layer-popup {
+	position:absolute;
+	left:0;top:0;
+	background-color:#fff;
+}
+.layer-popup .pop-head {
+	position:relative;
+	height:45px;
+	padding:0 45px 0 20px;
+	background-color:#eee;
+}
+.layer-popup .pop-head .title {
+	color:#000;
+	font-size:17px;
+	font-weight:700;
+	line-height:45px;
+}
+.layer-popup .pop-head .btn-close {
+	position:absolute;
+	right:0;top:0;
+	width:45px;
+	height:100%;
+	background:url(../img/mobile/btn/btn_close01.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	background-size: 15px 15px;
+}
+.layer-popup .pop-content {
+	padding:18px;
+}
+.layer-popup .pop-content .box {
+	padding:20px 0;
+	border-top: 1px solid #eee;
+}
+.layer-popup .pop-content .box:first-child {border-top: 0}
+.layer-popup .pop-content .box .tit-area {position: relative;}
+.layer-popup .pop-content .box .tit-area .title {
+	margin-bottom:3px;
+	font-size: 15px;
+	color:#333;
+	font-weight: 700;
+}
+.layer-popup .pop-content .box .tit-area .btn-more {
+	position:absolute;
+	right:0;top:0;
+	width:25px;
+	height:19px;
+	background:url(../img/mobile/btn/btn_more2.png) no-repeat 50% 50%;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	background-size: 8px 15px;
+}
+.layer-popup .pop-content .list-style li {
+	position: relative;
+	padding-left:10px;
+}
+.layer-popup .pop-content .list-style li:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top:50%;
+	width: 3px;
+	height: 3px;
+	margin-top: -1px;
+	background-color:#9da4ac;
 }

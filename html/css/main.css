@@ -21,7 +21,7 @@
 	.tab-list .item .text:before {
 		content:'';
 		position:absolute;
-		left:0; top:50%;
+		left:0;top:50%;
 		width:1px;
 		height:16px;
 		margin-top:-8px;
@@ -51,7 +51,7 @@
 	.write-box .btn-write {
 		display:inline-block;
 		position:absolute;
-		right:0; top:0; bottom:0;
+		right:0;top:0;bottom:0;
 		width:52px;
 		background-color:#ff5349;
 		box-sizing:border-box;
@@ -99,7 +99,7 @@
 	}
 	.content .cont-inner .title-area .btn-more {
 		position:absolute;
-		right:-15px; top:50%;
+		right:-15px;top:50%;
 		width:42px;
 		height:42px;
 		margin-top:-21px;
@@ -152,7 +152,7 @@
 	.content .cont .mail-list .item .date-name em:before {
 		content:'';
 		position:absolute;
-		left:10px; top:50%;
+		left:10px;top:50%;
 		width:1px;
 		height:10px;
 		margin-top:-5px;
@@ -161,7 +161,7 @@
 	.content .cont .mail-list .item .date-name em:first-child:before {display:none;}
 	.content .cont .mail-list .item .btn-del {
 		position:absolute;
-		right:-4px; top:50%;
+		right:-4px;top:50%;
 		width:18px;
 		height:18px;
 		margin-top:-9px;
@@ -200,13 +200,13 @@
 	}
 	.content .cont .schedule .today .date .text {
 		position:absolute;
-		left:80px; bottom:6px;
+		left:80px;bottom:6px;
 		color:#999;
 		font-size:15px;
 	}
 	.content .cont .schedule .btn-list {
 		position:absolute;
-		left:50px; right:50px; bottom:50px;
+		left:50px;right:50px;bottom:50px;
 		border:1px solid #eee;
 	}
 	.content .cont .schedule .btn-list:after {
@@ -236,7 +236,7 @@
 	.content .cont .schedule .btn-list .item .text:before {
 		content:'';
 		position:absolute;
-		right:-15px; top:50%;
+		right:-15px;top:50%;
 		width:30px;
 		height:30px;
 		margin-top:-15px;
@@ -294,13 +294,13 @@
 	}
 	.slider1 .bxslider .item .date.bottom {
 		position:absolute;
-		right:30px; bottom:26px;
+		right:30px;bottom:26px;
 		margin-bottom:0;
 	}
 
 	.slider1 .bxslider .item .join {
 		position:absolute;
-		left:30px; top:135px;
+		left:30px;top:135px;
 		color:#999;
 		font-size:12px;
 	}
@@ -311,7 +311,7 @@
 	}
 	.slider1 .bxslider .item .btn-join {
 		position:absolute;
-		right:30px; bottom:30px;
+		right:30px;bottom:30px;
 		height:35px;
 		padding:0 29px 0 15px;
 		box-sizing:border-box;
@@ -324,7 +324,7 @@
 	.slider1 .bxslider .item .btn-join:before {
 		content:'';
 		position:absolute;
-		right:15px; top:50%;
+		right:15px;top:50%;
 		width:6px;
 		height:10px;
 		margin-top:-5px;
@@ -351,7 +351,7 @@
 	.slider2 .bx-controls-direction {display:none;}
 	.slider2 .bx-pager {
 		position:absolute;
-		right:35px; top:35px;
+		right:35px;top:35px;
 		font-size:0;
 		line-height:0;
 	}
@@ -367,7 +367,7 @@
 	.slider2 .bx-pager .bx-pager-item .bx-pager-link:before {
 		content:'';
 		position:absolute;
-		left:50%; top:50%;
+		left:50%;top:50%;
 		width:10px;
 		height:10px;
 		margin:-5px 0 0 -5px;
@@ -420,7 +420,7 @@
 
 	.cont .btn-slide {
 		position:absolute;
-		right:30px; top:50%;
+		right:30px;top:50%;
 		height:20px;
 		margin-top:-10px;
 	}
@@ -499,7 +499,7 @@
 	.schedule-list .item:before {
 		content:'';
 		position:absolute;
-		left:5px; top:0; bottom:0;
+		left:5px;top:0;bottom:0;
 		width:2px;
 		background-color:#eee;
 	}
@@ -521,7 +521,7 @@
 		content:'';
 		overflow:hidden;
 		position:absolute;
-		left:0; top:50%;
+		left:0;top:50%;
 		width:12px;
 		height:12px;
 		margin-top:-6px;
@@ -534,7 +534,7 @@
 	.schedule-list .item .time.fColor .icon:before {
 		content:'';
 		position:absolute;
-		left:50%; top:50%;
+		left:50%;top:50%;
 		width:8px;
 		height:8px;
 		margin:-4px 0 0 -4px;
@@ -574,7 +574,7 @@
 	.todo-list .item .line-text .icon {
 		display:block;
 		position:absolute;
-		left:14px; top:4px;
+		left:14px;top:4px;
 		width:12px;
 		height:9px;
 		background-color:#aaa;
@@ -596,9 +596,9 @@
 
 	/* 연차 */
 	.annual-wrap {
-		/* overflow: hidden; */
+		/* overflow: hidden;*/
 		margin:33px -15px 0;
-		/* padding-left:70px; */
+		/* padding-left:70px;*/
 		text-align: center;
 		box-sizing: border-box;
 	}
@@ -653,7 +653,7 @@
 	.annual-cont .scroll-box {height: 80px;}
 	.annual-cont .scroll-box .annual-list span {
 		position:absolute;
-		left:0; top:0;
+		left:0;top:0;
 		display: inline-block;
 		width: 72px;
 		color:#ff5349;
@@ -725,7 +725,7 @@
 @media only screen and (max-width: 800px) {
 	.gnb-sliding {display:block;left:0;}
 	/* 레이아웃 */
-	.content {margin:-5px 0 0; padding-bottom:0;}
+	.content {margin:-5px 0 0;padding-bottom:0;}
 	.container.main {padding:46px 0 50px 0;}
 	.content .cont {
 		width:100% !important;
@@ -745,7 +745,7 @@
 	.content .cont-inner .title-area .btn-more {
 		display:inline-block;
 		position:absolute;
-		right:10px; top:50%;
+		right:10px;top:50%;
 		width:30px;
 		height:30px;
 		margin-top:-15px;
@@ -776,7 +776,7 @@
 	.tab-list .item .text:before {
 		content:'';
 		position:absolute;
-		left:0; top:50%;
+		left:0;top:50%;
 		width:1px;
 		height:16px;
 		margin-top:-8px;
@@ -792,7 +792,7 @@
 	/* 슬라이더 버튼 */
 	.cont .btn-slide {
 		position:absolute;
-		right:44px; top:50%;
+		right:44px;top:50%;
 		height:20px;
 		margin-top:-10px;
 	}
@@ -825,7 +825,7 @@
 	.write-box .btn-write {
 		display:inline-block;
 		position:absolute;
-		right:0; top:0; bottom:0;
+		right:0;top:0;bottom:0;
 		width:50px;
 		background-color:#ff5349;
 		box-sizing:border-box;
@@ -859,7 +859,7 @@
 	}
 	.content .cont .schedule .today .date .text {
 		position:absolute;
-		left:80px; bottom:6px;
+		left:80px;bottom:6px;
 		color:#999;
 		font-size:15px;
 	}
@@ -894,7 +894,7 @@
 	.content .cont .schedule .btn-list .item .text:before {
 		content:'';
 		position:absolute;
-		right:-15px; top:50%;
+		right:-15px;top:50%;
 		width:30px;
 		height:30px;
 		margin-top:-15px;
@@ -951,13 +951,13 @@
 	}
 	.slider1 .bxslider .item .date.bottom {
 		position:absolute;
-		right:30px; bottom:26px;
+		right:30px;bottom:26px;
 		margin-bottom:0;
 	}
 
 	.slider1 .bxslider .item .join {
 		position:absolute;
-		left:30px; top:135px;
+		left:30px;top:135px;
 		color:#999;
 		font-size:12px;
 	}
@@ -968,7 +968,7 @@
 	}
 	.slider1 .bxslider .item .btn-join {
 		position:absolute;
-		right:30px; bottom:30px;
+		right:30px;bottom:30px;
 		height:35px;
 		padding:0 29px 0 15px;
 		box-sizing:border-box;
@@ -981,7 +981,7 @@
 	.slider1 .bxslider .item .btn-join:before {
 		content:'';
 		position:absolute;
-		right:15px; top:50%;
+		right:15px;top:50%;
 		width:6px;
 		height:10px;
 		margin-top:-5px;
@@ -1006,7 +1006,7 @@
 	.slider2 .item a img {width:100%;}
 	.slider2 .bx-pager {
 		position:absolute;
-		right:20px; top:16px;
+		right:20px;top:16px;
 		z-index:5;
 		font-size:0;
 		line-height:0;
@@ -1024,7 +1024,7 @@
 	.slider2 .bx-pager-item a:before {
 		content:'';
 		position:absolute;
-		left:50%; top:50%;
+		left:50%;top:50%;
 		width:10px;
 		height:10px;
 		margin:-5px 0 0 -5px;
@@ -1068,7 +1068,7 @@
 	.mail-list .item .date-name em:before {
 		content:'';
 		position:absolute;
-		left:12px; top:50%;
+		left:12px;top:50%;
 		width:1px;
 		height:10px;
 		margin-top:-5px;
@@ -1078,7 +1078,7 @@
 	.mail-list .item .date-name em:first-child:before {display:none;}
 	.mail-list .item .btn-del {
 		position:absolute;
-		right:3px; top:50%;
+		right:3px;top:50%;
 		width:24px;
 		height:24px;
 		margin-top:-12px;
@@ -1112,7 +1112,7 @@
 	.todo-list .item .line-text .icon {
 		display:block;
 		position:absolute;
-		left:14px; top:4px;
+		left:14px;top:4px;
 		width:12px;
 		height:9px;
 		background-color:#aaa;
@@ -1158,7 +1158,7 @@
 	.annual-wrap div p {
 		position:absolute;
 		width: 100%;
-		left:50%; top:0;
+		left:50%;top:0;
 		-webkit-transform:translateX(-50%);
 		-ms-transform:translateX(-50%);
 		color:#999;
@@ -1191,7 +1191,7 @@
 	}
 	.annual-cont .scroll-box .annual-list span {
 		position:absolute;
-		left:0; top:0;
+		left:0;top:0;
 		display: inline-block;
 		width: 72px;
 		color:#ff5349;
@@ -1247,7 +1247,7 @@
 	.schedule-list .item:before {
 		content:'';
 		position:absolute;
-		left:5px; top:0; bottom:0;
+		left:5px;top:0;bottom:0;
 		width:2px;
 		background-color:#eee;
 	}
@@ -1269,7 +1269,7 @@
 		content:'';
 		overflow:hidden;
 		position:absolute;
-		left:0; top:50%;
+		left:0;top:50%;
 		width:12px;
 		height:12px;
 		margin-top:-6px;
@@ -1282,7 +1282,7 @@
 	.schedule-list .item .time.fColor .icon:before {
 		content:'';
 		position:absolute;
-		left:50%; top:50%;
+		left:50%;top:50%;
 		width:8px;
 		height:8px;
 		margin:-4px 0 0 -4px;
@@ -1419,7 +1419,7 @@
 .dimmed {
 	display:none;
 	position:fixed;
-	left:0; right:0; top:0; bottom:0;
+	left:0;right:0;top:0;bottom:0;
 	z-index:120;
 	background-color:rgba(0,0,0,.5);
 
@@ -1427,7 +1427,7 @@
 .layer-popup {
 	display:none;
 	position:fixed;
-	left:50%; top:50%;
+	left:50%;top:50%;
 	z-index:150;
 	box-sizing:border-box;
 	border:1px solid #eee;
@@ -1437,7 +1437,7 @@
 
 .layer-popup .pop-close {
 	position:absolute;
-	right:0; top:0;
+	right:0;top:0;
 	width:56px;
 	height:56px;
 	background:#fff url(../img/btn/btn_pop_close.png) no-repeat 50% 50%;
