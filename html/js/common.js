@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	//상단 사용자 레이어팝업
 	$('.header .user-box').click(function(){
-		$('.btn-naver').removeClass('on').siblings('.gnb-utill').find('.naver-list').removeClass('on');
+		$('.btn-naver').removeClass('on').closest('.header').find('.naver-list').removeClass('on');
 		if($(this).hasClass('on')){
 			$(this).removeClass('on').next('.user-menu').removeClass('on');
 		}else{
@@ -18,24 +18,37 @@ $(document).ready(function(){
 	$('.user-menu .btn-close2').click(function(){
 		$('.header .user-box').removeClass('on').next('.user-menu').removeClass('on');
 	});
+	// 모바일
+	$(document).bind('touchend', function(e){
+		var menu = $('.mobile .user-menu .inner');
+		if (!menu.is(e.target) && menu.has(e.target).length === 0){
+			$('.header .user-box').removeClass('on').next('.user-menu').removeClass('on');
+		}
+	});
 
 	//상단 네이버웍스 레이어팝업(태블릿)
 	$('.btn-naver').click(function(){
-		$('.header .user-box').removeClass('on').next('.user-menu').removeClass('on');
+		$('.header .user-box').removeClass('on').closest('.header').find('.user-menu').removeClass('on');
 		if($(this).hasClass('on')){
-			$(this).removeClass('on').siblings('.gnb-utill').find('.naver-list').removeClass('on');
+			$(this).removeClass('on').closest('.header').find('.naver-list').removeClass('on');
 		}else{
-			$(this).addClass('on').siblings('.gnb-utill').find('.naver-list').addClass('on');
+			$(this).addClass('on').closest('.header').find('.naver-list').addClass('on');
 		}
 	});
 	$('.naver-list .btn-close2').click(function(){
-		$('.btn-naver').removeClass('on').siblings('.gnb-utill').find('.naver-list').removeClass('on');
+		$('.btn-naver').removeClass('on').closest('.header').find('.naver-list').removeClass('on');
+	});
+	// 모바일
+	$(document).bind('touchend', function(e){
+		var menu = $('.mobile .naver-list .inner');
+		if (!menu.is(e.target) && menu.has(e.target).length === 0){
+			$('.btn-naver').removeClass('on').closest('.header').find('.naver-list').removeClass('on');
+		}
 	});
 
 	// gnb 버튼
 	$('.btn-gnb').click(function(){
 		var winW = $(window).width();
-		$('.header').css({'z-index':'200'});
 		if(winW > 800){
 			if($(this).hasClass('on')){
 				$(this).removeClass('on');
@@ -49,13 +62,15 @@ $(document).ready(function(){
 			}
 		}else{
 			$('.gnb-utill').show();
-			$('.gnb-utill').animate({right:0}, 300);
+			$('.gnb-utill').animate({right:0}, 300, function(){
+				$('.gnb-utill .btn-close-box').fadeIn(200);
+			});
 		}
 	});
 	$('.gnb-utill .btn-close').click(function(){
+		$('.gnb-utill .btn-close-box').fadeOut(100);
 		$('.gnb-utill').animate({right:'-100%'}, 300, function(){
 			$('.gnb-utill').hide();
-			$('.header').css({'z-index':'100'});
 		});
 	});
 

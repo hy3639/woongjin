@@ -1252,11 +1252,15 @@ line-height:35px;
 }
 .btn-gnb,
 .btn-naver {display:none;}
-.gnb-utill .utill .user-box .btn-close {display:none;}
+.header .utill .user-box .btn-close {display:none;}
 
 /* ===========================================================================
 	gnb
 =========================================================================== */
+.gnb-utill {
+	position:relative;
+	z-index:100;
+}
 .gnb-sliding {
 	position:fixed;
 	left:0;top:71px;bottom:50px;
