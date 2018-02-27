@@ -1802,6 +1802,13 @@ select.styled1 {
 	margin-top:-4px;
 	background-color:#ddd;
 }
+/* 320이하 */
+@media only screen and (max-width:320px) {
+	.login-wrap .login-area .login-box .form .check-list .item + .item {padding-left:10px;}
+	.login-wrap .login-area .login-box .form .check-list .item + .item:before {display:none;}
+	.login-wrap .login-area .login-box .form .check-list .item:last-child:before {display:block;left:5px;}
+}
+
 .login-wrap .login-area .login-box .form .check-list .item a {
 	display:inline-block;
 	padding-top:1px;
