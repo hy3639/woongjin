@@ -89,8 +89,8 @@ input[type=password] {
 .dimmed {
 	position:fixed;
 	left:0;right:0;top:0;bottom:0;
-	z-index:95;
-	background-color:rgba(0,0,0,.5);
+	z-index:110;
+	background-color:rgba(0,0,0,.7);
 }
 /* 투명 딤드 */
 .dimmed.opacity {

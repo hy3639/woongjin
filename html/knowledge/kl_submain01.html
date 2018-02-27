@@ -1561,16 +1561,14 @@ $(window).load(function(){
 	$('.knowledge-area .tab-list1').each(function(){
 		var html = $(this).html();
 		var title = $(this).find('li').eq(0).find('span').text();
-		console.log(title);
 		$('.knowledge-area .tabArea').prepend('<div class="tab-select wHide"><select class="styled1" style="width:100%;"></select></div>');
-		$(this).prev('.tab-select').find('.selTitle').text(title);
-		selectStyled();
 	});
 	$('.knowledge-area .tab-list1 .item span').each(function(){
 		var text = $(this).text();
 		//var url = $(this).attr('href');
 		$('.tab-select select').append('<option>' + text + '</option>');
 		$('.tab-select select option:first-child').attr("selected",true);
+		selectStyled();
 	});
 	$('.tab-select select').change(function(){
 		var idx = $(this).find('option:selected').index();

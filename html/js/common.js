@@ -673,7 +673,7 @@ $(document).ready(function(){
 	=================================================================================== */
 	/* 열기 */
 	$('.btn-popup').click(function(){
-		$('.layer-popup-wrap').fadeIn(300);
+		$('body').append('<div class="dimmed"></div>');
 		var wid = $('.layer-popup').outerWidth();
 		var hei = $('.layer-popup').outerHeight();
 		$('.layer-popup').css({
@@ -685,11 +685,12 @@ $(document).ready(function(){
 	});
 
 	/* 닫기 */
-	$(document).mouseup(function(e){
-		var layer = $('.layer-popup');
-		if(!layer.is(e.target) && layer.has(e.target).length === 0){
-			$('.layer-popup-wrap').fadeOut(100);
-		}
+	$(document).on('click', '.dimmed', function(){
+		$('.layer-popup').fadeOut(100);
+	});
+	$('.layer-popup .btn-close').click(function(){
+		$('.layer-popup').fadeOut(100);
+		$('.dimmed').remove();
 	});
 	$('.layer-popup .btn-close').click(function(){
 		$('.layer-popup-wrap').fadeOut(100);

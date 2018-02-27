@@ -16,7 +16,7 @@
 	text-align:center;
 	z-index:100;
 }
-.footer .copyright{float:none;line-height:60px;}
+.footer .copyright {float:none;line-height:60px;}
 
 /* 모바일에서 숨김처리 */
 .mHide {display:none !important;}
