@@ -2512,11 +2512,11 @@ select.styled1 {
 	height:57px;
 }
 
-.workspace-area .box-area  + .table-area .title {
+.workspace-area .box-area + .table-area .title {
 	padding-top:15px;
 	padding-left:20px;
 }
-.workspace-area .box-area  + .table-area .board-wrap {border-top:0}
+.workspace-area .box-area + .table-area .board-wrap {border-top:0}
 
 .table-area .board-wrap .no-data {
 	text-align:center;
@@ -2778,7 +2778,7 @@ select.styled1 {
 	line-height:33px;
 }
 .board-wrap .reply-list .btn-more {margin-top:15px;}
-.board-wrap .reply-list .btn-more span {position:relative; margin-left:-15px}
+.board-wrap .reply-list .btn-more span {position:relative;margin-left:-15px}
 .board-wrap .reply-list .btn-more span:before {
 	content:'';
 	position:absolute;
@@ -2814,7 +2814,7 @@ select.styled1 {
 }
 .workspace-area .left .table-area:last-child .board-wrap {border-bottom:0;}
 
-.workspace-area .right .board-wrap {border-bottom:0; border-top:0}
+.workspace-area .right .board-wrap {border-bottom:0;border-top:0}
 .workspace-area .right .table-area {position:relative;	border-top:2px solid #fafafa;}
 
 .workspace-area .right .table-area:before {
@@ -2887,9 +2887,9 @@ select.styled1 {
 	font-size:12px;
 	color:#999
 }
-.workspace-thumb .info-area p{position:relative; padding-right:10px !important; margin-right:7px !important;}
+.workspace-thumb .info-area p{position:relative;padding-right:10px !important;margin-right:7px !important;}
 .workspace-thumb .info-area p em {margin-right:5px}
-.workspace-thumb .info-area ul li span {position:relative; padding-right:10px !important; margin-right:7px !important;}
+.workspace-thumb .info-area ul li span {position:relative;padding-right:10px !important;margin-right:7px !important;}
 .workspace-thumb .info-area p:before,
 .workspace-thumb .info-area ul li span:before{
 	content:'';
@@ -3891,15 +3891,15 @@ select.styled1 {
 	업무지원
 ------------------------------------------------------------------------------------------------------------------------------------------- */
 .pop-write .board-write1 tr.pop-img td {
-		display:block;
-		width:100%;
-		padding:0;margin:0;
-		margin-top:7px;
-		border:1px solid #eee;
-		box-sizing:border-box;
-		text-align:center;
-		font-size:0
-	}
+	display:block;
+	width:100%;
+	padding:0;margin:0;
+	margin-top:7px;
+	border:1px solid #eee;
+	box-sizing:border-box;
+	text-align:center;
+	font-size:0
+}
 .pop-write .board-write1 th {
 	width:110px;
 	font-size:13px;
@@ -4355,7 +4355,7 @@ select.styled1 {
 	line-height:35px;
 	vertical-align:middle;
 }
-.detail-box .list-item dd .form-list  li {margin-bottom:10px;}
+.detail-box .list-item dd .form-list li {margin-bottom:10px;}
 
 .knowledge-area {}
 .knowledge-area .tabArea .tab-select {margin:20px 0 10px;}
@@ -4367,15 +4367,12 @@ select.styled1 {
 	font-weight:700;
 }
 .knowledge-area .left .table-area {margin-top:0}
-.knowledge-area .left .table-area + .btn-more {
-	margin:0 -20px;
-}
+.knowledge-area .left .table-area + .btn-more {margin:0 -20px;}
 .knowledge-area .tab-list1 {margin:0}
 
 .right .title {
 	padding:0;
 	line-height:40px;
-
 }
 .knowledge-area .right .table-area {position:relative;}
 .knowledge-area .right .table-area .board-wrap {border:0}
