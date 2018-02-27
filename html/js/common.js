@@ -981,10 +981,10 @@ function resizeMid(){
 				item.find('.btn-type').removeClass('on').next('.layer-type').slideUp(200);
 				tabSize();
 			}else{
-				item.find('.td-area').addClass('on');
+				item.find('.td-area').removeClass('on');
 				item.find('.btn-type').removeClass('on').next('.layer-type').slideUp();
 				item2.addClass('on');
-				item2.find('.btn-type').addClass('on').next('.layer-type').slideDown(300);
+				$(this).addClass('on').next('.layer-type').slideDown(300);
 				tabSize();
 			}
 		});
