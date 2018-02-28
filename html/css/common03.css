@@ -21,7 +21,7 @@
 	width:70px;
 	height:70px;
 	border-left:1px solid #e5e5e5;
-	background-image:url(../img/mobile/btn/btn_gnb.png);
+	background-image:url(../images2.0/mobile/btn/btn_gnb.png);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	font-size:0;
@@ -35,7 +35,7 @@
 	width:70px;
 	height:70px;
 	border-left:1px solid #e5e5e5;
-	background-image:url(../img/mobile/btn/btn_naver.png);
+	background-image:url(../images2.0/mobile/btn/btn_naver.png);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	background-size:16px 15px;
@@ -78,7 +78,7 @@
 	right:28px;
 	width:14px;
 	height:8px;
-	background:url(../img/bg/bg_user.png) no-repeat 0 0;
+	background:url(../images2.0/bg/bg_user.png) no-repeat 0 0;
 }
 .header .utill .naver-list .link {
 	float:left;
@@ -91,13 +91,13 @@
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 }
-.header .utill .naver-list .link1 {background-image:url(../img/mobile/ico/ico_n01_t.png);}
-.header .utill .naver-list .link2 {background-image:url(../img/mobile/ico/ico_n02_t.png);}
-.header .utill .naver-list .link3 {background-image:url(../img/mobile/ico/ico_n03_t.png);}
-.header .utill .naver-list .link4 {background-image:url(../img/mobile/ico/ico_n04_t.png);}
-.header .utill .naver-list .link5 {background-image:url(../img/mobile/ico/ico_n05_t.png);}
-.header .utill .naver-list .link6 {background-image:url(../img/mobile/ico/ico_n06_t.png);}
-.header .utill .naver-list .link7 {background-image:url(../img/mobile/ico/ico_n07_t.png);}
+.header .utill .naver-list .link1 {background-image:url(../images2.0/mobile/ico/ico_n01_t.png);}
+.header .utill .naver-list .link2 {background-image:url(../images2.0/mobile/ico/ico_n02_t.png);}
+.header .utill .naver-list .link3 {background-image:url(../images2.0/mobile/ico/ico_n03_t.png);}
+.header .utill .naver-list .link4 {background-image:url(../images2.0/mobile/ico/ico_n04_t.png);}
+.header .utill .naver-list .link5 {background-image:url(../images2.0/mobile/ico/ico_n05_t.png);}
+.header .utill .naver-list .link6 {background-image:url(../images2.0/mobile/ico/ico_n06_t.png);}
+.header .utill .naver-list .link7 {background-image:url(../images2.0/mobile/ico/ico_n07_t.png);}
 .header .utill .naver-list .link .len {
 	display:block;
 	position:absolute;
@@ -120,3 +120,11 @@
 .content.app-submain {margin-top:0}
 
 .content.blog-wrap {margin-top:50px;}
+
+
+/* 지식관리 > 서브메인*/
+.knowledge-area.resizing {}
+.knowledge-area.resizing {}
+.knowledge-area.resizing {}
+.knowledge-area.resizing {}
+.knowledge-area.resizing {}

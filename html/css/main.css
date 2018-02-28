@@ -103,7 +103,7 @@
 		width:42px;
 		height:42px;
 		margin-top:-21px;
-		background:url(../img/btn/btn_more.png) no-repeat 50% 50%;
+		background:url(../images2.0/btn/btn_more.png) no-repeat 50% 50%;
 		font-size:0;
 		text-indent:-9999px;
 		line-height:0;
@@ -168,7 +168,7 @@
 		font-size:0;
 		text-indent:-9999px;
 		line-height:0;
-		background:url(../img/btn/btn_x.png) no-repeat 50% 50%;
+		background:url(../images2.0/btn/btn_x.png) no-repeat 50% 50%;
 	}
 
 	.content .cont .mail-list.board .item {padding-right:0;}
@@ -240,7 +240,7 @@
 		width:30px;
 		height:30px;
 		margin-top:-15px;
-		background:url(../img/btn/btn_link.png) no-repeat 0 0;
+		background:url(../images2.0/btn/btn_link.png) no-repeat 0 0;
 	}
 	.content .cont .schedule .btn-list .item .len {
 		margin-left:8px;
@@ -328,7 +328,7 @@
 		width:6px;
 		height:10px;
 		margin-top:-5px;
-		background:url(../img/btn/btn_arr.png) no-repeat 0 0;
+		background:url(../images2.0/btn/btn_arr.png) no-repeat 0 0;
 	}
 
 	.slider1 .bxslider .item.complete .inner {background-color:#fafafa;}
@@ -434,8 +434,8 @@
 		vertical-align:top;
 		line-height:0;
 	}
-	.cont .btn-slide .btn-prev {background-image:url(../img/btn/btn_prev.png);}
-	.cont .btn-slide .btn-next {background-image:url(../img/btn/btn_next.png);}
+	.cont .btn-slide .btn-prev {background-image:url(../images2.0/btn/btn_prev.png);}
+	.cont .btn-slide .btn-next {background-image:url(../images2.0/btn/btn_next.png);}
 
 	/* 스크롤바 디자인 */
 	.scroll-wrap {
@@ -487,8 +487,8 @@
 		text-indent:-9999px;
 		line-height:0;
 	}
-	.schedule-cont .bx-controls-direction .bx-prev {left:-34px;background-image:url(../img/btn/btn_prev.png);}
-	.schedule-cont .bx-controls-direction .bx-next {right:-34px;background-image:url(../img/btn/btn_next.png);}
+	.schedule-cont .bx-controls-direction .bx-prev {left:-34px;background-image:url(../images2.0/btn/btn_prev.png);}
+	.schedule-cont .bx-controls-direction .bx-next {right:-34px;background-image:url(../images2.0/btn/btn_next.png);}
 
 	.schedule-cont .scroll-box {height:200px;}
 	.schedule-list {}
@@ -578,7 +578,7 @@
 		width:12px;
 		height:9px;
 		background-color:#aaa;
-		background-image:url(../img/ico/ico_bg_check.png);
+		background-image:url(../images2.0/ico/ico_bg_check.png);
 		background-repeat:no-repeat;
 		background-position:0 0;
 	}
@@ -749,7 +749,7 @@
 		width:30px;
 		height:30px;
 		margin-top:-15px;
-		background:url(../img/mobile/btn/btn_more.png) no-repeat 50% 50%;
+		background:url(../images2.0/mobile/btn/btn_more.png) no-repeat 50% 50%;
 		background-size:12px 3px;
 		font-size:0;
 		text-indent:-9999px;
@@ -806,8 +806,8 @@
 		vertical-align:top;
 		line-height:0;
 	}
-	.cont .btn-slide .btn-prev {background-image:url(../img/btn/btn_prev.png);}
-	.cont .btn-slide .btn-next {background-image:url(../img/btn/btn_next.png);}
+	.cont .btn-slide .btn-prev {background-image:url(../images2.0/btn/btn_prev.png);}
+	.cont .btn-slide .btn-next {background-image:url(../images2.0/btn/btn_next.png);}
 
 	/* 입력박스 */
 	.write-box {
@@ -898,7 +898,7 @@
 		width:30px;
 		height:30px;
 		margin-top:-15px;
-		background:url(../img/btn/btn_link.png) no-repeat 0 0;
+		background:url(../images2.0/btn/btn_link.png) no-repeat 0 0;
 	}
 	.content .cont .schedule .btn-list .item .len {
 		margin-left:8px;
@@ -985,7 +985,7 @@
 		width:6px;
 		height:10px;
 		margin-top:-5px;
-		background:url(../img/btn/btn_arr.png) no-repeat 0 0;
+		background:url(../images2.0/btn/btn_arr.png) no-repeat 0 0;
 	}
 
 	.slider1 .bxslider .item.complete .inner {background-color:#fafafa;}
@@ -1085,7 +1085,7 @@
 		font-size:0;
 		text-indent:-9999px;
 		line-height:0;
-		background:url(../img/mobile/btn/btn_x.png) no-repeat 50% 50%;
+		background:url(../images2.0/mobile/btn/btn_x.png) no-repeat 50% 50%;
 		background-size:10px 10px;
 	}
 
@@ -1116,7 +1116,7 @@
 		width:12px;
 		height:9px;
 		background-color:#aaa;
-		background-image:url(../img/ico/ico_bg_check.png);
+		background-image:url(../images2.0/ico/ico_bg_check.png);
 		background-repeat:no-repeat;
 		background-position:0 0;
 	}
@@ -1232,8 +1232,8 @@
 		text-indent:-9999px;
 		line-height:0;
 	}
-	.schedule-cont .bx-controls-direction .bx-prev {left:-34px;background-image:url(../img/btn/btn_prev.png);}
-	.schedule-cont .bx-controls-direction .bx-next {right:-34px;background-image:url(../img/btn/btn_next.png);}
+	.schedule-cont .bx-controls-direction .bx-prev {left:-34px;background-image:url(../images2.0/btn/btn_prev.png);}
+	.schedule-cont .bx-controls-direction .bx-next {right:-34px;background-image:url(../images2.0/btn/btn_next.png);}
 
 	.schedule-cont .scroll-box {
 		overflow-y:auto;
@@ -1440,7 +1440,7 @@
 	right:0;top:0;
 	width:56px;
 	height:56px;
-	background:#fff url(../img/btn/btn_pop_close.png) no-repeat 50% 50%;
+	background:#fff url(../images2.0/btn/btn_pop_close.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;

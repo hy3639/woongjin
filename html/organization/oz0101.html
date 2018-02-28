@@ -2,11 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
 <title>웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
-<link rel="stylesheet" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
 <link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/jquery-ui.11.12.1.js"></script>
 <script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
@@ -273,75 +275,42 @@
 					</div>
 
 					<!-- 서브 GNB -->
-					<div class="sub-gnb">
+					<div class="sub-gnb organization">
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">게시판</span></p>
+									<p class="depth1-title"><span class="text">조직정보</span></p>
+									<button type="button" class="btn-text sm">넓게보기</button>
 								</div>
-								<ul class="depth1-list">
-									<li class="depth1-item">
-										<a href="#" class="d-title">최근게시물</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">공지사항</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">경조사</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">자유게시판lv2</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">IT/Biz Trend</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">양식기 전용 게시판</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">자유게시판</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">게시판 01</a></li>
-											<li class="depth2-item"><a href="#">게시판 02</a></li>
-											<li class="depth2-item"><a href="#">게시판 03</a></li>
-											<li class="depth2-item"><a href="#">게시판 04</a></li>
-											<li class="depth2-item"><a href="#">게시판 05</a></li>
-											<li class="depth2-item"><a href="#">게시판 06</a></li>
-											<li class="depth2-item"><a href="#">게시판 07</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">자료실</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">R&amp;D부문/개발실</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">Master Data 신규</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">익명게시판</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">제안자료실</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">권한 게시판</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">임시저장함</a>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">관리자 메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">게시판셋 관리</a></li>
-											<li class="depth2-item on"><a href="#">게시판 관리</a></li><!-- 선택메뉴 class="on" -->
-											<li class="depth2-item"><a href="#">게시물 관리</a></li>
-											<li class="depth2-item"><a href="#">게시판 Import</a></li>
-											<li class="depth2-item"><a href="#">게시판 Export</a></li>
-										</ul>
-									</li>
-								</ul>
+								<div class="tree-menu open">
+									<ul class="tree-list user mHide">
+										<li>
+											<p class="link"><a href="#" class="text">웅진</a></p>
+											<ul>
+												<li>
+													<p class="link"><a href="#" class="text">영업본부</a></p>
+													<ul>
+														<li><p class="link"><a href="#" class="text">김웅진 부장/팀장</a></p></li>
+														<li>
+															<p class="link"><a href="#" class="text">영업1팀</a></p>
+															<ul>
+																<li><p class="link"><a href="#" class="text">최빛나리 본부장/팀원</a></p></li>
+																<li><p class="link"><a href="#" class="text">김현주 대리/팀원</a></p></li>
+																<li><p class="link"><a href="#" class="text">이현표 과장/팀원</a></p></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<p class="link"><a href="#" class="text">관리본부</a></p>
+													<ul>
+														<li><p class="link"><a href="#" class="text">관리자 사원/팀원</a></p></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -356,142 +325,17 @@
 
 		<div class="content">
 			<div class="title-wrap">
-				<h2 class="title">게시판 관리</h2>
+				<h2 class="title">지식관리</h2>
 			</div>
 
-			<div class="board-write1 admin-board-area">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th scope="row">게시판 경로</th>
-							<td colspan="3">게시판 &gt; 공지사항</td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 이름</th>
-							<td colspan="3">공지사항</td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 이름(영어)</th>
-							<td colspan="3">Notice</td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 설명</th>
-							<td colspan="3"></td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 설명(영어)</th>
-							<td colspan="3"></td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 목록 타입</th>
-							<td colspan="3">기본목록</td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 형태</th>
-							<td colspan="3">일반게시판</td>
-						</tr>
-						<tr>
-							<th scope="row">익명 등록</th>
-							<td colspan="3">미사용</td>
-						</tr>
-						<tr>
-							<th scope="row">페이지당 글 개수</th>
-							<td>10</td>
-							<th scope="row">메신저 연동</th>
-							<td>미사용</td>
-						</tr>
-						<tr>
-							<th scope="row">타 파일시스템연동(SFTP)</th>
-							<td>사용</td>
-							<th scope="row">첨부파일 크기</th>
-							<td>700 MB</td>
-						</tr>
-						<tr>
-							<th scope="row">Editor Image 첨부파일 크기</th>
-							<td>1 MB</td>
-							<th scope="row">Editor Image 파일 가로길이</th>
-							<td>2048 Pixel</td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 사용</th>
-							<td>사용</td>
-							<th scope="row">게시기간 설정</th>
-							<td>사용</td>
-						</tr>
-						<tr>
-							<th scope="row">답글</th>
-							<td>사용</td>
-							<th scope="row">댓글</th>
-							<td>사용</td>
-						</tr>
-						<tr>
-							<th scope="row">답글알림</th>
-							<td>사용</td>
-							<th scope="row">댓글알림</th>
-							<td>사용</td>
-						</tr>
-						<tr>
-							<th scope="row">공지</th>
-							<td>사용</td>
-							<th scope="row">중요</th>
-							<td>사용</td>
-						</tr>
-						<tr>
-							<th scope="row">말머리 유형</th>
-							<td>미사용</td>
-							<th scope="row">태그</th>
-							<td>사용</td>
-						</tr>
-						<tr>
-							<th scope="row">최근게시글</th>
-							<td>사용</td>
-							<th scope="row">모바일</th>
-							<td>사용</td>
-						</tr>
-						<tr>
-							<th scope="row">타사공지</th>
-							<td>사용</td>
-							<th scope="row"><label for="Text05">타사공지 매핑키</label></th>
-							<td></td>
-						</tr>
-						<tr>
-							<th scope="row">첨부파일 옵션</th>
-							<td colspan="3">파일타입 허용방식(all)</td>
-						</tr>
-						<tr>
-							<th scope="row">게시판 관리자</th>
-							<td>관리자 과장</td>
-							<th scope="row">게시물 등록 알림</th>
-							<td>미사용</td>
-						</tr>
-						<tr>
-							<th scope="row">읽기 권한</th>
-							<td colspan="3">
-								전사
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">쓰기 권한</th>
-							<td colspan="3">전사</td>
-						</tr>
-						<tr>
-							<th scope="row">비고</th>
-							<td colspan="3"></td>
-						</tr>
-					</tbody>
-				</table>
+			<div class="organization-wrap">
+
 			</div>
-			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
-				</div>
+		</div>
+		<!-- 플로팅버튼  -->
+		<div class="btn-wrap right m-fixed-btn wHide">
+			<div class="btn-align">
+				<div class="btn-item"><a href="#" class="btn-text bdColor fColor">공유지식 등록</a></div>
 			</div>
 		</div>
 	</div>
@@ -501,4 +345,50 @@
 	</div>
 </div>
 </body>
+<script>
+$(window).load(function(){
+	// 상세검색 접기
+	$('.btn-detail-toggle').click(function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on').closest('.top-search-box2').find('.detail-box').slideUp(200);
+		}else{
+			$(this).addClass('on').closest('.top-search-box2').find('.detail-box').slideDown(300);
+		}
+	});
+
+	//댓글,추천,조회 탭
+	$('.info-list li').click(function(){
+		var idx = $(this).index();
+		//console.log(idx);
+		if($(this).hasClass('fColor')){
+			$(this).removeClass('fColor').find('em').removeClass('fColor');
+			$(this).closest('.board-wrap').find('.info-item').eq(idx).removeClass('on');
+		}else {
+			$(this).closest('.board-wrap').find('.info-item').removeClass('on').eq(idx).addClass('on');
+			$(this).parents('.info-list').find('li').removeClass('fColor').find('em').removeClass('fColor');
+			$(this).addClass('fColor').find('em').addClass('fColor');
+		}
+	});
+
+	/* 탭메뉴 셀렉트 변경 */
+	$('.tab-select').remove();
+	$('.knowledge-area .tab-list1').each(function(){
+		var html = $(this).html();
+		var title = $(this).find('li').eq(0).find('span').text();
+		$('.knowledge-area .tabArea').prepend('<div class="tab-select wHide"><select class="styled1" style="width:100%;"></select></div>');
+	});
+	$('.knowledge-area .tab-list1 .item span').each(function(){
+		var text = $(this).text();
+		//var url = $(this).attr('href');
+		$('.tab-select select').append('<option>' + text + '</option>');
+		$('.tab-select select option:first-child').attr("selected",true);
+		selectStyled();
+	});
+	$('.tab-select select').change(function(){
+		var idx = $(this).find('option:selected').index();
+		console.log(idx);
+		$(this).closest('.tabArea').find('.tabContent').find('.tabCont').removeClass('on').eq(idx).addClass('on');
+	});
+});
+</script>
 </html>

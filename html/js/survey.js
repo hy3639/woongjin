@@ -438,7 +438,7 @@ $(window).load(function(){
 			var item = $('.survey-item.active .item-list .item:last-child').html();
 			$('.survey-item.active .item-list').append('<li class="item">' + item + '</li>');
 			if($('.survey-item.active').hasClass('image')){
-				$('.survey-item.active .item-list .item:last-child label img').attr('src', '../img/img/no_image02.jpg');
+				$('.survey-item.active .item-list .item:last-child label img').attr('src', '../images2.0/img/no_image02.jpg');
 				$('.survey-item.active .item-list .item:last-child label .name').text('설문 문항 답변');
 			}else{
 				$('.survey-item.active .item-list .item:last-child label .text').text('설문 문항 답변');

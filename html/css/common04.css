@@ -19,7 +19,7 @@
 	width: 70px;
 	height: 70px;
 	border-left: 1px solid #e5e5e5;
-	background-image: url(../img/mobile/btn/btn_gnb.png);
+	background-image: url(../images2.0/mobile/btn/btn_gnb.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	font-size: 0;
@@ -61,7 +61,7 @@
 	width:32px;
 	height:32px;
 	margin-top:-16px;
-	background:url(../img/mobile/btn/btn_gnb_close.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_gnb_close.png) no-repeat 50% 50%;
 	background-size:14px 14px;
 	font-size:0;
 	text-indent:-9999px;
@@ -83,7 +83,7 @@
 	width:13px;
 	height:7px;
 	margin-top:-4px;
-	background:url(../img/mobile/btn/btn_arr_down.png) no-repeat 0 0;
+	background:url(../images2.0/mobile/btn/btn_arr_down.png) no-repeat 0 0;
 	background-size:13px 7px;
 }
 .gnb-utill .utill .user-box .user .img-area {
@@ -123,14 +123,14 @@
 	text-indent:-9999px;
 	line-height:0;
 }
-.gnb-utill .utill .naver-list .link1 .text {background-image:url(../img/mobile/ico/ico_n01.png);}
-.gnb-utill .utill .naver-list .link2 .text {background-image:url(../img/mobile/ico/ico_n02.png);}
-.gnb-utill .utill .naver-list .link3 .text {background-image:url(../img/mobile/ico/ico_n03.png);}
-.gnb-utill .utill .naver-list .link4 .text {background-image:url(../img/mobile/ico/ico_n04.png);}
-.gnb-utill .utill .naver-list .link5 .text {background-image:url(../img/mobile/ico/ico_n05.png);}
-.gnb-utill .utill .naver-list .link6 .text {background-image:url(../img/ico/ico_n06.png);}
-.gnb-utill .utill .naver-list .link7 .text {background-image:url(../img/ico/ico_n07.png);}
-.gnb-utill .utill .naver-list .link8 .text {background-image:url(../img/ico/ico_n08.png);}
+.gnb-utill .utill .naver-list .link1 .text {background-image:url(../images2.0/mobile/ico/ico_n01.png);}
+.gnb-utill .utill .naver-list .link2 .text {background-image:url(../images2.0/mobile/ico/ico_n02.png);}
+.gnb-utill .utill .naver-list .link3 .text {background-image:url(../images2.0/mobile/ico/ico_n03.png);}
+.gnb-utill .utill .naver-list .link4 .text {background-image:url(../images2.0/mobile/ico/ico_n04.png);}
+.gnb-utill .utill .naver-list .link5 .text {background-image:url(../images2.0/mobile/ico/ico_n05.png);}
+.gnb-utill .utill .naver-list .link6 .text {background-image:url(../images2.0/ico/ico_n06.png);}
+.gnb-utill .utill .naver-list .link7 .text {background-image:url(../images2.0/ico/ico_n07.png);}
+.gnb-utill .utill .naver-list .link8 .text {background-image:url(../images2.0/ico/ico_n08.png);}
 
 .gnb-utill .utill .naver-list .link .len {
 	position:absolute;
@@ -163,16 +163,16 @@
 	font-size:14px;
 	line-height:18px;
 }
-.gnb-wrap .home .link-home.ico01 {background-image:url(../img/mobile/ico/gnb_ico01.png);}
-.gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../img/mobile/ico/gnb_ico02.png);}
-.gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../img/mobile/ico/gnb_ico03.png);}
-.gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../img/mobile/ico/gnb_ico04.png);}
-.gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../img/mobile/ico/gnb_ico05.png);}
-.gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../img/mobile/ico/gnb_ico06.png);}
-.gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../img/mobile/ico/gnb_ico07.png);}
-.gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../img/mobile/ico/gnb_ico08.png);}
-.gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../img/mobile/ico/gnb_ico09.png);}
-.gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../img/mobile/ico/gnb_ico10.png);}
+.gnb-wrap .home .link-home.ico01 {background-image:url(../images2.0/mobile/ico/gnb_ico01.png);}
+.gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../images2.0/mobile/ico/gnb_ico02.png);}
+.gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../images2.0/mobile/ico/gnb_ico03.png);}
+.gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../images2.0/mobile/ico/gnb_ico04.png);}
+.gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../images2.0/mobile/ico/gnb_ico05.png);}
+.gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../images2.0/mobile/ico/gnb_ico06.png);}
+.gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../images2.0/mobile/ico/gnb_ico07.png);}
+.gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../images2.0/mobile/ico/gnb_ico08.png);}
+.gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../images2.0/mobile/ico/gnb_ico09.png);}
+.gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../images2.0/mobile/ico/gnb_ico10.png);}
 .gnb-wrap .home .btn-setting {display:none;}
 
 .gnb-list .depth1 {

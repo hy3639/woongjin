@@ -54,7 +54,7 @@
 	right:0;top:50%;
 	width:9px;
 	height:6px;
-	background-image:url(../img/mobile/ico/ico_arr_down01.png);
+	background-image:url(../images2.0/mobile/ico/ico_arr_down01.png);
 	background-repeat:no-repeat;
 	background-size:9px 13px;
 }
@@ -92,14 +92,14 @@
 /* 이전페이지 버튼 */
 .btn-page-prev {
 	left:20px;
-	background-image:url(../img/mobile/btn/btn_page_prev.png);
+	background-image:url(../images2.0/mobile/btn/btn_page_prev.png);
 	background-size:12px 9px;
 }
 /* 스크롤 탑 버튼 */
 .btn-scroll-top {
 	display:none;
 	right:20px;
-	background-image:url(../img/mobile/btn/btn_scroll_top.png);
+	background-image:url(../images2.0/mobile/btn/btn_scroll_top.png);
 	background-size:10px 13px;
 }
 .wrapper.fixed-btn-type .btn-page-prev,
@@ -165,8 +165,8 @@ input[type=radio].styled1 {
 	background-size:21px 43px;
 	vertical-align:middle;
 }
-.checkWrap {background-image:url(../img/mobile/ico/form_checked.png);}
-.radioWrap {background-image:url(../img/mobile/ico/form_radio.png);}
+.checkWrap {background-image:url(../images2.0/mobile/ico/form_checked.png);}
+.radioWrap {background-image:url(../images2.0/mobile/ico/form_radio.png);}
 .checkWrap.checked,
 .radioWrap.checked {background-position:0 -22px;}
 .checkWrap input[type=checkbox].styled1,
@@ -218,7 +218,7 @@ select.styled1 {
 	width:9px;
 	height:6px;
 	margin-top:-3px;
-	background-image:url(../img/mobile/ico/ico_arr_down01.png);
+	background-image:url(../images2.0/mobile/ico/ico_arr_down01.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-size:9px 13px;
@@ -257,7 +257,7 @@ select.styled1 {
 	position:absolute;
 	right:0;top:0;bottom:0;
 	width:54px;
-	background:#9da4ac url(../img/btn/btn_search02.png) no-repeat 50% 50%;
+	background:#9da4ac url(../images2.0/btn/btn_search02.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -404,7 +404,7 @@ select.styled1 {
 	width:9px;
 	height:6px;
 	margin-top:-3px;
-	background-image:url(../img/mobile/ico/ico_arr_down01.png);
+	background-image:url(../images2.0/mobile/ico/ico_arr_down01.png);
 	background-repeat:no-repeat;
 	background-size:9px 13px;
 }
@@ -506,7 +506,7 @@ select.styled1 {
 	width:12px;
 	height:9px;
 	margin-top:-5px;
-	background-image:url(../img/mobile/btn/btn_ico01.png);
+	background-image:url(../images2.0/mobile/btn/btn_ico01.png);
 	background-size:12px 18px;
 }
 .btn-icon-text.icon01.on {
@@ -526,7 +526,7 @@ select.styled1 {
 	width:12px;
 	height:11px;
 	margin-top:-6px;
-	background-image:url(../img/mobile/btn/btn_ico02.png);
+	background-image:url(../images2.0/mobile/btn/btn_ico02.png);
 	background-size:12px 23px;
 }
 .btn-icon-text.icon02.on {
@@ -548,7 +548,7 @@ select.styled1 {
 	width:14px;
 	height:15px;
 	margin-top:-8px;
-	background-image:url(../img/btn/btn_ico05.png);
+	background-image:url(../images2.0/btn/btn_ico05.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }
@@ -598,7 +598,7 @@ select.styled1 {
 	height:14px;
 	margin-left:-7px;
 	margin-top:-8px;
-	background-image:url(../img/mobile/btn/btn_ico03.png);
+	background-image:url(../images2.0/mobile/btn/btn_ico03.png);
 	background-size:15px 29px;
 }
 
@@ -613,7 +613,7 @@ select.styled1 {
 	width:14px;
 	height:12px;
 	margin-top:-6px;
-	background-image:url(../img/mobile/btn/btn_ico04.png);
+	background-image:url(../images2.0/mobile/btn/btn_ico04.png);
 	background-size:14px 25px;
 }
 .btn-icon.icon02:after {
@@ -625,7 +625,7 @@ select.styled1 {
 	width:7px;
 	height:4px;
 	margin-top:-2px;
-	background:url(../img/ico/ico_down.png) 0 0 no-repeat;
+	background:url(../images2.0/ico/ico_down.png) 0 0 no-repeat;
 }
 .btn-icon.icon02.on:after {
 	transform:rotate(180deg);
@@ -635,7 +635,7 @@ select.styled1 {
 	width:36px;
 	height:28px;
 	border:1px solid #e5e5e5;
-	background:url(../img/btn/btn_modify.png) no-repeat 50% 50%;
+	background:url(../images2.0/btn/btn_modify.png) no-repeat 50% 50%;
 }
 
 /* 조회수 */
@@ -667,7 +667,7 @@ select.styled1 {
 	width:16px;
 	height:10px;
 	margin-top:-5px;
-	background-image:url(../img/mobile/btn/ico_text01.png);
+	background-image:url(../images2.0/mobile/btn/ico_text01.png);
 	background-size:16px 21px;
 }
 
@@ -777,7 +777,7 @@ select.styled1 {
 .header .logo a {
 	display:block;
 	height:45px;
-	background:url(../img/mobile/layout/site_logo.png) no-repeat 50%;
+	background:url(../images2.0/mobile/layout/site_logo.png) no-repeat 50%;
 	background-size:63px 37px;
 	font-size:0;
 	text-indent:-9999px;
@@ -809,7 +809,7 @@ select.styled1 {
 	width:45px;
 	height:45px;
 	border-left:1px solid #e5e5e5;
-	background-image:url(../img/mobile/btn/btn_search02.png);
+	background-image:url(../images2.0/mobile/btn/btn_search02.png);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	background-size:13px 13px;
@@ -824,7 +824,7 @@ select.styled1 {
 	width:45px;
 	height:45px;
 	border-left:1px solid #e5e5e5;
-	background-image:url(../img/mobile/btn/btn_gnb.png);
+	background-image:url(../images2.0/mobile/btn/btn_gnb.png);
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	background-size:13px 9px;
@@ -879,7 +879,7 @@ select.styled1 {
 	right:0;top:0;
 	width:54px;
 	height:46px;
-	background:url(../img/mobile/btn/btn_close01.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_close01.png) no-repeat 50% 50%;
 	background-size:15px 15px;
 	font-size:0;
 	text-indent:-9999px;
@@ -898,7 +898,7 @@ select.styled1 {
 	position:relative;
 	margin-top:14px;
 	padding-left:18px;
-	background:url(../img/mobile/btn/btn_set.png) no-repeat 0 50%;
+	background:url(../images2.0/mobile/btn/btn_set.png) no-repeat 0 50%;
 	background-size:14px 14px;
 	color:#999;
 	font-size:12px;
@@ -965,7 +965,7 @@ select.styled1 {
 	right:0;top:0;
 	width:54px;
 	height:46px;
-	background:url(../img/mobile/btn/btn_close01.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_close01.png) no-repeat 50% 50%;
 	background-size:15px 15px;
 	font-size:0;
 	text-indent:-9999px;
@@ -1027,7 +1027,7 @@ select.styled1 {
 	width:15px;
 	height:15px;
 	margin:-7px 0 0 -7px;
-	background:url(../img/mobile/btn/btn_gnb_close.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_gnb_close.png) no-repeat 50% 50%;
 	background-size:15px 15px;
 }
 
@@ -1049,16 +1049,16 @@ select.styled1 {
 	font-size:14px;
 	line-height:18px;
 }
-.gnb-wrap .home .link-home.ico01 {background-image:url(../img/mobile/ico/gnb_ico01.png);}
-.gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../img/mobile/ico/gnb_ico02.png);}
-.gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../img/mobile/ico/gnb_ico03.png);}
-.gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../img/mobile/ico/gnb_ico04.png);}
-.gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../img/mobile/ico/gnb_ico05.png);}
-.gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../img/mobile/ico/gnb_ico06.png);}
-.gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../img/mobile/ico/gnb_ico07.png);}
-.gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../img/mobile/ico/gnb_ico08.png);}
-.gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../img/mobile/ico/gnb_ico09.png);}
-.gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../img/mobile/ico/gnb_ico10.png);}
+.gnb-wrap .home .link-home.ico01 {background-image:url(../images2.0/mobile/ico/gnb_ico01.png);}
+.gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../images2.0/mobile/ico/gnb_ico02.png);}
+.gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../images2.0/mobile/ico/gnb_ico03.png);}
+.gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../images2.0/mobile/ico/gnb_ico04.png);}
+.gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../images2.0/mobile/ico/gnb_ico05.png);}
+.gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../images2.0/mobile/ico/gnb_ico06.png);}
+.gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../images2.0/mobile/ico/gnb_ico07.png);}
+.gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../images2.0/mobile/ico/gnb_ico08.png);}
+.gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../images2.0/mobile/ico/gnb_ico09.png);}
+.gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../images2.0/mobile/ico/gnb_ico10.png);}
 .gnb-wrap .home .btn-setting {display:none;}
 
 .gnb-list .depth1 {
@@ -1153,7 +1153,7 @@ select.styled1 {
 	z-index:2;
 	width:17px;
 	height:15px;
-	background-image:url(../img/ico/ico_tree.png);
+	background-image:url(../images2.0/ico/ico_tree.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }
@@ -1177,7 +1177,7 @@ select.styled1 {
 	position:absolute;
 	left:1px;top:11px;bottom:3px;
 	width:1px;
-	background:url(../img/bg/bg_tree01.png) repeat-y 0 0;
+	background:url(../images2.0/bg/bg_tree01.png) repeat-y 0 0;
 }
 .tree-menu .tree-list li li .link.on .icon + .text:before {display:block;}
 
@@ -1190,14 +1190,14 @@ select.styled1 {
 	position:absolute;
 	left:22px;top:-8px;bottom:0;
 	width:1px;
-	background:url(../img/bg/bg_tree01.png) repeat-y 0 0;
+	background:url(../images2.0/bg/bg_tree01.png) repeat-y 0 0;
 }
 .tree-menu .tree-list ul ul:before {left:36px;bottom:0px;}
 
 .tree-menu .tree-list ul ul {padding-left:22px;}
 .tree-menu .tree-list li li .link {
 	padding-left:35px;
-	background:url(../img/bg/bg_tree02.png);
+	background:url(../images2.0/bg/bg_tree02.png);
 	background-repeat:no-repeat;
 	background-position:14px 15px;
 }
@@ -1379,7 +1379,7 @@ select.styled1 {
 	right:0;
 	top:50%;
 	margin-top:-3px;
-	background:url(../img/mobile/ico/ico_down.png) no-repeat 0 0;
+	background:url(../images2.0/mobile/ico/ico_down.png) no-repeat 0 0;
 	background-size:11px 6px;
 }
 .board-view1 .info-wrap .right-box .btn-attach.on:before {
@@ -1404,7 +1404,7 @@ select.styled1 {
 	display:block;
 	padding:15px 0 15px 15px;
 	border-top:1px solid #eee;
-	background:url(../img/mobile/ico/ico_file2.png) no-repeat left center;
+	background:url(../images2.0/mobile/ico/ico_file2.png) no-repeat left center;
 	background-size:7px 14px;
 }
 .board-view1 .info-wrap .right-box .attach-list li:first-child a {border-top:0;}
@@ -1481,7 +1481,7 @@ select.styled1 {
 	right:0;
 	top:50%;
 	margin-top:-2px;
-	background:url(../img/ico/ico_down.png) no-repeat 0 0;
+	background:url(../images2.0/ico/ico_down.png) no-repeat 0 0;
 }
 .board-view2 .btn-attach.on:before {transform:rotate(180deg);}
 .board-view2 .btn-attach.on + .attach-list {display:block;}
@@ -1496,7 +1496,7 @@ select.styled1 {
 }
 
 .board-view2 .attach-list li a{
-	background:url(../img/ico/ico_file2.png) no-repeat left center;
+	background:url(../images2.0/ico/ico_file2.png) no-repeat left center;
 	padding-left:14px;
 }
 .board-view2 .attach-list li a:hover {
@@ -1564,13 +1564,13 @@ select.styled1 {
 	right:15px;top:24px;
 	height:24px;
 	padding:0 27px 0 10px;
-	background:url(../img/btn/btn_reply_off.png) no-repeat 100% 50%;
+	background:url(../images2.0/btn/btn_reply_off.png) no-repeat 100% 50%;
 	font-size:12px;
 	line-height:24px;
 	cursor:pointer;
 }
 .reply-wrap .btn-reply .on {display:none;}
-.reply-wrap .btn-reply.on {background:url(../img/btn/btn_reply_on.png) no-repeat 100% 50%;}
+.reply-wrap .btn-reply.on {background:url(../images2.0/btn/btn_reply_on.png) no-repeat 100% 50%;}
 .reply-wrap .btn-reply.on .off {display:none;}
 .reply-wrap .btn-reply.on .on {display:block;}
 .reply-wrap .tit {font-size:14px;color:#333;font-weight:700;}
@@ -1862,7 +1862,7 @@ select.styled1 {
 .date-text {
 	display:inline-block;
 	width:100%;
-	background:#fff url(../img/mobile/btn/btn_calendar.gif) no-repeat 100% 49%;
+	background:#fff url(../images2.0/mobile/btn/btn_calendar.gif) no-repeat 100% 49%;
 	background-size:20px 13px;
 }
 .date-text input[type=text] {
@@ -1958,8 +1958,8 @@ select.styled1 {
 }
 .calendar-layer .hasDatepicker .ui-datepicker-prev {left:-7px;}
 .calendar-layer .hasDatepicker .ui-datepicker-next {right:-7px;}
-.calendar-layer .hasDatepicker .ui-datepicker-prev .ui-icon {background-image:url(../img/mobile/btn/btn_date_prev.png);}
-.calendar-layer .hasDatepicker .ui-datepicker-next .ui-icon {background-image:url(../img/mobile/btn/btn_date_next.png);}
+.calendar-layer .hasDatepicker .ui-datepicker-prev .ui-icon {background-image:url(../images2.0/mobile/btn/btn_date_prev.png);}
+.calendar-layer .hasDatepicker .ui-datepicker-next .ui-icon {background-image:url(../images2.0/mobile/btn/btn_date_next.png);}
 
 .calendar-layer .hasDatepicker .ui-datepicker-calendar {display:table;}
 .calendar-layer .hasDatepicker .ui-datepicker-calendar thead,
@@ -2015,11 +2015,11 @@ select.styled1 {
 }
 .week-setting-box .btn-prev {
 	left:0;
-	background-image:url(../img/btn/btn_prev02.png);
+	background-image:url(../images2.0/btn/btn_prev02.png);
 }
 .week-setting-box .btn-next {
 	right:0;
-	background-image:url(../img/btn/btn_next02.png);
+	background-image:url(../images2.0/btn/btn_next02.png);
 }
 .week-setting-box .btn-calendar {
 	position:absolute;
@@ -2050,7 +2050,7 @@ select.styled1 {
 .share-box .btn-groupchart .btn {
 	width:32px;
 	height:32px;
-	background:url(../img/mobile/btn/btn_groupchart.png) no-repeat 0 0;
+	background:url(../images2.0/mobile/btn/btn_groupchart.png) no-repeat 0 0;
 	background-size:32px 32px;
 	font-size:0;
 	text-indent:-9999px;
@@ -2073,7 +2073,7 @@ select.styled1 {
 	width:28px;
 	height:28px;
 	margin-top:-14px;
-	background:url(../img/mobile/btn/btn_del.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_del.png) no-repeat 50% 50%;
 	background-size:9px 9px;
 	font-size:0;
 	text-indent:-9999px;
@@ -2128,7 +2128,7 @@ select.styled1 {
 	width:28px;
 	height:28px;
 	margin-top:-14px;
-	background:url(../img/mobile/btn/btn_del.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_del.png) no-repeat 50% 50%;
 	background-size:9px 9px;
 	font-size:0;
 	text-indent:-9999px;
@@ -2256,7 +2256,7 @@ select.styled1 {
 	float:left;
 	width:28px;
 	height:42px;
-	background:url(../img/mobile/ico/ico_file.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/ico/ico_file.png) no-repeat 50% 50%;
 	background-size:8px 12px;
 	font-size:0;
 	text-indent:-9999px;
@@ -2265,7 +2265,7 @@ select.styled1 {
 .thumb-list1 > ul > li .info-area .right .like {
 	float:left;
 	padding-left:15px;
-	background:url(../img/mobile/ico/ico_like2.png) no-repeat 0 50%;
+	background:url(../images2.0/mobile/ico/ico_like2.png) no-repeat 0 50%;
 	background-size:13px 12px;
 }
 .thumb-list1 > ul > li .img-area {margin:10px -20px 0;font-size:0;line-height:0;}
@@ -2305,7 +2305,7 @@ select.styled1 {
 	width:22px;
 	height:21px;
 	margin-top:-11px;
-	background:url(../img/ico/ico_work_search_tit.png) no-repeat 0 0;
+	background:url(../images2.0/ico/ico_work_search_tit.png) no-repeat 0 0;
 	background-size:22px 21px;
 }
 .top-search-box2 p em.fColor {font-weight:700;}
@@ -2325,7 +2325,7 @@ select.styled1 {
 	position:absolute;
 	right:0;top:0;bottom:0;
 	width:44px;
-	background:#9da4ac url(../img/btn/btn_search02.png) no-repeat 50% 50%;
+	background:#9da4ac url(../images2.0/btn/btn_search02.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -2368,11 +2368,11 @@ select.styled1 {
 }
 .work-info li:first-child:before {display:none;}
 .work-info .info1 span {
-	background:url(../img/ico/ico_work_main1.png) no-repeat 0 50%;
+	background:url(../images2.0/ico/ico_work_main1.png) no-repeat 0 50%;
 	padding:0 12px 0 25px;
 }
 .work-info .info2 span{
-	background:url(../img/ico/ico_work_main2.png) no-repeat 0 50%;
+	background:url(../images2.0/ico/ico_work_main2.png) no-repeat 0 50%;
 	padding:0 12px 0 16px;
 }
 
@@ -2463,7 +2463,7 @@ select.styled1 {
 	width:20px;
 	height:40px;
 	margin-top:-20px;
-	background:url(../img/mobile/btn/btn_bx_direction.png) no-repeat;
+	background:url(../images2.0/mobile/btn/btn_bx_direction.png) no-repeat;
 	background-size:41px 40px;
 }
 .slide-area .slider1 .bx-controls-direction .bx-prev:before {
@@ -2786,7 +2786,7 @@ select.styled1 {
 	width:7px;
 	height:4px;
 	margin-top:-2px;
-	background:url(../img/btn/btn_more2.png) no-repeat 0 0;
+	background:url(../images2.0/btn/btn_more2.png) no-repeat 0 0;
 }
 .workspace-area .right .tabArea .tab-list1 {margin:0}
 .workspace-area .right .tabArea .tab-list1 .item:first-child span {border-left:0}
@@ -2866,11 +2866,11 @@ select.styled1 {
 }
 .workspace-area .right .tabArea .tab-list1 .item:first-child .text span:before {
 	width:14px;
-	background:url(../img/ico/ico_work_main3.png) no-repeat 50% 0;
+	background:url(../images2.0/ico/ico_work_main3.png) no-repeat 50% 0;
 }
 .workspace-area .right .tabArea .tab-list1 .item:last-child .text span:before {
 	width:10px;
-	background:url(../img/ico/ico_work_main4.png) no-repeat 50% 0;
+	background:url(../images2.0/ico/ico_work_main4.png) no-repeat 50% 0;
 }
 .workspace-area .right .tabArea .tabContent {
 	margin:0;
@@ -3034,7 +3034,7 @@ select.styled1 {
 	display:inline-block;
 	width:18px;
 	height:18px;
-	background:url(../img/mobile/ico/ico_blt03.png) no-repeat 0 0;
+	background:url(../images2.0/mobile/ico/ico_blt03.png) no-repeat 0 0;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -3063,7 +3063,7 @@ select.styled1 {
 	width:10px;
 	height:5px;
 	margin-top:-2px;
-	background:url(../img/mobile/btn/btn_table_arrow.png) no-repeat 0 0;
+	background:url(../images2.0/mobile/btn/btn_table_arrow.png) no-repeat 0 0;
 	background-size:10px 5px;
 }
 */
@@ -3116,7 +3116,7 @@ select.styled1 {
 	width:42px;
 	height:42px;
 	margin-top:-21px;
-	background:url(../img/btn/btn_more.png) no-repeat 50% 50%;
+	background:url(../images2.0/btn/btn_more.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -3133,10 +3133,10 @@ select.styled1 {
 	text-align:center;
 	box-sizing:border-box;
 }
-.status-area .status-list li.item1 {background:url(../img/mobile/ico/ico_app_stat1.png) no-repeat 50% top;background-size:66px 66px;margin-top:0;}
-.status-area .status-list li.item2 {background:url(../img/mobile/ico/ico_app_stat2.png) no-repeat 50% top;background-size:66px 66px;margin-top:0;}
-.status-area .status-list li.item3 {background:url(../img/mobile/ico/ico_app_stat3.png) no-repeat 50% top;background-size:66px 66px;}
-.status-area .status-list li.item4 {background:url(../img/mobile/ico/ico_app_stat4.png) no-repeat 50% top;background-size:66px 66px;}
+.status-area .status-list li.item1 {background:url(../images2.0/mobile/ico/ico_app_stat1.png) no-repeat 50% top;background-size:66px 66px;margin-top:0;}
+.status-area .status-list li.item2 {background:url(../images2.0/mobile/ico/ico_app_stat2.png) no-repeat 50% top;background-size:66px 66px;margin-top:0;}
+.status-area .status-list li.item3 {background:url(../images2.0/mobile/ico/ico_app_stat3.png) no-repeat 50% top;background-size:66px 66px;}
+.status-area .status-list li.item4 {background:url(../images2.0/mobile/ico/ico_app_stat4.png) no-repeat 50% top;background-size:66px 66px;}
 .status-area .status-list li .tit {
 	font-size:12px;
 	color:#333;
@@ -3233,7 +3233,7 @@ select.styled1 {
 	width:6px;
 	height:10px;
 	margin-top:-5px;
-	background:url(../img/btn/btn_arr.png) no-repeat 0 0;
+	background:url(../images2.0/btn/btn_arr.png) no-repeat 0 0;
 }
 
 .app-submain .slider1 .bxslider .item.complete .inner {background-color:#fafafa;}
@@ -3251,7 +3251,7 @@ select.styled1 {
 .app-submain .cont .btn-slide button {
 	width:10px;
 	height:18px;
-	background-image:url(../img/mobile/btn/btn_app_bx_direction.png);
+	background-image:url(../images2.0/mobile/btn/btn_app_bx_direction.png);
 	background-repeat:no-repeat;
 	font-size:0;
 	text-indent:-9999px;
@@ -3489,7 +3489,7 @@ select.styled1 {
 	display:inline-block;
 	width:17px;
 	height:16px;
-	background-image:url(../img/mobile/btn/btn_like.png);
+	background-image:url(../images2.0/mobile/btn/btn_like.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	background-color:#ddd;
@@ -3509,7 +3509,7 @@ select.styled1 {
 	top:50%;
 	margin-top:-11px;
 	padding-left:20px;
-	background:url(../img/mobile/ico/ico_blt03.png) no-repeat 0 2px;
+	background:url(../images2.0/mobile/ico/ico_blt03.png) no-repeat 0 2px;
 	background-size:16px 16px;
 }
 .app-request .board-list2 {border-top:1px solid #eee;}
@@ -3791,9 +3791,9 @@ select.styled1 {
 	margin-right:5px;
 	vertical-align:top;
 }
-.approve-box .approve-mid .box-item .btn-area .method1 span:before {background:url(../img/mobile/btn/btn_method01.png) no-repeat 0 50%;background-size:9px 9px;}
-.approve-box .approve-mid .box-item .btn-area .method2 span:before {background:url(../img/mobile/btn/btn_method02.png) no-repeat 0 50%;background-size:9px 1px;}
-.approve-box .approve-mid .box-item .btn-area .method3 span:before {background:url(../img/mobile/btn/btn_method03.png) no-repeat 0 50%;background-size:11px 13px;}
+.approve-box .approve-mid .box-item .btn-area .method1 span:before {background:url(../images2.0/mobile/btn/btn_method01.png) no-repeat 0 50%;background-size:9px 9px;}
+.approve-box .approve-mid .box-item .btn-area .method2 span:before {background:url(../images2.0/mobile/btn/btn_method02.png) no-repeat 0 50%;background-size:9px 1px;}
+.approve-box .approve-mid .box-item .btn-area .method3 span:before {background:url(../images2.0/mobile/btn/btn_method03.png) no-repeat 0 50%;background-size:11px 13px;}
 
 .approve-box .approve-info .search-area {
 	position:relative;
@@ -3825,7 +3825,7 @@ select.styled1 {
 	padding:20px 0;
 }
 .approve-box .approve-info .drag-area {
-	background:url(../img/mobile/bg/bg_layout_drag.png) repeat-y 0 0;
+	background:url(../images2.0/mobile/bg/bg_layout_drag.png) repeat-y 0 0;
 	background-size:100% 75px;
 }
 .approve-box .approve-info .turn-area .box-fixed,
@@ -3935,7 +3935,7 @@ select.styled1 {
 	width:9px;
 	height:9px;
 	margin-right:5px;
-	background:url(../img/btn/btn_pop_close2.png) no-repeat 0 50%;
+	background:url(../images2.0/btn/btn_pop_close2.png) no-repeat 0 50%;
 }
 
 /* 자원관리 */
@@ -3990,7 +3990,7 @@ select.styled1 {
 	left:160px;
 	width:28px;
 	height:28px;
-	background-image:url(../img/btn/btn_calendar.png);
+	background-image:url(../images2.0/btn/btn_calendar.png);
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
 	background-color:#fff;
@@ -4295,7 +4295,7 @@ select.styled1 {
 	width:23px;
 	height:20px;
 	margin-top:-10px;
-	background:url(../img/ico/ico_kl_search_tit.png) no-repeat 0 0;
+	background:url(../images2.0/ico/ico_kl_search_tit.png) no-repeat 0 0;
 	background-size:23px 20px;
 }
 .knowledge .top-search-box2 .search-text {margin-bottom:40px;}
@@ -4318,7 +4318,7 @@ select.styled1 {
 	width:7px;
 	height:5px;
 	margin-top:-2px;
-	background:url(../img/btn/btn_detail_toggle.png) no-repeat 0 0;
+	background:url(../images2.0/btn/btn_detail_toggle.png) no-repeat 0 0;
 	-ms-transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
 	transform:rotate(180deg);
@@ -4382,7 +4382,7 @@ select.styled1 {
 	top:10px;
 	width:40px;
 	height:40px;
-	background:url(../img/mobile/btn/btn_more3.png) 50% no-repeat;
+	background:url(../images2.0/mobile/btn/btn_more3.png) 50% no-repeat;
 	background-size:18px 16px;
 }
 .right .table-area .btn-more button {
@@ -4536,7 +4536,7 @@ select.styled1 {
 	right:0;top:0;
 	width:45px;
 	height:100%;
-	background:url(../img/mobile/btn/btn_close01.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_close01.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -4562,7 +4562,7 @@ select.styled1 {
 	right:0;top:0;
 	width:25px;
 	height:19px;
-	background:url(../img/mobile/btn/btn_more2.png) no-repeat 50% 50%;
+	background:url(../images2.0/mobile/btn/btn_more2.png) no-repeat 50% 50%;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
