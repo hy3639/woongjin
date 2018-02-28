@@ -468,6 +468,14 @@ $(document).ready(function(){
 		$('.pop-dictionary').fadeIn(200);
 	});
 });
+
+$(window).resize(function(){
+	var winW = $(window).width();
+	if(winW > 800){
+		$('.dimmed').remove();
+		$('.pop-dictionary').hide();
+	}
+});
 </script>
 </body>
 </html>

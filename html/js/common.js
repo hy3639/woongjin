@@ -831,10 +831,12 @@ function calendarLayer(){
 function resizeMid(){
 	$('.gnb-wrap').removeAttr('style');
 	$('.btn-gnb').removeClass('on');
+
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
 		/* gnb */
+		$('.gnb-sliding').removeAttr('style');
 		$('.wrapper').addClass('web').removeClass('mobile');
 		$('.depth1, .gnb-utill').removeAttr('style');
 

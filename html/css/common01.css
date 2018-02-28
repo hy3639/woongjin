@@ -5278,8 +5278,10 @@ line-height:35px;
 	background-color:rgba(0,0,0,.7);
 }
 .layer-popup {
-	position:absolute;
-	left:0;top:0;
+	display:none;
+	position:fixed;
+	left:50%;top:50%;
+	z-index:120;
 	background-color:#fff;
 }
 .layer-popup .pop-head {
@@ -6021,16 +6023,45 @@ line-height:35px;
 .blog-wrap {
 	position:relative;
 	margin:0 50px;
-	padding-left:210px;
 }
-.blog-wrap .info-navi {
+.blog-wrap .info-navi {}
+.blog-wrap.left .info-navi,
+.blog-wrap.right .info-navi {
 	position:absolute;
-	left:0;top:0;
+	top:0;
 	width:195px;
 	padding:15px;
 	box-sizing:border-box;
 	border:1px solid #eee;
+	background-color:#fff;
 }
+
+/* 왼쪽 정렬 */
+.blog-wrap.left {padding-left:210px;}
+.blog-wrap.left .info-navi {left:0;}
+
+/* 오른쪽 정렬 */
+.blog-wrap.right {padding-right:210px;}
+.blog-wrap.right .info-navi {right:0}
+
+/* 양쪽 정렬 */
+.blog-wrap.side {padding:0 210px 80px;}
+.blog-wrap.side .info-navi {}
+.blog-wrap.side .info-navi .user-info,
+.blog-wrap.side .info-navi .menu-box {
+	position:absolute;
+	top:0;
+	width:195px;
+	padding:15px;
+	box-sizing:border-box;
+	border:1px solid #eee;
+	background-color:#fff;
+}
+.blog-wrap.side .info-navi .user-info {left:0;}
+.blog-wrap.side .info-navi .menu-box {right:0;}
+.blog-wrap.side .info-navi .menu-box > div:first-child .b-title {margin-top:0;}
+.blog-wrap.side {min-width:500px;}
+
 
 .blog-wrap .info-navi .b-title {
 	margin-top:25px;
@@ -6426,6 +6457,7 @@ line-height:35px;
 /* ===========================================================================
 	용어사전
 =========================================================================== */
+.dictionary .btn-dictionary {display:none;}
 .sub-gnb .bottom-menu2 {
 	padding:30px 0 10px;
 	border-top:1px solid #e5e5e5;
