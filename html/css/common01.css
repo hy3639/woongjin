@@ -2480,12 +2480,12 @@ line-height:35px;
 	margin:-250px 0 0 -370px;
 }
 .login-wrap .login-area .logo {
-	max-width: 200px;
-	max-height: 130px;
-	text-align: center;
+	max-width:200px;
+	max-height:130px;
+	text-align:center;
 	margin:0 auto;
 }
-.login-wrap .login-area .logo img {max-width: 100%}
+.login-wrap .login-area .logo img {max-width:100%}
 .login-wrap .login-area .login-box {
 	overflow:hidden;
 	margin-top:20px;
@@ -2565,6 +2565,12 @@ line-height:35px;
 	margin-left:20px;
 	font-size:14px;
 	line-height:37px;
+}
+
+/* 공통 타이틀 */
+.sTitle1 {
+	color:#333;
+	font-size:15px;
 }
 
 /* 게시판 상단 소팅 영역 */
@@ -5382,7 +5388,15 @@ line-height:35px;
 	margin-top:7px;
 	color:#333;
 }
-.layer-popup.info-layer {}
+
+/* 개인 블로그 설정 팝업 */
+.blog-popup {
+	width:900px;
+	margin:-300px 0 0 -450px;
+}
+.blog-popup {}
+.blog-popup {}
+.blog-popup {}
 
 /* ===========================================================================
 	윈도우 팝업
@@ -6479,7 +6493,7 @@ line-height:35px;
 }
 .sub-gnb .bottom-menu2 .menu-item {}
 .sub-gnb .bottom-menu2 .menu-item a {
-	overflow: hidden;
+	overflow:hidden;
 	display:block;
 	position:relative;
 	padding:2px 0 3px 18px;
@@ -6564,82 +6578,82 @@ line-height:35px;
 /* ===========================================================================
 	카테고리관리
 =========================================================================== */
-.sub-gnb .line-list {overflow: hidden;margin-top: 10px;}
+.sub-gnb .line-list {overflow:hidden;margin-top:10px;}
 .sub-gnb .line-list .item {
 	position:relative;
-	float: left;
-	width: 50%;
-	text-align: center;
+	float:left;
+	width:50%;
+	text-align:center;
 }
 .sub-gnb .line-list .item:before {
-	display: block;
-	content: '';
-	position: absolute;
-	left: 0;top:50%;
+	display:block;
+	content:'';
+	position:absolute;
+	left:0;top:50%;
 	width:1px;
 	height:11px;
 	margin-top:-5px;
 	background-color:#ddd;
 }
-.sub-gnb .line-list .item:first-child:before {display: none}
-.sub-gnb .line-list .item a {font-size: 12px;}
-.sub-gnb .line-list .item  a span {border-bottom:1px solid #ddd;font-weight: 700;}
+.sub-gnb .line-list .item:first-child:before {display:none}
+.sub-gnb .line-list .item a {font-size:12px;}
+.sub-gnb .line-list .item  a span {border-bottom:1px solid #ddd;font-weight:700;}
 
 
-.category-content {margin: 10px 50px 0 50px}
+.category-content {margin:10px 50px 0 50px}
 .category-content .drag-box {
-	margin-top: 10px;
-	height: 50px;
-	box-sizing: border-box;
-	border: 1px solid #ddd;
-	background-color: #fff;
+	margin-top:10px;
+	height:50px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	background-color:#fff;
 }
 .category-box {}
-.category-box .cont-box .box-fixed {overflow: hidden;}
+.category-box .cont-box .box-fixed {overflow:hidden;}
 .category-box .cont-box .box-fixed span {
-	display: block;
-	float: left;
+	display:block;
+	float:left;
 	color:#fff;
-	font-weight: 700;
-	text-align: center;
-	line-height: 50px;
+	font-weight:700;
+	text-align:center;
+	line-height:50px;
 }
 .category-box .cont-box .box-fixed {background-color:#9da4ac}
-.category-box .cont-box .box-fixed > span:nth-child(1){width: 18%}
-.category-box .cont-box .box-fixed span:nth-child(2){width: 14%}
-.category-box .cont-box .box-fixed span:nth-child(3){width: 17%}
-.category-box .cont-box .box-fixed span:nth-child(4){width: 51%}
+.category-box .cont-box .box-fixed > span:nth-child(1){width:18%}
+.category-box .cont-box .box-fixed span:nth-child(2){width:14%}
+.category-box .cont-box .box-fixed span:nth-child(3){width:17%}
+.category-box .cont-box .box-fixed span:nth-child(4){width:51%}
 
 .category-content .drag-area .drag-box > span {
-	display: block;
-	float: left;
-	text-align: center;
-	line-height: 50px;
-	vertical-align: middle;
+	display:block;
+	float:left;
+	text-align:center;
+	line-height:50px;
+	vertical-align:middle;
 }
 .category-content .drag-area .drag-box > span .move {
-	display: inline-block;
+	display:inline-block;
 	width:16px !important;
 	height:16px;
 	background:url(../images2.0/ico/ico_move.png) no-repeat left top;
-	text-indent: -9999px;
-	vertical-align: text-bottom;
+	text-indent:-9999px;
+	vertical-align:text-bottom;
 }
 .category-content .drag-area .drag-box.ui-sortable-helper span .move {background-position:left bottom;;}
-.category-content .drag-area .drag-box > span .radioWrap {vertical-align: text-bottom;}
-.category-content .drag-area .drag-box span:nth-child(1){width: 18%}
-.category-content .drag-area .drag-box span:nth-child(2){width: 14%}
-.category-content .drag-area .drag-box span:nth-child(3){width: 17%}
-.category-content .drag-area .drag-box span:nth-child(4){width: 51%}
+.category-content .drag-area .drag-box > span .radioWrap {vertical-align:text-bottom;}
+.category-content .drag-area .drag-box span:nth-child(1){width:18%}
+.category-content .drag-area .drag-box span:nth-child(2){width:14%}
+.category-content .drag-area .drag-box span:nth-child(3){width:17%}
+.category-content .drag-area .drag-box span:nth-child(4){width:51%}
 
 .sub-gnb.organization .depth1 .depth-top {
-	position: relative;
-	border-bottom: 0
+	position:relative;
+	border-bottom:0
 }
 .sub-gnb.organization .depth1 .depth-top button {
-	position: absolute;
+	position:absolute;
 	right:25px; top:50%;
-	margin-top: -14px;
+	margin-top:-14px;
 }
 .sub-gnb.organization .tree-menu  {background-color:#fafafa}
-.sub-gnb.organization .tree-menu .tree-list > li > .link .icon {display: block}
+.sub-gnb.organization .tree-menu .tree-list > li > .link .icon {display:block}

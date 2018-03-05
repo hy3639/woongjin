@@ -727,15 +727,53 @@
 
 <!-- 레이어팝업 영역 -->
 <!-- 블로그 설정 -->
-<div class="layer-popup" style="display:block;">
+<div class="layer-popup blog-popup" style="display:block;">
 	<div class="pop-head">
-		<h3 class="title"></h3>
+		<h3 class="title">블로그 관리</h3>
 		<button type="button" class="btn-close">닫기</button>
 	</div>
 
 	<div class="pop-content">
-		
+		<div class="tabArea">
+			<ul class="tab-list1">
+				<li class="item fColor"><span class="text">카테고리 관리</span></li>
+				<li class="item"><span class="text">화면배치 관리</span></li>
+				<li class="item"><span class="text">화면배경 관리</span></li>
+				<li class="item"><span class="text">방문자 통계</span></li>
+			</ul>
+
+			<div class="tabContent">
+				<div class="tabCont on">
+					<h4 class="sTitle1">카테고리 관리</h4>
+					<p class="blt-text1 section">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
+					<div class="">
+						<div class="fixed-box"></div>
+						<div class="drag-area">
+							<div class="drag-box">공지사항</div>
+							<div class="drag-box">기념일</div>
+							<div class="drag-box">지면보도자료</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabCont"></div>
+				<div class="tabCont"></div>
+				<div class="tabCont"></div>
+			</div>
+		</div>
 	</div>
 </div>
+
+<script>
+$('.drag-area').sortable({axis:'y', containment:'.content', scroll:false});
+
+$(window).load(function(){
+	$('.drag-area').sortable({
+		axis:'y',
+		containment:'.content',
+		scroll:false,
+		//'cancel':'.안되는영역'
+	});
+});
+</script>
 </body>
 </html>
