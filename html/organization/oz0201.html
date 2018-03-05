@@ -325,7 +325,7 @@
 
 		<div class="content">
 			<div class="title-wrap">
-				<h2 class="title">사용자 목록</h2>
+				<h2 class="title">조직도</h2>
 			</div>
 
 			<div class="organization-wrap">
@@ -339,115 +339,52 @@
 						<button type="button" class="btn-search">검색</button>
 					</div>
 				</div>
-				<div class="sorting-area">
-					<div class="left-box">
-						<p class="all-len">전체 <span class="len fColor">221</span>건</p>
-					</div>
-					<div class="right-box mHide">
-						<select class="styled1" style="width:120px;">
-							<option>10개씩</option>
-							<option>100개씩</option>
-						</select>
-					</div>
+
+				<ul class="tab-list1">
+					<li class="item fColor"><span class="text">프로필</span></li><!-- 선택 (class="fColor") -->
+					<li class="item"><span class="text">사진</span></li>
+					<li class="item"><span class="text">경력</span></li>
+					<li class="item"><span class="text">방명록</span></li>
+					<li class="item"><span class="text">즐겨찾기</span></li>
+				</ul>
+				<div class="organization-box">
+					<div class="cont">
+						<div class="left">
+							<div class="img-area">
+								<button type="button" class="btn-addimg"></button>
+							</div>
+							<button type="button" class="btn-blog">블로그</button>
+						</div>
+						</div>
+						<div class="right">
+							<div class="right-top">
+								<p><span>김웅진 부장/팀원(admin)</span><button type="button" class="btn-modify"></button></p>
+								<p>웅진 관리본부</p>
+							</div>
+							<div class="board-write1 btm-line">
+								<table>
+									<colgroup class="mHide"><!-- 웹전용 -->
+										<col style="width:18%;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">휴대전화</th>
+											<td>010-1234-1574</td>
+										</tr>
+										<tr>
+											<th scope="row">회사전화</th>
+											<td>02-456-4458</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 				</div>
-				<div class="section">
-					<!-- PC 컨텐츠 -->
-					<div class="board-list1 mHide">
-						<table>
-							<caption>전체회원관리 게시판</caption>
-							<colgroup>
-								<col style="width:13%;">
-								<col style="width:12%;">
-								<col style="width:11%;">
-								<col style="width:14%;">
-								<col>
-								<col style="width:19%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col"><button type="button" class="btn-sorting">이름<span class="icon"></span></button></th>
-									<th scope="col"><button type="button" class="btn-sorting">사원번호<span class="icon"></span></button></th>
-									<th scope="col"><button type="button" class="btn-sorting">부서<span class="icon"></span></button></th>
-									<th scope="col"><button type="button" class="btn-sorting">직급<span class="icon"></span></button></th>
-									<th scope="col"><button type="button" class="btn-sorting">현재업무<span class="icon"></span></button></th>
-									<th scope="col"><button type="button" class="btn-sorting">전화번호<span class="icon"></span></button></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="head">
-									<td><button type="button" class="btn-user">관리자1</button></td>
-									<td>guest001</td>
-									<td>영업1팀</td>
-									<td>팀원/ 차장</td>
-									<td class="left"><a href="#">원팩 구축 프로젝트 PL</a></td>
-									<td>070-1254-8458</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn-user">관리자2</button></td>
-									<td>guest002</td>
-									<td>영업1팀</td>
-									<td>팀원/ 차장</td>
-									<td class="left"><a href="#">원팩 구축 프로젝트 PL</a></td>
-									<td>070-1254-8458</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="paging mHide">
-						<a href="#" class="btn first">처음</a>
-						<a href="#" class="btn prev">이전</a>
-						<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
-						<a href="#" class="page">2</a>
-						<a href="#" class="page">3</a>
-						<a href="#" class="page">4</a>
-						<a href="#" class="page">5</a>
-						<a href="#" class="page">6</a>
-						<a href="#" class="page">7</a>
-						<a href="#" class="page">8</a>
-						<a href="#" class="page">9</a>
-						<a href="#" class="page">10</a>
-						<a href="#" class="btn next">다음</a>
-						<a href="#" class="btn end">마지막</a>
-					</div>
-					<!--// PC 컨텐츠 -->
-					<!-- Mobile 컨텐츠 -->
-					<div class="board-list2 wHide">
-						<ul class="type2">
-							<li class="td-area">
-								<a href="#none">
-									<span class="title">원팩 구축 프로젝트 PL</span>
-								</a>
-								<span class="text">이름 : <button type="button" class="btn-user">관리자</button></span>
-								<span class="text">사원번호 : guest001</span>
-								<span class="text">부서 : 영업본부</span>
-								<span class="text">직급 : 본부장/부장</span>
-								<span class="text">전화번호 : 070-1523-5487</span>
-							</li>
-							<li class="td-area">
-								<a href="#none">
-									<span class="title">원팩 구축 프로젝트 개발</span>
-								</a>
-								<span class="text">이름 : <button type="button" class="btn-user">관리자2</button></span>
-								<span class="text">사원번호 : guest002</span>
-								<span class="text">부서 : 개발본부</span>
-								<span class="text">직급 : 팀장/부장</span>
-								<span class="text">전화번호 : 070-1523-5487</span>
-							</li>
-						</ul>
-					</div>
-					<div class="btn-more wHide">
-						<button type="button"><span>더보기</span></button>
-					</div>
-					<!--// Mobile 컨텐츠 -->
-				</div>
+
 			</div>
 		</div>
-		<!-- 플로팅버튼  -->
-		<div class="btn-wrap right m-fixed-btn wHide">
-			<div class="btn-align">
-				<div class="btn-item"><a href="#" class="btn-text bdColor fColor">조직정보</a></div>
-			</div>
-		</div>
+
 	</div>
 
 	<div class="footer">
@@ -457,13 +394,6 @@
 </body>
 <script>
 $(window).load(function(){
-	// 상세검색 접기
-	$('.btn-area').click(function(){
-		var gWidth = $('.sub-gnb .scroll-area').outerWidth();
-		console.log(gWidth);
-		$(this).closest('.gnb-wrap').css('width',gWidth);
-		$(this).closest('.sub-gnb').css('width',gWidth);
-	});
 
 
 });

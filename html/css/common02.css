@@ -1693,7 +1693,7 @@ select.styled1 {
 .reply-wrap .reply-list .input-area .btn-area .btn-cancel {margin-bottom:10px;border-right:0}
 .page-wrap {border-bottom:1px solid #eee;}
 .page-wrap ul li {
-	position: relative;
+	position:relative;
 	padding:15px 20px;
 	width:100%;
 	border-top:1px solid #eee;
@@ -1767,7 +1767,7 @@ select.styled1 {
 .login-wrap {}
 .login-wrap .login-area {padding:50px 20px 20px;}
 .login-wrap .login-area .logo {max-width:120px;margin:0 auto}
-.login-wrap .login-area .logo img {width: 100%}
+.login-wrap .login-area .logo img {width:100%}
 .login-wrap .login-area .login-box {margin-top:10px;}
 .login-wrap .login-area .login-box .form {}
 .login-wrap .login-area .login-box .form input {
@@ -3939,7 +3939,6 @@ select.styled1 {
 }
 
 /* 자원관리 */
-.resource-area {border-top:1px solid ##e5e5e5}
 .resource-area .board-list2 ul {border-top:1px solid #e5e5e5}
 .resource-area .board-list1 tr {position:relative;}
 .resource-area .board-list1 td {display:block;}
@@ -4540,22 +4539,22 @@ select.styled1 {
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
-	background-size: 15px 15px;
+	background-size:15px 15px;
 }
 .layer-popup .pop-content {
 	padding:18px;
 }
 .layer-popup .pop-content .box {
 	padding:20px 0;
-	border-top: 1px solid #eee;
+	border-top:1px solid #eee;
 }
-.layer-popup .pop-content .box:first-child {border-top: 0}
-.layer-popup .pop-content .box .tit-area {position: relative;}
+.layer-popup .pop-content .box:first-child {border-top:0}
+.layer-popup .pop-content .box .tit-area {position:relative;}
 .layer-popup .pop-content .box .tit-area .title {
 	margin-bottom:3px;
-	font-size: 15px;
+	font-size:15px;
 	color:#333;
-	font-weight: 700;
+	font-weight:700;
 }
 .layer-popup .pop-content .box .tit-area .btn-more {
 	position:absolute;
@@ -4566,19 +4565,19 @@ select.styled1 {
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
-	background-size: 8px 15px;
+	background-size:8px 15px;
 }
 .layer-popup .pop-content .list-style li {
-	position: relative;
+	position:relative;
 	padding-left:10px;
 }
 .layer-popup .pop-content .list-style li:before {
-	content: '';
-	position: absolute;
-	left: 0;
+	content:'';
+	position:absolute;
+	left:0;
 	top:50%;
-	width: 3px;
-	height: 3px;
-	margin-top: -1px;
+	width:3px;
+	height:3px;
+	margin-top:-1px;
 	background-color:#9da4ac;
 }

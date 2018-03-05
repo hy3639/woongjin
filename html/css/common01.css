@@ -1576,6 +1576,8 @@ line-height:35px;
 	width:16px;
 	background-color:#fff;
 }
+.sub-gnb .tree-menu .tree-list li li:last-child:before {background-color:#fafafa;}
+.sub-gnb .tree-menu .tree-list.user li .link .icon {background-image:url(../images2.0/ico/ico_tree04.png);}
 
 /* 서브메인 트리 리스트 */
 .sub-gnb .tree-menu-box {
@@ -6597,7 +6599,7 @@ line-height:35px;
 }
 .sub-gnb .line-list .item:first-child:before {display:none}
 .sub-gnb .line-list .item a {font-size:12px;}
-.sub-gnb .line-list .item  a span {border-bottom:1px solid #ddd;font-weight:700;}
+.sub-gnb .line-list .item a span {border-bottom:1px solid #ddd;font-weight:700;}
 
 
 .category-content {margin:10px 50px 0 50px}
@@ -6646,14 +6648,29 @@ line-height:35px;
 .category-content .drag-area .drag-box span:nth-child(3){width:17%}
 .category-content .drag-area .drag-box span:nth-child(4){width:51%}
 
-.sub-gnb.organization .depth1 .depth-top {
-	position:relative;
-	border-bottom:0
-}
+.sub-gnb.organization .depth1 .depth-top {position:relative;}
 .sub-gnb.organization .depth1 .depth-top button {
 	position:absolute;
-	right:25px; top:50%;
+	right:25px;top:50%;
 	margin-top:-14px;
 }
-.sub-gnb.organization .tree-menu  {background-color:#fafafa}
+
+.sub-gnb.organization .tree-menu {background-color:#fafafa;border:0}
 .sub-gnb.organization .tree-menu .tree-list > li > .link .icon {display:block}
+.sub-gnb.organization .tree-menu .tree-list li li .link .text {white-space:nowrap;}
+.sub-gnb.organization .tree-menu .tree-list li li li .link .text {padding:6px}
+.sub-gnb.organization .tree-menu .tree-list.user li li .link .icon + .text {padding-left:21px !important;}
+
+.organization-wrap .sorting-area {border-bottom:0}
+.organization-wrap .board-list1 td.left {text-align:left;padding-left:20px;}
+.organization-wrap .board-list1 tr.head button {position:relative}
+.organization-wrap .board-list1 tr.head button:before {
+	content:'';
+	position:absolute;
+	left:-25px;
+	top:50%;
+	margin-top:-8px;
+	width:15px;
+	height:17px;
+	background:url(../images2.0/ico/ico_head.png) no-repeat left top;
+}
