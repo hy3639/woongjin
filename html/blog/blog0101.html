@@ -743,19 +743,108 @@
 			</ul>
 
 			<div class="tabContent">
-				<div class="tabCont on">
+				<div class="tabCont"><!-- 카테고리 관리 -->
 					<h4 class="sTitle1">카테고리 관리</h4>
-					<p class="blt-text1 section">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
-					<div class="">
-						<div class="fixed-box"></div>
+					<p class="blt-text1">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
+					<div class="blog-numbering">
+						<div class="fixed-box">
+							<div class="box box1">정렬</div>
+							<div class="box box3">선택</div>
+							<div class="box box2">번호</div>
+							<div class="box box4">카테고리 이름</div>
+						</div>
 						<div class="drag-area">
-							<div class="drag-box">공지사항</div>
-							<div class="drag-box">기념일</div>
-							<div class="drag-box">지면보도자료</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">1</div>
+								<div class="box box4 none-drag">나만의 일상</div>
+							</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">2</div>
+								<div class="box box4 none-drag">업무관련 스터디및 스크랩</div>
+							</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">3</div>
+								<div class="box box4 none-drag">오늘의한컷</div>
+							</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">4</div>
+								<div class="box box4 none-drag">영어공부</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-wrap center">
+						<div class="btn-align">
+							<div class="btn-item"><button type="button" class="btn-text">수정</button></div>
+							<div class="btn-item"><button type="button" class="btn-text">삭제</button></div>
+							<div class="btn-item"><button type="button" class="btn-text bdColor fColor">등록</button></div>
 						</div>
 					</div>
 				</div>
-				<div class="tabCont"></div>
+				<div class="tabCont on"><!-- 화면배치 관리 -->
+					<h4 class="sTitle1">Layout 선택</h4>
+					<div class="blog-layout">
+						<div class="item left">
+							<div class="icon"></div>
+							<input type="radio" name="Layout01" id="Layout0101" class="styled1" checked>
+							<label for="Layout0101">2단 메뉴(좌)</label>
+						</div>
+						<div class="item right">
+							<div class="icon"></div>
+							<input type="radio" name="Layout01" id="Layout0102" class="styled1">
+							<label for="Layout0102">2단 메뉴(우)</label>
+						</div>
+						<div class="item side">
+							<div class="icon"></div>
+							<input type="radio" name="Layout01" id="Layout0103" class="styled1">
+							<label for="Layout0103">3단 좌우메뉴</label>
+						</div>
+					</div>
+
+					<h4 class="sTitle1">포틀릿 배치</h4>
+					<p class="blt-text1">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
+					<div class="blog-portlet">
+						<div class="portlet-list">
+							<h5 class="title">포틀릿 목록</h5>
+							<p class="item"><input type="checkbox" id="Portlet01" class="styled1" checked disabled><label for="Portlet01">개인 프로필</label></p>
+							<p class="item"><input type="checkbox" id="Portlet02" class="styled1" checked disabled><label for="Portlet02">카테고리</label></p>
+							<p class="item"><input type="checkbox" id="Portlet03" class="styled1" checked><label for="Portlet03">포스팅 달력</label></p>
+							<p class="item"><input type="checkbox" id="Portlet04" class="styled1" checked><label for="Portlet04">Following 정보</label></p>
+							<p class="item"><input type="checkbox" id="Portlet05" class="styled1" checked><label for="Portlet05">최근 댓글</label></p>
+							<p class="item"><input type="checkbox" id="Portlet06" class="styled1" checked><label for="Portlet06">Tag Cloud</label></p>
+						</div>
+						<div class="layout-box left-menu">
+							<div class="fixed-box">
+								<p>Contents 영역(Fixed)</p>
+							</div>
+							<div class="layoutDrop left-box">
+								<p class="item">개인 프로필</p>
+								<p class="item">카테고리</p>
+								<p class="item">포스팅 달력</p>
+								<p class="item">Following 정보</p>
+								<p class="item">최근 댓글</p>
+								<p class="item">Tag Cloud</p>
+							</div>
+							<div class="layoutDrop right-box">
+								
+							</div>
+						</div>
+					</div>
+					<div class="btn-wrap center">
+						<div class="btn-align">
+							<div class="btn-item"><button type="button" class="btn-text">수정</button></div>
+							<div class="btn-item"><button type="button" class="btn-text">삭제</button></div>
+							<div class="btn-item"><button type="button" class="btn-text bdColor fColor">등록</button></div>
+						</div>
+					</div>
+				</div>
 				<div class="tabCont"></div>
 				<div class="tabCont"></div>
 			</div>
@@ -764,15 +853,66 @@
 </div>
 
 <script>
-$('.drag-area').sortable({axis:'y', containment:'.content', scroll:false});
-
 $(window).load(function(){
+	/* 카테고리 관리 */
 	$('.drag-area').sortable({
 		axis:'y',
-		containment:'.content',
+		containment:'.blog-popup',
 		scroll:false,
-		//'cancel':'.안되는영역'
+		revert: true,
+		'cancel':'.none-drag'
 	});
+
+	/* 화면배치 관리 */
+	// Layout 선택
+	$('.blog-layout .item .icon').click(function(){
+		$(this).closest('.item').find('input[type=radio]').prop('checked', true);
+		rdoChkState();
+		var idx = $(this).closest('.item').index();
+		// 좌
+		if(idx == 0){
+			$('.layout-box').attr('class', 'layout-box left-menu');
+			var cont = $('.layoutDrop.right-box').html();
+			$('.layoutDrop.left-box').append(cont);
+			$('.layoutDrop.right-box').html('');
+		}
+		// 우
+		if(idx == 1){
+			$('.layout-box').attr('class', 'layout-box right-menu');
+			var cont = $('.layoutDrop.left-box').html();
+			$('.layoutDrop.right-box').append(cont);
+			$('.layoutDrop.left-box').html('');
+		}
+		// 좌우
+		if(idx == 2){
+			$('.layout-box').attr('class', 'layout-box side-menu');
+		}
+	});
+
+	// 포틀릿 배치
+	$('.portlet-list .item input[type=checkbox]').change(function(){
+		var menu = $(this).closest('.item').text();
+		console.log(menu);
+		if(this.checked){
+			if($('.layout-box').hasClass('left-menu') || $('.layout-box').hasClass('side-menu')){
+				$('.layoutDrop.left-box').append('<p class="item ui-sortable-handle">' + menu + '</p>');
+			}
+			if($('.layout-box').hasClass('right-menu')){
+				$('.layoutDrop.right-box').append('<p class="item ui-sortable-handle">' + menu + '</p>');
+			}
+		}else{
+			$('.layout-box .layoutDrop .item').each(function(){
+				var text = $(this).text();
+				if(menu == text){
+					$(this).remove();
+				}
+			});
+		}
+	});
+
+	$('.layoutDrop').sortable({
+		connectWith:'.layoutDrop'
+	}).disableSelection();
 });
 </script>
 </body>

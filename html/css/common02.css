@@ -4502,6 +4502,14 @@ select.styled1 {
 .pop-dictionary .pop-content {padding:0 18px;}
 
 /* ===========================================================================
+	조직도
+=========================================================================== */
+.organization-wrap .type2.top-search-box .selectWrap{width:100% !important;}
+.organization-box {margin:0 20px}
+.organization-box .tab-select {margin-top: 20px}
+.organization-box .selectWrap {width: 100%}
+
+/* ===========================================================================
 	레이어 팝업
 =========================================================================== */
 
