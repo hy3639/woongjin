@@ -314,7 +314,7 @@
 							</div>
 						</div>
 						<div class="btn-group">
-							<button type="button" class="btn-icon-text icon05"><span class="text"><em class="icon">블로그 설정</em></span></button>
+							<button type="button" class="btn-icon-text icon05 btn-popup btn-setting"><span class="text"><em class="icon">블로그 설정</em></span></button>
 							<a href="#" class="btn-icon-text icon06 bdColor"><span class="text fColor"><em class="icon bgColor"></em>포스트 쓰기</span></a>
 						</div>
 					</div>
@@ -727,7 +727,7 @@
 
 <!-- 레이어팝업 영역 -->
 <!-- 블로그 설정 -->
-<div class="layer-popup blog-popup" style="display:block;">
+<div class="layer-popup blog-popup">
 	<div class="pop-head">
 		<h3 class="title">블로그 관리</h3>
 		<button type="button" class="btn-close">닫기</button>
@@ -743,7 +743,7 @@
 			</ul>
 
 			<div class="tabContent">
-				<div class="tabCont"><!-- 카테고리 관리 -->
+				<div class="tabCont on"><!-- 카테고리 관리 -->
 					<h4 class="sTitle1">카테고리 관리</h4>
 					<p class="blt-text1">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
 					<div class="blog-numbering">
@@ -788,7 +788,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tabCont on"><!-- 화면배치 관리 -->
+				<div class="tabCont"><!-- 화면배치 관리 -->
 					<h4 class="sTitle1">Layout 선택</h4>
 					<div class="blog-layout">
 						<div class="item left">
@@ -832,9 +832,7 @@
 								<p class="item">최근 댓글</p>
 								<p class="item">Tag Cloud</p>
 							</div>
-							<div class="layoutDrop right-box">
-								
-							</div>
+							<div class="layoutDrop right-box"></div>
 						</div>
 					</div>
 					<div class="btn-wrap center">
@@ -845,15 +843,147 @@
 						</div>
 					</div>
 				</div>
-				<div class="tabCont"></div>
-				<div class="tabCont"></div>
+				<div class="tabCont"><!-- 화면배경 관리 -->
+					<h4 class="sTitle1">배경 이미지 선택</h4>
+					<div class="bg-choice-area">
+						<div class="bg-preview">
+							<img src="../images2.0/bg/bg_skin00.jpg" alt="">
+							<div class="text">현재 배경 이미지</div>
+						</div>
+						<ul class="bg-choice-list">
+							<li class="item"><label for="Bg0100"><img src="../images2.0/bg/bg_skin00.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0100" class="styled1" checked></li>
+							<li class="item"><label for="Bg0101"><img src="../images2.0/bg/bg_skin01.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0101" class="styled1"></li>
+							<li class="item"><label for="Bg0102"><img src="../images2.0/bg/bg_skin02.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0102" class="styled1"></li>
+							<li class="item"><label for="Bg0103"><img src="../images2.0/bg/bg_skin03.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0103" class="styled1"></li>
+							<li class="item"><label for="Bg0104"><img src="../images2.0/bg/bg_skin04.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0104" class="styled1"></li>
+							<li class="item"><label for="Bg0105"><img src="../images2.0/bg/bg_skin05.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0105" class="styled1"></li>
+							<li class="item"><label for="Bg0106"><img src="../images2.0/bg/bg_skin06.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0106" class="styled1"></li>
+							<li class="item"><label for="Bg0107"><img src="../images2.0/bg/bg_skin07.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0107" class="styled1"></li>
+							<li class="item"><label for="Bg0108"><img src="../images2.0/bg/bg_skin08.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0108" class="styled1"></li>
+							<li class="item"><label for="Bg0109"><img src="../images2.0/bg/bg_skin09.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0109" class="styled1"></li>
+							<li class="item"><label for="Bg0110"><img src="../images2.0/bg/bg_skin10.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0110" class="styled1"></li>
+							<li class="item"><label for="Bg0111"><img src="../images2.0/bg/bg_skin11.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0111" class="styled1"></li>
+							<li class="item"><label for="Bg0112"><img src="../images2.0/bg/bg_skin12.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0112" class="styled1"></li>
+							<li class="item"><label for="Bg0113"><img src="../images2.0/bg/bg_skin13.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0113" class="styled1"></li>
+							<li class="item"><label for="Bg0114"><img src="../images2.0/bg/bg_skin14.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0114" class="styled1"></li>
+							<li class="item"><label for="Bg0115"><img src="../images2.0/bg/bg_skin15.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0115" class="styled1"></li>
+							<li class="item"><label for="Bg0116"><img src="../images2.0/bg/bg_skin16.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0116" class="styled1"></li>
+							<li class="item"><label for="Bg0117"><img src="../images2.0/bg/bg_skin17.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0117" class="styled1"></li>
+							<li class="item"><label for="Bg0118"><img src="../images2.0/bg/bg_skin18.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0118" class="styled1"></li>
+							<li class="item"><label for="Bg0119"><img src="../images2.0/bg/bg_skin19.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0119" class="styled1"></li>
+						</ul>
+						<div class="add-image">
+							<input type="radio" name="Bg01" id="Bg0120" class="styled1"><label for="Bg0120">이미지 등록</label>
+							<div class="input-file2">
+								<div class="inner">
+									<div class="none-click"></div>
+									<input type="text" placeholder="선택한 파일이 없습니다." readonly>
+									<button type="button" class="btn-text mid">파일선택</button>
+									<input type="file">
+								</div>
+								<p class="text-notice">※ 최대 이미지 크기는 가로x세로=800x600 픽셀, 용량은 500Kbyte 입니다.</p>
+								<p class="text-notice">※ 확장자가 jpg, gif, png 이미지만 등록 가능합니다.</p>
+							</div>
+						</div>
+						<div class="btn-wrap center">
+							<div class="btn-align">
+								<div class="btn-item"><button type="button" class="btn-text bdColor fColor">저장</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabCont"><!-- 방문자 통계 -->
+					<h4 class="sTitle1">누적방문자</h4>
+					<div class="board-list1">
+						<table>
+							<caption>누적방문자</caption>
+							<colgroup>
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">오늘</th>
+									<th scope="col">어제</th>
+									<th scope="col">지난주</th>
+									<th scope="col">전체</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>10명</td>
+									<td>19명</td>
+									<td>157명</td>
+									<td>2388명</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4 class="sTitle1">방문자 추이</h4>
+					<div class="chart-wrap">
+						<div class="view-change-area">
+							<p class="item on">주별</p>
+							<p class="item">월별</p>
+						</div>
+
+						<div class="chart-cont">
+							<div class="chart-item on">
+								<div class="week-setting-box weekType">
+									<button type="button" class="btn-arr btn-prev">전주</button>
+									<button type="button" class="btn-arr btn-next">다음주</button>
+									<p class="week-text">2018.01.15 ~ 2017.01.21</p>
+									<div class="btn-calendar">달력열기</div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+								<div class="chart-area">
+									<h3 class="chart-legend">방문자 추이</h3>
+									<div id="chart01"></div><!-- 차트 영역 -->
+								</div>
+							</div>
+							<div class="chart-item">
+								<div class="week-setting-box">
+									<button type="button" class="btn-arr btn-prev">전달</button>
+									<button type="button" class="btn-arr btn-next">다음달</button>
+									<p class="week-text">2018.01</p>
+									<div class="btn-calendar">달력열기</div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+								<div class="chart-area">
+									<h3 class="chart-legend">방문자 추이</h3>
+									<div id="chart02"></div><!-- 차트 영역 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<script src="../js/highcharts.js"></script><!-- 하이차트 스크립트 -->
 <script>
 $(window).load(function(){
+	/*
+		설정 팝업
+	*/
+	/* 열기 */
+	$('.btn-setting').click(function(){
+		$('.blog-popup').fadeIn(200);
+		popResize();// 팝업 리사이징
+	});
+
+	$('.tab-list1 .item').click(function(){
+		chartLoad();// 차트
+		popResize();// 팝업 리사이징
+	});
 	/* 카테고리 관리 */
 	$('.drag-area').sortable({
 		axis:'y',
@@ -910,9 +1040,177 @@ $(window).load(function(){
 		}
 	});
 
+	// 드래그 & 드랍
 	$('.layoutDrop').sortable({
 		connectWith:'.layoutDrop'
 	}).disableSelection();
+
+	/* 화면배경 관리 */
+	// 이미지 등록
+	$('.bg-choice-area input[type=radio]').change(function(){
+		if($('.bg-choice-area .add-image input[type=radio]').is(':checked')){
+			$('.bg-choice-area .add-image .none-click').hide();
+		}else{
+			$('.bg-choice-area .add-image .none-click').show();
+		}
+	});
+
+	/* 방문자 통계 */
+	// 일간/주간탭
+	$('.view-change-area .item').click(function(){
+		var idx = $(this).index();
+		$(this).closest('.tabCont').find('.view-change-area .item').removeClass('on').eq(idx).addClass('on');
+		$(this).closest('.tabCont').find('.chart-item').removeClass('on').eq(idx).addClass('on');
+		chartLoad();
+	});
+
+	// 차트
+	chartLoad();
+	function chartLoad(){
+		// 주별
+		var chart01 = Highcharts.chart('chart01', {
+			//대 타이틀
+			title: {
+				text: ''
+			},
+			//소 타이틀
+			subtitle: {
+				text: ''
+			},
+			//Y축 텍스트
+			yAxis: {
+				title: {
+					text: '',
+					rotation: 0,
+					style: {
+						fontSize: '13px',
+						fontFamily: 'Verdana, sans-serif'
+					}
+				}
+			},
+			
+			legend: {
+				layout: 'horizontal',
+				align: 'left',
+				verticalAlign: 'top'
+			},
+			
+			tooltip: {
+				//enabled: false, 툴팁삭제
+				borderRadius: 0,
+				crosshairs: true,
+				formatter: function () {
+					return this.x + '<br>방문자 수 : ' + this.y + '명';
+				}
+			},
+
+			plotOptions: {
+				series: {
+					color: '#ff5349',//스킨색상
+					animation: {
+						duration: 1000//애니메이션속도
+					}
+					//pointStart: 201801
+				}
+			},
+			xAxis: {
+				categories: ['2018.01.26', '2018.01.27', '2018.01.28', '2018.01.29', '2018.01.30', '2018.01.31', '2018.02.01'],
+			},
+
+			series: [{
+				name: '방문자 수',
+				data: [10, 3, 14, 25, 10, 31, 44]
+			}],
+
+			responsive: {
+				rules: [{
+					condition: {
+						maxWidth: 500,
+						maxHeight: 300
+					},
+					chartOptions: {
+						legend: {
+							layout: 'horizontal',
+							align: 'center',
+							verticalAlign: 'bottom',
+						}
+					}
+				}],
+			}
+		});
+
+		// 월별
+		var chart02 = Highcharts.chart('chart02', {
+			//대 타이틀
+			title: {
+				text: ''
+			},
+			//소 타이틀
+			subtitle: {
+				text: ''
+			},
+			//Y축 텍스트
+			yAxis: {
+				title: {
+					text: '',
+					rotation: 0,
+					style: {
+						fontSize: '13px',
+						fontFamily: 'Verdana, sans-serif'
+					}
+				}
+			},
+			
+			legend: {
+				layout: 'horizontal',
+				align: 'left',
+				verticalAlign: 'top'
+			},
+			
+			tooltip: {
+				//enabled: false, 툴팁삭제
+				borderRadius: 0,
+				crosshairs: true,
+				formatter: function () {
+					return this.x + '<br>방문자 수 : ' + this.y + '명';
+				}
+			},
+
+			plotOptions: {
+				series: {
+					color: '#ff5349',//스킨색상
+					animation: {
+						duration: 1000//애니메이션속도
+					}
+					//pointStart: 201801
+				}
+			},
+			xAxis: {
+				categories: ['2017.07', '2017.08', '2017.09', '2017.10', '2017.11', '2017.12', '2018.01'],
+			},
+
+			series: [{
+				name: '방문자 수',
+				data: [200, 300, 130, 390, 100, 350, 500]
+			}],
+
+			responsive: {
+				rules: [{
+					condition: {
+						maxWidth: 500,
+						maxHeight: 300
+					},
+					chartOptions: {
+						legend: {
+							layout: 'horizontal',
+							align: 'center',
+							verticalAlign: 'bottom',
+						}
+					}
+				}],
+			}
+		});
+	}
 });
 </script>
 </body>

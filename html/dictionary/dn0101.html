@@ -466,13 +466,14 @@ $(document).ready(function(){
 	/* 내가 등록/조회한 용어 팝업 열기*/
 	$(document).on('click', '.btn-dictionary', function(){
 		$('.pop-dictionary').fadeIn(200);
+		popResize();// 팝업 리사이징
 	});
 });
 
 $(window).resize(function(){
 	var winW = $(window).width();
 	if(winW > 800){
-		$('.dimmed').remove();
+		$('.pop-dimmed').remove();
 		$('.pop-dictionary').hide();
 	}
 });

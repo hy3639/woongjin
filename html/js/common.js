@@ -673,27 +673,14 @@ $(document).ready(function(){
 	=================================================================================== */
 	/* 열기 */
 	$('.btn-popup').click(function(){
-		$('body').append('<div class="dimmed"></div>');
-		var wid = $('.layer-popup').outerWidth();
-		var hei = $('.layer-popup').outerHeight();
-		$('.layer-popup').css({
-			'left':'50%',
-			'top':'50%',
-			'margin-left':-wid/2,
-			'margin-top':-hei/2
-		});
+		$('body').append('<div class="pop-dimmed"></div>');
+		popResize();// 팝업 리사이징
 	});
 
 	/* 닫기 */
-	$(document).on('click', '.dimmed', function(){
-		$('.layer-popup').fadeOut(100);
-	});
-	$('.layer-popup .btn-close').click(function(){
-		$('.layer-popup').fadeOut(100);
-		$('.dimmed').remove();
-	});
-	$('.layer-popup .btn-close').click(function(){
-		$('.layer-popup-wrap').fadeOut(100);
+	$(document).on('click', '.pop-dimmed, .layer-popup .btn-close', function(){
+		$('.layer-popup, .layer-popup-wrap').fadeOut(100);
+		$('.pop-dimmed').remove();
 	});
 
 	/* 인물정보 팝업 */
@@ -740,6 +727,7 @@ $(window).resize(function(){
 	resizeMid();// 웹/모바일 리사이징
 	selectWid();// 셀렉트 박스넓이 설정
 	calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지
+	popResize();// 팝업 리사이징
 });
 
 $(window).scroll(function(){
@@ -1082,5 +1070,34 @@ function tabSize(){
 		var len = $(this).closest('.tab-list1').find('.item').length;
 		var wid = tabWid/len;
 		$(this).closest('.tab-list1').find('.item').css({'width':wid});
+	});
+}
+
+/* 팝업 리사이징 */
+function popResize(){
+	$('.layer-popup').each(function(){
+		var winH = $(window).height();
+		var wid = $(this).outerWidth();
+		var hei = $(this).outerHeight();
+		var contH = $(this).find('.pop-content').outerHeight();
+		var headH = $(this).find('.pop-head').outerHeight();
+
+		if(contH > winH - (headH + 40)){
+			$(this).css({
+				'left':'50%',
+				'top':'20px',
+				'bottom':'20px',
+				'margin-left':-wid/2,
+				'margin-top':'0'
+			});
+		}else{
+			$(this).css({
+				'left':'50%',
+				'top':'50%',
+				'bottom':'inherit',
+				'margin-left':-wid/2,
+				'margin-top':-(contH + headH)/2
+			});
+		}
 	});
 }

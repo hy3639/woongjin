@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+<style>
+body {padding:0 30px 30px;}
+@media only screen and (max-width: 800px) {
+	body {padding:0 5px 30px;}
+}
+h2 {
+	margin:50px -30px 20px;
+	padding:10px 30px;
+	background-color:#eee;
+}
+h2:first-child {margin-top:0;}
+h3 {
+	border-bottom:1px solid #eee;
+}
+
+.layer-popup1 {
+	width:800px;
+}
+</style>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!----------------------------------------------------------------------------------------------------------------------->
+<h2>인물정보 레이어팝업 (외부 파일 호출)</h2>
+<!----------------------------------------------------------------------------------------------------------------------->
+<button type="button" class="btn-text btn-user">인물정보</button>
+
+<br><br>
+<p>* 해당 팝업을 띄우고 싶은 요소에 class="btn-user"만 추가해주면 됨.</p>
+
+<!----------------------------------------------------------------------------------------------------------------------->
+<h2>일반 레이어팝업</h2>
+<!----------------------------------------------------------------------------------------------------------------------->
+<button type="button" class="btn-text btn-popup btn-layer1">팝업열기</button>
+
+<!-- 레이어 팝업 영역 -->
+<div class="layer-popup layer-popup1">
+	<div class="pop-head">
+		<h3 class="title">Popup Title</h3>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+
+	<div class="pop-content">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+</div>
+
+<script>
+$(window).load(function(){
+	/* 일반 레이어팝업 열기 */
+	$('.btn-layer1').click(function(){
+		$('.layer-popup1').fadeIn(200);
+		popResize();// 팝업 리사이징
+	});
+});
+</script>
+</body>
+</html>

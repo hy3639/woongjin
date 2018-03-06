@@ -4056,12 +4056,12 @@ select.styled1 {
 .support-wrap .week-content .calendar-box td.select .notice {background-color:#fff !important;}
 .support-wrap .week-content .calendar-box td.today .day {font-weight:700;}
 .support-wrap .week-content .calendar-box td .day.sun {color:#ff5349;}
-.support-wrap .week-content .view-change-area {
+.view-change-area {
 	overflow:hidden;
 	position:absolute;
 	right:20px;top:25px;
 }
-.support-wrap .week-content .view-change-area a {
+.view-change-area .item {
 	float:left;
 	display:block;
 	width:44px;
@@ -4071,9 +4071,9 @@ select.styled1 {
 	text-align:center;
 	border:1px solid #e5e5e5;
 }
-.support-wrap .week-content .view-change-area a:first-child.on + a{border-left:0}
-.support-wrap .week-content .view-change-area a:last-child.on {margin-left:-1px;}
-.support-wrap .week-content .view-change-area a.on {
+.view-change-area .item:first-child.on + .item {border-left:0}
+.view-change-area .item:last-child.on {margin-left:-1px;}
+.view-change-area .item.on {
 	border:1px solid #ff8d86;
 	color:#ff5349;
 	background-color:#fff3f2;
