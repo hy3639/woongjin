@@ -23,7 +23,7 @@
 <div class="wrapper">
 	<div class="header">
 		<h1 class="logo">
-			<a href="#">웅진원팩그룹웨어</a>
+			<a href="#"><img src="../images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
 		</h1>
 		<button type="button" class="btn-naver">네이버웍스</button>
 		<button type="button" class="btn-gnb">메뉴열기</button>
@@ -356,9 +356,9 @@
 							<button type="button" class="btn-blog"><span>블로그</span></button>
 						</div>
 						<div class="right">
-							<div class="ri ght-top">
-								<p><span>김웅진 부장/팀원(admin)</span><button type="button" class="btn-modify"></button></p>
-								<p>웅진 관리본부</p>
+							<div class="right-top">
+								<p class="title"><span>김웅진 부장<br class="wHide">/팀원</span>(admin)<button type="button" class="btn-modify"></button></p>
+								<p class="group">웅진 관리본부</p>
 							</div>
 							<div class="board-write1">
 								<table>
@@ -446,13 +446,16 @@
 					</div>
 					<div class="section">
 						<p class="title">갤러리</p>
+						<div class="btn-more">
+							<button type="button"><span>더보기</span></button>
+						</div>
 						<ul class="gallary-list">
 							<li>
 								<a href="#">
 									<div class="img-area">
 										<img src="../images2.0/temp/@list_img.gif" alt="temp">
 									</div>
-									<p>소리마치 그룹웨어</p>
+									<p>소리마치 그룹웨어 소리마치 그룹웨어</p>
 								</a>
 							</li>
 							<li>
@@ -487,14 +490,24 @@
 									<p>파트너쉽 체결 현장</p>
 								</a>
 							</li>
+							<li>
+								<a href="#">
+									<div class="img-area">
+										<img src="../images2.0/temp/@list_img.gif" alt="temp">
+									</div>
+									<p>파트너쉽 체결 현장</p>
+								</a>
+							</li>
 						</ul>
-						<p class="title">방명록</p>
+					</div>
+					<div class="section">
+						<p class="title">방명록 </p>
+						<div class="btn-more">
+							<button type="button"><span>더보기</span></button>
+						</div>
 						<div class="reply-wrap">
-							<p class="tit">전체 <span class="fColor">(2)</span></p>
-							<div class="btn-reply">
-								<span class="off">댓글등록</span>
-								<span class="on">댓글달기</span>
-							</div>
+							<p>행복한 한마디(Happy Comment)</p>
+							<span class="text-leng">0 / <span>300</span></span>
 							<div class="input-area reply-inupt">
 								<div class="text-wrap">
 									<textarea placeholder="댓글을 입력해주세요"></textarea>
@@ -503,13 +516,16 @@
 									<button type="button"><span class="btn-text btn-square">저장</span></button>
 								</div>
 							</div>
+						</div>
+						<div class="reply-wrap">
 							<div class="reply-list">
+								<p class="tit">전체 <span class="fColor">(2)</span></p>
 								<ul>
 									<li class="reply-item">
 										<div class="info-wrap">
 											<div class="user">
 												<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-												<p class="name btn-user">관리자</p>
+												<p class="name btn-user">관리자<span>관리본부</span></p>
 											</div>
 											<div class="info-list">
 												<span class="date">2017.12.12 08:04:15</span>
@@ -519,46 +535,27 @@
 											</div>
 										</div>
 										<div class="text-area">오픈 축하합니다~~</div>
-										<div class="input-area rereply-inupt">
-											<div class="text-wrap">
-												<textarea placeholder="댓글을 입력해주세요"></textarea>
-											</div>
-											<div class="btn-area type2">
-												<button type="button" class="btn-text btn-cancel">취소</button>
-												<button type="button" class="btn-text btn-save">저장</button>
-											</div>
-										</div>
 									</li>
 									<li class="reply-item">
 										<div class="info-wrap">
 											<div class="user">
-												<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-												<p class="name btn-user">김웅진 대리</p>
+												<div class="img-area"><img src="../images2.0/img/no_image05.gif" alt=""></div>
+												<p class="name btn-user">김웅진 대리<span>관리본부</span></p>
 											</div>
 											<div class="info-list">
 												<span class="date">2017.12.12 08:04:15</span>
-												<ul>													
+												<ul>
 													<li><button type="button">삭제</button></li>
 												</ul>
 											</div>
 										</div>
 										<div class="text-area">오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~</div>
-										<div class="input-area rereply-inupt">
-											<div class="text-wrap">
-												<textarea placeholder="댓글을 입력해주세요"></textarea>
-											</div>
-											<div class="btn-area type2">
-												<button type="button" class="btn-text btn-cancel">취소</button>
-												<button type="button" class="btn-text btn-save">저장</button>
-											</div>
-										</div>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
@@ -572,6 +569,11 @@
 
 <script>
 $(window).load(function(){
+	//글자수
+	$('.text-wrap textarea').keyup(function (e){
+		var content = $(this).val();
+		$('.text-leng').html(content.length + '<span>/300</span>');
+	});
 
 	$('.tab-select').remove();
 	$('.organization-wrap .tab-list1').each(function(){

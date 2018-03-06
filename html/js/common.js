@@ -547,8 +547,8 @@ $(document).ready(function(){
 		}
 	});
 	$(document).on('keydown', '.tagging', function(e){
-		if(e.keyCode  == 8 || e.keyCode  == 46){
-			var ea  = $(this).find('.type-zone').val().length;
+		if(e.keyCode == 8 || e.keyCode == 46){
+			var ea = $(this).find('.type-zone').val().length;
 			if(ea == 0){
 				$(this).find('.type-zone').prev('.tag').remove();
 			}
@@ -593,7 +593,7 @@ $(document).ready(function(){
 	$(document).on('click', '.btn-re-modify', function(){
 		$(this).removeClass('on').closest('.reply-wrap').find('.input-area').hide();
 		$(this).removeClass('on').closest('.reply-wrap').find('.text-area').show();
-		var text =  $(this).closest('.reply-item').find('.text-area').html().replace(/<br>/g, '\n');
+		var text = $(this).closest('.reply-item').find('.text-area').html().replace(/<br>/g, '\n');
 		$(this).closest('.reply-item').find('.text-area').hide().siblings('.rereply-inupt').show().find('textarea').val(text);
 	});
 	/* 댓글 저장 */
@@ -715,6 +715,7 @@ $(document).ready(function(){
 
 
 $(window).load(function(){
+	resizeMid();
 	/* 전저결제 결제선 */
 	$('.app-list .line > p span').each(function(){
 		var hei = $(this).outerHeight()
@@ -823,7 +824,16 @@ function resizeMid(){
 	var winW = $(window).width();
 	if(winW > 800){
 		/* 웹 =================================================================== */
+		//웹일경우 이미지 src
+		$('.logo img').attr('src','../images2.0/layout/site_logo.png');
+
 		/* gnb */
+		$('.gnb-menu-box').enscroll({
+			verticalTrackClass: 'track',
+			verticalHandleClass: 'handle',
+			minScrollbarLength: 28
+		});
+
 		$('.gnb-sliding').removeAttr('style');
 		$('.wrapper').addClass('web').removeClass('mobile');
 		$('.depth1, .gnb-utill').removeAttr('style');
@@ -905,6 +915,9 @@ function resizeMid(){
 		});
 	}else{
 		/* 모바일 ================================================================= */
+		//모바일일경우 이미지 src
+		$('.logo img').attr('src','../images2.0/mobile/layout/site_logo.png');
+
 		/* gnb */
 		$('.wrapper').addClass('mobile').removeClass('web');
 		$('.gnb-sliding, .gnb-menu-box').removeAttr('style');

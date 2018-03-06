@@ -35,9 +35,8 @@
 
 <body>
 <div class="chart-area">
-	<!-- h3 class="chart-title">방문자 추이</h3 -->
+	<h3 class="chart-legend">방문자 추이</h3>
 	<div id="chart"></div>
-	<!-- p class="chart-text">방문자 수</p -->
 </div>
 
 
@@ -47,7 +46,7 @@
 var chart = Highcharts.chart('chart', {
 	//대 타이틀
 	title: {
-		text: '방문자 추이'
+		text: ''
 	},
 	//소 타이틀
 	subtitle: {
@@ -90,7 +89,7 @@ var chart = Highcharts.chart('chart', {
 		}
 	},
 	xAxis: {
-		categories: ['201801', '201802', '201803', '201804', '201805'],
+		categories: ['2018.01', '2018.02', '2018.03', '2018.04', '2018.05'],
 	},
 
 	series: [{

@@ -1057,10 +1057,6 @@ line-height:35px;
 	display:block;
 	width:120px;
 	height:70px;
-	background:url(../images2.0/layout/site_logo.png) no-repeat 0 0;
-	font-size:0;
-	text-indent:-9999px;
-	line-height:0;
 }
 .header .utill {
 	position:absolute;
@@ -1325,18 +1321,19 @@ line-height:35px;
 .gnb-wrap .gnb-list .gnb-item .gnb-title.ico10:before {background-image:url(../images2.0/ico/gnb_ico10.png);}
 .gnb-wrap .gnb-list .gnb-item:hover .gnb-title {color:#fff;}
 .gnb-wrap .gnb-list .gnb-item:hover .gnb-title:before {background-position:0 -18px;}
-.gnb-wrap .gnb-list .gnb-item:hover .depth1 {display:block;}
 
 .gnb-wrap .depth1 {
 	display:none;
 	overflow:hidden;
 	position:fixed;
-	left:220px;top:71px;bottom:50px;
+	left:219px;top:71px;bottom:50px;
 	width:220px;
 	box-sizing:border-box;
 	border-right:1px solid #e5e5e5;
+	border-left:1px solid #e5e5e5;
 	background-color:#fafafa;
 }
+.gnb-wrap .gnb-list .gnb-item:hover .depth1 {display:block;z-index:15;}
 .gnb-wrap .depth1 .scroll-area {
 	overflow-y:scroll;
 	height:100%;
@@ -1470,9 +1467,8 @@ line-height:35px;
 
 .gnb-menu-box {
 	display:none;
-	overflow-y:scroll;
 	position:absolute;
-	left:0;right:-20px;top:-100%;
+	left:0;right:0;top:-100%;
 	z-index:10;
 	height:100%;
 	padding-top:25px;
@@ -5589,7 +5585,7 @@ line-height:35px;
 	width:154px;
 	height:154px;
 	font-size:0;
-	line-height:0; 
+	line-height:0;
 }
 .blog-popup .bg-choice-area .bg-preview img {
 	width:100%;
@@ -7002,6 +6998,13 @@ line-height:35px;
 	top:35px;
 	width:125px;
 }
+.profile-area .left .img-area {
+	position:relative;
+	width:125px;
+	height:125px;
+	overflow:hidden;
+	background:url(../images2.0/img/no_image04.gif) no-repeat left top;
+}
 .profile-area .left .img-area .btn-addimg {
 	position:absolute;
 	right:5px;
@@ -7011,6 +7014,7 @@ line-height:35px;
 	border-radius:15px;
 	background:url(../images2.0/btn/btn_imgadd.png) no-repeat 0 0;
 	box-shadow:1px 4px 4px rgba(0,0,0,.3);
+
 }
 .profile-area .left .img-area .btn-addimg:before {
 	width:31px;
@@ -7036,15 +7040,84 @@ line-height:35px;
 .profile-area .right {
 	padding-left:155px;
 }
+.profile-area .right .board-write1 {
+	margin:0;
+	padding-top:25px;
+	border-bottom:0;
+}
+.profile-area .right .board-write1 th,
+.profile-area .right .board-write1 td {border:0;height:30px;padding:0;vertical-align:top}
+.profile-area .right .board-write1 th {}
+.profile-area .right .board-write1 td {}
+
+.profile-area .right-top {margin-bottom:25px;}
+.profile-area .right-top .title {
+	font-size:16px;
+	color:#000;
+}
+.profile-area .right-top .title span {
+	padding-right:3px;
+	font-weight:700
+}
+.profile-area .right-top .group {
+	margin-top:10px;
+	padding-left:20px;
+	background:url(../images2.0/ico/ico_organization.png) no-repeat left center;
+	font-size:14px;
+}
+.organization-box .section {position:relative;}
+.organization-box .section .btn-more {
+	position:absolute;
+	right:0;
+	top:0;
+	padding-right:12px;
+	color:#999;
+}
+.organization-box .section .btn-more:before {
+	content:'';
+	position:absolute;
+	right:0;
+	top:50%;
+	width:4px;
+	height:7px;
+	margin-top:-3px;
+	background:url(../images2.0/ico/ico_go.png) no-repeat 0 0;
+}
 .organization-box .section .gallary-list {overflow:hidden;}
 .organization-box .section .gallary-list li {
-	width:16.5%;
+	width:14.2%;
+	margin-left:2.9%;
 	float:left;
 }
+.organization-box .section .gallary-list li a {display:block;}
+.organization-box .section .gallary-list li:first-child {margin-left:0;}
+.organization-box .section .gallary-list li:last-child {margin-left:3.1%}
+.organization-box .section .gallary-list li .img-area {}
+	.organization-box .section .gallary-list li .img-area img {width:100%}
+.organization-box .section .gallary-list li p {
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#333
+}
 
-.organization-box .title {
+.organization-box .section .title {
 	margin:40px 0 20px;
 	font-size:16px;
 	color:#000;
 }
 .organization-box .reply-wrap {margin:0}
+.organization-box .reply-wrap .input-area {display:block}
+.organization-box .reply-wrap + .reply-wrap {background-color:#fff;}
+.organization-box .reply-wrap .reply-list .tit {margin-bottom:10px}
+.organization-box .reply-wrap .reply-list .reply-item:first-child {border-top:1px solid #eee}
+.organization-box .reply-wrap .reply-list .reply-item:last-child {border-bottom:1px solid #eee}
+.organization-box .reply-wrap .reply-list .reply-item .user .name span {font-size:12px;color:#999;font-weight:normal;padding-left:10px;}
+.organization-box .reply-wrap .text-leng {
+	position:absolute;
+	right:30px;
+	top:25px;
+	color:#000
+}
+.organization-box .reply-wrap .text-leng span {color:#999}
