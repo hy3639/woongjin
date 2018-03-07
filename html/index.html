@@ -24,7 +24,7 @@
 <div class="wrapper media"><!-- media stage1 stage2 stage3 -->
 	<div class="header">
 		<h1 class="logo">
-			<a href="#"><img src="../images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
+			<a href="#"><img src="images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
 		</h1>
 		<button type="button" class="btn-naver">네이버웍스</button>
 		<button type="button" class="btn-gnb">메뉴열기</button>
@@ -1243,6 +1243,8 @@ function resizeBox(){
 function resizeMain(){
 	var winW = $(window).width();
 	if(winW > 800){
+		//웹일경우 이미지 src
+		$('.logo img').attr('src','images2.0/layout/site_logo.png');
 		/* 스크롤바 디자인 */
 		$('.scroll-box').each(function(){
 			$(this).removeAttr('style').next('div').remove();
@@ -1257,6 +1259,9 @@ function resizeMain(){
 			$(this).parent('div').css({'right':'0'});
 		});
 	}else{
+		//모바일일경우 이미지 src
+		$('.logo img').attr('src','images2.0/mobile/layout/site_logo.png');
+
 		/* 스크롤바 디자인 초기화 */
 		$('.scroll-box').each(function(){
 			$(this).removeAttr('style').next('div').remove();

@@ -87,12 +87,14 @@ input[type=password] {
 
 /* 딤드 */
 .dimmed,
-.pop-dimmed {
+.pop-dimmed,
+.db-dimmed {
 	position:fixed;
 	left:0;right:0;top:0;bottom:0;
 	z-index:110;
 	background-color:rgba(0,0,0,.7);
 }
+.db-dimmed {z-index:120;}
 /* 투명 딤드 */
 .dimmed.opacity {
 	background-color:transparent;
