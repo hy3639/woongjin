@@ -775,23 +775,25 @@ function resizeGnb(){
 function selectStyled(){
 	(function($) {
 		var sDesign = $('select.styled1').each(function(){
-			var val = $(this).val();
-			$(this).wrap('<span class="selectWrap">');
-			$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
-			if(this.disabled){
-				$(this).closest('.selectWrap').addClass('disabled');
+			if(!$(this).parents('span').hasClass('selectWrap')){
+				var val = $(this).val();
+				$(this).wrap('<span class="selectWrap">');
+				$(this).closest('.selectWrap').prepend('<span class="selTitle">'+val+'</span>');
+				if(this.disabled){
+					$(this).closest('.selectWrap').addClass('disabled');
+				}
+				$(this).change(function(){
+					var cVal = $(this).val();
+					$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
+					$(this).blur();
+				});
+				$(this).focus(function(){
+					$(this).closest('.selectWrap').find('.selTitle').addClass('bdColor');
+				});
+				$(this).blur(function(){
+					$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
+				});
 			}
-			$(this).change(function(){
-				var cVal = $(this).val();
-				$(this).closest('.selectWrap').find('.selTitle').html(cVal).removeClass('bdColor');
-				$(this).blur();
-			});
-			$(this).focus(function(){
-				$(this).closest('.selectWrap').find('.selTitle').addClass('bdColor');
-			});
-			$(this).blur(function(){
-				$(this).closest('.selectWrap').find('.selTitle').removeClass('bdColor');
-			});
 		});
 	})(jQuery);
 }
@@ -844,7 +846,8 @@ function resizeMid(){
 		if(winW > 800){
 			/* 웹 =================================================================== */
 			//웹일경우 이미지 src
-			$('.logo img').attr('src','../images2.0/layout/site_logo.png');
+			$('.header .logo img').attr('src','../images2.0/layout/site_logo.png');
+			$('.header .m-logo img').attr('src','images2.0/layout/site_logo.png');
 
 			/* gnb */
 			$('.gnb-menu-box').enscroll({
@@ -935,7 +938,8 @@ function resizeMid(){
 		}else{
 			/* 모바일 ================================================================= */
 			//모바일일경우 이미지 src
-			$('.logo img').attr('src','../images2.0/mobile/layout/site_logo.png');
+			$('.header .logo img').attr('src','../images2.0/mobile/layout/site_logo.png');
+			$('.header .m-logo img').attr('src','images2.0/mobile/layout/site_logo.png');
 
 			/* gnb */
 			$('.wrapper').addClass('mobile').removeClass('web');

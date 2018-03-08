@@ -443,7 +443,7 @@
 		margin:27px 0 23px;
 	}
 	.scroll-box {
-		overflow: auto;
+		overflow:auto;
 		width:100%;
 		height:260px;
 		box-sizing:border-box;
@@ -596,32 +596,32 @@
 
 	/* 연차 */
 	.annual-wrap {
-		/* overflow: hidden;*/
+		/* overflow:hidden;*/
 		margin:33px -15px 0;
 		/* padding-left:70px;*/
-		text-align: center;
-		box-sizing: border-box;
+		text-align:center;
+		box-sizing:border-box;
 	}
 	.annual-wrap .unit {
-		display: inline-block;
-		padding: 0 10px;
+		display:inline-block;
+		padding:0 10px;
 	}
-	.annual-wrap .unit img {vertical-align: middle;}
+	.annual-wrap .unit img {vertical-align:middle;}
 	.annual-wrap div {
-		display: inline-block;
+		display:inline-block;
 		position:relative;
 		padding-top:20px;
-		color: #333;
-		font-size: 40px;
-		font-weight: 700;
-		text-align: center;
-		box-sizing: border-box;
+		color:#333;
+		font-size:40px;
+		font-weight:700;
+		text-align:center;
+		box-sizing:border-box;
 
 	}
-	.annual-wrap div.remainder {color: #ff5349}
+	.annual-wrap div.remainder {color:#ff5349}
 	.annual-wrap div p {
 		position:absolute;
-		width: 100%;
+		width:100%;
 		left:50%;
 		top:0;
 		-webkit-transform:translateX(-50%);
@@ -631,83 +631,83 @@
 	}
 
 	.annual-cont {
-		width: 100%;
+		width:100%;
 		height:150px;
 		margin-top:27px;
 		border:1px solid #eee;
-		box-sizing: border-box;
-		overflow: hidden;
+		box-sizing:border-box;
+		overflow:hidden;
 		padding:17px 19px 0;
 	}
 	.annual-cont .tit {
 		margin-bottom:12px;
-		font-size: 15px;
+		font-size:15px;
 		color:#333;
-		font-weight: 700;
-		line-height: 17px;
+		font-weight:700;
+		line-height:17px;
 	}
 	.annual-cont .scroll-wrap {
 		position:relative;
 		margin-top:0;
 	}
-	.annual-cont .scroll-box {height: 80px;}
+	.annual-cont .scroll-box {height:80px;}
 	.annual-cont .scroll-box .annual-list span {
 		position:absolute;
 		left:0;top:0;
-		display: inline-block;
-		width: 72px;
+		display:inline-block;
+		width:72px;
 		color:#ff5349;
 	}
 	.annual-cont .scroll-box .annual-list li {
 		position:relative;
 		padding-left:74px;
-		margin-top: 6px;
-		font-size: 12px;
+		margin-top:6px;
+		font-size:12px;
 	}
-	.annual-cont .scroll-box .annual-list li:first-child {margin-top: 0;}
+	.annual-cont .scroll-box .annual-list li:first-child {margin-top:0;}
 
 
 	/* 최근 방명록/최근 블로그 방문자 */
 	.scroll-wrap.guest {margin-top:28px;}
 	.guest-list {}
 	.guest-list li {
-		margin-top: 32px;
+		margin-top:32px;
 	}
 	.guest-list li:first-child {margin-top:0;}
 	.guest-list .img-area {
-		overflow: hidden;
-		float: left;
-		width: 35px;
-		height: 35px;
-		border-radius: 50%;
-		font-size: 0;
-		line-height: 0;
+		overflow:hidden;
+		float:left;
+		width:35px;
+		height:35px;
+		border-radius:50%;
+		font-size:0;
+		line-height:0;
 	}
-	.guest-list .img-area img {width: 100%;}
+	.guest-list .img-area img {width:100%;}
 	.guest-list .txt-area {
-		padding-left: 45px;
+		padding-left:45px;
 	}
 	.guest-list .txt-area .tit {
-		color: #333;
+		color:#333;
 	}
 	.guest-list .txt-area .info {
 		color:#999;
-		font-size: 12px;
+		font-size:12px;
 	}
 	.guest-list .txt-area .info span {
-		position: relative;
+		position:relative;
 		padding-left:11px;
 		margin-left:10px;
 	}
 	.guest-list .txt-area .info span:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 50%;
-		width: 1px;
-		height: 10px;
-		margin-top: -5px;
-		background-color: #f0f0f0;
+		content:'';
+		position:absolute;
+		left:0;
+		top:50%;
+		width:1px;
+		height:10px;
+		margin-top:-5px;
+		background-color:#f0f0f0;
 	}
 	.guest-list .txt-area .info span:first-child {margin-left:0;padding-left:0;}
 	.guest-list .txt-area .info span:first-child:before {display:none;}
@@ -715,14 +715,14 @@
 
 
 /* 1050 이하 */
-/*@media only screen and (max-width: 1050px) {*/
-@media only screen and (max-width: 990px) {
+/*@media only screen and (max-width:1050px) {*/
+@media only screen and (max-width:990px) {
 	.content .cont-inner {padding:25px 10px 0;}
 }
 
 
 /* 모바일 */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width:800px) {
 	.gnb-sliding {display:block;left:0;}
 	/* 레이아웃 */
 	.content {margin:-5px 0 0;padding-bottom:0;}
@@ -1135,29 +1135,29 @@
 	/* 연차 */
 	.annual-wrap {
 		margin:5px -15px 0;
-		text-align: center;
-		box-sizing: border-box;
+		text-align:center;
+		box-sizing:border-box;
 	}
 	.annual-wrap .unit {
-		display: inline-block;
-		padding: 0 10px;
+		display:inline-block;
+		padding:0 10px;
 	}
-	.annual-wrap .unit img {vertical-align: middle;}
+	.annual-wrap .unit img {vertical-align:middle;}
 	.annual-wrap div {
-		display: inline-block;
+		display:inline-block;
 		position:relative;
 		padding-top:10px;
-		color: #333;
-		font-size: 40px;
-		font-weight: 700;
-		text-align: center;
-		box-sizing: border-box;
+		color:#333;
+		font-size:40px;
+		font-weight:700;
+		text-align:center;
+		box-sizing:border-box;
 
 	}
-	.annual-wrap div.remainder {color: #ff5349}
+	.annual-wrap div.remainder {color:#ff5349}
 	.annual-wrap div p {
 		position:absolute;
-		width: 100%;
+		width:100%;
 		left:50%;top:0;
 		-webkit-transform:translateX(-50%);
 		-ms-transform:translateX(-50%);
@@ -1167,19 +1167,19 @@
 	}
 
 	.annual-cont {
-		width: 100%;
+		width:100%;
 		margin-top:20px;
 		border:1px solid #eee;
-		box-sizing: border-box;
-		overflow: hidden;
+		box-sizing:border-box;
+		overflow:hidden;
 		padding:17px 19px 18px;
 	}
 	.annual-cont .tit {
 		margin-bottom:12px;
-		font-size: 15px;
+		font-size:15px;
 		color:#333;
-		font-weight: 700;
-		line-height: 17px;
+		font-weight:700;
+		line-height:17px;
 	}
 	.annual-cont .scroll-wrap {
 		position:relative;
@@ -1187,22 +1187,22 @@
 	}
 	.annual-cont .scroll-box {
 		overflow-y:auto;
-		height: 80px;
+		height:80px;
 	}
 	.annual-cont .scroll-box .annual-list span {
 		position:absolute;
 		left:0;top:0;
-		display: inline-block;
-		width: 72px;
+		display:inline-block;
+		width:72px;
 		color:#ff5349;
 	}
 	.annual-cont .scroll-box .annual-list li {
 		position:relative;
 		padding-left:74px;
-		margin-top: 6px;
-		font-size: 12px;
+		margin-top:6px;
+		font-size:12px;
 	}
-	.annual-cont .scroll-box .annual-list li:first-child {margin-top: 0;}
+	.annual-cont .scroll-box .annual-list li:first-child {margin-top:0;}
 
 	/* 주간일정 */
 	.schedule-cont {}
@@ -1304,43 +1304,43 @@
 	.scroll-wrap.guest {}
 	.guest-list {}
 	.guest-list li {
-		margin-top: 14px;
+		margin-top:14px;
 	}
 	.guest-list li:first-child {margin-top:0;}
 	.guest-list .img-area {
-		overflow: hidden;
-		float: left;
-		width: 35px;
-		height: 35px;
-		border-radius: 50%;
-		font-size: 0;
-		line-height: 0;
+		overflow:hidden;
+		float:left;
+		width:35px;
+		height:35px;
+		border-radius:50%;
+		font-size:0;
+		line-height:0;
 	}
-	.guest-list .img-area img {width: 100%;}
+	.guest-list .img-area img {width:100%;}
 	.guest-list .txt-area {
-		padding-left: 45px;
+		padding-left:45px;
 	}
 	.guest-list .txt-area .tit {
-		color: #333;
+		color:#333;
 	}
 	.guest-list .txt-area .info {
 		color:#999;
-		font-size: 12px;
+		font-size:12px;
 	}
 	.guest-list .txt-area .info span {
-		position: relative;
+		position:relative;
 		padding-left:11px;
 		margin-left:10px;
 	}
 	.guest-list .txt-area .info span:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 50%;
-		width: 1px;
-		height: 10px;
-		margin-top: -5px;
-		background-color: #f0f0f0;
+		content:'';
+		position:absolute;
+		left:0;
+		top:50%;
+		width:1px;
+		height:10px;
+		margin-top:-5px;
+		background-color:#f0f0f0;
 	}
 	.guest-list .txt-area .info span:first-child {margin-left:0;padding-left:0;}
 	.guest-list .txt-area .info span:first-child:before {display:none;}
@@ -1389,12 +1389,12 @@
 
 
 /* 1100 이하 */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width:1100px) {
 	.container.main {padding-left:0;}
 }
 
 /* 1280 이상 */
-@media only screen and (min-width: 1279px) {
+@media only screen and (min-width:1279px) {
 	.media .content .cont {width:33%;}
 }
 
