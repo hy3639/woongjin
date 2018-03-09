@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h1 class="logo">
+			<a href="#"><img src="../images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
+		</h1>
+		<button type="button" class="btn-naver">네이버웍스</button>
+		<button type="button" class="btn-gnb">메뉴열기</button>
+		<button type="button" class="btn-search">검색</button>
+
+		<div class="utill">
+			<div class="user-box">
+				<div class="user">
+					<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
+					<p class="name">김웅진 부장</p>
+				</div>
+			</div>
+			<div class="user-menu">
+				<div class="inner">
+					<button type="button" class="btn-close2">닫기</button>
+					<div class="user">
+						<div class="img-area mHide"><img src="../images2.0/temp/@user.jpg" alt=""></div>
+						<div class="txt-area">
+							<p class="name mHide">김웅진 부장</p>
+							<p class="info">경영지원부<br>woongjin2@woongjin.co.kr</p>
+							<a href="#" class="btn-admin">관리자설정</a>
+						</div>
+					</div>
+					<div class="btn-area">
+						<a href="#" class="">내정보관리</a>
+						<a href="#" class="">비밀번호변경</a>
+						<a href="#" class="">로그아웃</a>
+					</div>
+				</div>
+			</div>
+			<div class="naver-list">
+				<div class="inner">
+					<button type="button" class="btn-close2">닫기</button>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n01.png" alt="메일"><em class="len bgColor">99</em></span></a>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n02.png" alt="전화번호부"></span></a>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n03.png" alt="일정관리"></span></a>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n04.png" alt="내 드라이브"></span></a>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n05.png" alt="메신저함"><em class="len bgColor">1</em></span></a>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n06.png" alt="설문조사"></span></a>
+					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n07.png" alt="네이버웍스관리자"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="gnb-utill">
+			<div class="btn-close-box wHide">
+				<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
+			</div>
+			<!-- gnb -->
+			<div class="gnb-sliding">
+				<div class="gnb-wrap">
+					<div class="gnb-menu-box">
+						<div class="home">
+							<a href="#" class="link-home ico01">홈</a>
+							<button type="button" class="btn-setting">설정</button>
+						</div>
+						<ul class="gnb-list">
+							<li class="gnb-item">
+								<p class="gnb-title ico02">게시판</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">게시판</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item">
+												<a href="#" class="d-title">최근게시물</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">공지사항</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">경조사</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자유게시판lv2</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">IT/Biz Trend</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">양식기 전용 게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자유게시판</a>
+												<ul class="depth2-list">
+													<li class="depth2-item"><a href="#">게시판 01</a></li>
+													<li class="depth2-item"><a href="#">게시판 02</a></li>
+													<li class="depth2-item"><a href="#">게시판 03</a></li>
+													<li class="depth2-item"><a href="#">게시판 04</a></li>
+													<li class="depth2-item"><a href="#">게시판 05</a></li>
+													<li class="depth2-item"><a href="#">게시판 06</a></li>
+													<li class="depth2-item"><a href="#">게시판 07</a></li>
+												</ul>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">자료실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">R&amp;D부문/개발실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">Master Data 신규</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">익명게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">제안자료실</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">권한 게시판</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">임시저장함</a>
+											</li>
+											<li class="depth1-item">
+												<a href="#" class="d-title">관리자 메뉴</a>
+												<ul class="depth2-list">
+													<li class="depth2-item"><a href="#">게시판 01</a></li>
+													<li class="depth2-item"><a href="#">게시판 02</a></li>
+													<li class="depth2-item"><a href="#">게시판 03</a></li>
+													<li class="depth2-item"><a href="#">게시판 04</a></li>
+													<li class="depth2-item"><a href="#">게시판 05</a></li>
+													<li class="depth2-item"><a href="#">게시판 06</a></li>
+													<li class="depth2-item"><a href="#">게시판 07</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico03">전자결재</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">전자결재</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico04">설문조사</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">설문조사</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico05">업무지원</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">업무지원</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico06">Knowledge</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">Knowledge</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+											<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico07">e-HR</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">e-HR</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico08">평가시스템</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">평가시스템</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico09">개인블로그</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">개인블로그</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-item">
+								<p class="gnb-title ico10">전사공유지식</p>
+								<div class="depth1">
+									<div class="scroll-area">
+										<div class="depth-top">
+											<p class="depth1-title"><span class="text">전사공유지식</span></p>
+										</div>
+										<ul class="depth1-list">
+											<li class="depth1-item">
+												<a href="#" class="d-title">전사공유지식</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 서브 GNB -->
+					<div class="sub-gnb">
+						<div class="depth1">
+							<div class="scroll-area">
+								<div class="depth-top">
+									<p class="depth1-title"><span class="text">개인블로그</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //서브 GNB -->
+				</div>
+				<div class="btn-gnb-toggle">
+					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="blog-info">
+				<h3 class="title"></h3>
+				<div class="img-area"><img src="../images2.0/mobile/img/no_image04.gif" alt=""></div>
+				<p class="name"></p>
+				<div>
+					안녕하세요. 관리자의 블로그 입니다.<br>
+					여기는 소개글 입력하는 란 입니다.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	</div>
+</div>
+
+<!-- 레이어팝업 영역 -->
+<!-- 블로그 설정 -->
+<div class="layer-popup blog-popup">
+	<div class="pop-head">
+		<h3 class="title">블로그 관리</h3>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+
+	<div class="pop-content">
+		<div class="tabArea">
+			<ul class="tab-list1">
+				<li class="item fColor"><span class="text">카테고리 관리</span></li>
+				<li class="item"><span class="text">화면배치 관리</span></li>
+				<li class="item"><span class="text">화면배경 관리</span></li>
+				<li class="item"><span class="text">방문자 통계</span></li>
+			</ul>
+
+			<div class="tabContent">
+				<div class="tabCont on"><!-- 카테고리 관리 -->
+					<h4 class="sTitle1">카테고리 관리</h4>
+					<p class="blt-text1">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
+					<div class="blog-numbering">
+						<div class="fixed-box">
+							<div class="box box1">정렬</div>
+							<div class="box box3">선택</div>
+							<div class="box box2">번호</div>
+							<div class="box box4">카테고리 이름</div>
+						</div>
+						<div class="drag-area">
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">1</div>
+								<div class="box box4 none-drag">나만의 일상</div>
+							</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">2</div>
+								<div class="box box4 none-drag">업무관련 스터디및 스크랩</div>
+							</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">3</div>
+								<div class="box box4 none-drag">오늘의한컷</div>
+							</div>
+							<div class="drag-box">
+								<div class="box box1"></div>
+								<div class="box box2 none-drag"><input type="radio" name="Drag01" class="styled1"></div>
+								<div class="box box3 none-drag">4</div>
+								<div class="box box4 none-drag">영어공부</div>
+							</div>
+						</div>
+						<div class="no-data">해당하는 데이터가 없습니다.</div>
+					</div>
+					<div class="btn-wrap center">
+						<div class="btn-align">
+							<div class="btn-item"><button type="button" class="btn-text btn-dbpop btn-cate">수정</button></div>
+							<div class="btn-item"><button type="button" class="btn-text btnDel">삭제</button></div>
+							<div class="btn-item"><button type="button" class="btn-text bdColor fColor btn-dbpop btn-cate">등록</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="tabCont"><!-- 화면배치 관리 -->
+					<h4 class="sTitle1">Layout 선택</h4>
+					<div class="blog-layout">
+						<div class="item left">
+							<div class="icon"></div>
+							<input type="radio" name="Layout01" id="Layout0101" class="styled1" checked>
+							<label for="Layout0101">2단 메뉴(좌)</label>
+						</div>
+						<div class="item right">
+							<div class="icon"></div>
+							<input type="radio" name="Layout01" id="Layout0102" class="styled1">
+							<label for="Layout0102">2단 메뉴(우)</label>
+						</div>
+						<div class="item side">
+							<div class="icon"></div>
+							<input type="radio" name="Layout01" id="Layout0103" class="styled1">
+							<label for="Layout0103">3단 좌우메뉴</label>
+						</div>
+					</div>
+
+					<h4 class="sTitle1">포틀릿 배치</h4>
+					<p class="blt-text1">카테고리 목록은 Drag &amp; Drop으로 이동할 수 있습니다.</p>
+					<div class="blog-portlet">
+						<div class="portlet-list">
+							<h5 class="title">포틀릿 목록</h5>
+							<p class="item"><input type="checkbox" id="Portlet01" class="styled1" checked disabled><label for="Portlet01">개인 프로필</label></p>
+							<p class="item"><input type="checkbox" id="Portlet02" class="styled1" checked disabled><label for="Portlet02">카테고리</label></p>
+							<p class="item"><input type="checkbox" id="Portlet03" class="styled1" checked><label for="Portlet03">포스팅 달력</label></p>
+							<p class="item"><input type="checkbox" id="Portlet04" class="styled1" checked><label for="Portlet04">Following 정보</label></p>
+							<p class="item"><input type="checkbox" id="Portlet05" class="styled1" checked><label for="Portlet05">최근 댓글</label></p>
+							<p class="item"><input type="checkbox" id="Portlet06" class="styled1" checked><label for="Portlet06">Tag Cloud</label></p>
+						</div>
+						<div class="layout-box left-menu">
+							<div class="fixed-box">
+								<p>Contents 영역(Fixed)</p>
+							</div>
+							<div class="layoutDrop left-box">
+								<p class="item">개인 프로필</p>
+								<p class="item">카테고리</p>
+								<p class="item">포스팅 달력</p>
+								<p class="item">Following 정보</p>
+								<p class="item">최근 댓글</p>
+								<p class="item">Tag Cloud</p>
+							</div>
+							<div class="layoutDrop right-box"></div>
+						</div>
+					</div>
+					<div class="btn-wrap center">
+						<div class="btn-align">
+							<div class="btn-item"><button type="button" class="btn-text">수정</button></div>
+							<div class="btn-item"><button type="button" class="btn-text">삭제</button></div>
+							<div class="btn-item"><button type="button" class="btn-text bdColor fColor">등록</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="tabCont"><!-- 화면배경 관리 -->
+					<h4 class="sTitle1">배경 이미지 선택</h4>
+					<div class="bg-choice-area">
+						<div class="bg-preview">
+							<img src="../images2.0/bg/bg_skin00.jpg" alt="">
+							<div class="text">현재 배경 이미지</div>
+						</div>
+						<ul class="bg-choice-list">
+							<li class="item"><label for="Bg0100"><img src="../images2.0/bg/bg_skin00.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0100" class="styled1" checked></li>
+							<li class="item"><label for="Bg0101"><img src="../images2.0/bg/bg_skin01.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0101" class="styled1"></li>
+							<li class="item"><label for="Bg0102"><img src="../images2.0/bg/bg_skin02.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0102" class="styled1"></li>
+							<li class="item"><label for="Bg0103"><img src="../images2.0/bg/bg_skin03.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0103" class="styled1"></li>
+							<li class="item"><label for="Bg0104"><img src="../images2.0/bg/bg_skin04.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0104" class="styled1"></li>
+							<li class="item"><label for="Bg0105"><img src="../images2.0/bg/bg_skin05.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0105" class="styled1"></li>
+							<li class="item"><label for="Bg0106"><img src="../images2.0/bg/bg_skin06.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0106" class="styled1"></li>
+							<li class="item"><label for="Bg0107"><img src="../images2.0/bg/bg_skin07.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0107" class="styled1"></li>
+							<li class="item"><label for="Bg0108"><img src="../images2.0/bg/bg_skin08.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0108" class="styled1"></li>
+							<li class="item"><label for="Bg0109"><img src="../images2.0/bg/bg_skin09.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0109" class="styled1"></li>
+							<li class="item"><label for="Bg0110"><img src="../images2.0/bg/bg_skin10.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0110" class="styled1"></li>
+							<li class="item"><label for="Bg0111"><img src="../images2.0/bg/bg_skin11.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0111" class="styled1"></li>
+							<li class="item"><label for="Bg0112"><img src="../images2.0/bg/bg_skin12.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0112" class="styled1"></li>
+							<li class="item"><label for="Bg0113"><img src="../images2.0/bg/bg_skin13.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0113" class="styled1"></li>
+							<li class="item"><label for="Bg0114"><img src="../images2.0/bg/bg_skin14.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0114" class="styled1"></li>
+							<li class="item"><label for="Bg0115"><img src="../images2.0/bg/bg_skin15.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0115" class="styled1"></li>
+							<li class="item"><label for="Bg0116"><img src="../images2.0/bg/bg_skin16.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0116" class="styled1"></li>
+							<li class="item"><label for="Bg0117"><img src="../images2.0/bg/bg_skin17.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0117" class="styled1"></li>
+							<li class="item"><label for="Bg0118"><img src="../images2.0/bg/bg_skin18.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0118" class="styled1"></li>
+							<li class="item"><label for="Bg0119"><img src="../images2.0/bg/bg_skin19.jpg" alt=""></label><input type="radio" name="Bg01" id="Bg0119" class="styled1"></li>
+						</ul>
+						<div class="add-image">
+							<input type="radio" name="Bg01" id="Bg0120" class="styled1"><label for="Bg0120">이미지 등록</label>
+							<div class="input-file2">
+								<div class="inner">
+									<div class="none-click"></div>
+									<input type="text" placeholder="선택한 파일이 없습니다." readonly>
+									<button type="button" class="btn-text mid">파일선택</button>
+									<input type="file">
+								</div>
+								<p class="text-notice">※ 최대 이미지 크기는 가로x세로=800x600 픽셀, 용량은 500Kbyte 입니다.</p>
+								<p class="text-notice">※ 확장자가 jpg, gif, png 이미지만 등록 가능합니다.</p>
+							</div>
+						</div>
+						<div class="btn-wrap center">
+							<div class="btn-align">
+								<div class="btn-item"><button type="button" class="btn-text bdColor fColor">저장</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabCont"><!-- 방문자 통계 -->
+					<h4 class="sTitle1">누적방문자</h4>
+					<div class="board-list1">
+						<table>
+							<caption>누적방문자</caption>
+							<colgroup>
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col style="width:25%;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">오늘</th>
+									<th scope="col">어제</th>
+									<th scope="col">지난주</th>
+									<th scope="col">전체</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>10명</td>
+									<td>19명</td>
+									<td>157명</td>
+									<td>2388명</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h4 class="sTitle1">방문자 추이</h4>
+					<div class="chart-wrap">
+						<div class="view-change-area">
+							<p class="item on">주별</p>
+							<p class="item">월별</p>
+						</div>
+
+						<div class="chart-cont">
+							<div class="chart-item on">
+								<div class="week-setting-box weekType">
+									<button type="button" class="btn-arr btn-prev">전주</button>
+									<button type="button" class="btn-arr btn-next">다음주</button>
+									<p class="week-text">2018.01.15 ~ 2017.01.21</p>
+									<div class="btn-calendar">달력열기</div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+								<div class="chart-area">
+									<h3 class="chart-legend">방문자 추이</h3>
+									<div id="chart01"></div><!-- 차트 영역 -->
+								</div>
+							</div>
+							<div class="chart-item">
+								<div class="week-setting-box">
+									<button type="button" class="btn-arr btn-prev">전달</button>
+									<button type="button" class="btn-arr btn-next">다음달</button>
+									<p class="week-text">2018.01</p>
+									<div class="btn-calendar">달력열기</div>
+									<div class="calendar-layer bdColor">
+										<div class="datepicker"></div>
+									</div>
+								</div>
+								<div class="chart-area">
+									<h3 class="chart-legend">방문자 추이</h3>
+									<div id="chart02"></div><!-- 차트 영역 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 카테고리 수정/등록 -->
+<div class="layer-popup category-popup">
+	<div class="pop-head">
+		<h3 class="title">카테고리 <span class="trans-text">수정</span></h3>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+
+	<div class="pop-content">
+		<label for="Cate">카테고리 이름</label>
+		<input type="text" id="Cate" class="required">
+		<div class="btn-area">
+			<button type="button" class="btn-text sm btnCancel">취소</button>
+			<button type="button" class="btn-text sm bdColor fColor btnStorage">저장</button>
+		</div>
+	</div>
+</div>
+
+<script src="../js/highcharts.js"></script><!-- 하이차트 스크립트 -->
+<script>
+(function($) {
+	$(window).load(function(){
+		/*
+			설정 팝업
+		*/
+		/* 열기 */
+		$('.btn-setting').click(function(){
+			$('.blog-popup').fadeIn(200);
+			popResize();// 팝업 리사이징
+		});
+
+		$('.tab-list1 .item').click(function(){
+			chartLoad();// 차트
+			popResize();// 팝업 리사이징
+		});
+		/* 카테고리 관리 */
+		$('.drag-area').sortable({
+			axis:'y',
+			containment:'.blog-popup',
+			scroll:false,
+			revert:true,
+			'cancel':'.none-drag',
+			stop: function(){
+				boxNumber();// 드래그 박스 넘버링
+			}
+		});
+
+		/* 화면배치 관리 */
+		// Layout 선택
+		$('.blog-layout .item .icon').click(function(){
+			$(this).closest('.item').find('input[type=radio]').prop('checked', true);
+			rdoChkState();
+			var idx = $(this).closest('.item').index();
+			// 좌
+			if(idx == 0){
+				$('.layout-box').attr('class', 'layout-box left-menu');
+				var cont = $('.layoutDrop.right-box').html();
+				$('.layoutDrop.left-box').append(cont);
+				$('.layoutDrop.right-box').html('');
+			}
+			// 우
+			if(idx == 1){
+				$('.layout-box').attr('class', 'layout-box right-menu');
+				var cont = $('.layoutDrop.left-box').html();
+				$('.layoutDrop.right-box').append(cont);
+				$('.layoutDrop.left-box').html('');
+			}
+			// 좌우
+			if(idx == 2){
+				$('.layout-box').attr('class', 'layout-box side-menu');
+			}
+		});
+
+		// 포틀릿 배치
+		$('.portlet-list .item input[type=checkbox]').change(function(){
+			var menu = $(this).closest('.item').text();
+			console.log(menu);
+			if(this.checked){
+				if($('.layout-box').hasClass('left-menu') || $('.layout-box').hasClass('side-menu')){
+					$('.layoutDrop.left-box').append('<p class="item ui-sortable-handle">' + menu + '</p>');
+				}
+				if($('.layout-box').hasClass('right-menu')){
+					$('.layoutDrop.right-box').append('<p class="item ui-sortable-handle">' + menu + '</p>');
+				}
+			}else{
+				$('.layout-box .layoutDrop .item').each(function(){
+					var text = $(this).text();
+					if(menu == text){
+						$(this).remove();
+					}
+				});
+			}
+		});
+
+		// 드래그 & 드랍
+		$('.layoutDrop').sortable({
+			connectWith:'.layoutDrop',
+			revert:true
+		}).disableSelection();
+
+		/* 화면배경 관리 */
+		// 이미지 등록
+		$('.bg-choice-area input[type=radio]').change(function(){
+			if($('.bg-choice-area .add-image input[type=radio]').is(':checked')){
+				$('.bg-choice-area .add-image .none-click').hide();
+			}else{
+				$('.bg-choice-area .add-image .none-click').show();
+			}
+		});
+
+		/* 방문자 통계 */
+		// 일간/주간탭
+		$('.view-change-area .item').click(function(){
+			var idx = $(this).index();
+			$(this).closest('.tabCont').find('.view-change-area .item').removeClass('on').eq(idx).addClass('on');
+			$(this).closest('.tabCont').find('.chart-item').removeClass('on').eq(idx).addClass('on');
+			chartLoad();
+		});
+
+		// 차트
+		chartLoad();
+		function chartLoad(){
+			// 주별
+			var chart01 = Highcharts.chart('chart01', {
+				//대 타이틀
+				title: {
+					text: ''
+				},
+				//소 타이틀
+				subtitle: {
+					text: ''
+				},
+				//Y축 텍스트
+				yAxis: {
+					title: {
+						text: '',
+						rotation: 0,
+						style: {
+							fontSize: '13px',
+							fontFamily: 'Verdana, sans-serif'
+						}
+					}
+				},
+				
+				legend: {
+					layout: 'horizontal',
+					align: 'left',
+					verticalAlign: 'top'
+				},
+				
+				tooltip: {
+					//enabled: false, 툴팁삭제
+					borderRadius: 0,
+					crosshairs: true,
+					formatter: function () {
+						return this.x + '<br>방문자 수 : ' + this.y + '명';
+					}
+				},
+
+				plotOptions: {
+					series: {
+						color: '#ff5349',//스킨색상
+						animation: {
+							duration: 1000//애니메이션속도
+						}
+						//pointStart: 201801
+					}
+				},
+				xAxis: {
+					categories: ['2018.01.26', '2018.01.27', '2018.01.28', '2018.01.29', '2018.01.30', '2018.01.31', '2018.02.01'],
+				},
+
+				series: [{
+					name: '방문자 수',
+					data: [10, 3, 14, 25, 10, 31, 44]
+				}],
+
+				responsive: {
+					rules: [{
+						condition: {
+							maxWidth: 500,
+							maxHeight: 300
+						},
+						chartOptions: {
+							legend: {
+								layout: 'horizontal',
+								align: 'center',
+								verticalAlign: 'bottom',
+							}
+						}
+					}],
+				}
+			});
+
+			// 월별
+			var chart02 = Highcharts.chart('chart02', {
+				//대 타이틀
+				title: {
+					text: ''
+				},
+				//소 타이틀
+				subtitle: {
+					text: ''
+				},
+				//Y축 텍스트
+				yAxis: {
+					title: {
+						text: '',
+						rotation: 0,
+						style: {
+							fontSize: '13px',
+							fontFamily: 'Verdana, sans-serif'
+						}
+					}
+				},
+				
+				legend: {
+					layout: 'horizontal',
+					align: 'left',
+					verticalAlign: 'top'
+				},
+				
+				tooltip: {
+					//enabled: false, 툴팁삭제
+					borderRadius: 0,
+					crosshairs: true,
+					formatter: function () {
+						return this.x + '<br>방문자 수 : ' + this.y + '명';
+					}
+				},
+
+				plotOptions: {
+					series: {
+						color: '#ff5349',//스킨색상
+						animation: {
+							duration: 1000//애니메이션속도
+						}
+						//pointStart: 201801
+					}
+				},
+				xAxis: {
+					categories: ['2017.07', '2017.08', '2017.09', '2017.10', '2017.11', '2017.12', '2018.01'],
+				},
+
+				series: [{
+					name: '방문자 수',
+					data: [200, 300, 130, 390, 100, 350, 500]
+				}],
+
+				responsive: {
+					rules: [{
+						condition: {
+							maxWidth: 500,
+							maxHeight: 300
+						},
+						chartOptions: {
+							legend: {
+								layout: 'horizontal',
+								align: 'center',
+								verticalAlign: 'bottom',
+							}
+						}
+					}],
+				}
+			});
+		}
+
+		/* 설정내 카테고리 버튼 */
+		$('.btn-cate').click(function(){
+			var text = $(this).text();
+			if(text == '수정'){
+				// 수정버튼
+				var choice = $('.blog-numbering input[type=radio]:checked').closest('.drag-box').find('.box4').text();
+				$('.category-popup').find('input[type=text]').val(choice);
+				if($('.blog-popup .blog-numbering input[type=radio]:checked').length == 0){
+					alert('카테고리를 선택해주세요.');
+					$('.db-dimmed').attr('class', 'pop-dimmed');
+				}else{
+					$('.category-popup').fadeIn(200).removeClass('new').find('.pop-head .title .trans-text').text(text);
+					$('.category-popup').find('input[type=text]').focus();
+				}
+			}else{
+				// 등록버튼
+				$('.category-popup').addClass('new').fadeIn(200).find('.pop-head .title .trans-text').text(text);
+				$('.category-popup').find('input[type=text]').val('').focus();
+				$('.blog-numbering').removeClass('dataNone');
+			}
+		});
+		// 삭제버튼
+		$('.blog-popup .btnDel').click(function(){
+			if($('.blog-popup .blog-numbering input[type=radio]:checked').length == 0){
+				alert('카테고리를 선택해주세요.');
+			}else{
+				var result = confirm('삭제하시겠습니까?');
+				if(result){
+					$('.blog-numbering input[type=radio]:checked').closest('.drag-box').remove();
+					if($('.blog-numbering .drag-box').length == 0){
+						$('.blog-numbering').addClass('dataNone');
+					}
+				}
+			}
+			boxNumber();// 드래그 박스 넘버링
+		});
+
+		/* 카테고리 수정 팝업 */
+		// 취소
+		$('.category-popup .btnCancel').click(function(){
+			$('.db-dimmed').attr('class', 'pop-dimmed');
+			$(this).closest('.category-popup').hide();
+		});
+		// 저장
+		$('.category-popup .btnStorage').click(function(){
+			var valu = $(this).closest('.pop-content').find('input[type=text]').val();
+			if($(this).closest('.category-popup').hasClass('new')){
+				if($(this).closest('.category-popup').find('input[type=text]').val().length > 0){
+					$('.blog-numbering .drag-area').append('<div class="drag-box"><div class="box box1"></div><div class="box box2 none-drag"><span class="radioWrap"><input type="radio" name="Drag01" class="styled1"></span></div><div class="box box3 none-drag">1</div><div class="box box4 none-drag">' + valu + '</div></div>');
+					$('.blog-numbering .drag-area .drag-box:last-child input[type=radio]').prop('checked', false);
+					rdoChkState();// 라디오 상태변경
+					$('.db-dimmed').attr('class', 'pop-dimmed');
+					$(this).closest('.category-popup').hide();
+					popResize();// 팝업 리사이징
+					boxNumber();// 드래그 박스 넘버링
+				}
+			}else{
+				$('.blog-numbering input[type=radio]:checked').closest('.drag-box').find('.box4').text(valu);
+				$('.db-dimmed').attr('class', 'pop-dimmed');
+				$(this).closest('.category-popup').hide();
+			}
+		});
+
+		// 카테고리 등록/수정 팝업 닫기
+		$(document).on('click', '.db-dimmed', function(){
+			$('.category-popup').fadeOut(100);
+			$('.db-dimmed').attr('class', 'pop-dimmed');
+		});
+	});
+})(jQuery);
+
+function boxNumber(){
+	(function($) {
+		$('.blog-numbering .drag-box').each(function(){
+			var idx = $(this).index() + 1;
+			$(this).find('.box3').text(idx);
+		});
+	})(jQuery);
+}
+</script>
+</body>
+</html>
