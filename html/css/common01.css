@@ -6419,8 +6419,8 @@ line-height:35px;
 /* 양쪽 정렬 */
 .blog-wrap.side {padding:0 210px 80px;}
 .blog-wrap.side .info-navi {}
-.blog-wrap.side .info-navi .user-info,
-.blog-wrap.side .info-navi .menu-box {
+.blog-wrap.side .info-navi .navi-left,
+.blog-wrap.side .info-navi .navi-right {
 	position:absolute;
 	top:0;
 	width:195px;
@@ -6429,8 +6429,8 @@ line-height:35px;
 	border:1px solid #eee;
 	background-color:#fff;
 }
-.blog-wrap.side .info-navi .user-info {left:0;}
-.blog-wrap.side .info-navi .menu-box {right:0;}
+.blog-wrap.side .info-navi .navi-left {left:0;}
+.blog-wrap.side .info-navi .navi-right {right:0;}
 .blog-wrap.side .info-navi .menu-box > div:first-child .b-title {margin-top:0;}
 .blog-wrap.side {min-width:500px;}
 
@@ -6595,9 +6595,7 @@ line-height:35px;
 	text-align:center;
 	line-height:20px;
 }
-.blog-wrap .info-navi .calendar-area table td:first-child .ui-state-default {
-	color:#ff0000;
-}
+.blog-wrap .info-navi .calendar-area table td:first-child .ui-state-default {color:#ff0000;}
 .blog-wrap .info-navi .calendar-area table td .ui-state-hover {background-color:#e0f1ff;}
 .blog-wrap .info-navi .calendar-area table td .ui-state-highlight {background-color:#eee;}
 .blog-wrap .info-navi .calendar-area table td .ui-state-active {background-color:#ff5349;color:#fff;}
@@ -6652,9 +6650,7 @@ line-height:35px;
 	padding:20px 25px 0;
 	border-top:0;
 }
-.blog-wrap .blog-cont .cont-box .board-view1 .cont-wrap .cont {
-	padding:0;
-}
+.blog-wrap .blog-cont .cont-box .board-view1 .cont-wrap .cont {padding:0;}
 .blog-wrap .blog-cont .cont-box .board-view1 .cont-wrap .recom-area {
 	padding:25px 0 30px;
 	text-align:center;
@@ -6673,9 +6669,28 @@ line-height:35px;
 	background:#fff url(../images2.0/btn/btn_recom.png) no-repeat 50% 15px;
 }
 
-.blog-wrap .blog-cont .cont-box .reply-wrap {
-	margin:50px 25px 25px;
+.blog-wrap .blog-cont .cont-box .reply-wrap {margin:50px 25px 25px;}
+
+/* 쓰기 / 수정 */
+.blog-wrap .blog-cont .write-box {
+	border:1px solid #eee;
+	padding:0 25px 25px;
 }
+.blog-wrap .blog-cont .board-write1 {
+	margin:0;
+	border-top:0;
+	border-bottom:0;
+}
+.blog-wrap .blog-cont .board-write1 td {
+	padding-left:1%;
+	padding-right:1%;
+}
+.blog-wrap .blog-cont .board-write1 td .selectWrap {max-width:160px;}
+.blog-wrap .blog-cont .board-write1 .empty td {padding:0;}
+
+.blog-wrap .blog-cont .board-write1 + .addfind-cont {margin-top:30px;}
+
+.blog-wrap .blog-cont .btn-wrap {margin-left:0;margin-right:0;}
 
 /* ===========================================================================
 	Knowledge

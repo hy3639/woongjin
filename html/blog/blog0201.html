@@ -292,7 +292,7 @@
 			</div>
 		</div>
 
-		<div class="content blog-wrap left"><!-- class="left" 왼쪽 정렬 / class="right" 오른쪽 정렬 / class="side" 양쪽 정렬-->
+		<div class="content blog-wrap side"><!-- class="left" 왼쪽 정렬 / class="right" 오른쪽 정렬 / class="side" 양쪽 정렬-->
 			<div class="info-navi">
 				<div class="navi-left">
 					<div class="user-info">
@@ -377,346 +377,132 @@
 			</div>
 
 			<div class="blog-cont">
-				<div class="sorting-area">
-					<div class="left-box">
-						<p class="all-len">전체 <span class="len fColor">221</span>건</p>
-						<select class="styled1" style="width:76px;">
-							<option>1</option>
-							<option>3</option>
-							<option>5</option>
-							<option>10</option>
-						</select>
-					</div>
-					<div class="right-box search-type">
-						<select class="styled1" style="width:76px;">
-							<option>전체</option>
-							<option>제목</option>
-							<option>내용</option>
-						</select>
-						<div class="search-box3">
-							<input type="text" style="width:166px;">
-							<a href="#" class="btn-srch">검색</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="cont-box">
-					<div class="board-view1">
-						<ul>
-							<li class="tit-wrap">
-								<div class="left-box">
-									<p>사이트 오픈 공지<button type="button" class="btn-icon icon06">즐겨찾기</button></p>
-								</div>
-								<div class="right-box">
-									<a href="#" class="btn-text sm">수정</a>
-									<a href="#" class="btn-text sm">삭제</a>
-								</div>
-							</li>
-							<li class="info-wrap">
-								<div class="left-box">
-									<ul>
-										<li><button type="button" class="btn-user">관리자</button></li>
-										<li>2017.12.12 08:04:15</li>
-										<li>게시기간 : 2017.12.05~2017.12.31</li>
-									</ul>
-								</div>
-								<div class="right-box">
-									<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
-									<div class="attach-list">
-										<ul>
-											<li><a href="#">오픈안내문.ppt</a></li>
-											<li><a href="#">이벤트명단.xlsx</a></li>
-											<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
+				<div class="write-box">
+					<div class="board-write1 btm-line">
+						<table>
+							<colgroup>
+								<col style="width:11%;">
+								<col style="width:39%;">
+								<col style="width:11%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">
+										<label for="Text01">제목<span class="important">*</span></label>
+									</th>
+									<td colspan="3">
+										<input type="text" id="Text01" placeholder="제목을 입력해주세요" style="width:100%;">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">카테고리</th>
+									<td>
+										<select class="styled1" style="width:100%;">
+											<option>일상</option>
+											<option>미분류 및 기타</option>
+										</select>
+									</td>
+									<th scope="row">공개유무</th>
+									<td>
+										<ul class="form-list inline">
+											<li class="item">
+												<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked>
+												<label for="Radio0101">공개</label>
+											</li>
+											<li class="item">
+												<input type="radio" name="Radio01" id="Radio0102" class="styled1">
+												<label for="Radio0102">비공개</label>
+											</li>
 										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="cont-wrap">
-								<div class="cont">
-									안녕하세요. <br>
-									그룹웨어 사이트 오픈되어 안내해드립니다.<br><br>
-									<img src="../images2.0/temp/@cont.jpg" alt="">
-								</div>
-								<div class="recom-area">
-									<button type="button" class="btn-recom"><span class="inner">추천<em class="fColor">171</em></span></button>
-								</div>
-								<!-- 웹전용 태그 수정 -->
-								<div class="tag-wrap mHide">
-									<span class="tit bgColor">Tag</span>
-									<div class="tag-list">
-										<span class="tag-group">
-											<a href="#" class="tag">웅진</a>
-											<a href="#" class="tag">그룹웨어</a>
-										</span>
-										<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
-									</div>
-									<div class="tag-modify">
-										<div class="input-area">
-											<div class="tagging-box">
-												<p class="fake-placeholder">태그추가</p>
-												<div data-tags-input-name="tag" class="js-tagBox"></div>
-											</div>
-											<input type="text" class="wHide">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">태그</th>
+									<td colspan="3">
+										<!-- 웹전용 태그 입력영역 -->
+										<div class="tagging-box mHide">
+											<p class="fake-placeholder">태그추가</p>
+											<div data-tags-input-name="tag" class="js-tagBox"></div>
 										</div>
-										<div class="btn-area">
-											<button type="button" class="btn-text mid btnCancel">취소</button>
-											<button type="button" class="btn-text mid bdColor fColor btnStorage">저장</button>
+										<!-- //웹전용 태그 입력영역 -->
+										<!-- 모바일전용 태그 입력영역 -->
+										<input type="text" class="wHide" placeholder="태그추가">
+										<!-- /모바일전용 태그 입력영역 -->
+										<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 또는 'Enter'로 구분해주세요.</p>
+									</td>
+								</tr>
+								<tr class="empty">
+									<td colspan="4">
+										<!-- 에딧터 영역 -->
+										<div class="web-editer mHide">
+											<img src="../images2.0/temp/@editer.gif" alt="" style="width:100%;height:370px;">
 										</div>
-									</div>
-								</div>
-								<!-- //웹전용 태그 수정 -->
+										<!-- //에딧터 영역 -->
+										<textarea cols="" rows="" placeholder="내용을 입력해 주세요." class="wHide" style="height:150px;"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-								<!-- 모바일전용 태그 수정 -->
-								<div class="tag-wrap wHide">
-									<span class="tit bgColor">Tag</span>
-									<div class="tag-list">
-										<span class="tag-group">
-											<a href="#" class="tag">웅진</a>
-											<a href="#" class="tag">그룹웨어</a>
-										</span>
-										<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
-									</div>
-									<div class="tag-modify">
-										<textarea cols="" rows="" class="autoHei"></textarea>
-										<div class="btn-area">
-											<button type="button" class="btn-text sm btnCancel">취소</button>
-											<button type="button" class="btn-text sm bdColor fColo btnStorage">저장</button>
-										</div>
-									</div>
+					<div class="addfind-cont">
+						<div class="title-area mHide">
+							<div class="left">
+								<p class="title">파일명</p>
+							</div>
+							<div class="right">
+								<p class="title">용량</p>
+								<p class="title">상태</p>
+							</div>
+						</div>
+						<ul class="addfile-list">
+							<li class="addfile-item">
+								<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 310b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
 								</div>
-								<!-- // 모바일전용 태그 수정 -->
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+							<li class="addfile-item">
+								<div class="file-name">임직원 그룹조직도.pdf</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 25b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+							<li class="addfile-item">
+								<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 310b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
+							</li>
+							<li class="addfile-item">
+								<div class="file-name">임직원 그룹조직도.pdf</div>
+								<div class="volume-state">
+									<p class="text"><em class="wHide">용량</em> 25b</p>
+									<p class="text"><em class="wHide">상태</em> 0%</p>
+								</div>
+								<button type="button" class="btn-del">삭제</button>
 							</li>
 						</ul>
+						<div class="foot-info">
+							<button type="button" class="btn-text sm">파일추가</button>
+							<div class="text-area">
+								<p class="text">용량 355b / 700mb</p>
+								<p class="text">상태 0%</p>
+							</div>
+						</div>
 					</div>
 
-					<div class="reply-wrap">
-						<p class="tit">댓글 <span class="fColor">(2)</span></p>
-						<div class="btn-reply">
-							<span class="off">댓글등록</span>
-							<span class="on">댓글달기</span>
-						</div>
-						<div class="input-area reply-inupt">
-							<div class="text-wrap">
-								<textarea placeholder="댓글을 입력해주세요"></textarea>
-							</div>
-							<div class="btn-area">
-								<button type="button"><span class="btn-text btn-square">저장</span></button>
-							</div>
-						</div>
-						<div class="reply-list">
-							<ul>
-								<li class="reply-item">
-									<div class="info-wrap">
-										<div class="user">
-											<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-											<p class="name btn-user">관리자</p>
-										</div>
-										<div class="info-list">
-											<span class="date">2017.12.12 08:04:15</span>
-											<ul>
-												<li><button type="button" class="btn-re-modify">수정</button></li>
-												<li><button type="button">삭제</button></li>
-											</ul>
-										</div>
-									</div>
-									<div class="text-area">오픈 축하합니다~~</div>
-									<div class="input-area rereply-inupt">
-										<div class="text-wrap">
-											<textarea placeholder="댓글을 입력해주세요"></textarea>
-										</div>
-										<div class="btn-area type2">
-											<button type="button" class="btn-text btn-cancel">취소</button>
-											<button type="button" class="btn-text btn-save">저장</button>
-										</div>
-									</div>
-								</li>
-								<li class="reply-item">
-									<div class="info-wrap">
-										<div class="user">
-											<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-											<p class="name btn-user">김웅진 대리</p>
-										</div>
-										<div class="info-list">
-											<span class="date">2017.12.12 08:04:15</span>
-											<ul>
-												<li><button type="button" class="btn-re-modify">수정</button></li>
-												<li><button type="button">삭제</button></li>
-											</ul>
-										</div>
-									</div>
-									<div class="text-area">오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~</div>
-									<div class="input-area rereply-inupt">
-										<div class="text-wrap">
-											<textarea placeholder="댓글을 입력해주세요"></textarea>
-										</div>
-										<div class="btn-area type2">
-											<button type="button" class="btn-text btn-cancel">취소</button>
-											<button type="button" class="btn-text btn-save">저장</button>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="cont-box">
-					<div class="board-view1">
-						<ul>
-							<li class="tit-wrap">
-								<div class="left-box">
-									<p>다들 휴일에 뭐하시나요??<button type="button" class="btn-icon icon06 on">즐겨찾기</button></p>
-								</div>
-								<div class="right-box">
-									<a href="#" class="btn-text sm">수정</a>
-									<a href="#" class="btn-text sm">삭제</a>
-								</div>
-							</li>
-							<li class="info-wrap">
-								<div class="left-box">
-									<ul>
-										<li><button type="button" class="btn-user">관리자</button></li>
-										<li>2017.12.12 08:04:15</li>
-										<li>게시기간 : 2017.12.05~2017.12.31</li>
-									</ul>
-								</div>
-								<div class="right-box">
-									<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
-									<div class="attach-list">
-										<ul>
-											<li><a href="#">오픈안내문.ppt</a></li>
-											<li><a href="#">이벤트명단.xlsx</a></li>
-											<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="cont-wrap">
-								<div class="cont">
-									관리자의 휴일 일상.<br>
-									산에 오르기로 하였습니다^^
-								</div>
-								<div class="recom-area">
-									<button type="button" class="btn-recom"><span class="inner">추천<em class="fColor">171</em></span></button>
-								</div>
-								<!-- 웹전용 태그 수정 -->
-								<div class="tag-wrap mHide">
-									<span class="tit bgColor">Tag</span>
-									<div class="tag-list">
-										<span class="tag-group">
-											<a href="#" class="tag">북한산</a>
-											<a href="#" class="tag">나홀로등반</a>
-											<a href="#" class="tag">휴일</a>
-											<a href="#" class="tag">오랜만의휴가</a>
-										</span>
-										<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
-									</div>
-									<div class="tag-modify">
-										<div class="input-area">
-											<div class="tagging-box">
-												<p class="fake-placeholder">태그추가</p>
-												<div data-tags-input-name="tag" class="js-tagBox"></div>
-											</div>
-											<input type="text" class="wHide">
-										</div>
-										<div class="btn-area">
-											<button type="button" class="btn-text mid btnCancel">취소</button>
-											<button type="button" class="btn-text mid bdColor fColor btnStorage">저장</button>
-										</div>
-									</div>
-								</div>
-								<!-- //웹전용 태그 수정 -->
-
-								<!-- 모바일전용 태그 수정 -->
-								<div class="tag-wrap wHide">
-									<span class="tit bgColor">Tag</span>
-									<div class="tag-list">
-										<span class="tag-group">
-											<a href="#" class="tag">웅진</a>
-											<a href="#" class="tag">그룹웨어</a>
-										</span>
-										<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
-									</div>
-									<div class="tag-modify">
-										<textarea cols="" rows="" class="autoHei"></textarea>
-										<div class="btn-area">
-											<button type="button" class="btn-text sm btnCancel">취소</button>
-											<button type="button" class="btn-text sm bdColor fColo btnStorage">저장</button>
-										</div>
-									</div>
-								</div>
-								<!-- // 모바일전용 태그 수정 -->
-							</li>
-						</ul>
-					</div>
-
-					<div class="reply-wrap">
-						<p class="tit">댓글 <span class="fColor">(2)</span></p>
-						<div class="btn-reply">
-							<span class="off">댓글등록</span>
-							<span class="on">댓글달기</span>
-						</div>
-						<div class="input-area reply-inupt">
-							<div class="text-wrap">
-								<textarea placeholder="댓글을 입력해주세요"></textarea>
-							</div>
-							<div class="btn-area">
-								<button type="button"><span class="btn-text btn-square">저장</span></button>
-							</div>
-						</div>
-						<div class="reply-list">
-							<ul>
-								<li class="reply-item">
-									<div class="info-wrap">
-										<div class="user">
-											<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-											<p class="name btn-user">관리자</p>
-										</div>
-										<div class="info-list">
-											<span class="date">2017.12.12 08:04:15</span>
-											<ul>
-												<li><button type="button" class="btn-re-modify">수정</button></li>
-												<li><button type="button">삭제</button></li>
-											</ul>
-										</div>
-									</div>
-									<div class="text-area">오픈 축하합니다~~</div>
-									<div class="input-area rereply-inupt">
-										<div class="text-wrap">
-											<textarea placeholder="댓글을 입력해주세요"></textarea>
-										</div>
-										<div class="btn-area type2">
-											<button type="button" class="btn-text btn-cancel">취소</button>
-											<button type="button" class="btn-text btn-save">저장</button>
-										</div>
-									</div>
-								</li>
-								<li class="reply-item">
-									<div class="info-wrap">
-										<div class="user">
-											<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-											<p class="name btn-user">김웅진 대리</p>
-										</div>
-										<div class="info-list">
-											<span class="date">2017.12.12 08:04:15</span>
-											<ul>
-												<li><button type="button" class="btn-re-modify">수정</button></li>
-												<li><button type="button">삭제</button></li>
-											</ul>
-										</div>
-									</div>
-									<div class="text-area">오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~</div>
-									<div class="input-area rereply-inupt">
-										<div class="text-wrap">
-											<textarea placeholder="댓글을 입력해주세요"></textarea>
-										</div>
-										<div class="btn-area type2">
-											<button type="button" class="btn-text btn-cancel">취소</button>
-											<button type="button" class="btn-text btn-save">저장</button>
-										</div>
-									</div>
-								</li>
-							</ul>
+					<div class="btn-wrap right">
+						<div class="btn-align">
+							<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
+							<div class="btn-item"><a href="#" class="btn-text bdColor fColor">등록</a></div>
 						</div>
 					</div>
 				</div>
