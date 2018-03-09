@@ -85,12 +85,10 @@
 	position:relative;
 	width:25%;
 	height:70px;
-	font-size:0;
-	text-indent:-9999px;
-	line-height:0;
-	background-repeat:no-repeat;
-	background-position:50% 50%;
+	text-align: center;
 }
+.mobile .header .utill .naver-list .link {line-height: 57px;}
+/*
 .header .utill .naver-list .link1 {background-image:url(../images2.0/mobile/ico/ico_n01_t.png);}
 .header .utill .naver-list .link2 {background-image:url(../images2.0/mobile/ico/ico_n02_t.png);}
 .header .utill .naver-list .link3 {background-image:url(../images2.0/mobile/ico/ico_n03_t.png);}
@@ -98,6 +96,7 @@
 .header .utill .naver-list .link5 {background-image:url(../images2.0/mobile/ico/ico_n05_t.png);}
 .header .utill .naver-list .link6 {background-image:url(../images2.0/mobile/ico/ico_n06_t.png);}
 .header .utill .naver-list .link7 {background-image:url(../images2.0/mobile/ico/ico_n07_t.png);}
+*/
 .header .utill .naver-list .link .len {
 	display:block;
 	position:absolute;
