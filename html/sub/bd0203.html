@@ -424,15 +424,17 @@
 						</tr>
 						<tr>
 							<th scope="row">익명 등록</th>
+							<!-- 180309 수정 -->
 							<td colspan="3">
 								<ul class="form-list inline">
-									<li class="item"><input type="radio" name="Radio03" id="Radio0301" class="styled1" checked><label for="Radio0101">미사용</label></li>
-									<li class="item"><input type="radio" name="Radio03" id="Radio0302" class="styled1"><label for="Radio0102">익명전용</label></li>
-									<li class="item"><input type="radio" name="Radio03" id="Radio0303" class="styled1"><label for="Radio0103">기명/무기명 선택</label></li>
-									<li class="item"><input type="radio" name="Radio03" id="Radio0304" class="styled1"><label for="Radio0104">닉네임사용</label></li>
-									<li class="item"><input type="radio" name="Radio03" id="Radio0305" class="styled1"><label for="Radio0105">관리자만 무기명사용</label></li>
+									<li class="item"><input type="radio" name="Radio03" id="Radio0301" class="styled1" checked><label for="Radio0301">미사용</label></li>
+									<li class="item"><input type="radio" name="Radio03" id="Radio0302" class="styled1"><label for="Radio0302">익명전용</label></li>
+									<li class="item"><input type="radio" name="Radio03" id="Radio0303" class="styled1"><label for="Radio0303">기명/무기명 선택</label></li>
+									<li class="item"><input type="radio" name="Radio03" id="Radio0304" class="styled1"><label for="Radio0304">닉네임사용</label></li>
+									<li class="item"><input type="radio" name="Radio03" id="Radio0305" class="styled1"><label for="Radio0305">관리자만 무기명사용</label></li>
 								</ul>
 							</td>
+							<!-- //180309 수정 -->
 						</tr>
 						<tr>
 							<th scope="row">페이지당 글 개수</th>
@@ -595,15 +597,14 @@
 								</ul>
 							</td>
 						</tr>
+						<!-- 180309 수정 -->
 						<tr>
 							<th scope="row">최근게시글</th>
 							<td>
 								<ul class="form-list inline">
-									<li class="item"></li>
-									<li class="item"></li>
+									<li class="item"><input type="radio" name="Radio16" id="Radio1601" class="styled1" checked><label for="Radio1601">사용</label></li>
+									<li class="item"><input type="radio" name="Radio16" id="Radio1602" class="styled1"><label for="Radio1602">미사용</label></li>
 								</ul>
-								<input type="radio" name="Radio16" id="Radio1601" class="styled1" checked><label for="Radio1601">사용</label>
-								<input type="radio" name="Radio16" id="Radio1602" class="styled1"><label for="Radio1602">미사용</label>
 							</td>
 							<th scope="row">모바일</th>
 							<td>
@@ -613,6 +614,7 @@
 								</ul>
 							</td>
 						</tr>
+						<!-- //180309 수정 -->
 						<tr>
 							<th scope="row">타사공지</th>
 							<td>
@@ -890,7 +892,7 @@
 						<tr>
 							<th scope="row"><label for="Text06">비고<span class="important">*</span></label></th>
 							<td colspan="3">
-								<input type="text" id="Text06"  style="width:100%;">
+								<input type="text" id="Text06" class="required"  style="width:100%;"> <!--180309 수정-->
 							</td>
 						</tr>
 					</tbody>

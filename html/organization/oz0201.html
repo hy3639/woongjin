@@ -342,16 +342,16 @@
 
 				<div class="btn-wrap wHide">
 					<div class="btn-align">
-						<div class="btn-item"><a href="#" class="btn-text fColor bdColor">조직정보 +</a></div>
+						<div class="btn-item"><a href="#" class="btn-text fColor bdColor btn-popup btn-organization">조직정보 +</a></div>
 					</div>
 				</div>
 
 				<ul class="tab-list1 mHide">
-					<li class="item fColor"><span class="text" data="http://www.naver.com">프로필</span></li><!-- 선택 (class="fColor") -->
-					<li class="item"><span class="text" data="http://www.daum.net">사진</span></li>
-					<li class="item"><span class="text" data="http://www.google.com">경력</span></li>
-					<li class="item"><span class="text" data="http://www.naver.com">방명록</span></li>
-					<li class="item"><span class="text" data="http://www.naver.com">즐겨찾기</span></li>
+					<li class="item"><a class="text fColor" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
+					<li class="item"><a class="text" href="oz0301.html">사진</a></li>
+					<li class="item"><a class="text" href="http://www.google.com">경력</a></li>
+					<li class="item"><a class="text" href="http://www.naver.com">방명록</a></li>
+					<li class="item"><a class="text" href="http://www.naver.com">즐겨찾기</a></li>
 				</ul>
 				<div class="organization-box">
 					<div class="profile-area">
@@ -751,7 +751,7 @@
 	</div>
 </div>
 
-<!-- 레이어 팝업 영역 -->
+<!-- 프로필이미지 레이어 팝업 영역 -->
 <div class="layer-popup pop-profile-img">
 	<div class="pop-head">
 		<h3 class="title">프로필 이미지 업로드</h3>
@@ -772,8 +772,52 @@
 
 			</div>
 		</div>
-		<div class="btn-wrap center">			
+		<div class="btn-wrap center">
 			<a href="#" class="btn-text mid">취소</a>
+		</div>
+	</div>
+</div>
+
+<!-- 조직정보 레이어 팝업 영역 -->
+<div class="layer-popup pop-organization wHide">
+	<div class="pop-head">
+		<h3 class="title">조직정보</h3>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+
+	<div class="pop-content">
+		<div class="tree-menu open">
+			<ul class="tree-list user">
+				<li>
+					<p class="link"><a href="#" class="text">웅진</a></p>
+					<ul>
+						<li>
+							<p class="link"><a href="#" class="text">영업본부</a></p>
+							<ul>
+								<li><p class="link"><a href="#" class="text">김웅진 부장/팀장</a></p></li>
+								<li>
+									<p class="link"><a href="#" class="text">영업1팀</a></p>
+									<ul>
+										<li><p class="link"><a href="#" class="text">최빛나리 최빛나리 최빛나리 본부장/팀원</a></p></li>
+										<li><p class="link"><a href="#" class="text">김현주 대리/팀원</a></p></li>
+										<li><p class="link"><a href="#" class="text">이현표 과장/팀원</a></p></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="link"><a href="#" class="text">관리본부</a></p>
+							<ul>
+								<li><p class="link"><a href="#" class="text">관리자 사원/팀원</a></p></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="btn-wrap center">
+			<a href="#" class="btn-text mid bdColor fColor">적용</a>
 		</div>
 	</div>
 </div>
@@ -790,14 +834,14 @@ $(window).load(function(){
 	$('.tab-select').remove();
 	$('.organization-wrap .tab-list1').each(function(){
 		var html = $(this).html();
-		var title = $(this).find('li').eq(0).find('span').text();
+		var title = $(this).find('li').eq(0).find('a').text();
 		$('.organization-wrap .organization-box').prepend('<div class="tab-select wHide"><select class="styled1" style="width:100%;"></select></div>');
 	});
 
-	$('.organization-wrap .tab-list1 .item span').each(function(){
+	$('.organization-wrap .tab-list1 .item a').each(function(){
 		var text = $(this).text();
-		var url = $(this).attr('data');
-		$('.tab-select select option:first-child').attr("selected",true);
+		var url = $(this).attr('href');
+		//$('.tab-select select option:first-child').attr("selected",true);
 		$('.tab-select select').append('<option data="' + url + '">' + text + '</option>');
 		selectStyled();
 	});
@@ -826,9 +870,15 @@ $(window).load(function(){
 		$(this).closest('.right').find('.modify').hide();
 	});
 
-	/* 일반 레이어팝업 열기 */
+	/*프로필이미지 레이어팝업 열기 */
 	$('.btn-addimg').click(function(){
 		$('.pop-profile-img').fadeIn(200);
+		popResize();// 팝업 리사이징
+	});
+
+	/*조직정보 레이어팝업 열기 */
+	$('.btn-organization').click(function(){
+		$('.pop-organization').fadeIn(200);
 		popResize();// 팝업 리사이징
 	});
 
