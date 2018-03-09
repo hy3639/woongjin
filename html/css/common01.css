@@ -7218,3 +7218,37 @@ line-height:35px;
 }
 .pop-profile-img .pop-content .upload-area .input-file2 .inner {width:100%;padding-right:80px;box-sizing:border-box;}
 .pop-profile-img .pop-content .upload-area .input-file2 .inner input {width:100%;height:28px;}
+
+/*사진*/
+.organization-wrap .sorting-area {border-bottom:1px solid #eee; padding-top: 40px; height: inherit;}
+.organization-wrap .sorting-area .left-box {
+	display: inline-block;
+	position: inherit;
+	left: inherit;
+	top: inherit;
+	bottom: inherit;
+	padding:0;
+}
+.organization-wrap .sorting-area .right-box .search-box2 {
+	margin-left: 2px;
+	display: inline-block;
+}
+.organization-box .thumb-list1 {margin: 0 50px 0 50px}
+.organization-box .thumb-list1 > ul {margin:0 0 0 -30px;}
+.organization-box .thumb-list1 .txt-area {height: inherit;}
+.organization-box .thumb-list1 .info-area ul {overflow: hidden;}
+.organization-box .thumb-list1 .info-area li:first-child {width: auto;}
+.organization-box .thumb-list1 .info-area .name {float: left;}
+.organization-box .thumb-list1 .info-area .left {float: right;}
+
+.organization-box .thumb-list1 ul li a {height: 260px;}
+.organization-box .thumb-list1 .info-area li span:before {display: none}
+
+.organization-box .board-write1 {margin-top: 30px;}
+.organization-box .board-write1 .required-box {display: block !important;}
+.input-file2 + .att-img-list {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.input-file2 + .att-img-list li {float: left; margin-left: 5px;}
+.input-file2 + .att-img-list li:first-child {margin-left: 0}
