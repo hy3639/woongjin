@@ -577,14 +577,15 @@
 								</ul>
 							</td>
 						</tr>
+						<!-- 180312 수정 -->
 						<tr>
 							<th scope="row">말머리 유형</th>
 							<td>
 								<ul class="form-list inline">
-									<li class="item"><input type="radio" name="Radio14" id="Radio1401" class="styled1" checked><label for="Radio1401">사용</label></li>
+									<li class="item"><input type="radio" name="Radio14" id="Radio1401" class="styled1 formSingle" checked><label for="Radio1401">사용</label></li>
 									<li class="item"><input type="radio" name="Radio14" id="Radio1402" class="styled1"><label for="Radio1402">미사용</label></li>
 								</ul>
-								<div class="display-area">
+								<div class="Radio1401 hide">
 									<textarea></textarea>
 									<p>※ Enter키로 구분되어 입력한 순서대로 표시됩니다.</p>
 								</div>
@@ -597,6 +598,7 @@
 								</ul>
 							</td>
 						</tr>
+						<!-- // 180312 수정 -->
 						<!-- 180309 수정 -->
 						<tr>
 							<th scope="row">최근게시글</th>
@@ -628,14 +630,15 @@
 								<input type="text" id="Text05" style="width:100%">
 							</td>
 						</tr>
+						<!-- 180312 수정 -->
 						<tr>
 							<th scope="row">첨부파일 옵션</th>
-							<td colspan="3">
+							<td colspan="3" class="formChange">
 								<ul class="form-list inline">
 									<li class="item"><input type="radio" name="Radio19" id="Radio1901" class="styled1" checked value=""><label for="Radio1901">파일타입 허용방식</label></li>
 									<li class="item"><input type="radio" name="Radio19" id="Radio1902" class="styled1"><label for="Radio1902">파일확장자 허용방식</label></li>
 								</ul>
-								<div class="att-option1">
+								<div class="formItem att-option">
 									<p>업로드를 허용할 파일타입 목록을 선택하세요.</p>
 									<ul class="form-list">
 										<li class="item"><input type="radio" name="Radio20" id="Radio2001" class="styled1" checked><label for="Radio2001">txt (문자파일 : asc,txt,text,diff,log,htm,html,xhtml,rtf,xml) </label></li>
@@ -648,12 +651,13 @@
 										<li class="item"><input type="radio" name="Radio20" id="Radio2008" class="styled1" checked><label for="Radio2008">all (모든파일) </label></li>
 									</ul>
 								</div>
-								<div class="att-option2">
+								<div class="formItem att-option">
 									<input type="text" style="width:100%" placeholder="doc,ppt,xls,xlsx,pdf,hwp,txt,zip,jpg,gif">
 									<p>※ 입력된 파일 확장자에 한해 업로드를 허용합니다. 입력시,(쉼표)기호를 구분자로 사용하세요 (ex: doc,ppt,csv,pdf)</p>
 								</div>
 							</td>
 						</tr>
+						<!--// 180312 수정 -->
 						<tr>
 							<th scope="row">게시판 관리자</th>
 							<td colspan="3">
@@ -696,12 +700,13 @@
 								</div>
 							</td>
 						</tr>
+						<!-- 180312 수정 -->
 						<tr>
 							<th scope="row">읽기 권한</th>
 							<td>
 								<ul class="form-list inline">
 									<li class="item"><input type="radio" name="Radio21" id="Radio2101" class="styled1" checked><label for="Radio2101">전사</label></li>
-									<li class="item"><input type="radio" name="Radio21" id="Radio2102" class="styled1"><label for="Radio2102">개별설정</label></li>
+									<li class="item"><input type="radio" name="Radio21" id="Radio2102" class="styled1 formSingle"><label for="Radio2102">개별설정</label></li>
 								</ul>
 							</td>
 							<th scope="row">게시물 등록 알림</th>
@@ -712,7 +717,7 @@
 								</ul>
 							</td>
 						</tr>
-						<tr class="read hidden">
+						<tr class="Radio2102 hide">
 							<th scope="row">읽기 사용권한 설정<br>(사용자)</th>
 							<td colspan="3">
 								<div class="input-area" style="max-width:315px;">
@@ -754,7 +759,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="read hidden">
+						<tr class="Radio2102 hide">
 							<th scope="row">읽기 사용권한 설정<br>(그룹)</th>
 							<td colspan="3">
 								<div class="input-area" style="max-width:315px;">
@@ -801,11 +806,11 @@
 							<td colspan="3">
 								<ul class="form-list inline">
 									<li class="item"><input type="radio" name="Radio23" id="Radio2301" class="styled1" checked><label for="Radio2301">전사</label></li>
-									<li class="item"><input type="radio" name="Radio23" id="Radio2302" class="styled1"><label for="Radio2302">개별설정</label></li>
+									<li class="item"><input type="radio" name="Radio23" id="Radio2302" class="styled1 formSingle"><label for="Radio2302">개별설정</label></li>
 								</ul>
 							</td>
 						</tr>
-						<tr class="write hidden">
+						<tr class="Radio2302 hide">
 							<th scope="row">쓰기 사용권한 설정<br>(사용자)</th>
 							<td colspan="3">
 								<div class="input-area" style="max-width:315px;">
@@ -847,7 +852,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="write hidden">
+						<tr class="Radio2302 hide">
 							<th scope="row">쓰기 사용권한 설정<br>(그룹)</th>
 							<td colspan="3">
 								<div class="input-area" style="max-width:315px;">
@@ -895,6 +900,7 @@
 								<input type="text" id="Text06" class="required"  style="width:100%;"> <!--180309 수정-->
 							</td>
 						</tr>
+						<!--// 180312 수정 -->
 					</tbody>
 				</table>
 			</div>
@@ -917,6 +923,7 @@
 	</div> -->
 </div>
 
+<!-- 180312 삭제
 <script>
 $(document).ready(function(){
 	// 말머리유형 선택
@@ -960,5 +967,6 @@ $(document).ready(function(){
 	});
 });
 </script>
+-->
 </body>
 </html>
