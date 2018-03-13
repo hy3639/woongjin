@@ -317,7 +317,7 @@
 				<h2 class="title">팝업 등록</h2>
 			</div>
 			<div class="pop-write">
-				<div class="board-write1">
+				<div class="board-write1 formChange2">
 					<table>
 						<colgroup class="mHide"><!-- 웹전용 -->
 							<col style="width:13%;">
@@ -366,13 +366,13 @@
 							<tr>
 								<th scope="row">구분 <span class="important">*</span></th>
 								<td colspan="5">
-									<ul class="form-list inline">
+									<ul class="form-list inline change">
 										<li class="item"><input type="radio" name="radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">기간</label></li>
 										<li class="item"><input type="radio" name="radio02" id="Radio0202" class="styled1"><label for="Radio0202">특정일선택</label></li>
 									</ul>
 								</td>
 							</tr>
-							<tr class="period-type1">
+							<tr class="form-item1 formItem hide">
 								<th scope="row">사용기간 <span class="important">*</span></th>
 								<td colspan="5">
 									<div class="period-area">
@@ -396,24 +396,27 @@
 									</div>
 								</td>
 							</tr>
-							<tr class="period-type2">
+							<tr class="form-item2 formItem hide">
 								<th scope="row">특정일선택 <span class="important">*</span></th>
 								<td colspan="5">
 									<div class="date-area special">
-										<div  class="date-text">
+										<div  class="date-text delType">
 											<div class="btn-calendar"><input type="text" readonly></div>
+											<button type="button" class="btn-del">삭제</button>
 											<div class="calendar-layer bdColor">
 												<div class="datepicker"></div>
 											</div>
 										</div>
-										<div  class="date-text">
+										<div  class="date-text delType">
 											<div class="btn-calendar"><input type="text" readonly></div>
+											<button type="button" class="btn-del">삭제</button>
 											<div class="calendar-layer bdColor">
 												<div class="datepicker"></div>
 											</div>
 										</div>
-										<div  class="date-text">
+										<div  class="date-text delType">
 											<div class="btn-calendar"><input type="text" readonly></div>
+											<button type="button" class="btn-del">삭제</button>
 											<div class="calendar-layer bdColor">
 												<div class="datepicker"></div>
 											</div>
@@ -521,7 +524,7 @@
 									</div>
 								</td>
 							</tr>
-							<tr class="period-type1">
+							<tr class="form-item1 formItem hide">
 								<th>매주</th>
 								<td colspan="5">
 									<ul class="form-list inline">
@@ -535,7 +538,7 @@
 									</ul>
 								</td>
 							</tr>
-							<tr class="period-type1">
+							<tr class="form-item1 formItem hide">
 								<th>매달</th>
 								<td colspan="5">
 									<ul class="form-list inline">
@@ -623,27 +626,27 @@
 								<th scope="row">링크#1 사용여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio06" id="Radio0601" class="styled1"><label for="Radio0601">사용</label></li>
+										<li class="item"><input type="radio" name="radio06" id="Radio0601" class="styled1 formSingle"><label for="Radio0601">사용</label></li>
 										<li class="item"><input type="radio" name="radio06" id="Radio0602" class="styled1" checked><label for="Radio0602">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(1번째)</span>
 								</td>
 							</tr>
-							<tr class="link-area1" style="display:none">
+							<tr class="Radio0601 hide">
 								<th scope="row">URL#1</th>
 								<td colspan="5">
 									<input type="text">
 									<span>(예 : http://portal.wjtb.net)</span>
 								</td>
 							</tr>
-							<tr class="link-area1" style="display:none">
+							<tr class="Radio0601 hide">
 								<th scope="row">MAP Code#1</th>
 								<td colspan="5">
 									<input type="text">
 									<span>(예 : 292,196,353,237)</span>
 								</td>
 							</tr>
-							<tr class="link-area1" style="display:none">
+							<tr class="Radio0601 hide">
 								<th scope="row">사번Parameter명#1</th>
 								<td colspan="5">
 									<input type="text">
@@ -654,27 +657,27 @@
 								<th scope="row">링크#2 사용여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio07" id="Radio0701" class="styled1"><label for="Radio0701">사용</label></li>
+										<li class="item"><input type="radio" name="radio07" id="Radio0701" class="styled1 formSingle"><label for="Radio0701">사용</label></li>
 										<li class="item"><input type="radio" name="radio07" id="Radio0702" class="styled1" checked><label for="Radio0702">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(2번째)</span>
 								</td>
 							</tr>
-							<tr class="link-area2" style="display:none">
+							<tr class="Radio0701 hide">
 								<th scope="row">URL#2</th>
 								<td colspan="5">
 									<input type="text">
 									<span>(예 : http://portal.wjtb.net)</span>
 								</td>
 							</tr>
-							<tr class="link-area2" style="display:none">
+							<tr class="Radio0701 hide">
 								<th scope="row">MAP Code#2</th>
 								<td colspan="5">
 									<input type="text">
 									<span>(예 : 292,196,353,237)</span>
 								</td>
 							</tr>
-							<tr class="link-area2" style="display:none">
+							<tr class="Radio0701 hide">
 								<th scope="row">사번Parameter명#2</th>
 								<td colspan="5">
 									<input type="text">
@@ -685,27 +688,27 @@
 						 		<th scope="row">링크#3 사용여부</th>
 								<td colspan="5">
 									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="radio08" id="Radio0801" class="styled1"><label for="Radio0801">사용</label></li>
+										<li class="item"><input type="radio" name="radio08" id="Radio0801" class="styled1 formSingle"><label for="Radio0801">사용</label></li>
 										<li class="item"><input type="radio" name="radio08" id="Radio0802" class="styled1" checked><label for="Radio0802">미사용</label></li>
 									</ul>
 									<span>※ 이미지 내에 특정부분을 클릭했을 경우 다른 페이지로 이동하는 경우 사용합니다.(3번째)</span>
 								</td>
 							</tr>
-							<tr class="link-area3" style="display:none">
+							<tr class="Radio0801 hide">
 								<th scope="row">URL#3</th>
 								<td colspan="5">
 									<input type="text">
 									<span>(예 : http://portal.wjtb.net)</span>
 								</td>
 							</tr>
-							<tr class="link-area3" style="display:none">
+							<tr class="Radio0801 hide">
 								<th scope="row">MAP Code#3</th>
 								<td colspan="5">
 									<input type="text">
 									<span>(예 : 292,196,353,237)</span>
 								</td>
 							</tr>
-							<tr class="link-area3" style="display:none">
+							<tr class="Radio0801 hide">
 								<th scope="row">사번Parameter명#3</th>
 								<td colspan="5">
 									<input type="text">
@@ -730,11 +733,11 @@
 								<td colspan="5">
 									<ul class="form-list inline">
 										<li class="item"><input type="radio" name="radio10" id="Radio1001" class="styled1" checked><label for="Radio1001">전사</label></li>
-										<li class="item"><input type="radio" name="radio10" id="Radio1002" class="styled1"><label for="Radio1002">개별설정</label></li>
+										<li class="item"><input type="radio" name="radio10" id="Radio1002" class="styled1 formSingle"><label for="Radio1002">개별설정</label></li>
 									</ul>
 								</td>
 							</tr>
-							<tr>
+							<tr class="Radio1002 hide">
 								<th scope="row">개별설정</th>
 								<td colspan="5">
 									<div class="board-write3">
@@ -907,50 +910,26 @@
 </div>
 <script>
 $(window).load(function(){
-	//구분선택
-	$('.form-list input[name="radio02"]').change(function(){
-		var value = $(this).attr('id');
-		if(value == 'Radio0201'){
-			$('.period-type2').hide();
-			$('.period-type1').show();
-		}
-		if(value == 'Radio0202'){
-			$('.period-type1').hide();
-			$('.period-type2').show();
-		}
+
+	//구분 폼변경
+	$('.formChange2').each(function(){
+		var idx = $(this).find('.form-list.change input[type=radio]:checked').index()+1;
+		$(this).find('.form-item1'+idx).show();
+
+		$(this).find('.form-list.change input[type=radio]').change(function(){
+			var on = $(this).closest('.form-list').find('input[type=radio]:checked').closest('.item').index()+1;
+			$(this).closest('.formChange2').find('.formItem').hide();
+			$(this).closest('.formChange2').find('.form-item'+on).show();
+		});
 	});
 
-	//링크1 사용어부
-	$('.form-list input[name="radio06"]').change(function(){
-		var value = $(this).attr('id');
-		if(value == 'Radio0601'){
-			$('.link-area1').show();
-		}
-		if(value == 'Radio0602'){
-			$('.link-area1').hide();
-		}
-	});
-	//링크2 사용어부
-	$('.form-list input[name="radio07"]').change(function(){
-		var value = $(this).attr('id');
-		if(value == 'Radio0701'){
-			$('.link-area2').show();
-		}
-		if(value == 'Radio0702'){
-			$('.link-area2').hide();
-		}
-	});
-	//링크3 사용어부
-	$('.form-list input[name="radio08"]').change(function(){
-		var value = $(this).attr('id');
-		if(value == 'Radio0801'){
-			$('.link-area3').show();
-		}
-		if(value == 'Radio0802'){
-			$('.link-area3').hide();
-		}
+
+	//달력 input 삭제
+	$('.date-text .btn-del').click(function(){
+		$(this).closest('.date-text').find('input').val('');
 	});
 });
+/* //180312 수정,삭제*/
 </script>
 </body>
 </html>
