@@ -2235,6 +2235,7 @@ select.styled1 {
 	display:inline-block;
 	min-width:36px;
 	height:26px;
+	margin-bottom:6px;
 	padding:0 6px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
@@ -2245,7 +2246,6 @@ select.styled1 {
 .thumb-list1 > ul > li a .txt-area .title {
 	position:relative;
 	padding-right:20px;
-	margin-top:6px;
 }
 .thumb-list1 > ul > li a .txt-area .title .checkWrap {display:none;}
 .thumb-list1 > ul > li a .txt-area .title .tit {
@@ -4478,6 +4478,51 @@ select.styled1 {
 	border:1px solid #26a7f5;
 	box-sizing:border-box;
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+	개인블로그
+------------------------------------------------------------------------------------------------------------------------------------------- */
+.blog-wrap {}
+.blog-info {
+	padding:25px 20px 30px 20px;
+	background-color:#ff574d;
+	color:#fff;
+	text-align:center;
+}
+.blog-info .title {
+	font-size:19px;
+	font-weight:700;
+	text-align:left;
+}
+.blog-info .img-area {
+	display:block;
+	overflow:hidden;
+	width:115px;
+	height:115px;
+	margin:15px auto 0;
+	border-radius:50%;
+}
+.blog-info .img-area img {width:100%;height:100%;}
+.blog-info .name {
+	margin-top:15px;
+	font-size:15px;
+	font-weight:700;
+}
+.blog-info .write-text {
+	margin-top:7px;
+	font-size:12px;
+}
+.blog-info .write-text .btn-icon {
+	width:28px;
+	height:22px;
+	border:0;
+	background:url(../images2.0/mobile/btn/btn_modify.png) no-repeat 50% 50%;
+	background-size:14px 14px;
+}
+
+.blog-wrap .thumb-list1 > ul > li a .txt-area .title {padding-right:0;}
+.blog-wrap {}
+.blog-wrap {}
 
 /* ===========================================================================
 	용어사전
