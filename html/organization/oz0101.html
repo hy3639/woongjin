@@ -375,7 +375,7 @@
 							</thead>
 							<tbody>
 								<tr class="head">
-									<td><button type="button" class="btn-user">관리자1</button></td>
+									<td><div class="btn-user">관리자1</div></td>
 									<td>guest001</td>
 									<td>영업1팀</td>
 									<td>팀원/ 차장</td>
@@ -383,7 +383,7 @@
 									<td>070-1254-8458</td>
 								</tr>
 								<tr>
-									<td><button type="button" class="btn-user">관리자2</button></td>
+									<td><div class="btn-user">관리자2</div></td>
 									<td>guest002</td>
 									<td>영업1팀</td>
 									<td>팀원/ 차장</td>
@@ -465,7 +465,19 @@ $(window).load(function(){
 		$(this).closest('.sub-gnb').css('width',gWidth);
 	});
 
+	// 트리 메뉴 가장 긴 메뉴 구하기
+	var $treeTxt = $('.sub-gnb .depth1 .tree-list .link .text');
+	var treeTxtLeft = $treeTxt.map(function(){
+		return $(this).offset().left;
+	});
+	var moreLeft = Math.max.apply(Math , treeTxtLeft);
 
+	var treeTxtWid = $treeTxt.map(function(){
+		return $(this).outerWidth();
+	});
+	var moreWid = Math.max.apply(Math , treeTxtWid);
+
+	console.log(moreWid);
 });
 </script>
 </html>

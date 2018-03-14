@@ -7116,8 +7116,8 @@ line-height:35px;
 
 .organization-wrap .sorting-area {border-bottom:0}
 .organization-wrap .board-list1 td.left {text-align:left;padding-left:20px;}
-.organization-wrap .board-list1 tr.head button {position:relative}
-.organization-wrap .board-list1 tr.head button:before {
+.organization-wrap .board-list1 tr.head .btn-user {position:relative}
+.organization-wrap .board-list1 tr.head .btn-user:before {
 	content:'';
 	position:absolute;
 	left:-25px;
