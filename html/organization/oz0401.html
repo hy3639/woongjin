@@ -345,15 +345,15 @@
 						<li class="item"><a class="text" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
 						<li class="item"><a class="text" href="oz0301.html">사진</a></li>
 						<li class="item"><a class="text fColor" href="oz0401.html">경력</a></li>
-						<li class="item"><a class="text" href="http://www.naver.com">방명록</a></li>
-						<li class="item"><a class="text" href="http://www.naver.com">즐겨찾기</a></li>
+						<li class="item"><a class="text" href="oz0501.html">방명록</a></li>
+						<li class="item"><a class="text" href="#">즐겨찾기</a></li>
 					</ul>
 					<div class="util-top">
 						<div class="form-list inline">
 							<div class="item"><input type="radio" name="radio01" id="Radio0101" class="styled1" checked><label for="Radio0101"><span class="text">이력목록형식</span></label></div>
 							<div class="item"><input type="radio" name="radio01" id="Radio0102" class="styled1"><label for="Radio0102"><span class="text">이력카드형식</span></label></div>
 						</div>
-						<div class="btn-area">
+						<div class="btn-area mHide">
 							<button type="button" class="btn-icon icon07"><span class="text">엑셀다운로드</span></button>
 							<button type="button" class="btn-icon icon08"><span class="text">프린트</span></button>
 						</div>
@@ -363,7 +363,7 @@
 							<button type="button" class="btn-text mid bdColor fColor btn-career">Career등록</button>
 						</div>
 						<div class="write-area">
-							<div class="board-write1 btm-line">
+							<div class="board-write1">
 								<table>
 									<colgroup class="mHide"><!-- 웹전용 -->
 										<col style="width:18%;">
@@ -464,6 +464,9 @@
 								</li>
 							</ul>
 						</div>
+						<div class="btn-more wHide">
+							<button type="button"><span>더보기</span></button>
+						</div>
 						<p class="mHide">※ 근무 경력은 최근순으로 200건까지 검색됩니다.</p>
 					</div>
 					<div class="formItem hide">
@@ -487,6 +490,7 @@
 						</div>
 						<p class="career-tit">경력사항 <span>총 <em class="fColor">20</em>년 <em class="fColor">10</em>개월</span></p>
 						<div class="career-list">
+							<!-- PC컨텐츠 -->
 							<div class="board-list3 mHide">
 								<table>
 									<caption>경력사항 게시판</caption>
@@ -532,6 +536,34 @@
 									</tbody>
 								</table>
 							</div>
+							<!--// PC컨텐츠 -->
+							<!-- Mobile 컨텐츠 -->
+							<div class="board-list2 wHide">
+								<ul>
+									<li class="td-area">
+										<span class="title">웅진그룹</span>
+										<span class="text">근무일자 : 2017.01.01 ~ 2018.02.02</span>
+										<span class="text">역할 : 기획/관리 총괄</span>
+										<span class="text">담당업무 : ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</span>
+									</li>
+									<li class="td-area">
+										<span class="title">교원그룹</span>
+										<span class="text">근무일자 : 2013.03.03 ~2016.05.01</span>
+										<span class="text">역할 : 기획/관리 총괄</span>
+										<span class="text">담당업무 : 스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</span>
+									</li>
+									<li class="td-area">
+										<span class="title">대교</span>
+										<span class="text">근무일자 : 2010.04.20 ~2012.01.15</span>
+										<span class="text">역할 : 교육 기획</span>
+										<span class="text">담당업무 : 대교 미래 e-Learning Project 기획 수행</span>
+									</li>
+								</ul>
+							</div>
+							<div class="btn-more wHide">
+								<button type="button"><span>더보기</span></button>
+							</div>
+							<!--// Mobile 컨텐츠 -->
 						</div>
 						<p class="mHide">※ 근무 경력은 최근순으로 200건까지 검색됩니다.</p>
 					</div>
@@ -550,37 +582,11 @@
 	</div>
 </div>
 
-
-
 <script>
 $(window).load(function(){
-
-	//셀렉트 탭
-	$('.tab-select').remove();
-	$('.organization-wrap .tab-list1').each(function(){
-		var html = $(this).html();
-		var title = $(this).find('li').eq(0).find('a').text();
-		$('.organization-wrap .organization-box').prepend('<div class="tab-select wHide"><select class="styled1" style="width:100%;"></select></div>');
-	});
-
-	$('.organization-wrap .tab-list1 .item a').each(function(){
-		var text = $(this).text();
-		var url = $(this).attr('href');
-		//$('.tab-select select option:first-child').attr("selected",true);
-		$('.tab-select select').append('<option data="' + url + '">' + text + '</option>');
-		selectStyled();
-	});
-	// 링크 이동
-	$('.tab-select select').change(function(){
-		var url = $(this).find('option:selected').attr('data');
-		if(! $(this).find('option:selected').attr('data') == false) window.location.href=url;
-	});
-
-	$(window).resize();
-
 	//Career등록
 	$('.btn-career').click(function(){
-		$(this).next('.write-area').show();
+		$(this).closest('.btn-area2').next('.write-area').show();
 	});
 
 	//취소버튼 누를경우 폼 사라지게
@@ -588,8 +594,17 @@ $(window).load(function(){
 		$(this).closest('.write-area').hide();
 	});
 
-});
+	//형식에 따른 div 높이값 수정 (career등록 버튼여부에 따른)
+	$('.career.formChange').find('.form-list input[type=radio]').change(function(){
+		var sel =  $(this).closest('.formChange').find('input[type=radio]:checked').closest('.item').index();
+		if(sel == 0){
+			$(this).closest('.util-top').css('height','75px');
+		}else {
+			$(this).closest('.util-top').css('height','30px');
+		}
+	});
 
+});
 </script>
 </body>
 </html>

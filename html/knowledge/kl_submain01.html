@@ -1563,27 +1563,35 @@ $(window).load(function(){
 
 	$('.tab-list1 .item').click(function(){
 		var txt = $(this).text();
-		$('.tab-select select').val(txt);
+		var selIdx = $('.tab-list1 .item.fColor').index();
+		//$('.tab-select2 select').val(txt);
+		$(this).closest('.tabArea').find('.tab-select2').find('option').removeAttr('selected');
+		$(this).closest('.tabArea').find('.tab-select2').find('option').eq(selIdx).attr('selected','selected');
+		$(this).closest('.tabArea').find('.tab-select2').find('.selTitle').text(txt);
 		selectStyled();
 	});
 
 	/* 탭메뉴 셀렉트 변경 */
-	$('.tab-select').remove();
+	$('.tab-select2').remove();
 	$('.knowledge-area .tab-list1').each(function(){
 		var html = $(this).html();
-		var title = $(this).find('li').eq(0).find('span').text();
-		$('.knowledge-area .tabArea').prepend('<div class="tab-select wHide"><select class="styled1" style="width:100%;"></select></div>');
+		$('.knowledge-area .tabArea').prepend('<div class="tab-select2 wHide"><select class="styled1" style="width:100%;"></select></div>');
 	});
 	$('.knowledge-area .tab-list1 .item span').each(function(){
 		var text = $(this).text();
-		//var url = $(this).attr('href');
-		$('.tab-select select').append('<option>' + text + '</option>');
-		$('.tab-select select option:first-child').attr("selected",true);
+		if($(this).closest('li').hasClass('fColor')){
+			$('.tab-select2 select').append('<option selected>' + text + '</option>');
+		}else{
+			$('.tab-select2 select').append('<option>' + text + '</option>');
+		}
 		selectStyled();
 	});
-	$('.tab-select select').change(function(){
+	$('.tab-select2 select').change(function(){
 		var idx = $(this).find('option:selected').index();
-		console.log(idx);
+		//모바일 셀렉트 변경
+		$(this).find('option').removeAttr('selected');
+		$(this).find('option').eq(idx).attr('selected','selected');
+		//웹 탭변경
 		$(this).closest('.tabArea').find('.tabContent').find('.tabCont').removeClass('on').eq(idx).addClass('on');
 		$(this).closest('.tabArea').find('.tab-list1 .item').removeClass('fColor').eq(idx).addClass('fColor');
 	});

@@ -2,11 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <title>웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
-<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
-<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" href="../css/common01.css"> <!--PC-->
 <link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
 
 <script src="../js/jquery-1.9.1.min.js"></script>
@@ -275,42 +274,86 @@
 					</div>
 
 					<!-- 서브 GNB -->
-					<div class="sub-gnb organization">
+					<div class="sub-gnb">
 						<div class="depth1">
 							<div class="scroll-area">
 								<div class="depth-top">
-									<p class="depth1-title"><span class="text">조직정보</span></p>
-									<button type="button" class="btn-text sm btn-area">넓게보기</button>
+									<p class="depth1-title"><span class="text">포탈 관리자</span></p>
 								</div>
-								<div class="tree-menu open">
-									<ul class="tree-list user mHide">
-										<li>
-											<p class="link"><a href="#" class="text">웅진</a></p>
-											<ul>
-												<li>
-													<p class="link"><a href="#" class="text">영업본부</a></p>
-													<ul>
-														<li><p class="link"><a href="#" class="text">김웅진 부장/팀장</a></p></li>
-														<li>
-															<p class="link"><a href="#" class="text">영업1팀</a></p>
-															<ul>
-																<li><p class="link"><a href="#" class="text">최빛나리 최빛나리 최빛나리 본부장/팀원</a></p></li>
-																<li><p class="link"><a href="#" class="text">김현주 대리/팀원</a></p></li>
-																<li><p class="link"><a href="#" class="text">이현표 과장/팀원</a></p></li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<p class="link"><a href="#" class="text">관리본부</a></p>
-													<ul>
-														<li><p class="link"><a href="#" class="text">관리자 사원/팀원</a></p></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
+								<ul class="depth1-list">
+									<li class="depth1-item">
+										<a href="#" class="d-title">사용자관리</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">사용자 관리</a></li>
+											<li class="depth2-item"><a href="#">퇴사자 관리</a></li>
+											<li class="depth2-item"><a href="#">그룹 관리</a></li>
+											<li class="depth2-item"><a href="#">공용그룹 관리</a></li>
+											<li class="depth2-item"><a href="#">사용자 Import</a></li>
+											<li class="depth2-item"><a href="#">그룹 Import</a></li>
+											<li class="depth2-item"><a href="#">Profile Image</a></li>
+											<li class="depth2-item"><a href="#">사용자 계정 정책 설정</a></li>
+											<li class="depth2-item"><a href="#">차단해제 요청 관리</a></li>
+											<li class="depth2-item"><a href="#">시스템 관리자 설정</a></li>
+											<li class="depth2-item"><a href="#">역할 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">기본 설정 관리</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">로고 이미지 설정</a></li>
+											<li class="depth2-item"><a href="#">SMTP Server 설정</a></li>
+											<li class="depth2-item"><a href="#">메뉴 관리</a></li>
+											<li class="depth2-item"><a href="#">시스템 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">화면 관리</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">포탈 메인화면 설정</a></li>
+											<li class="depth2-item"><a href="#">포탈 메인화면 관리</a></li>
+											<li class="depth2-item"><a href="#">포틀릿 그룹 관리</a></li>
+											<li class="depth2-item"><a href="#">포틀릿 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">코드 관리</a>
+										<ul class="depth2-list">
+											<li class="depth2-item on"><a href="#">호칭 설정</a></li>
+											<li class="depth2-item"><a href="#">직위 관리</a></li>
+											<li class="depth2-item"><a href="#">직급 관리</a></li>
+											<li class="depth2-item"><a href="#">직군 관리</a></li>
+											<li class="depth2-item"><a href="#">직책 관리</a></li>
+											<li class="depth2-item"><a href="#">호칭 Import</a></li>
+											<li class="depth2-item"><a href="#">직위 Import</a></li>
+											<li class="depth2-item"><a href="#">직급 Import</a></li>
+											<li class="depth2-item"><a href="#">직군 Import</a></li>
+											<li class="depth2-item"><a href="#">직책 Import</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">일정 관리</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">휴일관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">LineWorks</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">메시지 봇 관리</a></li>
+											<li class="depth2-item"><a href="#">콜백 메시지 폼 관리</a></li>
+											<li class="depth2-item"><a href="#">메시지 전송</a></li>
+											<li class="depth2-item"><a href="#">특정기간 메일삭제</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">근태관리</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">근태 설정</a></li>
+											<li class="depth2-item"><a href="#">근태 코드 타입 관리</a></li>
+											<li class="depth2-item"><a href="#">근태 고드 관리</a></li>
+										</ul>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -323,150 +366,126 @@
 			</div>
 		</div>
 
-		<div class="content">
+		<div class="content portal">
 			<div class="title-wrap">
-				<h2 class="title">조직도</h2>
+				<h2 class="title">호칭관리</h2>
 			</div>
-
-			<div class="organization-wrap">
-				<div class="top-search-box type2">
-					<select class="styled1" style="width:150px;">
-						<option>사용자</option>
-						<option>부서</option>
-					</select>
-					<div class="search-text">
-						<input type="text" class="required" placeholder="검색어를 입력해주세요">
-						<button type="button" class="btn-search">검색</button>
-					</div>
-				</div>
-
-				<!-- <div class="btn-wrap wHide">
-					<div class="btn-align">
-						<div class="btn-item"><a href="#" class="btn-text fColor bdColor btn-popup btn-organization">조직정보 +</a></div>
-					</div>
-				</div> -->
-				<div class="organization-box">
-					<ul class="tab-list1 mHide">
-						<li class="item"><a class="text" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
-						<li class="item"><a class="text fColor" href="oz0301.html">사진</a></li>
-						<li class="item"><a class="text" href="oz0401.html">경력</a></li>
-						<li class="item"><a class="text" href="oz0501.html">방명록</a></li>
-						<li class="item"><a class="text" href="#">즐겨찾기</a></li>
-					</ul>
-
-					<div class="sorting-area">
-						<div class="left-box">
-							<p class="all-len">전체 <span class="len fColor">221</span>건</p>
-							<select class="styled1 mHide" style="width:120px;">
-								<option>10개씩</option>
-								<option>15개씩</option>
-								<option>20개씩</option>
-							</select>
-						</div>
-						<div class="right-box">
-							<select class="styled1" style="width:90px;">
-								<option>제목</option>
-								<option>게시자</option>
-								<option>내용</option>
-								<option>양식작성기</option>
-							</select>
-							<div class="search-box2">
-								<input type="text">
-								<button type="button" class="btn-text mid">검색</button>
-							</div>
-						</div>
-					</div>
-					<!-- 썸네일리스트 -->
-					<div class="thumb-list1">
-						<ul>
-							<li>
-								<a href="#">
-									<div class="txt-area">
-										<p class="title">
-											<span class="checkWrap"><input type="checkbox" class="styled1"></span><span class="tit">소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
-										</p>
-									</div>
-									<div class="img-area">
-										<img src="../images2.0/temp/@thumb.jpg" alt="">
-									</div>
-								</a>
-								<div class="info-area">
-									<ul>
-										<li class="name">
-											<button type="button" class="btn-user">관리자</button>
-										</li>
-										<li class="left">
-											<span class="text date">2017.11.30</span>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<a href="#">
-									<div class="txt-area">
-										<p class="title">
-											<span class="checkWrap"><input type="checkbox" class="styled1"></span><span class="tit">소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
-										</p>
-									</div>
-									<div class="img-area">
-										<img src="../images2.0/temp/@temp_organization.png" alt="temp">
-									</div>
-								</a>
-								<div class="info-area">
-									<ul>
-										<li class="name">
-											<button type="button" class="btn-user">관리자</button>
-										</li>
-										<li class="left">
-											<span class="text date">2017.11.30</span>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!-- 웹 페이징 -->
-					<div class="paging mHide">
-						<a href="#" class="btn first">처음</a>
-						<a href="#" class="btn prev">이전</a>
-						<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
-						<a href="#" class="page">2</a>
-						<a href="#" class="page">3</a>
-						<a href="#" class="page">4</a>
-						<a href="#" class="page">5</a>
-						<a href="#" class="page">6</a>
-						<a href="#" class="page">7</a>
-						<a href="#" class="page">8</a>
-						<a href="#" class="page">9</a>
-						<a href="#" class="page">10</a>
-						<a href="#" class="btn next">다음</a>
-						<a href="#" class="btn end">마지막</a>
-					</div>
-					<!-- 모바일 더보기  -->
-					<div class="btn-more wHide">
-						<button type="button"><span>더보기</span></button>
-					</div>
-				</div>
-				<div class="btn-wrap right">
-					<div class="btn-align">
-						<div class="btn-item"><a class="btn-text">삭제</a></div>
-						<div class="btn-item"><a class="btn-text fColor bdColor">등록</a></div>
-					</div>
+			<div class="top-search-box type2">
+				<select class="styled1" style="width:150px;">
+					<option>호칭코드</option>
+					<option>호칭명</option>
+				</select>
+				<div class="search-text">
+					<input type="text" class="required">
+					<button type="button" class="btn-search">검색</button>
 				</div>
 			</div>
-			<div class="btn-wrap right m-fixed-btn wHide">
+			<!-- 컨텐츠 -->
+			<div class="board-section">
+				<div class="board-list1 mHide">
+					<table>
+						<caption>호칭관리 게시판</caption>
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:15%;">
+							<col style="width:25%;">
+							<col style="width:25%;">
+							<col style="width:15%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">호칭코드</th>
+								<th scope="col">국문 호칭명</th>
+								<th scope="col">영문 호칭명</th>
+								<th scope="col">순서</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">JT00001P56</span></a></td>
+								<td>대표이사</td>
+								<td>대표이사</td>
+								<td>
+									<button type="button"><span class="btn-up">위로</span></button>
+									<button type="button"><span class="btn-down">아래로</span></button>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">JT00010P56</span></a></td>
+								<td>이사</td>
+								<td>이사</td>
+								<td>
+									<button type="button"><span class="btn-up">위로</span></button>
+									<button type="button"><span class="btn-down">아래로</span></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 페이징 -->
+				<div class="paging mHide">
+					<a href="#" class="btn first">처음</a>
+					<a href="#" class="btn prev">이전</a>
+					<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+					<a href="#" class="page">2</a>
+					<a href="#" class="page">3</a>
+					<a href="#" class="page">4</a>
+					<a href="#" class="page">5</a>
+					<a href="#" class="page">6</a>
+					<a href="#" class="page">7</a>
+					<a href="#" class="page">8</a>
+					<a href="#" class="page">9</a>
+					<a href="#" class="page">10</a>
+					<a href="#" class="btn next">다음</a>
+					<a href="#" class="btn end">마지막</a>
+				</div>
+				<p>호칭 상세보기</p>
+				<div class="board-write1">
+					<table>
+						<colgroup class="mHide"><!-- 웹전용 -->
+							<col style="width:12%;">
+							<col style="width:12%;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row" colspan="2">호칭코드 <span class="important">*</span></th>
+								<td>
+									<div class="input-area" style="max-width:400px;">
+										<input type="text">
+										<span class="btn-text mid">중복검사</span>
+									</div>
+									<span>(Suffix:P56)</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2">호칭명 <span class="important">*</span></th>
+								<th scope="row"><label for="Text01">국문 호칭명</label><span class="important">*</span></th>
+								<td><input type="text" id="Text01" class="required" style="width:312px"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Text02">영문 호칭명</label><span class="important">*</span></th>
+								<td><input type="text" id="Text02" class="required" style="width:312px"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="btn-wrap right">
 				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">조직정보</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">신규</a></div>
+					<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="footer">
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
-
 </body>
 </html>

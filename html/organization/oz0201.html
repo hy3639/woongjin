@@ -349,9 +349,9 @@
 				<ul class="tab-list1 mHide">
 					<li class="item"><a class="text fColor" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
 					<li class="item"><a class="text" href="oz0301.html">사진</a></li>
-					<li class="item"><a class="text" href="http://www.google.com">경력</a></li>
-					<li class="item"><a class="text" href="http://www.naver.com">방명록</a></li>
-					<li class="item"><a class="text" href="http://www.naver.com">즐겨찾기</a></li>
+					<li class="item"><a class="text" href="oz0401.html">경력</a></li>
+					<li class="item"><a class="text" href="oz0501.html">방명록</a></li>
+					<li class="item"><a class="text" href="#">즐겨찾기</a></li>
 				</ul>
 				<div class="organization-box">
 					<div class="profile-area">
@@ -832,29 +832,6 @@ $(window).load(function(){
 		$('.text-leng').html(content.length + '<span>/300</span>');
 	});
 
-	//셀렉트 탭
-	$('.tab-select').remove();
-	$('.organization-wrap .tab-list1').each(function(){
-		var html = $(this).html();
-		var title = $(this).find('li').eq(0).find('a').text();
-		$('.organization-wrap .organization-box').prepend('<div class="tab-select wHide"><select class="styled1" style="width:100%;"></select></div>');
-	});
-
-	$('.organization-wrap .tab-list1 .item a').each(function(){
-		var text = $(this).text();
-		var url = $(this).attr('href');
-		//$('.tab-select select option:first-child').attr("selected",true);
-		$('.tab-select select').append('<option data="' + url + '">' + text + '</option>');
-		selectStyled();
-	});
-	// 링크 이동
-	$('.tab-select select').change(function(){
-		var url = $(this).find('option:selected').attr('data');
-		if(! $(this).find('option:selected').attr('data') == false) window.location.href=url;
-	});
-
-	$(window).resize();
-
 	//달력 input 삭제
 	$('.date-text .btn-del').click(function(){
 		$(this).closest('.date-text').find('input').val('');
@@ -883,7 +860,6 @@ $(window).load(function(){
 		$('.pop-organization').fadeIn(200);
 		popResize();// 팝업 리사이징
 	});
-
 
 });
 

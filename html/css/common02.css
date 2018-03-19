@@ -3113,6 +3113,32 @@ select.styled1 {
 	line-height:0;
 	background-size:18px 18px;
 }
+.board-list2 .td-area .title .ico-entrust {
+	position:absolute;
+	top:50%;
+	margin:-9px 0 0 7px;
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url(../images2.0/mobile/ico/ico_blt05.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	background-size:18px 18px;
+}
+.board-list2 .td-area .title .ico-defer {
+	position:absolute;
+	top:50%;
+	margin:-9px 0 0 7px;
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url(../images2.0/mobile/ico/ico_blt06.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+	background-size:18px 18px;
+}
 
 /* ===========================================================================
 	전자결재
@@ -3576,14 +3602,30 @@ select.styled1 {
 	position:relative;
 	padding:0;
 }
-.app-request .sorting-area .left-box .blt-text3 {
+.app-request .sorting-area .left-box .icon-list {
 	position:absolute;
 	right:0;
 	top:50%;
-	margin-top:-11px;
+	margin-top:-8px;
+}
+.app-request .sorting-area .left-box .icon-list p {
+	display: inline-block;
+	margin-left:12px;
 	padding-left:20px;
+}
+.app-request .sorting-area .left-box .blt-text3 {
+	margin-left: 0 !important;
+
 	background:url(../images2.0/mobile/ico/ico_blt03.png) no-repeat 0 2px;
 	background-size:16px 16px;
+}
+.app-request .sorting-area .left-box .blt-text4 {
+	background:url(../images2.0/mobile/ico/ico_blt05.png) no-repeat 0 0;
+	background-size:18px 18px;
+}
+.app-request .sorting-area .left-box .blt-text5 {
+	background:url(../images2.0/mobile/ico/ico_blt06.png) no-repeat 0 0;
+	background-size:18px 18px;
 }
 .app-request .board-list2 {border-top:1px solid #eee;}
 .app-request .board-list2 .td-area {border:0;border-bottom:1px solid #eee}
@@ -4429,8 +4471,8 @@ select.styled1 {
 .detail-box .list-item dd .form-list li {margin-bottom:10px;}
 
 .knowledge-area {}
-.knowledge-area .tabArea .tab-select {margin:20px 0 10px;}
-.knowledge-area .tabArea .tab-select .selectWrap {width:100%}
+.knowledge-area .tabArea .tab-select2 {margin:20px 0 10px;}
+.knowledge-area .tabArea .tab-select2 .selectWrap {width:100%}
 .knowledge-area .left {margin:0 20px}
 .knowledge-area .title {
 	font-size:19px;
@@ -4628,7 +4670,7 @@ select.styled1 {
 
 .profile-area {
 	position:relative;
-	margin:13px 20px 20px 20px;
+	padding:13px 20px 20px 20px;
 	border-top:0;
 	box-sizing:border-box;
 }
@@ -4720,14 +4762,13 @@ select.styled1 {
 
 .profile-area .right tr:first-child th,
 .board-write1 tr:first-child td {margin-top:5px}
-
 .profile-area .right-top {
 	position:absolute;
 	right:0;
-	top:0;
+	top:13px;
 	width:100%;
 	min-height:125px;
-	padding-left:140px;
+	padding-left:165px;
 	box-sizing:border-box;
 }
 .profile-area .right-top .title {
@@ -4743,13 +4784,23 @@ select.styled1 {
 	display:block;
 	margin-top:5px
 }
-.profile-area .right-top .group {
-	position:absolute;
-	bottom:0;
+.profile-area .right-top .user-info li {
 	margin-top:10px;
-	padding-left:20px;
-	background:url(../images2.0/ico/ico_organization.png) no-repeat left center;
+	padding-left:26px;
 	font-size:14px;
+	color:#333;
+}
+.profile-area .right-top .group {
+	background:url(../images2.0/mobile/ico/ico_organization.png) no-repeat left center;
+	background-size: 17px 15px;
+}
+.profile-area .right-top .user-info .phone{
+	background:url(../images2.0/mobile/ico/ico_phone.png) no-repeat 3px center;
+	background-size: 12px 17px;
+}
+.profile-area .right-top .mail {
+	background:url(../images2.0/mobile/ico/ico_mail.png) no-repeat left center;
+	background-size:17px 13px;
 }
 .organization-box .section {
 	position:relative;
@@ -4948,8 +4999,17 @@ select.styled1 {
 
 /*조직도- 경력*/
 .organization-box.career .write-area {display:none}
-.organization-box.career .board-write1 {margin-top:0}
-.organization-box.career .board-write1 + .btn-wrap {margin-bottom:60px;}
+.organization-box.career .write-area .selectWrap,
+.organization-box.career .write-area .selectWrap .styled1 {width: 100% !important;}
+.organization-box.career .write-area .btn-wrap {margin-bottom: 30px;}
+.organization-box.career .write-area .btn-wrap .btn-item {width: 50% !important}
+.organization-box.career .write-area .board-write1 tr:first-child th {margin-top: 0}
+
+.organization-box.career  .util-top .form-list .item {
+	width:50%;
+	margin-left: 0;
+}
+
 .career-list {
 	padding:22px 0 0 22px;
 	border-top:1px solid #eee;
@@ -4957,8 +5017,7 @@ select.styled1 {
 }
 .career-list ul li {
 	position:relative;
-	padding-left:43px;
-	padding-bottom:15px;
+	padding: 0 15px 15px 25px;
 }
 .career-list ul li:before {
 	content:'';
@@ -4977,7 +5036,8 @@ select.styled1 {
 	left:0;top:2px;
 	width:16px;
 	height:16px;
-	background:url(../images2.0/ico/ico_clock.png) no-repeat 0 0;
+	background:url(../images2.0/mobile/ico/ico_clock.png) no-repeat 0 0;
+	background-size: 14px 13px;
 }
 .career-list ul li .cont .title {
 	margin:8px 0 0;
@@ -4992,26 +5052,29 @@ select.styled1 {
 	font-weight:normal;
 }
 .career-list ul li .btn-area {margin-top:10px;}
-.career-list + p {
-	margin:10px 0 0 50px;
-	font-size:12px;
-	color:#999;
-}
+.career-list ul li .btn-area .btn-text.sm {width:75px; font-size: 14px;}
+.career-list + .btn-more button {border-top: 0}
 
 .util-top {
 	overflow:hidden;
 	height:75px;
 	position:relative;
-	margin:20px;
+	margin:20px 20px 12px 20px;
 }
-.util-top > div {display:inline-block;vertical-align:top;}
+.util-top > div {
+	width:100%;
+	display:inline-block;
+	vertical-align:top;
+}
 .util-top .form-list {
 	position:absolute;
 	bottom:0
 }
 .util-top .form-list .item {line-height:35px;}
 .util-top .btn-area {
-	overflow:hidden;margin-left:15px;
+	overflow:hidden;
+	width:auto;
+	margin-left:15px;
 	position:absolute;
 	right:0;
 	top:0;
@@ -5022,10 +5085,10 @@ select.styled1 {
 .career .formItem {position:relative;}
 .career .formItem .btn-area2 {
 	position:absolute;
-	top:-95px;
+	top:-87px;
 	left:20px;
 	width:100%;
-	padding-right:120px;
+	padding-right:40px;
 	box-sizing:border-box;
 }
 .career .formItem .btn-area2 .btn-career {
@@ -5042,9 +5105,22 @@ select.styled1 {
 	text-align:center;
 }
 .career .formItem .profile-area {
+	position: relative;
+	padding-top: 20px;
 	border:0;
-	border-bottom:1px solid #eee;
+	border-top: 1px solid #eee;
+	border-bottom:2px solid #fafafa;
 	text-align:center;
+}
+.career .formItem .profile-area:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #e5e5e5;
 }
 .career .formItem .profile-area .left .img-area{margin:0 auto;}
 .career .formItem .profile-area .right {padding-left:0}
@@ -5053,6 +5129,7 @@ select.styled1 {
 	padding-left:0
 }
 .career .formItem .profile-area .right-top .title {
+	margin-top:5px;
 	font-size:18px;
 	font-weight:700;
 }
@@ -5064,7 +5141,9 @@ select.styled1 {
 	font-weight:normal
 }
 .career .formItem .profile-area .right-top .user-info {padding-top:5px;}
+.career .formItem .profile-area .right-top .user-info li {text-align: left;}
 .career .formItem .career-tit {
+	padding:20px;
 	font-size:18px;
 	color:#333;
 }
@@ -5081,6 +5160,19 @@ select.styled1 {
 	border:0;
 	padding:0;
 }
+.career .formItem .career-list .board-list2 .td-area {
+	border-top: 1px solid #eee;
+	border-bottom: 0;
+}
+.career .formItem .career-list .board-list2 .td-area:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+.career .formItem .career-list .board-list2 .td-area:before {display: none;}
+
+/*방명록*/
+.organization-box.guest .section {padding:0}
+.organization-box.guest .reply-wrap .reply-list .tit {margin-bottom: 0}
 
 /* ===========================================================================
 	레이어 팝업

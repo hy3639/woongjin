@@ -512,8 +512,39 @@
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
+<div class="layer-popup info-layer">
+	<div class="pop-head">
+		<h3 class="title">예약정보</h3>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="info-cont">
+		<p class="title">팀별 주간회의</p>
+		<dl>
+			<dt>소속팀</dt>
+			<dd>웅진관리본부</dd>
+			<dt>사용자</dt>
+			<dd>관리자</dd>
+			<dt>연락처</dt>
+			<dd>010-2282-1234</dd>
+			<dt>자원</dt>
+			<dd>대회의실</dd>
+			<dt>시간</dt>
+			<dd>10:40~11:20</dd>
+		</dl>
+	</div>
+</div>
 
 <script>
+// 테이블 오버
+$(document).on('mouseenter', '.cont-list li', function(e){
+	var x = event.clientX;
+	var y = event.clientY;
+	$('.info-layer').css({'left':x, 'top':y}).fadeIn(200);
+});
+$(document).on('mouseleave', '.cont-list li', function(){
+	$('.info-layer').hide();
+});
+
 /* 달력 select시 스타일 */
 function td_select(){
 	$('.calendar-box td').click(function(){

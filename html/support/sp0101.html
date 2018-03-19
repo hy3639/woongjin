@@ -351,8 +351,8 @@
 								<td colspan="5"><input type="text" id="Text04"> px</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="Text04">세로길이</label> <span class="important">*</span></th>
-								<td colspan="5"><input type="text" id="Text04"> px</td>
+								<th scope="row"><label for="Text05">세로길이</label> <span class="important">*</span></th>
+								<td colspan="5"><input type="text" id="Text05"> px</td>
 							</tr>
 							<tr>
 								<th scope="row">사용여부 <span class="important">*</span></th>
@@ -910,7 +910,6 @@
 </div>
 <script>
 $(window).load(function(){
-
 	//구분 폼변경
 	$('.formChange2').each(function(){
 		var idx = $(this).find('.form-list.change input[type=radio]:checked').index()+1;
@@ -923,13 +922,11 @@ $(window).load(function(){
 		});
 	});
 
-
 	//달력 input 삭제
 	$('.date-text .btn-del').click(function(){
 		$(this).closest('.date-text').find('input').val('');
 	});
 });
-/* //180312 수정,삭제*/
 </script>
 </body>
 </html>

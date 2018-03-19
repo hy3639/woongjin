@@ -105,6 +105,18 @@
 	line-height:22px;
 	background:url(../images2.0/ico/ico_blt03.png) no-repeat 0 2px;
 }
+.blt-text4 {
+	padding-left:25px;
+	font-size:12px;
+	line-height:22px;
+	background:url(../images2.0/ico/ico_blt05.png) no-repeat 0 2px;
+}
+.blt-text5 {
+	padding-left:25px;
+	font-size:12px;
+	line-height:22px;
+	background:url(../images2.0/ico/ico_blt06.png) no-repeat 0 2px;
+}
 
 /* 불릿 리스트 */
 .blt-list1 {}
@@ -246,7 +258,8 @@ textarea {
 	display:inline-block;
 	position:relative;
 }
-.input-area.block .required-box {display:block;}/*180312 추가*/
+.input-area.block .required-box {display:block;}
+
 .required-box .message {
 	display:none;
 	position:absolute;
@@ -1010,6 +1023,24 @@ line-height:35px;
 	width:18px;
 	height:18px;
 	background:url(../images2.0/ico/ico_blt03.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.ico-entrust {
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url(../images2.0/ico/ico_blt05.png) no-repeat 0 0;
+	font-size:0;
+	text-indent:-9999px;
+	line-height:0;
+}
+.ico-defer {
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url(../images2.0/ico/ico_blt06.png) no-repeat 0 0;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -1859,6 +1890,7 @@ line-height:35px;
 .board-list1 table td.subject .tit {
 	display:inline-block;
 	max-width:100%;
+	padding-right: 1px;
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
@@ -1879,7 +1911,9 @@ line-height:35px;
 	box-sizing:border-box;
 }
 
-.board-list1 .subject .ico-urgency {
+.board-list1 .subject .ico-urgency,
+.board-list1 .subject .ico-entrust,
+.board-list1 .subject .ico-defer {
 	position:absolute;
 	top:50%;
 	margin:-10px 0 0 7px;
@@ -2702,7 +2736,12 @@ line-height:35px;
 	font-size:15px;
 }
 .sorting-area .left-box .all-len .len {font-weight:700;}
-.sorting-area .left-box .blt-text3 {
+.sorting-area .left-box .icon-list {
+	display: inline-block;
+}
+.sorting-area .left-box .blt-text3,
+.sorting-area .left-box .blt-text4,
+.sorting-area .left-box .blt-text5 {
 	display:inline-block;
 	margin-left:18px;
 }
@@ -7403,7 +7442,8 @@ line-height:35px;
 	right:0;
 	top:10px;
 }
-.career-list + p {
+.career-list + p,
+.career-list + .btn-more + p {
 	margin:10px 0 0 50px;
 	font-size:12px;
 	color:#999;
@@ -7490,4 +7530,30 @@ line-height:35px;
 .career .formItem .career-tit +.career-list .board-list3 tbody td:nth-child(2) {
 	text-align:center;
 	padding-left:0
+}
+.organization-box.guest .section {margin-top:40px;}
+
+/* ===========================================================================
+	포탈관리자
+=========================================================================== */
+.portal .tab-list1 {margin-top: 0}
+.portal .tabCont .board-write1 {margin:40px 0 0 0}
+.portal .tabCont .board-write1 td {padding-left: 0}
+.portal .tabCont .board-write1 td .required-box {width: 100%;}
+.portal .tabCont .board-write1 .board-write3 td {padding-left:30px}
+.portal .tabCont .board-write1 .input-area {display: inline-block; width:100%; box-sizing: border-box;}
+.portal .tabCont .board-write1 .input-area + span {margin-left: 20px;}
+
+.portal .board-section .board-write1 {margin: 0}
+.portal .board-section .board-write1 .input-area {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.portal .board-section .board-write1 .input-area + span {margin-left: 20px;}
+.portal .board-section .board-write1 td {padding-left: 0}
+.portal .board-section .paging + p {
+	margin:40px 0 15px;
+	font-size: 16px;
+	color: #333;
 }
