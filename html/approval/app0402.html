@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <title>웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <link rel="stylesheet" href="../css/common01.css"> <!--PC-->
@@ -19,789 +19,447 @@
 </head>
 
 <body>
-<div class="wrapper">
-	<div class="header">
-		<h1 class="logo">
-			<a href="#"><img src="../images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
-		</h1>
-		<button type="button" class="btn-naver">네이버웍스</button>
-		<button type="button" class="btn-gnb">메뉴열기</button>
-		<button type="button" class="btn-search">검색</button>
-
-		<div class="utill">
-			<div class="user-box">
-				<div class="user">
-					<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-					<p class="name">김웅진 부장</p>
-				</div>
-			</div>
-			<div class="user-menu">
-				<div class="inner">
-					<button type="button" class="btn-close2">닫기</button>
-					<div class="user">
-						<div class="img-area mHide"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-						<div class="txt-area">
-							<p class="name mHide">김웅진 부장</p>
-							<p class="info">경영지원부<br>woongjin2@woongjin.co.kr</p>
-							<a href="#" class="btn-admin">관리자설정</a>
-						</div>
-					</div>
-					<div class="btn-area">
-						<a href="#" class="">내정보관리</a>
-						<a href="#" class="">비밀번호변경</a>
-						<a href="#" class="">로그아웃</a>
-					</div>
-				</div>
-			</div>
-			<div class="naver-list">
-				<div class="inner">
-					<button type="button" class="btn-close2">닫기</button>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n01.png" alt="메일"><em class="len bgColor">99</em></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n02.png" alt="전화번호부"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n03.png" alt="일정관리"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n04.png" alt="내 드라이브"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n05.png" alt="메신저함"><em class="len bgColor">1</em></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n06.png" alt="설문조사"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n07.png" alt="네이버웍스관리자"></span></a>
-				</div>
-			</div>
-		</div>
+<div class="content app-wrap2">
+	<!-- 타이틀 영역 -->
+	<div class="title-wrap">
+		<h2 class="title">전결규정 결재선설정</h2>
 	</div>
+	<div class="board-write1">
+		<table>
+			<colgroup class="mHide"><!-- 웹전용 -->
+				<col style="width:18%;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">결재양식</th>
+					<td>
+						<select class="styled1" style="width:150px;">
+							<option>기안지</option>
+							<option>일반양식</option>
+							<option>목록형양식</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">전결항목</th>
+					<td>
+						<select class="styled1" style="width:150px;">
+							<option>전결사항</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">전결항목 리스트</th>
+					<td>
+						<select class="styled1" style="width:250px;">
+							<option>전결사항 [10,000 ~ 50,000]</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">문서종류</th>
+					<td>
+						<select class="styled1 doc-type-select" style="width:110px;">
+							<option>일반결재</option>
+							<option>신청 2단</option>
+							<option>신청 3단</option>
+						</select>
+						(<div class="doc-type">
+							<ul class="form-list inline">
+								<li class="item"><input type="checkbox" id="check01" class="styled1 form-line0401"><label for="check01">합의</label></li>
+								<li class="item"><input type="checkbox" id="check02" class="styled1 form-table05"><label for="check02">참조자 지정</label></li>
+							</ul>
+						</div>)
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="float-area">
+		<p class="sub-title">결재선 지정<span class="important fColor">*</span></p>
+	</div>
+	<div class="board-write1 dynamic-table">
+			<table>
+				<caption>전결규정 결재선 설정 테이블</caption>
+				<colgroup>
+					<col style="width:18%;">
+					<col >
+					<col style="width:18%;">
+					<col >
+				</colgroup>
+				<tbody>
+					<tr class="form-line0101">
+						<th scope="row">1단 결재선 유형</th>
+						<td colspan="3">
+							<ul class="form-list inline">
+								<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1 form-line0101" checked><label for="Radio0101">결재선 선택지정</label></li>
+								<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1 form-line0102"><label for="Radio0102">결재선 자동계산</label></li>
+								<li class="item"><input type="radio" name="Radio01" id="Radio0103" class="styled1 form-line0103"><label for="Radio0103">결재선 고정지정</label></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="form-line0102 hide">
+						<th scope="row">1단 최종 결재자</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>선택</option>
+							</select>
+						</td>
+						<th scope="row">1단 자동지정 결재자 수</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="form-line0103 hide">
+						<th scope="row">1단 고정결재선 지정</th>
+						<td colspan="3">
+							<div class="input-area type2" style="max-width:400px;">
+								<input type="text">
+								<span class="btn-text mid">검색</span>
+							</div>
+							<span>총 <em class="fColor">5</em>명</span>
+							<div class="share-box">
+								<div class="btn-groupchart">
+									<button type="button" class="btn">조직도</button>
+									<p class="tooltip">조직도</p>
+								</div>
+								<div class="scroll-area">
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
 
-	<div class="container">
-		<div class="gnb-utill">
-			<div class="btn-close-box wHide">
-				<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
-			</div>
-			<!-- gnb -->
-			<div class="gnb-sliding">
-				<div class="gnb-wrap">
-					<div class="gnb-menu-box">
-						<div class="home">
-							<a href="#" class="link-home ico01">홈</a>
-							<button type="button" class="btn-setting">설정</button>
+					<tr class="form-line0201 hide">
+						<th scope="row">2단 결재선 유형</th>
+						<td colspan="3">
+							<ul class="form-list inline">
+								<li class="item"><input type="radio" name="Radio02" id="Radio0201" class="styled1 form-line0201" checked><label for="Radio0201">결재선 선택지정</label></li>
+								<li class="item"><input type="radio" name="Radio02" id="Radio0202" class="styled1 form-line0202"><label for="Radio0202">결재선 자동계산</label></li>
+								<li class="item"><input type="radio" name="Radio02" id="Radio0203" class="styled1 form-line0203"><label for="Radio0203">결재선 고정지정</label></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="form-line0202 hide">
+						<th scope="row">2단 결재선 담당자 지정</th>
+						<td colspan="3">
+							<div class="input-area">
+								<input type="text" id="Text01" style="max-width:700px;">
+								<button type="button" class="btn-text mid btn-search">검색</button>
+								<button type="button" class="btn-text mid btn-address">주소록</button>
+								<button type="button" class="btn-text mid btn-delete">삭제</button>
+							</div>
+						</td>
+					</tr>
+					<tr class="form-line0202 hide">
+						<th scope="row">2단 최종 결재자</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>선택</option>
+							</select>
+						</td>
+						<th scope="row">2단 자동지정 결재자 수</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="form-line0203 hide">
+						<th scope="row">2단 고정결재선 지정</th>
+						<td colspan="3">
+							<div class="input-area type2" style="max-width:400px;">
+								<input type="text">
+								<span class="btn-text mid">검색</span>
+							</div>
+							<span>총 <em class="fColor">5</em>명</span>
+							<div class="share-box">
+								<div class="btn-groupchart">
+									<button type="button" class="btn">조직도</button>
+									<p class="tooltip">조직도</p>
+								</div>
+								<div class="scroll-area">
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr class="form-line0301 hide">
+						<th scope="row">3단 결재선 유형</th>
+						<td colspan="3">
+							<ul class="form-list inline">
+								<li class="item"><input type="radio" name="Radio03" id="Radio0301" class="styled1 form-line0301" checked><label for="Radio0301">결재선 선택지정</label></li>
+								<li class="item"><input type="radio" name="Radio03" id="Radio0302" class="styled1 form-line0302"><label for="Radio0302">결재선 자동계산</label></li>
+								<li class="item"><input type="radio" name="Radio03" id="Radio0303" class="styled1 form-line0303"><label for="Radio0303">결재선 고정지정</label></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="form-line0302 hide">
+						<th scope="row">3단 결재선 담당자 지정</th>
+						<td colspan="3">
+							<div class="input-area">
+								<input type="text" id="Text02" style="max-width:700px;">
+								<button type="button" class="btn-text mid btn-search">검색</button>
+								<button type="button" class="btn-text mid btn-address">주소록</button>
+								<button type="button" class="btn-text mid btn-delete">삭제</button>
+							</div>
+						</td>
+					</tr>
+					<tr class="form-line0302 hide">
+						<th scope="row">3단 최종 결재자</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>선택</option>
+							</select>
+						</td>
+						<th scope="row">3단 자동지정 결재자 수</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="form-line0303 hide">
+						<th scope="row">3단 고정결재선 지정</th>
+						<td colspan="3">
+							<div class="input-area type2" style="max-width:400px;">
+								<input type="text">
+								<span class="btn-text mid">검색</span>
+							</div>
+							<span>총 <em class="fColor">5</em>명</span>
+							<div class="share-box">
+								<div class="btn-groupchart">
+									<button type="button" class="btn">조직도</button>
+									<p class="tooltip">조직도</p>
+								</div>
+								<div class="scroll-area">
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<!-- 합의 -->
+					<tr class="form-line0401 hide">
+						<th scope="row">합의 결재선 유형</th>
+						<td colspan="3">
+							<ul class="form-list inline">
+								<li class="item"><input type="radio" name="Radio04" id="Radio0401" class="styled1 form-line0401" checked><label for="Radio0401">결재선 선택지정</label></li>
+								<li class="item"><input type="radio" name="Radio04" id="Radio0402" class="styled1 form-line0402"><label for="Radio0402">결재선 고정지정</label></li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="form-line0401 hide">
+						<th scope="row">합의 유형</th>
+						<td>
+							<select class="styled1" style="width:90px;">
+								<option>직렬</option>
+								<option>병렬</option>
+							</select>
+						</td>
+						<th scope="row">합의 권한 설정</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>반려허용</option>
+								<option>의사표시만 허용</option>
+							</select>
+						</td>
+					</tr>
+					<tr class="form-line0402 hide">
+						<th scope="row">합의 고정결재선 지정</th>
+						<td colspan="3">
+							<div class="input-area type2" style="max-width:400px;">
+								<input type="text">
+								<span class="btn-text mid">검색</span>
+							</div>
+							<span>총 <em class="fColor">5</em>명</span>
+							<div class="share-box">
+								<div class="btn-groupchart">
+									<button type="button" class="btn">조직도</button>
+									<p class="tooltip">조직도</p>
+								</div>
+								<div class="scroll-area">
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">김웅진 부장 / 경영지원팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">고아라 대리 / 총무팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+									<div class="user-box">
+										<p class="text">최재영 부장 / 디자인팀</p>
+										<button type="button" class="btn-del">삭제</button>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="form-line0403 hide">
+						<th scope="row">합의 위치 설정</th>
+						<td>
+							<select class="styled1" style="width:150px;">
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	<div class="board-write1 dynamic-table form-table05">
+		<table>
+			<caption>참조자지정 테이블</caption>
+			<colgroup>
+				<col style="width:18%;">
+				<col >
+			</colgroup>
+			<tbody>
+				<!-- 참조자지정 -->
+				<tr class="form-line-type2">
+					<th scope="row">참조자 지정</th>
+					<td colspan="3">
+						<div class="input-area type2" style="max-width:400px;">
+							<input type="text">
+							<span class="btn-text mid">검색</span>
 						</div>
-						<ul class="gnb-list">
-							<li class="gnb-item">
-								<p class="gnb-title ico02">게시판</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">게시판</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item">
-												<a href="#" class="d-title">최근게시물</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">공지사항</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">경조사</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">자유게시판lv2</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">IT/Biz Trend</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">양식기 전용 게시판</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">자유게시판</a>
-												<ul class="depth2-list">
-													<li class="depth2-item"><a href="#">게시판 01</a></li>
-													<li class="depth2-item"><a href="#">게시판 02</a></li>
-													<li class="depth2-item"><a href="#">게시판 03</a></li>
-													<li class="depth2-item"><a href="#">게시판 04</a></li>
-													<li class="depth2-item"><a href="#">게시판 05</a></li>
-													<li class="depth2-item"><a href="#">게시판 06</a></li>
-													<li class="depth2-item"><a href="#">게시판 07</a></li>
-												</ul>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">자료실</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">R&amp;D부문/개발실</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">Master Data 신규</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">익명게시판</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">제안자료실</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">권한 게시판</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">임시저장함</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">관리자 메뉴</a>
-												<ul class="depth2-list">
-													<li class="depth2-item"><a href="#">게시판 01</a></li>
-													<li class="depth2-item"><a href="#">게시판 02</a></li>
-													<li class="depth2-item"><a href="#">게시판 03</a></li>
-													<li class="depth2-item"><a href="#">게시판 04</a></li>
-													<li class="depth2-item"><a href="#">게시판 05</a></li>
-													<li class="depth2-item"><a href="#">게시판 06</a></li>
-													<li class="depth2-item"><a href="#">게시판 07</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico03">전자결재</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">전자결재</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico04">설문조사</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">설문조사</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico05">업무지원</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">업무지원</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico06">Knowledge</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">Knowledge</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico07">e-HR</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">e-HR</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico08">평가시스템</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">평가시스템</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico09">개인블로그</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">개인블로그</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico10">전사공유지식</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">전사공유지식</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item">
-												<a href="#" class="d-title">전사공유지식</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-
-					<!-- 서브 GNB -->
-					<div class="sub-gnb">
-						<div class="depth1">
+						<span>총 <em class="fColor">0</em>명</span>
+						<div class="share-box">
+							<div class="btn-groupchart">
+								<button type="button" class="btn">조직도</button>
+								<p class="tooltip">조직도</p>
+							</div>
 							<div class="scroll-area">
-								<div class="depth-top">
-									<p class="depth1-title"><span class="text">전자결재</span></p>
-									<div class="menu-box">
-										<a href="#" class="btn-text mid">기안문 작성</a>
-									</div>
+								<!-- <div class="user-box">
+									<p class="text">김웅진 부장 / 경영지원팀</p>
+									<button type="button" class="btn-del">삭제</button>
 								</div>
-								<ul class="depth1-list">
-									<li class="depth1-item">
-										<a href="#" class="d-title">개인문서함</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">결재요청함</a></li>
-											<li class="depth2-item"><a href="#">임시저장함</a></li>
-											<li class="depth2-item"><a href="#">참조문서함</a></li>
-											<li class="depth2-item"><a href="#">전체결재문서</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">결재</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">결재대기함</a></li>
-											<li class="depth2-item"><a href="#">결재진행함</a></li>
-											<li class="depth2-item"><a href="#">완료문서함</a></li>
-											<li class="depth2-item"><a href="#">개인지출결의</a></li>
-											<li class="depth2-item"><a href="#">회수/반려문서함</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">부서</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">부서수신함</a></li>
-											<li class="depth2-item"><a href="#">부서문서함</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">개인보관함</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">개인</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">환경설정</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">대결자관리</a></li>
-											<li class="depth2-item"><a href="#">개임보관함</a></li>
-											<li class="depth2-item"><a href="#">알림설정</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">관리자메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">사용관리</a></li>
-											<li class="depth2-item"><a href="#">결재문서 관리</a></li>
-											<li class="depth2-item"><a href="#">문서보안관리</a></li>
-											<li class="depth2-item"><a href="#">부서문서함관리</a></li>
-											<li class="depth2-item"><a href="#">문서함 관리</a></li>
-											<li class="depth2-item"><a href="#">시스템관리</a></li>
-											<li class="depth2-item"><a href="#">코드관리</a></li>
-											<li class="depth2-item"><a href="#">양식관리</a></li>
-											<li class="depth2-item"><a href="#">수신함담당자관리</a></li>
-											<li class="depth2-item"><a href="#">부서별담당자관리</a></li>
-											<li class="depth2-item"><a href="#">전결관리</a></li>
-											<li class="depth2-item"><a href="#">전결규정 설정</a></li>
-											<li class="depth2-item on"><a href="#">전결규정 결재선설정</a></li><!-- 선택메뉴 (class="on") -->
-										</ul>
-									</li>
-								</ul>
+								<div class="user-box">
+									<p class="text">고아라 대리 / 총무팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">최재영 부장 / 디자인팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">김웅진 부장 / 경영지원팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">고아라 대리 / 총무팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div>
+								<div class="user-box">
+									<p class="text">최재영 부장 / 디자인팀</p>
+									<button type="button" class="btn-del">삭제</button>
+								</div> -->
 							</div>
 						</div>
-					</div>
-					<!-- //서브 GNB -->
-				</div>
-				<div class="btn-gnb-toggle">
-					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
-					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="content app-wrap2">
-			<!-- 타이틀 영역 -->
-			<div class="title-wrap">
-				<h2 class="title">전결규정 결재선설정</h2>
-			</div>
-			<div class="board-write1">
-				<table>
-					<colgroup class="mHide"><!-- 웹전용 -->
-						<col style="width:18%;">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th scope="row">결재양식</th>
-							<td>
-								<select class="styled1" style="width:150px;">
-									<option>기안지</option>
-									<option>일반양식</option>
-									<option>목록형양식</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">전결항목</th>
-							<td>
-								<select class="styled1" style="width:150px;">
-									<option>전결사항</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">전결항목 리스트</th>
-							<td>
-								<select class="styled1" style="width:250px;">
-									<option>전결사항 [10,000 ~ 50,000]</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">문서종류</th>
-							<td>
-								<select class="styled1 doc-type-select" style="width:110px;">
-									<option>일반결재</option>
-									<option>신청 2단</option>
-									<option>신청 3단</option>
-								</select>
-								(<div class="doc-type">
-									<ul class="form-list inline">
-										<li class="item"><input type="checkbox" id="check01" class="styled1 form-line0401"><label for="check01">합의</label></li>
-										<li class="item"><input type="checkbox" id="check02" class="styled1 form-table05"><label for="check02">참조자 지정</label></li>
-									</ul>
-								</div>)
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="float-area">
-				<p class="sub-title">결재선 지정<span class="important fColor">*</span></p>
-			</div>
-			<div class="board-write1 dynamic-table">
-					<table>
-						<caption>전결규정 결재선 설정 테이블</caption>
-						<colgroup>
-							<col style="width:18%;">
-							<col >
-							<col style="width:18%;">
-							<col >
-						</colgroup>
-						<tbody>
-							<tr class="form-line0101">
-								<th scope="row">1단 결재선 유형</th>
-								<td colspan="3">
-									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1 form-line0101" checked><label for="Radio0101">결재선 선택지정</label></li>
-										<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1 form-line0102"><label for="Radio0102">결재선 자동계산</label></li>
-										<li class="item"><input type="radio" name="Radio01" id="Radio0103" class="styled1 form-line0103"><label for="Radio0103">결재선 고정지정</label></li>
-									</ul>
-								</td>
-							</tr>
-							<tr class="form-line0102 hide">
-								<th scope="row">1단 최종 결재자</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>선택</option>
-									</select>
-								</td>
-								<th scope="row">1단 자동지정 결재자 수</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>선택</option>
-									</select>
-								</td>
-							</tr>
-							<tr class="form-line0103 hide">
-								<th scope="row">1단 고정결재선 지정</th>
-								<td colspan="3">
-									<div class="input-area type2" style="max-width:400px;">
-										<input type="text">
-										<span class="btn-text mid">검색</span>
-									</div>
-									<span>총 <em class="fColor">5</em>명</span>
-									<div class="share-box">
-										<div class="btn-groupchart">
-											<button type="button" class="btn">조직도</button>
-											<p class="tooltip">조직도</p>
-										</div>
-										<div class="scroll-area">
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-
-							<tr class="form-line0201 hide">
-								<th scope="row">2단 결재선 유형</th>
-								<td colspan="3">
-									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="Radio02" id="Radio0201" class="styled1 form-line0201" checked><label for="Radio0201">결재선 선택지정</label></li>
-										<li class="item"><input type="radio" name="Radio02" id="Radio0202" class="styled1 form-line0202"><label for="Radio0202">결재선 자동계산</label></li>
-										<li class="item"><input type="radio" name="Radio02" id="Radio0203" class="styled1 form-line0203"><label for="Radio0203">결재선 고정지정</label></li>
-									</ul>
-								</td>
-							</tr>
-							<tr class="form-line0202 hide">
-								<th scope="row">2단 결재선 담당자 지정</th>
-								<td colspan="3">
-									<div class="input-area">
-										<input type="text" id="Text01" style="max-width:700px;">
-										<button type="button" class="btn-text mid btn-search">검색</button>
-										<button type="button" class="btn-text mid btn-address">주소록</button>
-										<button type="button" class="btn-text mid btn-delete">삭제</button>
-									</div>
-								</td>
-							</tr>
-							<tr class="form-line0202 hide">
-								<th scope="row">2단 최종 결재자</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>선택</option>
-									</select>
-								</td>
-								<th scope="row">2단 자동지정 결재자 수</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>선택</option>
-									</select>
-								</td>
-							</tr>
-							<tr class="form-line0203 hide">
-								<th scope="row">2단 고정결재선 지정</th>
-								<td colspan="3">
-									<div class="input-area type2" style="max-width:400px;">
-										<input type="text">
-										<span class="btn-text mid">검색</span>
-									</div>
-									<span>총 <em class="fColor">5</em>명</span>
-									<div class="share-box">
-										<div class="btn-groupchart">
-											<button type="button" class="btn">조직도</button>
-											<p class="tooltip">조직도</p>
-										</div>
-										<div class="scroll-area">
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-
-							<tr class="form-line0301 hide">
-								<th scope="row">3단 결재선 유형</th>
-								<td colspan="3">
-									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="Radio03" id="Radio0301" class="styled1 form-line0301" checked><label for="Radio0301">결재선 선택지정</label></li>
-										<li class="item"><input type="radio" name="Radio03" id="Radio0302" class="styled1 form-line0302"><label for="Radio0302">결재선 자동계산</label></li>
-										<li class="item"><input type="radio" name="Radio03" id="Radio0303" class="styled1 form-line0303"><label for="Radio0303">결재선 고정지정</label></li>
-									</ul>
-								</td>
-							</tr>
-							<tr class="form-line0302 hide">
-								<th scope="row">3단 결재선 담당자 지정</th>
-								<td colspan="3">
-									<div class="input-area">
-										<input type="text" id="Text02" style="max-width:700px;">
-										<button type="button" class="btn-text mid btn-search">검색</button>
-										<button type="button" class="btn-text mid btn-address">주소록</button>
-										<button type="button" class="btn-text mid btn-delete">삭제</button>
-									</div>
-								</td>
-							</tr>
-							<tr class="form-line0302 hide">
-								<th scope="row">3단 최종 결재자</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>선택</option>
-									</select>
-								</td>
-								<th scope="row">3단 자동지정 결재자 수</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>선택</option>
-									</select>
-								</td>
-							</tr>
-							<tr class="form-line0303 hide">
-								<th scope="row">3단 고정결재선 지정</th>
-								<td colspan="3">
-									<div class="input-area type2" style="max-width:400px;">
-										<input type="text">
-										<span class="btn-text mid">검색</span>
-									</div>
-									<span>총 <em class="fColor">5</em>명</span>
-									<div class="share-box">
-										<div class="btn-groupchart">
-											<button type="button" class="btn">조직도</button>
-											<p class="tooltip">조직도</p>
-										</div>
-										<div class="scroll-area">
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-
-							<!-- 합의 -->
-							<tr class="form-line0401 hide">
-								<th scope="row">합의 결재선 유형</th>
-								<td colspan="3">
-									<ul class="form-list inline">
-										<li class="item"><input type="radio" name="Radio04" id="Radio0401" class="styled1 form-line0401" checked><label for="Radio0401">결재선 선택지정</label></li>
-										<li class="item"><input type="radio" name="Radio04" id="Radio0402" class="styled1 form-line0402"><label for="Radio0402">결재선 고정지정</label></li>
-									</ul>
-								</td>
-							</tr>
-							<tr class="form-line0401 hide">
-								<th scope="row">합의 유형</th>
-								<td>
-									<select class="styled1" style="width:90px;">
-										<option>직렬</option>
-										<option>병렬</option>
-									</select>
-								</td>
-								<th scope="row">합의 권한 설정</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>반려허용</option>
-										<option>의사표시만 허용</option>
-									</select>
-								</td>
-							</tr>
-							<tr class="form-line0402 hide">
-								<th scope="row">합의 고정결재선 지정</th>
-								<td colspan="3">
-									<div class="input-area type2" style="max-width:400px;">
-										<input type="text">
-										<span class="btn-text mid">검색</span>
-									</div>
-									<span>총 <em class="fColor">5</em>명</span>
-									<div class="share-box">
-										<div class="btn-groupchart">
-											<button type="button" class="btn">조직도</button>
-											<p class="tooltip">조직도</p>
-										</div>
-										<div class="scroll-area">
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">김웅진 부장 / 경영지원팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">고아라 대리 / 총무팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-											<div class="user-box">
-												<p class="text">최재영 부장 / 디자인팀</p>
-												<button type="button" class="btn-del">삭제</button>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr class="form-line0403 hide">
-								<th scope="row">합의 위치 설정</th>
-								<td>
-									<select class="styled1" style="width:150px;">
-										<option>0</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-										<option>6</option>
-										<option>7</option>
-										<option>8</option>
-									</select>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-			<div class="board-write1 dynamic-table form-table05">
-				<table>
-					<caption>참조자지정 테이블</caption>
-					<colgroup>
-						<col style="width:18%;">
-						<col >
-					</colgroup>
-					<tbody>
-						<!-- 참조자지정 -->
-						<tr class="form-line-type2">
-							<th scope="row">참조자 지정</th>
-							<td colspan="3">
-								<div class="input-area type2" style="max-width:400px;">
-									<input type="text">
-									<span class="btn-text mid">검색</span>
-								</div>
-								<span>총 <em class="fColor">0</em>명</span>
-								<div class="share-box">
-									<div class="btn-groupchart">
-										<button type="button" class="btn">조직도</button>
-										<p class="tooltip">조직도</p>
-									</div>
-									<div class="scroll-area">
-										<!-- <div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">김웅진 부장 / 경영지원팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">고아라 대리 / 총무팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div>
-										<div class="user-box">
-											<p class="text">최재영 부장 / 디자인팀</p>
-											<button type="button" class="btn-del">삭제</button>
-										</div> -->
-									</div>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="btn-wrap right">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">목록</a></div>
-					<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
-				</div>
-			</div>
-		</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 
-	<div class="footer">
-		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	<div class="btn-wrap right">
+		<div class="btn-align">
+			<div class="btn-item"><a href="#" class="btn-text">목록</a></div>
+			<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
+		</div>
 	</div>
 </div>
 

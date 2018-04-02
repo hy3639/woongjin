@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<script src="../js/common_iframe.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="content">
+		<div class="title-wrap">
+			<h2 class="title">게시판셋 관리</h2>
+		</div>
+
+		<div class="top-search-box type3">
+			<select class="styled1" style="width:150px;">
+				<option>제목</option>
+				<option>게시자</option>
+				<option>내용</option>
+				<option>양식작성기</option>
+			</select>
+			<div class="search-text">
+				<input type="text" placeholder="검색어를 입력해주세요">
+				<button type="button" class="btn-search">검색</button>
+			</div>
+		</div>
+
+		<div class="sorting-area">
+			<div class="left-box">
+				<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+			</div>
+			<div class="right-box">
+				<button type="button" class="btn-icon-text icon01"><span class="text">안 읽은 게시물 보기</span></button>
+			</div>
+		</div>
+
+		<div class="sorting-area mHide">
+			<div class="left-box">
+				<select class="styled1" style="width:120px;">
+					<option>10개씩</option>
+					<option>15개씩</option>
+					<option>20개씩</option>
+				</select>
+				<div class="align-btns">
+					<button type="button" class="btn-align1 on"><span class="icon">리스트형</span></button>
+					<button type="button" class="btn-align2"><span class="icon">미리보기형</span></button>
+				</div>
+			</div>
+			<div class="right-box">
+				<div class="layout-btns">
+					<button type="button" class="btn-layout1 on"><span class="text">목록만보기</span></button>
+					<button type="button" class="btn-layout2"><span class="text">좌우 보기</span></button>
+					<button type="button" class="btn-layout3"><span class="text">상하 보기</span></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 목록 보기 -->
+		<div class="list-view">
+			<!-- 구분선 -->
+			<div class="hr-bar"></div>
+			<!-- 왼쪽 리스트영역 -->
+			<div class="list-left">
+				<!-- 목록 -->
+				<div class="scrollbox-area">
+					<div class="list-type mHide">
+						<div class="board-list1">
+							<table>
+								<caption>공지사항 게시판</caption>
+								<colgroup>
+									<col style="width:6%;">
+									<col style="width:9%;">
+									<col style="width:8%;">
+									<col >
+									<col style="width:9.5%;">
+									<col style="width:11.5%;">
+									<col style="width:10%;">
+									<col style="width:10%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"><input type="checkbox" class="styled1"></th>
+										<th scope="col"><button type="button" class="btn-sorting">번호<span class="icon"></span></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">첨부<span class="icon"></span></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">제목<span class="icon"></span></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">게시자<span class="icon"></span></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">등록일<span class="icon"></span></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">조회수<span class="icon"></span></button></th>
+										<th scope="col"><button type="button" class="btn-sorting">좋아요<span class="icon"></span></button></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="important">
+										<td><input type="checkbox" class="styled1"></td>
+										<td><span class="icon-important fColor bdColor">필독</span></td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">서비스 오픈 안내</span></a></td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(3)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어</span><span class="reply fColor">(153)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" class="styled1"></td>
+										<td>219</td>
+										<td><img src="../images2.0/ico/ico_file.png" alt="첨부"></td>
+										<td class="subject"><a href="#" class="link"><span class="tit">소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행 소라마치 그룹웨어 데모 진행</span><span class="reply fColor">(113)</span></a>
+										</td>
+										<td><button type="button" class="btn-user">관리자</button></td>
+										<td>2017.12.24</td>
+										<td>999</td>
+										<td>200</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- 미리보기 -->
+					<div class="thumb-type">
+						<div class="thumb-list1">
+							<ul>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="icon-important num fColor bdColor">필독</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area">
+											<img src="../images2.0/temp/@thumb.jpg" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="num">219</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area mHide">
+											<img src="../images2.0/img/thumb_noimage.png" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="num">218</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area">
+											<img src="../images2.0/temp/@thumb.jpg" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="num">218</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area">
+											<img src="../images2.0/temp/@thumb.jpg" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="num">218</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area">
+											<img src="../images2.0/temp/@thumb.jpg" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="num">218</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(122)</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area">
+											<img src="../images2.0/temp/@thumb.jpg" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<div class="txt-area">
+											<span class="num">218</span>
+											<p class="title">
+												<input type="checkbox" class="styled1"><span class="tit">소라마치 그룹웨어 소라마치 그룹웨어 소라마치 그룹웨어</span><span class="reply fColor">(3)</span>
+											</p>
+											<p class="cont dotLine3">
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+												소리마치 직원은 본 문서를 보게되면 댓글 달아 주세요.
+												다음과 같이 소리마치 그룹웨어 도입에 관한
+												데모를 진행합니다. 게시판 테스트입니다.
+											</p>
+										</div>
+										<div class="img-area">
+											<img src="../images2.0/temp/@thumb.jpg" alt="">
+										</div>
+									</a>
+									<div class="info-area">
+										<ul>
+											<li class="name">
+												<button type="button" class="btn-user">관리자</button>
+											</li>
+											<li class="left">
+												<span class="text date">2017.11.30</span>
+												<span class="text count"><em>조회</em> 108</span>
+											</li>
+											<li class="right">
+												<span class="ico-file">첨부파일</span>
+												<span class="like"><em class="mHide">좋아요</em> 200</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-more wHide">
+							<button type="button"><span>더보기</span></button>
+						</div>
+					</div>
+
+					<!-- 페이징 -->
+					<div class="paging mHide">
+						<a href="#" class="btn first disabled">처음</a> <!-- 비활성일 경우 class="disabled" 추가 (180312 수정) -->
+						<a href="#" class="btn prev">이전</a>
+						<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+						<a href="#" class="page">2</a>
+						<a href="#" class="page">3</a>
+						<a href="#" class="page">4</a>
+						<a href="#" class="page">5</a>
+						<a href="#" class="page">6</a>
+						<a href="#" class="page">7</a>
+						<a href="#" class="page">8</a>
+						<a href="#" class="page">9</a>
+						<a href="#" class="page">10</a>
+						<a href="#" class="btn next">다음</a>
+						<a href="#" class="btn end">마지막</a>
+					</div>
+
+					<!-- 플로팅버튼  -->
+					<div class="btn-wrap right m-fixed-btn wHide">
+						<div class="btn-align">
+							<div class="btn-item"><a href="#" class="btn-text">삭제</a></div>
+							<div class="btn-item"><a href="#" class="btn-text bdColor fColor">등록</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // 왼쪽 리스트영역 -->
+
+			<!-- 오른쪽 상세보기 영역 -->
+			<div class="view-type mHide">
+				<div class="scrollbox-area">
+					<div class="board-view1">
+						<ul>
+							<li class="tit-wrap">
+								<div class="left-box">
+									<p>사이트 오지 사이트 <span class="fColor">(5)</span></p>
+								</div>
+								<div class="right-box">
+									<div class="left">
+										<span class="icon-text icon01"><span class="text"><em class="mHide">조회수</em> 134</span></span>
+										<button type="button" class="btn-icon-text icon02"><span class="text"><em class="mHide">좋아요</em> 171</span></button>
+									</div>
+									<div class="right">
+										<button type="button" class="btn-icon icon01"><span class="text">즐겨찾기</span></button>
+										<button type="button" class="btn-icon icon02"><span class="text">공유</span></button>
+										<div class="tooltip">
+											<ul>
+												<li><a href="#">내용 보내기</a></li>
+												<li><a href="#">링크 보내기</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-wrap">
+								<div class="left-box">
+									<ul>
+										<li><button type="button" class="btn-user">관리자</button></li>
+										<li>2017.12.12 08:04:15</li>
+										<li>게시기간 : 2017.12.05~2017.12.31</li>
+									</ul>
+								</div>
+								<div class="right-box">
+									<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
+									<div class="attach-list">
+										<ul>
+											<li><a href="#">오픈안내문.ppt</a></li>
+											<li><a href="#">이벤트명단.xlsx</a></li>
+											<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="cont-wrap">
+								<div class="cont">
+									안녕하세요. <br>
+									그룹웨어 사이트 오픈되어 안내해드립니다.<br><br>
+									<img src="../images2.0/temp/@cont.jpg" alt="">
+								</div>
+								<!-- 웹전용 태그 수정 -->
+								<div class="tag-wrap mHide">
+									<span class="tit bgColor">Tag</span>
+									<div class="tag-list">
+										<span class="tag-group">
+											<a href="#" class="tag">웅진</a>
+											<a href="#" class="tag">그룹웨어</a>
+										</span>
+										<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
+									</div>
+									<div class="tag-modify">
+										<div class="input-area">
+											<div class="tagging-box">
+												<p class="fake-placeholder">태그추가</p>
+												<div data-tags-input-name="tag" class="js-tagBox"></div>
+											</div>
+											<input type="text" class="wHide">
+										</div>
+										<div class="btn-area">
+											<button type="button" class="btn-text mid btnCancel">취소</button>
+											<button type="button" class="btn-text mid bdColor fColor btnStorage">저장</button>
+										</div>
+									</div>
+								</div>
+								<!-- //웹전용 태그 수정 -->
+
+								<!-- 모바일전용 태그 수정 -->
+								<div class="tag-wrap wHide">
+									<span class="tit bgColor">Tag</span>
+									<div class="tag-list">
+										<span class="tag-group">
+											<a href="#" class="tag">웅진</a>
+											<a href="#" class="tag">그룹웨어</a>
+										</span>
+										<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
+									</div>
+									<div class="tag-modify">
+										<textarea cols="" rows="" class="autoHei"></textarea>
+										<div class="btn-area">
+											<button type="button" class="btn-text sm btnCancel">취소</button>
+											<button type="button" class="btn-text sm bdColor fColo btnStorage">저장</button>
+										</div>
+									</div>
+								</div>
+								<!-- // 모바일전용 태그 수정 -->
+							</li>
+						</ul>
+					</div>
+					<div class="btn-wrap right">
+						<div class="btn-align mHide">
+							<div class="btn-item"><a class="btn-text">인쇄</a></div>
+						</div>
+						<div class="btn-align">
+							<div class="btn-item"><a class="btn-text">공지</a></div>
+							<div class="btn-item"><a class="btn-text">타사공지</a></div>
+							<div class="btn-item"><a class="btn-text">답글</a></div>
+						</div>
+						<div class="btn-align">
+							<div class="btn-item"><a class="btn-text">수정</a></div>
+							<div class="btn-item"><a class="btn-text">삭제</a></div>
+							<div class="btn-item"><a class="btn-text">목록</a></div>
+						</div>
+					</div>
+					<div class="reply-wrap">
+						<p class="tit">댓글 <span class="fColor">(2)</span></p>
+						<div class="btn-reply">
+							<span class="off">댓글등록</span>
+							<span class="on">댓글달기</span>
+						</div>
+						<div class="input-area reply-inupt">
+							<div class="text-wrap">
+								<textarea placeholder="댓글을 입력해주세요"></textarea>
+							</div>
+							<div class="btn-area">
+								<button type="button"><span class="btn-text btn-square">저장</span></button>
+							</div>
+						</div>
+						<div class="reply-list">
+							<ul>
+								<li class="reply-item">
+									<div class="info-wrap">
+										<div class="user">
+											<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
+											<p class="name btn-user">관리자</p>
+										</div>
+										<div class="info-list">
+											<span class="date">2017.12.12 08:04:15</span>
+											<ul>
+												<li><button type="button" class="btn-re-modify">수정</button></li>
+												<li><button type="button">삭제</button></li>
+											</ul>
+										</div>
+									</div>
+									<div class="text-area">오픈 축하합니다~~</div>
+									<div class="input-area rereply-inupt">
+										<div class="text-wrap">
+											<textarea placeholder="댓글을 입력해주세요"></textarea>
+										</div>
+										<div class="btn-area type2">
+											<button type="button" class="btn-text btn-cancel">취소</button>
+											<button type="button" class="btn-text btn-save">저장</button>
+										</div>
+									</div>
+								</li>
+								<li class="reply-item">
+									<div class="info-wrap">
+										<div class="user">
+											<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
+											<p class="name btn-user">김웅진 대리</p>
+										</div>
+										<div class="info-list">
+											<span class="date">2017.12.12 08:04:15</span>
+											<ul>
+												<li><button type="button" class="btn-re-modify">수정</button></li>
+												<li><button type="button">삭제</button></li>
+											</ul>
+										</div>
+									</div>
+									<div class="text-area">오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~</div>
+									<div class="input-area rereply-inupt">
+										<div class="text-wrap">
+											<textarea placeholder="댓글을 입력해주세요"></textarea>
+										</div>
+										<div class="btn-area type2">
+											<button type="button" class="btn-text btn-cancel">취소</button>
+											<button type="button" class="btn-text btn-save">저장</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="page-wrap">
+						<ul>
+							<li class="prev">
+								<span class="tit">이전글</span>
+								<a href="#" class="cont"><span class="cont-tit">랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 업과</span><em class="fColor">(983)</em></a>
+								<span class="name btn-user">이화영 부장</span>
+								<span class="date">2017.07.24</span>
+							</li>
+							<li class="next">
+								<span class="tit">다음글</span>
+								<a href="#" class="cont"><span class="cont-tit">소라마치 그룹웨어 데모 </span> <em class="fColor">(3)</em></a>
+								<span class="name btn-user">담당자</span>
+								<span class="date">2017.07.24</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // 오른쪽 상세보기 영역 -->
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="wrapper accounting">
+	<div class="header">
+		<h1 class="logo">
+			<a href="#"><img src="../images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
+		</h1>
+		<button type="button" class="btn-gnb">메뉴열기</button>
+
+		<div class="utill">
+			<span class="txt mHide">깨끗하고 투명한 내부회계관리시스템에 오신 것을 환영합니다.</span>
+			<a href="#" class="btn-icon-text icon07"><span class="text">로그아웃</span></a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="gnb-utill">
+			<div class="btn-close-box wHide">
+				<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
+			</div>
+			<!-- gnb -->
+			<div class="gnb-sliding">
+				<div class="gnb-wrap">
+					<!-- 서브 GNB -->
+					<div class="sub-gnb">
+						<div class="depth1">
+							<div class="scroll-area">
+								<div class="depth-top">
+									<p class="depth1-title"><span class="text">내부회계관리시스템</span></p>
+									<div class="menu-box">
+										<a href="#" class="btn-text mid">홈(내부회계관리)</a>
+										<a href="#" class="btn-text mid">관리자 홈</a>
+									</div>
+								</div>
+								<ul class="depth1-list">
+									<li class="depth1-item">
+										<a href="#" class="d-title">업무기술서</a>
+										<ul class="depth2-list">
+											<li class="depth2-item on"><a href="#">원문보기</a></li>
+											<li class="depth2-item"><a href="#">배포상태</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">내부회계현황</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">자가진단</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">운영평가</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">확인서</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										</ul>
+									</li>
+									<li class="depth1-item">
+										<a href="#" class="d-title">관리자 메뉴</a>
+										<ul class="depth2-list">
+											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- //서브 GNB -->
+				</div>
+			</div>
+		</div>
+		<iframe src="ac0104.html" width="100%" style="border:0"></iframe>
+		
+		
+	</div>
+
+	<div class="footer">
+		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	</div>
+</div>
+</body>
+<script>
+$(document).ready(function() {
+		//전부펼치기 버튼
+		$('.accounting-area .sorting-area .btn-open').click(function(){
+			$(this).closest('.accounting-area').find('.tDepth1').addClass('open');
+			$(this).closest('.accounting-area').find('.tDepth2').addClass('open');
+			$(this).closest('.accounting-area').find('.tDepth2-wrap').addClass('open').slideDown();
+			$(this).closest('.accounting-area').find('.tDepth3-wrap').addClass('open').slideDown();
+		});
+		//전부접어두기 버튼
+		$('.accounting-area .sorting-area .btn-close').click(function(){
+				$(this).closest('.accounting-area').find('.tDepth1').removeClass('open');
+				$(this).closest('.accounting-area').find('.tDepth2').removeClass('open');
+				$(this).closest('.accounting-area').find('.tDepth2-wrap').removeClass('open').slideUp();
+				$(this).closest('.accounting-area').find('.tDepth3-wrap').removeClass('open').slideUp();
+		});
+
+		//하단 트리테이블
+		$(".tDepth1").on("click", function(){
+			if($(this).hasClass('open')){
+				$(this).removeClass('open');
+				$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').find('.tDepth2').removeClass('open');
+				$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').removeClass('open').slideUp();
+				$(this).closest('.tDepth1-wrap').find('.tDepth3-wrap').removeClass('open').slideUp();
+			}else{
+				$(this).addClass('open');
+				$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').addClass('open').slideDown();
+			}
+		});
+
+		$(".tDepth2").on("click", function(){
+			if($(this).hasClass('open')){
+				$(this).removeClass('open');
+				$(this).closest('.tDepth2-wrap').find('.tDepth3-wrap').removeClass('open').slideUp();
+			}else{
+				$(this).addClass('open');
+				$(this).closest('.tDepth2-wrap').find('.tDepth3-wrap').addClass('open').slideDown();
+			}
+		});
+
+		//체크박스 전체 선택해제
+		$('.check-column .styled1').click(function(){
+			if($(this).closest('.checkWrap').hasClass('checked')){
+				$(this).closest('.board-list5').find('input[type="checkbox"]').each(function(){
+					$(this).closest('.checkWrap').removeClass('checked');
+					$(this).attr('checked',false);
+				});
+			}else {
+				$(this).closest('.board-list5').find('input[type="checkbox"]').each(function(){
+					$(this).closest('.checkWrap').addClass('checked');
+					$(this).attr('checked',true);
+				});
+			}
+		});
+	});
+
+</script>
+</html>

@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="content" style="padding:100px">
+	<!-- 타이틀 영역 -->
+	<div class="title-wrap">
+		<h2 class="title">설문 팝업</h2>
+	</div>
+	<p>팝업</p>
+	<button type="button" class="btn-text btn-popup btn-moption">설문 메일발송 옵션</button>
+	<button type="button" class="btn-text btn-popup btn-reject">반려사유</button>
+
+	<p style="margin-top:50px">게시판</p>
+	<button type="button" class="btn-text btn-popup btn-board-sel">게시판 선택</button>
+	<button type="button" class="btn-text btn-popup btn-read-list">조회자 목록</button>
+
+	<p style="margin-top:50px">결재</p>
+	<button type="button" class="btn-text btn-popup btn-storage">개인보관함</button>
+	<button type="button" class="btn-text btn-popup btn-handling">결재처리</button>
+	<button type="button" class="btn-text btn-popup btn-reading">참조자 열람 확인 현황</button>
+	<button type="button" class="btn-text btn-popup btn-return">결재 회수</button>
+
+	<p style="margin-top:50px">워크스페이스</p>
+	<button type="button" class="btn-text btn-popup btn-img-upload">이미지 업로드</button>
+	<button type="button" class="btn-text btn-popup btn-work-info">워크스페이스정보</button>
+	<button type="button" class="btn-text btn-popup btn-work-category">워크스페이스정보</button>
+
+
+
+	<!-- 설문 메일발송 옵션 팝업 -->
+	<div class="layer-popup mid pop-moption">
+		<div class="pop-head">
+			<h3 class="title">설문 메일발송 옵션</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="board-write1">
+				<table>
+					<colgroup class="mHide"><!-- 웹전용 -->
+						<col style="width:13%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">발송 여부</th>
+							<td>
+								<ul class="form-list inline">
+									<li class="item"><input type="radio" name="radio01" id="Radio0101" class="styled1 formSingle"><label for="Radio0101">발송</label></li>
+									<li class="item"><input type="radio" name="radio01" id="Radio0102" class="styled1" checked><label for="Radio0102">미발송</label></li>
+								</ul>
+							</td>
+						</tr>
+						<tr class="Radio0101 hide">
+							<th scope="row">발송 시간</th>
+							<td>
+								<ul class="form-list inline">
+									<li class="item"><input type="radio" name="radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">즉시</label></li>
+									<li class="item"><input type="radio" name="radio02" id="Radio0202" class="styled1"><label for="Radio0202">1시간 이후</label></li>
+									<li class="item"><input type="radio" name="radio02" id="Radio0203" class="styled1"><label for="Radio0203">6시간 이후</label></li>
+									<li class="item"><input type="radio" name="radio02" id="Radio0204" class="styled1"><label for="Radio0204">12시간 이후</label></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid btnCancel">취소</button></div>
+					<div class="btn-item"><button type="button" class="btn-text mid bdColor fColor">확인</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 반려사유 팝업 -->
+	<div class="layer-popup mid pop-reject">
+		<div class="pop-head">
+			<h3 class="title">반려사유</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<textarea style="width:100%" placeholder="반려사유를 입력하세요."></textarea>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid btnCancel">취소</button></div>
+					<div class="btn-item"><button type="button" class="btn-text mid bdColor fColor">반려</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--게시판 선택 팝업 -->
+	<div class="layer-popup mid pop-board-sel">
+		<div class="pop-head">
+			<h3 class="title">게시판 선택</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="tree-menu open">
+				<ul class="tree-list">
+					<li>
+						<p class="link noDel"><span class="text">메뉴01</span></p><!-- 수정/삭제 불가 (class="noDel") -->
+						<ul>
+							<li><p class="link"><a href="#" class="text">메뉴01-01</a></p></li>
+							<li>
+								<p class="link"><a href="#" class="text">메뉴01-02</a></p>
+								<ul>
+									<li>
+										<p class="link"><a href="#" class="text">메뉴01-02-01</a></p>
+										<ul>
+											<li>
+												<p class="link"><a href="#" class="text">메뉴01-02-01-01</a></p>
+												<ul>
+													<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-01</a></p></li>
+													<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-02</a></p></li>
+													<li><p class="link"><a href="#" class="text">메뉴01-02-01-01-03</a></p></li>
+												</ul>
+											</li>
+											<li><p class="link"><a href="#" class="text">메뉴01-02-01-02</a></p></li>
+											<li><p class="link"><a href="#" class="text">메뉴01-02-01-03</a></p></li>
+										</ul>
+									</li>
+									<li><p class="link"><a href="#" class="text">메뉴01-02-02</a></p></li>
+									<li><p class="link"><a href="#" class="text">메뉴01-02-03</a></p></li>
+									<li><p class="link"><a href="#" class="text">메뉴01-02-04</a></p></li>
+								</ul>
+							</li>
+							<li><p class="link"><a href="#" class="text">메뉴01-03</a></p></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- contextmenu 레이어-->
+				<div class="contextmenu">
+					<ul class="list">
+						<li><a href="#">게시판 생성</a></li>
+						<li><a href="#">링크 생성</a></li>
+						<li><a href="#">카테고리 생성</a></li>
+						<li class="del"><a href="#">수정</a></li>
+						<li class="del"><a href="#">삭제</a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="blt-text1">등록 권한이 있는 게시판 목록입니다. 등록한 게시판을 선택해주세요.</p>
+		</div>
+	</div>
+	<!-- 조회자 목록 팝업 -->
+	<div class="layer-popup mid pop-read-list">
+		<div class="pop-head">
+			<h3 class="title">조회자 목록</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="table-area board">
+				<!-- Pc 컨텐츠  -->
+				<div class="sorting-area">
+					<div class="left-box">
+						<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+					</div>
+					<div class="right-box">
+						<select class="styled1" style="width:90px;">
+							<option>10</option>
+							<option>15</option>
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+							<option>50</option>
+						</select>
+					</div>
+				</div>
+				<div class="board-list1 mHide">
+					<table>
+						<caption>조회자 목록 게시판</caption>
+						<colgroup>
+							<col >
+							<col style="width:40%;">
+							<col style="width:40%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">조회자</th>
+								<th scope="col">조회시간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>10</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 페이징 -->
+				<div class="paging mHide">
+					<a href="#" class="btn first">처음</a>
+					<a href="#" class="btn prev">이전</a>
+					<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+					<a href="#" class="page">2</a>
+					<a href="#" class="page">3</a>
+					<a href="#" class="page">4</a>
+					<a href="#" class="page">5</a>
+					<a href="#" class="page">6</a>
+					<a href="#" class="page">7</a>
+					<a href="#" class="page">8</a>
+					<a href="#" class="page">9</a>
+					<a href="#" class="page">10</a>
+					<a href="#" class="btn next">다음</a>
+					<a href="#" class="btn end">마지막</a>
+				</div>
+				<!--// Pc 컨텐츠  -->
+				<!-- Mobile 컨텐츠 -->
+				<div class="board-list2 wHide">
+					<ul>
+						<li class="td-area">
+							<span class="title"><a href="#none">프로젝트 예산 통제</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state1">진행중</span>
+						</li>
+						<li class="td-area">
+							<span class="title"><a href="#none">계약의 요청과 승인</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state2">완료</span>
+						</li>
+					</ul>
+				</div>
+				<!--// Mobile 컨텐츠 -->
+			</div>
+		</div>
+	</div>
+
+	<!--개인보관함 팝업 -->
+	<div class="layer-popup sm pop-storage">
+		<div class="pop-head">
+			<h3 class="title">개인보관함</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="tree-menu open">
+				<ul class="tree-list">
+					<li>
+						<p class="link noDel"><span class="text">개인</span></p><!-- 수정/삭제 불가 (class="noDel") -->
+						<ul>
+							<li><p class="link"><a href="#" class="text">인사</a></p></li>
+							<li><p class="link"><a href="#" class="text">행정</a></p></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid bdColor fColor">등록</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 결재처리 팝업 -->
+	<div class="layer-popup mid pop-handling">
+		<div class="pop-head">
+			<h3 class="title">결재처리</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="board-write1">
+				<table>
+					<colgroup class="mHide"><!-- 웹전용 -->
+						<col style="width:13%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">결재처리</th>
+							<td>
+								<ul class="form-list inline">
+									<li class="item"><input type="radio" name="radio03" id="Radio0301" class="styled1" checked><label for="Radio0301">승인</label></li>
+									<li class="item"><input type="radio" name="radio03" id="Radio0302" class="styled1"><label for="Radio0302">반려</label></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">결재의견</th>
+							<td>
+								<textarea style="width:100%" placeholder="승인합니다."></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">파일</th>
+							<td>
+								<div class="input-file2">
+									<div class="inner">
+										<input type="text" placeholder="업로드할 파일을 선택해주세요" readonly>
+										<button type="button" class="btn-text mid">파일선택</button>
+										<input type="file">
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid btnCancel">취소</button></div>
+					<div class="btn-item"><button type="button" class="btn-text mid bdColor fColor">결재</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 참조자 열람 확인현황 팝업 -->
+	<div class="layer-popup mid pop-reading">
+		<div class="pop-head">
+			<h3 class="title">참조자 열람 확인 현황</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="table-area board">
+				<!-- Pc 컨텐츠  -->
+				<div class="board-list1 mHide">
+					<table>
+						<caption>참조자 열람 확인 현황</caption>
+						<colgroup>
+							<col style="width:50%;">
+							<col style="width:50%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">참조자</th>
+								<th scope="col">확인일시</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>미확인</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+							<tr>
+								<td>이화영</td>
+								<td>2017.12.24 17:45 41</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// Pc 컨텐츠  -->
+				<!-- Mobile 컨텐츠 -->
+				<div class="board-list2 wHide">
+					<ul>
+						<li class="td-area">
+							<span class="title"><a href="#none">프로젝트 예산 통제</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state1">진행중</span>
+						</li>
+						<li class="td-area">
+							<span class="title"><a href="#none">계약의 요청과 승인</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state2">완료</span>
+						</li>
+					</ul>
+				</div>
+				<!--// Mobile 컨텐츠 -->
+			</div>
+		</div>
+	</div>
+	<!-- 결재회수 팝업 -->
+	<div class="layer-popup mid pop-return">
+		<div class="pop-head">
+			<h3 class="title">반려사유</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<textarea style="width:100%" placeholder="결재 회수 의견을 입력하세요."></textarea>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid btnCancel">취소</button></div>
+					<div class="btn-item"><button type="button" class="btn-text mid bdColor fColor">결재회수</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 이미지업로드 팝업 -->
+	<div class="layer-popup mid pop-img-upload">
+		<div class="pop-head">
+			<h3 class="title">이미지업로드</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="input-file2">
+				<div class="inner">
+					<input type="text" placeholder="업로드할 파일을 선택해주세요" readonly>
+					<button type="button" class="btn-text mid">파일선택</button>
+					<input type="file">
+				</div>
+			</div>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid bdColor fColor">저장</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 워크스페이스정보 팝업 -->
+	<div class="layer-popup sm pop-work-info">
+		<div class="pop-head">
+			<h3 class="title">워크스페이스 정보</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<div class="top-info">
+				<ul class="work-info">
+					<li class="info2"><span>시샵</span><button type="button" class="btn-user">관리자</button></li>
+					<li class="info1">
+						<span>총원</span>3,718
+						<span class="txt"><em>정회원</em> 3,700</span>
+						<span class="txt"><em>준회원</em> 18</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--워크플레이스 카테고리 팝업 -->
+	<div class="layer-popup sm pop-work-category">
+		<div class="pop-head">
+			<h3 class="title">워크플레이스 카테고리</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<p>트리영역</p>
+
+		</div>
+	</div>
+
+</div>
+
+<script>
+$('.btn-moption').click(function(){
+	$('.pop-moption').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+$('.btn-reject').click(function(){
+	$('.pop-reject').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+
+$('.btn-board-sel').click(function(){
+	$('.pop-board-sel').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+$('.btn-read-list').click(function(){
+	$('.pop-read-list').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+
+$('.btn-storage').click(function(){
+	$('.pop-storage').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+$('.btn-handling').click(function(){
+	$('.pop-handling').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+$('.btn-reading').click(function(){
+	$('.pop-reading').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+$('.btn-return').click(function(){
+	$('.pop-return').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+
+$('.btn-img-upload').click(function(){
+	$('.pop-img-upload').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+
+$('.btn-work-info').click(function(){
+	$('.pop-work-info').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+$('.btn-work-category').click(function(){
+	$('.pop-work-category').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+</script>
+</body>
+</html>

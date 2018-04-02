@@ -56,8 +56,14 @@ input[type=password] {
 	margin-right:0 !important
 }
 
-
-.container {padding:115px 0 50px 220px;}
+.container {
+	width: 100%;
+	padding:0 0 0 220px;
+	position: absolute;
+	left: 0;
+	top:70px;
+	box-sizing: border-box;
+}
 
 .footer {
 	overflow:hidden;

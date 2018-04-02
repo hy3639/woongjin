@@ -172,42 +172,5 @@
 	</div>
 </div>
 
-<!-- 모바일에서 드래그 가능 (항상 페이지 하단에 있어야 작동함) -->
-<script src="../js/jquery.ui.touch-punch.js"></script>
-<script>
-$(window).load(function(){
-	/* 왼쪽 트리영역 */
-	// 선택
-	$('.tree-menu .tree-list li li .link').click(function(){
-		$('.tree-menu .tree-list li li .link .text').removeClass('fColor');
-		$(this).find('.text').addClass('fColor');
-	});
-
-	/* 박스 영역 높이 설정 */
-	$('.approve-box .approve-info .info-setting').each(function(){
-		var hei = $(this).find('.set-box').outerHeight();
-		$(this).css({'min-height':hei});
-	});
-
-	/* 선택 */
-	$('.drag-box').click(function(){
-		$(this).addClass('on').siblings('.drag-box').removeClass('on');
-	});
-
-	/* 드래그 */
-	$('.drag-area').sortable({
-		axis:'y',
-		containment:'.window-popup',
-		scroll:false,
-		revert:true,
-		start: function(){
-			$(this).find('.last-text').hide();
-		},
-		stop: function(){
-			$(this).find('.drag-box:last-child .last-text').show();
-		}
-	});
-});
-</script>
 </body>
 </html>

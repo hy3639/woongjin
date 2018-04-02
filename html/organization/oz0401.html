@@ -20,570 +20,277 @@
 </head>
 
 <body>
-<div class="wrapper">
-	<div class="header">
-		<h1 class="logo">
-			<a href="#"><img src="../images2.0/layout/site_logo.png"  alt="웅진원팩그룹웨어"></a>
-		</h1>
-		<button type="button" class="btn-naver">네이버웍스</button>
-		<button type="button" class="btn-gnb">메뉴열기</button>
-		<button type="button" class="btn-search">검색</button>
-
-		<div class="utill">
-			<div class="user-box">
-				<div class="user">
-					<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-					<p class="name">김웅진 부장</p>
-				</div>
-			</div>
-			<div class="user-menu">
-				<div class="inner">
-					<button type="button" class="btn-close2">닫기</button>
-					<div class="user">
-						<div class="img-area mHide"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-						<div class="txt-area">
-							<p class="name mHide">김웅진 부장</p>
-							<p class="info">경영지원부<br>woongjin2@woongjin.co.kr</p>
-							<a href="#" class="btn-admin">관리자설정</a>
-						</div>
-					</div>
-					<div class="btn-area">
-						<a href="#" class="">내정보관리</a>
-						<a href="#" class="">비밀번호변경</a>
-						<a href="#" class="">로그아웃</a>
-					</div>
-				</div>
-			</div>
-			<div class="naver-list">
-				<div class="inner">
-					<button type="button" class="btn-close2">닫기</button>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n01.png" alt="메일"><em class="len bgColor">99</em></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n02.png" alt="전화번호부"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n03.png" alt="일정관리"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n04.png" alt="내 드라이브"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n05.png" alt="메신저함"><em class="len bgColor">1</em></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n06.png" alt="설문조사"></span></a>
-					<a href="#" class="link"><span class="text"><img src="../images2.0/ico/ico_n07.png" alt="네이버웍스관리자"></span></a>
-				</div>
-			</div>
-		</div>
+<div class="content">
+	<div class="title-wrap">
+		<h2 class="title">조직도</h2>
 	</div>
 
-	<div class="container">
-		<div class="gnb-utill">
-			<div class="btn-close-box wHide">
-				<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
+	<div class="organization-wrap">
+		<div class="top-search-box type2">
+			<select class="styled1" style="width:150px;">
+				<option>사용자</option>
+				<option>부서</option>
+			</select>
+			<div class="search-text">
+				<input type="text" class="required" placeholder="검색어를 입력해주세요">
+				<button type="button" class="btn-search">검색</button>
 			</div>
-			<!-- gnb -->
-			<div class="gnb-sliding">
-				<div class="gnb-wrap">
-					<div class="gnb-menu-box">
-						<div class="home">
-							<a href="#" class="link-home ico01">홈</a>
-							<button type="button" class="btn-setting">설정</button>
+		</div>
+
+		<div class="organization-box career formChange">
+			<ul class="tab-list1 mHide">
+				<li class="item"><a class="text" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
+				<li class="item"><a class="text" href="oz0301.html">사진</a></li>
+				<li class="item"><a class="text fColor" href="oz0401.html">경력</a></li>
+				<li class="item"><a class="text" href="oz0501.html">방명록</a></li>
+				<li class="item"><a class="text" href="#">즐겨찾기</a></li>
+			</ul>
+			<div class="util-top">
+				<div class="form-list inline">
+					<div class="item"><input type="radio" name="radio01" id="Radio0101" class="styled1" checked><label for="Radio0101"><span class="text">이력목록형식</span></label></div>
+					<div class="item"><input type="radio" name="radio01" id="Radio0102" class="styled1"><label for="Radio0102"><span class="text">이력카드형식</span></label></div>
+				</div>
+				<div class="btn-area mHide">
+					<button type="button" class="btn-icon icon07"><span class="text">엑셀다운로드</span></button>
+					<button type="button" class="btn-icon icon08"><span class="text">프린트</span></button>
+				</div>
+			</div>
+			<div class="formItem">
+				<div class="btn-area2">
+					<button type="button" class="btn-text mid bdColor fColor btn-career">Career등록</button>
+				</div>
+				<div class="write-area">
+					<div class="board-write1">
+						<table>
+							<colgroup class="mHide"><!-- 웹전용 -->
+								<col style="width:18%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="Text01">근무일자</label><span class="important">*</span></th>
+									<td>
+										<div class="period-area">
+											<div class="box-item">
+												<div  class="date-text">
+													<div class="btn-calendar"><input type="text" readonly></div>
+													<div class="calendar-layer bdColor">
+														<div class="datepicker"></div>
+													</div>
+												</div>
+											</div>
+											<span class="swung-dash">~</span>
+											<div class="box-item">
+												<div  class="date-text">
+													<div class="btn-calendar"><input type="text" readonly></div>
+													<div class="calendar-layer bdColor">
+														<div class="datepicker"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Text01">회사명</label><span class="important">*</span></th>
+									<td><input type="text" class="required" id="Text01" style="width:100%;"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Text01">직위</label></th>
+									<td>
+										<select class="styled1" style="width:100px;">
+											<option>사원</option>
+											<option>대리</option>
+											<option>과장</option>
+											<option>차장</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Text02">역할</label><span class="important">*</span></th>
+									<td><input type="text" class="required" id="Text02" style="width:100%;"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="Text01">담당업무</label><span class="important">*</span></th>
+									<td><textarea></textarea></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="btn-wrap right">
+						<div class="btn-align">
+							<div class="btn-item"><button type="button" class="btn-text btn-cancel">취소</button></div>
+							<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
 						</div>
-						<ul class="gnb-list">
-							<li class="gnb-item">
-								<p class="gnb-title ico02">게시판</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">게시판</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item">
-												<a href="#" class="d-title">최근게시물</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">공지사항</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">경조사</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">자유게시판lv2</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">IT/Biz Trend</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">양식기 전용 게시판</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">자유게시판</a>
-												<ul class="depth2-list">
-													<li class="depth2-item"><a href="#">게시판 01</a></li>
-													<li class="depth2-item"><a href="#">게시판 02</a></li>
-													<li class="depth2-item"><a href="#">게시판 03</a></li>
-													<li class="depth2-item"><a href="#">게시판 04</a></li>
-													<li class="depth2-item"><a href="#">게시판 05</a></li>
-													<li class="depth2-item"><a href="#">게시판 06</a></li>
-													<li class="depth2-item"><a href="#">게시판 07</a></li>
-												</ul>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">자료실</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">R&amp;D부문/개발실</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">Master Data 신규</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">익명게시판</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">제안자료실</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">권한 게시판</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">임시저장함</a>
-											</li>
-											<li class="depth1-item">
-												<a href="#" class="d-title">관리자 메뉴</a>
-												<ul class="depth2-list">
-													<li class="depth2-item"><a href="#">게시판 01</a></li>
-													<li class="depth2-item"><a href="#">게시판 02</a></li>
-													<li class="depth2-item"><a href="#">게시판 03</a></li>
-													<li class="depth2-item"><a href="#">게시판 04</a></li>
-													<li class="depth2-item"><a href="#">게시판 05</a></li>
-													<li class="depth2-item"><a href="#">게시판 06</a></li>
-													<li class="depth2-item"><a href="#">게시판 07</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</div>
+					</div>
+				</div>
+				<div class="career-list">
+					<ul>
+						<li>
+							<span class="date">2017.01.01 ~ 2018.02.02</span>
+							<div class="cont">
+								<p class="title">웅진그룹 <span>기획/관리 총괄</span></p>
+								<p>ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</p>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-text sm">삭제</button>
+								<button class="btn-text sm">수정</button>
+							</div>
+						</li>
+						<li>
+							<span class="date">2017.01.01 ~ 2018.02.02</span>
+							<div class="cont">
+								<p class="title">교원그룹 <span>기획/관리 총괄</span></p>
+								<p>스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</p>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-text sm">삭제</button>
+								<button class="btn-text sm">수정</button>
+							</div>
+						</li>
+						<li>
+							<span class="date">2017.01.01 ~ 2018.02.02</span>
+							<div class="cont">
+								<p class="title">LG경영개발원 <span>기획/관리 총괄</span></p>
+								<p>인재 구축 인프라 사업과 TFT Project Develop 기획 업무 수행</p>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-text sm">삭제</button>
+								<button class="btn-text sm">수정</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btn-more wHide">
+					<button type="button"><span>더보기</span></button>
+				</div>
+				<p class="mHide">※ 근무 경력은 최근순으로 200건까지 검색됩니다.</p>
+			</div>
+			<div class="formItem hide">
+				<p class="m-title mHide">개인이력카드</p>
+				<div class="profile-area">
+					<div class="left">
+						<div class="img-area"></div>
+					</div>
+					<div class="right">
+						<div class="right-top">
+							<p class="title">
+								김웅진<em>(admin)</em><br class="wHide"><span>부장</span>
+							</p>
+							<ul class="user-info">
+								<li class="group">관리본부</li>
+								<li class="phone">010-8545-4482 / 02-506-4568</li>
+								<li class="mail">admin@woongjin.kr</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="career-tit">경력사항 <span>총 <em class="fColor">20</em>년 <em class="fColor">10</em>개월</span></p>
+				<div class="career-list">
+					<!-- PC컨텐츠 -->
+					<div class="board-list3 mHide">
+						<table>
+							<caption>경력사항 게시판</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:20%;">
+								<col style="width:15%;">
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">회사명</th>
+									<th scope="col">근무일자</th>
+									<th scope="col">역할</th>
+									<th scope="col">담당업무</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>웅진그룹</td>
+									<td>2017.01.01 ~ 2018.02.02</td>
+									<td>기획/관리 총괄</td>
+									<td>ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</td>
+								</tr>
+								<tr>
+									<td>교원그룹</td>
+									<td>2017.01.01 ~ 2018.02.02</td>
+									<td>기획/관리 총괄</td>
+									<td>스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</td>
+								</tr>
+								<tr>
+									<td>LG경영개발원</td>
+									<td>2017.01.01 ~ 2018.02.02</td>
+									<td>기획/관리 총괄</td>
+									<td>인재 구축 인프라 사업과 TFT Project Develop 기획 업무 수행</td>
+								</tr>
+								<tr>
+									<td>대교</td>
+									<td>2017.01.01 ~ 2018.02.02</td>
+									<td>기획/관리 총괄</td>
+									<td>대교 미래 e-Learning Project 기획 수행</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--// PC컨텐츠 -->
+					<!-- Mobile 컨텐츠 -->
+					<div class="board-list2 wHide">
+						<ul>
+							<li class="td-area">
+								<span class="title">웅진그룹</span>
+								<span class="text">근무일자 : 2017.01.01 ~ 2018.02.02</span>
+								<span class="text">역할 : 기획/관리 총괄</span>
+								<span class="text">담당업무 : ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</span>
 							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico03">전자결재</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">전자결재</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
-										</ul>
-									</div>
-								</div>
+							<li class="td-area">
+								<span class="title">교원그룹</span>
+								<span class="text">근무일자 : 2013.03.03 ~2016.05.01</span>
+								<span class="text">역할 : 기획/관리 총괄</span>
+								<span class="text">담당업무 : 스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</span>
 							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico04">설문조사</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">설문조사</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico05">업무지원</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">업무지원</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico06">Knowledge</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">Knowledge</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
-											<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico07">e-HR</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">e-HR</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico08">평가시스템</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">평가시스템</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico09">개인블로그</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">개인블로그</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="gnb-item">
-								<p class="gnb-title ico10">전사공유지식</p>
-								<div class="depth1">
-									<div class="scroll-area">
-										<div class="depth-top">
-											<p class="depth1-title"><span class="text">전사공유지식</span></p>
-										</div>
-										<ul class="depth1-list">
-											<li class="depth1-item">
-												<a href="#" class="d-title">전사공유지식</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+							<li class="td-area">
+								<span class="title">대교</span>
+								<span class="text">근무일자 : 2010.04.20 ~2012.01.15</span>
+								<span class="text">역할 : 교육 기획</span>
+								<span class="text">담당업무 : 대교 미래 e-Learning Project 기획 수행</span>
 							</li>
 						</ul>
 					</div>
-
-					<!-- 서브 GNB -->
-					<div class="sub-gnb organization">
-						<div class="depth1">
-							<div class="scroll-area">
-								<div class="depth-top">
-									<p class="depth1-title"><span class="text">조직정보</span></p>
-									<button type="button" class="btn-text sm btn-area">넓게보기</button>
-								</div>
-								<div class="tree-menu open">
-									<ul class="tree-list user mHide">
-										<li>
-											<p class="link"><a href="#" class="text">웅진</a></p>
-											<ul>
-												<li>
-													<p class="link"><a href="#" class="text">영업본부</a></p>
-													<ul>
-														<li><p class="link"><a href="#" class="text">김웅진 부장/팀장</a></p></li>
-														<li>
-															<p class="link"><a href="#" class="text">영업1팀</a></p>
-															<ul>
-																<li><p class="link"><a href="#" class="text">최빛나리 최빛나리 최빛나리 본부장/팀원</a></p></li>
-																<li><p class="link"><a href="#" class="text">김현주 대리/팀원</a></p></li>
-																<li><p class="link"><a href="#" class="text">이현표 과장/팀원</a></p></li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<p class="link"><a href="#" class="text">관리본부</a></p>
-													<ul>
-														<li><p class="link"><a href="#" class="text">관리자 사원/팀원</a></p></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+					<div class="btn-more wHide">
+						<button type="button"><span>더보기</span></button>
 					</div>
-					<!-- //서브 GNB -->
+					<!--// Mobile 컨텐츠 -->
 				</div>
-				<div class="btn-gnb-toggle">
-					<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
-					<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="content">
-			<div class="title-wrap">
-				<h2 class="title">조직도</h2>
-			</div>
-
-			<div class="organization-wrap">
-				<div class="top-search-box type2">
-					<select class="styled1" style="width:150px;">
-						<option>사용자</option>
-						<option>부서</option>
-					</select>
-					<div class="search-text">
-						<input type="text" class="required" placeholder="검색어를 입력해주세요">
-						<button type="button" class="btn-search">검색</button>
-					</div>
-				</div>
-
-				<div class="organization-box career formChange">
-					<ul class="tab-list1 mHide">
-						<li class="item"><a class="text" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
-						<li class="item"><a class="text" href="oz0301.html">사진</a></li>
-						<li class="item"><a class="text fColor" href="oz0401.html">경력</a></li>
-						<li class="item"><a class="text" href="oz0501.html">방명록</a></li>
-						<li class="item"><a class="text" href="#">즐겨찾기</a></li>
-					</ul>
-					<div class="util-top">
-						<div class="form-list inline">
-							<div class="item"><input type="radio" name="radio01" id="Radio0101" class="styled1" checked><label for="Radio0101"><span class="text">이력목록형식</span></label></div>
-							<div class="item"><input type="radio" name="radio01" id="Radio0102" class="styled1"><label for="Radio0102"><span class="text">이력카드형식</span></label></div>
-						</div>
-						<div class="btn-area mHide">
-							<button type="button" class="btn-icon icon07"><span class="text">엑셀다운로드</span></button>
-							<button type="button" class="btn-icon icon08"><span class="text">프린트</span></button>
-						</div>
-					</div>
-					<div class="formItem">
-						<div class="btn-area2">
-							<button type="button" class="btn-text mid bdColor fColor btn-career">Career등록</button>
-						</div>
-						<div class="write-area">
-							<div class="board-write1">
-								<table>
-									<colgroup class="mHide"><!-- 웹전용 -->
-										<col style="width:18%;">
-										<col>
-									</colgroup>
-									<tbody>
-										<tr>
-											<th scope="row"><label for="Text01">근무일자</label><span class="important">*</span></th>
-											<td>
-												<div class="period-area">
-													<div class="box-item">
-														<div  class="date-text">
-															<div class="btn-calendar"><input type="text" readonly></div>
-															<div class="calendar-layer bdColor">
-																<div class="datepicker"></div>
-															</div>
-														</div>
-													</div>
-													<span class="swung-dash">~</span>
-													<div class="box-item">
-														<div  class="date-text">
-															<div class="btn-calendar"><input type="text" readonly></div>
-															<div class="calendar-layer bdColor">
-																<div class="datepicker"></div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="Text01">회사명</label><span class="important">*</span></th>
-											<td><input type="text" class="required" id="Text01" style="width:100%;"></td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="Text01">직위</label></th>
-											<td>
-												<select class="styled1" style="width:100px;">
-													<option>사원</option>
-													<option>대리</option>
-													<option>과장</option>
-													<option>차장</option>
-												</select>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="Text02">역할</label><span class="important">*</span></th>
-											<td><input type="text" class="required" id="Text02" style="width:100%;"></td>
-										</tr>
-										<tr>
-											<th scope="row"><label for="Text01">담당업무</label><span class="important">*</span></th>
-											<td><textarea></textarea></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="btn-wrap right">
-								<div class="btn-align">
-									<div class="btn-item"><button type="button" class="btn-text btn-cancel">취소</button></div>
-									<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="career-list">
-							<ul>
-								<li>
-									<span class="date">2017.01.01 ~ 2018.02.02</span>
-									<div class="cont">
-										<p class="title">웅진그룹 <span>기획/관리 총괄</span></p>
-										<p>ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</p>
-									</div>
-									<div class="btn-area">
-										<button type="button" class="btn-text sm">삭제</button>
-										<button class="btn-text sm">수정</button>
-									</div>
-								</li>
-								<li>
-									<span class="date">2017.01.01 ~ 2018.02.02</span>
-									<div class="cont">
-										<p class="title">교원그룹 <span>기획/관리 총괄</span></p>
-										<p>스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</p>
-									</div>
-									<div class="btn-area">
-										<button type="button" class="btn-text sm">삭제</button>
-										<button class="btn-text sm">수정</button>
-									</div>
-								</li>
-								<li>
-									<span class="date">2017.01.01 ~ 2018.02.02</span>
-									<div class="cont">
-										<p class="title">LG경영개발원 <span>기획/관리 총괄</span></p>
-										<p>인재 구축 인프라 사업과 TFT Project Develop 기획 업무 수행</p>
-									</div>
-									<div class="btn-area">
-										<button type="button" class="btn-text sm">삭제</button>
-										<button class="btn-text sm">수정</button>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="btn-more wHide">
-							<button type="button"><span>더보기</span></button>
-						</div>
-						<p class="mHide">※ 근무 경력은 최근순으로 200건까지 검색됩니다.</p>
-					</div>
-					<div class="formItem hide">
-						<p class="m-title mHide">개인이력카드</p>
-						<div class="profile-area">
-							<div class="left">
-								<div class="img-area"></div>
-							</div>
-							<div class="right">
-								<div class="right-top">
-									<p class="title">
-										김웅진<em>(admin)</em><br class="wHide"><span>부장</span>
-									</p>
-									<ul class="user-info">
-										<li class="group">관리본부</li>
-										<li class="phone">010-8545-4482 / 02-506-4568</li>
-										<li class="mail">admin@woongjin.kr</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<p class="career-tit">경력사항 <span>총 <em class="fColor">20</em>년 <em class="fColor">10</em>개월</span></p>
-						<div class="career-list">
-							<!-- PC컨텐츠 -->
-							<div class="board-list3 mHide">
-								<table>
-									<caption>경력사항 게시판</caption>
-									<colgroup>
-										<col style="width:15%;">
-										<col style="width:20%;">
-										<col style="width:15%;">
-										<col>
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">회사명</th>
-											<th scope="col">근무일자</th>
-											<th scope="col">역할</th>
-											<th scope="col">담당업무</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>웅진그룹</td>
-											<td>2017.01.01 ~ 2018.02.02</td>
-											<td>기획/관리 총괄</td>
-											<td>ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</td>
-										</tr>
-										<tr>
-											<td>교원그룹</td>
-											<td>2017.01.01 ~ 2018.02.02</td>
-											<td>기획/관리 총괄</td>
-											<td>스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</td>
-										</tr>
-										<tr>
-											<td>LG경영개발원</td>
-											<td>2017.01.01 ~ 2018.02.02</td>
-											<td>기획/관리 총괄</td>
-											<td>인재 구축 인프라 사업과 TFT Project Develop 기획 업무 수행</td>
-										</tr>
-										<tr>
-											<td>대교</td>
-											<td>2017.01.01 ~ 2018.02.02</td>
-											<td>기획/관리 총괄</td>
-											<td>대교 미래 e-Learning Project 기획 수행</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!--// PC컨텐츠 -->
-							<!-- Mobile 컨텐츠 -->
-							<div class="board-list2 wHide">
-								<ul>
-									<li class="td-area">
-										<span class="title">웅진그룹</span>
-										<span class="text">근무일자 : 2017.01.01 ~ 2018.02.02</span>
-										<span class="text">역할 : 기획/관리 총괄</span>
-										<span class="text">담당업무 : ELT 콘텐츠를 바탕으로 하는 교육교재 기획/관리 총괄 업무 수행</span>
-									</li>
-									<li class="td-area">
-										<span class="title">교원그룹</span>
-										<span class="text">근무일자 : 2013.03.03 ~2016.05.01</span>
-										<span class="text">역할 : 기획/관리 총괄</span>
-										<span class="text">담당업무 : 스마트러닝 개발 프로젝트 기획/관리 총괄 업무 수행</span>
-									</li>
-									<li class="td-area">
-										<span class="title">대교</span>
-										<span class="text">근무일자 : 2010.04.20 ~2012.01.15</span>
-										<span class="text">역할 : 교육 기획</span>
-										<span class="text">담당업무 : 대교 미래 e-Learning Project 기획 수행</span>
-									</li>
-								</ul>
-							</div>
-							<div class="btn-more wHide">
-								<button type="button"><span>더보기</span></button>
-							</div>
-							<!--// Mobile 컨텐츠 -->
-						</div>
-						<p class="mHide">※ 근무 경력은 최근순으로 200건까지 검색됩니다.</p>
-					</div>
-				</div>
-			</div>
-			<div class="btn-wrap right m-fixed-btn wHide">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">조직정보</a></div>
-				</div>
+				<p class="mHide">※ 근무 경력은 최근순으로 200건까지 검색됩니다.</p>
 			</div>
 		</div>
 	</div>
-
-	<div class="footer">
-		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	<div class="btn-wrap right m-fixed-btn wHide">
+		<div class="btn-align">
+			<div class="btn-item"><a href="#" class="btn-text bdColor fColor">조직정보</a></div>
+		</div>
 	</div>
 </div>
 
 <script>
 $(window).load(function(){
+	//형식에 따른 div 높이값 수정 (career등록 버튼여부에 따른)
+	$('.career.formChange').find('.form-list input[type=radio]').change(function(){
+		var winW = $(window).width();
+		if(winW > 800){
+			$('.util-top').css('height','36px');
+		}else{
+			var sel =  $(this).closest('.formChange').find('input[type=radio]:checked').closest('.item').index();
+			console.log(sel);
+			if(sel == 0){
+				$(this).closest('.util-top').css('height','75px');
+			}else {
+				$(this).closest('.util-top').css('height','30px');
+			}
+		}
+	});
+
 	//Career등록
 	$('.btn-career').click(function(){
 		$(this).closest('.btn-area2').next('.write-area').show();
@@ -593,18 +300,23 @@ $(window).load(function(){
 	$('.btn-cancel').click(function(){
 		$(this).closest('.write-area').hide();
 	});
-
-	//형식에 따른 div 높이값 수정 (career등록 버튼여부에 따른)
-	$('.career.formChange').find('.form-list input[type=radio]').change(function(){
-		var sel =  $(this).closest('.formChange').find('input[type=radio]:checked').closest('.item').index();
-		if(sel == 0){
-			$(this).closest('.util-top').css('height','75px');
-		}else {
-			$(this).closest('.util-top').css('height','30px');
-		}
-	});
-
 });
+
+$(window).resize(function(){
+		var winW = $(window).width();
+		if(winW > 800){
+			$('.util-top').css('height','36px');
+		}else{
+			var sel2 =  $('.mobile .util-top').find('input[type=radio]:checked').closest('.item').index();
+			console.log(sel2);
+			if(sel2 == 0){
+				$('.mobile .util-top').css('height','75px');
+			}else {
+				$('.mobile .util-top').css('height','30px');
+			}
+		}
+});
+
 </script>
 </body>
 </html>

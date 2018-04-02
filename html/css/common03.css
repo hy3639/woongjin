@@ -6,12 +6,14 @@
 	레이아웃
 =========================================================================== */
 .container {
-	padding:71px 0 50px;
+padding-left: 0
 }
 .gnb-sliding {
 	display:none;
 	left:-220px;
 }
+.content {padding-top: 0}
+.content.survey {padding-top: 50px}
 
 .header .btn-search {right:70px;}
 .btn-gnb {
@@ -44,6 +46,7 @@
 	line-height:0;
 }
 .header .utill {right:210px;}
+/* 180319 수정 */
 .header .utill .naver-list {
 	display:none;
 	position:absolute;
@@ -52,23 +55,13 @@
 	overflow:inherit;
 	float:left;
 	width:300px;
-	padding:14px;
+	padding:14px 0 0 0;
 	background-color:#fff;
 	border:1px solid #bbb;
 }
 .header .utill .naver-list.on {display:block;}
 .header .utill .naver-list .btn-close2 {
 	display:block;
-}
-.header .utill .naver-list:after {
-	content:'';
-	display:block;
-	width:100%;
-	height:1px;
-	background-color:#eee;
-	position:absolute;
-	top:50%;
-	left:0;right:0;
 }
 .header .utill .naver-list:before {
 	content:'';
@@ -80,45 +73,27 @@
 	height:8px;
 	background:url(../images2.0/bg/bg_user.png) no-repeat 0 0;
 }
-.header .utill .naver-list .link {
+.header .utill .naver-list .line {float: none;}
+.header .utill .naver-list .line:last-child {border-bottom: 0}
+.header .utill .naver-list .link,
+.header .utill .naver-list .link-bg  {
 	float:left;
 	position:relative;
 	width:25%;
 	height:70px;
 	text-align: center;
 }
-.mobile .header .utill .naver-list .link {line-height: 57px;}
-/*
-.header .utill .naver-list .link1 {background-image:url(../images2.0/mobile/ico/ico_n01_t.png);}
-.header .utill .naver-list .link2 {background-image:url(../images2.0/mobile/ico/ico_n02_t.png);}
-.header .utill .naver-list .link3 {background-image:url(../images2.0/mobile/ico/ico_n03_t.png);}
-.header .utill .naver-list .link4 {background-image:url(../images2.0/mobile/ico/ico_n04_t.png);}
-.header .utill .naver-list .link5 {background-image:url(../images2.0/mobile/ico/ico_n05_t.png);}
-.header .utill .naver-list .link6 {background-image:url(../images2.0/mobile/ico/ico_n06_t.png);}
-.header .utill .naver-list .link7 {background-image:url(../images2.0/mobile/ico/ico_n07_t.png);}
-*/
-.header .utill .naver-list .link .len {
-	display:block;
-	position:absolute;
-	right:11px;top:12px;
-	width:23px;
-	height:24px;
-	border-radius:50%;
-	background-color:#ff5349;
-	color:#fff;
-	font-size:14px;
-	text-align:center;
-	text-indent:0;
-	line-height:24px;
+.header .utill .naver-list .link-bg .len {
+	right:16px;
 }
-
+.mobile .header .utill .naver-list .link {line-height: 57px;}
+/*// 180319 수정 */
 
 .header .utill .user-menu {right:-1px;}
 .title-wrap {display:block;}
 
 .content.app-submain {margin-top:0}
 
-.content.blog-wrap {margin-top:50px;}
 
 
 /* 지식관리 > 서브메인*/
@@ -128,3 +103,9 @@
 .knowledge-area.resizing {}
 .knowledge-area.resizing {}
 .knowledge-area.resizing {}
+
+	/*내부회계관리시스템*/
+	.accounting .header .utill {right:85px;}
+
+	/*블로그*/
+	.blog-wrap.web.content {padding-top: 50px}

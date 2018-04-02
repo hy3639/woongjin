@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="content blog-wrap">
+	<div class="title-wrap">
+		<h2 class="title">개인블로그 포스트쓰기</h2>
+	</div>
+
+	<div class="board-write1 btm-line">
+		<table>
+			<colgroup class="mHide"><!-- 웹전용 -->
+				<col style="width:18%;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row"><label for="Text01">제목<span class="important">*</span></label></th>
+					<td><input type="text" id="Text01" class="required" style="width:428px;" placeholder="제목을 입력해주세요"></td>
+				</tr>
+				<tr>
+					<th scope="row">카테고리</th>
+					<td>
+						<select class="styled1" style="width:100%;">
+							<option>미분류 및 기타</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">공개유무</th>
+					<td>
+						<ul class="form-list inline">
+							<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">공개</label></li>
+							<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">비공개</label></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">태그</th>
+					<td>
+						<!-- 모바일전용 태그 입력영역 -->
+						<input type="text" class="wHide" placeholder="태그추가">
+						<!-- /모바일전용 태그 입력영역 -->
+						<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 또는 'Enter'로 구분해주세요.</p>
+					</td>
+				</tr>
+				<tr class="empty">
+					<th scope="row">세부내용</th>
+					<td colspan="2">
+						<!-- 에딧터 영역 -->
+						<div class="web-editer mHide">
+							<img src="../images2.0/temp/@editer.gif" alt="" style="width:100%;height:370px;">
+						</div>
+						<!-- //에딧터 영역 -->
+						<textarea cols="" rows="" placeholder="내용을 입력해 주세요." class="wHide" style="height:150px;"></textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- 파일첨부 영역 -->
+	<div class="addfile-box tabArea">
+		<ul class="tab-list1">
+			<li class="item fColor"><span class="text">파일업로드</span></li><!-- 선택 (class="fColor") -->
+			<li class="item"><span class="text">웍스드라이브업로드</span></li>
+		</ul>
+		<div class="tabContent">
+			<!-- tab01 : 파일업로드 -->
+			<div class="addfind-cont tabCont on">
+				<div class="title-area mHide">
+					<div class="left">
+						<p class="title">파일명</p>
+					</div>
+					<div class="right">
+						<p class="title">용량</p>
+						<p class="title">상태</p>
+					</div>
+				</div>
+				<ul class="addfile-list">
+					<li class="addfile-item">
+						<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+						<div class="volume-state">
+							<p class="text"><em class="wHide">용량</em> 310b</p>
+							<p class="text"><em class="wHide">상태</em> 0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+					<li class="addfile-item">
+						<div class="file-name">임직원 그룹조직도.pdf</div>
+						<div class="volume-state">
+							<p class="text"><em class="wHide">용량</em> 25b</p>
+							<p class="text"><em class="wHide">상태</em> 0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+					<li class="addfile-item">
+						<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+						<div class="volume-state">
+							<p class="text"><em class="wHide">용량</em> 310b</p>
+							<p class="text"><em class="wHide">상태</em> 0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+					<li class="addfile-item">
+						<div class="file-name">임직원 그룹조직도.pdf</div>
+						<div class="volume-state">
+							<p class="text"><em class="wHide">용량</em> 25b</p>
+							<p class="text"><em class="wHide">상태</em> 0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+				</ul>
+				<div class="foot-info">
+					<button type="button" class="btn-text sm">파일추가</button>
+					<div class="text-area">
+						<p class="text">용량 355b / 700mb</p>
+						<p class="text">상태 0%</p>
+					</div>
+				</div>
+			</div>
+			<!-- tab02 : 웍스드라이브업로드 -->
+			<div class="addfind-cont tabCont">
+				<div class="title-area mHide">
+					<div class="left">
+						<p class="title">파일명</p>
+					</div>
+					<div class="right">
+						<p class="title">용량</p>
+						<p class="title">상태</p>
+					</div>
+				</div>
+				<ul class="addfile-list">
+					<li class="addfile-item">
+						<div class="file-name">임직원 그룹조직도.pdf</div>
+						<div class="volume-state">
+							<p class="text">25b</p>
+							<p class="text">0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+					<li class="addfile-item">
+						<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
+						<div class="volume-state">
+							<p class="text">310b</p>
+							<p class="text">0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+					<li class="addfile-item">
+						<div class="file-name">임직원 그룹조직도.pdf</div>
+						<div class="volume-state">
+							<p class="text">25b</p>
+							<p class="text">0%</p>
+						</div>
+						<button type="button" class="btn-del">삭제</button>
+					</li>
+				</ul>
+				<div class="foot-info">
+					<button type="button" class="btn-text sm">파일추가</button>
+					<div class="text-area">
+						<p class="text">용량 355b / 700mb</p>
+						<p class="text">상태 0%</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="btn-wrap right">
+		<div class="btn-align">
+			<div class="btn-item"><a href="#" class="btn-text">취소</a></div>
+			<div class="btn-item"><a href="#" class="btn-text bdColor fColor">등록</a></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -42,7 +42,7 @@ $(window).load(function(){
 
 	/* 설문 그룹 타이틀 수정 */
 	$(document).on('click', '.survey-title .btn-modify', function(){
-		
+
 	});
 
 	/* 설문 문항 그룹 삭제 */
@@ -544,7 +544,7 @@ $(window).scroll(function(){
 		var modiT = $('.survey-modify').offset().top;
 		var headH = $('.header').outerHeight();
 		if(winT >= modiT - headH){
-			$('.modify-wrap').css({'top':winT - 20});
+			$('.modify-wrap').css({'top':winT - 90});
 		}else{
 			$('.modify-wrap').css({'top':'0'});
 		}
@@ -555,11 +555,12 @@ $(window).scroll(function(){
 $(window).resize(function(){
 	/* 오른쪽 고정영역 해상도에 따른 스크롤 생성 */
 	var winH = $(window).height();
-	var wrapT = $('.wrapper').offset().top;
+	var wrapT = $('.content').offset().top;
 	var conT = $('.content').offset().top;
 	var titleH = $('.title-wrap:visible').outerHeight();
 	var footH = $('.footer').outerHeight();
 	var boxH = winH - (conT - wrapT + titleH + footH + 20);
+
 	$('.modify-wrap').css({'height':boxH});
 
 	$('.modify-wrap').each(function(){
