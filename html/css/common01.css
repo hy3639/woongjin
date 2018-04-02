@@ -1554,13 +1554,111 @@ line-height:35px;
 .gnb-wrap .depth1 .depth2-list .depth2-item {}
 .gnb-wrap .depth1 .depth2-list .depth2-item a {
 	display:block;
+	position:relative;
 	padding:8px 30px 8px 35px;
 	color:#333;
 	line-height:16px;
 }
+.gnb-wrap .depth1 .depth2-list .depth2-item a .icon {
+	position: absolute;
+	right: 35px;
+	top: 50%;
+	width: 9px;
+	height: 9px;
+	background-color: #9da4ac;
+	background-image: url(../images2.0/btn/btn_gnb_ico03.png);
+	background-repeat: no-repeat;
+	background-position: 0 -9px;
+	margin-top: -4px;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
+}
+.gnb-wrap .depth1 .depth2-list .depth2-item.on > a .icon {background-position:0 0;}
 .gnb-wrap .depth1 .depth2-list .depth2-item a:hover,
-.gnb-wrap .depth1 .depth2-list .depth2-item.on a {text-decoration:underline;}
-.gnb-wrap .depth1 .depth2-list .depth2-item.on a {cursor:default;}
+.gnb-wrap .depth1 .depth2-list .depth2-item.on > a {text-decoration:underline;}
+.gnb-wrap .depth1 .depth2-list .depth2-item.on > a {cursor:default;}
+
+.gnb-wrap .depth1 .depth3-list {
+	display:none;
+	padding-left:40px;
+	background:url(../images2.0/bg/bg_dotted02.png) repeat-y 40px 0;
+}
+.gnb-wrap .depth1 .depth3-list .depth3-item {}
+.gnb-wrap .depth1 .depth3-list .depth3-item .title3 {
+	padding-left:15px;
+	background:url(../images2.0/bg/bg_dotted.png) no-repeat 0 50%;
+}
+.gnb-wrap .depth1 .depth3-list .depth3-item.on .title3 {text-decoration:underline;}
+.gnb-wrap .depth1 .depth3-list .depth3-item.on .title3 .icon {background-position:0 0;}
+.gnb-wrap .depth1 .depth3-list .depth3-item:last-child .title3:before {
+	content:'';
+	position:absolute;
+	left:-1px;
+	top:18px;
+	bottom:0;
+	width:2px;
+	background-color:#f5f5f5;
+}
+
+.gnb-wrap .depth1 .depth4-list {
+	display:none;
+	padding-left:20px;
+	background:url(../images2.0/bg/bg_dotted02.png) repeat-y 20px 0;
+}
+.gnb-wrap .depth1 .depth4-list .depth4-item {
+	position:relative;
+}
+.gnb-wrap .depth1 .depth4-list .depth4-item .title4 {
+	padding-left:15px;
+	background:url(../images2.0/bg/bg_dotted.png) no-repeat 0 50%;
+}
+.gnb-wrap .depth1 .depth4-list .depth4-item.on .title4 {text-decoration:underline;}
+.gnb-wrap .depth1 .depth4-list .depth4-item:last-child .title4:before {
+	content:'';
+	position:absolute;
+	left:-1px;
+	top:18px;
+	bottom:0;
+	width:2px;
+	background-color:#f5f5f5;
+}
+.gnb-wrap .depth1 .depth4-list .depth4-item .title4 .arrow {
+	position: absolute;
+	right: 35px;
+	top: 50%;
+	width:5px;
+	height:9px;
+	background: url(../images2.0/btn/btn_gnb_ico04.png) no-repeat 0 0;
+	margin-top: -4px;
+	font-size: 0;
+	text-indent: -9999px;
+	line-height: 0;
+}
+.gnb-wrap .depth1 .depth5-layer {
+	display:none;
+	position:fixed;
+	left:194px;
+	top:50%;
+	z-index:50;
+	padding:20px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.gnb-wrap .depth1 .depth5-layer:before {
+	content:'';
+	position:absolute;
+	left:-6px;
+	top:50%;
+	width:7px;
+	height:10px;
+	margin-top:-5px;
+	background:url(../images2.0/bg/bg_box_arr.png) no-repeat 0 0;
+}
+.gnb-wrap .depth1 .depth5-layer a.link {
+	padding-left:0;
+	padding-right:0;
+}
 
 /* 서브 gnb */
 .btn-gnb-toggle {

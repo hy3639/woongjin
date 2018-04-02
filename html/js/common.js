@@ -112,6 +112,52 @@
 					.find('.icon').addClass('bgColor');
 			}
 		});
+		// 2뎁스 하위 리스트 있을경우
+		$('.depth3-list').each(function(){
+			$(this).closest('.depth2-item').addClass('inList').find('.title2').append('<em class="icon">아이콘영역</em>');
+		});
+		$('.inList .title2').click(function(e){
+			e.preventDefault();
+			if($(this).closest('.depth2-item').hasClass('on')){
+				$(this).closest('.depth2-item').removeClass('on')
+					.find('.depth3-list').slideUp(100)
+					.siblings('.title2').removeClass('fColor')
+					.find('.icon').removeClass('bgColor');
+			}else{
+				$('.depth2-item').removeClass('on').find('.depth3-list').slideUp(100);
+				$(this).closest('.depth2-item').addClass('on').find('.depth3-list').slideDown(200);
+			}
+		});
+		// 3뎁스 하위 리스트 있을경우
+		$('.depth4-list').each(function(){
+			$(this).closest('.depth3-item').addClass('inList').find('.title3').append('<em class="icon">아이콘영역</em>');
+		});
+		$('.inList .title3').click(function(e){
+			e.preventDefault();
+			if($(this).closest('.depth3-item').hasClass('on')){
+				$(this).closest('.depth3-item').removeClass('on').find('.depth4-list').slideUp(100);
+			}else{
+				$('.depth3-item').removeClass('on').find('.depth4-list').slideUp(100);
+				$(this).closest('.depth3-item').addClass('on').find('.depth4-list').slideDown(200);
+			}
+		});
+		// 4뎁스 하위 리스트 있을경우
+		$('.depth5-layer').each(function(){
+			$(this).closest('.depth4-item').addClass('inList').find('.title4').append('<em class="arrow">아이콘영역</em>');
+		});
+		$('.inList .title4').click(function(e){
+			e.preventDefault();
+			if($(this).closest('.inList').hasClass('on')){
+				$(this).closest('.depth4-list').find('.inList').removeClass('on').find('.depth5-layer').hide();
+			}else{
+				var winTop = $(window).scrollTop();
+				var menuT = $(this).offset().top;
+				$(this).closest('.depth4-list').removeClass('on')
+				$(this).closest('.inList').addClass('on').find('.depth5-layer').show();
+				var hei = ($(this).closest('.inList').find('.depth5-layer').outerHeight()-32)/2;
+				$(this).closest('.inList').find('.depth5-layer').css({'top':menuT - winTop, 'margin-top':-hei});
+			}
+		});
 
 		/* 검색 포커스 */
 		$('.search-box1 input[type=text], .search-box3 input[type=text]').focus(function(){
