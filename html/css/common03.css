@@ -6,14 +6,14 @@
 	레이아웃
 =========================================================================== */
 .container {
-padding-left: 0
+padding-left:0
 }
 .gnb-sliding {
 	display:none;
 	left:-220px;
 }
-.content {padding-top: 0}
-.content.survey {padding-top: 50px}
+.content {padding-top:0}
+.content.survey {padding-top:50px}
 
 .header .btn-search {right:70px;}
 .btn-gnb {
@@ -73,20 +73,20 @@ padding-left: 0
 	height:8px;
 	background:url(../images2.0/bg/bg_user.png) no-repeat 0 0;
 }
-.header .utill .naver-list .line {float: none;}
-.header .utill .naver-list .line:last-child {border-bottom: 0}
+.header .utill .naver-list .line {float:none;}
+.header .utill .naver-list .line:last-child {border-bottom:0}
 .header .utill .naver-list .link,
-.header .utill .naver-list .link-bg  {
+.header .utill .naver-list .link-bg {
 	float:left;
 	position:relative;
 	width:25%;
 	height:70px;
-	text-align: center;
+	text-align:center;
 }
 .header .utill .naver-list .link-bg .len {
 	right:16px;
 }
-.mobile .header .utill .naver-list .link {line-height: 57px;}
+.mobile .header .utill .naver-list .link {line-height:57px;}
 /*// 180319 수정 */
 
 .header .utill .user-menu {right:-1px;}
@@ -97,7 +97,7 @@ padding-left: 0
 
 
 /* 지식관리 > 서브메인*/
-.knowledge .top-search-box2 {margin-top: 0}
+.knowledge .top-search-box2 {margin-top:0}
 .knowledge-area.resizing {}
 .knowledge-area.resizing {}
 .knowledge-area.resizing {}
@@ -108,4 +108,4 @@ padding-left: 0
 	.accounting .header .utill {right:85px;}
 
 	/*블로그*/
-	.blog-wrap.web.content {padding-top: 50px}
+	.blog-wrap.web.content {padding-top:50px}
