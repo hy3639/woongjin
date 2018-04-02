@@ -1854,5 +1854,27 @@
 		</div>
 	</div>
 </div>
+<script>
+/*180326 수정*/
+/*테이블 토글*/
+$('.board-list2 .btn-type .setting').click(function(){
+	if($(this).hasClass('on')){
+		$('.board-list2 .btn-type .setting').removeClass('on');
+		$('.board-list2 .td-area').removeClass('on');
+		$('.board-list2 .layer-type').slideUp();
+	}else {
+		$('.board-list2 .btn-type .setting').removeClass('on');
+		$('.board-list2 .td-area').removeClass('on');
+		$('.board-list2 .layer-type').slideUp();
+
+		$(this).addClass('on');
+		$(this).closest('.td-area').addClass('on');
+		$(this).closest('.btn-type').next('.layer-type').slideDown();
+		tabSize();
+	}
+});
+tabSize();
+/*// 180326 수정*/
+</script>
 </body>
 </html>

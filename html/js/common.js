@@ -1117,16 +1117,6 @@ function resizeMid(){
 					$(this).find('.item').eq(8).nextAll('.item').remove();
 				}
 			});
-
-			/*180402 수정*/
-			/*테이블 토글*/
-			$('.board-list2 .btn-type .setting').click(function(){
-				$(this).closest('.td-area').addClass('on').siblings('.td-area').removeClass('on');
-				$(this).addClass('on').closest('.td-area').siblings('.td-area').find('.setting').removeClass('on');
-				$(this).closest('.btn-type').next('.layer-type').slideDown().closest('.td-area').siblings('.td-area').find('.layer-type').slideUp();
-				tabSize();
-			});
-			/*// 180402 수정*/
 		}
 	})(jQuery);
 }
