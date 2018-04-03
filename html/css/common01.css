@@ -1518,11 +1518,14 @@ line-height:35px;
 
 .gnb-wrap .depth1 .depth1-list .depth1-item {}
 .gnb-wrap .depth1 .depth1-list .depth1-item .d-title {
-	display:block;
+	display:inline-block;
+	min-width:220px;
 	padding:16px 30px 16px 35px;
+	box-sizing:border-box;
 	color:#333;
 	font-size:14px;
 	line-height:18px;
+	white-space:nowrap;
 }
 /* 하위 리스트가 있을경우 */
 .gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title {
@@ -1553,11 +1556,14 @@ line-height:35px;
 }
 .gnb-wrap .depth1 .depth2-list .depth2-item {}
 .gnb-wrap .depth1 .depth2-list .depth2-item a {
-	display:block;
+	display:inline-block;
 	position:relative;
-	padding:8px 30px 8px 35px;
+	min-width:220px;
+	padding:8px 50px 8px 35px;
+	box-sizing:border-box;
 	color:#333;
 	line-height:16px;
+	white-space:nowrap;
 }
 .gnb-wrap .depth1 .depth2-list .depth2-item a .icon {
 	position: absolute;
@@ -1581,20 +1587,19 @@ line-height:35px;
 
 .gnb-wrap .depth1 .depth3-list {
 	display:none;
-	padding-left:40px;
 	background:url(../images2.0/bg/bg_dotted02.png) repeat-y 40px 0;
 }
 .gnb-wrap .depth1 .depth3-list .depth3-item {}
 .gnb-wrap .depth1 .depth3-list .depth3-item .title3 {
-	padding-left:15px;
-	background:url(../images2.0/bg/bg_dotted.png) no-repeat 0 50%;
+	padding-left:55px;
+	background:url(../images2.0/bg/bg_dotted.png) no-repeat 41px 50%;
 }
 .gnb-wrap .depth1 .depth3-list .depth3-item.on .title3 {text-decoration:underline;}
 .gnb-wrap .depth1 .depth3-list .depth3-item.on .title3 .icon {background-position:0 0;}
 .gnb-wrap .depth1 .depth3-list .depth3-item:last-child .title3:before {
 	content:'';
 	position:absolute;
-	left:-1px;
+	left:40px;
 	top:18px;
 	bottom:0;
 	width:2px;
@@ -1603,15 +1608,14 @@ line-height:35px;
 
 .gnb-wrap .depth1 .depth4-list {
 	display:none;
-	padding-left:20px;
-	background:url(../images2.0/bg/bg_dotted02.png) repeat-y 20px 0;
+	background:url(../images2.0/bg/bg_dotted02.png) repeat-y 60px 0;
 }
 .gnb-wrap .depth1 .depth4-list .depth4-item {
 	position:relative;
 }
 .gnb-wrap .depth1 .depth4-list .depth4-item .title4 {
-	padding-left:15px;
-	background:url(../images2.0/bg/bg_dotted.png) no-repeat 0 50%;
+	padding-left:75px;
+	background:url(../images2.0/bg/bg_dotted.png) no-repeat 61px 50%;
 }
 .gnb-wrap .depth1 .depth4-list .depth4-item.on .title4 {text-decoration:underline;}
 .gnb-wrap .depth1 .depth4-list .depth4-item:last-child .title4:before {
@@ -1656,6 +1660,8 @@ line-height:35px;
 	background:url(../images2.0/bg/bg_box_arr.png) no-repeat 0 0;
 }
 .gnb-wrap .depth1 .depth5-layer a.link {
+	display:block;
+	min-width:auto;
 	padding-left:0;
 	padding-right:0;
 }

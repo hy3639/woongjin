@@ -1148,6 +1148,7 @@ select.styled1 {
 .gnb-wrap .home .link-home,
 .gnb-list .gnb-item .gnb-title {
 	display:block;
+	position:relative;
 	padding:14px 20px 14px 45px;
 	background-repeat:no-repeat;
 	background-position:20px 15px;
@@ -1167,6 +1168,21 @@ select.styled1 {
 .gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../images2.0/mobile/ico/gnb_ico09.png);}
 .gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../images2.0/mobile/ico/gnb_ico10.png);}
 .gnb-wrap .home .btn-setting {display:none;}
+
+.gnb-list .gnb-item .gnb-title:before {
+	content:'';
+	position:absolute;
+	right:25px;
+	top:50%;
+	width:11px;
+	height:11px;
+	margin-top:-6px;
+	background-image:url(../images2.0/mobile/layout/ico_gnb_tog.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:11px 23px;
+}
+.gnb-list .gnb-item.on .gnb-title:before {background-position:0 -12px;}
 
 .gnb-list .depth1 {
 	display:none;
@@ -1190,7 +1206,8 @@ select.styled1 {
 }
 .gnb-list .depth1-list .depth1-item.inList .d-title .icon {
 	position:absolute;
-	right:20px;top:50%;
+	right:25px;
+	top:50%;
 	width:11px;
 	height:11px;
 	margin-top:-6px;
@@ -1224,18 +1241,118 @@ select.styled1 {
 
 .gnb-list .depth2-list {
 	display:none;
+	overflow-x:auto;
 	padding:7px 0;
 	border-top:1px solid #e5e5e5;
 	border-bottom:1px solid #e5e5e5;
 	background-color:#f5f5f5;
 }
-.gnb-list .depth2-list .depth2-item {}
+
 .gnb-list .depth2-list .depth2-item a {
-	display:block;
-	padding:2px 20px 2px 50px;
+	display:inline-block;
+	min-width:100%;
+	padding-right:50px;
+	box-sizing:border-box;
+	color:#666;
 	font-size:12px;
+	line-height:30px;
+	white-space:nowrap;
+}
+.gnb-list .depth3-item.inList.on .title3,
+.gnb-list .depth4-item.inList.on .title4 {
+	color:#333;
+	text-decoration:underline;
 }
 
+.gnb-list .depth2-list .depth2-item .title2 {
+	position:relative;
+	color:#333;
+	padding-left:50px;
+}
+.gnb-list .depth2-list .depth2-item.inList .title2:before,
+.gnb-list .depth2-list .depth3-item.inList .title3:before {
+	content:'';
+	position:absolute;
+	right:25px;
+	top:50%;
+	width:11px;
+	height:11px;
+	margin-top:-6px;
+	background-image:url(../images2.0/mobile/layout/ico_gnb_tog.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:11px 23px;
+}
+.gnb-list .depth2-list .depth2-item.inList.on .title2:before,
+.gnb-list .depth2-list .depth3-item.inList.on .title3:before {background-position:0 -12px;}
+.gnb-list .depth2-list .depth3-list {
+	display:none;
+	background:url(../images2.0/mobile/layout/bg_dotted01.png) repeat-y 55px 0;
+	background-size:1px 2px;
+}
+.gnb-list .depth2-list .depth3-item .title3 {
+	position:relative;
+	padding-left:72px;
+	background:url(../images2.0/mobile/layout/bg_dotted01.png) no-repeat 56px 50%;
+	background-size:10px 1px;
+}
+.gnb-list .depth4-list {
+	display:none;
+	background:url(../images2.0/mobile/layout/bg_dotted01.png) repeat-y 78px 0;
+	background-size:1px 2px;
+}
+.gnb-list .depth2-list .depth4-item .title4 {
+	position:relative;
+	padding-left:95px;
+	background:url(../images2.0/mobile/layout/bg_dotted01.png) no-repeat 79px 50%;
+	background-size:10px 1px;
+}
+.gnb-list .depth3-item:last-child .title3:after,
+.gnb-list .depth4-item:last-child .title4:after {
+	content:'';
+	position:absolute;
+	top:16px;
+	bottom:0;
+	width:2px;
+	background-color:#f5f5f5;
+}
+.gnb-list .depth3-item:last-child .title3:after {left:55px;}
+.gnb-list .depth4-item:last-child .title4:after {left:78px;}
+.gnb-list .depth2-list .depth4-item.inList .title4:before {
+	content:'';
+	position:absolute;
+	right:25px;
+	top:50%;
+	width:10px;
+	height:6px;
+	margin-top:-3px;
+	background-image:url(../images2.0/mobile/layout/ico_gnb_tog02.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:10px 13px;
+}
+.gnb-list .depth2-list .depth4-item.inList.on .title4 {background-position:0 -7px;}
+
+.gnb-list .depth5-layer {
+	display:none;
+	position:relative;
+	margin:3px 20px 0 95px;
+	padding:5px 15px;
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+.gnb-list .depth5-layer:before {
+	content:'';
+	position:absolute;
+	left:13px;
+	top:-6px;
+	width:10px;
+	height:7px;
+	background:url(../images2.0/mobile/layout/bg_gnb_arr.png) no-repeat 0 0;
+	background-size:10px 7px;
+}
+.gnb-list .depth2-list .depth4-item .title4 {}
+.gnb-list .depth2-list .depth2-item .title2 {}
 .btn-gnb-toggle,
 .sub-gnb {display:none;}
 

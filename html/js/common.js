@@ -145,7 +145,7 @@
 		$('.depth5-layer').each(function(){
 			$(this).closest('.depth4-item').addClass('inList').find('.title4').append('<em class="arrow">아이콘영역</em>');
 		});
-		$('.inList .title4').click(function(e){
+		$('.web .inList .title4').click(function(e){
 			e.preventDefault();
 			if($(this).closest('.inList').hasClass('on')){
 				$(this).closest('.depth4-list').find('.inList').removeClass('on').find('.depth5-layer').hide();
@@ -155,8 +155,26 @@
 				$(this).closest('.depth4-list').removeClass('on')
 				$(this).closest('.inList').addClass('on').find('.depth5-layer').show();
 				var hei = ($(this).closest('.inList').find('.depth5-layer').outerHeight()-32)/2;
-				$(this).closest('.inList').find('.depth5-layer').css({'top':menuT - winTop, 'margin-top':-hei});
+				var left = $(this).closest('.inList').offset().left + 184;
+				$(this).closest('.inList').find('.depth5-layer').css({'left':left, 'top':menuT - winTop, 'margin-top':-hei});
 			}
+		});
+		$(document).mouseup(function (e) {
+			var layer5 = $('.web .depth5-layer');
+			if(!layer5.is(e.target) && layer5.has(e.target).length === 0){
+				layer5.hide().closest('.inList').removeClass('on');
+			}
+		});
+		/* 웹에서 gnb넓이 설정 */
+		$('.gnb-utill').click(function(){
+			setTimeout(function(){
+				var $link = $('.web .depth1-list a');
+				var boxArray = $link.map(function(){
+					return $(this).outerWidth();
+				});
+				var linkW = Math.max.apply(Math , boxArray);
+				$link.closest('.web .gnb-utill').find('.depth-top, .depth1-list').css('width', linkW);
+			}, 200);
 		});
 
 		/* 검색 포커스 */
@@ -245,6 +263,14 @@
 			}else{
 				$('.mobile .gnb-item').removeClass('on').find('.depth1').slideUp(200);
 				$(this).closest('.gnb-item').addClass('on').find('.depth1').slideDown(200);
+			}
+		});
+		$('.mobile .gnb-list .depth4-item .title4').click(function(){
+			if($(this).closest('.depth4-item').hasClass('on')){
+				$('.mobile .depth4-item').removeClass('on').find('.depth5-layer').slideUp(100);
+			}else{
+				$('.mobile .depth4-item').removeClass('on').find('.depth5-layer').slideUp(100);
+				$(this).closest('.depth4-item').addClass('on').find('.depth5-layer').slideDown(100);
 			}
 		});
 
@@ -959,6 +985,7 @@ function resizeMid(){
 				$(this).find('.gnb-title').addClass('bgColor');
 			}).mouseleave(function(){
 				$(this).find('.gnb-title').removeClass('bgColor');
+				$('.depth5-layer').hide().closest('.inList').removeClass('on');;
 			});
 
 			/* 모바일 전용 gnb 메뉴 복사 제거 */
