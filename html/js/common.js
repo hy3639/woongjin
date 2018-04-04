@@ -49,6 +49,9 @@
 		});
 
 		// gnb 버튼
+		$('.btn-gnb').click(function(){
+			gnbLayer();
+		});
 		/*
 		$('.btn-gnb').click(function(){
 			var winW = $(window).width();
@@ -1311,6 +1314,15 @@ function popResize(){
 					'margin-top':-(contH + headH)/2
 				});
 			}
+		});
+	})(jQuery);
+}
+
+function gnbLayer(){
+	(function($) {
+		$('#cont-iframe').contents().find('.gnb-utill, .gnb-sliding').show();
+		$('#cont-iframe').contents().find('.gnb-utill').animate({right:0}, 300, function(){
+			$('.gnb-utill .btn-close-box').fadeIn(200);
 		});
 	})(jQuery);
 }
