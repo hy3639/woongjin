@@ -20,89 +20,347 @@
 </head>
 
 <body>
-<div class="content dictionary">
-	<!-- 타이틀 영역 -->
-	<div class="title-wrap">
-		<h2 class="title">용어 카테고리</h2>
-		<button type="button" class="btn-text bdColor fColor btn-popup btn-dictionary">내가 등록/조회한 용어</button>
-	</div>
+<div class="container">
+	<div class="gnb-utill">
+		<div class="btn-close-box wHide">
+			<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
+		</div>
+		<!-- gnb -->
+		<div class="gnb-sliding">
+			<div class="gnb-wrap">
+				<div class="gnb-menu-box">
+					<div class="home">
+						<a href="#" class="link-home ico01">홈</a>
+						<button type="button" class="btn-setting">설정</button>
+					</div>
+					<ul class="gnb-list">
+						<li class="gnb-item">
+							<p class="gnb-title ico02">게시판</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">게시판</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">최근게시물</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">공지사항</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">경조사</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판lv2</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">IT/Biz Trend</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">양식기 전용 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">R&amp;D부문/개발실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">Master Data 신규</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">익명게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">제안자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">권한 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">임시저장함</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">관리자 메뉴</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico03">전자결재</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전자결재</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico04">설문조사</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">설문조사</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico05">업무지원</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">업무지원</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico06">Knowledge</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">Knowledge</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico07">e-HR</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">e-HR</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico08">평가시스템</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">평가시스템</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico09">개인블로그</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">개인블로그</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico10">전사공유지식</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전사공유지식</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">전사공유지식</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 
-	<div class="top-search-box type2">
-		<select class="styled1" style="width:150px;">
-			<option>제목</option>
-			<option>게시자</option>
-			<option>내용</option>
-			<option>양식작성기</option>
-		</select>
-		<div class="search-text">
-			<input type="text" class="required" placeholder="검색어를 입력해주세요">
-			<button type="button" class="btn-search">검색</button>
+				<!-- 서브 GNB -->
+				<div class="sub-gnb">
+					<div class="depth1">
+						<div class="scroll-area">
+							<div class="depth-top">
+								<p class="depth1-title"><span class="text">용어사전</span></p>
+								<div class="menu-box">
+									<a href="#" class="btn-text mid">용어 등록</a>
+								</div>
+							</div>
+							<ul class="depth1-list">
+								<li class="depth1-item on">
+									<a href="#" class="d-title">용어 카테고리</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">관리자 메뉴</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">카테고리 관리</a></li>
+										<li class="depth2-item"><a href="#">카테고리 Import</a></li>
+										<li class="depth2-item"><a href="#">카테고리 Export</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="bottom-menu2">
+								<h2 class="menu-title">내가 등록한 용어</h2>
+								<ul class="menu-list">
+									<li class="menu-item"><a href="#" class="text">전자기안</a></li>
+									<li class="menu-item"><a href="#" class="text">GUI [그래피컬 유저 인터페이스]</a></li>
+									<li class="menu-item"><a href="#" class="text">콘솔</a></li>
+								</ul>
+								<button type="button" class="btn-more">더보기</button>
+							</div>
+							<div class="bottom-menu2">
+								<h2 class="menu-title">내가 조회한 용어</h2>
+								<ul class="menu-list">
+									<li class="menu-item"><a href="#" class="text">용어사전</a></li>
+									<li class="menu-item"><a href="#" class="text">GUI [그래피컬 유저 인터페이스]</a></li>
+									<li class="menu-item"><a href="#" class="text">전자결재</a></li>
+								</ul>
+								<button type="button" class="btn-more">더보기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 GNB -->
+			</div>
+			<div class="btn-gnb-toggle">
+				<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+				<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+			</div>
 		</div>
 	</div>
-
-	<!-- 썸네일리스트 -->
-	<div class="dictionary-area">
-		<ul class="tab-list1 mHide">
-			<li class="item fColor"><span class="text">전체</span></li><!-- 선택 (class="fColor") -->
-			<li class="item"><span class="text">그룹</span></li>
-			<li class="item"><span class="text">소프트웨어</span></li>
-		</ul>
-		<div class="dictionary-box">
-			<a href="#" class="bgColor">전체</a>
-			<a href="#">가</a>
-			<a href="#">나</a>
-			<a href="#">다</a>
-			<a href="#">라</a>
-			<a href="#">마</a>
-			<a href="#">바</a>
-			<a href="#">사</a>
-			<a href="#">아</a>
-			<a href="#">자</a>
-			<a href="#">차</a>
-			<a href="#">카</a>
-			<a href="#">타</a>
-			<a href="#">파</a>
-			<a href="#">하</a>
-			<a href="#">A-Z</a>
-			<a href="#">0-9</a>
+	<div class="content dictionary">
+		<!-- 타이틀 영역 -->
+		<div class="title-wrap">
+			<h2 class="title">용어 카테고리</h2>
+			<button type="button" class="btn-text bdColor fColor btn-popup btn-dictionary">내가 등록/조회한 용어</button>
 		</div>
-		<p class="title">용어목록</p>
-		<div class="tabContent">
-			<div class="tabCont on">
-				<div class="table-area">
-					<div class="board-wrap">
-						<p class="tit">
-							<a href="#"><span class="category">그룹</span><span class="cont">전자기안</span></a>
-						</p>
-						<p class="cont">
-							하나의 안건을 처리하기 위해 서버에 등록된 양식을 불러와 문안을 작성하고 결재를 상신하는 과정 하나의 안건을 처리하기 위해 서버에 등록된 양식을 불러와 문안을 작성하고 결재를 상신하는 과정 하나의 안건을 처리하기 위해 서버에 등록된 양식을 불러와 문안을 작성하고 결재를 상신하는 과정
-						</p>
-						<p class="info">
-							<span class="name">
-								<button type="button" class="btn-user">김웅진 과장</button>
-								<em>관리본부</em>
-							</span>
-							<span class="date">2017.12.12 08:04.:15</span>
-						</p>
-					</div>
-					<div class="board-wrap">
-						<p class="tit">
-							<a href="#"><span class="category">소프트웨어</span><span class="cont">콘솔 ( / console)</span></a>
-						</p>
-						<p class="cont">
-							컴퓨터를 조작하기 위해 사용하는 입/출력 장치의 세트이다
-						</p>
-						<p class="info">
-							<span class="name">
-								<button type="button" class="btn-user">관리자 사원</button>
-								<em>관리본부</em>
-							</span>
-							<span class="date">2017.12.12 08:04.:15</span>
-						</p>
-					</div>
-					<!-- 데이터 없는경우 -->
-					<div class="board-wrap">
-						<p class="no-data">해당하는 데이터가 없습니다</p>
+
+		<div class="top-search-box type2">
+			<select class="styled1" style="width:150px;">
+				<option>제목</option>
+				<option>게시자</option>
+				<option>내용</option>
+				<option>양식작성기</option>
+			</select>
+			<div class="search-text">
+				<input type="text" class="required" placeholder="검색어를 입력해주세요">
+				<button type="button" class="btn-search">검색</button>
+			</div>
+		</div>
+
+		<!-- 썸네일리스트 -->
+		<div class="dictionary-area">
+			<ul class="tab-list1 mHide">
+				<li class="item fColor"><span class="text">전체</span></li><!-- 선택 (class="fColor") -->
+				<li class="item"><span class="text">그룹</span></li>
+				<li class="item"><span class="text">소프트웨어</span></li>
+			</ul>
+			<div class="dictionary-box">
+				<a href="#" class="bgColor">전체</a>
+				<a href="#">가</a>
+				<a href="#">나</a>
+				<a href="#">다</a>
+				<a href="#">라</a>
+				<a href="#">마</a>
+				<a href="#">바</a>
+				<a href="#">사</a>
+				<a href="#">아</a>
+				<a href="#">자</a>
+				<a href="#">차</a>
+				<a href="#">카</a>
+				<a href="#">타</a>
+				<a href="#">파</a>
+				<a href="#">하</a>
+				<a href="#">A-Z</a>
+				<a href="#">0-9</a>
+			</div>
+			<p class="title">용어목록</p>
+			<div class="tabContent">
+				<div class="tabCont on">
+					<div class="table-area">
+						<div class="board-wrap">
+							<p class="tit">
+								<a href="#"><span class="category">그룹</span><span class="cont">전자기안</span></a>
+							</p>
+							<p class="cont">
+								하나의 안건을 처리하기 위해 서버에 등록된 양식을 불러와 문안을 작성하고 결재를 상신하는 과정 하나의 안건을 처리하기 위해 서버에 등록된 양식을 불러와 문안을 작성하고 결재를 상신하는 과정 하나의 안건을 처리하기 위해 서버에 등록된 양식을 불러와 문안을 작성하고 결재를 상신하는 과정
+							</p>
+							<p class="info">
+								<span class="name">
+									<button type="button" class="btn-user">김웅진 과장</button>
+									<em>관리본부</em>
+								</span>
+								<span class="date">2017.12.12 08:04.:15</span>
+							</p>
+						</div>
+						<div class="board-wrap">
+							<p class="tit">
+								<a href="#"><span class="category">소프트웨어</span><span class="cont">콘솔 ( / console)</span></a>
+							</p>
+							<p class="cont">
+								컴퓨터를 조작하기 위해 사용하는 입/출력 장치의 세트이다
+							</p>
+							<p class="info">
+								<span class="name">
+									<button type="button" class="btn-user">관리자 사원</button>
+									<em>관리본부</em>
+								</span>
+								<span class="date">2017.12.12 08:04.:15</span>
+							</p>
+						</div>
+						<!-- 데이터 없는경우 -->
+						<div class="board-wrap">
+							<p class="no-data">해당하는 데이터가 없습니다</p>
+						</div>
 					</div>
 				</div>
 			</div>

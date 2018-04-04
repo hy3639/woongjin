@@ -19,118 +19,416 @@
 </head>
 
 <body>
-<div class="content portal">
-	<div class="title-wrap">
-		<h2 class="title">호칭관리</h2>
-	</div>
-	<div class="top-search-box type2">
-		<select class="styled1" style="width:150px;">
-			<option>호칭코드</option>
-			<option>호칭명</option>
-		</select>
-		<div class="search-text">
-			<input type="text" class="required">
-			<button type="button" class="btn-search">검색</button>
+<div class="container">
+	<div class="gnb-utill">
+		<div class="btn-close-box wHide">
+			<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
 		</div>
-	</div>
-	<!-- 컨텐츠 -->
-	<div class="board-section">
-		<div class="board-list1 mHide">
-			<table>
-				<caption>호칭관리 게시판</caption>
-				<colgroup>
-					<col style="width:10%;">
-					<col style="width:15%;">
-					<col style="width:25%;">
-					<col style="width:25%;">
-					<col style="width:15%;">
-				</colgroup>
-				<thead>
-					<tr>
-						<th scope="col">번호</th>
-						<th scope="col">호칭코드</th>
-						<th scope="col">국문 호칭명</th>
-						<th scope="col">영문 호칭명</th>
-						<th scope="col">순서</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td class="subject"><a href="#" class="link"><span class="tit">JT00001P56</span></a></td>
-						<td>대표이사</td>
-						<td>대표이사</td>
-						<td>
-							<button type="button"><span class="btn-up">위로</span></button>
-							<button type="button"><span class="btn-down">아래로</span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td class="subject"><a href="#" class="link"><span class="tit">JT00010P56</span></a></td>
-						<td>이사</td>
-						<td>이사</td>
-						<td>
-							<button type="button"><span class="btn-up">위로</span></button>
-							<button type="button"><span class="btn-down">아래로</span></button>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<!-- 페이징 -->
-		<div class="paging mHide">
-			<a href="#" class="btn first">처음</a>
-			<a href="#" class="btn prev">이전</a>
-			<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
-			<a href="#" class="page">2</a>
-			<a href="#" class="page">3</a>
-			<a href="#" class="page">4</a>
-			<a href="#" class="page">5</a>
-			<a href="#" class="page">6</a>
-			<a href="#" class="page">7</a>
-			<a href="#" class="page">8</a>
-			<a href="#" class="page">9</a>
-			<a href="#" class="page">10</a>
-			<a href="#" class="btn next">다음</a>
-			<a href="#" class="btn end">마지막</a>
-		</div>
-		<p>호칭 상세보기</p>
-		<div class="board-write1">
-			<table>
-				<colgroup class="mHide"><!-- 웹전용 -->
-					<col style="width:12%;">
-					<col style="width:12%;">
-					<col>
-				</colgroup>
-				<tbody>
-					<tr>
-						<th scope="row" colspan="2">호칭코드 <span class="important">*</span></th>
-						<td>
-							<div class="input-area" style="max-width:400px;">
-								<input type="text">
-								<span class="btn-text mid">중복검사</span>
+		<!-- gnb -->
+		<div class="gnb-sliding">
+			<div class="gnb-wrap">
+				<div class="gnb-menu-box">
+					<div class="home">
+						<a href="#" class="link-home ico01">홈</a>
+						<button type="button" class="btn-setting">설정</button>
+					</div>
+					<ul class="gnb-list">
+						<li class="gnb-item">
+							<p class="gnb-title ico02">게시판</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">게시판</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">최근게시물</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">공지사항</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">경조사</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판lv2</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">IT/Biz Trend</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">양식기 전용 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">R&amp;D부문/개발실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">Master Data 신규</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">익명게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">제안자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">권한 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">임시저장함</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">관리자 메뉴</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<span>(Suffix:P56)</span>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row" rowspan="2">호칭명 <span class="important">*</span></th>
-						<th scope="row"><label for="Text01">국문 호칭명</label><span class="important">*</span></th>
-						<td><input type="text" id="Text01" class="required" style="width:312px"></td>
-					</tr>
-					<tr>
-						<th scope="row"><label for="Text02">영문 호칭명</label><span class="important">*</span></th>
-						<td><input type="text" id="Text02" class="required" style="width:312px"></td>
-					</tr>
-				</tbody>
-			</table>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico03">전자결재</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전자결재</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico04">설문조사</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">설문조사</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico05">업무지원</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">업무지원</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico06">Knowledge</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">Knowledge</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico07">e-HR</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">e-HR</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico08">평가시스템</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">평가시스템</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico09">개인블로그</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">개인블로그</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico10">전사공유지식</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전사공유지식</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">전사공유지식</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 서브 GNB -->
+				<div class="sub-gnb">
+					<div class="depth1">
+						<div class="scroll-area">
+							<div class="depth-top">
+								<p class="depth1-title"><span class="text">포탈 관리자</span></p>
+							</div>
+							<ul class="depth1-list">
+								<li class="depth1-item">
+									<a href="#" class="d-title">사용자관리</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">사용자 관리</a></li>
+										<li class="depth2-item"><a href="#">퇴사자 관리</a></li>
+										<li class="depth2-item"><a href="#">그룹 관리</a></li>
+										<li class="depth2-item"><a href="#">공용그룹 관리</a></li>
+										<li class="depth2-item"><a href="#">사용자 Import</a></li>
+										<li class="depth2-item"><a href="#">그룹 Import</a></li>
+										<li class="depth2-item"><a href="#">Profile Image</a></li>
+										<li class="depth2-item"><a href="#">사용자 계정 정책 설정</a></li>
+										<li class="depth2-item"><a href="#">차단해제 요청 관리</a></li>
+										<li class="depth2-item"><a href="#">시스템 관리자 설정</a></li>
+										<li class="depth2-item"><a href="#">역할 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">기본 설정 관리</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">로고 이미지 설정</a></li>
+										<li class="depth2-item"><a href="#">SMTP Server 설정</a></li>
+										<li class="depth2-item"><a href="#">메뉴 관리</a></li>
+										<li class="depth2-item"><a href="#">시스템 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">화면 관리</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">포탈 메인화면 설정</a></li>
+										<li class="depth2-item"><a href="#">포탈 메인화면 관리</a></li>
+										<li class="depth2-item"><a href="#">포틀릿 그룹 관리</a></li>
+										<li class="depth2-item"><a href="#">포틀릿 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">코드 관리</a>
+									<ul class="depth2-list">
+										<li class="depth2-item on"><a href="#">호칭 설정</a></li>
+										<li class="depth2-item"><a href="#">직위 관리</a></li>
+										<li class="depth2-item"><a href="#">직급 관리</a></li>
+										<li class="depth2-item"><a href="#">직군 관리</a></li>
+										<li class="depth2-item"><a href="#">직책 관리</a></li>
+										<li class="depth2-item"><a href="#">호칭 Import</a></li>
+										<li class="depth2-item"><a href="#">직위 Import</a></li>
+										<li class="depth2-item"><a href="#">직급 Import</a></li>
+										<li class="depth2-item"><a href="#">직군 Import</a></li>
+										<li class="depth2-item"><a href="#">직책 Import</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">일정 관리</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">휴일관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">LineWorks</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">메시지 봇 관리</a></li>
+										<li class="depth2-item"><a href="#">콜백 메시지 폼 관리</a></li>
+										<li class="depth2-item"><a href="#">메시지 전송</a></li>
+										<li class="depth2-item"><a href="#">특정기간 메일삭제</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">근태관리</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">근태 설정</a></li>
+										<li class="depth2-item"><a href="#">근태 코드 타입 관리</a></li>
+										<li class="depth2-item"><a href="#">근태 고드 관리</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 GNB -->
+			</div>
+			<div class="btn-gnb-toggle">
+				<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+				<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+			</div>
 		</div>
 	</div>
-	<div class="btn-wrap right">
-		<div class="btn-align">
-			<div class="btn-item"><a href="#" class="btn-text">신규</a></div>
-			<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
+	<div class="content portal">
+		<div class="title-wrap">
+			<h2 class="title">호칭관리</h2>
+		</div>
+		<div class="top-search-box type2">
+			<select class="styled1" style="width:150px;">
+				<option>호칭코드</option>
+				<option>호칭명</option>
+			</select>
+			<div class="search-text">
+				<input type="text" class="required">
+				<button type="button" class="btn-search">검색</button>
+			</div>
+		</div>
+		<!-- 컨텐츠 -->
+		<div class="board-section">
+			<div class="board-list1 mHide">
+				<table>
+					<caption>호칭관리 게시판</caption>
+					<colgroup>
+						<col style="width:10%;">
+						<col style="width:15%;">
+						<col style="width:25%;">
+						<col style="width:25%;">
+						<col style="width:15%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">호칭코드</th>
+							<th scope="col">국문 호칭명</th>
+							<th scope="col">영문 호칭명</th>
+							<th scope="col">순서</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td class="subject"><a href="#" class="link"><span class="tit">JT00001P56</span></a></td>
+							<td>대표이사</td>
+							<td>대표이사</td>
+							<td>
+								<button type="button"><span class="btn-up">위로</span></button>
+								<button type="button"><span class="btn-down">아래로</span></button>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="subject"><a href="#" class="link"><span class="tit">JT00010P56</span></a></td>
+							<td>이사</td>
+							<td>이사</td>
+							<td>
+								<button type="button"><span class="btn-up">위로</span></button>
+								<button type="button"><span class="btn-down">아래로</span></button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 페이징 -->
+			<div class="paging mHide">
+				<a href="#" class="btn first">처음</a>
+				<a href="#" class="btn prev">이전</a>
+				<a href="#" class="page fColor">1</a><!-- 현재 선택된 페이지 class="fColor" -->
+				<a href="#" class="page">2</a>
+				<a href="#" class="page">3</a>
+				<a href="#" class="page">4</a>
+				<a href="#" class="page">5</a>
+				<a href="#" class="page">6</a>
+				<a href="#" class="page">7</a>
+				<a href="#" class="page">8</a>
+				<a href="#" class="page">9</a>
+				<a href="#" class="page">10</a>
+				<a href="#" class="btn next">다음</a>
+				<a href="#" class="btn end">마지막</a>
+			</div>
+			<p>호칭 상세보기</p>
+			<div class="board-write1">
+				<table>
+					<colgroup class="mHide"><!-- 웹전용 -->
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row" colspan="2">호칭코드 <span class="important">*</span></th>
+							<td>
+								<div class="input-area" style="max-width:400px;">
+									<input type="text">
+									<span class="btn-text mid">중복검사</span>
+								</div>
+								<span>(Suffix:P56)</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">호칭명 <span class="important">*</span></th>
+							<th scope="row"><label for="Text01">국문 호칭명</label><span class="important">*</span></th>
+							<td><input type="text" id="Text01" class="required" style="width:312px"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="Text02">영문 호칭명</label><span class="important">*</span></th>
+							<td><input type="text" id="Text02" class="required" style="width:312px"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="btn-wrap right">
+			<div class="btn-align">
+				<div class="btn-item"><a href="#" class="btn-text">신규</a></div>
+				<div class="btn-item"><a href="#" class="btn-text fColor bdColor">저장</a></div>
+			</div>
 		</div>
 	</div>
 </div>

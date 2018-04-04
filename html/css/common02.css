@@ -13,7 +13,13 @@
 
 }
 .content {padding-bottom:30px;}
-
+/* 180404 추가 */
+.cont-iframe {
+	position: absolute;
+	left: 0;
+	top:45px;
+}
+/*// 180404 추가 */
 .wrapper.fixed-btn-type {padding-bottom:100px;}
 .content.fixed-btn-type {padding-bottom:120px;}
 

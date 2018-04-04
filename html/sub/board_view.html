@@ -20,205 +20,499 @@
 </head>
 
 <body>
-<div class="content">
-	<div class="title-wrap">
-		<h2 class="title">공지사항</h2>
-	</div>
-	<div class="board-view1">
-		<ul>
-			<li class="tit-wrap">
-				<div class="left-box">
-					<p>사이트 오지 사이트 <span class="fColor">(5)</span></p>
-				</div>
-				<div class="right-box">
-					<div class="left">
-						<span class="icon-text icon01"><span class="text"><em class="mHide">조회수</em> 134</span></span>
-						<button type="button" class="btn-icon-text icon02"><span class="text"><em class="mHide">좋아요</em> 171</span></button>
+<div class="container">
+	<div class="gnb-utill">
+		<div class="btn-close-box wHide">
+			<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
+		</div>
+		<!-- gnb -->
+		<div class="gnb-sliding">
+			<div class="gnb-wrap">
+				<div class="gnb-menu-box">
+					<div class="home">
+						<a href="#" class="link-home ico01">홈</a>
+						<button type="button" class="btn-setting">설정</button>
 					</div>
-					<div class="right">
-						<button type="button" class="btn-icon icon01"><span class="text">즐겨찾기</span></button>
-						<button type="button" class="btn-icon icon02"><span class="text">공유</span></button>
-						<div class="tooltip">
-							<ul>
-								<li><a href="#">내용 보내기</a></li>
-								<li><a href="#">링크 보내기</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="info-wrap">
-				<div class="left-box">
-					<ul>
-						<li><button type="button" class="btn-user">관리자</button></li>
-						<li>2017.12.12 08:04:15</li>
-						<li>게시기간 : 2017.12.05~2017.12.31</li>
+					<ul class="gnb-list">
+						<li class="gnb-item">
+							<p class="gnb-title ico02">게시판</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">게시판</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">최근게시물</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">공지사항</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">경조사</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판lv2</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">IT/Biz Trend</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">양식기 전용 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">R&amp;D부문/개발실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">Master Data 신규</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">익명게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">제안자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">권한 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">임시저장함</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">관리자 메뉴</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico03">전자결재</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전자결재</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico04">설문조사</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">설문조사</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico05">업무지원</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">업무지원</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico06">Knowledge</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">Knowledge</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico07">e-HR</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">e-HR</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico08">평가시스템</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">평가시스템</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico09">개인블로그</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">개인블로그</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico10">전사공유지식</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전사공유지식</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">전사공유지식</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
-				<div class="right-box">
-					<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
-					<div class="attach-list">
-						<ul>
-							<li><a href="#">오픈안내문.ppt</a></li>
-							<li><a href="#">이벤트명단.xlsx</a></li>
-							<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li class="cont-wrap">
-				<div class="cont">
-					안녕하세요. <br>
-					그룹웨어 사이트 오픈되어 안내해드립니다.<br><br>
-					<img src="../images2.0/temp/@cont.jpg" alt="">
-				</div>
-				<!-- 웹전용 태그 수정 -->
-				<div class="tag-wrap mHide">
-					<span class="tit bgColor">Tag</span>
-					<div class="tag-list">
-						<span class="tag-group">
-							<a href="#" class="tag">웅진</a>
-							<a href="#" class="tag">그룹웨어</a>
-						</span>
-						<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
-					</div>
-					<div class="tag-modify">
-						<div class="input-area">
-							<div class="tagging-box">
-								<p class="fake-placeholder">태그추가</p>
-								<div data-tags-input-name="tag" class="js-tagBox"></div>
-							</div>
-							<input type="text" class="wHide">
-						</div>
-						<div class="btn-area">
-							<button type="button" class="btn-text mid btnCancel">취소</button>
-							<button type="button" class="btn-text mid bdColor fColor btnStorage">저장</button>
-						</div>
-					</div>
-				</div>
-				<!-- //웹전용 태그 수정 -->
 
-				<!-- 모바일전용 태그 수정 -->
-				<div class="tag-wrap wHide">
-					<span class="tit bgColor">Tag</span>
-					<div class="tag-list">
-						<span class="tag-group">
-							<a href="#" class="tag">웅진</a>
-							<a href="#" class="tag">그룹웨어</a>
-						</span>
-						<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
-					</div>
-					<div class="tag-modify">
-						<textarea cols="" rows="" class="autoHei"></textarea>
-						<div class="btn-area">
-							<button type="button" class="btn-text sm btnCancel">취소</button>
-							<button type="button" class="btn-text sm bdColor fColo btnStorage">저장</button>
-						</div>
-					</div>
-				</div>
-				<!-- // 모바일전용 태그 수정 -->
-			</li>
-		</ul>
-	</div>
-	<div class="btn-wrap right">
-		<div class="btn-align mHide">
-			<div class="btn-item"><a class="btn-text">인쇄</a></div>
-		</div>
-		<div class="btn-align">
-			<div class="btn-item"><a class="btn-text">공지</a></div>
-			<div class="btn-item"><a class="btn-text">타사공지</a></div>
-			<div class="btn-item"><a class="btn-text">답글</a></div>
-		</div>
-		<div class="btn-align">
-			<div class="btn-item"><a class="btn-text">수정</a></div>
-			<div class="btn-item"><a class="btn-text">삭제</a></div>
-			<div class="btn-item"><a class="btn-text">목록</a></div>
-		</div>
-	</div>
-	<div class="reply-wrap">
-		<p class="tit">댓글 <span class="fColor">(2)</span></p>
-		<div class="btn-reply">
-			<span class="off">댓글등록</span>
-			<span class="on">댓글달기</span>
-		</div>
-		<div class="input-area reply-inupt">
-			<div class="text-wrap">
-				<textarea placeholder="댓글을 입력해주세요"></textarea>
-			</div>
-			<div class="btn-area">
-				<button type="button"><span class="btn-text btn-square">저장</span></button>
-			</div>
-		</div>
-		<div class="reply-list">
-			<ul>
-				<li class="reply-item">
-					<div class="info-wrap">
-						<div class="user">
-							<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-							<p class="name btn-user">관리자</p>
-						</div>
-						<div class="info-list">
-							<span class="date">2017.12.12 08:04:15</span>
-							<ul>
-								<li><button type="button" class="btn-re-modify">수정</button></li>
-								<li><button type="button">삭제</button></li>
+				<!-- 서브 GNB -->
+				<div class="sub-gnb">
+					<div class="depth1">
+						<div class="scroll-area">
+							<div class="depth-top">
+								<p class="depth1-title"><span class="text">게시판</span></p>
+								<div class="menu-box">
+									<div class="search-box1">
+										<input type="text">
+										<button type="button" class="btn-srch">검색</button>
+									</div>
+									<a href="#" class="btn-text mid">등록</a>
+								</div>
+							</div>
+							<ul class="depth1-list">
+								<li class="depth1-item">
+									<a href="#" class="d-title">최근게시물</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">공지사항</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">경조사</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">자유게시판lv2</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">IT/Biz Trend</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">양식기 전용 게시판</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">자유게시판</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">게시판 01</a></li>
+										<li class="depth2-item"><a href="#">게시판 02</a></li>
+										<li class="depth2-item"><a href="#">게시판 03</a></li>
+										<li class="depth2-item"><a href="#">게시판 04</a></li>
+										<li class="depth2-item"><a href="#">게시판 05</a></li>
+										<li class="depth2-item"><a href="#">게시판 06</a></li>
+										<li class="depth2-item"><a href="#">게시판 07</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">자료실</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">R&amp;D부문/개발실</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">Master Data 신규</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">익명게시판</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">제안자료실</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">권한 게시판</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">임시저장함</a>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">관리자 메뉴</a>
+									<ul class="depth2-list">
+										<li class="depth2-item on"><a href="#">게시판셋 관리</a></li><!-- 선택메뉴 class="on" -->
+										<li class="depth2-item"><a href="#">게시판 관리</a></li>
+										<li class="depth2-item"><a href="#">게시물 관리</a></li>
+										<li class="depth2-item"><a href="#">게시판 Import</a></li>
+										<li class="depth2-item"><a href="#">게시판 Export</a></li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="text-area">오픈 축하합니다~~</div>
-					<div class="input-area rereply-inupt">
-						<div class="text-wrap">
-							<textarea placeholder="댓글을 입력해주세요"></textarea>
+				</div>
+				<!-- //서브 GNB -->
+			</div>
+			<div class="btn-gnb-toggle">
+				<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+				<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="title-wrap">
+			<h2 class="title">공지사항</h2>
+		</div>
+		<div class="board-view1">
+			<ul>
+				<li class="tit-wrap">
+					<div class="left-box">
+						<p>사이트 오지 사이트 <span class="fColor">(5)</span></p>
+					</div>
+					<div class="right-box">
+						<div class="left">
+							<span class="icon-text icon01"><span class="text"><em class="mHide">조회수</em> 134</span></span>
+							<button type="button" class="btn-icon-text icon02"><span class="text"><em class="mHide">좋아요</em> 171</span></button>
 						</div>
-						<div class="btn-area type2">
-							<button type="button" class="btn-text btn-cancel">취소</button>
-							<button type="button" class="btn-text btn-save">저장</button>
+						<div class="right">
+							<button type="button" class="btn-icon icon01"><span class="text">즐겨찾기</span></button>
+							<button type="button" class="btn-icon icon02"><span class="text">공유</span></button>
+							<div class="tooltip">
+								<ul>
+									<li><a href="#">내용 보내기</a></li>
+									<li><a href="#">링크 보내기</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</li>
-				<li class="reply-item">
-					<div class="info-wrap">
-						<div class="user">
-							<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
-							<p class="name btn-user">김웅진 대리</p>
-						</div>
-						<div class="info-list">
-							<span class="date">2017.12.12 08:04:15</span>
+				<li class="info-wrap">
+					<div class="left-box">
+						<ul>
+							<li><button type="button" class="btn-user">관리자</button></li>
+							<li>2017.12.12 08:04:15</li>
+							<li>게시기간 : 2017.12.05~2017.12.31</li>
+						</ul>
+					</div>
+					<div class="right-box">
+						<button type="button" class="btn-attach">첨부파일<span class="fColor">(2)</span></button>
+						<div class="attach-list">
 							<ul>
-								<li><button type="button" class="btn-re-modify">수정</button></li>
-								<li><button type="button">삭제</button></li>
+								<li><a href="#">오픈안내문.ppt</a></li>
+								<li><a href="#">이벤트명단.xlsx</a></li>
+								<li><a href="#">이벤트명단 이벤트명단이벤트명단.xlsx</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="text-area">오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~</div>
-					<div class="input-area rereply-inupt">
-						<div class="text-wrap">
-							<textarea placeholder="댓글을 입력해주세요"></textarea>
+				</li>
+				<li class="cont-wrap">
+					<div class="cont">
+						안녕하세요. <br>
+						그룹웨어 사이트 오픈되어 안내해드립니다.<br><br>
+						<img src="../images2.0/temp/@cont.jpg" alt="">
+					</div>
+					<!-- 웹전용 태그 수정 -->
+					<div class="tag-wrap mHide">
+						<span class="tit bgColor">Tag</span>
+						<div class="tag-list">
+							<span class="tag-group">
+								<a href="#" class="tag">웅진</a>
+								<a href="#" class="tag">그룹웨어</a>
+							</span>
+							<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
 						</div>
-						<div class="btn-area type2">
-							<button type="button" class="btn-text btn-cancel">취소</button>
-							<button type="button" class="btn-text btn-save">저장</button>
+						<div class="tag-modify">
+							<div class="input-area">
+								<div class="tagging-box">
+									<p class="fake-placeholder">태그추가</p>
+									<div data-tags-input-name="tag" class="js-tagBox"></div>
+								</div>
+								<input type="text" class="wHide">
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-text mid btnCancel">취소</button>
+								<button type="button" class="btn-text mid bdColor fColor btnStorage">저장</button>
+							</div>
 						</div>
 					</div>
+					<!-- //웹전용 태그 수정 -->
+
+					<!-- 모바일전용 태그 수정 -->
+					<div class="tag-wrap wHide">
+						<span class="tit bgColor">Tag</span>
+						<div class="tag-list">
+							<span class="tag-group">
+								<a href="#" class="tag">웅진</a>
+								<a href="#" class="tag">그룹웨어</a>
+							</span>
+							<button type="button" class="btn-icon icon05 btn-tagModi">수정</button>
+						</div>
+						<div class="tag-modify">
+							<textarea cols="" rows="" class="autoHei"></textarea>
+							<div class="btn-area">
+								<button type="button" class="btn-text sm btnCancel">취소</button>
+								<button type="button" class="btn-text sm bdColor fColo btnStorage">저장</button>
+							</div>
+						</div>
+					</div>
+					<!-- // 모바일전용 태그 수정 -->
 				</li>
 			</ul>
 		</div>
-	</div>
-	<div class="page-wrap">
-		<ul>
-			<li class="prev">
-				<span class="tit">이전글</span>
-				<a href="#" class="cont"><span class="cont-tit">랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 업과</span><em class="fColor">(983)</em></a>
-				<span class="name btn-user">이화영 부장</span>
-				<span class="date">2017.07.24</span>
-			</li>
-			<li class="next">
-				<span class="tit">다음글</span>
-				<a href="#" class="cont"><span class="cont-tit">소라마치 그룹웨어 데모 </span> <em class="fColor">(3)</em></a>
-				<span class="name btn-user">담당자</span>
-				<span class="date">2017.07.24</span>
-			</li>
-		</ul>
+		<div class="btn-wrap right">
+			<div class="btn-align mHide">
+				<div class="btn-item"><a class="btn-text">인쇄</a></div>
+			</div>
+			<div class="btn-align">
+				<div class="btn-item"><a class="btn-text">공지</a></div>
+				<div class="btn-item"><a class="btn-text">타사공지</a></div>
+				<div class="btn-item"><a class="btn-text">답글</a></div>
+			</div>
+			<div class="btn-align">
+				<div class="btn-item"><a class="btn-text">수정</a></div>
+				<div class="btn-item"><a class="btn-text">삭제</a></div>
+				<div class="btn-item"><a class="btn-text">목록</a></div>
+			</div>
+		</div>
+		<div class="reply-wrap">
+			<p class="tit">댓글 <span class="fColor">(2)</span></p>
+			<div class="btn-reply">
+				<span class="off">댓글등록</span>
+				<span class="on">댓글달기</span>
+			</div>
+			<div class="input-area reply-inupt">
+				<div class="text-wrap">
+					<textarea placeholder="댓글을 입력해주세요"></textarea>
+				</div>
+				<div class="btn-area">
+					<button type="button"><span class="btn-text btn-square">저장</span></button>
+				</div>
+			</div>
+			<div class="reply-list">
+				<ul>
+					<li class="reply-item">
+						<div class="info-wrap">
+							<div class="user">
+								<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
+								<p class="name btn-user">관리자</p>
+							</div>
+							<div class="info-list">
+								<span class="date">2017.12.12 08:04:15</span>
+								<ul>
+									<li><button type="button" class="btn-re-modify">수정</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text-area">오픈 축하합니다~~</div>
+						<div class="input-area rereply-inupt">
+							<div class="text-wrap">
+								<textarea placeholder="댓글을 입력해주세요"></textarea>
+							</div>
+							<div class="btn-area type2">
+								<button type="button" class="btn-text btn-cancel">취소</button>
+								<button type="button" class="btn-text btn-save">저장</button>
+							</div>
+						</div>
+					</li>
+					<li class="reply-item">
+						<div class="info-wrap">
+							<div class="user">
+								<div class="img-area"><img src="../images2.0/temp/@user.jpg" alt=""></div>
+								<p class="name btn-user">김웅진 대리</p>
+							</div>
+							<div class="info-list">
+								<span class="date">2017.12.12 08:04:15</span>
+								<ul>
+									<li><button type="button" class="btn-re-modify">수정</button></li>
+									<li><button type="button">삭제</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text-area">오픈 축하합니다.<br>귀사의 발전이 되길 기원합니다~</div>
+						<div class="input-area rereply-inupt">
+							<div class="text-wrap">
+								<textarea placeholder="댓글을 입력해주세요"></textarea>
+							</div>
+							<div class="btn-area type2">
+								<button type="button" class="btn-text btn-cancel">취소</button>
+								<button type="button" class="btn-text btn-save">저장</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-wrap">
+			<ul>
+				<li class="prev">
+					<span class="tit">이전글</span>
+					<a href="#" class="cont"><span class="cont-tit">랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 백업과랜섬웨어로부터 pc를 보호하는 방법. 정기적인 업과</span><em class="fColor">(983)</em></a>
+					<span class="name btn-user">이화영 부장</span>
+					<span class="date">2017.07.24</span>
+				</li>
+				<li class="next">
+					<span class="tit">다음글</span>
+					<a href="#" class="cont"><span class="cont-tit">소라마치 그룹웨어 데모 </span> <em class="fColor">(3)</em></a>
+					<span class="name btn-user">담당자</span>
+					<span class="date">2017.07.24</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
 </body>

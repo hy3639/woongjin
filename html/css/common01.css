@@ -12,6 +12,13 @@
 	left:0;right:0;bottom:0;
 	z-index:5;
 }
+/* 180404 추가 */
+.cont-iframe {
+	position: absolute;
+	left:0;
+	top: 70px;
+}
+/*// 180404 추가 */
 
 /* 스크롤 탑 버튼 */
 .btn-scroll-top {
@@ -1020,12 +1027,6 @@ line-height:35px;
 	background-image:url(../images2.0/btn/btn_ico07.png);
 }
 
-.btn-icon.icon09 {
-	width:20px;
-	height:20px;
-	background:url(../images2.0/btn/btn_modify04.png) no-repeat 50% 50%;
-}
-
 /* 조회수 */
 .icon-text {
 	display:inline-block;
@@ -1408,17 +1409,20 @@ line-height:35px;
 	position:relative;
 	z-index:100;
 }
+/* 180404 수정 */
 .gnb-sliding {
 	position:fixed;
-	left:0;top:70px;bottom:50px;
+	left:0;top:0;bottom:0;
 	width:220px;
-	padding-top:25px;
+	height: 100%;
 }
+/*// 180404 수정 */
 .gnb-wrap {
 	overflow:hidden;
 	position:absolute;
 	left:0;right:0;top:0;bottom:0;
 	width:220px;
+	padding-top: 50px;
 	box-sizing:border-box;
 	border-right:1px solid #e5e5e5;
 	background-color:#fafafa;
@@ -1471,26 +1475,29 @@ line-height:35px;
 .gnb-wrap .gnb-list .gnb-item .gnb-title.ico10:before {background-image:url(../images2.0/ico/gnb_ico10.png);}
 .gnb-wrap .gnb-list .gnb-item:hover .gnb-title {color:#fff;}
 .gnb-wrap .gnb-list .gnb-item:hover .gnb-title:before {background-position:0 -18px;}
-
+/* 180404 수정 */
 .gnb-wrap .depth1 {
 	display:none;
 	overflow:hidden;
 	position:fixed;
-	left:219px;top:71px;bottom:50px;
+	left:219px;top:0;bottom:0;
 	width:220px;
 	box-sizing:border-box;
 	border-right:1px solid #e5e5e5;
 	border-left:1px solid #e5e5e5;
 	background-color:#fafafa;
 }
+/*// 180404 수정 */
 .gnb-wrap .gnb-list .gnb-item:hover .depth1 {display:block;z-index:15;}
+/* 180404 수정 */
 .gnb-wrap .depth1 .scroll-area {
 	overflow-y:scroll;
 	height:100%;
 	margin-right:-20px;
-	padding-top:12px;
+	padding-top:50px;
 	box-sizing:border-box;
 }
+/*// 180404 수정 */
 .gnb-wrap .depth1 .depth-top {border-bottom:1px solid #eaeaea;}
 
 .gnb-wrap .depth1 .depth-top .menu-box {
@@ -1731,16 +1738,17 @@ line-height:35px;
 	box-sizing:border-box;
 	background-color:#fff;
 }
-
+/* 180404 수정 */
 .gnb-wrap .sub-gnb {
 	overflow:hidden;
 	position:absolute;
-	left:0;top:50px;bottom:0;
+	left:0;top:0;bottom:0;
 	width:220px;
 	box-sizing:border-box;
 	border-right:1px solid #e5e5e5;
 	background-color:#fafafa;
 }
+/*// 180404 수정 */
 
 .gnb-wrap .sub-gnb .depth1 {
 	display:block;
@@ -1750,7 +1758,7 @@ line-height:35px;
 	padding-top:0;
 	border:0;
 }
-.gnb-wrap .sub-gnb .scroll-area {padding-top:0;}
+/* .gnb-wrap .sub-gnb .scroll-area {padding-top:0;} 180404*/
 
 /* 트리 리스트 */
 .tree-menu {
@@ -7913,6 +7921,7 @@ line-height:35px;
 .portal .tabCont .board-write1 td {padding-left:0}
 .portal .tabCont .board-write1 td .required-box {width:100%;}
 .portal .tabCont .board-write1 .board-write3 td {padding-left:30px}
+
 .portal .tabCont .board-write1 .input-area {display:inline-block;width:100%;box-sizing:border-box;}
 .portal .tabCont .board-write1 .input-area + span {margin-left:20px;}
 
@@ -7929,10 +7938,36 @@ line-height:35px;
 	font-size:16px;
 	color:#333;
 }
+/* 180404 추가 */
+.portal .board-section .board-list1 td button {
+	position: relative;
+	border:1px solid #e5e5e5;
+	width: 28px;
+	height: 28px;
+	box-sizing: border-box;
+}
+.portal .board-section .board-list1 td button span:before {
+	display: block;
+	content:'';
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.portal .board-section .board-list1 td button .btn-up:before {background:url(../images2.0/btn/btn_up.png) no-repeat center}
+.portal .board-section .board-list1 td button .btn-down:before {background:url(../images2.0/btn/btn_down.png) no-repeat center;}
+.portal .board-section .board-list1 td button span {
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+}
+/*// 180404 추가 */
 
 /* ===========================================================================
 	내부회계관리시스템
 =========================================================================== */
+.accounting .sub-gnb .scroll-area {padding-top: 0} /*180404 추가*/
 .accounting .utill {top:18px;right:50px;}
 .accounting .utill .txt {
 	margin-right:20px;

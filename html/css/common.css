@@ -55,15 +55,16 @@ input[type=password] {
 	margin-left:0 !important;
 	margin-right:0 !important
 }
-
+/* 180404 수정 */
 .container {
 	width: 100%;
 	padding:0 0 0 220px;
 	position: absolute;
 	left: 0;
-	top:70px;
+	top:-1px;
 	box-sizing: border-box;
 }
+/*// 180404 수정 */
 
 .footer {
 	overflow:hidden;
