@@ -1020,6 +1020,12 @@ line-height:35px;
 	background-image:url(../images2.0/btn/btn_ico07.png);
 }
 
+.btn-icon.icon09 {
+	width:20px;
+	height:20px;
+	background:url(../images2.0/btn/btn_modify04.png) no-repeat 50% 50%;
+}
+
 /* 조회수 */
 .icon-text {
 	display:inline-block;
