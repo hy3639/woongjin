@@ -60,7 +60,7 @@
 					});
 				}else{
 					$(this).addClass('on');
-					$('.gnb-sliding').show().animate({left:0}, 300);
+					$('#cont-iframe').contents().find('.gnb-sliding').show().animate({left:0}, 300);
 				}
 			}else{
 				$('#cont-iframe').contents().find('.gnb-utill, .gnb-sliding').show();
