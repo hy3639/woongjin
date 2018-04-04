@@ -1322,7 +1322,7 @@ function gnbLayer(){
 	(function($) {
 		$('#cont-iframe').contents().find('.gnb-utill, .gnb-sliding').show();
 		$('#cont-iframe').contents().find('.gnb-utill').animate({right:0}, 300, function(){
-			$('.gnb-utill .btn-close-box').fadeIn(200);
+			$('.btn-close-box').fadeIn(200);
 		});
 	})(jQuery);
 }

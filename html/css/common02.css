@@ -1138,25 +1138,27 @@ select.styled1 {
 	border-left:1px solid #e5e5e5;
 	background-color:#fff;
 }
-.gnb-utill .btn-close-box {
+.btn-close-box {
 	display:none;
 	position:absolute;
-	right:0;top:-46px;
+	right:0;
+	top:0;
+	z-index:5;
 	width:200px;
-	height:45px;
+	height:44px;
 	background-color:#fff;
 }
-.gnb-utill .btn-close {
+.btn-close-box .btn-close {
 	position:absolute;
 	right:0;top:0;
 	width:45px;
-	height:45px;
+	height:44px;
 	border-left:1px solid #e5e5e5;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
 }
-.gnb-utill .btn-close .icon {
+.btn-close-box .btn-close .icon {
 	position:absolute;
 	left:50%;top:50%;
 	width:15px;
