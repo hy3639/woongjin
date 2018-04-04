@@ -49,6 +49,7 @@
 		});
 
 		// gnb 버튼
+		/*
 		$('.btn-gnb').click(function(){
 			var winW = $(window).width();
 			if(winW > 800){
@@ -69,6 +70,7 @@
 				});
 			}
 		});
+		*/
 		$('.gnb-utill .btn-close').click(function(){
 			$('.gnb-utill .btn-close-box').fadeOut(100);
 			$('.gnb-utill').animate({right:'-100%'}, 300, function(){
