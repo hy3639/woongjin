@@ -54,7 +54,7 @@
 			if(winW > 800){
 				if($(this).hasClass('on')){
 					$(this).removeClass('on');
-					$('.gnb-sliding').animate({left:-220}, 300, function(){
+					$('#cont-iframe').contents().find('.gnb-sliding').animate({left:-220}, 300, function(){
 						$(this).hide();
 						$('.header').css({'z-index':'100'});
 					});
