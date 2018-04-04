@@ -60,13 +60,11 @@
 		text-align:center;
 	}
 
-	.container.main {
-		padding:71px 0 50px 220px;
-	}
-
+	.container.main {}
 	.content {
 		overflow:hidden;
 		margin-top:-1px;
+		padding-top: 0;
 		padding-bottom:0;
 		background-color:#f5f5f5;
 	}
