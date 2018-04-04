@@ -981,7 +981,7 @@ function resizeMid(){
 
 			$('.gnb-sliding').removeAttr('style');
 			$('.wrapper').addClass('web').removeClass('mobile');
-			$('.content').addClass('web').removeClass('mobile');
+			$('.container').addClass('web').removeClass('mobile');
 			$('.depth1, .gnb-utill').removeAttr('style');
 
 			$('.gnb-wrap .gnb-list .gnb-item').mouseenter(function(){
@@ -1073,7 +1073,7 @@ function resizeMid(){
 
 			/* gnb */
 			$('.wrapper').addClass('mobile').removeClass('web');
-			$('.content').addClass('mobile').removeClass('web'); // 추가
+			$('.container').addClass('mobile').removeClass('web'); // 추가
 			$('.gnb-sliding, .gnb-menu-box').removeAttr('style');
 			$('.btn-gnb-toggle').removeClass('on').removeAttr('style');
 
