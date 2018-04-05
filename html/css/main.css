@@ -1137,7 +1137,10 @@
 	}
 
 	/* 환율 */
-	.iframe-box {margin-top:30px;}
+	.iframe-box {
+		margin-top:30px;
+		text-align:center;
+	}
 
 
 	/* 세계시각 */
