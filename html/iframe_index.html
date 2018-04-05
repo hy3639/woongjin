@@ -257,10 +257,10 @@ $(window).load(function(){
 		}
 		document.getElementById('#cont-iframe').contentWindow.resizeBox();;
 		
-		slider1.destroySlider();
-		slider2.destroySlider();
-		slider1.reloadSlider();
-		slider2.reloadSlider();
+		document.getElementById('#cont-iframe').contentWindow.slider1.destroySlider();
+		document.getElementById('#cont-iframe').contentWindow.slider2.destroySlider();
+		document.getElementById('#cont-iframe').contentWindow.slider1.reloadSlider();
+		document.getElementById('#cont-iframe').contentWindow.slider2.reloadSlider();
 		$('.dimmed').remove();
 		$('.layer-popup').hide();
 	});
