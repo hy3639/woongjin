@@ -171,6 +171,17 @@
 		</div>
 	</div>
 </div>
-
+<script>
+	$(window).load(function(){
+		var leftH = $('.turn-area').height();
+		var rightH = $('.set-box').height();
+		if (leftH >= rightH)
+		{
+			$('.info-setting').attr('style', 'min-height:'+leftH+'px');
+		}else {
+			$('.info-setting').attr('style', 'min-height:'+rightH+'px');
+		}
+	});
+</script>
 </body>
 </html>
