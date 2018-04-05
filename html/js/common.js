@@ -481,11 +481,25 @@
 		});
 
 		/* 라디오 선택시 컨텐츠 영역 노출 : 단독*/
+		/*
 		$('.formSingle').each(function(){
 			var id = $(this).attr('id');
 			if(this.checked){
 				$('.' + id).show();
 			}
+			var name = $(this).attr('name');
+			$('input[name=' + name + ']').change(function(){
+				if($('.formSingle').is(':checked')){
+					$('.' + id).show();
+				}else{
+					$('.' + id).hide();
+				}
+			});
+		});
+		*/
+		$('.formSingle').each(function(){
+			console.log(0);
+			var id = $(this).attr('id');
 			var name = $(this).attr('name');
 			$('input[name=' + name + ']').change(function(){
 				if($('.formSingle').is(':checked')){
