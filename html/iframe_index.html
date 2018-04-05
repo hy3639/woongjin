@@ -255,7 +255,8 @@ $(window).load(function(){
 		if(data == 'layout3'){
 			$('#cont-iframe').contents().find('.container').attr('class', 'container media');
 		}
-		resizeBox();
+		document.getElementById('#cont-iframe').contentWindow.resizeBox();;
+		
 		slider1.destroySlider();
 		slider2.destroySlider();
 		slider1.reloadSlider();
