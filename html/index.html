@@ -1679,7 +1679,7 @@ $(window).load(function(){
 		$(this).removeClass('bdColor');
 	});
 
-	// 임시 레이어팝업
+	// 셋팅 레이어팝업
 	$('.btn-setting').click(function(){
 		$(parent.document).contents().find('.wrapper').append('<div class="dimmed"></div>');
 		$(parent.document).contents().find('.dimmed').fadeIn();
@@ -1688,37 +1688,6 @@ $(window).load(function(){
 	$(document).on('click', '.pop-close',function(){
 		$(parent.document).contents().find('.dimmed').remove();
 	});
-
-	// 팝업 내 동작
-	/*
-	$('.btn-text.apply').click(function(){
-		var data = $('.pop-seeting .layout-list input[type=radio]:checked').attr('data');
-		if(data == 'layout1'){
-			$('.container').attr('class', 'container stage1');
-			$('.content .move-cont .cont').removeAttr('style');
-		}
-		if(data == 'layout2'){
-			$('.container').attr('class', 'container stage2');
-			$('.content .move-cont .cont').removeAttr('style');
-		}
-		if(data == 'layout3'){
-			$('.container').attr('class', 'container media');
-		}
-
-
-
-		resizeBox();
-
-		slider1.destroySlider();
-		slider2.destroySlider();
-
-		slider1.reloadSlider();
-		slider2.reloadSlider();
-
-		$('.dimmed').remove();
-		$('.layer-popup').hide();
-	});
-	*/
 
 	// 사전 이미지 교체
 	var dIdx = 0;
