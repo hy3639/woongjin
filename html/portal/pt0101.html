@@ -2050,6 +2050,13 @@
 			resizeBox();// 상단 박스 넓이
 			resizeMain();
 
+			slider.destroySlider();
+			slider1.destroySlider();
+			slider2.destroySlider();
+			slider3.destroySlider();
+			slider4.destroySlider();
+			slider5.destroySlider();
+			slider6.destroySlider();
 			slider.reloadSlider();
 			slider1.reloadSlider();
 			slider2.reloadSlider();
@@ -2061,7 +2068,6 @@
 			/* 스케줄 영역 요일정렬 */
 			$('.schedule .date').each(function(){
 				var numW =  $(this).find('.number').outerWidth();
-				console.log(numW);
 				$(this).find('.text').css({'left':numW + 5});
 			});
 		});
@@ -2070,7 +2076,7 @@
 		$('.slider1.type1').each(function(){
 			var sliderW = $(this).outerWidth();
 			//var itemW = (sliderW/3) * 2;
-			slider1 = $('.slider1.type1 .bxslider').bxSlider({
+			slider1 = $(this).find('.bxslider').bxSlider({
 				pager: false,
 				autoControls:true,
 				minSlides: 2,
@@ -2281,16 +2287,17 @@ function resizeBox(){
 		// 1280 이상이며 박스 3단 정렬시 경우 박스 넚이
 		var winW = $(window).width();
 		if(winW > 1279){
-			var boxW = $('.content').outerWidth();
+			var boxW = $('.move-cont').outerWidth();
 			$('.media .content .move-cont .cont').css({'width':boxW/3});
 		}else{
 			$('.media .content .move-cont .cont').removeAttr('style');
 			$('.stage3 .content .move-cont .cont').css({'width':boxW/3});
 		}
 
-		var boxW = $('.content').outerWidth();
+		var boxW = $('.move-cont').outerWidth();
 		$('.stage3 .content .move-cont .cont').each(function(){
 			$(this).css({'width':boxW/3});
+			console.log(0);
 		});
 	})(jQuery);
 }

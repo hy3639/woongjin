@@ -8305,6 +8305,7 @@ line-height:35px;
 	width:120%;
 }
 .slider1 .bx-wrapper {max-width:100% !important;}
+.slider1 .bx-wrapper .bx-viewport {min-height:282px;}
 .slider1 .bxslider {}
 .slider1 .bxslider .item {
 	width:230px !important;
