@@ -1520,284 +1520,293 @@
 </div>
 
 <script>
-$(window).load(function(){
-	resizeBox();// 상단 박스 넓이
-	resizeMain();
+(function($) {
+	$(window).load(function(){
+		resizeBox();// 상단 박스 넓이
+		resizeMain();
 
-	/* gnb */
-	/* 원뎁스 메뉴 오버시 gnb 배경색상 변경 */
-	$(document).on('mouseenter', '.web .gnb-wrap .gnb-list .gnb-item', function(){
-		$('.web .gnb-menu-box').css({'background-color':'#fff'});
-	});
-	$(document).on('mouseleave', '.web .gnb-wrap .gnb-list .gnb-item', function(){
-		$('.web .gnb-menu-box').css({'background-color':'#fafafa'});
-	});
-
-	/* 컨텐츠 박스 드래그앤드랍 */
-	$('#sortable').sortable();
-	$('#sortable').disableSelection();
-
-	/* 스케줄 영역 요일정렬 */
-	$('.schedule .date').each(function(){
-		var numW =  $(this).find('.number').outerWidth();
-		$(this).find('.text').css({'left':numW + 5});
-	});
-
-	/* 슬라이더 */
-	$('.slider1.type1').each(function(){
-		var sliderW = $(this).outerWidth();
-		//var itemW = (sliderW/3) * 2;
-		slider1 = $('.slider1.type1 .bxslider').bxSlider({
-			pager: false,
-			autoControls:true,
-			minSlides: 2,
-			maxSlides: 2,
-			moveSlides: 1,
-			//slideWidth: itemW,
-			//infiniteLoop:false,
-			pause:7000, // 슬라이드 속도
-			speed:500
+		/* gnb */
+		/* 원뎁스 메뉴 오버시 gnb 배경색상 변경 */
+		$(document).on('mouseenter', '.web .gnb-wrap .gnb-list .gnb-item', function(){
+			$('.web .gnb-menu-box').css({'background-color':'#fff'});
 		});
-		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
-	});
-	$('.slider1.type2').each(function(){
-		var sliderW = $(this).outerWidth();
-		var itemW = (sliderW/3) * 2;
-		slider2 = $('.slider1.type2 .bxslider').bxSlider({
-			pager: false,
-			autoControls:true,
-			minSlides: 2,
-			maxSlides: 2,
-			moveSlides: 1,
-			slideWidth: itemW,
-			//infiniteLoop:false,
-			pause:7000, // 슬라이드 속도
-			speed:500
+		$(document).on('mouseleave', '.web .gnb-wrap .gnb-list .gnb-item', function(){
+			$('.web .gnb-menu-box').css({'background-color':'#fafafa'});
 		});
-		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
-	});
 
-	$('.slider1.type3').each(function(){
-		var sliderW = $(this).outerWidth();
-		//var itemW = (sliderW/3) * 2;
-		slider1 = $('.slider1.type3 .bxslider').bxSlider({
-			pager: false,
-			autoControls:true,
-			minSlides: 2,
-			maxSlides: 2,
-			moveSlides: 1,
-			//slideWidth: itemW,
-			//infiniteLoop:false,
-			pause:7000, // 슬라이드 속도
-			speed:500
+		/* 컨텐츠 박스 드래그앤드랍 */
+		$('#sortable').sortable();
+		$('#sortable').disableSelection();
+
+		/* 스케줄 영역 요일정렬 */
+		$('.schedule .date').each(function(){
+			var numW =  $(this).find('.number').outerWidth();
+			$(this).find('.text').css({'left':numW + 5});
 		});
-		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
-	});
 
-	// 슬라이더 버튼
-	$(document).on('click', '.btn-slide button', function(){
-		if($(this).hasClass('btn-prev')){
-			$(this).closest('.cont').find('.bx-prev').trigger('click');
-		}else{
-			$(this).closest('.cont').find('.bx-next').trigger('click');
-		}
-	});
-
-	$('.slider2').each(function(){
-		slider = $(this).find('.bxslider').bxSlider({
-			pager: true,
-			autoControls:false,
-			//infiniteLoop:false,
-			pause:7000, // 슬라이드 속도
-			speed:500
+		/* 슬라이더 */
+		$('.slider1.type1').each(function(){
+			var sliderW = $(this).outerWidth();
+			//var itemW = (sliderW/3) * 2;
+			slider1 = $('.slider1.type1 .bxslider').bxSlider({
+				pager: false,
+				autoControls:true,
+				minSlides: 2,
+				maxSlides: 2,
+				moveSlides: 1,
+				//slideWidth: itemW,
+				//infiniteLoop:false,
+				pause:7000, // 슬라이드 속도
+				speed:500
+			});
+			$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
 		});
-		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
-	});
-
-	$('.slider3').each(function(){
-		slider3 = $('.slider3 .bxslider').bxSlider({
-			pager: false,
-			autoControls:true,
-			minSlides: 3,
-			maxSlides: 3,
-			moveSlides: 1,
-			slideWidth: 114,
-			//infiniteLoop:false,
-			pause:7000, // 슬라이드 속도
-			speed:500
+		$('.slider1.type2').each(function(){
+			var sliderW = $(this).outerWidth();
+			var itemW = (sliderW/3) * 2;
+			slider2 = $('.slider1.type2 .bxslider').bxSlider({
+				pager: false,
+				autoControls:true,
+				minSlides: 2,
+				maxSlides: 2,
+				moveSlides: 1,
+				slideWidth: itemW,
+				//infiniteLoop:false,
+				pause:7000, // 슬라이드 속도
+				speed:500
+			});
+			$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
 		});
-		$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
-	});
 
-	/* 주간일정 달력 슬라이드 */
-	slider4 = $('.slider4 .bxslider').bxSlider({
-		pager: false,
-		autoControls:true,
-		minSlides: 7,
-		maxSlides: 7,
-		moveSlides: 7,
-		slideWidth: 34,
-		//infiniteLoop:false,
-		pause:7000, // 슬라이드 속도
-		speed:500
-	});
+		$('.slider1.type3').each(function(){
+			var sliderW = $(this).outerWidth();
+			//var itemW = (sliderW/3) * 2;
+			slider1 = $('.slider1.type3 .bxslider').bxSlider({
+				pager: false,
+				autoControls:true,
+				minSlides: 2,
+				maxSlides: 2,
+				moveSlides: 1,
+				//slideWidth: itemW,
+				//infiniteLoop:false,
+				pause:7000, // 슬라이드 속도
+				speed:500
+			});
+			$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+		});
 
-	/* My Gallery 슬라이드 */
-	slider5 = $('.slider5 .bxslider').bxSlider({
-		captions: true,
-		pager: true,
-		auto: true,
-		autoControls:true,
-		minSlides: 1,
-		maxSlides: 1,
-		moveSlides: 1,
-		//infiniteLoop:false,
-		pause:5000, // 슬라이드 속도
-		speed:500,
-		adaptiveHeight:true
-	});
-
-	/* 개인롤링 슬라이드 */
-	slider6 = $('.slider6 .bxslider').bxSlider({
-		captions: true,
-		pager: true,
-		auto: true,
-		autoControls:true,
-		minSlides: 1,
-		maxSlides: 1,
-		moveSlides: 1,
-		//infiniteLoop:false,
-		pause:5000, // 슬라이드 속도
-		speed:500,
-		adaptiveHeight:true
-	});
-
-	// 할일 입력란
-	$('.write-box input[type=text]').focus(function(){
-		$(this).addClass('bdColor');
-	}).blur(function(){
-		$(this).removeClass('bdColor');
-	});
-
-	// 셋팅 레이어팝업
-	$('.btn-setting').click(function(){
-		$(parent.document).contents().find('.wrapper').append('<div class="dimmed"></div>');
-		$(parent.document).contents().find('.dimmed').fadeIn();
-		$(parent.document).contents().find('.layer-popup').show();
-	});
-	$(document).on('click', '.pop-close',function(){
-		$(parent.document).contents().find('.dimmed').remove();
-	});
-
-	// 사전 이미지 교체
-	var dIdx = 0;
-	$('.dictionary-list li').click(function(){
-		dIdx = $(this).index();
-		$('.dictionary-list li').each(function(idx){
-			if ($(this).hasClass('on'))
-			{
-				$(this).removeClass('on');
-				$(this).find('.image-area').removeClass('bgColor');
-				
+		// 슬라이더 버튼
+		$(document).on('click', '.btn-slide button', function(){
+			if($(this).hasClass('btn-prev')){
+				$(this).closest('.cont').find('.bx-prev').trigger('click');
 			}else{
-				if(dIdx != idx){
+				$(this).closest('.cont').find('.bx-next').trigger('click');
+			}
+		});
+
+		$('.slider2').each(function(){
+			slider = $(this).find('.bxslider').bxSlider({
+				pager: true,
+				autoControls:false,
+				//infiniteLoop:false,
+				pause:7000, // 슬라이드 속도
+				speed:500
+			});
+			$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+		});
+
+		$('.slider3').each(function(){
+			slider3 = $('.slider3 .bxslider').bxSlider({
+				pager: false,
+				autoControls:true,
+				minSlides: 3,
+				maxSlides: 3,
+				moveSlides: 1,
+				slideWidth: 114,
+				//infiniteLoop:false,
+				pause:7000, // 슬라이드 속도
+				speed:500
+			});
+			$(this).closest('.cont').find('.title-area').append('<div class="btn-slide"><button type="button" class="btn-prev">이전</button><button type="button" class="btn-next">다음</button></div>');
+		});
+
+		/* 주간일정 달력 슬라이드 */
+		slider4 = $('.slider4 .bxslider').bxSlider({
+			pager: false,
+			autoControls:true,
+			minSlides: 7,
+			maxSlides: 7,
+			moveSlides: 7,
+			slideWidth: 34,
+			//infiniteLoop:false,
+			pause:7000, // 슬라이드 속도
+			speed:500
+		});
+
+		/* My Gallery 슬라이드 */
+		slider5 = $('.slider5 .bxslider').bxSlider({
+			captions: true,
+			pager: true,
+			auto: true,
+			autoControls:true,
+			minSlides: 1,
+			maxSlides: 1,
+			moveSlides: 1,
+			//infiniteLoop:false,
+			pause:5000, // 슬라이드 속도
+			speed:500,
+			adaptiveHeight:true
+		});
+
+		/* 개인롤링 슬라이드 */
+		slider6 = $('.slider6 .bxslider').bxSlider({
+			captions: true,
+			pager: true,
+			auto: true,
+			autoControls:true,
+			minSlides: 1,
+			maxSlides: 1,
+			moveSlides: 1,
+			//infiniteLoop:false,
+			pause:5000, // 슬라이드 속도
+			speed:500,
+			adaptiveHeight:true
+		});
+
+		// 할일 입력란
+		$('.write-box input[type=text]').focus(function(){
+			$(this).addClass('bdColor');
+		}).blur(function(){
+			$(this).removeClass('bdColor');
+		});
+
+		// 셋팅 레이어팝업
+		$('.btn-setting').click(function(){
+			$(parent.document).contents().find('.wrapper').append('<div class="dimmed"></div>');
+			$(parent.document).contents().find('.dimmed').fadeIn();
+			$(parent.document).contents().find('.layer-popup').show();
+			parent.popMian();
+		});
+		$(document).on('click', '.pop-close',function(){
+			$(parent.document).contents().find('.dimmed').remove();
+		});
+
+		// 사전 이미지 교체
+		var dIdx = 0;
+		$('.dictionary-list li').click(function(){
+			dIdx = $(this).index();
+			$('.dictionary-list li').each(function(idx){
+				if ($(this).hasClass('on'))
+				{
 					$(this).removeClass('on');
 					$(this).find('.image-area').removeClass('bgColor');
+					
 				}else{
-					$(this).addClass('on');
-					$(this).find('.image-area').addClass('bgColor');
+					if(dIdx != idx){
+						$(this).removeClass('on');
+						$(this).find('.image-area').removeClass('bgColor');
+					}else{
+						$(this).addClass('on');
+						$(this).find('.image-area').addClass('bgColor');
+					}
 				}
-			}
+				
+			});
+		});
+		
+		/* 일반게시판 */
+		$('.select-area .text').click(function(){
+			if ($(this).closest('.select-area').hasClass('on'))
+			{
+				$(this).closest('.select-area').removeClass('on');
+				$(this).next('ul').slideUp(200);
+			}else{
+				$(this).closest('.select-area').addClass('on');
+				$(this).next('ul').slideDown(200);
+			}	
+		});
+
+		$('.select-area ul li').click(function(){
+			
+			var idx = $(this).index();
+			var text = $(this).text();
+			
+			$('.select-area ul li').removeClass('fColor').eq(idx).addClass('fColor');
+			$(this).closest('.select-area').find('.text').html(text);
+			$(this).closest('ul').slideUp();
+			$(this).closest('.select-area').removeClass('on');
+			$('.board-cont .board').removeClass('on').eq(idx).addClass('on');
 			
 		});
 	});
-	
-	/* 일반게시판 */
-	$('.select-area .text').click(function(){
-		if ($(this).closest('.select-area').hasClass('on'))
-		{
-			$(this).closest('.select-area').removeClass('on');
-			$(this).next('ul').slideUp(200);
-		}else{
-			$(this).closest('.select-area').addClass('on');
-			$(this).next('ul').slideDown(200);
-		}	
-	});
 
-	$('.select-area ul li').click(function(){
-		
-		var idx = $(this).index();
-		var text = $(this).text();
-		
-		$('.select-area ul li').removeClass('fColor').eq(idx).addClass('fColor');
-		$(this).closest('.select-area').find('.text').html(text);
-		$(this).closest('ul').slideUp();
-		$(this).closest('.select-area').removeClass('on');
-		$('.board-cont .board').removeClass('on').eq(idx).addClass('on');
-		
+	$(window).resize(function(){
+		resizeBox();
+		resizeMain();
 	});
-});
-
-$(window).resize(function(){
-	resizeBox();
-	resizeMain();
-});
+})(jQuery);
 
 function resizeBox(){
-	// 상단 고정영역 박스
-	$('.fixed-top-box').each(function(){
-		var boxW = $(this).outerWidth();
-		$(this).find('.cont').css({'width':boxW/3});
-	});
+	(function($) {
+		// 상단 고정영역 박스
+		$('.fixed-top-box').each(function(){
+			var boxW = $(this).outerWidth();
+			$(this).find('.cont').css({'width':boxW/3});
+		});
 
-	// 1280 이상이며 박스 3단 정렬시 경우 박스 넚이
-	var winW = $(window).width();
-	if(winW > 1279){
+		// 1280 이상이며 박스 3단 정렬시 경우 박스 넚이
+		var winW = $(window).width();
+		if(winW > 1279){
+			var boxW = $('.content').outerWidth();
+			$('.media .content .move-cont .cont').css({'width':boxW/3});
+		}else{
+			$('.media .content .move-cont .cont').removeAttr('style');
+			$('.stage3 .content .move-cont .cont').css({'width':boxW/3});
+		}
+
 		var boxW = $('.content').outerWidth();
-		$('.media .content .move-cont .cont').css({'width':boxW/3});
-	}else{
-		$('.media .content .move-cont .cont').removeAttr('style');
-		$('.stage3 .content .move-cont .cont').css({'width':boxW/3});
-	}
-
-	var boxW = $('.content').outerWidth();
-	$('.stage3 .content .move-cont .cont').each(function(){
-		$(this).css({'width':boxW/3});
-	});
+		$('.stage3 .content .move-cont .cont').each(function(){
+			$(this).css({'width':boxW/3});
+		});
+	})(jQuery);
 }
 
 function resizeMain(){
-	var winW = $(window).width();
-	if(winW > 800){
-		/* 스크롤바 디자인 */
-		$('.scroll-box').each(function(){
-			$(this).removeAttr('style').next('div').remove();
-		});
+	(function($) {
+		var winW = $(window).width();
+		if(winW > 800){
+			/* 스크롤바 디자인 */
+			$('.scroll-box').each(function(){
+				$(this).removeAttr('style').next('div').remove();
+			});
 
-		$('.scroll-box').enscroll({
-			verticalTrackClass: 'track',
-			verticalHandleClass: 'handle',
-			minScrollbarLength: 28
-		});
-		$('.enscroll-track').each(function(){
-			$(this).parent('div').css({'right':'0'});
-		});
-	}else{
-		/* 스크롤바 디자인 초기화 */
-		$('.scroll-box').each(function(){
-			$(this).removeAttr('style').next('div').remove();
-		});
-	}
+			$('.scroll-box').enscroll({
+				verticalTrackClass: 'track',
+				verticalHandleClass: 'handle',
+				minScrollbarLength: 28
+			});
+			$('.enscroll-track').each(function(){
+				$(this).parent('div').css({'right':'0'});
+			});
+		}else{
+			/* 스크롤바 디자인 초기화 */
+			$('.scroll-box').each(function(){
+				$(this).removeAttr('style').next('div').remove();
+			});
+		}
+	})(jQuery);
 }
 
 
 // 셋팅 팝업 부모창에서 호출
 function setPop(){
-	resizeBox();
-	slider1.destroySlider();
-	slider2.destroySlider();
-	slider1.reloadSlider();
-	slider2.reloadSlider();
+	(function($) {
+		resizeBox();
+		slider1.destroySlider();
+		slider2.destroySlider();
+		slider1.reloadSlider();
+		slider2.reloadSlider();
+	})(jQuery);
 }
 </script>
 </body>

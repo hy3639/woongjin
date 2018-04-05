@@ -1163,6 +1163,8 @@ line-height:35px;
 	display:block;
 	width:120px;
 	height:70px;
+	font-size:0;
+	line-height:0;
 }
 .header .utill {
 	position:absolute;

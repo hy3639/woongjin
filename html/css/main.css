@@ -2383,6 +2383,7 @@
 }
 .layer-popup .pop-btn-bottom {
 	min-height:40px;
+	margin:0 -24px;
 	padding:20px 0 30px;
 	border-top:1px solid #eee;
 	font-size:0;
@@ -2439,3 +2440,14 @@
 	line-height:0;
 }
 .layer-popup .layout-list .item .radioWrap {margin:10px 0 0;}
+
+
+
+/* 드래그시 색상 */
+.ui-sortable-helper {
+	border-color:#f5f5f5 !important;
+	box-shadow:1px 3px 6px rgba(0,0,0,.4);
+	background-color:#fff !important;
+	color:#333 !important;
+	opacity:.7;
+}
