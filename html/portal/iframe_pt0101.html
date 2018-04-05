@@ -72,12 +72,137 @@
 			</div>
 		</div>
 	</div>
-	<iframe src="pt0101.html" width="100%" style="border:0" id="cont-iframe" class="cont-iframe"></iframe>	
+	<iframe src="pt0101.html" width="100%" style="border:0" id="cont-iframe" class="cont-iframe"></iframe>
 
 	<div class="footer">
 		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 	</div>
 </div>
+
+<!-- 설정 팝업 -->
+<div class="layer-popup pop-seeting">
+	<button type="button" class="pop-close">닫기</button>
+	<div class="pop-content">
+		<div class="title-area">
+			<h1 class="title">레이아웃 설정</h1>
+		</div>
+		<div class="pop-cont">
+			<ul class="layout-list">
+				<li class="item">
+					<label for="Layout01" class="img-area"><img src="../images2.0/img/img_layout01.png" alt=""></label>
+					<input type="radio" name="Layout" id="Layout01" class="styled1" data="layout1" checked>
+				</li>
+				<li class="item">
+					<label for="Layout02" class="img-area"><img src="../images2.0/img/img_layout02.png" alt=""></label>
+					<input type="radio" name="Layout" id="Layout02" class="styled1" data="layout2">
+				</li>
+				<li class="item">
+					<label for="Layout03" class="img-area"><img src="../images2.0/img/img_layout03.png" alt=""></label>
+					<input type="radio" name="Layout" id="Layout03" class="styled1" data="layout3">
+				</li>
+			</ul>
+		</div>
+
+		<div class="pop-btn-bottom">
+			<button type="button" class="btn-text apply">적용</button>
+			<button type="button" class="btn-text">초기화</button>
+		</div>
+	</div>
+</div>
+
+
+<script>
+(function($) {
+	$(window).load(function(){
+		resizeMain();
+
+		// 셋팅팝업
+		$(document).on('click', '.pop-close, .dimmed',function(){
+			$('.dimmed').remove();
+			$('.layer-popup').hide();
+		});
+		// 팝업 내 동작
+		$('.btn-text.apply').click(function(){
+			var data = $('.pop-seeting .layout-list input[type=radio]:checked').attr('data');
+			if(data == 'layout1'){
+				$('#cont-iframe').contents().find('.container').attr('class', 'container stage1');
+				$('#cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
+			}
+			if(data == 'layout2'){
+				$('#cont-iframe').contents().find('.container').attr('class', 'container stage2');
+				$('#cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
+			}
+			if(data == 'layout3'){
+				$('#cont-iframe').contents().find('.container').attr('class', 'container media');
+			}
+
+			document.getElementById('cont-iframe').contentWindow.setPop();
+
+			$('.dimmed').remove();
+			$('.layer-popup').hide();
+		});
+
+	});
+	$(window).resize(function(){
+		resizeMain();
+		popMian();
+	});
+})(jQuery);
+
+function resizeMain(){
+	(function($) {
+		var winW = $(window).width();
+		if(winW > 800){
+			//웹일경우 이미지 src
+			$('.logo img').attr('src','../images2.0/layout/site_logo.png');
+			/* 스크롤바 디자인 */
+			$('.scroll-box').each(function(){
+				$(this).removeAttr('style').next('div').remove();
+			});
+		}else{
+			//모바일일경우 이미지 src
+			$('.logo img').attr('src','images2.0/mobile/layout/site_logo.png');
+
+			/* 스크롤바 디자인 초기화 */
+			$('.scroll-box').each(function(){
+				$(this).removeAttr('style').next('div').remove();
+			});
+		}
+	})(jQuery);
+}
+
+
+/* 팝업 리사이징 */
+function popMian(){
+	(function($) {
+		$('.layer-popup').each(function(){
+			var winH = $(window).height();
+			var wid = $(this).outerWidth();
+			var hei = $(this).outerHeight();
+			var contH = $(this).find('.pop-content').outerHeight();
+			var headH = $(this).find('.pop-head').outerHeight();
+
+			if(contH > winH - (headH + 40)){
+				$(this).css({
+					'left':'50%',
+					'top':'20px',
+					'bottom':'20px',
+					'margin-left':-wid/2,
+					'margin-top':'0'
+				});
+			}else{
+				$(this).css({
+					'left':'50%',
+					'top':'50%',
+					'bottom':'inherit',
+					'margin-left':-wid/2,
+					'margin-top':-(contH + headH)/2
+				});
+			}
+		});
+	})(jQuery);
+}
+</script>
 </body>
 
 </html>
