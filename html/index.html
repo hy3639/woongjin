@@ -1820,8 +1820,8 @@ $(window).load(function(){
 
 	// 임시 레이어팝업
 	$('.btn-setting').click(function(){
-		$('#cont-iframe', parent.document).contents().find('.wrapper').append('<div class="dimmed"></div>');
-		$('#cont-iframe', parent.document).contents().find('.dimmed').fadeIn();
+		$(parent.document).contents().find('.wrapper').append('<div class="dimmed"></div>');
+		$(parent.document).contents().find('.dimmed').fadeIn();
 		$('.layer-popup').show();
 	});
 	$(document).on('click', '.pop-close, .dimmed',function(){
