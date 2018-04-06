@@ -1024,22 +1024,23 @@ line-height:35px;
 	margin-top:-8px;
 	background-image:url(../images2.0/btn/btn_ico07.png);
 }
-
+/* 180406 수정 */
 /* 조회수 */
 .icon-text {
 	display:inline-block;
 	vertical-align:middle;
+	border:1px solid #e5e5e5;
+	box-sizing:border-box;
 }
 .icon-text .text {
 	display:block;
 	position:relative;
 	height:30px;
 	padding:0 15px;
-	box-sizing:border-box;
-	border:1px solid #e5e5e5;
 	background-color:#fff;
 	line-height:28px;
 }
+/*// 180406 수정 */
 .icon-text .text:before {
 	content:'';
 	position:absolute;
@@ -2335,12 +2336,14 @@ line-height:35px;
 .board-view1 .tit-wrap {position:relative;}
 .board-view1 .tit-wrap:after {content:'';display:block;clear:both;}
 .board-view1 .tit-wrap .left-box {position:relative;}
+/* 180406 수정 */
 .board-view1 .tit-wrap .left-box p {
-	padding-right:250px;
+	padding-right:320px;
 	font-weight:700;
 	color:#333;
 	font-size:14px;
 }
+/*// 180406 수정 */
 .board-view1 .tit-wrap .right-box {
 	position:absolute;
 	right:10px;
@@ -8020,7 +8023,23 @@ line-height:35px;
 	color:#333;
 	line-height: 40px;
 }
+/* 180406 추가 */
+.portal-area .box .title-area p span {
+	font-size: 12px;
+	color:#999;
+}
 
+.portal-area .box .cont-area .fixed-top-box .title-area.type2 {
+	position: absolute;
+	top:25px;
+	left: 40px;
+	font-size: 16px;
+	color: #333;
+	line-height: 40px;
+	z-index: 50;
+	font-weight: 700;
+}
+/*// 180406 추가 */
 .portal-area .box .title-area .btn-text {float: right;}
 
 /* 상단고정영역 */
@@ -8278,7 +8297,7 @@ line-height:35px;
 .content .cont .schedule .btn-list .item .text:before {
 	content:'';
 	position:absolute;
-	right:-15px;top:50%;
+	right:10px;top:50%; /*180406 수정*/
 	width:30px;
 	height:30px;
 	margin-top:-15px;

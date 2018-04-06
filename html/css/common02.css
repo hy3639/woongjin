@@ -4825,7 +4825,7 @@ select.styled1 {
 /* -------------------------------------------------------------------------------------------------------------------------------------------
 	개인블로그
 ------------------------------------------------------------------------------------------------------------------------------------------- */
-.mobile .blog-wrap {margin-top:-25px !important;}
+/*.mobile .blog-wrap {margin-top:-25px !important;} 180406 삭제*/
 .blog-info {
 	padding:25px 20px 30px 20px;
 	background-color:#ff574d;
@@ -5029,11 +5029,12 @@ select.styled1 {
 }
 
 .blog-wrap .board-write1 td .form-list .item {width:50%;margin-left:0}
-
-.mobile.blog-wrap .board-view3 + .btn-wrap button:before,
-.mobile.blog-wrap .board-view3 + .btn-wrap a:before {display:none}
-.mobile.blog-wrap .addfile-box + .btn-wrap button:before,
-.mobile.blog-wrap .addfile-box + .btn-wrap a:before {display:none}
+/*180406 수정*/
+.mobile .blog-wrap .board-view3 + .btn-wrap button:before,
+.mobile .blog-wrap .board-view3 + .btn-wrap a:before {display:none}
+.mobile .blog-wrap .addfile-box + .btn-wrap button:before,
+.mobile .blog-wrap .addfile-box + .btn-wrap a:before {display:none}
+/*//180406 수정*/
 /* ===========================================================================
 	용어사전
 =========================================================================== */
