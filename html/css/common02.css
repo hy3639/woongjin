@@ -2259,12 +2259,14 @@ select.styled1 {
 	position:relative;
 	z-index:100;
 }
+.date-text.on .dimmed.opacity {background-color:rgba(0,0,0,.7);}
+
 .calendar-layer {
 	display:none;
 	table-layout:fixed;
 	position:fixed;
 	left:50%;top:50%;
-	z-index:100;
+	z-index:150;
 	width:280px;
 	margin:-138px 0 0 -140px;
 	padding:0 16px 20px;
