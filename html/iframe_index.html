@@ -246,15 +246,15 @@
 		$('.btn-text.apply').click(function(){
 			var data = $('.pop-seeting .layout-list input[type=radio]:checked').attr('data');
 			if(data == 'layout1'){
-				$('#cont-iframe').contents().find('.container').attr('class', 'container stage1');
-				$('#cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
+				$('.cont-iframe').contents().find('.container').attr('class', 'container stage1');
+				$('.cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
 			}
 			if(data == 'layout2'){
-				$('#cont-iframe').contents().find('.container').attr('class', 'container stage2');
-				$('#cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
+				$('.cont-iframe').contents().find('.container').attr('class', 'container stage2');
+				$('.cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
 			}
 			if(data == 'layout3'){
-				$('#cont-iframe').contents().find('.container').attr('class', 'container media');
+				$('.cont-iframe').contents().find('.container').attr('class', 'container media');
 			}
 
 			document.getElementById('cont-iframe').contentWindow.setPop();

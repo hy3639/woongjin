@@ -154,9 +154,10 @@
 				var menuT = $(this).offset().top;
 				$(this).closest('.depth4-list').removeClass('on')
 				$(this).closest('.inList').addClass('on').find('.depth5-layer').show();
+				/* 180409 수정 */
 				var hei = ($(this).closest('.inList').find('.depth5-layer').outerHeight()-32)/2;
-				var left = $(this).closest('.inList').offset().left + 184;
-				$(this).closest('.inList').find('.depth5-layer').css({'left':left, 'top':menuT - winTop, 'margin-top':-hei});
+				$(this).closest('.inList').find('.depth5-layer').css({'top':menuT - winTop, 'margin-top':-hei});
+				/* // 180409 수정 */
 			}
 		});
 		$(document).mouseup(function (e) {

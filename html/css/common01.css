@@ -1657,6 +1657,7 @@ line-height:35px;
 	border:1px solid #ddd;
 	background-color:#fff;
 }
+.gnb-wrap .gnb-sliding .depth1 .depth5-layer {left:378px;}
 .gnb-wrap .depth1 .depth5-layer:before {
 	content:'';
 	position:absolute;
