@@ -318,6 +318,14 @@
 					<div class="title-area">
 						<p>메일</p>
 						<a href="#" class="btn-more">더보기</a>
+						<ul class="portlet-tool">
+							<li class="item01"><a href="#">전체보기</a></li>
+							<li class="item02"><a href="#">설정</a></li>
+							<li class="item03"><a href="#">새로고침</a></li>
+							<li class="item04"><a href="#">큰창</a></li>
+							<li class="item05"><a href="#">숨기기</a></li>
+							<li class="item06"><a href="#">삭제</a></li>
+						</ul>
 					</div>
 					<ul class="tab-list">
 						<li class="item on"><span class="text" title="선택됨">수신</span></li>
@@ -1737,6 +1745,22 @@
 			$(this).closest('.select-area').removeClass('on');
 			$('.board-cont .board').removeClass('on').eq(idx).addClass('on');
 			
+		});
+
+		$('.title-area .btn-more').click(function(e){
+			event.preventDefault();
+
+			if($(this).hasClass('on')){
+				$(this).removeClass('on');
+				if($(this).next().hasClass('portlet-tool')){
+					$(this).closest('.title-area').find('.portlet-tool').hide();
+				}
+			}else{
+				if($(this).next().hasClass('portlet-tool')){
+					$(this).addClass('on');
+					$(this).closest('.title-area').find('.portlet-tool').show();
+				}
+			}
 		});
 	});
 
