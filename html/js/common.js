@@ -134,7 +134,7 @@
 		$link.attr('data', offLft)
 
 		gnbWid();
-		//$('.depth-list').hide();
+		$('.depth-list').hide();
 
 		$('.gnb-utill').click(function(){
 			gnbWid();
@@ -215,7 +215,6 @@
 				var linkL = $(this).closest('.link').find('.text').offset().left;
 				var ico = $(this).closest('.link').find('.icon').outerWidth();
 				var left = linkL - boxL + ico;
-				console.log(top);
 
 				$(this).closest('.tree-menu').find('.contextmenu').hide().fadeIn(200).css({'left':left, 'top':top});
 				if($(this).closest('.link').hasClass('noDel')){
@@ -235,7 +234,6 @@
 
 		// 모바일
 		$(document).on('click', '.mobile .gnb-item .gnb-title', function(e){
-			e.preventDefault();
 			if($(this).closest('.gnb-item').hasClass('on')){
 				$(this).closest('.gnb-item').removeClass('on').find('.depth1').slideUp(200);
 			}else{
