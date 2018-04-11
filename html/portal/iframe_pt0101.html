@@ -72,11 +72,7 @@
 			</div>
 		</div>
 	</div>
-	<iframe src="pt0101.html" width="100%" style="border:0" id="cont-iframe" class="cont-iframe"></iframe>
-
-	<div class="footer">
-		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
-	</div>
+	<iframe src="pt0101.html" width="100%" style="border:0" id="mainFrame" class="cont-iframe"></iframe>
 </div>
 
 <!-- 설정 팝업 -->
@@ -125,19 +121,18 @@
 		$('.btn-text.apply').click(function(){
 			var data = $('.pop-seeting .layout-list input[type=radio]:checked').attr('data');
 			if(data == 'layout1'){
-				$('#cont-iframe').contents().find('.container').attr('class', 'container stage1');
-				$('#cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
+				$('.cont-iframe').contents().find('.container').attr('class', 'container stage1');
+				$('.cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
 			}
 			if(data == 'layout2'){
-				$('#cont-iframe').contents().find('.container').attr('class', 'container stage2');
-				$('#cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
+				$('.cont-iframe').contents().find('.container').attr('class', 'container stage2');
+				$('.cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');
 			}
 			if(data == 'layout3'){
-				$('#cont-iframe').contents().find('.container').attr('class', 'container media');
+				$('.cont-iframe').contents().find('.container').attr('class', 'container media');
 			}
 
-			document.getElementById('cont-iframe').contentWindow.setPop();
-			document.getElementById('cont-iframe').contentWindow.resizeBox();
+			document.getElementById('mainFrame').contentWindow.setPop();
 
 			$('.dimmed').remove();
 			$('.layer-popup').hide();
