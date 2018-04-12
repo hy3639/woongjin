@@ -76,7 +76,7 @@
 </div>
 
 <!-- 설정 팝업 -->
-<div class="layer-popup pop-seeting">
+<!-- <div class="layer-popup pop-seeting">
 	<button type="button" class="pop-close">닫기</button>
 	<div class="pop-content">
 		<div class="title-area">
@@ -104,6 +104,35 @@
 			<button type="button" class="btn-text">초기화</button>
 		</div>
 	</div>
+</div> -->
+
+<div class="layer-popup sm pop-layout">
+	<div class="pop-head">
+		<h3 class="title">개인레이아웃 설정</h3>
+		<button type="button" class="btn-close">닫기</button>
+	</div>
+	<div class="pop-content">
+		<ul class="layout-list">
+			<li class="item">
+				<label for="Layout01" class="img-area"><img src="../images2.0/img/img_layout01.png" alt=""><span>1단</span></label>
+				<input type="radio" name="Layout" id="Layout01" class="styled1" data="layout1" checked>
+			</li>
+			<li class="item">
+				<label for="Layout02" class="img-area"><img src="../images2.0/img/img_layout02.png" alt=""><span>2단</span></label>
+				<input type="radio" name="Layout" id="Layout02" class="styled1" data="layout2">
+			</li>
+			<li class="item">
+				<label for="Layout03" class="img-area"><img src="../images2.0/img/img_layout03.png" alt=""><span>반응형</span></label>
+				<input type="radio" name="Layout" id="Layout03" class="styled1" data="layout3">
+			</li>
+		</ul>
+		<div class="btn-wrap center">
+			<div class="btn-align">
+				<div class="btn-item"><button type="button" class="btn-text apply mid">적용</button></div>
+				<div class="btn-item"><button type="button" class="btn-text mid">초기화</button></div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
@@ -119,7 +148,7 @@
 		});
 		// 팝업 내 동작
 		$('.btn-text.apply').click(function(){
-			var data = $('.pop-seeting .layout-list input[type=radio]:checked').attr('data');
+			var data = $('.pop-layout .layout-list input[type=radio]:checked').attr('data');
 			if(data == 'layout1'){
 				$('.cont-iframe').contents().find('.container').attr('class', 'container stage1');
 				$('.cont-iframe').contents().find('.content .move-cont .cont').removeAttr('style');

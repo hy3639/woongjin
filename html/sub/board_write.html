@@ -420,13 +420,19 @@
 							<textarea cols="" rows="" placeholder="내용을 입력해 주세요." class="wHide" style="height:150px;"></textarea>
 						</td>
 					</tr>
-					<tr>
+					<tr class="share-area"> <!--180409 class 추가-->
 						<th scope="row">공유범위</th>
 						<td>
-							<ul class="form-list inline">
+							<ul class="form-list inline first"> <!--180409 class 추가 (first)-->
 								<li class="item"><input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">게시판 공유범위와 동일</label></li>
-								<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">별도 공유범위 설정</label></li>
+								<li class="item"><input type="radio" name="Radio01" id="Radio0102" class="styled1 formSingle"><label for="Radio0102">별도 공유범위 설정</label></li> <!--180409 클래스추가 "formSingle"-->
 							</ul>
+							<!-- 180409 추가 -->
+							<ul class="form-list inline Radio0102 hide">
+								<li class="item"><input type="radio" name="Radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">전사</label></li>
+								<li class="item"><input type="radio" name="Radio02" id="Radio0202" class="styled1"><label for="Radio0202">개별설정</label></li>
+							</ul>
+							<!--// 180409 추가 -->
 							<div class="share-box">
 								<div class="btn-groupchart">
 									<button type="button" class="btn">조직도</button>
@@ -474,6 +480,28 @@
 			<div class="tabContent">
 				<!-- tab01 : 파일업로드 -->
 				<div class="addfind-cont tabCont on">
+					<!-- 180409 추가 -->
+					<div class="pre-attach">
+						<ul>
+							<li>
+								<div class="file-name">
+									<a href="#">사본(1) - [공유]CIO_Summit_2018_발표자료(세리정보기술).pdf (7.4 mb)</a>
+								</div>
+								<div class="delete-area">
+									<input type="checkbox" id="check01" class="styled1"><label for="check01">삭제</label>
+								</div>
+							</li>
+							<li>
+								<div class="file-name">
+									<a href="#">임직원 그룹조직도.pdf</a>
+								</div>
+								<div class="delete-area">
+									<input type="checkbox" id="check02" class="styled1"><label for="check02">삭제</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--// 180409 추가 -->
 					<div class="title-area mHide">
 						<div class="left">
 							<p class="title">파일명</p>

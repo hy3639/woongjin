@@ -63,9 +63,8 @@
 .pdR25 {padding-right:25px !important;}
 .pdR30 {padding-right:30px !important;}
 
-/*180409 추가*/
+
 .bdB0 {border-bottom: 0 !important;}
-/*//180409 추가*/
 
 /* 웹에서 숨김처리 */
 .wHide {display:none !important;}
@@ -1520,18 +1519,16 @@ line-height:35px;
 	line-height:24px;
 }
 .gnb-wrap .depth1 .depth1-list {
+	min-width:220px;
 	overflow:hidden;
-	padding:10px 0;
 	box-sizing:border-box;
 }
-.gnb-wrap .depth1 .depth-top + .depth1-list {padding-bottom:0}
-.gnb-wrap .depth1 .depth1-list + .depth1-list {padding-top:0}
-
+.gnb-wrap .depth1 .depth-top + .depth1-list {padding-top:15px;}
 .gnb-wrap .depth1 .depth1-list .depth1-item {}
 .gnb-wrap .depth1 .depth1-list .depth1-item .d-title {
 	display:inline-block;
 	min-width:220px;
-	padding:16px 30px 16px 35px;
+	padding:12px 30px 12px 35px;
 	box-sizing:border-box;
 	color:#333;
 	font-size:14px;
@@ -1545,14 +1542,14 @@ line-height:35px;
 }
 .gnb-wrap .depth1 .depth1-list .depth1-item.inList .d-title .icon {
 	position:absolute;
-	right:35px;top:50%;
-	width:9px;
-	height:9px;
+	right:16px;top:50%;
+	width:28px;
+	height:28px;
 	background-color:#9da4ac;
 	background-image:url(../images2.0/btn/btn_gnb_ico02.png);
 	background-repeat:no-repeat;
-	background-position:0 -9px;
-	margin-top:-4px;
+	background-position:0 -28px;
+	margin-top:-14px;
 	font-size:0;
 	text-indent:-9999px;
 	line-height:0;
@@ -1582,7 +1579,9 @@ line-height:35px;
 	height:13px;
 	background-color:#f5f5f5;
 }
-.gnb-wrap .depth-list .depth-item {}
+.gnb-wrap .depth-list .depth-item {
+	white-space:nowrap;
+}
 .gnb-wrap .depth-list .depth-item .title {
 	display:inline-block;
 	position:relative;
@@ -2011,20 +2010,24 @@ line-height:35px;
 	text-overflow:ellipsis;
 	vertical-align:middle;
 }
-.board-list1 table td.subject .tit .flag {
-
+.board-list1 table td.subject .tit .flag,
+.thumb-list1 .txt-area .title .tit .flag {
 	display:inline-block;
 	height:15px;
 	padding:0 5px;
 	margin-right:6px;
 	line-height:15px;
 	color:#fff;
-	font-weight:700px;
+	font-weight:700;
 	font-size:10px;
 	vertical-align:middle;
 }
-.board-list1 table td.subject .tit .flag.new {background-color:#ff5349}
-.board-list1 table td.subject .tit .flag.up {background-color:#26a7f5}
+
+.board-list1 table td.subject .tit .flag.new,
+.thumb-list1 .txt-area .title .tit .flag.new {background-color:#ff5349}
+.board-list1 table td.subject .tit .flag.up,
+.thumb-list1 .txt-area .title .tit .flag.up {background-color:#26a7f5}
+
 .board-list1 table td.subject .link .reply {position:absolute;}
 .board-list1 table .important td.subject .link {font-weight:700;}
 .board-list1 table td.subject .link:hover span {text-decoration:underline;}
@@ -2459,7 +2462,7 @@ line-height:35px;
 .board-view1 .cont-wrap .tag-wrap .tag-list .btn-icon {margin-left:3px;}
 
 .board-view2 {border:1px solid #e5e5e5;}
-.board-view2.type2 tr th:first-child {border-left:1px solid #eee} /*180409 추가*/
+.board-view2.type2 tr th:first-child {border-left:1px solid #eee} /*180411 추가*/
 .board-view2 th {
 	min-height:55px;
 	padding:16px 20px;
@@ -2535,6 +2538,42 @@ line-height:35px;
 	text-decoration:underline;
 	line-height:24px;
 }
+/*180411 추가*/
+.board-view3 {border:1px solid #e5e5e5}
+.board-view3 th {
+	min-height:55px;
+	padding:16px 20px;
+	background-color:#fafafa;
+	 border-right:1px solid #eee;
+	border-left:1px solid #eee;
+	border-bottom:1px solid #eee;
+	font-size:14px;
+	color:#333;
+	text-align:center;
+	box-sizing:border-box;
+}
+.board-view3 th:first-child {
+	border-right: 1px solid #eee;
+	border-left: 0;
+	border-bottom: 0;
+}
+.board-view3 th:last-child {border-right: 0}
+
+.board-view3 td {
+	position:relative;
+	min-height:55px;
+	padding:13px 20px;
+	border-bottom:1px solid #eee;
+	border-left:1px solid #eee;
+	font-size:13px;
+	color:#666;
+	text-align: center;
+	box-sizing:border-box;
+}
+.board-view3 td:first-child {border-left: 0}
+.board-view3 tr:last-child td {border-bottom: 0}
+/*//180411 추가*/
+
 .app-wrap .cont {
 	position:relative;
 	margin-top:30px;
@@ -3294,6 +3333,18 @@ line-height:35px;
 }
 
 /* 파일첨부 영역 */
+.pre-attach {
+	border-bottom: 1px solid #e5e5e5;
+	padding:20px;
+	background-color: #f5f5f5;
+}
+.pre-attach li {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.pre-attach li:first-child {margin-top: 0}
+.pre-attach li .file-name {float: left;}
+.pre-attach li .delete-area {float: right;}
 .addfind-cont {
 	position:relative;
 	margin-top:-1px;
@@ -9132,26 +9183,6 @@ line-height:35px;
 	font-size:12px;
 }
 
-.pop-seeting {
-	width: 850px;
-	margin: -327px 0 0 -425px;
-}
-
-.pop-seeting .layout-list {overflow:hidden;}
-.pop-seeting .layout-list .item {
-	float:left;
-	width:52px;
-	margin-left:20px;
-	text-align:center;
-}
-.pop-seeting .layout-list .item:first-child {margin-left:0;}
-.pop-seeting .layout-list .item label {
-	display:block;
-	font-size:0;
-	line-height:0;
-}
-.pop-seeting .layout-list .item .radioWrap {margin:10px 0 0;}
-
 .stage1 .content .ui-sortable .cont {width:100%;}
 .stage2 .content .ui-sortable .cont {width:50%;}
 .stage3 .content .ui-sortable .cont {width:33%;}
@@ -9170,7 +9201,20 @@ line-height:35px;
 	height: 66px;
 	padding:15px 0;
 }
-
+/*180411 추가*/
+.pop-layout .layout-list {text-align: center;}
+.pop-layout .layout-list .item {
+	display: inline-block;
+	margin-left: 10px;
+}
+.pop-layout .layout-list .item:first-child {margin-left:0;}
+.pop-layout .layout-list .item label {
+	display:block;
+}
+.pop-layout .layout-list .item label span {display: block;}
+.pop-layout .layout-list .item .radioWrap {margin:10px 0 0;}
+.pop-layout .btn-wrap {margin: 20px 0 0 0}
+/*// 180411 추가*/
 /* ===========================================================================
 	내부회계관리시스템
 =========================================================================== */
@@ -9559,19 +9603,21 @@ line-height:35px;
 .board-list5 .th-area .right {width:63%;}
 .board-list5 .th-area .right .top {overflow:hidden;}
 .board-list5 .th-area .right .top div {
-	width:50%;
 	float:left;
 	line-height:30px;
 }
+.board-list5 .th-area .right .top .column3 {width: 44%}
+.board-list5 .th-area .right .top .column4 {width: 56%;}
+
 .board-list5 .th-area .right .bottom {
 	overflow:hidden;
 }
 .board-list5 .th-area .right .bottom div {
 	float:left;
 	width:11.1%;
-	height:60px;
-	line-height:30px;
+	line-height:20px;
 }
+.board-list5 .th-area .right .bottom .line1 { line-height: 40px;}
 /* ===========================================================================
 	e-hr
 =========================================================================== */

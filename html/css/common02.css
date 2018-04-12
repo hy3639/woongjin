@@ -2456,6 +2456,16 @@ select.styled1 {
 }
 
 /* 공유 범위 영역 */
+.share-area .inline.first li{
+	float:inherit !important;
+	margin-left: 0 !important;
+	margin-top: 7px !important;
+}
+.share-area .inline.first + .form-list {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #f5f5f5;
+}
 .share-box {
 	position:relative;
 	margin-top:10px;
@@ -2500,6 +2510,18 @@ select.styled1 {
 }
 
 /* 파일첨부 영역 */
+.pre-attach {
+	border-bottom: 1px solid #e5e5e5;
+	padding:20px;
+	background-color: #f5f5f5;
+}
+.pre-attach li {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.pre-attach li:first-child {margin-top: 0}
+.pre-attach li .file-name {float: left; width: 80%}
+.pre-attach li .delete-area {float: right;}
 .addfile-box .tab-list1 {margin:25px 0 0 0}
 .addfind-cont {
 	display:none;
@@ -5406,13 +5428,14 @@ select.styled1 {
 .organization-box .reply-wrap .text-leng span {color:#999}
 
 .blt-text1,
-.blt-text2 {position:relative;}
+.blt-text2 {position:relative;padding-left: 20px;}
+.blt-text2 {font-weight: 700; font-size: 13px}
 .blt-text1:before,
 .blt-text2:before {
 	content:'';
 	position:absolute;
 	left:0;
-	top:0;
+	top:2px;
 	width:16px;
 	height:16px;
 	background-image:url(../images2.0/mobile/ico/ico_blt01.png);
@@ -6301,7 +6324,10 @@ padding:0;
 	margin-top:12px;
 	font-size:13px;
 }
-
+/* 180411 추가 */
+.e-hr .board-list2 .title {padding-left: 20px;}
+.e-hr .board-list2 .title + ul .td-area:first-child {padding-top: 0}
+/*// 180411 추가 */
 /* ===========================================================================
 	레이어 팝업
 =========================================================================== */

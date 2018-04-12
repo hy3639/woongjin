@@ -42,7 +42,10 @@
 	<p style="margin-top:50px">워크스페이스</p>
 	<button type="button" class="btn-text btn-popup btn-img-upload">이미지 업로드</button>
 	<button type="button" class="btn-text btn-popup btn-work-info">워크스페이스정보</button>
-	<button type="button" class="btn-text btn-popup btn-work-category">워크스페이스정보</button>
+	<button type="button" class="btn-text btn-popup btn-work-category">워크플레이스 카테고리</button>
+
+	<p style="margin-top:50px">포탈관리자</p>
+	<button type="button" class="btn-text btn-popup btn-layout">개인레이아웃정보</button>
 
 
 
@@ -504,7 +507,7 @@
 	</div>
 
 	<!-- 워크스페이스정보 팝업 -->
-	<div class="layer-popup sm pop-work-info">
+	<div class="layer-popup sm pop-work-info wHide">
 		<div class="pop-head">
 			<h3 class="title">워크스페이스 정보</h3>
 			<button type="button" class="btn-close">닫기</button>
@@ -532,6 +535,36 @@
 		<div class="pop-content">
 			<p>트리영역</p>
 
+		</div>
+	</div>
+
+	<!--개인레이아웃정보 팝업 -->
+	<div class="layer-popup sm pop-layout">
+		<div class="pop-head">
+			<h3 class="title">개인레이아웃 설정</h3>
+			<button type="button" class="btn-close">닫기</button>
+		</div>
+		<div class="pop-content">
+			<ul class="layout-list">
+				<li class="item">
+					<label for="Layout01" class="img-area"><img src="../images2.0/img/img_layout01.png" alt=""><span>1단</span></label>
+					<input type="radio" name="Layout" id="Layout01" class="styled1" data="layout1" checked>
+				</li>
+				<li class="item">
+					<label for="Layout02" class="img-area"><img src="../images2.0/img/img_layout02.png" alt=""><span>2단</span></label>
+					<input type="radio" name="Layout" id="Layout02" class="styled1" data="layout2">
+				</li>
+				<li class="item">
+					<label for="Layout03" class="img-area"><img src="../images2.0/img/img_layout03.png" alt=""><span>반응형</span></label>
+					<input type="radio" name="Layout" id="Layout03" class="styled1" data="layout3">
+				</li>
+			</ul>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid">적용</button></div>
+					<div class="btn-item"><button type="button" class="btn-text mid">초기화</button></div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -586,6 +619,11 @@ $('.btn-work-category').click(function(){
 	$('.pop-work-category').fadeIn(200);
 	popResize();// 팝업 리사이징
 });
+$('.btn-layout').click(function(){
+	$('.pop-layout').fadeIn(200);
+	popResize();// 팝업 리사이징
+});
+
 </script>
 </body>
 </html>
