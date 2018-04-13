@@ -71,6 +71,12 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- 180411추가 -->
+		<div class="btn-close-box wHide">
+			<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
+		</div>
+		<!-- // 180411추가 -->
 	</div>
 	<iframe src="pt0102.html" width="100%" style="border:0" id="mainFrame" class="cont-iframe"></iframe>
 </div>
@@ -139,7 +145,7 @@
 		resizeMain();
 
 		// 셋팅팝업
-		$(document).on('click', '.pop-close, .dimmed',function(){
+		$(document).on('click', '.pop-close, .btn-close, .dimmed',function(){
 			$('.dimmed').remove();
 			$('.layer-popup').hide();
 		});
@@ -175,16 +181,11 @@ function resizeMain(){
 	(function($) {
 		var winW = $(window).width();
 		if(winW > 800){
-			//웹일경우 이미지 src
-			$('.logo img').attr('src','../images2.0/layout/site_logo.png');
 			/* 스크롤바 디자인 */
 			$('.scroll-box').each(function(){
 				$(this).removeAttr('style').next('div').remove();
 			});
 		}else{
-			//모바일일경우 이미지 src
-			$('.logo img').attr('src','images2.0/mobile/layout/site_logo.png');
-
 			/* 스크롤바 디자인 초기화 */
 			$('.scroll-box').each(function(){
 				$(this).removeAttr('style').next('div').remove();
