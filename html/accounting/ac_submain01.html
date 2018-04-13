@@ -13,6 +13,7 @@
 <script src="../js/jquery-ui.11.12.1.js"></script>
 <script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
 <script src="../js/common.js"></script>
+
 <!--[if lt IE 9]>
 <script src="../js/html5.js"></script>
 <script src="../respond.src.js"></script>
@@ -20,306 +21,497 @@
 </head>
 
 <body>
-	<div class="container accounting">
-		<div class="gnb-utill">
-			<!-- gnb -->
-			<div class="gnb-sliding">
-				<div class="gnb-wrap">
-					<!-- 서브 GNB -->
-					<div class="sub-gnb">
-						<div class="depth1">
-							<div class="scroll-area">
-								<div class="depth-top">
-									<p class="depth1-title"><span class="text">내부회계관리시스템</span></p>
-									<div class="menu-box">
-										<a href="#" class="btn-text mid">홈(내부회계관리)</a>
-										<a href="#" class="btn-text mid">관리자 홈</a>
-									</div>
-								</div>
-								<ul class="depth1-list">
-									<li class="depth1-item">
-										<a href="#" class="d-title">내부회계평가</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-											<li class="depth2-item"><a href="#">공유지식 관리</a></li>
-											<li class="depth2-item"><a href="#">업무매뉴얼 카테고리 관리</a></li>
-											<li class="depth2-item"><a href="#">업무매뉴얼 관리</a></li>
-											<li class="depth2-item"><a href="#">공유지식 카테고리 가져오기</a></li>
-											<li class="depth2-item"><a href="#">공유지식 카테고리 내보내기</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">업무기술서</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-											<li class="depth2-item"><a href="#">공유지식 관리</a></li>
-											<li class="depth2-item"><a href="#">업무매뉴얼 카테고리 관리</a></li>
-											<li class="depth2-item"><a href="#">업무매뉴얼 관리</a></li>
-											<li class="depth2-item"><a href="#">공유지식 카테고리 가져오기</a></li>
-											<li class="depth2-item"><a href="#">공유지식 카테고리 내보내기</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">공지사항</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+<div class="container accounting">
+	<div class="gnb-utill">
+		<!-- gnb -->
+		<div class="gnb-sliding">
+			<div class="gnb-wrap">
+				<div class="gnb-menu-box">
+					<div class="home">
+						<a href="#" class="link-home ico01">홈</a>
+						<button type="button" class="btn-setting">설정</button>
 					</div>
-					<!-- //서브 GNB -->
+					<ul class="gnb-list">
+						<li class="gnb-item">
+							<p class="gnb-title ico02">게시판</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">게시판</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">최근게시물</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">공지사항</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">경조사</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판lv2</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">IT/Biz Trend</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">양식기 전용 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">R&amp;D부문/개발실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">Master Data 신규</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">익명게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">제안자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">권한 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">임시저장함</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">관리자 메뉴</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico03">전자결재</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전자결재</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico04">설문조사</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">설문조사</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico05">업무지원</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">업무지원</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico06">Knowledge</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">Knowledge</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico07">e-HR</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">e-HR</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico08">평가시스템</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">평가시스템</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico09">개인블로그</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">개인블로그</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico10">전사공유지식</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전사공유지식</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">전사공유지식</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</div>
-		<div class="content accounting">
-			<div class="title-wrap">
-				<h2 class="title">내부회계관리시스템</h2>
-			</div>
-
-			<!-- 컨텐츠 -->
-			<div class="accounting-area">
-				<div class="account-top">
-					<div class="table-area">
-						<p class="title">공지사항</p>
-						<div class="btn-more">
-							<button type="button"><span>더보기</span></button>
-						</div>
-						<div class="board-wrap">
-							<ul class="noty-list">
-								<li>
-									<a href="#">
-										<span class="cont">웅진 원팩 그룹웨어 소개자료 웅진 원팩 그룹웨어 소개자료</span>
-										<span class="date">2018.02.06</span>
-									</a>
+				<!-- 서브 GNB -->
+				<div class="sub-gnb">
+					<div class="depth1">
+						<div class="scroll-area">
+							<div class="depth-top">
+								<p class="depth1-title"><span class="text">내부회계관리시스템</span></p>
+								<div class="menu-box">
+									<a href="#" class="btn-text mid">홈(내부회계관리)</a>
+									<a href="#" class="btn-text mid">관리자 홈</a>
+								</div>
+							</div>
+							<ul class="depth1-list">
+								<li class="depth1-item">
+									<a href="#" class="d-title">내부회계평가</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										<li class="depth2-item"><a href="#">공유지식 관리</a></li>
+										<li class="depth2-item"><a href="#">업무매뉴얼 카테고리 관리</a></li>
+										<li class="depth2-item"><a href="#">업무매뉴얼 관리</a></li>
+										<li class="depth2-item"><a href="#">공유지식 카테고리 가져오기</a></li>
+										<li class="depth2-item"><a href="#">공유지식 카테고리 내보내기</a></li>
+									</ul>
 								</li>
-								<li>
-									<a href="#">
-										<span class="cont">워크스페이스 활동 보고서</span>
-										<span class="date">2018.02.06</span>
-									</a>
+								<li class="depth1-item">
+									<a href="#" class="d-title">업무기술서</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+										<li class="depth2-item"><a href="#">공유지식 관리</a></li>
+										<li class="depth2-item"><a href="#">업무매뉴얼 카테고리 관리</a></li>
+										<li class="depth2-item"><a href="#">업무매뉴얼 관리</a></li>
+										<li class="depth2-item"><a href="#">공유지식 카테고리 가져오기</a></li>
+										<li class="depth2-item"><a href="#">공유지식 카테고리 내보내기</a></li>
+									</ul>
 								</li>
-								<li>
-									<a href="#">
-										<span class="cont">영업팀 분기별 실적 안내</span>
-										<span class="date">2018.02.06</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="cont">2017년 10월 IT본부용 TMS 마감</span>
-										<span class="date">2018.02.06</span>
-									</a>
-								</li>
-								<li class="mHide">
-									<a href="#">
-										<span class="cont">[2017.10월 재무마감] 전표 입력</span>
-										<span class="date">2018.02.06</span>
-									</a>
+								<li class="depth1-item">
+									<a href="#" class="d-title">공지사항</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="table-area state">
-						<p class="title">진단평가현황</p>
-						<ul>
-							<li>
-								<div class="box">
-									<a href="#"><span>자가진단</span></a>
-									<div class="state-item item1">
-										<span>대상문서현황</span>
-										<span class="num"><em class="fColor">258</em>/450</span>
-									</div>
-									<div class="state-item item2">
-										<span>결재완료/진행</span>
-										<span class="num"><em class="fColor">258</em>/450</span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="box">
-									<a href="#"><span>결재미결</span></a>
-									<div class="state-item item3">
-										<span>일반결재</span>
-										<span class="num"><em class="fColor">258</em></span>
-									</div>
-									<div class="state-item item4">
-										<span>운영평가결재</span>
-										<span class="num"><em class="fColor">258</em></span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
 				</div>
-
-				<div class="table-area board">
-					<p class="title">자가진단</p>
-					<!-- Pc 컨텐츠  -->
-					<div class="board-list4 mHide">
-						<table>
-							<caption>자가진단 게시판</caption>
-							<colgroup>
-								<col style="width:12%;">
-								<col style="width:16%;">
-								<col >
-								<col style="width:16%;">
-								<col style="width:10%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">분류</th>
-									<th scope="col">소분류</th>
-									<th scope="col">통제활동</th>
-									<th scope="col">마감일</th>
-									<th scope="col">상태</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state1">진행중</span></td>
-								</tr>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출 연구개발지출 연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state1">진행중</span></td>
-								</tr>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state2">완료</span></td>
-								</tr>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state3">반려</span></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<!--// Pc 컨텐츠  -->
-					<!-- Mobile 컨텐츠 -->
-					<div class="board-list2 wHide">
-						<ul>
-							<li class="td-area">
-								<span class="title"><a href="#none">프로젝트 예산 통제</a></span>
-								<span class="text">분류 : 구매관리</span>
-								<span class="text">소분류 : 연구개발지출</span>
-								<span class="text">마감일 : 2018.02.08</span>
-								<span class="stat state1">진행중</span>
-							</li>
-							<li class="td-area">
-								<span class="title"><a href="#none">계약의 요청과 승인</a></span>
-								<span class="text">분류 : 구매관리</span>
-								<span class="text">소분류 : 연구개발지출</span>
-								<span class="text">마감일 : 2018.02.08</span>
-								<span class="stat state2">완료</span>
-							</li>
-						</ul>
-					</div>
-					<!--// Mobile 컨텐츠 -->
-				</div>
-				<div class="table-area board">
-					<p class="title">운영평가</p>
-					<!-- Pc 컨텐츠  -->
-					<div class="board-list4 mHide">
-						<table>
-							<caption>자가진단 게시판</caption>
-							<colgroup>
-								<col style="width:12%;">
-								<col style="width:16%;">
-								<col >
-								<col style="width:16%;">
-								<col style="width:10%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">분류</th>
-									<th scope="col">소분류</th>
-									<th scope="col">통제활동</th>
-									<th scope="col">마감일</th>
-									<th scope="col">상태</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state4">미작성</span></td>
-								</tr>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출 연구개발지출 연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state5">회수</span></td>
-								</tr>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state2">완료</span></td>
-								</tr>
-								<tr>
-									<td>구매관리</td>
-									<td>연구개발지출</td>
-									<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
-									<td>2017.12.24</td>
-									<td><span class="state1">진행중</span></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<!--// Pc 컨텐츠  -->
-					<!-- Mobile 컨텐츠 -->
-					<div class="board-list2 wHide">
-						<ul>
-							<li class="td-area">
-								<span class="title"><a href="#none">프로젝트 예산 통제</a></span>
-								<span class="text">분류 : 구매관리</span>
-								<span class="text">소분류 : 연구개발지출</span>
-								<span class="text">마감일 : 2018.02.08</span>
-								<span class="stat state3">반려</span>
-							</li>
-							<li class="td-area">
-								<span class="title"><a href="#none">계약의 요청과 승인</a></span>
-								<span class="text">분류 : 구매관리</span>
-								<span class="text">소분류 : 연구개발지출</span>
-								<span class="text">마감일 : 2018.02.08</span>
-								<span class="stat state4">미작성</span>
-							</li>
-						</ul>
-					</div>
-					<!--// Mobile 컨텐츠 -->
-				</div>
-			</div>
-			<!-- 플로팅버튼  -->
-			<div class="btn-wrap right m-fixed-btn wHide">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">관리자 홈</a></div>
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">홈(내부회계관리)</a></div>
-				</div>
+				<!-- //서브 GNB -->
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
-	</div>
-</body>
-<script>
-$(window).load(function(){
+	<div class="content accounting">
+		<div class="title-wrap">
+			<h2 class="title">내부회계관리시스템</h2>
+		</div>
 
-});
-</script>
+		<!-- 컨텐츠 -->
+		<div class="accounting-area">
+			<div class="account-top">
+				<div class="table-area">
+					<p class="title">공지사항</p>
+					<div class="btn-more">
+						<button type="button"><span>더보기</span></button>
+					</div>
+					<div class="board-wrap">
+						<ul class="noty-list">
+							<li>
+								<a href="#">
+									<span class="cont">웅진 원팩 그룹웨어 소개자료 웅진 원팩 그룹웨어 소개자료</span>
+									<span class="date">2018.02.06</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="cont">워크스페이스 활동 보고서</span>
+									<span class="date">2018.02.06</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="cont">영업팀 분기별 실적 안내</span>
+									<span class="date">2018.02.06</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="cont">2017년 10월 IT본부용 TMS 마감</span>
+									<span class="date">2018.02.06</span>
+								</a>
+							</li>
+							<li class="mHide">
+								<a href="#">
+									<span class="cont">[2017.10월 재무마감] 전표 입력</span>
+									<span class="date">2018.02.06</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-area state">
+					<p class="title">진단평가현황</p>
+					<ul>
+						<li>
+							<div class="box">
+								<a href="#"><span>자가진단</span></a>
+								<div class="state-item item1">
+									<span>대상문서현황</span>
+									<span class="num"><em class="fColor">258</em>/450</span>
+								</div>
+								<div class="state-item item2">
+									<span>결재완료/진행</span>
+									<span class="num"><em class="fColor">258</em>/450</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<a href="#"><span>결재미결</span></a>
+								<div class="state-item item3">
+									<span>일반결재</span>
+									<span class="num"><em class="fColor">258</em></span>
+								</div>
+								<div class="state-item item4">
+									<span>운영평가결재</span>
+									<span class="num"><em class="fColor">258</em></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="table-area board">
+				<p class="title">자가진단</p>
+				<!-- Pc 컨텐츠  -->
+				<div class="board-list4 mHide">
+					<table>
+						<caption>자가진단 게시판</caption>
+						<colgroup>
+							<col style="width:12%;">
+							<col style="width:16%;">
+							<col >
+							<col style="width:16%;">
+							<col style="width:10%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">분류</th>
+								<th scope="col">소분류</th>
+								<th scope="col">통제활동</th>
+								<th scope="col">마감일</th>
+								<th scope="col">상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state1">진행중</span></td>
+							</tr>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출 연구개발지출 연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state1">진행중</span></td>
+							</tr>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state2">완료</span></td>
+							</tr>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state3">반려</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// Pc 컨텐츠  -->
+				<!-- Mobile 컨텐츠 -->
+				<div class="board-list2 wHide">
+					<ul>
+						<li class="td-area">
+							<span class="title"><a href="#none">프로젝트 예산 통제</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state1">진행중</span>
+						</li>
+						<li class="td-area">
+							<span class="title"><a href="#none">계약의 요청과 승인</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state2">완료</span>
+						</li>
+					</ul>
+				</div>
+				<!--// Mobile 컨텐츠 -->
+			</div>
+			<div class="table-area board">
+				<p class="title">운영평가</p>
+				<!-- Pc 컨텐츠  -->
+				<div class="board-list4 mHide">
+					<table>
+						<caption>자가진단 게시판</caption>
+						<colgroup>
+							<col style="width:12%;">
+							<col style="width:16%;">
+							<col >
+							<col style="width:16%;">
+							<col style="width:10%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">분류</th>
+								<th scope="col">소분류</th>
+								<th scope="col">통제활동</th>
+								<th scope="col">마감일</th>
+								<th scope="col">상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state4">미작성</span></td>
+							</tr>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출 연구개발지출 연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제 Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state5">회수</span></td>
+							</tr>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state2">완료</span></td>
+							</tr>
+							<tr>
+								<td>구매관리</td>
+								<td>연구개발지출</td>
+								<td class="subject"><a href="#" class="link"><span class="tit">Project 예산통제</span></a></td>
+								<td>2017.12.24</td>
+								<td><span class="state1">진행중</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--// Pc 컨텐츠  -->
+				<!-- Mobile 컨텐츠 -->
+				<div class="board-list2 wHide">
+					<ul>
+						<li class="td-area">
+							<span class="title"><a href="#none">프로젝트 예산 통제</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state3">반려</span>
+						</li>
+						<li class="td-area">
+							<span class="title"><a href="#none">계약의 요청과 승인</a></span>
+							<span class="text">분류 : 구매관리</span>
+							<span class="text">소분류 : 연구개발지출</span>
+							<span class="text">마감일 : 2018.02.08</span>
+							<span class="stat state4">미작성</span>
+						</li>
+					</ul>
+				</div>
+				<!--// Mobile 컨텐츠 -->
+			</div>
+		</div>
+		<!-- 플로팅버튼  -->
+		<div class="btn-wrap right m-fixed-btn wHide">
+			<div class="btn-align">
+				<div class="btn-item"><a href="#" class="btn-text">관리자 홈</a></div>
+				<div class="btn-item"><a href="#" class="btn-text bdColor fColor">홈(내부회계관리)</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+</div>
+</body>
 </html>

@@ -2476,12 +2476,8 @@
 	margin-left:20px;
 	text-align:center;
 }
-.layer-popup .layout-list .item:first-child {margin-left:0;}
-.layer-popup .layout-list .item label {
-	display:block;
-	font-size:0;
-	line-height:0;
-}
+.layer-popup .layout-list .item label {display:block;}
+.layer-popup .layout-list .item label span {display: block;}
 .layer-popup .layout-list .item .radioWrap {margin:10px 0 0;}
 
 

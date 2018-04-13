@@ -21,338 +21,534 @@
 </head>
 
 <body>
-	<div class="container accounting">
-		<div class="gnb-utill">
-			<!-- gnb -->
-			<div class="gnb-sliding">
-				<div class="gnb-wrap">
-					<!-- 서브 GNB -->
-					<div class="sub-gnb">
-						<div class="depth1">
-							<div class="scroll-area">
-								<div class="depth-top">
-									<p class="depth1-title"><span class="text">내부회계관리시스템</span></p>
-									<div class="menu-box">
-										<a href="#" class="btn-text mid">홈(내부회계관리)</a>
-										<a href="#" class="btn-text mid">관리자 홈</a>
-									</div>
-								</div>
-								<ul class="depth1-list">
-									<li class="depth1-item">
-										<a href="#" class="d-title">업무기술서</a>
-										<ul class="depth2-list">
-											<li class="depth2-item on"><a href="#">원문보기</a></li>
-											<li class="depth2-item"><a href="#">배포상태</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">내부회계현황</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">자가진단</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">운영평가</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">확인서</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-										</ul>
-									</li>
-									<li class="depth1-item">
-										<a href="#" class="d-title">관리자 메뉴</a>
-										<ul class="depth2-list">
-											<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
+<div class="container accounting">
+	<div class="gnb-utill">
+		<!-- gnb -->
+		<div class="gnb-sliding">
+			<div class="gnb-wrap">
+				<div class="gnb-menu-box">
+					<div class="home">
+						<a href="#" class="link-home ico01">홈</a>
+						<button type="button" class="btn-setting">설정</button>
 					</div>
-					<!-- //서브 GNB -->
-				</div>
-			</div>
-		</div>
-		<div class="content accounting">
-			<div class="title-wrap">
-				<h2 class="title">정의서(업무기술서)</h2>
-			</div>
-
-			<div class="top-search-box">
-				<dl class="list-item">
-					<dt>회차</dt>
-					<dd>
-						<select class="styled1" style="width:110px;">
-							<option>2017년</option>
-						</select>
-						<select class="styled1" style="width:95px;">
-							<option>1회차</option>
-							<option>2회차</option>
-						</select>
-					</dd>
-				</dl>
-				<dl class="list-item">
-					<dt>담당팀</dt>
-					<dd>
-						<select class="styled1" style="width:160px;">
-							<option>담당팀 선택</option>
-						</select>
-					</dd>
-				</dl>
-				<dl class="list-item">
-					<dt>정의서상태</dt>
-					<dd>
-						<select class="styled1" style="width:160px;">
-							<option>정의서상태 선택</option>
-						</select>
-					</dd>
-				</dl>
-				<dl class="list-item">
-					<dt>옵션</dt>
-					<dd>
-						<select class="styled1" style="width:160px;">
-							<option>담당자</option>
-						</select>
-					</dd>
-				</dl>
-				<dl class="list-item block">
-					<dt><label for="Text01">검색어</label></dt>
-					<dd><input type="text" id="Text01" style="width:100%;max-width:300px;"></dd>
-				</dl>
-				<div class="btn-wrap center">
-					<div class="btn-align">
-						<div class="btn-item"><button type="button" class="btn-text mid">초기화</button></div>
-						<div class="btn-item"><a href="#" class="btn-text mid bgColor">검색</a></div>
-					</div>
-				</div>
-			</div>
-			<button type="button" class="btn-search-toggle close wHide"><span class="text">접기</span></button>
-
-			<!-- 컨텐츠 -->
-			<div class="accounting-area">
-				<div class="sorting-area">
-					<div class="left-box">
-						<p class="turn"><span>2017</span>년 <span>2</span>회차</p>
-						<p class="all-len">전체 <span class="len fColor">221</span>건</p>
-					</div>
-					<div class="right-box">
-							<button type="button" class="btn-open"><em class="">아이콘영역</em><span class="text">펼치기</span></button>
-						<button type="button" class="btn-close fColor bdColor"><em class="">아이콘영역</em><span class="text">접기</span></button>
-					</div>
-				</div>
-
-				<div class="board-list5">
-					<div class="type1"> <!--컬럼4개인경우-->
-						<div class="th-area">
-							<div class="check-column"><label for="check01"><input type="checkbox" id="check01" class="styled1"><span class="wHide txt">전체선택</span></label></div>
-							<div class="column1 mHide">분류 및 통제활동</div>
-							<div class="column2 mHide"><button type="button" class="btn-sorting">담당팀<span class="icon"></span></button></div>
-							<div class="column3 mHide">담당자</div>
-							<div class="column4 mHide">상태</div>
-						</div>
-						<div class="tDepth-wrap">
-							<div class="tDepth1-wrap">
-								<div class="td-area tDepth1">
-									<div class="column1">전사수준통제(CS)</div>
-								</div>
-								<div class="tDepth2-wrap">
-									<div class="td-area tDepth2">
-										<div class="column1">모니터링(CS-40)</div>
+					<ul class="gnb-list">
+						<li class="gnb-item">
+							<p class="gnb-title ico02">게시판</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">게시판</span></p>
 									</div>
-									<div class="tDepth3-wrap">
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">지속적인 모니터링</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat1">배포완료</span></div>
-										</div>
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">취약점의 보고1</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat2">매핑완료</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="tDepth2-wrap">
-									<div class="td-area tDepth2">
-										<div class="column1">해외법인 관리 (CS-50)</div>
-									</div>
-									<div class="tDepth3-wrap">
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">해외 자회사 관리</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat3">매핑실패</span></div>
-										</div>
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">지속적인 모니터링</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat4">배포전</span></div>
-										</div>
-									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">최근게시물</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">공지사항</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">경조사</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판lv2</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">IT/Biz Trend</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">양식기 전용 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">R&amp;D부문/개발실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">Master Data 신규</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">익명게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">제안자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">권한 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">임시저장함</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">관리자 메뉴</a>
+											<ul class="depth2-list">
+												<li class="depth2-item"><a href="#">게시판 01</a></li>
+												<li class="depth2-item"><a href="#">게시판 02</a></li>
+												<li class="depth2-item"><a href="#">게시판 03</a></li>
+												<li class="depth2-item"><a href="#">게시판 04</a></li>
+												<li class="depth2-item"><a href="#">게시판 05</a></li>
+												<li class="depth2-item"><a href="#">게시판 06</a></li>
+												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											</ul>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="tDepth1-wrap">
-								<div class="td-area tDepth1">
-									<div class="column1">지출</div>
-								</div>
-								<div class="tDepth2-wrap">
-									<div class="td-area tDepth2">
-										<div class="column1">구매(EX-10)</div>
-									</div>
-									<div class="tDepth3-wrap">
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">월별 대금 청구명세의 승인</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat5">배포실패</span></div>
-										</div>
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">구매주문서에 대한 최종 승인검토</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat6">담당자 오류</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="tDepth2-wrap">
-									<div class="td-area tDepth2">
-										<div class="column1">매입채무/미지급금 계상(EX-20)</div>
-									</div>
-									<div class="tDepth3-wrap">
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">수령된 물품과 구매주문서 및 세금계산서와의 일치여부 검증</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat1">배포완료</span></div>
-										</div>
-										<div class="td-area tDepth3">
-											<div class="column1"><input type="checkbox" class="styled1"><a href="#">세금계산서와 물품수령내역의 일치 여부 검토</a> </div>
-											<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
-											<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
-											<div class="column4"><span class="wHide tit">상태 : </span> 배포완료</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="btn-wrap right">
-					<div class="btn-align">
-						<div class="btn-item"><a href="#" class="btn-text">정의서 엑셀등록</a></div>
-						<div class="btn-item"><a href="#" class="btn-text">정의서 삭제</a></div>
-					</div>
-					<div class="btn-align">
-						<div class="btn-item"><a href="#" class="btn-text">정의서 배포</a></div>
-						<div class="btn-item"><a href="#" class="btn-text">정의서 복사</a></div>
-					</div>
-					<div class="btn-align">
-						<div class="btn-item"><a href="#" class="btn-text">담당자 매핑</a></div>
-						<div class="btn-item"><a href="#" class="btn-text">담당자 추가</a></div>
-					</div>
-					<div class="btn-align">
-						<div class="btn-item"><a href="#" class="btn-text">담당자 수정</a></div>
-						<div class="btn-item"><a href="#" class="btn-text">담당자 삭제</a></div>
-					</div>
-				</div>
-				<div class="notice-area">
-					<h3 class="blt-text2">유의사항</h3>
-					<ul class="blt-list1">
-						<li class="item">
-							정의서 삭제 : 등록된 정의서 삭제 처리<br>
-							배포된 문서일 경우 자가진단 문서까지 동시 삭제됨 (정의서와 연결된 모든 자가진단 문서 삭제 처리)
 						</li>
-						<li class="item">정의서 복사 : 전 년도 문서를 환경설정에 설정된 진행년도/회차에 복사</li>
-						<li class="item">인사 매핑 : 담당자 사번 기준으로 체크 (매핑전, 오류 상태에서만 확인 가능합니다.)</li>
-						<li class="item">담당자 추가 : 기존 담당자에 추가 할 수 있습니다.</li>
-						<li class="item">담당자 수정 : 등록된 담당자를 변경 하실 수 있습니다.</li>
-						<li class="item">담당자 삭제 : 등록된 담당자를 삭제 하실 수 있습니다.</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico03">전자결재</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전자결재</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico04">설문조사</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">설문조사</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico05">업무지원</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">업무지원</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico06">Knowledge</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">Knowledge</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico07">e-HR</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">e-HR</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico08">평가시스템</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">평가시스템</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico09">개인블로그</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">개인블로그</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico10">전사공유지식</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전사공유지식</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">전사공유지식</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
-			</div>
-
-			<!-- 플로팅버튼  -->
-			<div class="btn-wrap right m-fixed-btn wHide">
-				<div class="btn-align">
-					<div class="btn-item"><a href="#" class="btn-text">관리자 홈</a></div>
-					<div class="btn-item"><a href="#" class="btn-text bdColor fColor">홈(내부회계관리)</a></div>
+				<!-- 서브 GNB -->
+				<div class="sub-gnb">
+					<div class="depth1">
+						<div class="scroll-area">
+							<div class="depth-top">
+								<p class="depth1-title"><span class="text">내부회계관리시스템</span></p>
+								<div class="menu-box">
+									<a href="#" class="btn-text mid">홈(내부회계관리)</a>
+									<a href="#" class="btn-text mid">관리자 홈</a>
+								</div>
+							</div>
+							<ul class="depth1-list">
+								<li class="depth1-item">
+									<a href="#" class="d-title">업무기술서</a>
+									<ul class="depth2-list">
+										<li class="depth2-item on"><a href="#">원문보기</a></li>
+										<li class="depth2-item"><a href="#">배포상태</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">내부회계현황</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">자가진단</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">운영평가</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">확인서</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">관리자 메뉴</a>
+									<ul class="depth2-list">
+										<li class="depth2-item"><a href="#">공유지식 카테고리 관리</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
+				<!-- //서브 GNB -->
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+	<div class="content accounting">
+		<div class="title-wrap">
+			<h2 class="title">정의서(업무기술서)</h2>
+		</div>
+
+		<div class="top-search-box">
+			<dl class="list-item">
+				<dt>회차</dt>
+				<dd>
+					<select class="styled1" style="width:110px;">
+						<option>2017년</option>
+					</select>
+					<select class="styled1" style="width:95px;">
+						<option>1회차</option>
+						<option>2회차</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="list-item">
+				<dt>담당팀</dt>
+				<dd>
+					<select class="styled1" style="width:160px;">
+						<option>담당팀 선택</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="list-item">
+				<dt>정의서상태</dt>
+				<dd>
+					<select class="styled1" style="width:160px;">
+						<option>정의서상태 선택</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="list-item">
+				<dt>옵션</dt>
+				<dd>
+					<select class="styled1" style="width:160px;">
+						<option>담당자</option>
+					</select>
+				</dd>
+			</dl>
+			<dl class="list-item block">
+				<dt><label for="Text01">검색어</label></dt>
+				<dd><input type="text" id="Text01" style="width:100%;max-width:300px;"></dd>
+			</dl>
+			<div class="btn-wrap center">
+				<div class="btn-align">
+					<div class="btn-item"><button type="button" class="btn-text mid">초기화</button></div>
+					<div class="btn-item"><a href="#" class="btn-text mid bgColor">검색</a></div>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn-search-toggle close wHide"><span class="text">접기</span></button>
+
+		<!-- 컨텐츠 -->
+		<div class="accounting-area">
+			<div class="sorting-area">
+				<div class="left-box">
+					<p class="turn"><span>2017</span>년 <span>2</span>회차</p>
+					<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+				</div>
+				<div class="right-box">
+						<button type="button" class="btn-open"><em class="">아이콘영역</em><span class="text">펼치기</span></button>
+					<button type="button" class="btn-close fColor bdColor"><em class="">아이콘영역</em><span class="text">접기</span></button>
+				</div>
+			</div>
+
+			<div class="board-list5">
+				<div class="type1"> <!--컬럼4개인경우-->
+					<div class="th-area">
+						<div class="check-column"><label for="check01"><input type="checkbox" id="check01" class="styled1"><span class="wHide txt">전체선택</span></label></div>
+						<div class="column1 mHide">분류 및 통제활동</div>
+						<div class="column2 mHide"><button type="button" class="btn-sorting">담당팀<span class="icon"></span></button></div>
+						<div class="column3 mHide">담당자</div>
+						<div class="column4 mHide">상태</div>
+					</div>
+					<div class="tDepth-wrap">
+						<div class="tDepth1-wrap">
+							<div class="td-area tDepth1">
+								<div class="column1">전사수준통제(CS)</div>
+							</div>
+							<div class="tDepth2-wrap">
+								<div class="td-area tDepth2">
+									<div class="column1">모니터링(CS-40)</div>
+								</div>
+								<div class="tDepth3-wrap">
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">지속적인 모니터링</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat1">배포완료</span></div>
+									</div>
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">취약점의 보고1</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat2">매핑완료</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="tDepth2-wrap">
+								<div class="td-area tDepth2">
+									<div class="column1">해외법인 관리 (CS-50)</div>
+								</div>
+								<div class="tDepth3-wrap">
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">해외 자회사 관리</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat3">매핑실패</span></div>
+									</div>
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">지속적인 모니터링</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat4">배포전</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tDepth1-wrap">
+							<div class="td-area tDepth1">
+								<div class="column1">지출</div>
+							</div>
+							<div class="tDepth2-wrap">
+								<div class="td-area tDepth2">
+									<div class="column1">구매(EX-10)</div>
+								</div>
+								<div class="tDepth3-wrap">
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">월별 대금 청구명세의 승인</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat5">배포실패</span></div>
+									</div>
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">구매주문서에 대한 최종 승인검토</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat6">담당자 오류</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="tDepth2-wrap">
+								<div class="td-area tDepth2">
+									<div class="column1">매입채무/미지급금 계상(EX-20)</div>
+								</div>
+								<div class="tDepth3-wrap">
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">수령된 물품과 구매주문서 및 세금계산서와의 일치여부 검증</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> <span class="stat1">배포완료</span></div>
+									</div>
+									<div class="td-area tDepth3">
+										<div class="column1"><input type="checkbox" class="styled1"><a href="#">세금계산서와 물품수령내역의 일치 여부 검토</a> </div>
+										<div class="column2"><span class="wHide tit">담당팀 : </span>영업팀</div>
+										<div class="column3"><span class="wHide tit">담당자 : </span> 김은미,이화영</div>
+										<div class="column4"><span class="wHide tit">상태 : </span> 배포완료</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-wrap right">
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">정의서 엑셀등록</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">정의서 삭제</a></div>
+				</div>
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">정의서 배포</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">정의서 복사</a></div>
+				</div>
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">담당자 매핑</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">담당자 추가</a></div>
+				</div>
+				<div class="btn-align">
+					<div class="btn-item"><a href="#" class="btn-text">담당자 수정</a></div>
+					<div class="btn-item"><a href="#" class="btn-text">담당자 삭제</a></div>
+				</div>
+			</div>
+			<div class="notice-area">
+				<h3 class="blt-text2">유의사항</h3>
+				<ul class="blt-list1">
+					<li class="item">
+						정의서 삭제 : 등록된 정의서 삭제 처리<br>
+						배포된 문서일 경우 자가진단 문서까지 동시 삭제됨 (정의서와 연결된 모든 자가진단 문서 삭제 처리)
+					</li>
+					<li class="item">정의서 복사 : 전 년도 문서를 환경설정에 설정된 진행년도/회차에 복사</li>
+					<li class="item">인사 매핑 : 담당자 사번 기준으로 체크 (매핑전, 오류 상태에서만 확인 가능합니다.)</li>
+					<li class="item">담당자 추가 : 기존 담당자에 추가 할 수 있습니다.</li>
+					<li class="item">담당자 수정 : 등록된 담당자를 변경 하실 수 있습니다.</li>
+					<li class="item">담당자 삭제 : 등록된 담당자를 삭제 하실 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 플로팅버튼  -->
+		<div class="btn-wrap right m-fixed-btn wHide">
+			<div class="btn-align">
+				<div class="btn-item"><a href="#" class="btn-text">관리자 홈</a></div>
+				<div class="btn-item"><a href="#" class="btn-text bdColor fColor">홈(내부회계관리)</a></div>
+			</div>
+		</div>
 	</div>
-</body>
+</div>
+<div class="footer">
+	<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+</div>
+
 <script>
 $(document).ready(function() {
-		//전부펼치기 버튼
-		$('.accounting-area .sorting-area .btn-open').click(function(){
-			$(this).closest('.accounting-area').find('.tDepth1').addClass('open');
-			$(this).closest('.accounting-area').find('.tDepth2').addClass('open');
-			$(this).closest('.accounting-area').find('.tDepth2-wrap').addClass('open').slideDown();
-			$(this).closest('.accounting-area').find('.tDepth3-wrap').addClass('open').slideDown();
-		});
-		//전부접어두기 버튼
-		$('.accounting-area .sorting-area .btn-close').click(function(){
-				$(this).closest('.accounting-area').find('.tDepth1').removeClass('open');
-				$(this).closest('.accounting-area').find('.tDepth2').removeClass('open');
-				$(this).closest('.accounting-area').find('.tDepth2-wrap').removeClass('open').slideUp();
-				$(this).closest('.accounting-area').find('.tDepth3-wrap').removeClass('open').slideUp();
-		});
-
-		//하단 트리테이블
-		$(".tDepth1").on("click", function(){
-			if($(this).hasClass('open')){
-				$(this).removeClass('open');
-				$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').find('.tDepth2').removeClass('open');
-				$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').removeClass('open').slideUp();
-				$(this).closest('.tDepth1-wrap').find('.tDepth3-wrap').removeClass('open').slideUp();
-			}else{
-				$(this).addClass('open');
-				$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').addClass('open').slideDown();
-			}
-		});
-
-		$(".tDepth2").on("click", function(){
-			if($(this).hasClass('open')){
-				$(this).removeClass('open');
-				$(this).closest('.tDepth2-wrap').find('.tDepth3-wrap').removeClass('open').slideUp();
-			}else{
-				$(this).addClass('open');
-				$(this).closest('.tDepth2-wrap').find('.tDepth3-wrap').addClass('open').slideDown();
-			}
-		});
-
-		//체크박스 전체 선택해제
-		$('.check-column .styled1').click(function(){
-			if($(this).closest('.checkWrap').hasClass('checked')){
-				$(this).closest('.board-list5').find('input[type="checkbox"]').each(function(){
-					$(this).closest('.checkWrap').removeClass('checked');
-					$(this).attr('checked',false);
-				});
-			}else {
-				$(this).closest('.board-list5').find('input[type="checkbox"]').each(function(){
-					$(this).closest('.checkWrap').addClass('checked');
-					$(this).attr('checked',true);
-				});
-			}
-		});
+	//전부펼치기 버튼
+	$('.accounting-area .sorting-area .btn-open').click(function(){
+		$(this).closest('.accounting-area').find('.tDepth1').addClass('open');
+		$(this).closest('.accounting-area').find('.tDepth2').addClass('open');
+		$(this).closest('.accounting-area').find('.tDepth2-wrap').addClass('open').slideDown();
+		$(this).closest('.accounting-area').find('.tDepth3-wrap').addClass('open').slideDown();
+	});
+	//전부접어두기 버튼
+	$('.accounting-area .sorting-area .btn-close').click(function(){
+			$(this).closest('.accounting-area').find('.tDepth1').removeClass('open');
+			$(this).closest('.accounting-area').find('.tDepth2').removeClass('open');
+			$(this).closest('.accounting-area').find('.tDepth2-wrap').removeClass('open').slideUp();
+			$(this).closest('.accounting-area').find('.tDepth3-wrap').removeClass('open').slideUp();
 	});
 
+	//하단 트리테이블
+	$(".tDepth1").on("click", function(){
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').find('.tDepth2').removeClass('open');
+			$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').removeClass('open').slideUp();
+			$(this).closest('.tDepth1-wrap').find('.tDepth3-wrap').removeClass('open').slideUp();
+		}else{
+			$(this).addClass('open');
+			$(this).closest('.tDepth1-wrap').find('.tDepth2-wrap').addClass('open').slideDown();
+		}
+	});
+
+	$(".tDepth2").on("click", function(){
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$(this).closest('.tDepth2-wrap').find('.tDepth3-wrap').removeClass('open').slideUp();
+		}else{
+			$(this).addClass('open');
+			$(this).closest('.tDepth2-wrap').find('.tDepth3-wrap').addClass('open').slideDown();
+		}
+	});
+
+	//체크박스 전체 선택해제
+	$('.check-column .styled1').click(function(){
+		if($(this).closest('.checkWrap').hasClass('checked')){
+			$(this).closest('.board-list5').find('input[type="checkbox"]').each(function(){
+				$(this).closest('.checkWrap').removeClass('checked');
+				$(this).attr('checked',false);
+			});
+		}else {
+			$(this).closest('.board-list5').find('input[type="checkbox"]').each(function(){
+				$(this).closest('.checkWrap').addClass('checked');
+				$(this).attr('checked',true);
+			});
+		}
+	});
+});
 </script>
+</body>
 </html>

@@ -159,6 +159,49 @@
 }
 .text-box1 .title + p {margin-top:10px;}
 
+/* 불릿 리스트 */
+.blt-list1 {}
+.blt-list1 .item {
+	position:relative;
+	padding:4px 0 4px 10px;
+}
+.blt-list1 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:12px;
+	width:3px;
+	height:3px;
+	background-color:#bbb;
+}
+
+.blt-list2 {}
+.blt-list2 .item {
+	display:block;
+	position:relative;
+	padding:2px 0 2px 10px;
+	color:#999;
+	font-size:12px;
+}
+.blt-list2 .item:before {
+	content:'';
+	position:absolute;
+	left:0;top:10px;
+	width:3px;
+	height:3px;
+	background-color:#9da4ac;
+}
+
+.blt-list2 a.item {
+	overflow:hidden;
+	color:#666;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.blt-list2 a.item:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
 /* ===========================================================================
 	폼요소
 =========================================================================== */
@@ -459,13 +502,14 @@ select.styled1 {
 .btn-text {
 	display:inline-block;
 	width:100%;
+	padding:0 15px;
 	box-sizing:border-box;
 	border:1px solid #e5e5e5;
 	background-color:#fff;
 	color:#666;
-	font-size:14px;
+	font-size:13px;
 	text-align:center;
-	line-height:38px;
+	line-height:35px;
 }
 
 /* small */
@@ -6324,10 +6368,9 @@ padding:0;
 	margin-top:12px;
 	font-size:13px;
 }
-/* 180411 추가 */
 .e-hr .board-list2 .title {padding-left: 20px;}
 .e-hr .board-list2 .title + ul .td-area:first-child {padding-top: 0}
-/*// 180411 추가 */
+
 /* ===========================================================================
 	레이어 팝업
 =========================================================================== */
