@@ -497,6 +497,55 @@
 				</ul>
 			</div>
 		</div>
+
+		<!-- 2018-04-16 답글 영역 -->
+		<div class="reply-area mHide">
+			<p class="tit">답글</p>
+			<ul>
+				<li>
+					<span class="subject">2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내</span>
+					<span class="reply-info">
+						<span>김은미</span>
+						<span>운영관리팀</span>
+						<span>2018.04.16</span>
+						<span>조회수 409</span>
+						<span>좋아요 99</span>
+					</span>
+				</li>
+				<li class="reply">
+					<a href="#" class="subject"><span class="ico-reply"><img src="../images2.0/ico/ico_reply.png" alt=""></span>2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내</a>
+					<span class="reply-info">
+						<span>김은미</span>
+						<span>개발팀</span>
+						<span>2018.04.16</span>
+						<span>조회수 9</span>
+						<span>좋아요 9</span>
+					</span>
+				</li>
+				<li class="reply">
+					<a href="#" class="subject"><span class="ico-reply"><img src="../images2.0/ico/ico_reply.png" alt=""></span>2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내</a>
+					<span class="reply-info">
+						<span>김은미</span>
+						<span>운영관리팀</span>
+						<span>2018.04.16</span>
+						<span>조회수 409</span>
+						<span>좋아요 9</span>
+					</span>
+				</li>
+				<li class="reply">
+					<a href="#" class="subject"><span class="ico-reply"><img src="../images2.0/ico/ico_reply.png" alt=""></span>2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내2017년 11월 오션스위츠 예약 안내</a>
+					<span class="reply-info">
+						<span>김은미</span>
+						<span>운영관리팀</span>
+						<span>2018.04.16</span>
+						<span>조회수 49</span>
+						<span>좋아요 99</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<!-- //2018-04-16 답글 영역 -->
+
 		<div class="page-wrap">
 			<ul>
 				<li class="prev">
@@ -518,5 +567,15 @@
 <div class="footer">
 	<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 </div>
+<!-- 2018-04-16 답글 추가 -->
+<script>
+	$(window).load(function(){
+		$('.reply-area .reply').each(function(){
+			var idx = $(this).index();
+			$(this).find('.subject').attr('style', 'padding-left:'+idx*20+'px');
+		});
+	});
+</script>
+<!-- //2018-04-16 답글 추가 -->
 </body>
 </html>

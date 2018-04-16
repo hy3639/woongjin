@@ -1999,6 +1999,11 @@ line-height:35px;
 	box-sizing:border-box;
 }
 .board-list1 table td.subject .link span {vertical-align:middle;}
+
+/* 2018-04-16 reply 추가 */
+.board-list1 table td.subject .link .ico-reply {display:inline-block; margin-top:-5px; padding-right:6px;}
+/* //2018-04-16 reply 추가 */
+
 .board-list1 table td.subject .tit {
 	display:inline-block;
 	max-width:98%;
@@ -2738,6 +2743,18 @@ line-height:35px;
 }
 .reply-wrap .reply-list .input-area .btn-area button {display:block;}
 .reply-wrap .reply-list .input-area .btn-area button:first-child {margin-bottom:10px}
+
+/* 2018-04-16 */
+.reply-area {margin:35px 50px 50px;}
+.reply-area .tit {font-size:14px; font-weight:700; line-height:43px;}
+.reply-area ul {border-top:1px solid #eee;}
+.reply-area ul li {overflow:hidden; border-bottom:1px solid #eee;}
+.reply-area ul li .subject {overflow:hidden; float:left; width:50%; padding-left:20px; font-size:13px; color:#333; line-height:53px; box-sizing:border-box; text-overflow:ellipsis; white-space:nowrap;}
+.reply-area ul li.reply .subject .ico-reply {padding:0 6px 0 10px;}
+.reply-area ul li .reply-info {float:right; width:50%;}
+.reply-area ul li .reply-info span {float:left; width:20%; text-align:center; line-height:53px; font-size:13px; color:666;}
+/* //2018-04-16 */
+
 .page-wrap {
 	margin:50px 50px 0 50px;
 	border-bottom:1px solid #eee;
