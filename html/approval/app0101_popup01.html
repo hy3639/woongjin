@@ -181,6 +181,7 @@
 		}else {
 			$('.info-setting').attr('style', 'min-height:'+rightH+'px');
 		}
+		$('.drag-area').sortable({axis:'y', containment:'.info-setting', scroll:false, revert:true});// 180416 추가
 	});
 </script>
 </body>

@@ -63,6 +63,7 @@
 					$('.cont-iframe').contents().find('.gnb-sliding').show().animate({left:0}, 300);
 				}
 			}else{
+				$('.cont-iframe').contents().find('html').css({'overflow-y':'hidden'});
 				$('.cont-iframe').contents().find('.gnb-utill, .gnb-sliding').show();
 				$('.cont-iframe').contents().find('.gnb-utill').animate({right:0}, 300, function(){
 					$('.btn-close-box').fadeIn(200);
@@ -70,6 +71,7 @@
 			}
 		});
 		$('.btn-close-box .btn-close').click(function(){
+			$('.cont-iframe').contents().find('html').css({'overflow-y':'auto'});
 			$('.btn-close-box').fadeOut(100);
 			$('.cont-iframe').contents().find('.gnb-utill').animate({right:'-100%'}, 300, function(){
 				$('.gnb-utill').hide();
@@ -151,6 +153,7 @@
 				}
 			}
 		});
+
 		// 2뎁스 하위 리스트 있을경우
 		$('.depth-list').each(function(){
 			$(this).closest('.depth-item').addClass('inList').find(' > .title').after('<em class="icon">아이콘영역</em>');
@@ -175,6 +178,16 @@
 			}
 		});
 
+		$('.depth-item.on').each(function(){
+			$(this).parents('.depth-item').addClass('on').closest('.depth-list').show();
+			$(this).closest('.depth1-item').addClass('on');
+		});
+
+		$('.depth1-item.on').each(function(){
+			$(this).find('.d-title').addClass('fColor').find('.icon').addClass('bgColor');
+			$(this).find('.depth-list.top').show();
+		});
+
 
 
 		/* 검색 포커스 */
@@ -188,6 +201,13 @@
 			$(this).next('.btn-text').addClass('bdColor bgColor').css({'color':'#fff'});
 		}).blur(function(){
 			$(this).next('.btn-text').removeClass('bdColor bgColor').css({'color':'#666'});
+		});
+
+		/* 기본 셀렉트 포커스 */
+		$('select.styled2, select[multiple]').focus(function(){
+			$(this).addClass('bdColor');
+		}).blur(function(){
+			$(this).removeClass('bdColor');
 		});
 
 		/* 트리메뉴 */
@@ -272,7 +292,7 @@
 			}
 		});
 
-		// 페이지 로드시 현재메뉴 표시
+		/* 페이지 로드시 현재메뉴 표시
 		$('.sub-gnb .depth1-item.on').each(function(){
 			$(this).children('.d-title').addClass('fColor');
 		});
@@ -282,6 +302,7 @@
 					.siblings('.d-title').addClass('fColor').find('.icon').addClass('bgColor');
 			}
 		});
+		*/
 		// 서브 gnb 스크롤 제어
 		if($('.depth1-item.on').length > 0){
 			$('.sub-gnb').each(function(){
@@ -759,7 +780,7 @@
 		/* 인물정보 팝업 */
 		// 열기
 		$('.btn-user').click(function(){
-			$('body').append('<div class="layer-popup-wrap"></div>');
+			$('.container').append('<div class="layer-popup-wrap"></div>');
 			$('.layer-popup-wrap').load('../popup/layer_popup.html .user-popup', function(){
 				$('.layer-popup-wrap').fadeIn(300);
 				var wid = $('.layer-popup').outerWidth();
@@ -793,6 +814,7 @@
 
 
 	$(window).load(function(){
+		searchLayer();// 검색영역
 		resizeMid();
 		tabClick();
 		/* 전저결제 결제선 */
@@ -936,14 +958,13 @@ function iframeHeight(){
 	(function($) {
 		var winH = $(window).height();
 		var headerH = $('.wrapper .header').outerHeight();
-		var contH = winH -  headerH ;
+		var contH = winH - headerH ;
 
 		// console.log('브라우저높이' + winH);
 		// console.log('헤더' + headerH);
 		// console.log('푸터' + footerH);
 		// console.log('아이프레임높이' + contH);
-
-		$('.wrapper').find('iframe').css('height',contH);
+		$('.wrapper').find('.cont-iframe').css('height',contH);
 	})(jQuery);
 }
 
@@ -958,9 +979,10 @@ function resizeMid(){
 		var winW = $(window).width();
 		if(winW > 800){
 			/* 웹 =================================================================== */
+			$('.cont-iframe').contents().find('html').css({'overflow-y':'auto'});
 
 			//웹일경우 이미지 src
-			if($('.container').hasClass('main')){
+			if($('.wrapper').hasClass('main')){
 				$('.header .logo img').attr('src','./images2.0/layout/site_logo.png');
 				$('.header .m-logo img').attr('src','./images2.0/layout/site_logo.png');
 			}else{
@@ -1063,7 +1085,7 @@ function resizeMid(){
 		}else{
 			/* 모바일 ================================================================= */
 			//모바일일경우 이미지 src
-			if($('.container').hasClass('main')){
+			if($('.wrapper').hasClass('main')){
 				$('.header .logo img').attr('src','./images2.0/layout/site_logo.png');
 				$('.header .m-logo img').attr('src','./images2.0/layout/site_logo.png');
 			}else{
@@ -1318,6 +1340,28 @@ function gnbLayer(){
 		$('.cont-iframe').contents().find('.gnb-utill, .gnb-sliding').show();
 		$('.cont-iframe').contents().find('.gnb-utill').animate({right:0}, 300, function(){
 			$('.btn-close-box').fadeIn(200);
+		});
+	})(jQuery);
+}
+
+// 검색 영역
+function searchLayer(){
+	(function($) {
+		var winW = $(window).width();
+		$('.header .btn-search').click(function(){
+			if ($(this).hasClass('search-close'))
+			{
+				$(this).removeClass('search-close bgColor');
+				$(this).closest('.header').removeClass('on');
+				$(this).closest('.header').find('.search-area').removeClass('bdColor on');
+				$('.cont-iframe').removeClass('on');
+				
+			}else{
+				$(this).addClass('search-close bgColor');
+				$(this).closest('.header').addClass('on');
+				$(this).closest('.header').find('.search-area').addClass('bdColor on');
+				$('.cont-iframe').addClass('on');
+			}
 		});
 	})(jQuery);
 }

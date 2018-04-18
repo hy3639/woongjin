@@ -61,14 +61,12 @@
 										</li>
 										<li class="depth1-item">
 											<a href="#" class="d-title">자유게시판</a>
-											<ul class="depth2-list">
-												<li class="depth2-item"><a href="#">게시판 01</a></li>
-												<li class="depth2-item"><a href="#">게시판 02</a></li>
-												<li class="depth2-item"><a href="#">게시판 03</a></li>
-												<li class="depth2-item"><a href="#">게시판 04</a></li>
-												<li class="depth2-item"><a href="#">게시판 05</a></li>
-												<li class="depth2-item"><a href="#">게시판 06</a></li>
-												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											<ul class="depth-list top">
+												<li class="depth-item"><a href="#" class="title">게시판 01</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
 											</ul>
 										</li>
 										<li class="depth1-item">
@@ -94,14 +92,12 @@
 										</li>
 										<li class="depth1-item">
 											<a href="#" class="d-title">관리자 메뉴</a>
-											<ul class="depth2-list">
-												<li class="depth2-item"><a href="#">게시판 01</a></li>
-												<li class="depth2-item"><a href="#">게시판 02</a></li>
-												<li class="depth2-item"><a href="#">게시판 03</a></li>
-												<li class="depth2-item"><a href="#">게시판 04</a></li>
-												<li class="depth2-item"><a href="#">게시판 05</a></li>
-												<li class="depth2-item"><a href="#">게시판 06</a></li>
-												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											<ul class="depth-list top">
+												<li class="depth-item"><a href="#" class="title">게시판 01</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -733,7 +729,7 @@
 					<input type="checkbox" id="Check01" class="styled1"> <label for="Check01">완료포함</label>
 				</div>
 			</div>
-			
+
 			<!-- 사전 -->
 			<div class="cont">
 				<div class="cont-inner">
@@ -1289,7 +1285,7 @@
 							<div class="period-area">
 								<div class="box-item">
 									<div  class="date-text">
-										<div class="btn-calendar"><input type="text" readonly></div>
+										<div class="btn-calendar"><input type="text" readonly value="2018.4.19"></div>
 										<div class="calendar-layer bdColor">
 											<div class="datepicker"></div>
 										</div>
@@ -1442,7 +1438,7 @@
 										</a>
 									</li>
 								</ul>
-								
+
 								<strong class="dtitle">워크스페이스</strong>
 								<ul class="mail-list board">
 									<li class="item">
@@ -1712,7 +1708,7 @@
 				{
 					$(this).removeClass('on');
 					$(this).find('.image-area').removeClass('bgColor');
-					
+
 				}else{
 					if(dIdx != idx){
 						$(this).removeClass('on');
@@ -1722,10 +1718,10 @@
 						$(this).find('.image-area').addClass('bgColor');
 					}
 				}
-				
+
 			});
 		});
-		
+
 		/* 일반게시판 */
 		$('.select-area .text').click(function(){
 			if ($(this).closest('.select-area').hasClass('on'))
@@ -1735,20 +1731,20 @@
 			}else{
 				$(this).closest('.select-area').addClass('on');
 				$(this).next('ul').slideDown(200);
-			}	
+			}
 		});
 
 		$('.select-area ul li').click(function(){
-			
+
 			var idx = $(this).index();
 			var text = $(this).text();
-			
+
 			$('.select-area ul li').removeClass('fColor').eq(idx).addClass('fColor');
 			$(this).closest('.select-area').find('.text').html(text);
 			$(this).closest('ul').slideUp();
 			$(this).closest('.select-area').removeClass('on');
 			$('.board-cont .board').removeClass('on').eq(idx).addClass('on');
-			
+
 		});
 
 		$('.title-area .btn-more').click(function(e){

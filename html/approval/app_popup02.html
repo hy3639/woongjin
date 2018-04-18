@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진 - 결재내역</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="window-popup app-request pop-history">
+	<div class="title-wrap">
+		<h1 class="title">결재내역</h1>
+	</div>
+
+	<div class="gray-box-list">
+		<div class="item"><span class="title">수임자</span>홍길동</div>
+		<div class="item"><span class="title">위임기간</span>2018.04.17 ~ 2018.05.16</div>
+		<div class="item"><span class="title">위임사유</span>휴가</div>
+	</div>
+
+	<div class="sorting-area">
+		<div class="left-box">
+			<p class="all-len">전체 <span class="len fColor">221</span>건</p>
+		</div>
+		<div class="right-box mHide">
+			<span class="icon-area">
+				<em class="icon icon1">진행중</em>
+				<em class="icon icon2">완료</em>
+				<em class="icon icon3">반려</em>
+			</span>
+			<select class="styled1 mHide" style="width:120px;">
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+				<option>30</option>
+				<option>40</option>
+				<option>50</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="list-view">
+		<!-- web 리스트 -->
+		<div class="list-type mHide">
+			<div class="board-list1">
+				<table>
+					<caption>공지사항 게시판</caption>
+					<colgroup>
+						<col style="width:4%;">
+						<col style="width:10%;">
+						<col style="width:10%;">
+						<col>
+						<col style="width:10%;">
+						<col style="width:15%;">
+						<col style="width:8%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">유형</th>
+							<th scope="col">분류</th>
+							<th scope="col">문서 제목</th>
+							<th scope="col">요청자</th>
+							<th scope="col">기안일</th>
+							<th scope="col">문서상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>219</td>
+							<td>공통</td>
+							<td>일반</td>
+							<td class="subject"><div class="link"><a href="#" class="tit">사업계획서(통합)사업계획서(통합)사업계획서(통합)사업계획서(통합)</a></div></td>
+							<td>홍길동</td>
+							<td>2017.11.13 16:18</td>
+							<td class="status"><img src="../images2.0/ico/ico_state01.png" alt="진행중"></td>
+						</tr>
+						<tr>
+							<td>218</td>
+							<td>공통</td>
+							<td>일반</td>
+							<td class="subject"><div class="link"><a href="#" class="tit">사업계획서(통합)사업계획서(통합)사업계획서(통합)사업계획서(통합)</a></div></td>
+							<td>홍길동</td>
+							<td>2017.11.13 16:18</td>
+							<td class="status"><img src="../images2.0/ico/ico_state02.png" alt="완료"></td>
+						</tr>
+						<tr>
+							<td>217</td>
+							<td>공통</td>
+							<td>일반</td>
+							<td class="subject"><div class="link"><a href="#" class="tit">사업계획서(통합)사업계획서(통합)사업계획서(통합)사업계획서(통합)</a></div></td>
+							<td>홍길동</td>
+							<td>2017.11.13 16:18</td>
+							<td class="status"><img src="../images2.0/ico/ico_state03.png" alt="반려"></td>
+						</tr>
+						<!-- 결과가 없을경우 -->
+						<tr>
+							<td colspan="7">검색 결과가 존재하지 않습니다.</td>
+						</tr>
+						<!-- // 결과가 없을경우 -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--// web 리스트 -->
+		<!-- mobile  리스트 -->
+		<div class="board-list2 wHide">
+			<ul class="type2">
+				<li class="td-area">
+					<div class="btn-type">
+						<span class="num">219</span>
+						<span class="category">20171128A-0211</span>
+						<a href="#" class="title">사업계획서(통합)사업계획서(통합)사업계획서(통합)사업계획서(통합)</a>
+						<span class="text">유형 : 공통</span>
+						<span class="text">분류 : 일반</span>
+						<span class="text"><em class="fColor">기안일</em> : 2017.12.12 15:17</span>
+						<span class="setting"><span class="label type1">진행중</span></span>
+					</div>
+				</li>
+				<li class="td-area">
+					<div class="btn-type">
+						<span class="num">218</span>
+						<span class="category">20171128A-0211</span>
+						<a href="#" class="title">사업계획서(통합)사업계획서(통합)사업계획서(통합)사업계획서(통합)</a>
+						<span class="text">유형 : 공통</span>
+						<span class="text">분류 : 일반</span>
+						<span class="text"><em class="fColor">기안일</em> : 2017.12.12 15:17</span>
+						<span class="setting"><span class="label type2">완료</span></span>
+					</div>
+				</li>
+				<li class="td-area">
+					<div class="btn-type">
+						<span class="num">217</span>
+						<span class="category">20171128A-0211</span>
+						<a href="#" class="title">사업계획서(통합)사업계획서(통합)사업계획서(통합)사업계획서(통합)</a>
+						<span class="text">유형 : 공통</span>
+						<span class="text">분류 : 일반</span>
+						<span class="text"><em class="fColor">기안일</em> : 2017.12.12 15:17</span>
+						<span class="setting"><span class="label type3">반려</span></span>
+					</div>
+				</li>
+				<!-- 결과가 없을경우 -->
+				<li class="td-area no-result">
+					검색 결과가 존재하지 않습니다.
+				</li>
+				<!-- // 결과가 없을경우 -->
+			</ul>
+		</div>
+		<div class="btn-more wHide">
+			<button type="button"><span>더보기</span></button>
+		</div>
+		<!--// mobile  리스트 -->
+	</div>
+</div>
+</body>
+</html>

@@ -22,9 +22,6 @@
 <body>
 <div class="container">
 	<div class="gnb-utill">
-		<div class="btn-close-box wHide">
-			<button type="button" class="btn-close"><em class="icon bgColor">닫기</em></button>
-		</div>
 		<!-- gnb -->
 		<div class="gnb-sliding">
 			<div class="gnb-wrap">
@@ -62,14 +59,12 @@
 										</li>
 										<li class="depth1-item">
 											<a href="#" class="d-title">자유게시판</a>
-											<ul class="depth2-list">
-												<li class="depth2-item"><a href="#">게시판 01</a></li>
-												<li class="depth2-item"><a href="#">게시판 02</a></li>
-												<li class="depth2-item"><a href="#">게시판 03</a></li>
-												<li class="depth2-item"><a href="#">게시판 04</a></li>
-												<li class="depth2-item"><a href="#">게시판 05</a></li>
-												<li class="depth2-item"><a href="#">게시판 06</a></li>
-												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											<ul class="depth-list top">
+												<li class="depth-item"><a href="#" class="title">게시판 01</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
 											</ul>
 										</li>
 										<li class="depth1-item">
@@ -95,14 +90,12 @@
 										</li>
 										<li class="depth1-item">
 											<a href="#" class="d-title">관리자 메뉴</a>
-											<ul class="depth2-list">
-												<li class="depth2-item"><a href="#">게시판 01</a></li>
-												<li class="depth2-item"><a href="#">게시판 02</a></li>
-												<li class="depth2-item"><a href="#">게시판 03</a></li>
-												<li class="depth2-item"><a href="#">게시판 04</a></li>
-												<li class="depth2-item"><a href="#">게시판 05</a></li>
-												<li class="depth2-item"><a href="#">게시판 06</a></li>
-												<li class="depth2-item"><a href="#">게시판 07</a></li>
+											<ul class="depth-list top">
+												<li class="depth-item"><a href="#" class="title">게시판 01</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -231,13 +224,6 @@
 						<div class="scroll-area">
 							<div class="depth-top">
 								<p class="depth1-title"><span class="text">게시판</span></p>
-								<div class="menu-box">
-									<div class="search-box1">
-										<input type="text">
-										<button type="button" class="btn-srch">검색</button>
-									</div>
-									<a href="#" class="btn-text mid">등록</a>
-								</div>
 							</div>
 							<ul class="depth1-list">
 								<li class="depth1-item">
@@ -260,14 +246,12 @@
 								</li>
 								<li class="depth1-item">
 									<a href="#" class="d-title">자유게시판</a>
-									<ul class="depth2-list">
-										<li class="depth2-item"><a href="#">게시판 01</a></li>
-										<li class="depth2-item"><a href="#">게시판 02</a></li>
-										<li class="depth2-item"><a href="#">게시판 03</a></li>
-										<li class="depth2-item"><a href="#">게시판 04</a></li>
-										<li class="depth2-item"><a href="#">게시판 05</a></li>
-										<li class="depth2-item"><a href="#">게시판 06</a></li>
-										<li class="depth2-item"><a href="#">게시판 07</a></li>
+									<ul class="depth-list top">
+										<li class="depth-item on"><a href="#" class="title">공지사항</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
 									</ul>
 								</li>
 								<li class="depth1-item">
@@ -293,12 +277,12 @@
 								</li>
 								<li class="depth1-item">
 									<a href="#" class="d-title">관리자 메뉴</a>
-									<ul class="depth2-list">
-										<li class="depth2-item on"><a href="#">게시판셋 관리</a></li><!-- 선택메뉴 class="on" -->
-										<li class="depth2-item"><a href="#">게시판 관리</a></li>
-										<li class="depth2-item"><a href="#">게시물 관리</a></li>
-										<li class="depth2-item"><a href="#">게시판 Import</a></li>
-										<li class="depth2-item"><a href="#">게시판 Export</a></li>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">게시판셋 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">게시물 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">게시판 Export</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -313,6 +297,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="content">
 		<div class="title-wrap">
 			<h2 class="title">공지사항</h2>
@@ -479,79 +464,97 @@
 			</ul>
 			<div class="tabContent">
 				<!-- tab01 : 파일업로드 -->
-				<div class="addfind-cont tabCont on">
-					<!-- 180409 추가 -->
-					<div class="pre-attach">
-						<ul>
-							<li>
-								<div class="file-name">
-									<a href="#">사본(1) - [공유]CIO_Summit_2018_발표자료(세리정보기술).pdf (7.4 mb)</a>
+				<div class="tabCont on">
+					<!-- 180417 파일 업로드 개발소스 적용 -->
+					<!--
+					실제 사용 예시
+					<div id="fileUploadArea" class="fileup-wrap"></div>
+					-->
+					<div id="fileUploadArea" class="fileup-wrap">
+						<div class="fileup">
+							<div class="fileup_c">
+								<div class="fileAttach">
+									<ul>
+										<li>
+											<div class="floatLeft">
+												<img src="/base/images/icon/ic_file_zip.gif" alt="zip" onerror="iKEP.FileController.setEtcFileIcon(this)">
+												<a href="#">html_180416_v1.zip (16.5 mb)</a>
+											</div>
+											<div class="floatRight">
+												<label><input type="checkbox" class="checkbox" title="삭제"> 삭제</label>
+											</div>
+										</li>
+										<li>
+											<div class="floatLeft">
+												<img src="/base/images/icon/ic_file_zip.gif" alt="zip" onerror="iKEP.FileController.setEtcFileIcon(this)">
+												<a href="#">html_180416_v1.zip (16.5 mb)</a>
+											</div>
+											<div class="floatRight">
+												<label><input type="checkbox" class="checkbox" title="삭제"> 삭제</label>
+											</div>
+										</li>
+									</ul>
 								</div>
-								<div class="delete-area">
-									<input type="checkbox" id="check01" class="styled1"><label for="check01">삭제</label>
+								<div id="o_1cb6lp5q59on15equ99cj01i441" style="position:relative;">
+									<div class="plupload_wrapper plupload_scroll">
+										<div id="o_1cb6lp5q59on15equ99cj01i441_container" class="plupload_container" title="Using runtime: html5">
+											<div class="plupload">
+												<div class="plupload_content">
+													<div class="plupload_filelist_header">
+														<div class="plupload_file_name">파일명</div>
+														<div class="plupload_file_action">&nbsp;</div>
+														<div class="plupload_file_status"><span>상태</span></div>
+														<div class="plupload_file_size">용량</div>
+														<div class="plupload_clearer">&nbsp;</div>
+													</div>
+													<ul class="plupload_filelist" style="position:relative;">
+														<li class="plupload_delete">
+															<div class="plupload_file_name"><span>file01.png</span></div>
+															<div class="plupload_file_action"><a href="#"></a></div>
+															<div class="plupload_file_status">0%</div>
+															<div class="plupload_file_size">241 kb</div>
+															<div class="plupload_clearer"></div>
+														</li>
+														<li class="plupload_delete">
+															<div class="plupload_file_name"><span>file02.png</span></div>
+															<div class="plupload_file_action"><a href="#"></a></div>
+															<div class="plupload_file_status">0%</div>
+															<div class="plupload_file_size">241 kb</div>
+															<div class="plupload_clearer"></div>
+														</li>
+														<li class="plupload_droptext">탐색기 등으로 파일을 드래그할 수 있습니다.</li>
+													</ul>
+													<div class="plupload_filelist_footer">
+														<div class="plupload_file_name">
+															<div class="plupload_buttons">
+																<a href="#a" class="plupload_button plupload_add" id="o_1cb6lp5q59on15equ99cj01i441_browse" style="position:relative;z-index: 1;">파일 추가</a>
+															</div>
+															<span class="plupload_upload_status"></span>
+														</div>
+														<div class="plupload_file_action"></div>
+														<div class="plupload_file_status">
+															<span class="plupload_total_status">0%</span>
+														</div>
+														<div class="plupload_file_size" style="width:120px;">
+															<span class="plupload_total_file_size">0 b</span>/<span><b>700 mb</b></span>
+														</div>
+														<div class="plupload_progress">
+															<div class="plupload_progress_container">
+																<div class="plupload_progress_bar"></div>
+															</div>
+														</div>
+														<div class="plupload_clearer">&nbsp;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="html5_1cb6lp5qh1pf0qcc1pke1jvq8jj4_container"></div>
 								</div>
-							</li>
-							<li>
-								<div class="file-name">
-									<a href="#">임직원 그룹조직도.pdf</a>
-								</div>
-								<div class="delete-area">
-									<input type="checkbox" id="check02" class="styled1"><label for="check02">삭제</label>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!--// 180409 추가 -->
-					<div class="title-area mHide">
-						<div class="left">
-							<p class="title">파일명</p>
+							</div>
 						</div>
-						<div class="right">
-							<p class="title">용량</p>
-							<p class="title">상태</p>
-						</div>
 					</div>
-					<ul class="addfile-list">
-						<li class="addfile-item">
-							<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
-							<div class="volume-state">
-								<p class="text"><em class="wHide">용량</em> 310b</p>
-								<p class="text"><em class="wHide">상태</em> 0%</p>
-							</div>
-							<button type="button" class="btn-del">삭제</button>
-						</li>
-						<li class="addfile-item">
-							<div class="file-name">임직원 그룹조직도.pdf</div>
-							<div class="volume-state">
-								<p class="text"><em class="wHide">용량</em> 25b</p>
-								<p class="text"><em class="wHide">상태</em> 0%</p>
-							</div>
-							<button type="button" class="btn-del">삭제</button>
-						</li>
-						<li class="addfile-item">
-							<div class="file-name">웅진 원팩 그룹웨어 소개자료.jpg</div>
-							<div class="volume-state">
-								<p class="text"><em class="wHide">용량</em> 310b</p>
-								<p class="text"><em class="wHide">상태</em> 0%</p>
-							</div>
-							<button type="button" class="btn-del">삭제</button>
-						</li>
-						<li class="addfile-item">
-							<div class="file-name">임직원 그룹조직도.pdf</div>
-							<div class="volume-state">
-								<p class="text"><em class="wHide">용량</em> 25b</p>
-								<p class="text"><em class="wHide">상태</em> 0%</p>
-							</div>
-							<button type="button" class="btn-del">삭제</button>
-						</li>
-					</ul>
-					<div class="foot-info">
-						<button type="button" class="btn-text sm">파일추가</button>
-						<div class="text-area">
-							<p class="text">용량 355b / 700mb</p>
-							<p class="text">상태 0%</p>
-						</div>
-					</div>
+					<!-- // 180417 파일 업로드 개발소스 적용 -->
 				</div>
 				<!-- tab02 : 웍스드라이브업로드 -->
 				<div class="addfind-cont tabCont">

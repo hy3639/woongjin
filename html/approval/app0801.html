@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="container">
+	<div class="gnb-utill">
+		<!-- gnb -->
+		<div class="gnb-sliding">
+			<div class="gnb-wrap">
+				<div class="gnb-menu-box">
+					<div class="home">
+						<a href="#" class="link-home ico01">홈</a>
+						<button type="button" class="btn-setting">설정</button>
+					</div>
+					<ul class="gnb-list">
+						<li class="gnb-item">
+							<p class="gnb-title ico02">게시판</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">게시판</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">최근게시물</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">공지사항</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">경조사</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판lv2</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">IT/Biz Trend</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">양식기 전용 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자유게시판</a>
+											<ul class="depth-list top">
+												<li class="depth-item"><a href="#" class="title">게시판 01</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 06</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 07</a></li>
+											</ul>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">R&amp;D부문/개발실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">Master Data 신규</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">익명게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">제안자료실</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">권한 게시판</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">임시저장함</a>
+										</li>
+										<li class="depth1-item">
+											<a href="#" class="d-title">관리자 메뉴</a>
+											<ul class="depth-list top">
+												<li class="depth-item"><a href="#" class="title">게시판 01</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 02</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 06</a></li>
+												<li class="depth-item"><a href="#" class="title">게시판 07</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico03">전자결재</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전자결재</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">결재대기함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">결재진행함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">완료문서함</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">회수/반려문서함</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico04">설문조사</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">설문조사</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">설문 참여</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 싵청</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">설문 결과</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico05">업무지원</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">업무지원</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">업무지원</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico06">Knowledge</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">Knowledge</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">지식</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">업무시스템</a></li>
+										<li class="depth1-item"><a href="#" class="d-title">솔루션</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico07">e-HR</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">e-HR</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">e-HR</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico08">평가시스템</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">평가시스템</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">평가시스템</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico09">개인블로그</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">개인블로그</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item"><a href="#" class="d-title">개인블로그</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="gnb-item">
+							<p class="gnb-title ico10">전사공유지식</p>
+							<div class="depth1">
+								<div class="scroll-area">
+									<div class="depth-top">
+										<p class="depth1-title"><span class="text">전사공유지식</span></p>
+									</div>
+									<ul class="depth1-list">
+										<li class="depth1-item">
+											<a href="#" class="d-title">전사공유지식</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 서브 GNB -->
+				<div class="sub-gnb">
+					<div class="depth1">
+						<div class="scroll-area">
+							<div class="depth-top">
+								<p class="depth1-title"><span class="text">전자결재</span></p>
+								<div class="menu-box">
+									<a href="#" class="btn-text mid">기안문 작성</a>
+								</div>
+							</div>
+							<ul class="depth1-list">
+								<li class="depth1-item">
+									<a href="#" class="d-title">개인문서함</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">결재요청함</a></li>
+										<li class="depth-item"><a href="#" class="title">임시저장함</a></li>
+										<li class="depth-item"><a href="#" class="title">참조문서함</a></li>
+										<li class="depth-item"><a href="#" class="title">전체결재문서</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">결재</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">결재대기함</a></li>
+										<li class="depth-item"><a href="#" class="title">결재진행함</a></li>
+										<li class="depth-item"><a href="#" class="title">완료문서함</a></li>
+										<li class="depth-item"><a href="#" class="title">개인지출결의</a></li>
+										<li class="depth-item"><a href="#" class="title">회수/반려문서함</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">부서</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">부서수신함</a></li>
+										<li class="depth-item"><a href="#" class="title">부서문서함</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">개인보관함</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">개인</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">환경설정</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">대결자관리</a></li>
+										<li class="depth-item"><a href="#" class="title">개임보관함</a></li>
+										<li class="depth-item"><a href="#" class="title">알림설정</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">관리자메뉴</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">사용관리</a></li>
+										<li class="depth-item"><a href="#" class="title">결재문서 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">문서보안관리</a></li>
+										<li class="depth-item"><a href="#" class="title">부서문서함관리</a></li>
+										<li class="depth-item"><a href="#" class="title">문서함 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">시스템관리</a></li>
+										<li class="depth-item"><a href="#" class="title">코드관리</a></li>
+										<li class="depth-item on"><a href="#" class="title">양식관리</a></li><!-- 선택 메뉴 (class="on") -->
+										<li class="depth-item"><a href="#" class="title">수신함담당자관리</a></li>
+										<li class="depth-item"><a href="#" class="title">부서별담당자관리</a></li>
+										<li class="depth-item"><a href="#" class="title">전결관리</a></li>
+										<li class="depth-item"><a href="#" class="title">전결규정 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">전결규정 결재선설정</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //서브 GNB -->
+			</div>
+			<div class="btn-gnb-toggle">
+				<span class="text open fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 보기</span>
+				<span class="text close fColor"><em class="icon bgColor">아이콘영역</em>상위 메뉴 닫기</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="content app-wrap">
+		<!-- 타이틀 영역 -->
+		<div class="title-wrap">
+			<h2 class="title">양식수정</h2>
+		</div>
+		<div id="tabs-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+			<form id="apprContentForm" name="apprContentForm" method="post" action="updateApprContentForm.do">
+
+				<!-- 변경사유 -->
+				<div class="blockDetail Approval_tb mt5">
+					<table summary="form" class="table-styled1"><!-- 180418 class="table-styled1" 추가 -->
+						<caption></caption>
+						<tbody>
+							<tr>
+								<th width="15%" scope="row">신규버전</th>
+								<td width="35%">
+									<input type="radio" class="radio" name="isNewVersion" value="1" title="생성"> 생성
+									<input type="radio" class="radio" name="isNewVersion" value="0" title="생성안함" checked="checked"> 생성안함
+								</td>
+								<th width="15%" scope="row">에디터</th>
+								<td width="35%">
+									<input type="radio" class="radio" name="isApprEditor" value="1" checked="checked" title="사용"> 사용
+									<input type="radio" class="radio" name="isApprEditor" value="0" title="미사용"> 미사용
+								</td>
+							</tr>
+							<tr>
+								<th width="15%" scope="row">연계여부</th>
+								<td width="35%" class="isLinkUrl" style="border-right-color: rgb(255, 255, 255);">
+									<input type="radio" class="radio" name="isLinkUrl" value="1" title="사용"> 사용
+									<input type="radio" class="radio" name="isLinkUrl" value="0" checked="checked" title="미사용"> 미사용
+								</td>
+								<td width="15%" style="border-right-color: rgb(255, 255, 255); display: table-cell;" class="isLinkUrl0 none"></td>
+								<td width="35%" class="isLinkUrl0 none" style="display: table-cell;"></td>
+								<th width="15%" class="isLinkUrl1" style="display: none;">연계데이터타입</th>
+								<td width="35%" class="isLinkUrl1" style="display: none;">
+									<input type="radio" class="radio" name="linkDataType" value="0" checked="checked" title="HTML"> HTML
+									<input type="radio" class="radio" name="linkDataType" value="1" title="JSON"> JSON
+								</td>
+							</tr>
+							<tr class="isLinkUrl1" style="display: none;">
+								<th width="15%">연계주소</th>
+								<td width="85%" colspan="3">
+									<div>
+										<input type="text" name="linkUrl" value="" class="inputbox w100" title="연계주소">
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table summary="" style="table-layout:fixed;">
+						<caption></caption>
+						<tbody>
+							<tr height="10">
+								<td width="15%" class="border_none"></td>
+								<td width="85%" class="border_none"></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="border:none; padding:0px;">
+									<div id="autoViewerA" style="margin-top:10px;margin-bottom:10px;padding-left:10px;padding-right:48px;border: 1px solid #DDD;width:842px;display:none;">
+										<iframe id="autoPreviwerIframe" name="autoPreviwerIframe" width="100%" scrolling="no" frameborder="0" onload="resizeFrame(this);" style="height: 0px;"></iframe>
+									</div>
+
+									<div id="layoutDiv" class="iKEP_tab_s ui-tabs ui-widget ui-widget-content ui-corner-all">
+										<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+											<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#makerA">양식항목작성</a></li>
+											<li class="ui-state-default ui-corner-top"><a href="#previewerA">미리보기</a></li>
+										</ul>
+										<div id="rowPerItemDiv" class="btn">
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.checkAutoPreviwer(true);"><span style="display:none;">미리보기</span></a>&nbsp;&nbsp;
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.previewDocLayout('1');"><span>미리보기(새창)</span></a>&nbsp;&nbsp;
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.initFormLayout();"><span>초기화</span></a>&nbsp;&nbsp;
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.listApprFormDocTemplatePopUp(0);"><span>서식</span></a>&nbsp;&nbsp;
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.listApprFormHistoryPopup(101200288390);"><span>버전이력</span></a>&nbsp;&nbsp;
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.makeFormLinkedData();" style="display: none;"><span>연계JSON생성</span></a>&nbsp;&nbsp;
+											<a class="button_ic valign_bottom" href="#a" onclick="iFU.setFormLayoutConfigPopUp();"><span>폼설정</span></a>&nbsp;&nbsp;
+										</div>
+										<div class="tab_conbox">
+											<div id="makerA" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+												<div class="mt5">
+													<div class="appr_formlayoutbtn" style="width:30%;float:left;">
+														<a href="#a" onclick="iFU.addRow(1, 'one')" title="one"><img src="/base/images/icon/ic_appr_item1.gif"></a>&nbsp;
+														<a href="#a" onclick="iFU.addRow(2, 'two')" title="two"><img src="/base/images/icon/ic_appr_item2.gif"></a>&nbsp;
+														<a href="#a" onclick="iFU.addRow(3, 'three')" title="three"><img src="/base/images/icon/ic_appr_item3.gif"></a>&nbsp;
+														<a href="#a" onclick="iFU.addRow(4, 'four')" title="four"><img src="/base/images/icon/ic_appr_item4.gif"></a>&nbsp;
+														<a href="#a" onclick="iFU.addRow(5, 'five')" title="five"><img src="/base/images/icon/ic_appr_item5.gif"></a>&nbsp;
+														<a href="#a" onclick="iFU.addRow(6, 'six')" title="six"><img src="/base/images/icon/ic_appr_item6.gif"></a>&nbsp;
+														<a href="#a" onclick="iFU.addRow(1, 'line')" title="line"><img src="/base/images/icon/ic_appr_line.gif"></a>&nbsp;
+													</div>
+													<div id="itemIconDiv" style="paddingwidth:70%;float:left;text-align:left;">
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_input.png"> <span>텍스트</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_textarea.png"> <span>텍스트박스</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_select.png"> <span>셀렉트</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_radio.png"> <span>라디오</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_checkbox.png"> <span>체크박스</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_layer.png"> <span>글상자</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_exlink.png"> <span>외부링크</span>&nbsp;&nbsp;
+														<img style="vertical-align:top" src="/base/images/icon/ic_appr_line.png"> <span>구분선</span>&nbsp;&nbsp;
+													</div>
+													<div style="width:1%;clear:both"></div>
+												</div>
+
+												<div id="formLayoutDiv" class="none ui-sortable" style="display: block;">
+													<div class="noMultiRow two"><div class="two-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_input.png"> 테스트 로우2</div>
+														<p></p>
+													</div>
+													<div class="two-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_input.png"></div>
+														<p></p>
+													</div>
+													<div class="clear"></div>
+												</div>
+
+												<div class="noMultiRow four" style="">
+													<div class="four-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_select.png"> 셀렉트</div>
+														<p></p>
+													</div>
+													<div class="four-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_radio.png"> 라디오</div>
+														<p></p>
+													</div>
+													<div class="four-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_checkbox.png"> 체크박스</div>
+														<p></p>
+													</div>
+													<div class="four-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_layer.png"> 글상자</div>
+														<p></p>
+													</div>
+													<div class="clear"></div>
+												</div>
+
+												<div class="noMultiRow one" style="">
+													<div class="one-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_input.png"> 테스트</div>
+														<p></p>
+													</div>
+													<div class="clear"></div>
+												</div>
+
+												<div class="noMultiRow three">
+													<div class="three-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_textarea.png"> 텍스트박스</div>
+														<p></p>
+													</div>
+													<div class="three-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_textarea.png"></div>
+														<p></p>
+													</div>
+													<div class="three-float" style="background-color: rgb(170, 197, 243);">
+														<p></p>
+														<div class="ellipsis" style="text-align:center;">&nbsp;<img style="vertical-align:top;" src="/base/images/icon/ic_appr_input.png"></div>
+														<p></p>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+											<div id="emptyLayoutDiv" class="appr_itemnone none" style="display: none;">- 버튼을 클릭하여 항목을 추가해 주세요 -</div>
+											<div class="appr_formlayoutbtn mt5">
+												<a href="#a" onclick="iFU.addRow(1, 'one')" title="one"><img src="/base/images/icon/ic_appr_item1.gif"></a>&nbsp;
+												<a href="#a" onclick="iFU.addRow(2, 'two')" title="two"><img src="/base/images/icon/ic_appr_item2.gif"></a>&nbsp;
+												<a href="#a" onclick="iFU.addRow(3, 'three')" title="three"><img src="/base/images/icon/ic_appr_item3.gif"></a>&nbsp;
+												<a href="#a" onclick="iFU.addRow(4, 'four')" title="four"><img src="/base/images/icon/ic_appr_item4.gif"></a>&nbsp;
+												<a href="#a" onclick="iFU.addRow(5, 'five')" title="five"><img src="/base/images/icon/ic_appr_item5.gif"></a>&nbsp;
+												<a href="#a" onclick="iFU.addRow(6, 'six')" title="six"><img src="/base/images/icon/ic_appr_item6.gif"></a>&nbsp;
+												<a href="#a" onclick="iFU.addRow(1, 'line')" title="line"><img src="/base/images/icon/ic_appr_line.gif"></a>&nbsp;
+											</div>
+											<div id="rowActionDiv" style="top: 90.696px; left: 810.006px; display: none;">
+												<ul>
+													<li id="rowActionEditMultiLi" style="display: none;"><a href="#a" onclick="iFU.editMultiRow();">멀티수정</a></li>
+													<li></li>
+													<li id="rowActionNoMultiLi" style="display: none;"><a href="#a" onclick="iFU.toNoMultiRow();">멀티해제</a></li>
+													<li></li>
+													<li id="rowActionMultiLi" style="display: list-item;"><a href="#a" onclick="iFU.toMultiRow();">멀티</a></li>
+													<li id="rowActionAddItemLayoutLi" style="display: list-item;"><a href="#a" onclick="iFU.newItem();">item추가</a></li>
+													<li><a href="#a" onclick="iFU.removeRow();">삭제</a></li>
+													<li id="rowActionUpRowLi" style="display: none;"><a href="#a" onclick="iFU.upRow();">위로</a></li>
+													<li id="rowActionDownRowLi" style="display: list-item;"><a href="#a" onclick="iFU.downRow();">아래로</a></li>
+												</ul>
+											</div>
+											<div id="itemActionDiv" style="top: 81.6818px; left: 758.963px; display: none;">
+												<ul>
+													<li id="itemActionInfoItemLi" style="display: list-item;"><a href="#a" onclick="iFU.leftItem();"><img src="/base/images/icon/ic_appr_que.gif" class="tooltip_approvalInfo_right"></a></li>
+													<li id="itemActionLeftItemLi" style="display: list-item;"><a href="#a" onclick="iFU.leftItem();"><img src="/base/images/icon/ic_appr_left.gif"></a></li>
+													<li id="itemActionRightItemLi" style="display: none;"><a href="#a" onclick="iFU.rightItem();"><img src="/base/images/icon/ic_appr_right.gif"></a></li>
+													<li><a href="#a" onclick="iFU.removeItem();"><img src="/base/images/icon/ic_appr_close.gif"></a></li>
+												</ul>
+											</div>
+										</div>
+
+										<div id="previewerA" style="width:840px" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+											<iframe id="previwerIframe" name="previwerIframe" width="100%" scrolling="no" frameborder="0" onload="resizeFrame(this);" style="height: 150px;"></iframe>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr height="25">
+							<td colspan="2" class="border_none"></td>
+						</tr>
+						<tr>
+							<td colspan="2" class="ckeditor">
+								<div id="editorDiv" style="height: 500px; width: 100%;">
+									<textarea id="formEditorData" name="formEditorData" class="inputbox w100 fullEditor" style="display: none; height: 450px;"></textarea>
+									<iframe frameborder="0" scrolling="no" style="width: 100%; height: 499px;" src="http://gwdemo.woongjinholdings.com/naverSmarteditor/smartEditor2Skin.do"></iframe>
+									<iframe frameborder="0" scrolling="no" src="http://gwdemo.woongjinholdings.com/naverSmarteditor/smartEditor2Skin.do" style="width: 100%; height: 499px;"></iframe>
+									<iframe frameborder="0" scrolling="no" src="http://gwdemo.woongjinholdings.com/naverSmarteditor/smartEditor2Skin.do" style="width: 100%; height: 499px;"></iframe>
+									<iframe frameborder="0" scrolling="no" src="http://gwdemo.woongjinholdings.com/naverSmarteditor/smartEditor2Skin.do" style="width: 100%; height: 499px;"></iframe>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th width="15%">작성가이드</th>
+							<td width="85%">
+								<textarea name="formGuide" class="inputbox w100 valid" rows="3" style="margin: 0px; width: 515px; height: 125px;"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div id="fileUploadDiv" class="mt10">
+									<div class="fileup">
+										<div class="fileup_c">
+											<div class="fileAttach"></div>
+												<div id="o_1cbb52s03drq1gku164kt0m1var1" style="position: relative;">
+													<div class="plupload_wrapper plupload_scroll">
+														<div id="o_1cbb52s03drq1gku164kt0m1var1_container" class="plupload_container" title="Using runtime: html5">
+															<div class="plupload">
+																<div class="plupload_content">
+																	<div class="plupload_filelist_header">
+																		<div class="plupload_file_name">파일명</div>
+																		<div class="plupload_file_action">&nbsp;</div>
+																		<div class="plupload_file_status"><span>상태</span></div>
+																		<div class="plupload_file_size">용량</div>
+																		<div class="plupload_clearer">&nbsp;</div>
+																	</div>
+																	<ul id="o_1cbb52s03drq1gku164kt0m1var1_filelist" class="plupload_filelist" style="position: relative;">
+																		<li class="plupload_droptext">탐색기 등으로 파일을 드래그할 수 있습니다.</li>
+																	</ul>
+																	<div class="plupload_filelist_footer">
+																		<div class="plupload_file_name">
+																			<div class="plupload_buttons">
+																				<a href="#a" class="plupload_button plupload_add" id="o_1cbb52s03drq1gku164kt0m1var1_browse" style="position: relative; z-index: 1;">파일 추가</a>
+																			</div>
+																			<span class="plupload_upload_status"></span>
+																		</div>
+																		<div class="plupload_file_action"></div>
+																		<div class="plupload_file_status"><span class="plupload_total_status">0%</span></div>
+																		<div class="plupload_file_size" style="width: 120px;"><span class="plupload_total_file_size">0 b</span> / <span><b>20 mb</b></span></div>
+																		<div class="plupload_progress">
+																			<div class="plupload_progress_container">
+																				<div class="plupload_progress_bar"></div>
+																			</div>
+																		</div>
+																		<div class="plupload_clearer">&nbsp;</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<input type="hidden" id="o_1cbb52s03drq1gku164kt0m1var1_count" name="o_1cbb52s03drq1gku164kt0m1var1_count" value="0">
+													</div>
+
+													<div id="html5_1cbb52s0a1gmo1vfd1k96i25i964_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;">
+														<input id="html5_1cbb52s0a1gmo1vfd1k96i25i964" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept="text/plain,.asc,.txt,.text,.diff,.log,text/html,.htm,.html,.xhtml,text/rtf,.rtf,.xml,.vcf,text/csv,.csv,image/bmp,.bmp,image/gif,.gif,image/jpeg,.jpeg,.jpg,image/png,.png,image/tiff,.tiff,.tif,application/zip,.zip,.alz,.rar,.jar,.tar,.bat,application/msword,.doc,.dot,application/pdf,.pdf,application/pgp-signature,.pgp,application/postscript,.ps,.ai,.eps,.rtf,application/vnd.ms-excel,.xls,.xlb,application/vnd.ms-powerpoint,.ppt,.pps,.pot,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.docx,application/vnd.openxmlformats-officedocument.presentationml.presentation,.pptx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.xlsx,.hwp,audio/x-wav,.wav,audio/x-ms-wma,.wma,audio/mpeg,.mpga,.mpega,.mp2,.mp3,audio/x-m4a,.m4a,video/avi,.avi,video/x-matroska,.mkv,video/mpeg,.mpeg,.mpg,.mpe,video/quicktime,.qt,.mov,video/mp4,.mp4,video/x-m4v,.m4v,video/x-flv,.flv,video/vnd.rn-realvideo,.rv,application/x-shockwave-flash,.swf,.swfl,.com,application/octet-stream,.exe,.xps,video/x-ms-wmv,.wmv,.oxps,.xlsm,.dwg">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!--blockButton Start-->
+				<div id="formContentButtonDiv" class="blockButton"> 
+					<ul>
+						<li><a id="saveContentButton" class="button" href="#a"><span>저장</span></a></li>
+						<li><a id="listContentButton" class="button" href="#a"><span>취소</span></a></li>
+					</ul>
+				</div>
+				<!--//blockButton End-->
+				<input type="hidden" name="msie"><input type="hidden" name="msie"><input type="hidden" name="msie"><input type="hidden" name="msie">
+			</form>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
+</div>
+</body>
+</html>

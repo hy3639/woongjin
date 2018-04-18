@@ -1,7 +1,10 @@
 /* 웹 전용 */
 @media only screen and (min-width:801px) {
 	/* gnb */
-	.gnb-menu-box {display:block;top:0;}
+	.gnb-menu-box {
+		display:block;
+		top:0;
+	}
 	/* 탭 */
 	.tab-list {overflow:hidden;}
 	.tab-list .item {
@@ -72,18 +75,27 @@
 	.content .fixed-top-box {overflow:hidden;}
 	.content .fixed-top-box .cont {width:33%;}
 	.content .cont {
-		overflow:hidden;
 		float:left;
 		position:relative;
 		width:50%;
 		height:400px;
 		margin-left:-1px;
-		
+
 		border-top:1px solid #f5f5f5;
 		border-left:1px solid #f5f5f5;
 		background-color:#fff;
 	}
-	.content .cont.ui-sortable-helper {border:1px solid #f5f5f5;}
+	.content .cont:after {
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.content .cont.ui-sortable-helper {
+		overflow:hidden;
+		height:400px;
+		box-sizing:border-box;
+		border:1px solid #f5f5f5;
+	}
 	.content .cont-inner {
 		padding:25px 40px 0;
 		height: 400px;
@@ -155,7 +167,7 @@
 		height:42px;
 		margin-top:-21px;
 	}
-	
+
 	.content .cont .select-area {
 		position:relative;
 		width:100%;
@@ -297,12 +309,12 @@
 	.content .cont .mail-list.board02 .item .flag02 {background-color:#ddd;}
 	.content .cont .mail-list.board02 .item .flag03 {background-color:#aaa;}
 	.content .cont .mail-list.board02 .item .reply {display:inline-block; margin-left:5px;}
-	
+
 	/* My Collaboration */
 	.division {margin-top:20px;}
 	.division .scroll-wrap {margin:0 0 23px;}
 	.division .dtitle {
-		display:block; 
+		display:block;
 		font-size:16px;
 		color:#000;
 		font-weight:bold;
@@ -535,7 +547,7 @@
 	}
 	.approval ul li:first-child {border-left:0;}
 	.approval ul li strong {
-		font-size:12px; 
+		font-size:12px;
 		color:#999;
 		font-weight:bold;
 	}
@@ -631,7 +643,7 @@
 
 	/* 일정/주간일정 */
 	.schedule-cont {}
-	
+
 	.schedule-cont .schedule-area {margin-top:24px;}
 	.schedule-cont .schedule-area .period-area {margin-top:10px;}
 	.schedule-cont .schedule-area .period-area .box-item {width:48%;}
@@ -869,7 +881,7 @@
 	}
 	.guest .visitant li:first-child {border-left:0;}
 	.guest .visitant li strong {
-		font-size:12px; 
+		font-size:12px;
 		color:#999;
 		font-weight:bold;
 	}
@@ -983,7 +995,7 @@
 	}
 
 	.dictionary-list ul li span {display:block; color:#666; font-size:12px; line-height:30px; text-align:center;}
-	
+
 	/* My Gallery */
 	.slider5 {width:272px; margin:0 auto; padding-bottom:30px;}
 	.slider5 .bxslider .item {width:272px; height:240px; background-color:#000;}
@@ -1080,7 +1092,7 @@
 		background-image:url(../images2.0/btn/btn_stop.png);
 		background-position:0 -10px;
 	}
-	
+
 	/* 개인 롤링 */
 	.slider6 {width:272px; margin:0 auto; padding-bottom:30px;}
 	.slider6 .bxslider .item {width:272px; height:240px; background-color:#000;}
@@ -1507,7 +1519,7 @@
 	}
 	.approval ul li:first-child {border-left:0;}
 	.approval ul li strong {
-		font-size:12px; 
+		font-size:12px;
 		color:#999;
 		font-weight:bold;
 	}
@@ -1702,7 +1714,7 @@
 		background:url(../images2.0/mobile/btn/btn_x.png) no-repeat 50% 50%;
 		background-size:10px 10px;
 	}
-	
+
 	/* 최신 Q&A */
 	.content .cont .mail-list.board02 .item {padding-left:55px;}
 	.content .cont .mail-list.board02 .item .flag {
@@ -1720,13 +1732,13 @@
 	.content .cont .mail-list.board02 .item .flag02 {background-color:#ddd;}
 	.content .cont .mail-list.board02 .item .flag03 {background-color:#aaa;}
 	.content .cont .mail-list.board02 .item .reply {display:inline-block; margin-left:5px;}
-	
+
 	/* My Collaboration */
 	.division {}
 	.division .scroll-wrap {margin:0 0 23px;}
 	.division .scroll-wrap .scroll-box {overflow-y:auto; height:200px;}
 	.division .dtitle {
-		display:block; 
+		display:block;
 		font-size:14px;
 		color:#000;
 		font-weight:bold;
@@ -2014,7 +2026,7 @@
 
 	/* 최근 방명록/최근 블로그 방문자/축하합니다 */
 	.scroll-wrap.guest {}
-	
+
 	.congratulation {
 		display:block;
 		margin-bottom:20px;
@@ -2037,7 +2049,7 @@
 	}
 	.guest .visitant li:first-child {border-left:0;}
 	.guest .visitant li strong {
-		font-size:12px; 
+		font-size:12px;
 		color:#999;
 		font-weight:bold;
 	}
@@ -2291,7 +2303,7 @@
 		background-image:url(../images2.0/mobile/btn/btn_stop.png);
 		background-position:0 -10px;
 	}
-	
+
 	/* 개인 롤링 */
 	.slider6 {width:100%; margin:0 auto; padding-bottom:30px;}
 	.slider6 .bxslider .item {width:100%; background-color:#000;}
