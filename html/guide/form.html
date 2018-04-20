@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
-<title>웅진</title>
+<title>폼요소 :: 웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
 <link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
@@ -199,7 +199,57 @@ h2:first-child {margin-top:0;}
 	<p class="fake-placeholder">태그추가</p>
 	<div data-tags-input-name="tag" class="js-tagBox"></div>
 </div>
-<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 또는 'Enter'로 구분해주세요.</p>
+<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 'Enter'로 구분해주세요.</p>
+
+<br><br>
+
+
+<!-- 180418 태그 수정영역 추가 -->
+<div class="tagging-box">
+	<!-- 수정할 태그 목록
+		.tag-data 에 수정될 태그 추가
+	-->
+	<div class="tag-mody" style="display:none;">
+		<div class="tag-data">웅진</div>
+		<div class="tag-data">그룹웨어</div>
+	</div>
+	<!-- // 수정할 태그 목록 -->
+	<p class="fake-placeholder">태그추가</p>
+	<div data-tags-input-name="tag" class="js-tagBox"></div>
+</div>
+<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 'Enter'로 구분해주세요.</p>
+<!-- // 180418 태그 수정영역 추가 -->
+
+<br><br>
+
+:: 기존 사이트에서 사용하는 태깅 ::
+<br><br>
+
+<!-- 180418 기존 사이트에서 사용하는 태그영역 스타일 추가 -->
+<div class="tagging-area"><!-- 180418 class="tagging-area" 추가 -->
+	<input name="tagName" class="inputbox" type="text" value="gdgdg,fdgdfg" title="tag name" id="tags1524118418396" style="display: none;">
+	<div id="tags1524118418396_tagsinput" class="tagsinput" style="height: 100%;">
+		<span class="tag">
+			<span>웅진</span>
+			<a href="#" title="Removing tag">x</a>
+		</span>
+		<span class="tag">
+			<span>그룹웨어</span>
+			<a href="#" title="Removing tag">x</a>
+		</span>
+		<span class="tag">
+			<span>웅진 그룹웨어</span>
+			<a href="#" title="Removing tag">x</a>
+		</span>
+		<div id="tags1524118418396_addTag">
+			<input id="tags1524118418396_tag" value="" data-default="태그 추가" class="valid" style="color: rgb(102, 102, 102); width: 162.011px;">
+		</div>
+		<div class="tags_clear"></div>
+	</div>
+</div>
+<p class="text-notice">* 태그는 10개까지, 단어당 30자로 등록할 수 있으며, 여러 개 입력할 때는 'Enter'로 구분해주세요.</p>
+<!-- // 180418 기존 사이트에서 사용하는 태그영역 스타일 추가 -->
+
 
 
 <h2>검색</h2>

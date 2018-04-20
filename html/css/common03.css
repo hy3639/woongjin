@@ -6,7 +6,7 @@
 	레이아웃
 =========================================================================== */
 .container {
-padding-left:0
+	padding-left:0 !important;
 }
 .gnb-sliding {
 	display:none;

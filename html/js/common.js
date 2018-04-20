@@ -188,6 +188,47 @@
 			$(this).find('.depth-list.top').show();
 		});
 
+		/* 트리메뉴 넓이 셋팅 */
+		$('.shuttleTree a').each(function(){
+			var left = $(this).offset().left;
+			var wid = $(this).outerWidth();
+			$(this).attr('data', left + wid);
+		});
+
+		/* 트리메뉴 넓게보기 */
+		$('.btn-view-wid').click(function(){
+			var widArray = $(this).closest('.sub-gnb').find('a').map(function(){
+				return $(this).attr('data');
+			});
+			var moreWid = Math.max.apply(Math , widArray);
+
+			var gnb = $(this).closest('.gnb-utill');
+
+			if($(gnb).hasClass('wid')){
+				$(gnb).removeClass('wid');
+				$(gnb).find('.gnb-sliding').css('width', '220px');
+				$('.container').css('padding-left', '220px');
+				$(gnb).find('.gnb-wrap .depth1').css('left', '220px');
+				$(this).text('넓게보기');
+			}else{
+				$(gnb).addClass('wid');
+				$(gnb).find('.gnb-sliding').css('width', moreWid + 15);
+				$('.container').css('padding-left', moreWid + 15);
+				$(gnb).find('.gnb-wrap .depth1').css('left', moreWid + 15);
+				$(this).text('좁게보기');
+			}
+		});
+
+		/* 용어사전 메뉴 */
+		$('.sub-gnb .menu-item .ico-flag.new').each(function(){
+			var itemWid = $(this).closest('.menu-item').outerWidth();
+			var iconWid = $(this).outerWidth();
+			var txtWid = $(this).closest('.menu-item').find('.text').outerWidth();
+			console.log(itemWid - iconWid);
+			if(itemWid - iconWid < txtWid){
+				$(this).closest('.menu-item').addClass('max');
+			}
+		});
 
 
 		/* 검색 포커스 */
@@ -198,9 +239,9 @@
 		});
 
 		$('.search-box2 input[type=text]').focus(function(){
-			$(this).next('.btn-text').addClass('bdColor bgColor').css({'color':'#fff'});
+			$(this).closest('.search-box2').find('.btn-text').addClass('bdColor bgColor').css({'color':'#fff'});
 		}).blur(function(){
-			$(this).next('.btn-text').removeClass('bdColor bgColor').css({'color':'#666'});
+			$(this).closest('.search-box2').find('.btn-text').removeClass('bdColor bgColor').css({'color':'#666'});
 		});
 
 		/* 기본 셀렉트 포커스 */
@@ -642,6 +683,13 @@
 				});
 			}
 		});
+
+		/* 태그 수정 페이지 */
+		$('.tag-mody .tag-data').each(function(){
+			var text = $(this).text();
+			$(this).closest('.tagging-box').find('.js-tagBox .type-zone').before('<div class="tag"><span>#</span> ' + text + '<input type="hidden" name="tag[]" value="' + text + '"><a role="button" class="tag-i">x</a></div>');
+		});
+
 		$(document).on('keydown', '.tagging', function(e){
 			if(e.keyCode == 8 || e.keyCode == 46){
 				var ea = $(this).find('.type-zone').val().length;
@@ -777,20 +825,20 @@
 			$('.db-dimmed').attr('class', 'pop-dimmed');
 		});
 
-		/* 인물정보 팝업 */
+		/* 인물정보 팝업 
 		// 열기
 		$('.btn-user').click(function(){
-			$('.container').append('<div class="layer-popup-wrap"></div>');
-			$('.layer-popup-wrap').load('../popup/layer_popup.html .user-popup', function(){
-				$('.layer-popup-wrap').fadeIn(300);
-				var wid = $('.layer-popup').outerWidth();
-				var hei = $('.layer-popup').outerHeight();
-				$('.layer-popup').css({
+			$(parent.document).contents().find('.wrapper').append('<div class="layer-popup-wrap"></div>');
+			$(parent.document).contents().find('.layer-popup-wrap').load('../popup/layer_popup.html .user-popup', function(){
+				$(parent.document).contents().find('.layer-popup-wrap').fadeIn(300);
+				var wid = $(parent.document).contents().find('.layer-popup').outerWidth();
+				var hei = $(parent.document).contents().find('.layer-popup').outerHeight();
+				$(parent.document).contents().find('.layer-popup').css({
 					'left':'50%',
 					'top':'50%',
 					'margin-left':-wid/2,
 					'margin-top':-hei/2
-				});
+				}).show();
 			});
 		});
 		// 닫기
@@ -805,6 +853,7 @@
 				$('.layer-popup-wrap').remove();
 			}
 		});
+		*/
 
 		// 팝업내 팝업 호출
 		$('.btn-dbpop').click(function(){
@@ -830,8 +879,11 @@
 		selectWid();// 셀렉트 박스넓이 설정
 		calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지
 		popResize();// 팝업 리사이징
-		iframeHeight(); //아이프레임 높이
 		tabClick(); // 탭 tab-list1 웹, 모바일 클릭
+
+		setTimeout(function(){
+			iframeHeight(); //아이프레임 높이
+		}, 500);
 	});
 
 	$(window).scroll(function(){
@@ -1002,6 +1054,11 @@ function resizeMid(){
 			});
 
 			$('.gnb-sliding').removeAttr('style');
+
+			$('.container').removeAttr('style');
+			$('.gnb-utill').removeClass('wid');
+			$('.btn-view-wid').text('넓게보기');
+
 			$('.wrapper').addClass('web').removeClass('mobile');
 			$('.container').addClass('web').removeClass('mobile');
 			$('.depth1, .gnb-utill').removeAttr('style');
@@ -1124,7 +1181,7 @@ function resizeMid(){
 			// 링크 이동
 			$('.gnb-select select').change(function(){
 				var url = $(this).find('option:selected').attr('data');
-				if(! $(this).find('option:selected').attr('data') == false) window.location.href=url;
+				if(! $(this).find('option:selected').attr('data') == false) window.parent.location.href=url;
 			});
 
 			/* 조직도 탭 셀렉트로 변경*/
@@ -1326,7 +1383,7 @@ function popResize(){
 				$(this).css({
 					'left':'50%',
 					'top':'50%',
-					'bottom':'inherit',
+					'bottom':' ',
 					'margin-left':-wid/2,
 					'margin-top':-(contH + headH)/2
 				});

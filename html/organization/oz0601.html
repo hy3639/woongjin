@@ -258,35 +258,271 @@
 					<button type="button" class="btn-search">검색</button>
 				</div>
 			</div>
+			<div class="organization-box">
+				<ul class="tab-list1 mHide">
+					<li class="item"><a class="text" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
+					<li class="item"><a class="text" href="oz0301.html">사진</a></li>
+					<li class="item"><a class="text" href="oz0401.html">경력</a></li>
+					<li class="item"><a class="text" href="oz0501.html">방명록</a></li>
+					<li class="item"><a class="text fColor" href="#">즐겨찾기</a></li>
+				</ul>
 
-			<ul class="tab-list1 mHide">
-				<li class="item"><a class="text" href="oz0201.html">프로필</a></li><!-- 선택 (class="fColor") -->
-				<li class="item"><a class="text" href="oz0301.html">사진</a></li>
-				<li class="item"><a class="text" href="oz0401.html">경력</a></li>
-				<li class="item"><a class="text fColor" href="oz0501.html">방명록</a></li>
-				<li class="item"><a class="text" href="#">즐겨찾기</a></li>
-			</ul>
-
-			<div class="board-setting">
-				<div class="tree-menu open">
-					<ul class="tree-list">
-						<li>
-							<p class="link noDel"><span class="text">카테고리</span></p><!-- 수정/삭제 불가 (class="noDel") -->
-							<ul>
-								<li><p class="link"><a href="#" class="text">메뉴01-01</a></p></li>
-								<li><p class="link"><a href="#" class="text">메뉴01-02</a></p></li>
-								<li><p class="link"><a href="#" class="text">메뉴01-03</a></p></li>
+				<div class="board-setting">
+					<div class="toggle-cont bdA0">
+						<div class="tree-menu open">
+							<ul class="tree-list">
+								<li>
+									<p class="link noDel"><span class="text">Category</span></p><!-- 수정/삭제 불가 (class="noDel") -->
+									<ul>
+										<li><p class="link"><a href="#" class="text">게시판</a></p></li>
+										<li><p class="link"><a href="#" class="text">공지사항</a></p></li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-					</ul>
-					<!-- contextmenu 레이어-->
-					<div class="contextmenu">
-						<ul class="list">
-							<li><a href="#">추가</a></li>
-							<li class="del"><a href="#">수정</a></li>
-							<li class="del"><a href="#">삭제</a></li>
-						</ul>
+						</div>
 					</div>
+					<button type="button" class="btn-m-toggle bdT0 wHide"><span class="text close">접기</span><span class="text open">Category</span></button>
+
+					<ul class="sub-tab wide">
+						<li class="item"><a class="text fColor" href="#">전체</a></li><!-- 선택 (class="fColor") -->
+						<li class="item"><a class="text" href="#">게시판</a></li>
+						<li class="item"><a class="text" href="#">공지사항</a></li>
+					</ul>
+					
+					<div class="sorting-area wide">
+						<div class="left-box mHide">
+							<select class="styled1" style="width:120px;">
+								<option>등록일</option>
+								<option>수정일</option>
+							</select>
+						</div>
+						<div class="right-box">
+							<div class="search-box2">
+								<input type="text">
+								<button type="button" class="btn-text mid">검색</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="subContent">
+						<div class="subCont on">
+							<div class="bookmark">
+								<ul class="inner-wrap">
+									<li class="list">
+										<span class="date">2018년 02월</span>
+										<ul class="notice-list">
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>게시판</span>
+												<span class="title">테스트</span>
+												<div class="bottom-area">
+													<span class="name">관리자</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>커뮤니티</span>
+												<span class="title">지면 보도자료</span>
+												<div class="bottom-area">
+													<span class="name">장동건</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>150</span>
+														<span class="like-text"><em class="m-icon">추천</em> 1</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>공지사항</span>
+												<span class="title">필수 공지사항</span>
+												<div class="bottom-area">
+													<span class="name">홍길동</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="list">
+										<span class="date">2018년 01월</span>
+										<ul class="notice-list">
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>게시판</span>
+												<span class="title">테스트</span>
+												<div class="bottom-area">
+													<span class="name">관리자</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>커뮤니티</span>
+												<span class="title">지면 보도자료</span>
+												<div class="bottom-area">
+													<span class="name">장동건</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>공지사항</span>
+												<span class="title">필수 공지사항</span>
+												<div class="bottom-area">
+													<span class="name">홍길동</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="subCont">
+							<div class="bookmark">
+								<ul class="inner-wrap">
+									<li class="list">
+										<span class="date">2018년 02월</span>
+										<ul class="notice-list">
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>게시판</span>
+												<span class="title">테스트</span>
+												<div class="bottom-area">
+													<span class="name">관리자</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>커뮤니티</span>
+												<span class="title">지면 보도자료</span>
+												<div class="bottom-area">
+													<span class="name">장동건</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="list">
+										<span class="date">2018년 01월</span>
+										<ul class="notice-list">
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>게시판</span>
+												<span class="title">테스트</span>
+												<div class="bottom-area">
+													<span class="name">관리자</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>커뮤니티</span>
+												<span class="title">지면 보도자료</span>
+												<div class="bottom-area">
+													<span class="name">장동건</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="subCont">
+							<div class="bookmark">
+								<ul class="inner-wrap">
+									<li class="list">
+										<span class="date">2018년 02월</span>
+										<ul class="notice-list">
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>공지사항</span>
+												<span class="title">필수 공지사항</span>
+												<div class="bottom-area">
+													<span class="name">홍길동</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="list">
+										<span class="date">2018년 01월</span>
+										<ul class="notice-list">
+											<li>
+												<span class="type"><button type="button" class="btn-del">삭제</button>공지사항</span>
+												<span class="title">필수 공지사항</span>
+												<div class="bottom-area">
+													<span class="name">홍길동</span>
+													<span class="sub-info">
+														<span><em class="mHide">조회 </em>15900</span>
+														<span class="like-text"><em class="m-icon">추천</em> 0</span>
+														<span class="mHide">댓글 50</span>
+														<span class="col"><em class="mHide">등록 </em>2018.01.31</span>
+														<span class="col mHide">수정 2018.02.02</span>
+													</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--// Web 컨텐츠  -->
 				</div>
 			</div>
 		</div>
@@ -295,5 +531,56 @@
 <div class="footer">
 	<p class="copyright">COPYRIGHT © 2018. ALL RIGHTS RESERVED. VER 1.0.0</p>
 </div>
+<script>
+	$(window).load(function(){
+		$('.bookmark .notice-list').each(function(){
+			var leng = $(this).find('li').length;
+		});
+		
+		$('.bookmark .notice-list li .btn-del').bind('click', function(){
+			
+			$(this).closest('li').remove();
+
+			$('.bookmark .list').each(function(){
+				var leng = $(this).find('.notice-list li').length;
+				if (leng == 0)
+				{
+					$(this).remove();
+				}
+			});
+		});
+
+		$('.mobile .sub-tab .item').each(function(){
+			var tabW = $(this).closest('.sub-tab').width();
+			var leng = $('.sub-tab .item').length;
+			var itemW = tabW/leng;
+			$(this).attr('style', 'width:'+itemW+'px');
+		});
+
+		$('.sub-tab .item a').click(function(){
+			var idx = $(this).closest('li').index();
+
+			$('.sub-tab .item a').closest('li').siblings().find('a').removeClass('fColor');
+			$(this).addClass('fColor');
+
+			$('.subContent.mHide .subCont').removeClass('on').eq(idx).addClass('on');
+			$('.subContent.wHide .subCont').removeClass('on').eq(idx).addClass('on');
+		});
+	});
+
+	$(window).resize(function(){
+		var winW = $(window).width();
+		if(winW < 800){
+			$('.mobile .sub-tab .item').each(function(){
+				var tabW = $(this).closest('.sub-tab').width();
+				var leng = $('.sub-tab .item').length;
+				var itemW = tabW/leng;
+				$(this).attr('style', 'width:'+itemW+'px');
+			});
+		}else{
+			$('.sub-tab .item').attr('style', '');
+		}
+	});
+</script>
 </body>
 </html>

@@ -2,10 +2,11 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
 <title>웅진</title>
 <link rel="stylesheet" type="text/css" href="../css/common.css">
-<link rel="stylesheet" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
 <link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
 
 <script src="../js/jquery-1.9.1.min.js"></script>
@@ -64,8 +65,6 @@
 												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
 												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
 												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
-												<li class="depth-item"><a href="#" class="title">게시판 06</a></li>
-												<li class="depth-item"><a href="#" class="title">게시판 07</a></li>
 											</ul>
 										</li>
 										<li class="depth1-item">
@@ -97,8 +96,6 @@
 												<li class="depth-item"><a href="#" class="title">게시판 03</a></li>
 												<li class="depth-item"><a href="#" class="title">게시판 04</a></li>
 												<li class="depth-item"><a href="#" class="title">게시판 05</a></li>
-												<li class="depth-item"><a href="#" class="title">게시판 06</a></li>
-												<li class="depth-item"><a href="#" class="title">게시판 07</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -226,71 +223,80 @@
 					<div class="depth1">
 						<div class="scroll-area">
 							<div class="depth-top">
-								<p class="depth1-title"><span class="text">전자결재</span></p>
-								<div class="menu-box">
-									<a href="#" class="btn-text mid">기안문 작성</a>
-								</div>
+								<p class="depth1-title"><span class="text">포탈 관리자</span></p>
 							</div>
 							<ul class="depth1-list">
 								<li class="depth1-item">
-									<a href="#" class="d-title">개인문서함</a>
+									<a href="#" class="d-title">사용자관리</a>
 									<ul class="depth-list top">
-										<li class="depth-item"><a href="#" class="title">결재요청함</a></li>
-										<li class="depth-item"><a href="#" class="title">임시저장함</a></li>
-										<li class="depth-item"><a href="#" class="title">참조문서함</a></li>
-										<li class="depth-item"><a href="#" class="title">전체결재문서</a></li>
+										<li class="depth-item on"><a href="#" class="title">사용자 관리</a></li><!-- 선택 메뉴 (class="on") -->
+										<li class="depth-item"><a href="#" class="title">퇴사자 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">그룹 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">공용그룹 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">사용자 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">그룹 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">Profile Image</a></li>
+										<li class="depth-item"><a href="#" class="title">사용자 계정 정책 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">차단해제 요청 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">시스템 관리자 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">역할 관리</a></li>
 									</ul>
 								</li>
 								<li class="depth1-item">
-									<a href="#" class="d-title">결재</a>
+									<a href="#" class="d-title">기본 설정 관리</a>
 									<ul class="depth-list top">
-										<li class="depth-item"><a href="#" class="title">결재대기함</a></li>
-										<li class="depth-item"><a href="#" class="title">결재진행함</a></li>
-										<li class="depth-item"><a href="#" class="title">완료문서함</a></li>
-										<li class="depth-item"><a href="#" class="title">개인지출결의</a></li>
-										<li class="depth-item"><a href="#" class="title">회수/반려문서함</a></li>
+										<li class="depth-item"><a href="#" class="title">로고 이미지 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">SMTP Server 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">메뉴 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">시스템 관리</a></li>
 									</ul>
 								</li>
 								<li class="depth1-item">
-									<a href="#" class="d-title">부서</a>
+									<a href="#" class="d-title">화면 관리</a>
 									<ul class="depth-list top">
-										<li class="depth-item"><a href="#" class="title">부서수신함</a></li>
-										<li class="depth-item"><a href="#" class="title">부서문서함</a></li>
+										<li class="depth-item"><a href="#" class="title">포탈 메인화면 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">포탈 메인화면 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">포틀릿 그룹 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">포틀릿 관리</a></li>
 									</ul>
 								</li>
 								<li class="depth1-item">
-									<a href="#" class="d-title">개인보관함</a>
+									<a href="#" class="d-title">코드 관리</a>
 									<ul class="depth-list top">
-										<li class="depth-item"><a href="#" class="title">개인</a></li>
+										<li class="depth-item"><a href="#" class="title">호칭 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">직위 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">직위 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">직급 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">직군 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">직책 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">호칭 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">직위 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">직급 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">직군 Import</a></li>
+										<li class="depth-item"><a href="#" class="title">직책 Import</a></li>
 									</ul>
 								</li>
 								<li class="depth1-item">
-									<a href="#" class="d-title">환경설정</a>
+									<a href="#" class="d-title">일정 관리</a>
 									<ul class="depth-list top">
-										<li class="depth-item"><a href="#" class="title">서명관리</a></li>
-										<li class="depth-item on"><a href="#" class="title">개인보관함</a></li><!-- 선택된 메뉴 (class="on") -->
-										<li class="depth-item"><a href="#" class="title">대결자관리</a></li>
-										<li class="depth-item"><a href="#" class="title">대결자관리</a></li>
-										<li class="depth-item"><a href="#" class="title">개임보관함</a></li>
-										<li class="depth-item"><a href="#" class="title">알림설정</a></li>
+										<li class="depth-item"><a href="#" class="title">휴일관리</a></li>
 									</ul>
 								</li>
 								<li class="depth1-item">
-									<a href="#" class="d-title">관리자메뉴</a>
+									<a href="#" class="d-title">LineWorks</a>
 									<ul class="depth-list top">
-										<li class="depth-item"><a href="#" class="title">사용관리</a></li>
-										<li class="depth-item"><a href="#" class="title">결재문서 관리</a></li>
-										<li class="depth-item"><a href="#" class="title">문서보안관리</a></li>
-										<li class="depth-item"><a href="#" class="title">부서문서함관리</a></li>
-										<li class="depth-item"><a href="#" class="title">문서함 관리</a></li>
-										<li class="depth-item"><a href="#" class="title">시스템관리</a></li>
-										<li class="depth-item"><a href="#" class="title">코드관리</a></li>
-										<li class="depth-item"><a href="#" class="title">양식관리</a></li>
-										<li class="depth-item"><a href="#" class="title">수신함담당자관리</a></li>
-										<li class="depth-item"><a href="#" class="title">부서별담당자관리</a></li>
-										<li class="depth-item"><a href="#" class="title">전결관리</a></li>
-										<li class="depth-item"><a href="#" class="title">전결규정 설정</a></li>
-										<li class="depth-item"><a href="#" class="title">전결규정 결재선설정</a></li>
+										<li class="depth-item"><a href="#" class="title">메시지 봇 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">콜백 메시지 폼 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">메시지 전송</a></li>
+										<li class="depth-item"><a href="#" class="title">특정기간 메일삭제</a></li>
+									</ul>
+								</li>
+								<li class="depth1-item">
+									<a href="#" class="d-title">근태관리</a>
+									<ul class="depth-list top">
+										<li class="depth-item"><a href="#" class="title">근태 설정</a></li>
+										<li class="depth-item"><a href="#" class="title">근태 코드 타입 관리</a></li>
+										<li class="depth-item"><a href="#" class="title">근태 고드 관리</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -309,54 +315,139 @@
 	<div class="content app-wrap">
 		<!-- 타이틀 영역 -->
 		<div class="title-wrap">
-			<h2 class="title">개인보관함 관리</h2>
+			<h2 class="title">사용자 관리</h2>
 		</div>
 
-		<div class="category-setting">
-			<div class="board-setting">
-				<div class="tree-menu open">
-					<ul class="tree-list">
-						<li>
-							<p class="link noDel"><span class="text">카테고리</span></p><!-- 수정/삭제 불가 (class="noDel") -->
-							<ul>
-								<li><p class="link"><a href="#" class="text">메뉴01-01</a></p></li>
-								<li><p class="link"><a href="#" class="text">메뉴01-02</a></p></li>
-								<li><p class="link"><a href="#" class="text">메뉴01-03</a></p></li>
-							</ul>
-						</li>
-					</ul>
-					<!-- contextmenu 레이어-->
-					<div class="contextmenu">
-						<ul class="list">
-							<li><a href="#">추가</a></li>
-							<li class="del"><a href="#">수정</a></li>
-							<li class="del"><a href="#">삭제</a></li>
+		<div class="board-setting">
+			<div class="tree-menu open">
+				<ul class="tree-list">
+					<li class="on">
+						<p class="link on noDel"><span class="text">카테고리</span></p><!-- 수정/삭제 불가 (class="noDel") -->
+						<ul>
+							<li><p class="link"><a href="#" class="text">메뉴01-01</a></p></li>
+							<li><p class="link"><a href="#" class="text">메뉴01-02</a></p></li>
+							<li><p class="link"><a href="#" class="text">메뉴01-03</a></p></li>
 						</ul>
-					</div>
+					</li>
+				</ul>
+				<!-- contextmenu 레이어-->
+				<div class="contextmenu mHide">
+					<ul class="list">
+						<li><a href="#">추가</a></li>
+						<li class="del"><a href="#">수정</a></li>
+						<li class="del"><a href="#">삭제</a></li>
+					</ul>
 				</div>
-				<div class="cate-name">
-					<div class="board-write1">
-						<table>
-							<colgroup>
-								<col style="width:120px;">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th scope="row"><label for="Category">카테고리명</label></th>
-									<td>
-										<input type="text" id="Category" style="width:100%;">
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="btn-right">
-						<a href="#" class="btn-text">저장</a>
+			</div>
+
+			<div class="user-setting">
+				<div class="board-write2 type2">
+					<table>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:35%;">
+							<col style="width:15%;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">정보공개설정</th>
+								<td colspan="3">
+									<ul class="form-list inline">
+										<li class="item">
+											<input type="radio" name="Radio01" id="Radio0101" class="styled1" checked><label for="Radio0101">공개</label>
+										</li>
+										<li class="item">
+											<input type="radio" name="Radio01" id="Radio0102" class="styled1"><label for="Radio0102">비공개</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Text01">사용자 ID<span class="important">*</span></label></th>
+								<td>
+									<div class="search-box2">
+										<input type="text" id="Text01" class="required">
+										<button type="button" class="btn-text mid">중복검사</button>
+									</div>
+								</td>
+								<th scope="row"><label for="Text02">비밀번호<span class="important">*</span></label></th>
+								<td>
+									<input type="password" id="Text02" class="required" value="1234" style="width:188px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Text03">이름<span class="important">*</span></label></th>
+								<td>
+									<input type="text" id="Text03" class="required" value="admin" style="width:188px;">
+								</td>
+								<th scope="row"><label for="Text04">영문이름<span class="important">*</span></label></th>
+								<td>
+									<input type="text" id="Text04" class="required" style="width:188px;">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Text05">사번<span class="important">*</span></label></th>
+								<td>
+									<input type="text" id="Text05" class="required" style="width:188px;">
+								</td>
+								<th scope="row">재직구분<span class="important">*</span></th>
+								<td>
+									<ul class="form-list inline change">
+										<li class="item">
+											<input type="radio" name="Radio02" id="Radio0201" class="styled1" checked><label for="Radio0201">재직</label>
+										</li>
+										<li class="item">
+											<input type="radio" name="Radio02" id="Radio0202" class="styled1 date"><label for="Radio0202">퇴직</label>
+										</li>
+									</ul>
+									<div class="date-text">
+										<div class="btn-calendar"><input type="text" readonly></div>
+										<div class="calendar-layer bdColor">
+											<div class="datepicker"></div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="Text06">부서<span class="important">*</span></label></th>
+								<td colspan="3">
+									<div class="group-search">
+										<div class="search-text">
+											<div class="search-box2">
+												<input type="text" id="Text06">
+												<button type="button" class="btn-text mid">검색</button>
+											</div>
+											<button type="button" class="btn-text mid btn-add">그룹 추가</button>
+										</div>
+										<div class="search-select">
+											<select multiple>
+												<option>웅진그룹</option>
+												<option>오킨스전자</option>
+												<option>CEO1</option>
+											</select>
+											<div class="btn-area">
+												<button type="button" class="btn-text mid">대표 그룹 설정</button>
+												<button type="button" class="btn-text mid">삭제</button>
+												<div class="all-len">총 0개</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn-wrap right">
+					<div class="btn-align">
+						<div class="btn-item"><a href="#" class="btn-text">신규</a></div>
+						<div class="btn-item"><a href="#" class="btn-text">자동입력</a></div>
+						<div class="btn-item"><a href="#" class="btn-text bdColor fColor">저장</a></div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</div>
 </div>
 <div class="footer">
@@ -366,17 +457,17 @@
 <script>
 (function($) {
 	$(window).load(function(){
-		/* 박스 높이 최소값 설정 */
-		$('.category-setting .board-setting').each(function(){
-			var hei = $(this).find('.tree-menu').outerHeight();
-			$(this).css({'min-height':hei});
+		$('.change input[type=radio]').change(function(){
+			if($(this).hasClass('date')){
+				if(this.checked){
+					$(this).closest('td').find('.date-text').show();
+				}
+			}else{
+				if(this.checked){
+					$(this).closest('td').find('.date-text').hide();
+				}
+			}
 		});
-		/* 카테고리 메뉴 클릭시 수정폼 노출
-		$('.tree-list ul .link .text').click(function(){
-			var title = $(this).text();
-			$('.cate-name').show().find('input[type=text]').val(title);
-		});
-		 */
 	});
 })(jQuery);
 </script>

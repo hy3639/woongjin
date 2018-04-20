@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scale=no, target-densitydpi=medium-dpi">
+<title>웅진 - 결재내역</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="../css/common01.css"> <!--PC-->
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="../css/common02.css"> <!--MOBILE-->
+<link rel="stylesheet" media="screen and (max-width: 1100px)" href="../css/common03.css"> <!-- PC+GNB없음-->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.11.12.1.js"></script>
+<script src="../js/pluginset.js"></script><!-- 각종 플러그인 모음 -->
+<script src="../js/common.js"></script>
+<!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<script src="../respond.src.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="window-popup pop-newpreview">
+	<div class="title-wrap">
+		<h1 class="title">결재내역</h1>
+	</div>
+
+	<div id="guideConFrame">
+		<div class="blockBlank_10px"></div>
+		<!--blockDetail Start-->
+		<form id="detailForm" name="detailForm" method="post">
+		<div class="blockDetail" style="border-top:1px solid #e0e0e0; margin-top: 20px;">
+			<table id="layoutTable" class="table-styled1" summary="" style="table-layout: fixed;"><!-- 180418 class="table-styled1" 추가 -->
+				<caption></caption>
+				<tbody>
+				<tr>
+					<th width="15.5%" colspan="10">
+						<span class="colorPoint">*</span>&nbsp;테스트
+					</th>
+					<td colspan="90">
+						<span><input type="text" name="text1" value="" class="inputbox" style="width:98% !important;;"></span>
+					</td>
+				</tr>
+				<tr>
+					<th width="15.5%" colspan="10">테스트 로우2</th>
+						<td colspan="90">
+							<span class="colorPoint">*</span>&nbsp;
+							<span><input type="text" name="text2" value="10" class="inputbox" style="width:98% !important;;text-align:right;"></span>&nbsp;
+							<span class="colorPoint">*</span>&nbsp;
+							<span><input type="text" name="text3" value="10.1" class="inputbox" style="width:98% !important;;text-align:right;"></span>
+						</td>
+					</tr>
+					<tr>
+						<th width="15.5%" colspan="10">텍스트박스</th>
+						<td colspan="40">
+							<span class="colorPoint">*</span>&nbsp;
+							<span><textarea name="textarea1" style="width:97% !important;height:100px;"></textarea></span>&nbsp;
+							<span class="colorPoint">*</span>&nbsp;
+							<span><textarea name="textarea2" style="width:97% !important;height:100px;"></textarea></span>
+						</td>
+						<th width="15.5%" colspan="10"></th>
+						<td colspan="40">
+							<span><input type="text" name="text4" value="100" class="inputbox" style="width:97% !important;;text-align:right;" onkeyup="iFU.addComma(this);"></span>
+						</td>
+					</tr>
+					<tr>
+						<th width="15.5%" colspan="10">셀렉트</th>
+						<td colspan="15">
+							<span>
+								<select name="select1">
+									<option value="S1">A</option>
+									<option value="S2" selected="selected">B</option>
+									<option value="S3">C</option>
+								</select>
+							</span>
+						</td>
+						<th width="15.5%" colspan="10">라디오</th>
+						<td colspan="15">
+							<span>
+								<input type="radio" class="radio" name="radio1" value="R1">&nbsp;1&nbsp;&nbsp;
+								<input type="radio" class="radio" name="radio1" value="R2" checked="checked">&nbsp;2&nbsp;&nbsp;
+							</span>
+						</td>
+						<th width="15.5%" colspan="10">체크박스</th>
+						<td colspan="15">
+							<span>
+								<input type="checkbox" class="checkbox" name="checkbox1C1">&nbsp;5&nbsp;&nbsp;
+								<input type="checkbox" class="checkbox" name="checkbox1C2">&nbsp;6&nbsp;&nbsp;
+								<input type="checkbox" class="checkbox" name="checkbox1C3" checked="checked">&nbsp;8&nbsp;&nbsp;
+							</span>
+						</td>
+							<th width="15.5%" colspan="10">글상자</th>
+							<td colspan="15">
+								<span><p>ㅋㅋ</p></span>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+							<td class="border_none" width="1%"></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<div class="blockDetail" style="border-top:1px solid #e0e0e0;">
+				<table id="editorTable" summary="">
+					<caption></caption>
+					<tbody>
+						<tr>
+							<td class="ckeditor">
+								<div id="editorDiv" style="height: 500px; width: 100%;">
+									<textarea id="formEditorData" name="formEditorData" class="inputbox w100 fullEditor" style="height: 450px; display: none;"></textarea>
+									<iframe frameborder="0" scrolling="no" src="http://gwdemo.woongjinholdings.com/naverSmarteditor/smartEditor2Skin.do" style="width: 100%; height: 499px;"></iframe>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<input type="hidden" name="msie">
+		</form>
+		<form id="saveForm" name="saveForm" method="post" action="viewApprDocLayout.do">
+			<input type="hidden" name="mode" value="1">
+			<input type="hidden" name="isApprEditor" value="1">
+			<input type="hidden" name="formId" value="test001">
+			<textarea name="formData" style="display:none;"></textarea>
+			<textarea name="formEditorData" style="display:none;"></textarea>
+			<textarea name="formLayoutData" style="display:none;"></textarea>
+			<input name="msie" type="hidden" value="0">
+		</form>
+		<!--//blockDetail End-->
+
+		<!--blockButton Start-->
+		<div id="detailFormButton" class="blockButton"> 
+			<ul>
+				<li><a id="saveButton" class="button btn-text fColor bdColor" href="#a"><span>저장</span></a></li><!-- 180418 class="btn-text fColor bdColor" 추가 -->
+				<li><a id="closeButton" class="button btn-text" href="#a"><span>닫기 </span></a></li><!-- 180418 class="btn-text" 추가 -->
+			</ul>
+		</div>
+		<div class="blockBlank_20px"></div>
+		<!--//blockButton End-->
+	</div>
+</div>
+</body>
+</html>

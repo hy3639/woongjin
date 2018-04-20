@@ -133,7 +133,7 @@
 		border:1px solid #bbb;
 		background-color:#fff;
 	}
-	.content .cont-inner .title-area .portlet-tool li a {
+	.content .cont-inner .title-area .portlet-tool li .text {
 		position:relative;
 		display:block;
 		height:30px;
@@ -141,24 +141,25 @@
 		font-size:12px;
 		color:#666;
 		line-height:30px;
+		cursor:pointer;
 	}
-	.content .cont-inner .title-area .portlet-tool li a:hover {
+	.content .cont-inner .title-area .portlet-tool li .text:hover {
 		background-color:#fafafa;
 	}
 
-	.content .cont-inner .title-area .portlet-tool li a:before {
+	.content .cont-inner .title-area .portlet-tool li .text:before {
 		content:'';
 		position:absolute;
 		top:0; right:15px;
 		width:30px;
 		height:30px;
 	}
-	.content .cont-inner .title-area .portlet-tool .item01 a:before {background:url(../images2.0/ico/ico_tool01.png) right center no-repeat;}
-	.content .cont-inner .title-area .portlet-tool .item02 a:before {background:url(../images2.0/ico/ico_tool02.png) right center no-repeat;}
-	.content .cont-inner .title-area .portlet-tool .item03 a:before {background:url(../images2.0/ico/ico_tool03.png) right center no-repeat;}
-	.content .cont-inner .title-area .portlet-tool .item04 a:before {background:url(../images2.0/ico/ico_tool04.png) right center no-repeat;}
-	.content .cont-inner .title-area .portlet-tool .item05 a:before {background:url(../images2.0/ico/ico_tool05.png) right center no-repeat;}
-	.content .cont-inner .title-area .portlet-tool .item06 a:before {background:url(../images2.0/ico/ico_tool06.png) right center no-repeat;}
+	.content .cont-inner .title-area .portlet-tool .item01 .text:before {background:url(../images2.0/ico/ico_tool01.png) right center no-repeat;}
+	.content .cont-inner .title-area .portlet-tool .item02 .text:before {background:url(../images2.0/ico/ico_tool02.png) right center no-repeat;}
+	.content .cont-inner .title-area .portlet-tool .item03 .text:before {background:url(../images2.0/ico/ico_tool03.png) right center no-repeat;}
+	.content .cont-inner .title-area .portlet-tool .item04 .text:before {background:url(../images2.0/ico/ico_tool04.png) right center no-repeat;}
+	.content .cont-inner .title-area .portlet-tool .item05 .text:before {background:url(../images2.0/ico/ico_tool05.png) right center no-repeat;}
+	.content .cont-inner .title-area .portlet-tool .item06 .text:before {background:url(../images2.0/ico/ico_tool06.png) right center no-repeat;}
 
 	.content .cont-inner .title-area .btn-icon.icon09 {
 		position:absolute;
