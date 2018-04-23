@@ -253,13 +253,13 @@
 									안녕하세요^^<br>
 									제 블로그에 방문해주셔서 정말<br>
 									감사합니다.
-									<button type="button" class="btn-icon icon05">수정</button>
+									<button type="button" class="btn-icon icon05 btn-modi">수정</button><!-- 180420 class="btn-mody" 추가 -->
 								</div>
 								<div class="modify-area">
 									<textarea cols="" rows=""></textarea>
 									<div class="btn-area">
-										<button type="button" class="btn-text sm">취소</button>
-										<button type="button" class="btn-text sm fColor">저장</button>
+										<button type="button" class="btn-text sm btn-cancle">취소</button><!-- 180420 class="btn-cancle" 추가 -->
+										<button type="button" class="btn-text sm fColor btn-save">저장</button><!-- 180420 class="btn-save" 추가 -->
 									</div>
 								</div>
 							</div>
@@ -965,6 +965,26 @@
 <script>
 (function($) {
 	$(window).load(function(){
+		/* 180420 소개글 수정 추가 */
+		/* 소개글 수정 */
+		$(document).on('click', '.btn-modi', function(){
+			$(this).closest('.intro-text').addClass('modi');
+			var text = $(this).closest('.intro-text').find('.text-area').text().replace(/<br>/g, '\n').replace(/	/g, '').replace(/수정/g, '');
+			var textA = text.replace(/	/g, '');
+			$(this).closest('.intro-text').find('.modify-area textarea').val(text.trim());
+		});
+		/* 댓글 저장 */
+		$('.modify-area .btn-save').click(function(){
+			var text = $(this).closest('.intro-text').find('textarea').val().replace(/\n/g, '<br>');
+			$(this).closest('.intro-text').removeClass('modi');
+			$(this).closest('.intro-text').find('.text-area').html(text).append('<button type="button" class="btn-icon icon05 btn-modi">수정</button>');
+		});
+		/* 소개글 수정 취소 */
+		$('.modify-area .btn-cancle').click(function(){
+			$(this).closest('.intro-text').removeClass('modi');
+		});
+		/* //180420 소개글 수정 추가 */
+
 		/*
 			설정 팝업
 		*/

@@ -454,30 +454,72 @@
 		/*
 			데이트피커
 		*/
-		// 기본설정
 		$('.datepicker').each(function(){
-			if($(this).closest('.date-text').hasClass('weekType')){
+			if($(this).closest('.week-setting-box').hasClass('weekType')){
 				// 주단위 날짜설정
+				$(this).datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOtherMonths: true,
+					selectOtherMonths: true,
+					monthNamesShort: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
+					dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
+					onSelect: function(dateText, inst) {
+						
+						var year  = dateText.substring(6,10); //선택된 년도
+						var month = dateText.substring(0,2); //선택된 월
+						var day   = dateText.substring(3,5); //선택된 일자
+						var week  = new Array("", "월", "화", "수", "목", "금", "토", "일");  // 아래 코드에서는 사용하지 않음
+						// 보통 0~6 까지가 일~토로 표현된다 하지만 월요일부터 표현하기 위해 0번째를 공백처리
+						var currentDay = new Date(year, month-1, day);  
+						var theDayOfWeek = currentDay.getDay();        // 요일을 숫자로 구해옴
+						// 선택한 날이 일요일 일때 전주의 날짜를 담음
+						 if(theDayOfWeek == 0){		 
+							 var currentDay = new Date(year, month-1, day-7);  	
+						 }	 
+						 var theYear = currentDay.getFullYear();
+
+						 var theMonth = currentDay.getMonth();
+
+						 var theDate  = currentDay.getDate();
+						 var thisWeek = [];
+						 
+						 for(var i=1; i<8; i++) {
+						   var resultDay = new Date(theYear, theMonth, theDate + (i - theDayOfWeek));
+						   var yyyy = resultDay.getFullYear();
+						   var mm = Number(resultDay.getMonth()) + 1;
+						   var dd = resultDay.getDate();
+						   var dd_nm = resultDay.getDay();
+						   mm = String(mm).length === 1 ? '0' + mm : mm;
+						   dd = String(dd).length === 1 ? '0' + dd : dd;
+						   thisWeek[i] = yyyy + '.' + mm + '.' + dd;
+						 }
+						
+						$('.week-setting-box').find('input').attr("value" , thisWeek[1] + " ~ " + thisWeek[7]);
+						
+						$('.dimmed').remove();
+						$('.week-setting-box .btn-calendar').removeClass('bdColor')
+							.closest('.week-setting-box').css({'z-index':'1'}).removeClass('on')
+							.find('.calendar-layer').hide();
+					}
+				});
 			}else{
 				var alt = $(this).closest('.date-text').find('.btn-calendar input');
+				$(this).datepicker({
+					changeMonth: true,
+					changeYear: true,
+					altFormat: "yy.mm.dd",
+					monthNamesShort: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
+					dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
+					altField: alt,
+					onSelect: function(dateText, inst) {
+						$('.dimmed').remove();
+						$('.btn-calendar input').removeClass('bdColor')
+							.closest('.date-text').css({'z-index':'1'}).removeClass('on')
+							.find('.calendar-layer').hide();
+					}
+				});
 			}
-			$(this).datepicker({
-				changeMonth: true,
-				changeYear: true,
-				altFormat: "yy.mm.dd",
-				monthNamesShort: [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" ],
-				dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ],
-				altField: alt,
-				onSelect: function(dateText, inst) {
-					$('.dimmed').remove();
-					$('.btn-calendar input').removeClass('bdColor')
-						.closest('.date-text').css({'z-index':'1'}).removeClass('on')
-						.find('.calendar-layer').hide();
-					$('.week-setting-box .btn-calendar').removeClass('bdColor')
-						.closest('.week-setting-box').css({'z-index':'1'}).removeClass('on')
-						.find('.calendar-layer').hide();
-				}
-			});
 			$(this).find('.ui-state-default').removeClass('ui-state-active');
 
 			calendarLayer();// 오른쪽 화면에서 달력 레이어 잘림방지

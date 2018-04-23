@@ -2505,14 +2505,56 @@
 }
 .layer-popup .floating-list .item .icon {
 	overflow:hidden;
+	position:relative;
 	width:50px;
 	height:50px;
 	box-sizing:border-box;
 	border-radius:50%;
 	border:1px solid #efefef;
 }
+.layer-popup .floating-list .item .icon:before {
+	content:'';
+	position:absolute;
+	left:50%;top:50%;
+	width:18px;
+	height:18px;
+	margin:-9px 0 0 -9px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.layer-popup .floating-list .item.item01 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb01.png);}
+.layer-popup .floating-list .item.item02 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb02.png);}
+.layer-popup .floating-list .item.item03 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb03.png);}
+.layer-popup .floating-list .item.item04 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb04.png);}
+.layer-popup .floating-list .item.item05 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb05.png);}
+.layer-popup .floating-list .item.item06 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb06.png);}
+.layer-popup .floating-list .item.item07 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb07.png);}
+.layer-popup .floating-list .item.item08 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb08.png);}
+.layer-popup .floating-list .item.item09 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb09.png);}
+.layer-popup .floating-list .item.item10 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb10.png);}
+.layer-popup .floating-list .item.item11 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb11.png);}
+.layer-popup .floating-list .item.item12 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb12.png);}
+.layer-popup .floating-list .item.item13 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb13.png);}
+.layer-popup .floating-list .item.item14 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb14.png);}
+.layer-popup .floating-list .item.item15 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb15.png);}
+.layer-popup .floating-list .item.item16 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb16.png);}
+.layer-popup .floating-list .item.item17 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb17.png);}
+.layer-popup .floating-list .item.item18 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb18.png);}
+.layer-popup .floating-list .item.item19 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb19.png);}
+.layer-popup .floating-list .item.item20 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb20.png);}
+.layer-popup .floating-list .item.item21 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb21.png);}
+.layer-popup .floating-list .item.item22 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb22.png);}
+.layer-popup .floating-list .item.item23 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb23.png);}
+.layer-popup .floating-list .item.item24 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb24.png);}
+.layer-popup .floating-list .item.item25 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb25.png);}
+.layer-popup .floating-list .item.item26 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb26.png);}
+.layer-popup .floating-list .item.item27 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb27.png);}
+.layer-popup .floating-list .item.item28 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb28.png);}
+.layer-popup .floating-list .item.item29 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb29.png);}
+.layer-popup .floating-list .item.item30 .icon:before {background-image:url(../images2.0/layout/gnb/ico_gnb30.png);}
+
 .layer-popup .floating-list .item .icon.bgColor {border:0;}
-.layer-popup .floating-list .item .icon.bgColor img {margin-top:-50px;}
+.layer-popup .floating-list .item .icon.bgColor:before {background-position:0 -18px;}
 .layer-popup .floating-list .item .text {
 	position:absolute;
 	left:56px;top:50%;

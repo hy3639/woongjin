@@ -1467,23 +1467,32 @@ select.bdColor {
 	display:block;
 	position:relative;
 	padding:14px 20px 14px 45px;
-	background-repeat:no-repeat;
-	background-position:20px 15px;
-	background-size:16px 16px;
 	color:#000;
 	font-size:14px;
 	line-height:18px;
 }
-.gnb-wrap .home .link-home.ico01 {background-image:url(../images2.0/mobile/ico/gnb_ico01.png);}
-.gnb-list .gnb-item .gnb-title.ico02 {background-image:url(../images2.0/mobile/ico/gnb_ico02.png);}
-.gnb-list .gnb-item .gnb-title.ico03 {background-image:url(../images2.0/mobile/ico/gnb_ico03.png);}
-.gnb-list .gnb-item .gnb-title.ico04 {background-image:url(../images2.0/mobile/ico/gnb_ico04.png);}
-.gnb-list .gnb-item .gnb-title.ico05 {background-image:url(../images2.0/mobile/ico/gnb_ico05.png);}
-.gnb-list .gnb-item .gnb-title.ico06 {background-image:url(../images2.0/mobile/ico/gnb_ico06.png);}
-.gnb-list .gnb-item .gnb-title.ico07 {background-image:url(../images2.0/mobile/ico/gnb_ico07.png);}
-.gnb-list .gnb-item .gnb-title.ico08 {background-image:url(../images2.0/mobile/ico/gnb_ico08.png);}
-.gnb-list .gnb-item .gnb-title.ico09 {background-image:url(../images2.0/mobile/ico/gnb_ico09.png);}
-.gnb-list .gnb-item .gnb-title.ico10 {background-image:url(../images2.0/mobile/ico/gnb_ico10.png);}
+.gnb-wrap .home .link-home:after,
+.gnb-list .gnb-item .gnb-title:after {
+	content:'';
+	position:absolute;
+	left:20px;top:50%;
+	width:18px;
+	height:18px;
+	margin-top:-9px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:18px 18px;
+}
+.gnb-wrap .home .link-home.ico01:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb01.png);}
+.gnb-list .gnb-item .gnb-title.ico02:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb02.png);}
+.gnb-list .gnb-item .gnb-title.ico03:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb03.png);}
+.gnb-list .gnb-item .gnb-title.ico04:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb04.png);}
+.gnb-list .gnb-item .gnb-title.ico05:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb05.png);}
+.gnb-list .gnb-item .gnb-title.ico06:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb06.png);}
+.gnb-list .gnb-item .gnb-title.ico07:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb07.png);}
+.gnb-list .gnb-item .gnb-title.ico08:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb08.png);}
+.gnb-list .gnb-item .gnb-title.ico09:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb09.png);}
+.gnb-list .gnb-item .gnb-title.ico10:after {background-image:url(../images2.0/mobile/layout/gnb/ico_gnb10.png);}
 .gnb-wrap .home .btn-setting {display:none;}
 
 .gnb-list .gnb-item .gnb-title:before {
