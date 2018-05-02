@@ -2172,6 +2172,8 @@ line-height:35px;
 	background-color:#fff;
 }
 
+.jstree-closed > ul {display:none;}
+
 .gnb-tree-menu {
 	overflow-x: auto;
 	position: absolute;
